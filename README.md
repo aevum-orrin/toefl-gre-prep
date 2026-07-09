@@ -47,6 +47,14 @@ toefl/
 
 - [x] 连接 GitHub 远程仓库 `toefl-learning`
 - [x] 建立仓库骨架 + 14 天计划
-- [ ] 搭 `prep-core` 内核
-- [ ] writing-coach MVP
-- [ ] speaking-app MVP
+- [x] 搭 `prep-core` 内核（FeedbackEngine / SRS / Progress / Rubric / Audio）— 独立 repo，4 个单测通过
+- [x] writing-coach MVP（FastAPI + 网页，管道端到端跑通；接 key 即真实 Claude 评分）
+- [ ] speaking-app MVP（Whisper + 麦克风，需在带麦克风的笔记本上跑）
+
+## 环境（Great Lakes）
+
+```bash
+source env.sh   # module load python/3.12.1 ffmpeg/7.1.0 + 激活 .venv + 读 .env
+pip install -r requirements.txt   # 首次；含 editable 的 ../prep-core
+```
+`.env`（gitignored）放 `ANTHROPIC_API_KEY`；见 `.env.example`。

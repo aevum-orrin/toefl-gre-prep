@@ -1,0 +1,13 @@
+{
+  "name": "TOEFL Integrated Writing",
+  "task_type": "integrated_writing",
+  "scale_min": 1,
+  "scale_max": 6,
+  "criteria": [
+    {"key": "accuracy", "name": "Accuracy of Content", "description": "Correctly conveys the key points from the lecture and how they relate to the reading."},
+    {"key": "relationship", "name": "Reading-Lecture Link", "description": "Clearly shows how the lecture casts doubt on / supports each point of the reading."},
+    {"key": "organization", "name": "Organization", "description": "Well-organized by point; no important information omitted or distorted."},
+    {"key": "language", "name": "Language Use", "description": "Grammar and vocabulary are accurate enough that meaning is always clear."}
+  ],
+  "instructions": "A ~20-minute task; strong responses are 150-225 words. The writer's own opinion is NOT required. Reward faithful reporting of the source relationship; penalize copying long strings verbatim, missing points, or misrepresenting the lecture."
+}

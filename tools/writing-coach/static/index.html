@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOEFL Writing Coach</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#3b6ea5; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#6ea8dc; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  h1 { font-size:18px; margin:0; }
+  #status { font-size:12px; color:var(--mut); }
+  .badge { font-size:11px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
+  main { max-width:940px; margin:0 auto; padding:20px; display:grid; gap:18px; grid-template-columns:1fr 1fr; }
+  @media (max-width:820px){ main{ grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  label { display:block; font-size:12px; color:var(--mut); margin:10px 0 4px; text-transform:uppercase; letter-spacing:.04em; }
+  select, textarea, input { width:100%; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:8px; padding:9px; }
+  textarea { resize:vertical; }
+  #essay { min-height:230px; }
+  button { margin-top:14px; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 18px; font-weight:600; cursor:pointer; }
+  button:disabled { opacity:.55; cursor:progress; }
+  .wc { font-size:12px; color:var(--mut); margin-top:6px; }
+  .band { font-size:40px; font-weight:700; line-height:1; }
+  .band small { font-size:14px; color:var(--mut); font-weight:400; }
+  .crit { border-top:1px solid var(--line); padding:9px 0; }
+  .crit b { display:inline-block; min-width:150px; }
+  .score { color:var(--accent); font-weight:700; }
+  ul { margin:6px 0 0; padding-left:18px; }
+  .revised { white-space:pre-wrap; background:var(--bg); border-radius:8px; padding:12px; margin-top:6px; }
+  .offline { color:#b5651d; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>✍️ TOEFL Writing Coach</h1>
+  <span id="status">…</span>
+</header>
+<main>
+  <section class="card">
+    <label for="task">Task</label>
+    <select id="task"></select>
+    <label for="prompt">Prompt / question (optional — paste the discussion or reading+lecture)</label>
+    <textarea id="prompt" rows="3" placeholder="e.g. Your professor asks: Should universities require…"></textarea>
+    <label for="essay">Your response</label>
+    <textarea id="essay" placeholder="Write or paste your essay here…"></textarea>
+    <div class="wc"><span id="wc">0</span> words</div>
+    <button id="go">Score & polish</button>
+  </section>
+
+  <section class="card" id="result">
+    <p class="wc">Results appear here after scoring.</p>
+  </section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let OFFLINE = false;
+
+async function boot(){
+  const st = await (await fetch('/api/status')).json();
+  OFFLINE = st.offline;
+  $('#status').innerHTML = st.offline
+    ? `<span class="badge offline">OFFLINE STUB</span> ${st.hint}`
+    : `<span class="badge">LIVE · ${st.model}</span>`;
+  const tasks = await (await fetch('/api/tasks')).json();
+  $('#task').innerHTML = tasks.map(t =>
+    `<option value="${t.task_type}">${t.name} (band ${t.scale[0]}–${t.scale[1]})</option>`).join('');
+}
+
+$('#essay').addEventListener('input', e => {
+  $('#wc').textContent = (e.target.value.trim().match(/\S+/g) || []).length;
+});
+
+$('#go').addEventListener('click', async () => {
+  const btn = $('#go'); btn.disabled = true; btn.textContent = 'Scoring…';
+  try {
+    const r = await fetch('/api/score', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        task_type: $('#task').value, essay: $('#essay').value, prompt_text: $('#prompt').value })
+    });
+    render(await r.json());
+  } catch(e){ $('#result').innerHTML = `<p class="offline">Error: ${e}</p>`; }
+  btn.disabled = false; btn.textContent = 'Score & polish';
+});
+
+function render(fb){
+  if (fb.error){ $('#result').innerHTML = `<p class="offline">${fb.error}</p>`; return; }
+  const crits = Object.entries(fb.criteria).map(([k,v]) =>
+    `<div class="crit"><b>${k}</b> <span class="score">${v.score}</span><br><span class="wc">${v.comment}</span></div>`).join('');
+  const fixes = fb.top_fixes.map(f => `<li>${f}</li>`).join('');
+  $('#result').innerHTML = `
+    ${fb.offline ? '<p class="offline">⚠ Offline stub — set ANTHROPIC_API_KEY for real scoring.</p>' : ''}
+    <div class="band">${fb.band}<small> / band</small></div>
+    ${crits}
+    <label>Top fixes</label><ul>${fixes}</ul>
+    <label>Polished rewrite</label><div class="revised">${escapeHtml(fb.revised)}</div>`;
+}
+const escapeHtml = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+boot();
+</script>
+</body>
+</html>

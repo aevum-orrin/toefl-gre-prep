@@ -1,0 +1,13 @@
+{
+  "name": "TOEFL Writing for an Academic Discussion",
+  "task_type": "academic_discussion",
+  "scale_min": 1,
+  "scale_max": 6,
+  "criteria": [
+    {"key": "relevance", "name": "Relevance & Contribution", "description": "Directly addresses the professor's question and adds a clear, well-supported opinion to the discussion."},
+    {"key": "development", "name": "Elaboration", "description": "Reasons and examples are specific and fully explained, not just stated."},
+    {"key": "coherence", "name": "Coherence", "description": "Ideas connect logically; clear progression with effective transitions."},
+    {"key": "language", "name": "Language Use", "description": "Range and accuracy of grammar and vocabulary; idiomatic, varied sentence structure."}
+  ],
+  "instructions": "This is a ~10-minute task; a strong response is roughly 100-160 words. Reward a clear stance engaging with the two student posts. Penalize off-topic content, vague generalities, and repeated errors that impede meaning."
+}
