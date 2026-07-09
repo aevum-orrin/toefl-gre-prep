@@ -1,0 +1,626 @@
+[
+  {
+    "id": "listen-01",
+    "kind": "academic_talk",
+    "title": "Biology Lecture: How Plants Defend Themselves",
+    "transcript": "Okay, so today I want to talk about something you might not expect from plants, and that's defense. We tend to think of plants as passive, right? They just sit there and get eaten. But actually, plants have a remarkable set of strategies for protecting themselves against the animals and insects that feed on them.\n\nThe first strategy is physical. Think about thorns on a rose bush, or the sharp spines on a cactus. These make it painful, or at least difficult, for an animal to take a bite. Some plants also have tiny, needle-like hairs on their leaves that irritate the mouths of insects.\n\nBut the more interesting strategy, in my opinion, is chemical. Many plants produce toxic or bitter compounds that make them unpleasant or even dangerous to eat. Caffeine, for example, is a natural pesticide. In high enough doses it can paralyze or kill insects that try to feed on the plant. The same goes for nicotine in tobacco plants.\n\nAnd here's the really fascinating part. Some plants can actually respond to being attacked. When a caterpillar starts chewing on a leaf, the plant may release chemicals into the air. These airborne signals can attract predatory wasps that hunt the very caterpillars eating the plant. So in a sense, the plant is calling for help. It's recruiting bodyguards.\n\nSo as you can see, plants are far from defenseless. They've evolved an impressive toolkit, and understanding it can even help us develop better ways to protect our crops.",
+    "questions": [
+      {
+        "q": "What is the main topic of this lecture?",
+        "options": [
+          "How plants grow toward sunlight",
+          "The various ways plants defend themselves",
+          "Why insects prefer certain plants",
+          "How farmers use pesticides on crops"
+        ],
+        "answer": 1,
+        "explanation": "The professor announces the topic as plant defense and discusses physical and chemical strategies throughout, making that the main topic."
+      },
+      {
+        "q": "According to the professor, what is one function of caffeine in plants?",
+        "options": [
+          "It helps the plant absorb water.",
+          "It acts as a natural pesticide against insects.",
+          "It attracts pollinating bees.",
+          "It gives leaves their green color."
+        ],
+        "answer": 1,
+        "explanation": "The professor says caffeine is a natural pesticide that can paralyze or kill insects that try to feed on the plant."
+      },
+      {
+        "q": "Why does the professor mention predatory wasps?",
+        "options": [
+          "To explain how caterpillars reproduce",
+          "To show that some plants can call for help when attacked",
+          "To describe a threat to the plant's roots",
+          "To illustrate how wasps damage crops"
+        ],
+        "answer": 1,
+        "explanation": "The professor describes how an attacked plant releases chemicals that attract predatory wasps, illustrating that the plant is effectively calling for help."
+      },
+      {
+        "q": "What can be inferred about the professor's view of plants?",
+        "options": [
+          "Plants are passive and easily destroyed.",
+          "Plants have surprisingly active and sophisticated defenses.",
+          "Plants cannot survive without human protection.",
+          "Plants are more dangerous than animals."
+        ],
+        "answer": 1,
+        "explanation": "The professor repeatedly emphasizes that plants are far from defenseless and have an impressive toolkit, implying their defenses are surprisingly sophisticated."
+      }
+    ]
+  },
+  {
+    "id": "listen-02",
+    "kind": "academic_talk",
+    "title": "Astronomy Lecture: What Are Comets?",
+    "transcript": "Let's turn now to comets, which are some of the most spectacular objects you can see in the night sky. So what exactly is a comet? Well, a comet is essentially a small body made of ice, dust, and rocky material. Astronomers sometimes call them dirty snowballs, and honestly, that's not a bad description. They're leftovers from the formation of the solar system billions of years ago.\n\nMost comets spend the vast majority of their time in the cold, distant outer regions of the solar system, far beyond the planets. Out there, a comet is just a dark, frozen lump. You wouldn't see anything dramatic. But every so often, a comet's orbit brings it swinging in close to the Sun, and that's when things get interesting.\n\nAs the comet approaches the Sun, it heats up. The ice doesn't melt into liquid; instead it turns directly into gas, a process we call sublimation. This releases dust and gas that form a huge glowing cloud around the comet, called the coma. And the solar wind and sunlight push some of that material outward, forming the comet's tail. Here's a detail people often get wrong: the tail always points away from the Sun, not backward along the comet's path. So even as the comet moves away from the Sun, its tail streams out ahead of it.\n\nAfter the comet loops around and heads back out, it cools down, the tail disappears, and it becomes a frozen lump once again until its next visit, which could be decades or even centuries later.",
+    "questions": [
+      {
+        "q": "What is a comet mainly made of?",
+        "options": [
+          "Molten rock and metal",
+          "Ice, dust, and rocky material",
+          "Compressed gas only",
+          "Liquid water surrounded by dust"
+        ],
+        "answer": 1,
+        "explanation": "The professor describes a comet as a small body made of ice, dust, and rocky material, likening it to a dirty snowball."
+      },
+      {
+        "q": "What happens to a comet's ice as it approaches the Sun?",
+        "options": [
+          "It melts into liquid water.",
+          "It turns directly into gas through sublimation.",
+          "It freezes even more solidly.",
+          "It breaks apart into small rocks."
+        ],
+        "answer": 1,
+        "explanation": "The professor explains that the ice does not melt into liquid but turns directly into gas, a process called sublimation."
+      },
+      {
+        "q": "According to the professor, in what direction does a comet's tail point?",
+        "options": [
+          "Backward along the comet's path",
+          "Directly toward the Sun",
+          "Away from the Sun",
+          "Straight down toward the nearest planet"
+        ],
+        "answer": 2,
+        "explanation": "The professor stresses that the tail always points away from the Sun, correcting a common misconception."
+      },
+      {
+        "q": "Why does the professor say 'that's when things get interesting'?",
+        "options": [
+          "Because the comet collides with a planet",
+          "Because the comet develops a glowing coma and tail near the Sun",
+          "Because the comet disappears forever",
+          "Because the comet turns into a new planet"
+        ],
+        "answer": 1,
+        "explanation": "The professor uses that phrase to introduce how, near the Sun, the comet heats up and forms the dramatic coma and tail."
+      }
+    ]
+  },
+  {
+    "id": "listen-03",
+    "kind": "academic_talk",
+    "title": "History Lecture: The Silk Road",
+    "transcript": "Today we're going to look at the Silk Road, and I want to start by clearing up a common misunderstanding. When people hear the name Silk Road, they often picture a single paved highway stretching from China to Europe. But that's not what it was at all. The Silk Road was actually a whole network of trade routes, connecting East Asia with Central Asia, the Middle East, and eventually Europe. And it wasn't really a road in the modern sense. It was a shifting set of paths across deserts, mountains, and grasslands.\n\nNow, silk was certainly one of the famous goods traded along these routes, and that's where the name comes from. Chinese silk was highly prized in the West. But silk was just one of many items. Traders also carried spices, precious metals, glassware, horses, and much more. Goods often passed through many hands. A single merchant rarely traveled the entire distance; instead, items were exchanged from one trader to the next, moving gradually across thousands of miles.\n\nBut here's what I really want you to remember. The Silk Road carried more than goods. It carried ideas. Religions like Buddhism spread along these routes. Technologies, artistic styles, and even diseases traveled with the merchants. So the Silk Road wasn't just an economic phenomenon. It was one of history's great channels for cultural exchange, connecting civilizations that might otherwise have known nothing of each other.",
+    "questions": [
+      {
+        "q": "What misunderstanding does the professor correct at the start?",
+        "options": [
+          "That silk was never actually traded",
+          "That the Silk Road was a single paved highway",
+          "That the Silk Road connected only China and India",
+          "That the Silk Road existed only in ancient times"
+        ],
+        "answer": 1,
+        "explanation": "The professor corrects the idea that the Silk Road was a single paved highway, explaining it was a network of shifting routes."
+      },
+      {
+        "q": "According to the professor, how did goods usually travel the full distance?",
+        "options": [
+          "A single merchant carried them the whole way.",
+          "They were exchanged from one trader to the next.",
+          "They were shipped entirely by sea.",
+          "They were transported by government officials."
+        ],
+        "answer": 1,
+        "explanation": "The professor states that a single merchant rarely traveled the entire distance; instead goods passed from one trader to the next."
+      },
+      {
+        "q": "What does the professor most want students to remember about the Silk Road?",
+        "options": [
+          "That it carried ideas and culture, not just goods",
+          "That silk was the only important product",
+          "That it was mainly a military route",
+          "That it was located entirely within China"
+        ],
+        "answer": 0,
+        "explanation": "The professor emphasizes that the Silk Road carried more than goods, spreading religions, technologies, and ideas, making it a channel for cultural exchange."
+      },
+      {
+        "q": "What can be inferred about the impact of the Silk Road?",
+        "options": [
+          "It kept distant civilizations isolated from one another.",
+          "It connected civilizations that might otherwise have had no contact.",
+          "It was important only for the silk trade.",
+          "It had little effect on religion or technology."
+        ],
+        "answer": 1,
+        "explanation": "The professor concludes that the Silk Road connected civilizations that might otherwise have known nothing of each other, implying it broke down isolation."
+      }
+    ]
+  },
+  {
+    "id": "listen-04",
+    "kind": "academic_talk",
+    "title": "Environmental Science Lecture: Wetlands",
+    "transcript": "So far we've talked about forests and grasslands, but today I want to focus on an ecosystem that's often overlooked and, frankly, underappreciated: wetlands. Wetlands are areas where the land is either covered by water or saturated with water for at least part of the year. This includes marshes, swamps, and bogs. For a long time, people viewed wetlands as useless, even unpleasant, land, and many were drained to make room for farms or cities.\n\nBut we now understand that wetlands provide enormous benefits. Let me highlight a few. First, they act like giant sponges. During heavy rains or storms, wetlands absorb large amounts of water and release it slowly. This helps reduce flooding in nearby areas. Without wetlands, floodwaters would rush downstream much faster and cause far more damage.\n\nSecond, wetlands act as natural water filters. As water moves slowly through a wetland, sediments settle out and plants absorb pollutants and excess nutrients. The water that emerges is often significantly cleaner than the water that entered. In a way, wetlands do for free what expensive treatment plants do at great cost.\n\nAnd third, wetlands are incredibly rich in biodiversity. They provide habitat and breeding grounds for countless species of birds, fish, amphibians, and insects. Many species depend on wetlands for at least part of their life cycle.\n\nSo when we lose wetlands, we don't just lose some soggy ground. We lose flood protection, clean water, and vital habitat. That's why protecting and restoring wetlands has become such an important goal in environmental science.",
+    "questions": [
+      {
+        "q": "What is the main purpose of this lecture?",
+        "options": [
+          "To explain why wetlands should be drained for farming",
+          "To describe the benefits that wetlands provide",
+          "To compare forests and grasslands",
+          "To discuss the cost of water treatment plants"
+        ],
+        "answer": 1,
+        "explanation": "The professor focuses on the benefits of wetlands, listing flood control, water filtering, and biodiversity, making that the main purpose."
+      },
+      {
+        "q": "How do wetlands help reduce flooding?",
+        "options": [
+          "They block rivers with dense plant growth.",
+          "They absorb water and release it slowly.",
+          "They redirect water underground permanently.",
+          "They evaporate water quickly during storms."
+        ],
+        "answer": 1,
+        "explanation": "The professor compares wetlands to sponges that absorb large amounts of water and release it slowly, reducing flooding."
+      },
+      {
+        "q": "Why does the professor compare wetlands to treatment plants?",
+        "options": [
+          "To show that wetlands clean water at no cost",
+          "To argue that treatment plants are unnecessary",
+          "To explain how wetlands are built by engineers",
+          "To describe how wetlands pollute nearby water"
+        ],
+        "answer": 0,
+        "explanation": "The professor says wetlands do for free what expensive treatment plants do at great cost, highlighting their filtering value."
+      },
+      {
+        "q": "What does the professor imply about the past treatment of wetlands?",
+        "options": [
+          "Wetlands were always carefully protected.",
+          "People wrongly viewed wetlands as useless and drained them.",
+          "Wetlands were never affected by human activity.",
+          "Farmers valued wetlands more than forests."
+        ],
+        "answer": 1,
+        "explanation": "The professor notes that people once viewed wetlands as useless and drained many of them, implying this was a mistake given their benefits."
+      }
+    ]
+  },
+  {
+    "id": "listen-05",
+    "kind": "academic_talk",
+    "title": "Psychology Lecture: Memory and Sleep",
+    "transcript": "Let's talk about something that affects every single one of you, especially around exam time: the relationship between sleep and memory. You've probably heard people say that pulling an all-nighter before a test is a bad idea. Well, it turns out there's solid science behind that advice.\n\nHere's the basic idea. When you learn something new during the day, your brain forms a fragile, temporary memory. But for that memory to become stable and long-lasting, it has to go through a process called consolidation. And a great deal of consolidation happens while you sleep. During certain stages of sleep, the brain appears to replay and strengthen the connections associated with what you learned earlier.\n\nResearchers have demonstrated this in the lab. In a typical experiment, participants learn a task, such as a list of words or a sequence of finger movements. Then one group is allowed to sleep, while another group stays awake for the same amount of time. Later, both groups are tested. And consistently, the group that slept performs better. They remember more, and they perform the skill more smoothly.\n\nWhat this tells us is that sleep is not wasted time. It's an active part of learning. So when you stay up all night cramming, you may actually be depriving your brain of the very process it needs to lock in that information. A better strategy is to study, then get a full night's sleep, and let your brain do the rest.",
+    "questions": [
+      {
+        "q": "What is the main idea of this lecture?",
+        "options": [
+          "Sleep plays an active role in strengthening memory.",
+          "Cramming all night is the best way to study.",
+          "People need less sleep as they get older.",
+          "Memory has nothing to do with sleep."
+        ],
+        "answer": 0,
+        "explanation": "The professor argues that sleep is an active part of learning, helping consolidate memories, which is the central idea."
+      },
+      {
+        "q": "What is 'consolidation,' according to the professor?",
+        "options": [
+          "The process of forgetting unimportant information",
+          "The process by which a memory becomes stable and long-lasting",
+          "The act of learning something for the first time",
+          "A stage of sleep with no brain activity"
+        ],
+        "answer": 1,
+        "explanation": "The professor defines consolidation as the process by which a fragile new memory becomes stable and long-lasting, much of which happens during sleep."
+      },
+      {
+        "q": "In the experiments described, which group performed better?",
+        "options": [
+          "The group that stayed awake",
+          "The group that slept",
+          "Both groups performed equally.",
+          "Neither group remembered the task."
+        ],
+        "answer": 1,
+        "explanation": "The professor says that consistently the group that slept performed better, remembering more and performing skills more smoothly."
+      },
+      {
+        "q": "Why does the professor mention all-nighters?",
+        "options": [
+          "To recommend them as an effective study method",
+          "To warn that they may deprive the brain of memory consolidation",
+          "To explain how they improve finger movements",
+          "To describe how they help students relax"
+        ],
+        "answer": 1,
+        "explanation": "The professor cautions that staying up all night cramming may deprive the brain of the consolidation process it needs to lock in information."
+      }
+    ]
+  },
+  {
+    "id": "listen-06",
+    "kind": "academic_talk",
+    "title": "Economics Lecture: Opportunity Cost",
+    "transcript": "Alright, today I want to introduce one of the most fundamental ideas in all of economics. It's a concept called opportunity cost. And once you understand it, you'll start seeing it everywhere in daily life.\n\nSo here's the basic idea. Whenever you make a choice, you give up something else. The opportunity cost of a decision is the value of the next best alternative that you didn't choose. It's not just about money. It's about what you sacrifice.\n\nLet me give you an example. Suppose you have a free Saturday afternoon. You could work a part-time job and earn, let's say, fifty dollars. Or you could go to a concert. Now, if you choose the concert, the opportunity cost isn't zero, even if the concert ticket was free. The opportunity cost includes the fifty dollars you gave up by not working. You're sacrificing that income for the enjoyment of the concert.\n\nAnd this applies to big decisions too. Think about the decision to attend college. There's the tuition, of course, but there's also the opportunity cost of the years you spend studying instead of working full time. Economists include that lost income when they calculate the true cost of a degree.\n\nThe key lesson here is that resources, whether money, time, or effort, are limited. Every choice to use them one way is also a choice not to use them another way. Thinking clearly about opportunity cost helps individuals, businesses, and governments make smarter decisions about how to use what they have.",
+    "questions": [
+      {
+        "q": "How does the professor define opportunity cost?",
+        "options": [
+          "The total amount of money spent on a purchase",
+          "The value of the next best alternative you gave up",
+          "The cost of borrowing money from a bank",
+          "The price difference between two products"
+        ],
+        "answer": 1,
+        "explanation": "The professor defines opportunity cost as the value of the next best alternative that you did not choose."
+      },
+      {
+        "q": "In the Saturday example, what is the opportunity cost of going to the concert?",
+        "options": [
+          "The price of the concert ticket",
+          "The fifty dollars given up by not working",
+          "The cost of transportation to the concert",
+          "Nothing, because the ticket was free"
+        ],
+        "answer": 1,
+        "explanation": "The professor explains that even with a free ticket, the opportunity cost includes the fifty dollars of income given up by not working."
+      },
+      {
+        "q": "Why does the professor mention the decision to attend college?",
+        "options": [
+          "To argue that college is too expensive",
+          "To show that opportunity cost applies to big decisions, including lost income",
+          "To explain how tuition is calculated",
+          "To compare different universities"
+        ],
+        "answer": 1,
+        "explanation": "The professor uses college to show opportunity cost in a major decision, including the income lost while studying instead of working."
+      },
+      {
+        "q": "What is the key lesson of the lecture?",
+        "options": [
+          "Money is the only limited resource.",
+          "Every choice to use limited resources one way rules out another use.",
+          "Opportunity cost applies only to businesses.",
+          "Free activities have no cost at all."
+        ],
+        "answer": 1,
+        "explanation": "The professor concludes that resources are limited and every choice to use them one way is also a choice not to use them another way."
+      }
+    ]
+  },
+  {
+    "id": "listen-07",
+    "kind": "conversation",
+    "title": "Conversation: Choosing a Major",
+    "transcript": "Advisor: Hi, come on in. You said you wanted to talk about your major?\n\nStudent: Yeah, thanks for seeing me. So, I'm a sophomore right now, and I've been a biology major since I started. But honestly, lately I've been thinking about switching to environmental science. I'm just not sure if it's a good idea this late.\n\nAdvisor: It's not too late at all, especially as a sophomore. Let me ask, what's drawing you toward environmental science?\n\nStudent: Well, I took an intro environmental science course last semester, and I loved it. It felt more connected to real problems, like climate change and conservation. In my biology classes, I enjoy the material, but I don't feel as excited about where it leads.\n\nAdvisor: That's a really important thing to notice. Now, the good news is that biology and environmental science share a lot of the same introductory requirements, so many of your credits will still count. You wouldn't be starting over.\n\nStudent: Oh, that's a relief. I was worried I'd lose a whole year.\n\nAdvisor: Not at all. The main difference is that environmental science adds some courses in earth systems and policy. Let me pull up the requirements so we can map out which classes you still need. Have you thought about what kind of career you'd want afterward?\n\nStudent: I think I'd like to work for a conservation organization, maybe doing fieldwork.\n\nAdvisor: Then environmental science would actually suit you very well. Let's build a plan so you can make the switch smoothly next term.",
+    "questions": [
+      {
+        "q": "Why does the student come to see the advisor?",
+        "options": [
+          "To drop out of school for a year",
+          "To discuss switching from biology to environmental science",
+          "To complain about a biology professor",
+          "To apply for a scholarship"
+        ],
+        "answer": 1,
+        "explanation": "The student explains that she has been a biology major but is thinking about switching to environmental science, which is the reason for the visit."
+      },
+      {
+        "q": "What does the student say attracted her to environmental science?",
+        "options": [
+          "It has fewer required courses.",
+          "It felt more connected to real problems like climate change.",
+          "It is easier than biology.",
+          "Her friends are all in that major."
+        ],
+        "answer": 1,
+        "explanation": "The student says she loved the intro course because it felt more connected to real problems, such as climate change and conservation."
+      },
+      {
+        "q": "Why does the advisor say the student would not be starting over?",
+        "options": [
+          "Because the student can skip all requirements",
+          "Because biology and environmental science share many intro requirements",
+          "Because the student already graduated",
+          "Because environmental science has no requirements"
+        ],
+        "answer": 1,
+        "explanation": "The advisor explains that the two majors share many of the same introductory requirements, so many credits will still count."
+      },
+      {
+        "q": "What can be inferred about the advisor's attitude toward the switch?",
+        "options": [
+          "The advisor discourages the student from switching.",
+          "The advisor thinks the switch could suit the student well.",
+          "The advisor is indifferent to the student's choice.",
+          "The advisor insists the student stay in biology."
+        ],
+        "answer": 1,
+        "explanation": "The advisor says environmental science would suit the student well given her career interest and offers to build a plan, showing support for the switch."
+      }
+    ]
+  },
+  {
+    "id": "listen-08",
+    "kind": "conversation",
+    "title": "Conversation: A Problem with a Dorm Room",
+    "transcript": "Student: Excuse me, I'm here about a problem with my dorm room. I filled out a maintenance request online, but that was over a week ago and nothing's happened.\n\nHousing Staff: I'm sorry to hear that. Let me look into it. What's the issue exactly?\n\nStudent: The heater in my room isn't working. It's been getting really cold at night, and I've been piling on extra blankets, but it's hard to sleep and even harder to study.\n\nHousing Staff: That definitely shouldn't wait a week. Let me pull up your request. What's your room number?\n\nStudent: It's room 214 in Maple Hall.\n\nHousing Staff: Okay, I see it here. Hmm, it looks like the request was logged, but it got marked as low priority by mistake. A broken heater in winter should be high priority. I apologize for that.\n\nStudent: So what happens now? I have exams next week and I really need to be able to sleep.\n\nHousing Staff: I completely understand. I'm going to reclassify this as urgent right now, and I'll contact the maintenance team directly. Someone should be able to come by tomorrow morning. Will you be in your room around nine?\n\nStudent: I have a class at ten, so nine works.\n\nHousing Staff: Perfect. If for some reason no one shows up by ten, call this office and ask for me directly. My name is Tom.\n\nStudent: Thank you, Tom. That's a big relief.",
+    "questions": [
+      {
+        "q": "What is the student's main problem?",
+        "options": [
+          "The heater in her room is not working.",
+          "She was assigned the wrong room.",
+          "Her online account is locked.",
+          "She lost her dorm key."
+        ],
+        "answer": 0,
+        "explanation": "The student explains that the heater in her room is not working, making it cold and hard to sleep and study."
+      },
+      {
+        "q": "Why had the maintenance request not been handled?",
+        "options": [
+          "The student never actually submitted it.",
+          "It was marked as low priority by mistake.",
+          "The maintenance team was on vacation.",
+          "The room number was recorded incorrectly."
+        ],
+        "answer": 1,
+        "explanation": "The housing staff discovers that the request was logged but got marked as low priority by mistake, which delayed it."
+      },
+      {
+        "q": "What does Tom decide to do about the request?",
+        "options": [
+          "Cancel it and ask the student to submit a new one",
+          "Reclassify it as urgent and contact maintenance directly",
+          "Move the student to a different room",
+          "Tell the student to wait another week"
+        ],
+        "answer": 1,
+        "explanation": "Tom says he will reclassify the request as urgent right away and contact the maintenance team directly."
+      },
+      {
+        "q": "What should the student do if no one arrives by ten?",
+        "options": [
+          "Submit another online request",
+          "Call the office and ask for Tom",
+          "Go to a different dorm",
+          "Wait until the next day"
+        ],
+        "answer": 1,
+        "explanation": "Tom tells the student that if no one shows up by ten, she should call the office and ask for him directly."
+      }
+    ]
+  },
+  {
+    "id": "listen-09",
+    "kind": "conversation",
+    "title": "Conversation: Asking About a Research Job",
+    "transcript": "Student: Hi, Professor Reyes. Do you have a minute? I wanted to ask about the research assistant position you posted.\n\nProfessor: Of course, come in. Yes, I'm looking for a couple of undergraduates to help with my lab this summer. Have you taken any statistics courses?\n\nStudent: I have. I finished Introduction to Statistics last fall, and I'm currently taking a data analysis course where we use programming to work with datasets.\n\nProfessor: That's great. A lot of the work involves cleaning and analyzing survey data, so those skills would be very useful. What year are you?\n\nStudent: I'm a junior, majoring in sociology.\n\nProfessor: Perfect. This project is actually a sociology study, so your background fits well. The position is about fifteen hours a week over the summer. Would that work with your schedule?\n\nStudent: Yes, I'm staying on campus this summer, and I don't have any other commitments besides one online course.\n\nProfessor: Wonderful. Now, I should mention, the position does pay, but it's a modest stipend, not a large salary. A lot of students take it mainly for the experience and for a chance to be listed as a contributor on a paper.\n\nStudent: Honestly, the experience is what I care about most. I'm hoping to apply to graduate school, and research experience would really strengthen my application.\n\nProfessor: That's exactly the right attitude. Why don't you send me your resume by Friday, and we'll set up a proper interview next week.",
+    "questions": [
+      {
+        "q": "Why does the student go to see Professor Reyes?",
+        "options": [
+          "To ask about a grade on an exam",
+          "To ask about a research assistant position",
+          "To request an extension on an assignment",
+          "To change her major to sociology"
+        ],
+        "answer": 1,
+        "explanation": "The student says she wants to ask about the research assistant position the professor posted."
+      },
+      {
+        "q": "What relevant experience does the student mention?",
+        "options": [
+          "She has worked in a laboratory before.",
+          "She has taken statistics and is taking a data analysis course.",
+          "She has published a paper already.",
+          "She has taught a statistics class."
+        ],
+        "answer": 1,
+        "explanation": "The student mentions completing Introduction to Statistics and currently taking a data analysis course using programming, which are relevant skills."
+      },
+      {
+        "q": "What does the professor point out about the pay for the position?",
+        "options": [
+          "It is a large salary.",
+          "There is no pay at all.",
+          "It is a modest stipend, not a large salary.",
+          "The pay depends on the number of papers published."
+        ],
+        "answer": 2,
+        "explanation": "The professor mentions that the position pays a modest stipend, not a large salary, and many students take it for the experience."
+      },
+      {
+        "q": "Why is the student mainly interested in the position?",
+        "options": [
+          "For the large salary it offers",
+          "For research experience to strengthen a graduate school application",
+          "Because it requires very few hours",
+          "Because it is close to her dorm"
+        ],
+        "answer": 1,
+        "explanation": "The student says she cares most about the experience because she hopes to apply to graduate school and research would strengthen her application."
+      }
+    ]
+  },
+  {
+    "id": "listen-10",
+    "kind": "conversation",
+    "title": "Conversation: Returning a Library Book Late",
+    "transcript": "Student: Hi, I need to return these books, and I think a couple of them might be overdue. I'm really sorry.\n\nLibrarian: No problem, let's take a look. Can I have your student ID card? Okay, scanning them now. Yes, two of these are about five days late.\n\nStudent: Oh no. Is there a big fine? I've been so busy with midterms that I completely lost track of the dates.\n\nLibrarian: Don't worry too much. For regular books, the fine is fairly small, twenty-five cents per day per book. So for two books over five days, that comes to two dollars and fifty cents.\n\nStudent: Oh, that's not as bad as I feared. Can I pay that now?\n\nLibrarian: You can, or it can be added to your student account and paid later. Whichever you prefer. But I should mention something for next time. Did you know you can renew most books online?\n\nStudent: Really? I didn't know that.\n\nLibrarian: Yes. As long as no one else has requested the book, you can log into your library account and extend the due date for another three weeks. It only takes a few seconds, and it saves you from late fines.\n\nStudent: That's really helpful. I'll definitely do that next time. I'll just pay the two-fifty now to be safe.\n\nLibrarian: Sounds good. Here's your receipt, and you're all set. Good luck with the rest of your midterms.",
+    "questions": [
+      {
+        "q": "Why does the student come to the library desk?",
+        "options": [
+          "To borrow several new books",
+          "To return books, some of which are overdue",
+          "To apply for a new library card",
+          "To complain about a fine"
+        ],
+        "answer": 1,
+        "explanation": "The student says she needs to return books and thinks a couple of them might be overdue."
+      },
+      {
+        "q": "How much is the total fine the student owes?",
+        "options": [
+          "Twenty-five cents",
+          "Two dollars and fifty cents",
+          "Five dollars",
+          "There is no fine."
+        ],
+        "answer": 1,
+        "explanation": "The librarian calculates twenty-five cents per day per book for two books over five days, totaling two dollars and fifty cents."
+      },
+      {
+        "q": "What helpful tip does the librarian give the student?",
+        "options": [
+          "She can renew most books online to avoid late fines.",
+          "She should return books a week early.",
+          "She can keep books as long as she wants.",
+          "She should stop borrowing during midterms."
+        ],
+        "answer": 0,
+        "explanation": "The librarian explains that most books can be renewed online for another three weeks, which saves the student from late fines."
+      },
+      {
+        "q": "What condition must be met to renew a book online?",
+        "options": [
+          "The book must be less than a week overdue.",
+          "No one else has requested the book.",
+          "The student must pay a renewal fee.",
+          "The book must be a reference book."
+        ],
+        "answer": 1,
+        "explanation": "The librarian says that as long as no one else has requested the book, the student can renew it online."
+      }
+    ]
+  },
+  {
+    "id": "listen-11",
+    "kind": "announcement",
+    "title": "Announcement: Campus Career Fair",
+    "transcript": "Good morning, students. This is an important announcement about the upcoming Fall Career Fair. The fair will take place next Wednesday, October 14th, in the main gymnasium from 10 a.m. to 4 p.m. This is one of the largest events of the semester, and this year more than eighty companies will be attending, representing fields from engineering and healthcare to business and the arts.\n\nHere are a few things to keep in mind so you can make the most of the day. First, dress professionally. First impressions matter, and recruiters do notice. Second, bring several printed copies of your resume. Even though many companies accept online applications, having a physical copy ready to hand over makes a strong impression. If you need help polishing your resume, the Career Center is offering free walk-in reviews all this week.\n\nThird, do a little research beforehand. A full list of attending companies is posted on the Career Center website. We strongly recommend choosing a few you're most interested in and learning about them in advance, so you can ask thoughtful questions.\n\nFinally, don't forget to bring your student ID, which is required for entry. We look forward to seeing you there, and we wish you great success in your job search.",
+    "questions": [
+      {
+        "q": "What is the main purpose of this announcement?",
+        "options": [
+          "To cancel the Fall Career Fair",
+          "To inform students about the career fair and how to prepare",
+          "To advertise a resume-writing course for credit",
+          "To announce a change in gym hours"
+        ],
+        "answer": 1,
+        "explanation": "The announcement informs students about the upcoming career fair and gives advice on how to prepare, which is its main purpose."
+      },
+      {
+        "q": "Why does the announcement advise bringing printed copies of a resume?",
+        "options": [
+          "Because online applications are not allowed",
+          "Because a physical copy makes a strong impression",
+          "Because recruiters cannot read digital files",
+          "Because printing is not available at the fair"
+        ],
+        "answer": 1,
+        "explanation": "The announcement says that even though companies accept online applications, having a physical copy ready makes a strong impression."
+      },
+      {
+        "q": "Where can students find a list of attending companies?",
+        "options": [
+          "On the main gymnasium door",
+          "On the Career Center website",
+          "In the student newspaper",
+          "At the entrance on the day of the fair"
+        ],
+        "answer": 1,
+        "explanation": "The announcement states that a full list of attending companies is posted on the Career Center website."
+      },
+      {
+        "q": "What is required for entry to the career fair?",
+        "options": [
+          "A printed resume",
+          "A student ID",
+          "An appointment with the Career Center",
+          "A registration fee"
+        ],
+        "answer": 1,
+        "explanation": "The announcement notes that a student ID is required for entry to the fair."
+      }
+    ]
+  },
+  {
+    "id": "listen-12",
+    "kind": "announcement",
+    "title": "Announcement: Gym Closure for Renovation",
+    "transcript": "Attention, members of the University Recreation Center. We want to let you know about some important changes coming up next month. Starting Monday, November 2nd, the main fitness center on the first floor will be closed for renovations. The upgrade will include new cardio equipment, additional weight machines, and improved lighting and ventilation. We expect the work to take about three weeks, with a planned reopening on Monday, November 23rd.\n\nWe know this is a busy time of year, and we don't want to leave you without options. During the renovation, the second-floor studio will remain open and will host an expanded schedule of group fitness classes, including yoga, cycling, and strength training. In addition, members can use the swimming pool and the indoor track, both of which will keep their normal hours.\n\nWe've also arranged something special. During the closure, your membership card will grant you free access to the Downtown Community Gym, located just two blocks from campus. Simply show your university ID and membership card at their front desk.\n\nWe appreciate your patience during this upgrade, and we're confident you'll love the improved facilities when they reopen. For questions, please stop by the front desk or check our website.",
+    "questions": [
+      {
+        "q": "What is the main purpose of this announcement?",
+        "options": [
+          "To announce that the recreation center is closing permanently",
+          "To inform members about a temporary gym renovation and alternatives",
+          "To advertise new membership rates",
+          "To cancel all group fitness classes"
+        ],
+        "answer": 1,
+        "explanation": "The announcement informs members that the main fitness center will close for renovation and describes alternative options, which is its purpose."
+      },
+      {
+        "q": "What improvements will the renovation include?",
+        "options": [
+          "A new swimming pool and indoor track",
+          "New cardio equipment, weight machines, and better lighting and ventilation",
+          "A larger parking lot",
+          "A new second-floor studio"
+        ],
+        "answer": 1,
+        "explanation": "The announcement lists new cardio equipment, additional weight machines, and improved lighting and ventilation as part of the upgrade."
+      },
+      {
+        "q": "What can members do at the Downtown Community Gym during the closure?",
+        "options": [
+          "Get free access by showing their university ID and membership card",
+          "Sign up for a paid membership at a discount",
+          "Take classes not offered on campus",
+          "Store their gym equipment"
+        ],
+        "answer": 0,
+        "explanation": "The announcement says members can get free access to the Downtown Community Gym by showing their university ID and membership card."
+      },
+      {
+        "q": "What can be inferred about facilities like the pool and indoor track during the renovation?",
+        "options": [
+          "They will be closed along with the fitness center.",
+          "They will remain open at their normal hours.",
+          "They will move to the second-floor studio.",
+          "They will only be open on weekends."
+        ],
+        "answer": 1,
+        "explanation": "The announcement states that the swimming pool and indoor track will keep their normal hours during the renovation."
+      }
+    ]
+  }
+]
