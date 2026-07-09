@@ -5,6 +5,7 @@ Then open http://localhost:8001  (set ANTHROPIC_API_KEY in ../../.env for real f
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -12,11 +13,15 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from prep_core import FeedbackEngine, Rubric, ProgressStore
+from prep_core import FeedbackEngine, Rubric, ProgressStore, load_env
 
 HERE = Path(__file__).parent
-RUBRIC_DIR = HERE / "rubrics"
-DATA_DIR = HERE.parents[1] / "data"   # toefl/data (gitignored)
+REPO = HERE.parents[1]                                    # monorepo root
+load_env(REPO / ".env")                                  # in-process only (keeps key out of the shell)
+# Exam-specific rubrics live under the exam folder; this tool is exam-agnostic.
+# GRE reuses this same app by pointing RUBRICS_DIR at gre/rubrics.
+RUBRIC_DIR = Path(os.environ.get("RUBRICS_DIR") or REPO / "toefl" / "rubrics")
+DATA_DIR = REPO / "data"                                  # gitignored
 
 # Load every rubric JSON once, keyed by task_type.
 RUBRICS: dict[str, Rubric] = {

@@ -1,5 +1,6 @@
 # Install into the project venv (see env.sh). prep-core is the shared core, editable-installed.
--e /home/ctlang/prep-core
+# [audio] pulls faster-whisper (local speech-to-text) for the speaking app.
+-e ./prep-core[audio]
 fastapi>=0.110
 uvicorn[standard]>=0.29
 python-multipart>=0.0.9

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOEFL Speaking App</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#2f8f6b; --warn:#b5651d; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#5cc39a; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  h1 { font-size:18px; margin:0; }
+  #status { font-size:12px; color:var(--mut); }
+  .badge { font-size:11px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
+  .warn { color:var(--warn); }
+  main { max-width:760px; margin:0 auto; padding:20px; }
+  .tabs { display:flex; gap:8px; margin-bottom:16px; }
+  .tab { flex:1; padding:10px; text-align:center; border:1px solid var(--line); border-radius:10px; cursor:pointer; background:var(--card); font-weight:600; }
+  .tab.active { border-color:var(--accent); color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  .prompt { font-size:19px; margin:6px 0 14px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  button { font:inherit; border:0; border-radius:9px; padding:10px 16px; font-weight:600; cursor:pointer; background:var(--line); color:var(--ink); }
+  button.primary { background:var(--accent); color:#fff; }
+  button.rec { background:#c0392b; color:#fff; }
+  button:disabled { opacity:.5; cursor:not-allowed; }
+  .hint { font-size:12px; color:var(--mut); margin-top:4px; }
+  label { display:block; font-size:12px; color:var(--mut); margin:14px 0 4px; text-transform:uppercase; letter-spacing:.04em; }
+  .result { margin-top:16px; }
+  .transcript { background:var(--bg); border-radius:8px; padding:10px 12px; white-space:pre-wrap; }
+  .meter { height:12px; border-radius:6px; background:var(--line); overflow:hidden; margin-top:6px; }
+  .meter > div { height:100%; background:var(--accent); }
+  .band { font-size:34px; font-weight:700; }
+  .band small { font-size:13px; color:var(--mut); font-weight:400; }
+  .crit { border-top:1px solid var(--line); padding:8px 0; }
+  .crit b { display:inline-block; min-width:150px; } .score { color:var(--accent); font-weight:700; }
+  ul { margin:6px 0 0; padding-left:18px; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<header><h1>🎙️ TOEFL Speaking App</h1><span id="status">…</span></header>
+<main>
+  <div class="tabs">
+    <div class="tab active" data-mode="repeat">Listen &amp; Repeat</div>
+    <div class="tab" data-mode="interview">Take an Interview</div>
+  </div>
+
+  <section class="card">
+    <label id="promptLabel">Prompt</label>
+    <div class="prompt" id="prompt">…</div>
+    <div class="row">
+      <button id="play">🔊 Play prompt</button>
+      <button id="record" class="rec">⏺ Record</button>
+      <button id="stop" disabled>⏹ Stop</button>
+      <button id="next">Next ▸</button>
+    </div>
+    <div class="hint" id="recHint">Click Play to hear it, then Record your answer and Stop when done.</div>
+    <div class="result hidden" id="result"></div>
+  </section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let MODE = "repeat", idx = 0, current = "", OFFLINE = false;
+let mediaRecorder, chunks = [], stream;
+
+async function boot(){
+  const st = await (await fetch('/api/status')).json();
+  OFFLINE = st.offline;
+  $('#status').innerHTML = `<span class="badge">whisper: ${st.whisper}</span> ` +
+    (st.offline ? `<span class="badge warn">SCORING OFFLINE</span> ${st.hint}`
+                : `<span class="badge">LIVE · ${st.model}</span>`);
+  loadPrompt();
+}
+
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  t.classList.add('active'); MODE = t.dataset.mode; idx = 0; loadPrompt();
+}));
+
+async function loadPrompt(){
+  $('#result').classList.add('hidden');
+  const ep = MODE === 'repeat' ? '/api/repeat' : '/api/interview';
+  const d = await (await fetch(`${ep}?i=${idx}`)).json();
+  idx = d.i;
+  current = MODE === 'repeat' ? d.sentence : d.question;
+  $('#promptLabel').textContent = MODE === 'repeat'
+     ? `Repeat this sentence (${d.i+1}/${d.total})` : `Answer this question (${d.i+1}/${d.total})`;
+  $('#prompt').textContent = current;
+}
+
+$('#next').addEventListener('click', () => { idx++; loadPrompt(); });
+
+$('#play').addEventListener('click', () => {
+  const u = new SpeechSynthesisUtterance(current);
+  u.lang = 'en-US'; u.rate = MODE === 'repeat' ? 0.95 : 1.0;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+});
+
+$('#record').addEventListener('click', async () => {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  } catch(e){ $('#recHint').innerHTML = `<span class="warn">Mic blocked: ${e.name}. Allow microphone access (and use http://localhost).</span>`; return; }
+  chunks = [];
+  mediaRecorder = new MediaRecorder(stream);
+  mediaRecorder.ondataavailable = e => chunks.push(e.data);
+  mediaRecorder.onstop = upload;
+  mediaRecorder.start();
+  $('#record').disabled = true; $('#stop').disabled = false;
+  $('#recHint').textContent = '● Recording… speak now, then Stop.';
+});
+
+$('#stop').addEventListener('click', () => {
+  mediaRecorder.stop(); stream.getTracks().forEach(t => t.stop());
+  $('#record').disabled = false; $('#stop').disabled = true;
+  $('#recHint').textContent = 'Transcribing & scoring…';
+});
+
+async function upload(){
+  const blob = new Blob(chunks, { type: 'audio/webm' });
+  const fd = new FormData();
+  fd.append('audio', blob, 'clip.webm');
+  const ep = MODE === 'repeat' ? '/api/repeat/score' : '/api/interview/score';
+  fd.append(MODE === 'repeat' ? 'target' : 'question', current);
+  try {
+    const r = await fetch(ep, { method: 'POST', body: fd });
+    render(await r.json());
+    $('#recHint').textContent = 'Done. Play again, re-record, or go Next.';
+  } catch(e){ $('#recHint').innerHTML = `<span class="warn">Error: ${e}</span>`; }
+}
+
+function render(d){
+  const box = $('#result'); box.classList.remove('hidden');
+  const escaped = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  if (MODE === 'repeat'){
+    const pct = Math.round((d.accuracy||0)*100);
+    box.innerHTML = `<label>You said</label><div class="transcript">${escaped(d.transcript) || '(nothing transcribed)'}</div>
+      <label>Word match vs. target</label><div class="band">${pct}%</div>
+      <div class="meter"><div style="width:${pct}%"></div></div>`;
+  } else {
+    const crits = Object.entries(d.criteria||{}).map(([k,v]) =>
+      `<div class="crit"><b>${k}</b> <span class="score">${v.score}</span><br><span class="hint">${escaped(v.comment)}</span></div>`).join('');
+    const fixes = (d.top_fixes||[]).map(f => `<li>${escaped(f)}</li>`).join('');
+    box.innerHTML = `${d.offline ? '<p class="warn">⚠ Offline stub — set ANTHROPIC_API_KEY for real scoring.</p>':''}
+      <label>You said (transcript)</label><div class="transcript">${escaped(d.transcript) || '(nothing transcribed)'}</div>
+      <label>Band</label><div class="band">${d.band}<small> / 6</small></div>
+      ${crits}<label>Top fixes</label><ul>${fixes}</ul>
+      <label>Model answer to aim for</label><div class="transcript">${escaped(d.revised)}</div>`;
+  }
+}
+boot();
+</script>
+</body>
+</html>

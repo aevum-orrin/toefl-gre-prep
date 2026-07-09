@@ -25,17 +25,19 @@
 
 ## 可复用架构（TOEFL ↔ GRE）
 
-三个仓库：
+**Monorepo**：一个仓库 `toefl-gre-prep`，两科 + 共享代码都是并列子文件夹（全在 `main`）。
 
 ```
-prep-core     (共享内核，pip 可装)   ← 独立 repo
-toefl-learning  ── 依赖 ──▶ prep-core
-gre-learning    ── 依赖 ──▶ prep-core   (一个多月后新建)
+toefl-gre-prep/
+├── prep-core/   共享内核 (pip install -e ./prep-core)
+├── tools/       共享 App (writing-coach, speaking-app) —— 两科都用
+├── toefl/       托福数据 (rubrics, speaking, plan, 词表)
+└── gre/         GRE 数据 (一个多月后填)
 ```
 
-- **开发期**：`pip install -e ../prep-core`，改内核即时生效。
-- **`prep-core` 提供**：`FeedbackEngine`(Claude API + rubric)、`SRS`、`Recorder`+`Transcriber`、`ProgressStore`。
-- **各考试仓库提供**：rubric JSON、题型模板、词表、UI。GRE 只需换数据 + 加 GRE 特有题型（如 Analytical Writing、填空），内核零改动。
+- **`prep-core` 提供**：`FeedbackEngine`(Claude API + rubric)、`SRS`、`Transcriber`(faster-whisper)、`ProgressStore`。
+- **App 考试无关**：靠 `RUBRICS_DIR` / `SPEAKING_DIR` 指到对应科目的数据。
+- **加 GRE**：建 `gre/rubrics/*.json`(Issue/Argument)+ 词表，App 和内核**零改动**。
 
 ## 两个工具的 MVP 范围
 

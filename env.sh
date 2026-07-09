@@ -9,7 +9,7 @@ if [ -d "$HERE/.venv" ]; then
   source "$HERE/.venv/bin/activate"
 fi
 
-# Load local secrets (ANTHROPIC_API_KEY etc.) if present; .env is gitignored.
-if [ -f "$HERE/.env" ]; then
-  set -a; source "$HERE/.env"; set +a
-fi
+# NOTE: we deliberately do NOT export .env here. The apps load .env in-process
+# (prep_core.load_env). Exporting ANTHROPIC_API_KEY into this shell would make
+# Claude Code bill that key per-token instead of using your Max subscription.
+# So you can safely `source env.sh` and run Claude Code in the same shell.
