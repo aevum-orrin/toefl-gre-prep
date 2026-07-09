@@ -48,6 +48,7 @@
   </div>
 
   <section class="card">
+    <div class="hint" id="topic"></div>
     <label id="promptLabel">Prompt</label>
     <div class="prompt" id="prompt">…</div>
     <div class="row">
@@ -55,6 +56,7 @@
       <button id="record" class="rec">⏺ Record</button>
       <button id="stop" disabled>⏹ Stop</button>
       <button id="next">Next ▸</button>
+      <button id="gen" title="Generate a brand-new item with the LLM">✨ Fresh</button>
     </div>
     <div class="hint" id="recHint">Click Play to hear it, then Record your answer and Stop when done.</div>
     <div class="result hidden" id="result"></div>
@@ -62,35 +64,75 @@
 </main>
 <script>
 const $ = s => document.querySelector(s);
-let MODE = "repeat", idx = 0, current = "", OFFLINE = false;
+let MODE = "repeat", idx = 0, current = "", OFFLINE = false, LIVEGEN = false;
+let questions = [], qi = 0, topic = "", total = 0;
 let mediaRecorder, chunks = [], stream;
 
 async function boot(){
   const st = await (await fetch('/api/status')).json();
-  OFFLINE = st.offline;
+  OFFLINE = st.offline; LIVEGEN = st.live_generation;
   $('#status').innerHTML = `<span class="badge">whisper: ${st.whisper}</span> ` +
     (st.offline ? `<span class="badge warn">SCORING OFFLINE</span> ${st.hint}`
-                : `<span class="badge">LIVE · ${st.model}</span>`);
-  loadPrompt();
+                : `<span class="badge">LIVE · ${st.provider} · ${st.model}</span>`);
+  $('#gen').style.display = LIVEGEN ? '' : 'none';
+  loadItem();
 }
 
 document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
-  t.classList.add('active'); MODE = t.dataset.mode; idx = 0; loadPrompt();
+  t.classList.add('active'); MODE = t.dataset.mode; idx = 0; qi = 0; loadItem();
 }));
 
-async function loadPrompt(){
+// Load an item from the bank (repeat: one sentence; interview: one topic + 4 questions).
+async function loadItem(){
   $('#result').classList.add('hidden');
-  const ep = MODE === 'repeat' ? '/api/repeat' : '/api/interview';
-  const d = await (await fetch(`${ep}?i=${idx}`)).json();
-  idx = d.i;
-  current = MODE === 'repeat' ? d.sentence : d.question;
-  $('#promptLabel').textContent = MODE === 'repeat'
-     ? `Repeat this sentence (${d.i+1}/${d.total})` : `Answer this question (${d.i+1}/${d.total})`;
+  if (MODE === 'repeat'){
+    const d = await (await fetch(`/api/repeat?i=${idx}`)).json();
+    idx = d.i; total = d.total; $('#topic').textContent = '';
+    showRepeat(d.sentence, `Repeat this sentence (${idx+1}/${total})`);
+  } else {
+    const d = await (await fetch(`/api/interview?i=${idx}`)).json();
+    idx = d.i; total = d.total; questions = d.questions; qi = 0;
+    showInterview(d.topic);
+  }
+}
+
+function showRepeat(sentence, label){
+  current = sentence;
+  $('#promptLabel').textContent = label;
+  $('#prompt').textContent = sentence;
+}
+
+function showInterview(t){
+  topic = t;
+  current = questions[qi] || '';
+  $('#topic').textContent = `Interview topic: ${topic}`;
+  $('#promptLabel').textContent = `Answer this question (Q${qi+1}/${questions.length}` +
+     (MODE==='interview' && total ? `, topic ${idx+1}/${total}` : '') + `)`;
   $('#prompt').textContent = current;
 }
 
-$('#next').addEventListener('click', () => { idx++; loadPrompt(); });
+// Next: repeat -> next sentence; interview -> next question, then next topic.
+$('#next').addEventListener('click', () => {
+  if (MODE === 'repeat'){ idx++; loadItem(); }
+  else if (qi < questions.length - 1){ qi++; $('#result').classList.add('hidden'); showInterview(topic); }
+  else { idx++; loadItem(); }
+});
+
+// Fresh: generate a brand-new item with the LLM (falls back to bank server-side).
+$('#gen').addEventListener('click', async () => {
+  $('#recHint').textContent = 'Generating a fresh item…';
+  if (MODE === 'repeat'){
+    const d = await (await fetch('/api/repeat/generate')).json();
+    showRepeat(d.sentence, `Repeat this sentence (${d.source})`);
+  } else {
+    const d = await (await fetch('/api/interview/generate')).json();
+    questions = d.questions; qi = 0; total = 0; idx = 0;
+    showInterview(d.topic);
+  }
+  $('#result').classList.add('hidden');
+  $('#recHint').textContent = 'Fresh item ready. Play, then Record.';
+});
 
 $('#play').addEventListener('click', () => {
   const u = new SpeechSynthesisUtterance(current);
@@ -142,9 +184,9 @@ function render(d){
     const crits = Object.entries(d.criteria||{}).map(([k,v]) =>
       `<div class="crit"><b>${k}</b> <span class="score">${v.score}</span><br><span class="hint">${escaped(v.comment)}</span></div>`).join('');
     const fixes = (d.top_fixes||[]).map(f => `<li>${escaped(f)}</li>`).join('');
-    box.innerHTML = `${d.offline ? '<p class="warn">⚠ Offline stub — set ANTHROPIC_API_KEY for real scoring.</p>':''}
+    box.innerHTML = `${d.offline ? '<p class="warn">⚠ Offline stub — set GEMINI_API_KEY (free) for real scoring.</p>':''}
       <label>You said (transcript)</label><div class="transcript">${escaped(d.transcript) || '(nothing transcribed)'}</div>
-      <label>Band</label><div class="band">${d.band}<small> / 6</small></div>
+      <label>Task score</label><div class="band">${d.band}<small> / 5</small></div>
       ${crits}<label>Top fixes</label><ul>${fixes}</ul>
       <label>Model answer to aim for</label><div class="transcript">${escaped(d.revised)}</div>`;
   }

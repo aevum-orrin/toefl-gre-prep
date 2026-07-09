@@ -7,7 +7,11 @@ name = "prep-core"
 version = "0.1.0"
 description = "Exam-agnostic core for language-test prep tools (TOEFL, GRE): AI feedback, SRS, audio transcription, progress tracking."
 requires-python = ">=3.10"
+# Free-first: Gemini is the default backend, so google-genai ships by default. groq + anthropic are
+# alternative backends selectable via LLM_PROVIDER (both light SDKs). All are lazy-imported.
 dependencies = [
+    "google-genai>=1.0",
+    "groq>=0.11",
     "anthropic>=0.40",
 ]
 

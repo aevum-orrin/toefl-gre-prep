@@ -1,0 +1,13 @@
+{
+  "name": "TOEFL 2026 Writing — Write for an Academic Discussion",
+  "task_type": "academic_discussion",
+  "scale_min": 0,
+  "scale_max": 5,
+  "criteria": [
+    {"key": "relevance_and_elaboration", "name": "Relevance & Elaboration", "description": "The post is a relevant contribution to the professor's question and its explanations, examples, and details are well developed. Level 5 = relevant + well-elaborated; level 3 = part of an explanation/example missing, unclear, or partly irrelevant; level 2 = poorly elaborated or only partly relevant."},
+    {"key": "discourse_engagement", "name": "Discourse Engagement", "description": "Functions as a genuine contribution to the ongoing discussion: takes a clear stance and engages with the prompt (and ideally the two classmates' posts) rather than writing a stand-alone mini-essay."},
+    {"key": "syntax_and_vocabulary", "name": "Syntax & Vocabulary", "description": "A variety of syntactic structures and precise, idiomatic word choice. Lower levels show a limited range and imprecise or repetitive vocabulary."},
+    {"key": "language_accuracy", "name": "Language Accuracy", "description": "Control of grammar, word forms, spelling and punctuation. At level 5 only occasional timed-condition slips; errors accumulate at lower levels until they impede meaning."}
+  ],
+  "instructions": "Official 2026 ETS 'Write for an Academic Discussion' task, scored 0-5 (holistic; these are the named facets inside each level). A strong response is ~100-130 words in ~10 minutes: state a clear opinion on the professor's question, support it with specific reasoning/an example, and engage with the discussion. Reward a specific, well-supported stance; penalize vague generalities, off-topic content, and repeated errors that impede meaning. The 0-5 task score feeds the 1.0-6.0 Writing section band."
+}

@@ -1,17 +1,16 @@
-"""AI feedback engine. Wraps the Claude API to score & revise writing and speaking against
-a Rubric, using structured outputs (guaranteed-valid JSON) + adaptive thinking. Falls back to
-a deterministic offline stub when no API key is available, so the app and tests run without
-network or secrets."""
+"""AI feedback engine: scores & revises writing and speaking against a Rubric, using structured
+JSON output. Backend-agnostic — it talks to whatever `providers.make_provider()` picks (free Gemini
+by default, or Groq / Anthropic), and falls back to a deterministic OFFLINE STUB when no backend is
+usable, so the app and tests run without network or secrets."""
 from __future__ import annotations
 
-import json
-import os
 import re
 from dataclasses import dataclass, asdict
 
 from .rubric import Rubric
+from .providers import make_provider, Provider
 
-DEFAULT_MODEL = "claude-opus-4-8"
+DEFAULT_MODEL = "claude-opus-4-8"  # kept for back-compat imports; real default is provider-driven
 
 
 @dataclass
@@ -20,36 +19,40 @@ class WritingFeedback:
     criteria: dict                    # key -> {"score": float, "comment": str}
     top_fixes: list                   # list[str], highest-leverage improvements
     revised: str                      # a polished rewrite (essay) or model answer (speaking)
-    offline: bool = False             # True when produced by the stub, not the model
+    offline: bool = False             # True when produced by the stub, not a model
 
     def to_dict(self) -> dict:
         return asdict(self)
 
 
 _SYSTEM_WRITING = (
-    "You are a strict but constructive TOEFL/GRE writing rater. Score the essay against the "
-    "rubric, comment briefly on each criterion, list the highest-leverage fixes, and give one "
-    "polished rewrite that keeps the author's ideas but fixes language and structure."
+    "You are a strict but constructive TOEFL/GRE writing rater following the official 2026 ETS "
+    "rubric. Score the response against the rubric, comment briefly on each criterion, list the "
+    "highest-leverage fixes, and give one polished rewrite that keeps the author's ideas but fixes "
+    "language, structure, and task fulfilment."
 )
 _SYSTEM_SPEAKING = (
-    "You are a TOEFL speaking rater. You receive an automatic transcript of a spoken response, "
-    "so ignore minor transcription artifacts and filler; judge delivery, language use, and topic "
-    "development against the rubric. Comment on each criterion, list the highest-leverage fixes, "
-    "and provide one improved model answer the test-taker could aim for."
+    "You are a TOEFL speaking rater following the official 2026 ETS rubric. You receive an automatic "
+    "transcript of a spoken response, so ignore minor transcription artifacts and filler; judge "
+    "delivery, language use, and topic development against the rubric. Comment on each criterion, "
+    "list the highest-leverage fixes, and provide one improved model answer to aim for."
 )
 
 
 class FeedbackEngine:
-    def __init__(self, model: str = DEFAULT_MODEL, api_key: str | None = None,
-                 offline: bool | None = None):
-        self.model = model
-        key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        # Auto-detect offline: no key -> stub. Caller can force either way.
-        self.offline = (not key) if offline is None else offline
-        self._client = None
-        if not self.offline:
-            from anthropic import Anthropic  # lazy: only needed for real calls
-            self._client = Anthropic(api_key=key)
+    def __init__(self, provider: str | Provider | None = None, model: str | None = None,
+                 api_key: str | None = None, offline: bool | None = None):
+        """provider: a provider name ('gemini'|'groq'|'anthropic'|'offline'), a ready Provider,
+        or None to auto-pick from env (LLM_PROVIDER, else first key found, free-first)."""
+        if offline is True or provider == "offline":
+            self.provider = None
+        elif isinstance(provider, Provider):
+            self.provider = provider
+        else:
+            self.provider = make_provider(provider, model=model, api_key=api_key)
+        self.offline = (self.provider is None) if offline is None else offline
+        self.provider_name = self.provider.name if self.provider else "offline"
+        self.model = self.provider.model if self.provider else (model or "offline-stub")
 
     def score_writing(self, essay: str, rubric: Rubric, prompt_text: str = "") -> WritingFeedback:
         if self.offline:
@@ -57,7 +60,7 @@ class FeedbackEngine:
         user = (
             f"{rubric.as_prompt_block()}\n\n"
             f"Task prompt shown to the test-taker:\n{prompt_text or '(not provided)'}\n\n"
-            f"Essay to score:\n\"\"\"\n{essay}\n\"\"\""
+            f"Response to score:\n\"\"\"\n{essay}\n\"\"\""
         )
         return self._score(_SYSTEM_WRITING, user, rubric)
 
@@ -71,19 +74,9 @@ class FeedbackEngine:
         )
         return self._score(_SYSTEM_SPEAKING, user, rubric)
 
-    # -- shared real-API path: structured output guarantees valid JSON in the schema shape --
+    # -- shared real path: provider returns JSON in the rubric's schema shape --
     def _score(self, system: str, user: str, rubric: Rubric) -> WritingFeedback:
-        resp = self._client.messages.create(
-            model=self.model,
-            max_tokens=8000,
-            thinking={"type": "adaptive"},
-            output_config={"effort": "medium",
-                           "format": {"type": "json_schema", "schema": _schema_for(rubric)}},
-            system=system,
-            messages=[{"role": "user", "content": user}],
-        )
-        text = next((b.text for b in resp.content if getattr(b, "type", None) == "text"), "")
-        data = json.loads(text) if text.lstrip().startswith("{") else _extract_json(text)
+        data = self.provider.complete_json(system, user, _schema_for(rubric))
         return WritingFeedback(
             band=float(data.get("band", 0)),
             criteria=data.get("criteria", {}),
@@ -98,12 +91,12 @@ class FeedbackEngine:
         span = rubric.scale_max - rubric.scale_min
         band = round(rubric.scale_min + span * min(1.0, n / 220.0), 1)  # heuristic, NOT a real score
         criteria = {
-            c.key: {"score": band, "comment": f"[offline stub] {c.name}: set ANTHROPIC_API_KEY for real feedback."}
+            c.key: {"score": band, "comment": f"[offline stub] {c.name}: set an LLM key for real feedback."}
             for c in rubric.criteria
         }
         fixes = [
-            "This is OFFLINE STUB output — no ANTHROPIC_API_KEY was set.",
-            f"Word count ~{n}. Real scoring needs the Claude API key in .env.",
+            "This is OFFLINE STUB output — no LLM backend was usable (no API key set).",
+            f"Word count ~{n}. Set GEMINI_API_KEY (free) or another key in .env for real scoring.",
         ]
         return WritingFeedback(band=band, criteria=criteria, top_fixes=fixes, revised=text, offline=True)
 
@@ -128,17 +121,3 @@ def _schema_for(rubric: Rubric) -> dict:
         "required": ["band", "criteria", "top_fixes", "revised"],
         "additionalProperties": False,
     }
-
-
-def _extract_json(text: str) -> dict:
-    """Fallback parser if structured output ever returns fences/prose around the JSON."""
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.MULTILINE).strip()
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        m = re.search(r"\{.*\}", text, re.DOTALL)
-        if m:
-            return json.loads(m.group(0))
-        raise

@@ -1,12 +1,182 @@
 [
-  "Describe a place you enjoy visiting and explain why it is meaningful to you.",
-  "Some students prefer studying alone, others in groups. Which do you prefer, and why?",
-  "Talk about a skill you would like to learn. How would you go about learning it?",
-  "Do you think universities should require students to take physical education courses? Why or why not?",
-  "Describe a decision you made recently. What factors did you consider?",
-  "Some people prefer to plan their activities in detail; others prefer to be spontaneous. Which are you?",
-  "If you could change one thing about your hometown, what would it be and why?",
-  "Do you agree or disagree: technology has made people less social. Explain with examples.",
-  "Describe a person who has influenced you and explain how they shaped your goals.",
-  "Is it better to have a few close friends or many acquaintances? Give reasons for your answer."
+  {
+    "topic": "Choosing a major",
+    "questions": [
+      "How did you first become interested in the subject you are studying?",
+      "What has been the most surprising thing you have learned so far?",
+      "Was there a moment when you doubted your choice? What happened?",
+      "How do you think this major will shape your future career?"
+    ]
+  },
+  {
+    "topic": "A memorable teacher",
+    "questions": [
+      "Can you tell me about a teacher who made a strong impression on you?",
+      "What specifically did they do that was different from other teachers?",
+      "How did their teaching change the way you approach learning?",
+      "If you could thank them today, what would you say?"
+    ]
+  },
+  {
+    "topic": "Living away from home",
+    "questions": [
+      "What was the hardest part about moving away from your family?",
+      "How did you handle those difficulties in the beginning?",
+      "What daily habits helped you adjust to your new environment?",
+      "Looking back, how has living independently changed you?"
+    ]
+  },
+  {
+    "topic": "Group work experience",
+    "questions": [
+      "Can you describe a group project you worked on recently?",
+      "What role did you naturally take on within the team?",
+      "How did your group handle a disagreement or a slacking member?",
+      "What would you do differently in your next group project?"
+    ]
+  },
+  {
+    "topic": "A hobby or pastime",
+    "questions": [
+      "What is a hobby you enjoy doing in your free time?",
+      "How did you first get started with it?",
+      "What do you find most rewarding about it?",
+      "Do you think this hobby has taught you anything useful?"
+    ]
+  },
+  {
+    "topic": "Overcoming a challenge",
+    "questions": [
+      "Tell me about a challenge you faced and had to overcome.",
+      "What made the situation especially difficult for you?",
+      "What steps did you take to push through it?",
+      "How did overcoming it affect your confidence afterward?"
+    ]
+  },
+  {
+    "topic": "Technology in daily life",
+    "questions": [
+      "How does technology fit into your everyday routine?",
+      "Is there an app or device you could not imagine living without?",
+      "Have you ever felt that technology created a problem for you?",
+      "How do you try to keep a healthy balance with your screen time?"
+    ]
+  },
+  {
+    "topic": "Travel and new places",
+    "questions": [
+      "Can you describe a trip that stands out in your memory?",
+      "What was the most unexpected thing you encountered there?",
+      "How did travelling to that place change your perspective?",
+      "Where would you like to travel next, and why?"
+    ]
+  },
+  {
+    "topic": "A part-time job",
+    "questions": [
+      "Have you ever had a part-time job or internship? Tell me about it.",
+      "What was a typical day at that job like for you?",
+      "What was the most valuable lesson you took away from it?",
+      "How do you think that experience will help you in the future?"
+    ]
+  },
+  {
+    "topic": "Managing time and stress",
+    "questions": [
+      "How do you usually organize your time during a busy week?",
+      "What tends to cause you the most stress as a student?",
+      "What strategies do you use to stay calm under pressure?",
+      "How has your approach to managing stress changed over time?"
+    ]
+  },
+  {
+    "topic": "A book or film that mattered",
+    "questions": [
+      "Is there a book or film that has really stayed with you?",
+      "What was it about the story that resonated with you?",
+      "Did it change any of your ideas or opinions?",
+      "Would you recommend it to a friend, and how would you describe it?"
+    ]
+  },
+  {
+    "topic": "Community and volunteering",
+    "questions": [
+      "Have you ever been involved in volunteer or community work?",
+      "What motivated you to get involved in the first place?",
+      "What did you find most difficult about the experience?",
+      "How did helping others affect the way you see your community?"
+    ]
+  },
+  {
+    "topic": "Learning a language",
+    "questions": [
+      "What has your experience been like learning a new language?",
+      "Which part of the language do you find the hardest?",
+      "What methods have worked best for you in practicing it?",
+      "How do you feel when you can finally communicate in that language?"
+    ]
+  },
+  {
+    "topic": "Friendship",
+    "questions": [
+      "What qualities do you value most in a good friend?",
+      "Can you tell me how you met one of your closest friends?",
+      "How do you keep a friendship strong over time?",
+      "Has a friendship ever taught you something important about yourself?"
+    ]
+  },
+  {
+    "topic": "Your hometown",
+    "questions": [
+      "Can you describe the place where you grew up?",
+      "What do you miss most about it when you are away?",
+      "Is there something you would change about your hometown?",
+      "How has growing up there shaped who you are today?"
+    ]
+  },
+  {
+    "topic": "Goals for the future",
+    "questions": [
+      "What is a goal you are currently working toward?",
+      "Why is this goal particularly meaningful to you?",
+      "What obstacles do you expect to face along the way?",
+      "How will you know when you have truly achieved it?"
+    ]
+  },
+  {
+    "topic": "Health and exercise",
+    "questions": [
+      "How do you try to stay healthy in your daily life?",
+      "Do you have a form of exercise or activity that you enjoy?",
+      "What makes it hard to stick to healthy habits sometimes?",
+      "How do you feel physically and mentally when you stay active?"
+    ]
+  },
+  {
+    "topic": "Studying online versus in person",
+    "questions": [
+      "Have you taken any online courses? What was that like?",
+      "What advantages did you notice compared to a physical classroom?",
+      "What did you find frustrating or limiting about studying online?",
+      "Which format do you prefer overall, and why?"
+    ]
+  },
+  {
+    "topic": "A mistake you learned from",
+    "questions": [
+      "Can you tell me about a mistake that taught you something?",
+      "What exactly went wrong in that situation?",
+      "How did you react once you realized your mistake?",
+      "What do you do differently now because of that experience?"
+    ]
+  },
+  {
+    "topic": "Food and cooking",
+    "questions": [
+      "Do you enjoy cooking, or do you prefer eating out?",
+      "Is there a dish that is especially meaningful to you?",
+      "Who taught you the most about food or cooking?",
+      "How do your food choices reflect your culture or personality?"
+    ]
+  }
 ]

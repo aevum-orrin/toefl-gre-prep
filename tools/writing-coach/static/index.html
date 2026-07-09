@@ -43,8 +43,9 @@
   <section class="card">
     <label for="task">Task</label>
     <select id="task"></select>
-    <label for="prompt">Prompt / question (optional — paste the discussion or reading+lecture)</label>
-    <textarea id="prompt" rows="3" placeholder="e.g. Your professor asks: Should universities require…"></textarea>
+    <button id="loadPrompt" type="button" title="Fill in a real 2026-format prompt from the bank">🎲 Load a 2026 prompt</button>
+    <label for="prompt">Prompt / question (the task shown to you — from the bank or your own)</label>
+    <textarea id="prompt" rows="4" placeholder="Click “Load a 2026 prompt”, or paste your own."></textarea>
     <label for="essay">Your response</label>
     <textarea id="essay" placeholder="Write or paste your essay here…"></textarea>
     <div class="wc"><span id="wc">0</span> words</div>
@@ -59,16 +60,42 @@
 const $ = s => document.querySelector(s);
 let OFFLINE = false;
 
+let PROMPTS = {}, pidx = {};   // task_type -> prompt list / cursor
+
 async function boot(){
   const st = await (await fetch('/api/status')).json();
   OFFLINE = st.offline;
   $('#status').innerHTML = st.offline
     ? `<span class="badge offline">OFFLINE STUB</span> ${st.hint}`
-    : `<span class="badge">LIVE · ${st.model}</span>`;
+    : `<span class="badge">LIVE · ${st.provider} · ${st.model}</span>`;
   const tasks = await (await fetch('/api/tasks')).json();
   $('#task').innerHTML = tasks.map(t =>
-    `<option value="${t.task_type}">${t.name} (band ${t.scale[0]}–${t.scale[1]})</option>`).join('');
+    `<option value="${t.task_type}">${t.name} (score ${t.scale[0]}–${t.scale[1]})</option>`).join('');
 }
+
+// Format one bank prompt as the text shown to the test-taker.
+function formatPrompt(task, p){
+  if (task === 'academic_discussion'){
+    const posts = (p.posts||[]).map(x => `${x.name}: ${x.text}`).join('\n');
+    return `Course: ${p.course}\n\nProfessor: ${p.professor}\n\n${posts}`;
+  }
+  if (task === 'write_email'){
+    return `${p.situation}\n\nTask: ${p.prompt}`;
+  }
+  return JSON.stringify(p);
+}
+
+$('#loadPrompt').addEventListener('click', async () => {
+  const task = $('#task').value;
+  if (!PROMPTS[task]){
+    PROMPTS[task] = await (await fetch(`/api/prompts?task_type=${task}`)).json();
+    pidx[task] = 0;
+  }
+  const list = PROMPTS[task] || [];
+  if (!list.length){ $('#prompt').value = '(no prompt bank generated for this task yet)'; return; }
+  const p = list[pidx[task] % list.length]; pidx[task]++;
+  $('#prompt').value = formatPrompt(task, p);
+});
 
 $('#essay').addEventListener('input', e => {
   $('#wc').textContent = (e.target.value.trim().match(/\S+/g) || []).length;
@@ -93,8 +120,8 @@ function render(fb){
     `<div class="crit"><b>${k}</b> <span class="score">${v.score}</span><br><span class="wc">${v.comment}</span></div>`).join('');
   const fixes = fb.top_fixes.map(f => `<li>${f}</li>`).join('');
   $('#result').innerHTML = `
-    ${fb.offline ? '<p class="offline">⚠ Offline stub — set ANTHROPIC_API_KEY for real scoring.</p>' : ''}
-    <div class="band">${fb.band}<small> / band</small></div>
+    ${fb.offline ? '<p class="offline">⚠ Offline stub — set GEMINI_API_KEY (free) for real scoring.</p>' : ''}
+    <div class="band">${fb.band}<small> / 5 (task score)</small></div>
     ${crits}
     <label>Top fixes</label><ul>${fixes}</ul>
     <label>Polished rewrite</label><div class="revised">${escapeHtml(fb.revised)}</div>`;

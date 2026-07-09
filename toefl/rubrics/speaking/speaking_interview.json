@@ -1,0 +1,13 @@
+{
+  "name": "TOEFL 2026 Speaking — Take an Interview",
+  "task_type": "speaking_interview",
+  "scale_min": 0,
+  "scale_max": 5,
+  "criteria": [
+    {"key": "topic_relevance_and_elaboration", "name": "Topic Relevance & Elaboration", "description": "Fully addresses the interviewer's question and stays on topic with well-developed ideas. Level 5 = on-topic and well elaborated; level 3 = on topic but elaboration limited; level 2 = minimally connected or mostly repeats language from the question."},
+    {"key": "fluency_and_pace", "name": "Fluency & Pace", "description": "Good conversational pace with natural pauses. Level 5 = smooth with natural pausing; level 3 = frequent or lengthy pauses and fillers make it choppy; level 2 = halting, hard to follow."},
+    {"key": "intelligibility_pronunciation", "name": "Intelligibility & Pronunciation", "description": "Pronunciation, rhythm and intonation support meaning and require little listener effort. Lower levels: word-level pronunciation or stress/rhythm sometimes or often impede understanding."},
+    {"key": "language_use", "name": "Language Use", "description": "Range and accuracy of grammar and vocabulary that allow precise meaning. Level 5 = a range used accurately for precise meaning; lower = limited range/accuracy that restricts precision and clarity."}
+  ],
+  "instructions": "Official 2026 ETS 'Take an Interview' task, scored 0-5 per response (holistic; these are the named facets inside each level). This is a transcript of a spontaneous ~45-second spoken answer captured by automatic speech recognition — ignore transcription artifacts and filler words, and note that ASR cannot fully judge pronunciation, so weight topic development, fluency cues, and language use most. Be encouraging but honest. The 0-5 task scores feed the 1.0-6.0 Speaking section band."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "TOEFL 2026 Writing — Write an Email",
+  "task_type": "write_email",
+  "scale_min": 0,
+  "scale_max": 5,
+  "criteria": [
+    {"key": "elaboration_and_purpose", "name": "Elaboration & Purpose", "description": "Ideas are developed enough to effectively accomplish the communicative purpose (the request / information / proposed solution). Level 5 = elaboration that effectively supports the purpose; level 2-3 = limited or partly irrelevant."},
+    {"key": "social_conventions", "name": "Social Conventions", "description": "Email-appropriate politeness and register, and correct formulation of the action (request, refusal, criticism, thanks). Greeting/closing, tone matched to recipient, information organized clearly. Heavily weighted for this task."},
+    {"key": "syntax_and_vocabulary", "name": "Syntax & Vocabulary", "description": "Syntactic variety and precise, idiomatic word choice. Level 5 = effective variety + precise/idiomatic; lower = narrow range, imprecise or repetitive wording."},
+    {"key": "language_accuracy", "name": "Language Accuracy", "description": "Control of grammar, word forms, spelling and punctuation. At level 5 only the odd timed-condition typo (there/their) is tolerated; errors accumulate at lower levels until they impede meaning."}
+  ],
+  "instructions": "Official 2026 ETS 'Write an Email' task, scored 0-5 (holistic; these are the named facets inside each level). A strong response is ~80-120 words written in ~7 minutes: read the situation, address the stated purpose, use appropriate email register with a greeting and closing. Reward a clear, complete, appropriately-toned message; penalize wrong register, missing the purpose, telegraphic phrasing, or copying the prompt. The 0-5 task score feeds the 1.0-6.0 Writing section band."
+}

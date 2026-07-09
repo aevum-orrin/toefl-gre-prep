@@ -1,0 +1,102 @@
+[
+  {
+    "id": "email-01",
+    "situation": "You missed an important lecture because you were sick, and your professor covered material that will appear on the upcoming midterm exam.",
+    "prompt": "Write an email to your professor. Explain why you were absent, ask what you missed, and request the lecture notes or a chance to make up the work."
+  },
+  {
+    "id": "email-02",
+    "situation": "Your university library recently reduced its weekend opening hours, which makes it difficult for you and other students to study on Saturdays and Sundays.",
+    "prompt": "Write an email to the library director. Explain the problem the new hours cause, and propose a solution that would better serve students."
+  },
+  {
+    "id": "email-03",
+    "situation": "A friend from another city is planning to visit you for a weekend, and they have asked you for suggestions about what to do.",
+    "prompt": "Write an email to your friend. Give information about two or three activities you could do together and explain why you think they would enjoy them."
+  },
+  {
+    "id": "email-04",
+    "situation": "You signed up for a group presentation, but one of your teammates has not responded to any messages and the deadline is approaching.",
+    "prompt": "Write an email to your teammate. Explain the situation, express your concern, and propose a plan so the group can finish the project on time."
+  },
+  {
+    "id": "email-05",
+    "situation": "You ordered a textbook online from the campus bookstore, but the package that arrived contained the wrong edition of the book.",
+    "prompt": "Write an email to the bookstore. Describe the problem, provide the relevant order details, and request either a replacement or a refund."
+  },
+  {
+    "id": "email-06",
+    "situation": "Your academic advisor asked you to choose your elective courses for next semester and email your choices with a brief explanation.",
+    "prompt": "Write an email to your advisor. Tell them which two elective courses you have chosen and explain why each one fits your goals."
+  },
+  {
+    "id": "email-07",
+    "situation": "A club you belong to wants to organize a fundraising event, and the club president has asked members to suggest ideas by email.",
+    "prompt": "Write an email to the club president. Propose an idea for the fundraising event and explain how it could be organized successfully."
+  },
+  {
+    "id": "email-08",
+    "situation": "You have been offered a part-time job on campus, but the proposed schedule conflicts with one of your required classes.",
+    "prompt": "Write an email to your future supervisor. Explain the scheduling conflict and request an adjustment that would allow you to accept the job."
+  },
+  {
+    "id": "email-09",
+    "situation": "Your neighbor in the dormitory frequently plays loud music late at night, making it hard for you to sleep and study.",
+    "prompt": "Write an email to your neighbor. Politely describe the problem, explain how it affects you, and suggest a reasonable solution."
+  },
+  {
+    "id": "email-10",
+    "situation": "A professor sent an email inviting students to join a new research project, and you are interested in participating.",
+    "prompt": "Write an email to the professor. Express your interest, briefly describe why you are a good fit, and ask what the next steps would be."
+  },
+  {
+    "id": "email-11",
+    "situation": "You planned to attend a friend's birthday dinner, but you now realize you have an exam early the next morning and cannot stay out late.",
+    "prompt": "Write an email to your friend. Apologize, explain the situation, and suggest another way to celebrate together."
+  },
+  {
+    "id": "email-12",
+    "situation": "The Wi-Fi connection in your dormitory has been unreliable for the past two weeks, disrupting your online classes and assignments.",
+    "prompt": "Write an email to the campus IT department. Describe the problem in detail and request that it be fixed as soon as possible."
+  },
+  {
+    "id": "email-13",
+    "situation": "Your student association is looking for a guest speaker for an upcoming event, and you know a local professional who might be willing to speak.",
+    "prompt": "Write an email to the professional. Introduce yourself, explain the event, and invite them to speak while giving the key details."
+  },
+  {
+    "id": "email-14",
+    "situation": "You borrowed a friend's laptop for a presentation and accidentally spilled coffee on it, causing minor damage to the keyboard.",
+    "prompt": "Write an email to your friend. Explain what happened, apologize sincerely, and propose how you will make things right."
+  },
+  {
+    "id": "email-15",
+    "situation": "A company where you applied for an internship has offered you a position, and they have asked you to confirm whether you accept.",
+    "prompt": "Write an email to the company. Accept the offer, express your enthusiasm, and ask any questions you have about starting."
+  },
+  {
+    "id": "email-16",
+    "situation": "The cafeteria on campus offers very few healthy or vegetarian options, and several students have complained about the limited menu.",
+    "prompt": "Write an email to the cafeteria manager. Describe the concern on behalf of students and propose specific improvements to the menu."
+  },
+  {
+    "id": "email-17",
+    "situation": "You need a letter of recommendation from a former teacher for a scholarship application, and the deadline is in two weeks.",
+    "prompt": "Write an email to your former teacher. Politely request the recommendation, explain the scholarship, and mention the deadline and how to submit it."
+  },
+  {
+    "id": "email-18",
+    "situation": "You and a classmate agreed to study together for a final exam, but you have realized your study styles are very different and it is not working well.",
+    "prompt": "Write an email to your classmate. Tactfully raise the issue and suggest a new arrangement that could work better for both of you."
+  },
+  {
+    "id": "email-19",
+    "situation": "Your department is planning to move a popular course to an early morning time slot, and many students think this change is inconvenient.",
+    "prompt": "Write an email to the department coordinator. Explain why the new time is a problem and propose an alternative scheduling solution."
+  },
+  {
+    "id": "email-20",
+    "situation": "A relative has generously offered to help pay for part of your studies, and you want to thank them and update them on your progress.",
+    "prompt": "Write an email to your relative. Express your gratitude, share information about how your studies are going, and describe your goals."
+  }
+]

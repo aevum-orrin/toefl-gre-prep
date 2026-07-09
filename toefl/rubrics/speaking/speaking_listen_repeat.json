@@ -1,0 +1,12 @@
+{
+  "name": "TOEFL 2026 Speaking — Listen and Repeat",
+  "task_type": "speaking_listen_repeat",
+  "scale_min": 0,
+  "scale_max": 5,
+  "criteria": [
+    {"key": "repetition_exactness", "name": "Repetition Exactness", "description": "How completely and exactly the utterance reproduces the prompt. Level 5 = an exact repetition; level 4 = captures the meaning with minor word/grammar changes; level 3 = contains a majority of content words but changes meaning; level 2 = a significant part is missing; level 1 = very little of the prompt."},
+    {"key": "meaning_preservation", "name": "Meaning Preservation", "description": "Whether the original meaning survives, accounting for missing/changed function words, tense/number markers, transpositions, and related-word substitutions."},
+    {"key": "intelligibility", "name": "Intelligibility", "description": "How understandable the speech is to a listener unfamiliar with the prompt; occasional to pervasive intelligibility problems lower the score."}
+  ],
+  "instructions": "Official 2026 ETS 'Listen and Repeat' task, scored 0-5 per sentence. The test-taker hears one short sentence once and repeats it exactly. In this app the primary signal is automatic word-overlap accuracy between the target and the ASR transcript; this rubric documents the official facets and can drive optional LLM commentary. The 0-5 task scores feed the 1.0-6.0 Speaking section band."
+}
