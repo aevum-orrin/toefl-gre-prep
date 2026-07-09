@@ -28,7 +28,7 @@
   .band { font-size:46px; font-weight:800; line-height:1; }
   .band small { font-size:15px; color:var(--mut); font-weight:400; }
   details.sec { border:1px solid var(--line); border-radius:9px; margin:9px 0; padding:2px 12px; }
-  details.sec > summary { cursor:pointer; padding:9px 0; font-weight:700; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  details.sec > summary { cursor:pointer; padding:9px 0; font-weight:700; list-style:none; display:flex; align-items:center; gap:8px; }
   details.sec > summary::-webkit-details-marker { display:none; }
   details.sec > summary::before { content:"▸"; color:var(--mut); font-size:13px; transition:transform .15s; }
   details.sec[open] > summary::before { transform:rotate(90deg); }
@@ -187,7 +187,7 @@ async function loadSimilar(){
       return;
     }
     box.innerHTML = r.prompts.map((p,i) =>
-      `<details class="sec"><summary>Similar prompt ${i+1} <span class="sc">▸</span></summary>
+      `<details class="sec"><summary>Similar prompt ${i+1}</summary>
          <div class="body"><div class="revised">${escapeHtml(p)}</div>
          <button class="loadbtn" data-p="${encodeURIComponent(p)}">✍️ Use this prompt (load &amp; clear)</button></div></details>`).join('');
     box.querySelectorAll('.loadbtn').forEach(b =>
