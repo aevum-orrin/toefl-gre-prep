@@ -5,33 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TOEFL Writing Coach</title>
 <style>
-  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#3b6ea5; }
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#3b6ea5;
+          --ok:#2f8f6b; --bad:#c0392b; }
   @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#6ea8dc; } }
   * { box-sizing:border-box; }
-  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  body { margin:0; font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
   header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
-  h1 { font-size:18px; margin:0; }
-  #status { font-size:12px; color:var(--mut); }
-  .badge { font-size:11px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
+  h1 { font-size:20px; margin:0; }
+  #status { font-size:13px; color:var(--mut); }
+  .badge { font-size:12px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
   main { width:92%; max-width:2000px; margin:0 auto; padding:20px; display:grid; gap:18px; grid-template-columns:1fr 1fr; }
   @media (max-width:820px){ main{ grid-template-columns:1fr; } }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
-  label { display:block; font-size:12px; color:var(--mut); margin:10px 0 4px; text-transform:uppercase; letter-spacing:.04em; }
-  select, textarea, input { width:100%; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:8px; padding:9px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; }
+  label { display:block; font-size:13px; color:var(--mut); margin:12px 0 5px; text-transform:uppercase; letter-spacing:.04em; }
+  select, textarea, input { width:100%; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:8px; padding:10px; }
   textarea { resize:vertical; }
-  #essay { min-height:230px; }
-  button { margin-top:14px; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 18px; font-weight:600; cursor:pointer; }
+  #prompt { min-height:110px; } #essay { min-height:300px; font-size:16.5px; }
+  button { margin-top:14px; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:11px 18px; font-weight:600; cursor:pointer; font-size:15.5px; }
+  button.ghost { background:var(--line); color:var(--ink); }
   button:disabled { opacity:.55; cursor:progress; }
-  .wc { font-size:12px; color:var(--mut); margin-top:6px; }
-  .band { font-size:40px; font-weight:700; line-height:1; }
-  .band small { font-size:14px; color:var(--mut); font-weight:400; }
-  .crit { border-top:1px solid var(--line); padding:9px 0; }
-  .crit b { display:inline-block; min-width:150px; }
-  .score { color:var(--accent); font-weight:700; }
-  ul { margin:6px 0 0; padding-left:18px; }
-  .revised { white-space:pre-wrap; background:var(--bg); border-radius:8px; padding:12px; margin-top:6px; }
-  .offline { color:#b5651d; }
-  .hidden { display:none; }
+  .wc { font-size:13px; color:var(--mut); margin-top:6px; }
+  .band { font-size:46px; font-weight:800; line-height:1; }
+  .band small { font-size:15px; color:var(--mut); font-weight:400; }
+  details.sec { border:1px solid var(--line); border-radius:9px; margin:9px 0; padding:2px 12px; }
+  details.sec > summary { cursor:pointer; padding:9px 0; font-weight:700; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  details.sec > summary::-webkit-details-marker { display:none; }
+  details.sec > summary::before { content:"▸"; color:var(--mut); font-size:13px; transition:transform .15s; }
+  details.sec[open] > summary::before { transform:rotate(90deg); }
+  details.sec .body { padding:2px 0 12px 18px; font-size:15.5px; }
+  .sc { color:var(--accent); font-weight:800; margin-left:auto; }
+  ul { margin:6px 0 0; padding-left:20px; } li { margin:4px 0; }
+  .revised { white-space:pre-wrap; background:var(--bg); border-radius:8px; padding:12px; }
+  .offline { color:var(--bad); } .hidden { display:none; }
+  .simhead { margin-top:20px; font-weight:700; }
+  .loadbtn { margin-top:8px; background:var(--ok); font-size:14px; padding:8px 14px; }
+  /* ---- global floating timer ---- */
+  .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line);
+           border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:150px; }
+  .timer.run { border-color:var(--accent); }
+  .t-display { font-size:30px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:1px; }
+  .t-display.over { color:var(--bad); }
+  .t-row { display:flex; gap:6px; align-items:center; justify-content:center; margin-top:7px; font-size:12px; color:var(--mut); }
+  .t-btn { margin:0; background:var(--line); color:var(--ink); border-radius:8px; padding:6px 10px; font-weight:700; font-size:14px; }
+  .t-min { width:52px; margin:0; padding:4px 6px; text-align:center; }
 </style>
 </head>
 <body>
@@ -43,59 +59,87 @@
   <section class="card">
     <label for="task">Task</label>
     <select id="task"></select>
-    <button id="loadPrompt" type="button" title="Fill in a real 2026-format prompt from the bank">🎲 Load a 2026 prompt</button>
+    <button id="loadPrompt" type="button" class="ghost" title="Fill in a real 2026-format prompt from the bank">🎲 Load a 2026 prompt</button>
     <label for="prompt">Prompt / question (the task shown to you — from the bank or your own)</label>
-    <textarea id="prompt" rows="4" placeholder="Click “Load a 2026 prompt”, or paste your own."></textarea>
+    <textarea id="prompt" placeholder="Click “Load a 2026 prompt”, or paste your own."></textarea>
     <label for="essay">Your response</label>
-    <textarea id="essay" placeholder="Write or paste your essay here…"></textarea>
+    <textarea id="essay" placeholder="Write or paste your response here…"></textarea>
     <div class="wc"><span id="wc">0</span> words</div>
-    <button id="go">Score & polish</button>
+    <button id="go">Score &amp; polish</button>
   </section>
 
   <section class="card" id="result">
-    <p class="wc">Results appear here after scoring.</p>
+    <p class="wc">Results appear here after scoring. Grading is strict — a top score means genuinely flawless.</p>
   </section>
 </main>
+
+<!-- global floating timer -->
+<div class="timer" id="timerWidget">
+  <div class="t-display" id="tDisplay">10:00</div>
+  <div class="t-row">
+    <button class="t-btn" id="tStart" title="start / pause">▶</button>
+    <button class="t-btn" id="tReset" title="reset">↺</button>
+    <button class="t-btn" id="tMode" title="switch count-down / count-up">⏳</button>
+    <input class="t-min" id="tMin" type="number" min="0" max="180" value="10"> m
+  </div>
+</div>
+
 <script>
 const $ = s => document.querySelector(s);
-let OFFLINE = false;
-
-let PROMPTS = {}, pidx = {};   // task_type -> prompt list / cursor
+const escapeHtml = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let PROMPTS = {}, pidx = {}, OFFLINE = false, LIVE_GEN = false;
+const SUGGESTED_MIN = { write_email: 7, academic_discussion: 10 };  // official task time targets
 
 async function boot(){
   const st = await (await fetch('/api/status')).json();
   OFFLINE = st.offline;
   $('#status').innerHTML = st.offline
     ? `<span class="badge offline">OFFLINE STUB</span> ${st.hint}`
-    : `<span class="badge">LIVE · ${st.provider} · ${st.model}</span>`;
+    : `<span class="badge">LIVE · ${st.provider} · ${st.model}</span> <span class="badge">strict grading</span>`;
   const tasks = await (await fetch('/api/tasks')).json();
+  LIVE_GEN = !st.offline;
   $('#task').innerHTML = tasks.map(t =>
     `<option value="${t.task_type}">${t.name} (score ${t.scale[0]}–${t.scale[1]})</option>`).join('');
+  applyTask();
 }
 
-// Format one bank prompt as the text shown to the test-taker.
+// ---- refresh: clear everything the current attempt owns ----
+function clearAttempt(){ $('#essay').value=''; $('#wc').textContent='0'; clearResults(); }
+function clearResults(){ $('#result').innerHTML = '<p class="wc">Results appear here after scoring.</p>'; }
+
+function applyTask(){
+  const task = $('#task').value;
+  $('#prompt').value = '';
+  clearAttempt();
+  window.setTimerMinutes(SUGGESTED_MIN[task] || 10);   // auto-fill the suggested time
+}
+$('#task').addEventListener('change', applyTask);
+
 function formatPrompt(task, p){
   if (task === 'academic_discussion'){
     const posts = (p.posts||[]).map(x => `${x.name}: ${x.text}`).join('\n');
     return `Course: ${p.course}\n\nProfessor: ${p.professor}\n\n${posts}`;
   }
-  if (task === 'write_email'){
-    return `${p.situation}\n\nTask: ${p.prompt}`;
-  }
+  if (task === 'write_email') return `${p.situation}\n\nTask: ${p.prompt}`;
   return JSON.stringify(p);
 }
 
 $('#loadPrompt').addEventListener('click', async () => {
   const task = $('#task').value;
-  if (!PROMPTS[task]){
-    PROMPTS[task] = await (await fetch(`/api/prompts?task_type=${task}`)).json();
-    pidx[task] = 0;
-  }
+  if (!PROMPTS[task]){ PROMPTS[task] = await (await fetch(`/api/prompts?task_type=${task}`)).json(); pidx[task] = 0; }
   const list = PROMPTS[task] || [];
-  if (!list.length){ $('#prompt').value = '(no prompt bank generated for this task yet)'; return; }
+  if (!list.length){ $('#prompt').value = '(no prompt bank for this task yet)'; return; }
   const p = list[pidx[task] % list.length]; pidx[task]++;
-  $('#prompt').value = formatPrompt(task, p);
+  loadPromptText(formatPrompt(task, p));
 });
+
+// load a prompt into the box and refresh the rest of the page
+function loadPromptText(text){
+  $('#prompt').value = text;
+  clearAttempt();
+  window.setTimerMinutes(SUGGESTED_MIN[$('#task').value] || 10);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
 
 $('#essay').addEventListener('input', e => {
   $('#wc').textContent = (e.target.value.trim().match(/\S+/g) || []).length;
@@ -106,8 +150,7 @@ $('#go').addEventListener('click', async () => {
   try {
     const r = await fetch('/api/score', {
       method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        task_type: $('#task').value, essay: $('#essay').value, prompt_text: $('#prompt').value })
+      body: JSON.stringify({ task_type: $('#task').value, essay: $('#essay').value, prompt_text: $('#prompt').value })
     });
     render(await r.json());
   } catch(e){ $('#result').innerHTML = `<p class="offline">Error: ${e}</p>`; }
@@ -117,16 +160,63 @@ $('#go').addEventListener('click', async () => {
 function render(fb){
   if (fb.error){ $('#result').innerHTML = `<p class="offline">${fb.error}</p>`; return; }
   const crits = Object.entries(fb.criteria).map(([k,v]) =>
-    `<div class="crit"><b>${k}</b> <span class="score">${v.score}</span><br><span class="wc">${v.comment}</span></div>`).join('');
-  const fixes = fb.top_fixes.map(f => `<li>${f}</li>`).join('');
+    `<details class="sec"><summary>${k} <span class="sc">${v.score}</span></summary>
+       <div class="body">${escapeHtml(v.comment)}</div></details>`).join('');
+  const fixes = (fb.top_fixes||[]).map(f => `<li>${escapeHtml(f)}</li>`).join('');
   $('#result').innerHTML = `
     ${fb.offline ? '<p class="offline">⚠ Offline stub — set GEMINI_API_KEY (free) for real scoring.</p>' : ''}
-    <div class="band">${fb.band}<small> / 5 (task score)</small></div>
+    <div class="band">${fb.band}<small> / 5 (task score, strict)</small></div>
     ${crits}
-    <label>Top fixes</label><ul>${fixes}</ul>
-    <label>Polished rewrite</label><div class="revised">${escapeHtml(fb.revised)}</div>`;
+    <details class="sec" open><summary>Top fixes</summary><div class="body"><ul>${fixes}</ul></div></details>
+    <details class="sec"><summary>Polished rewrite</summary><div class="body revised">${escapeHtml(fb.revised)}</div></details>
+    <div class="simhead">Practice more — 3 similar prompts</div>
+    <div id="similar"><p class="wc">${LIVE_GEN ? 'Generating…' : 'Set a key for AI-generated similar prompts.'}</p></div>`;
+  if (LIVE_GEN) loadSimilar();
 }
-const escapeHtml = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+async function loadSimilar(){
+  const box = $('#similar');
+  try {
+    const r = await (await fetch('/api/similar', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ task_type: $('#task').value, example: $('#prompt').value })
+    })).json();
+    if (!r.prompts || !r.prompts.length){
+      box.innerHTML = `<p class="wc">Couldn't generate right now${r.error?' ('+escapeHtml(String(r.error).slice(0,60))+')':''}. <a href="#" id="retrySim">retry</a></p>`;
+      $('#retrySim')?.addEventListener('click', ev => { ev.preventDefault(); box.innerHTML='<p class="wc">Generating…</p>'; loadSimilar(); });
+      return;
+    }
+    box.innerHTML = r.prompts.map((p,i) =>
+      `<details class="sec"><summary>Similar prompt ${i+1} <span class="sc">▸</span></summary>
+         <div class="body"><div class="revised">${escapeHtml(p)}</div>
+         <button class="loadbtn" data-p="${encodeURIComponent(p)}">✍️ Use this prompt (load &amp; clear)</button></div></details>`).join('');
+    box.querySelectorAll('.loadbtn').forEach(b =>
+      b.addEventListener('click', () => loadPromptText(decodeURIComponent(b.dataset.p))));
+  } catch(e){ box.innerHTML = `<p class="wc">Error generating similar prompts.</p>`; }
+}
+
+/* =================== global floating timer =================== */
+(function(){
+  const disp=$('#tDisplay'), minEl=$('#tMin'), widget=$('#timerWidget'), startBtn=$('#tStart');
+  let mode='down', running=false, elapsed=0, target=600, raf=null, last=0;
+  const fmt = s => { s=Math.max(0,Math.round(s)); return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); };
+  function render(){
+    let s = mode==='down' ? target-elapsed : elapsed;
+    if (mode==='down' && s<=0){ s=0; disp.classList.add('over'); if(running) stop(); } else disp.classList.remove('over');
+    disp.textContent = fmt(s);
+  }
+  function loop(ts){ if(!running) return; if(!last) last=ts; elapsed += (ts-last)/1000; last=ts; render(); raf=requestAnimationFrame(loop); }
+  function start(){ running=true; last=0; widget.classList.add('run'); startBtn.textContent='⏸'; raf=requestAnimationFrame(loop); }
+  function stop(){ running=false; cancelAnimationFrame(raf); widget.classList.remove('run'); startBtn.textContent='▶'; }
+  function reset(){ stop(); elapsed=0; target=(+minEl.value||0)*60; disp.classList.remove('over'); render(); }
+  function setMode(m){ mode=m; $('#tMode').textContent = m==='down'?'⏳':'⏱'; reset(); }
+  startBtn.onclick = () => running ? stop() : start();
+  $('#tReset').onclick = reset;
+  $('#tMode').onclick = () => setMode(mode==='down'?'up':'down');
+  minEl.onchange = () => { target=(+minEl.value||0)*60; if(!running) reset(); };
+  window.setTimerMinutes = m => { minEl.value=m; if(!running){ target=m*60; elapsed=0; render(); } };
+  setMode('down');
+})();
 boot();
 </script>
 </body>

@@ -1,4 +1,4 @@
-"""vocab-srs: local spaced-repetition (SM-2) vocabulary trainer — the "背词小网页".
+"""vocab-srs: local spaced-repetition (SM-2) vocabulary trainer.
 
 Exam-agnostic: it just reads word-list JSONs and schedules reviews with prep_core.SRS. TOEFL and
 GRE are two decks sharing one engine. Scheduling state persists per deck under data/srs/ (gitignored);

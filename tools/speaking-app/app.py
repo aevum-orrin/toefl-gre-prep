@@ -133,7 +133,10 @@ def interview_generate():
 async def interview_score(audio: UploadFile = File(...), question: str = Form(...)):
     path = await _save_upload(audio)
     result = transcriber.transcribe(path)
-    fb = engine.score_speaking(result["text"], RUBRIC, question=question)
+    try:
+        fb = engine.score_speaking(result["text"], RUBRIC, question=question)
+    except Exception as e:                       # transient LLM error (e.g. 503 overload)
+        return {"transcript": result["text"], "error": f"Scoring backend busy, please retry. ({type(e).__name__})"}
     progress.log("speaking_interview", band=fb.band, offline=fb.offline, question=question)
     return {"transcript": result["text"], **fb.to_dict()}
 

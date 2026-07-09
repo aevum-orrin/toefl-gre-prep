@@ -18,7 +18,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from prep_core import FeedbackEngine, Rubric, ProgressStore, load_env
+from prep_core import FeedbackEngine, Rubric, ProgressStore, QuestionGenerator, load_env
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]                                    # monorepo root
@@ -45,6 +45,7 @@ for task_type, fname in _PROMPT_FILES.items():
         PROMPTS[task_type] = json.loads(fp.read_text(encoding="utf-8"))
 
 engine = FeedbackEngine()             # provider auto-picked from env; offline stub if no key
+generator = QuestionGenerator(engine.provider)   # for similar-question suggestions
 progress = ProgressStore(DATA_DIR / "progress.jsonl")
 
 app = FastAPI(title="Writing Coach")
@@ -54,6 +55,11 @@ class ScoreRequest(BaseModel):
     task_type: str
     essay: str
     prompt_text: str = ""
+
+
+class SimilarRequest(BaseModel):
+    task_type: str
+    example: str = ""
 
 
 @app.get("/api/tasks")
@@ -74,12 +80,26 @@ def prompts(task_type: str):
     return PROMPTS.get(task_type, [])
 
 
+@app.post("/api/similar")
+def similar(req: SimilarRequest):
+    """3 new same-type practice prompts after scoring (empty if no LLM backend)."""
+    if not generator.available:
+        return {"available": False, "prompts": []}
+    try:
+        return {"available": True, "prompts": generator.similar_prompts(req.task_type, req.example)}
+    except Exception as e:
+        return {"available": False, "prompts": [], "error": str(e)}
+
+
 @app.post("/api/score")
 def score(req: ScoreRequest):
     rubric = RUBRICS.get(req.task_type)
     if rubric is None:
         return {"error": f"unknown task_type '{req.task_type}'", "available": list(RUBRICS)}
-    fb = engine.score_writing(req.essay, rubric, prompt_text=req.prompt_text)
+    try:
+        fb = engine.score_writing(req.essay, rubric, prompt_text=req.prompt_text)
+    except Exception as e:                       # transient LLM error (e.g. 503 overload)
+        return {"error": f"Scoring backend busy, please retry. ({type(e).__name__})"}
     progress.log("writing", task=req.task_type, band=fb.band, offline=fb.offline,
                  words=len(req.essay.split()))
     return fb.to_dict()

@@ -9,7 +9,7 @@
           --ok:#2f8f6b; --bad:#c0392b; }
   @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#5aa9cc; } }
   * { box-sizing:border-box; }
-  body { margin:0; font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  body { margin:0; font:16.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
   header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
   h1 { font-size:18px; margin:0; }
   #status { font-size:12px; color:var(--mut); }
@@ -35,6 +35,13 @@
   .score { font-size:30px; font-weight:700; }
   .hint { font-size:12px; color:var(--mut); }
   .hidden { display:none; }
+  .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:150px; }
+  .timer.run { border-color:var(--accent); }
+  .t-display { font-size:30px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:1px; }
+  .t-display.over { color:#c0392b; }
+  .t-row { display:flex; gap:6px; align-items:center; justify-content:center; margin-top:7px; font-size:12px; color:var(--mut); }
+  .t-btn { margin:0; background:var(--line); color:var(--ink); border:0; border-radius:8px; padding:6px 10px; font-weight:700; font-size:14px; cursor:pointer; }
+  .t-min { width:52px; margin:0; padding:4px 6px; text-align:center; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
 </style>
 </head>
 <body>
@@ -138,6 +145,37 @@ $('#submit').addEventListener('click', async () => {
 $('#next').addEventListener('click', () => { idx++; load(); });
 const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 boot();
+</script>
+
+<!-- global floating timer -->
+<div class="timer" id="timerWidget">
+  <div class="t-display" id="tDisplay">10:00</div>
+  <div class="t-row">
+    <button class="t-btn" id="tStart" title="start / pause">▶</button>
+    <button class="t-btn" id="tReset" title="reset">↺</button>
+    <button class="t-btn" id="tMode" title="switch count-down / count-up">⏳</button>
+    <input class="t-min" id="tMin" type="number" min="0" max="180" value="10"> m
+  </div>
+</div>
+<script>
+(function(){
+  const g=id=>document.getElementById(id);
+  const disp=g('tDisplay'), minEl=g('tMin'), widget=g('timerWidget'), startBtn=g('tStart');
+  let mode='down', running=false, elapsed=0, target=600, raf=null, last=0;
+  const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');};
+  function render(){let s=mode==='down'?target-elapsed:elapsed;if(mode==='down'&&s<=0){s=0;disp.classList.add('over');if(running)stop();}else disp.classList.remove('over');disp.textContent=fmt(s);}
+  function loop(ts){if(!running)return;if(!last)last=ts;elapsed+=(ts-last)/1000;last=ts;render();raf=requestAnimationFrame(loop);}
+  function start(){running=true;last=0;widget.classList.add('run');startBtn.textContent='⏸';raf=requestAnimationFrame(loop);}
+  function stop(){running=false;cancelAnimationFrame(raf);widget.classList.remove('run');startBtn.textContent='▶';}
+  function reset(){stop();elapsed=0;target=(+minEl.value||0)*60;disp.classList.remove('over');render();}
+  function setMode(m){mode=m;g('tMode').textContent=m==='down'?'⏳':'⏱';reset();}
+  startBtn.onclick=()=>running?stop():start();
+  g('tReset').onclick=reset;
+  g('tMode').onclick=()=>setMode(mode==='down'?'up':'down');
+  minEl.onchange=()=>{target=(+minEl.value||0)*60;if(!running)reset();};
+  window.setTimerMinutes=m=>{minEl.value=m;if(!running){target=m*60;elapsed=0;render();}};
+  setMode('down');
+})();
 </script>
 </body>
 </html>

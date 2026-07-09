@@ -25,17 +25,28 @@ class WritingFeedback:
         return asdict(self)
 
 
+_SEVERITY = (
+    "Rate STRICTLY, like a demanding senior ETS rater — calibrate hard, never lenient. Hunt down and "
+    "report EVERY weakness you can justify: grammar, verb tense/agreement, articles, prepositions, "
+    "word form, collocation, awkward or unidiomatic phrasing, register, spelling, punctuation, weak "
+    "transitions, coherence gaps, thin or unsupported ideas, and any failure to fully satisfy the "
+    "task. Quote the offending text when you flag something. Do NOT inflate scores to be encouraging. "
+    "Reserve the top score for a response that is genuinely flawless at the rubric's top-band "
+    "standard; if you hesitate between two scores, give the LOWER one and say why. A competent-but-"
+    "ordinary response should land mid-band, not top. Be specific and honest, not nice."
+)
 _SYSTEM_WRITING = (
-    "You are a strict but constructive TOEFL/GRE writing rater following the official 2026 ETS "
-    "rubric. Score the response against the rubric, comment briefly on each criterion, list the "
-    "highest-leverage fixes, and give one polished rewrite that keeps the author's ideas but fixes "
-    "language, structure, and task fulfilment."
+    "You are an exacting TOEFL/GRE writing rater applying the official 2026 ETS rubric at full "
+    "strictness. " + _SEVERITY + " Score each criterion, comment specifically on each, list the "
+    "highest-leverage fixes in priority order, and give one polished rewrite that keeps the author's "
+    "ideas but fixes language, structure, and task fulfilment."
 )
 _SYSTEM_SPEAKING = (
-    "You are a TOEFL speaking rater following the official 2026 ETS rubric. You receive an automatic "
-    "transcript of a spoken response, so ignore minor transcription artifacts and filler; judge "
-    "delivery, language use, and topic development against the rubric. Comment on each criterion, "
-    "list the highest-leverage fixes, and provide one improved model answer to aim for."
+    "You are an exacting TOEFL speaking rater applying the official 2026 ETS rubric at full "
+    "strictness. You receive an automatic transcript, so ignore pure transcription artifacts, but "
+    "judge grammar, vocabulary range/accuracy, and topic development hard. " + _SEVERITY +
+    " Comment specifically on each criterion, list the highest-leverage fixes, and provide one "
+    "improved model answer to aim for."
 )
 
 

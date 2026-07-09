@@ -55,6 +55,11 @@ class Provider:
 
 
 # --------------------------------------------------------------------------- Gemini
+# Free-tier flash models get overloaded (503) in bursts; fall back across these on transient errors.
+_GEMINI_FALLBACKS = ["gemini-2.0-flash", "gemini-2.5-flash-lite"]
+_TRANSIENT = {429, 500, 502, 503, 504}
+
+
 class GeminiProvider(Provider):
     name = "gemini"
 
@@ -65,6 +70,26 @@ class GeminiProvider(Provider):
         from google.genai import types
         self._types = types
         self._client = genai.Client(api_key=api_key)
+        self._models = [self.model] + [m for m in _GEMINI_FALLBACKS if m != self.model]
+
+    def _run(self, contents: str, cfg):
+        """generate_content with transient-error retry + model fallback (free flash 503s are common)."""
+        import time
+        from google.genai import errors as gerr
+        last = None
+        for model in self._models:
+            for attempt in range(2):
+                try:
+                    return self._client.models.generate_content(model=model, contents=contents, config=cfg)
+                except gerr.APIError as e:
+                    last = e
+                    if getattr(e, "code", None) in _TRANSIENT:
+                        if attempt == 0:
+                            time.sleep(1.5)      # brief backoff, retry same model once
+                            continue
+                        break                    # then move to the next fallback model
+                    raise                        # non-transient (e.g. 400) -> surface it
+        raise last
 
     def complete_json(self, system: str, user: str, schema: dict) -> dict:
         cfg = self._types.GenerateContentConfig(
@@ -73,13 +98,11 @@ class GeminiProvider(Provider):
             response_schema=_gemini_schema(schema),
             temperature=0.2,
         )
-        resp = self._client.models.generate_content(model=self.model, contents=user, config=cfg)
-        return json.loads(resp.text)
+        return json.loads(self._run(user, cfg).text)
 
     def complete_text(self, system: str, user: str) -> str:
         cfg = self._types.GenerateContentConfig(system_instruction=system, temperature=0.9)
-        resp = self._client.models.generate_content(model=self.model, contents=user, config=cfg)
-        return resp.text or ""
+        return self._run(user, cfg).text or ""
 
 
 # --------------------------------------------------------------------------- Groq

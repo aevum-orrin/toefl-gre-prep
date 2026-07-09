@@ -21,6 +21,24 @@ _INTERVIEW_SCHEMA = {
     "additionalProperties": False,
 }
 
+_PROMPTS_SCHEMA = {
+    "type": "object",
+    "properties": {"prompts": {"type": "array", "items": {"type": "string"}}},
+    "required": ["prompts"],
+    "additionalProperties": False,
+}
+
+_WRITING_KIND = {
+    "write_email": ("a 2026 TOEFL 'Write an Email' task: describe a realistic academic or social "
+                    "situation, then state what the test-taker must write (a request, information, or "
+                    "a proposed solution). Put the situation and the instruction in one self-"
+                    "contained prompt."),
+    "academic_discussion": ("a 2026 TOEFL 'Write for an Academic Discussion' task: a professor's "
+                            "question to the class (1-3 sentences) followed by two short classmate "
+                            "posts taking different stances. Put it all in one self-contained prompt, "
+                            "labelling the professor and the two students."),
+}
+
 
 class QuestionGenerator:
     """Wraps a Provider. `available` is False when no backend is usable (caller uses the bank)."""
@@ -51,3 +69,14 @@ class QuestionGenerator:
             "pronounceable. Output ONLY the sentence, no quotes or numbering."
         )
         return self.provider.complete_text(_SYS, user).strip().strip('"')
+
+    def similar_prompts(self, task_type: str, example: str = "", n: int = 3) -> list[str]:
+        """n NEW writing prompts of the same task type + difficulty as `example`, different topics."""
+        kind = _WRITING_KIND.get(task_type, "a TOEFL writing task")
+        user = (
+            f"Generate {n} NEW practice prompts, each being {kind} Match the type and difficulty of "
+            f"this example but use different topics; make each a complete, self-contained prompt the "
+            f"test-taker could answer directly.\n\nExample prompt:\n\"\"\"\n{example or '(none)'}\n\"\"\""
+        )
+        data = self.provider.complete_json(_SYS, user, _PROMPTS_SCHEMA)
+        return [p for p in data.get("prompts", []) if isinstance(p, str)][:n]

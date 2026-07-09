@@ -1,24 +1,28 @@
-# vocab-srs — 背单词(SM-2 间隔重复)
+# vocab-srs — spaced-repetition vocabulary trainer
 
-托福 / GRE 共用的间隔重复背词网页,由 `prep_core.SRS`(SM-2 算法,和 Anki 早期同款)驱动。
-只调度、不联网、不花钱。
+A shared TOEFL/GRE flashcard web page driven by `prep_core.SRS` (the SM-2 algorithm, the same family
+Anki started with). Scheduling only — no network, no cost.
 
 ```bash
 source ../../env.sh
 uvicorn app:app --reload --port 8003   # http://localhost:8003
 ```
 
-## 怎么用
-- 顶部切换 **TOEFL / GRE** 牌组(词表来自 `toefl/vocab/` 和 `gre/vocab/`)。
-- 看到词 → 按 **Space** 翻面看释义/例句 → 按 Anki 式四个键给自己打分:
-  - **Again(1)** 没记住 → 明天重来
-  - **Hard(2)** / **Good(3)** / **Easy(4)** → 记住了,间隔按 SM-2 逐步拉长
-- 键盘:`Space` 翻面,`1/2/3/4` 打分。
+## How to use
+- Switch **TOEFL / GRE** decks at the top (wordlists come from `toefl/vocab/` and `gre/vocab/`).
+- See the word → press **Space** to reveal the definition/example → grade yourself with the
+  Anki-style buttons:
+  - **Again (1)** didn't recall → repeat tomorrow
+  - **Hard (2)** / **Good (3)** / **Easy (4)** → recalled; the interval grows per SM-2
+- Keyboard: `Space` reveals, `1/2/3/4` grade.
 
-## 数据
-- 词表(内容):`{term, definition, example, pos}` 的 JSON,放在对应科目的 `vocab/` 下,可随意扩充。
-- 复习进度(调度状态):`data/srs/<deck>.json`(gitignored),每次打分自动存。
-- 加新词:往词表 JSON 里加条目即可,启动时自动并入,已有词的复习进度不受影响。
+## Data
+- Wordlist (content): JSON of `{term, definition, example, pos}` under each exam's `vocab/` folder;
+  extend freely.
+- Review state (scheduling): `data/srs/<deck>.json` (gitignored), saved automatically on each grade.
+- Adding words: append to the wordlist JSON; new terms are merged in on startup and existing review
+  progress is untouched.
 
-> SM-2 足够个人冲刺用。将来想要更省复习量,可把调度函数换成 FSRS(Anki 现默认),
-> App 其余部分不用动 —— 详见 `docs/` 里的调研笔记。
+> SM-2 is plenty for a personal sprint. To minimize review load later you can swap the scheduler for
+> FSRS (Anki's current default) without changing the rest of the app — see the research notes under
+> `docs/`.
