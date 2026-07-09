@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vocab SRS</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#7048b5;
+          --again:#c0392b; --hard:#b5651d; --good:#2f8f6b; --easy:#3b6ea5; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#a389e0; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  h1 { font-size:18px; margin:0; }
+  select { font:inherit; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:6px 9px; }
+  #counts { font-size:12px; color:var(--mut); margin-left:auto; }
+  .badge { font-size:11px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
+  main { max-width:620px; margin:0 auto; padding:26px 20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:34px 24px; text-align:center; min-height:230px;
+          display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; }
+  .term { font-size:38px; font-weight:700; }
+  .pos { font-size:13px; color:var(--mut); font-style:italic; }
+  .def { font-size:19px; }
+  .ex { font-size:15px; color:var(--mut); font-style:italic; }
+  .divider { width:60%; border-top:1px solid var(--line); margin:6px 0; }
+  button { font:inherit; border:0; border-radius:10px; padding:12px 16px; font-weight:600; cursor:pointer; background:var(--line); color:var(--ink); }
+  .primary { background:var(--accent); color:#fff; width:100%; margin-top:16px; padding:14px; font-size:16px; }
+  .grades { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:16px; }
+  .grades button { color:#fff; }
+  .g-again{ background:var(--again);} .g-hard{ background:var(--hard);} .g-good{ background:var(--good);} .g-easy{ background:var(--easy);}
+  .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; }
+  .done { text-align:center; color:var(--good); font-size:18px; padding:40px 0; }
+  .hidden { display:none; }
+  .kbd { font-size:11px; color:var(--mut); text-align:center; margin-top:12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Vocab SRS</h1>
+  <select id="deck"></select>
+  <span id="counts"></span>
+</header>
+<main>
+  <section class="card" id="card"><div class="term" id="term">…</div></section>
+  <button class="primary" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
+  <div class="grades hidden" id="grades">
+    <button class="g-again" data-g="again">Again<small>&lt;1d · 1</small></button>
+    <button class="g-hard"  data-g="hard">Hard<small>2</small></button>
+    <button class="g-good"  data-g="good">Good<small>3</small></button>
+    <button class="g-easy"  data-g="easy">Easy<small>4</small></button>
+  </div>
+  <div class="kbd">Space = show · 1 Again · 2 Hard · 3 Good · 4 Easy · SM-2 spaced repetition</div>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let deck = "toefl", cur = null, revealed = false;
+
+async function boot(){
+  const decks = await (await fetch('/api/decks')).json();
+  $('#deck').innerHTML = decks.map(d =>
+    `<option value="${d.deck}">${d.deck.toUpperCase()} (${d.total} words)</option>`).join('');
+  deck = decks[0]?.deck || "toefl";
+  loadNext();
+}
+
+$('#deck').addEventListener('change', e => { deck = e.target.value; loadNext(); });
+
+async function loadNext(){
+  revealed = false;
+  const d = await (await fetch(`/api/next?deck=${deck}`)).json();
+  updateCounts(d);
+  if (d.done){
+    $('#card').innerHTML = `<div class="done">✅ All caught up on ${deck.toUpperCase()}!<br><small>Come back later for reviews.</small></div>`;
+    $('#show').classList.add('hidden'); $('#grades').classList.add('hidden'); cur = null; return;
+  }
+  cur = d;
+  $('#card').innerHTML = `<div class="pos">${d.pos||''}</div><div class="term">${esc(d.term)}</div>`;
+  $('#show').classList.remove('hidden'); $('#grades').classList.add('hidden');
+}
+
+function reveal(){
+  if (!cur || revealed) return;
+  revealed = true;
+  $('#card').innerHTML = `<div class="pos">${cur.pos||''}</div><div class="term">${esc(cur.term)}</div>
+    <div class="divider"></div><div class="def">${esc(cur.definition)}</div>` +
+    (cur.example ? `<div class="ex">“${esc(cur.example)}”</div>` : '');
+  $('#show').classList.add('hidden'); $('#grades').classList.remove('hidden');
+}
+
+async function grade(g){
+  if (!cur || !revealed) return;
+  const d = await (await fetch('/api/review', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck, term: cur.term, grade: g })
+  })).json();
+  updateCounts(d);
+  loadNext();
+}
+
+function updateCounts(d){
+  if (d.total!=null) $('#counts').innerHTML =
+    `<span class="badge">due ${d.due}</span> <span class="badge">new ${d.new}</span> <span class="badge">${d.total} total</span>`;
+}
+
+$('#show').addEventListener('click', reveal);
+$('#grades').addEventListener('click', e => { const b=e.target.closest('button'); if(b) grade(b.dataset.g); });
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space'){ e.preventDefault(); reveal(); }
+  else if (revealed && ['1','2','3','4'].includes(e.key)) grade(['again','hard','good','easy'][+e.key-1]);
+});
+const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+boot();
+</script>
+</body>
+</html>
