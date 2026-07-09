@@ -1,0 +1,37 @@
+# --- Data & artifacts (keep big/raw stuff out of git) ---
+data/
+recordings/
+models/
+*.wav
+*.mp3
+*.mp4
+*.m4a
+
+# --- Secrets ---
+.env
+.env.*
+*.key
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# --- Node / web app ---
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+*.swp
