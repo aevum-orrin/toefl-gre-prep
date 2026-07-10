@@ -174,9 +174,9 @@ function render(fb){
     <details class="sec"><summary>📝 Model essay — a top-band answer (范文)</summary>
       <div class="body" id="modelEssayBody"><button class="loadbtn" id="genEssay">Show a model answer</button></div></details>
     <div class="simhead">Practice more — 3 similar prompts</div>
-    <div id="similar"><p class="wc">${LIVE_GEN ? 'Generating…' : 'Set a key for AI-generated similar prompts.'}</p></div>`;
+    <div id="similar"><p class="wc">Loading…</p></div>`;
   $('#genEssay')?.addEventListener('click', loadModelEssay);
-  if (LIVE_GEN) loadSimilar();
+  loadSimilar();
 }
 
 async function loadSimilar(){
@@ -184,20 +184,22 @@ async function loadSimilar(){
   try {
     const r = await (await fetch('/api/similar', {
       method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ task_type: $('#task').value, example: $('#prompt').value })
+      body: JSON.stringify({ task_type: $('#task').value, example: $('#prompt').value, prompt_id: curPromptId })
     })).json();
     if (!r.prompts || !r.prompts.length){
-      box.innerHTML = `<p class="wc">Couldn't generate right now${r.error?' ('+escapeHtml(String(r.error).slice(0,60))+')':''}. <a href="#" id="retrySim">retry</a></p>`;
-      $('#retrySim')?.addEventListener('click', ev => { ev.preventDefault(); box.innerHTML='<p class="wc">Generating…</p>'; loadSimilar(); });
+      const msg = (r.available===false && !LIVE_GEN) ? 'Set a key for AI-generated similar prompts.' : 'Couldn’t load right now.';
+      box.innerHTML = `<p class="wc">${msg}${r.error?' ('+escapeHtml(String(r.error).slice(0,60))+')':''} <a href="#" id="retrySim">retry</a></p>`;
+      $('#retrySim')?.addEventListener('click', ev => { ev.preventDefault(); box.innerHTML='<p class="wc">Loading…</p>'; loadSimilar(); });
       return;
     }
+    const tag = r.source==='bank' ? ' <span class="badge">pre-written</span>' : '';
     box.innerHTML = r.prompts.map((p,i) =>
-      `<details class="sec"><summary>Similar prompt ${i+1}</summary>
-         <div class="body"><div class="revised">${escapeHtml(p)}</div>
-         <button class="loadbtn" data-p="${encodeURIComponent(p)}">✍️ Use this prompt (load &amp; clear)</button></div></details>`).join('');
+      `<details class="sec"><summary>Similar prompt ${i+1}${tag}</summary>
+         <div class="body"><div class="revised">${escapeHtml(p.text)}</div>
+         <button class="loadbtn" data-p="${encodeURIComponent(p.text)}" data-id="${escapeHtml(p.id||'')}">✍️ Use this prompt (load &amp; clear)</button></div></details>`).join('');
     box.querySelectorAll('.loadbtn').forEach(b =>
-      b.addEventListener('click', () => loadPromptText(decodeURIComponent(b.dataset.p))));
-  } catch(e){ box.innerHTML = `<p class="wc">Error generating similar prompts.</p>`; }
+      b.addEventListener('click', () => loadPromptText(decodeURIComponent(b.dataset.p), b.dataset.id||'')));
+  } catch(e){ box.innerHTML = `<p class="wc">Error loading similar prompts.</p>`; }
 }
 
 // model essay (范文): pre-written for bank prompts (instant), else generated best-model-first

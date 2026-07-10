@@ -79,6 +79,35 @@ def merge_essays(repo_p: Path, gen_names: list[str]) -> tuple[int, int]:
     return len(items), n
 
 
+def merge_sims(repo_p: Path, gen_names: list[str]) -> tuple[int, int]:
+    """Attach 3 pre-written similar prompts (each with its own model essay) per base prompt."""
+    items = _read(repo_p)
+    sims: dict = {}
+    for name in gen_names:
+        try:
+            obj = json.loads((GEN / name).read_text(encoding="utf-8"))
+            if isinstance(obj, dict):
+                sims.update(obj)
+        except (json.JSONDecodeError, ValueError, OSError):
+            pass
+    n = 0
+    for it in items:
+        arr = sims.get(it.get("id"))
+        if not isinstance(arr, list):
+            continue
+        built = [
+            {"id": f"{it['id']}-s{i + 1}", "text": (o.get("text") or "").strip(),
+             "model_essay": (o.get("model_essay") or "").strip()}
+            for i, o in enumerate(arr[:3])
+            if isinstance(o, dict) and (o.get("text") or "").strip()
+        ]
+        if built:
+            it["similar"] = built
+            n += 1
+    _write(repo_p, items)
+    return len(items), n
+
+
 def main() -> None:
     total, added = merge_keyed(REPO / "toefl/writing/email_prompts.json",
                                GEN / "email_b.json", "id", ["situation", "prompt"])
@@ -99,6 +128,13 @@ def main() -> None:
     total, added = merge_essays(REPO / "toefl/writing/discussion_prompts.json",
                                 ["discussion_essays_a.json", "discussion_essays_b.json"])
     print(f"  discussion model essays: {added}/{total}")
+
+    total, added = merge_sims(REPO / "toefl/writing/email_prompts.json",
+                              ["email_sim_a.json", "email_sim_b.json", "email_sim_c.json", "email_sim_d.json"])
+    print(f"  email similar sets:      {added}/{total}")
+    total, added = merge_sims(REPO / "toefl/writing/discussion_prompts.json",
+                              ["disc_sim_a.json", "disc_sim_b.json", "disc_sim_c.json", "disc_sim_d.json"])
+    print(f"  discussion similar sets: {added}/{total}")
 
 
 if __name__ == "__main__":

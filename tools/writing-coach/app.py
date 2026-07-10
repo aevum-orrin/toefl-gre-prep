@@ -45,6 +45,26 @@ for task_type, fname in _PROMPT_FILES.items():
     if fp.exists():
         PROMPTS[task_type] = json.loads(fp.read_text(encoding="utf-8"))
 
+# Indexes over the bank so base prompts serve instantly: pre-written model essays keyed by BOTH the
+# base id and each similar-prompt id, and the pre-written set of 3 similar prompts per base prompt.
+MODEL_ESSAYS: dict[str, dict[str, str]] = {}      # task_type -> {prompt_id: essay}
+SIMILARS: dict[str, dict[str, list]] = {}          # task_type -> {base_id: [{id, text}, ...]}
+for _tt, _items in PROMPTS.items():
+    _me, _sims = {}, {}
+    for _it in _items:
+        if _it.get("model_essay"):
+            _me[_it["id"]] = _it["model_essay"]
+        _sl = []
+        for _s in _it.get("similar", []):
+            if _s.get("id"):
+                if _s.get("model_essay"):
+                    _me[_s["id"]] = _s["model_essay"]
+                _sl.append({"id": _s["id"], "text": _s.get("text", "")})
+        if _sl:
+            _sims[_it["id"]] = _sl
+    MODEL_ESSAYS[_tt] = _me
+    SIMILARS[_tt] = _sims
+
 engine = FeedbackEngine()             # provider auto-picked from env; offline stub if no key
 generator = QuestionGenerator(engine.provider)   # for similar-question suggestions
 # A model essay must appear even if the primary backend is down, so it uses a best-first fallback
@@ -79,6 +99,7 @@ class ScoreRequest(BaseModel):
 class SimilarRequest(BaseModel):
     task_type: str
     example: str = ""
+    prompt_id: str = ""
 
 
 class EssayRequest(BaseModel):
@@ -102,16 +123,22 @@ def status():
 @app.get("/api/prompts")
 def prompts(task_type: str):
     """The prompt bank for a task (model_essay stripped so it isn't revealed before scoring)."""
-    return [{k: v for k, v in it.items() if k != "model_essay"} for it in PROMPTS.get(task_type, [])]
+    hide = ("model_essay", "similar")
+    return [{k: v for k, v in it.items() if k not in hide} for it in PROMPTS.get(task_type, [])]
 
 
 @app.post("/api/similar")
 def similar(req: SimilarRequest):
-    """3 new same-type practice prompts after scoring (empty if no LLM backend)."""
+    """3 same-type practice prompts. For a base-bank prompt these are PRE-WRITTEN (each with its own
+    model essay), so they're instant and top quality; for a pasted prompt they're generated live."""
+    pre = SIMILARS.get(req.task_type, {}).get(req.prompt_id)
+    if pre:
+        return {"available": True, "source": "bank", "prompts": pre}
     if not generator.available:
         return {"available": False, "prompts": []}
     try:
-        return {"available": True, "prompts": generator.similar_prompts(req.task_type, req.example)}
+        texts = generator.similar_prompts(req.task_type, req.example)
+        return {"available": True, "source": "generated", "prompts": [{"id": "", "text": t} for t in texts]}
     except Exception as e:
         return {"available": False, "prompts": [], "error": str(e)}
 
@@ -134,10 +161,9 @@ def score(req: ScoreRequest):
 def model_essay(req: EssayRequest):
     """A top-band model answer (范文). Pre-written for base-bank prompts (instant); otherwise
     generated on demand with the best available model, degrading until one succeeds."""
-    if req.prompt_id:
-        for it in PROMPTS.get(req.task_type, []):
-            if it.get("id") == req.prompt_id and it.get("model_essay"):
-                return {"essay": it["model_essay"], "source": "bank", "provider": "pre-written"}
+    pre = MODEL_ESSAYS.get(req.task_type, {}).get(req.prompt_id)
+    if pre:
+        return {"essay": pre, "source": "bank", "provider": "pre-written"}
     if essay_provider is None:
         return {"error": "No model backend configured — add GEMINI_API_KEY or GROQ_API_KEY to .env."}
     system = _ESSAY_SYSTEM.get(req.task_type, _ESSAY_SYSTEM["academic_discussion"])
