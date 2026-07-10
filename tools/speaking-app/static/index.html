@@ -63,6 +63,7 @@
       <button id="record" class="rec">⏺ Record</button>
       <button id="stop" disabled>⏹ Stop</button>
       <button id="next">Next ▸</button>
+      <button id="modelBtn" class="hidden" title="Show a top-band example answer">💡 Model answer</button>
       <button id="gen" title="Generate a brand-new item with the LLM">✨ Fresh</button>
     </div>
     <div class="hint" id="recHint">Click Play to hear it, then Record your answer and Stop when done.</div>
@@ -72,7 +73,7 @@
 <script>
 const $ = s => document.querySelector(s);
 let MODE = "repeat", idx = 0, current = "", OFFLINE = false, LIVEGEN = false;
-let questions = [], qi = 0, topic = "", total = 0;
+let questions = [], qi = 0, topic = "", total = 0, isBank = true;
 let mediaRecorder, chunks = [], stream;
 
 async function boot(){
@@ -99,7 +100,7 @@ async function loadItem(){
     showRepeat(d.sentence, `Repeat this sentence (${idx+1}/${total})`);
   } else {
     const d = await (await fetch(`/api/interview?i=${idx}`)).json();
-    idx = d.i; total = d.total; questions = d.questions; qi = 0;
+    idx = d.i; total = d.total; questions = d.questions; qi = 0; isBank = true;
     showInterview(d.topic);
   }
 }
@@ -108,6 +109,7 @@ function showRepeat(sentence, label){
   current = sentence;
   $('#promptLabel').textContent = label;
   $('#prompt').textContent = sentence;
+  $('#modelBtn').classList.add('hidden');
 }
 
 function showInterview(t){
@@ -117,6 +119,27 @@ function showInterview(t){
   $('#promptLabel').textContent = `Answer this question (Q${qi+1}/${questions.length}` +
      (MODE==='interview' && total ? `, topic ${idx+1}/${total}` : '') + `)`;
   $('#prompt').textContent = current;
+  $('#modelBtn').classList.toggle('hidden', !isBank);   // bank topics have a pre-written example
+}
+
+// Show the pre-written top-band example answer (bank interview questions) without recording.
+$('#modelBtn')?.addEventListener('click', async () => {
+  const box = $('#result'); box.classList.remove('hidden');
+  box.innerHTML = '<label>Model answer (pre-written top-band example)</label><div class="transcript" id="modelAns">Loading…</div>';
+  try {
+    const m = await (await fetch(`/api/interview/model?i=${idx}&q=${qi}`)).json();
+    $('#modelAns').textContent = m.answer || '(no pre-written example — record & score to get one for a generated topic)';
+  } catch(e){ $('#modelAns').textContent = 'Error loading example.'; }
+});
+
+async function fillBankModel(){   // after scoring a bank question, prefer the Claude-written example
+  try {
+    const m = await (await fetch(`/api/interview/model?i=${idx}&q=${qi}`)).json();
+    if (m.answer){
+      const el = $('#modelAns'); if (el) el.textContent = m.answer;
+      const l = $('#modelAnsLabel'); if (l) l.textContent = 'Model answer (pre-written top-band example)';
+    }
+  } catch(e){}
 }
 
 // Next: repeat -> next sentence; interview -> next question, then next topic.
@@ -134,7 +157,7 @@ $('#gen').addEventListener('click', async () => {
     showRepeat(d.sentence, `Repeat this sentence (${d.source})`);
   } else {
     const d = await (await fetch('/api/interview/generate')).json();
-    questions = d.questions; qi = 0; total = 0; idx = 0;
+    questions = d.questions; qi = 0; total = 0; idx = 0; isBank = false;
     showInterview(d.topic);
   }
   $('#result').classList.add('hidden');
@@ -195,7 +218,8 @@ function render(d){
       <label>You said (transcript)</label><div class="transcript">${escaped(d.transcript) || '(nothing transcribed)'}</div>
       <label>Task score</label><div class="band">${d.band}<small> / 5</small></div>
       ${crits}<label>Top fixes</label><ul>${fixes}</ul>
-      <label>Model answer to aim for</label><div class="transcript">${escaped(d.revised)}</div>`;
+      <label id="modelAnsLabel">Model answer to aim for</label><div class="transcript" id="modelAns">${escaped(d.revised)}</div>`;
+    if (isBank) fillBankModel();
   }
 }
 boot();

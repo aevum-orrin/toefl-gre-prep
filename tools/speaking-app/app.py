@@ -48,7 +48,8 @@ def _load_interview_topics() -> list[dict]:
     for item in raw:
         if isinstance(item, dict) and "questions" in item:
             topics.append({"topic": item.get("topic", "Interview"),
-                           "questions": [q for q in item["questions"] if isinstance(q, str)]})
+                           "questions": [q for q in item["questions"] if isinstance(q, str)],
+                           "answers": [a for a in item.get("answers", []) if isinstance(a, str)]})
         elif isinstance(item, str):
             topics.append({"topic": "Interview", "questions": [item]})
     return topics
@@ -127,6 +128,16 @@ def interview_generate():
         except Exception as e:
             return {**TOPICS[0], "source": "bank", "note": f"live gen failed: {e}"}
     return {**TOPICS[0], "source": "bank", "note": "no LLM backend; set a key for live gen"}
+
+
+@app.get("/api/interview/model")
+def interview_model(i: int = 0, q: int = 0):
+    """Pre-written top-band model answer for a bank interview question (null for fresh topics)."""
+    if 0 <= i < len(TOPICS):
+        answers = TOPICS[i].get("answers") or []
+        if 0 <= q < len(answers) and answers[q]:
+            return {"answer": answers[q], "source": "bank"}
+    return {"answer": None}
 
 
 @app.post("/api/interview/score")

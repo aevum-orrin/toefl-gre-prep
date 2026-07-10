@@ -108,6 +108,29 @@ def merge_sims(repo_p: Path, gen_names: list[str]) -> tuple[int, int]:
     return len(items), n
 
 
+def merge_answers(repo_p: Path, gen_names: list[str]) -> tuple[int, int]:
+    """Attach pre-written model answers (one per interview question) by topic name."""
+    items = _read(repo_p)
+    ans: dict = {}
+    for name in gen_names:
+        try:
+            obj = json.loads((GEN / name).read_text(encoding="utf-8"))
+            if isinstance(obj, dict):
+                ans.update(obj)
+        except (json.JSONDecodeError, ValueError, OSError):
+            pass
+    n = 0
+    for it in items:
+        a = ans.get(it.get("topic"))
+        if isinstance(a, list) and a:
+            it["answers"] = [x.strip() for x in a[:len(it.get("questions", []))]
+                             if isinstance(x, str) and x.strip()]
+            if it["answers"]:
+                n += 1
+    _write(repo_p, items)
+    return len(items), n
+
+
 def main() -> None:
     total, added = merge_keyed(REPO / "toefl/writing/email_prompts.json",
                                GEN / "email_b.json", "id", ["situation", "prompt"])
@@ -135,6 +158,11 @@ def main() -> None:
     total, added = merge_sims(REPO / "toefl/writing/discussion_prompts.json",
                               ["disc_sim_a.json", "disc_sim_b.json", "disc_sim_c.json", "disc_sim_d.json"])
     print(f"  discussion similar sets: {added}/{total}")
+
+    total, added = merge_answers(REPO / "toefl/speaking/interview_questions.json",
+                                 ["interview_ans_a.json", "interview_ans_b.json",
+                                  "interview_ans_c.json", "interview_ans_d.json"])
+    print(f"  interview model answers: {added}/{total}")
 
 
 if __name__ == "__main__":

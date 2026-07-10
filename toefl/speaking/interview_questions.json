@@ -6,6 +6,12 @@
    "What has been the most surprising thing you have learned so far?",
    "Was there a moment when you doubted your choice? What happened?",
    "How do you think this major will shape your future career?"
+  ],
+  "answers": [
+   "I'm studying data science, and honestly it started with something pretty small. In high school, our teacher gave us a spreadsheet of local weather data and asked us to find patterns. I spent a whole weekend making charts, and I was genuinely thrilled when I noticed the temperature swings lined up with certain months. That feeling of pulling a story out of raw numbers stuck with me. From that point on, I knew I wanted a field where I could ask questions and let the data answer them.",
+   "The most surprising thing is how much of the work is cleaning data, not fancy algorithms. I used to picture data science as building brilliant models all day. But in my first real project, predicting student grades, I spent almost eighty percent of my time just fixing messy, missing entries. At first that frustrated me, but then I realized the cleaning is where the real thinking happens. Understanding why the data was broken taught me more about the problem than the model ever did.",
+   "Definitely. During my second year, I hit a statistics course that completely overwhelmed me. I failed my first midterm, and I sat there wondering if I'd picked the wrong field entirely. What pulled me back was going to my professor's office hours and admitting I was lost. She walked me through one concept slowly, and suddenly it clicked. I realized my doubt wasn't really about the subject, it was about being afraid to ask for help. After that, I stopped struggling alone.",
+   "I think it opens a lot of doors, but the one I'm most excited about is healthcare. My grandmother has diabetes, and watching her manage it made me realize how much data could help patients like her. With a data science background, I'd love to build tools that spot health risks early. Even if my exact job changes, the core skill of turning messy information into clear decisions will follow me everywhere. That flexibility is honestly what makes me feel secure about the future."
   ]
  },
  {
@@ -15,6 +21,12 @@
    "What specifically did they do that was different from other teachers?",
    "How did their teaching change the way you approach learning?",
    "If you could thank them today, what would you say?"
+  ],
+  "answers": [
+   "Yes, my high school biology teacher, Mr. Chen, made a huge impression on me. He wasn't the loudest or most famous teacher in the school, but he had this quiet way of making you feel like your questions mattered. I remember once I asked something kind of silly about how cells divide, and instead of brushing me off, he stayed after class and drew the whole process on the board. That respect for curiosity is something I've never forgotten, and it shaped how I treat other people's questions.",
+   "What set him apart was that he never just handed us the answers. Most teachers would tell you the solution and move on, but Mr. Chen would answer a question with another question. When I asked why leaves turn red in autumn, he asked me what I thought first, and we reasoned through it together. At the time it was a little annoying, honestly. But looking back, he was teaching us how to think, not what to think. That's a much rarer skill in a teacher.",
+   "His teaching made me a much more active learner. Before his class, I mostly memorized facts to pass tests and forgot them a week later. But because he always pushed me to explain my reasoning, I started asking myself why about everything, not just biology. Now when I study anything, I try to understand the logic underneath instead of just the surface. That habit has made learning way more enjoyable, and honestly it's the main reason I still love studying today.",
+   "I'd tell him that his class changed the direction of my life, and I don't think he even realizes it. I'd say, Mr. Chen, you taught me that being curious isn't embarrassing, it's powerful. I actually chose a science path largely because he made learning feel like an adventure instead of a chore. I'd want him to know that every time I stay patient with someone who's confused, I'm passing on exactly what he gave me. That's the best thank you I can offer."
   ]
  },
  {
@@ -24,6 +36,12 @@
    "How did you handle those difficulties in the beginning?",
    "What daily habits helped you adjust to your new environment?",
    "Looking back, how has living independently changed you?"
+  ],
+  "answers": [
+   "The hardest part was the silence, honestly. Back home, my house was always noisy with my little brother playing and my mom cooking in the kitchen. When I moved into my dorm, that first night was so quiet it almost hurt. I remember sitting on my bed realizing no one would ask how my day went. It wasn't the cooking or the laundry that got to me, it was missing those small, everyday moments of connection. That emotional adjustment was way harder than any practical task.",
+   "At first, I coped by calling my mom every single night, which honestly made me feel worse. So I changed my approach and forced myself to build a new routine. I started saying yes to little things, like grabbing dinner with my roommate or joining a study group. One small win was joining a badminton club in my second week. Suddenly I had people to see and places to be, and the homesickness slowly faded. Staying busy and connected was what really got me through.",
+   "A few small habits made a huge difference. The biggest one was cooking one proper meal for myself every day. Learning to make my mom's tomato and egg dish gave me a little taste of home and a sense of control. I also started taking a short walk every morning before class, which helped me clear my head. Those two routines gave my day some structure. When everything else felt new and uncertain, having those anchors made the whole place feel more like mine.",
+   "Looking back, it made me far more self-reliant and honestly more confident. Two years ago, I couldn't even fix a jammed printer without calling someone. Now I handle my own budget, my own cooking, and my own problems without panicking. The biggest change is mental, though. I've learned that I can drop myself into an unfamiliar situation and figure it out. That belief in myself is something I never would have gained if I'd stayed comfortable at home. I'm genuinely grateful for it now."
   ]
  },
  {
@@ -33,6 +51,12 @@
    "What role did you naturally take on within the team?",
    "How did your group handle a disagreement or a slacking member?",
    "What would you do differently in your next group project?"
+  ],
+  "answers": [
+   "Sure. Last semester, my team of four had to design a small mobile app for a marketing class. Our idea was an app that helps students find cheap secondhand textbooks on campus. We had about three weeks, and none of us had built an app before, so it was ambitious. We split the work between design, research, and the presentation. It got stressful near the deadline, but seeing our rough idea turn into an actual clickable prototype was incredibly satisfying. I learned a ton from it.",
+   "I naturally became the organizer, the person who keeps everyone on track. It wasn't something I planned, but I noticed early on that we had great ideas and zero structure. So I set up a shared document with clear deadlines and checked in with everyone midweek. I'm not the most creative person in a group, honestly, but I'm good at making sure things actually get finished. My teammates later told me the timeline I made was what kept us from panicking at the end.",
+   "We actually had one member who kept missing deadlines. Instead of complaining behind his back, I asked him privately if everything was okay. It turned out he was overwhelmed with a family situation and too embarrassed to say so. Once we knew, we shifted his workload to something smaller and more flexible. He ended up delivering great work on the presentation slides. That taught me that a slacker often has a reason, and a quiet, direct conversation usually works better than getting frustrated.",
+   "Next time, I'd set clear expectations on day one instead of assuming everyone's on the same page. In this project, we never defined what done actually looked like, so we wasted time redoing work. I'd start with a quick meeting where we agree on goals, deadlines, and who's responsible for what. I'd also build in a buffer before the deadline for testing. Honestly, most of our stress came from vague planning, not from a lack of effort, and that's completely fixable."
   ]
  },
  {
@@ -42,6 +66,12 @@
    "How did you first get started with it?",
    "What do you find most rewarding about it?",
    "Do you think this hobby has taught you anything useful?"
+  ],
+  "answers": [
+   "My favorite hobby is film photography, the old-fashioned kind with actual rolls of film. I love it because it forces me to slow down. With a phone, you can snap fifty pictures without thinking, but with film, each shot costs money, so I really study the light and the framing before I press the button. There's also this magical delay where I don't see the photos until the film is developed. That little moment of surprise, days later, is honestly the best part for me.",
+   "It started by accident, really. A couple of years ago, I found my dad's old film camera in a dusty box in our closet. I was curious whether it still worked, so I bought a cheap roll of film and just started experimenting. My first photos were terrible, half of them were blurry or too dark. But one shot of my grandmother laughing came out beautifully, and I was hooked. That single lucky photo turned a random find into a hobby I now genuinely love.",
+   "The most rewarding part is that it makes me really notice the world around me. When I'm carrying my camera, I stop walking around on autopilot. I start seeing how afternoon light hits a wall, or how someone's expression changes for just a second. Photography trained my eye to appreciate small, ordinary beauty I used to walk right past. Even on days I don't take a single picture, I see my city differently now. That shift in how I look at life is priceless.",
+   "Definitely. Film photography taught me patience and how to accept imperfection. Since I can't instantly delete a bad shot and redo it, I've learned to accept mistakes and just keep going. That mindset has spilled into the rest of my life, honestly. When a project doesn't go perfectly now, I don't panic or scrap everything. I think, okay, that shot didn't work, what will I try next? Learning to be patient and forgiving with myself is probably the most useful thing it's given me."
   ]
  },
  {
@@ -51,6 +81,12 @@
    "What made the situation especially difficult for you?",
    "What steps did you take to push through it?",
    "How did overcoming it affect your confidence afterward?"
+  ],
+  "answers": [
+   "One of the biggest challenges I faced was giving my first public presentation. I've always been shy, and speaking in front of a crowd genuinely terrified me. In my first year of university, I had to present a research project to about a hundred students. Just thinking about it made my hands shake. But I couldn't avoid it, so I had to find a way to push through that fear instead of running from it. It ended up being a real turning point for me.",
+   "What made it so hard was that my fear was physical, not just mental. It wasn't only nerves, my voice would actually tremble and my mind would go completely blank. The worst part was the anticipation. For a whole week before, I could barely sleep because I kept imagining myself freezing up in front of everyone. On top of that, English isn't my first language, so I was scared of forgetting my words in the middle. Those two fears stacked right on top of each other.",
+   "I broke it down into small steps. First, I practiced my speech out loud in my empty dorm room until I knew it cold. Then I recorded myself on my phone and, as painful as it was, watched it back to fix my mistakes. The most helpful step was rehearsing in front of two close friends first. Their encouragement gave me a small dose of confidence. By the time the real presentation came, I had already given that speech maybe twenty times.",
+   "Honestly, it transformed me. When I finished and people actually clapped, I felt this rush of pride I'd never experienced before. It proved to me that fear isn't a wall, it's just something you can work through with enough preparation. Since then, I've volunteered to present in almost every class. I'm still a bit nervous each time, but that nervousness doesn't control me anymore. Beating that one challenge gave me a confidence that spread into every other part of my life."
   ]
  },
  {
@@ -60,6 +96,12 @@
    "Is there an app or device you could not imagine living without?",
    "Have you ever felt that technology created a problem for you?",
    "How do you try to keep a healthy balance with your screen time?"
+  ],
+  "answers": [
+   "Technology is honestly woven into almost every hour of my day. It wakes me up, it plans my schedule, and it's how I attend half my classes. But the way I rely on it most is for studying. I use a note-taking app that syncs across my phone and my laptop, so an idea I jot down on the bus is waiting for me when I open my computer. That seamless flow has made me way more organized than I ever was with paper notebooks.",
+   "For me, it's my noise-canceling headphones. I know that sounds dramatic, but they've genuinely changed how I study. I live in a noisy apartment with thin walls, and I used to get distracted constantly. The moment I put those headphones on, the outside world just disappears and I can finally focus deeply. They basically create a quiet library anywhere I go. Out of every gadget I own, that's the one I'd struggle the most to give up, honestly.",
+   "Yes, definitely, mostly with distraction. Last year, I realized I was checking my phone every few minutes without even deciding to. One night I sat down to study for two hours and got almost nothing done because I kept drifting onto social media. That scared me a little. I realized the same device that helps me is also quietly stealing my attention. It was a wake-up call that technology is a tool, and I have to control it, not the other way around.",
+   "My main strategy is setting physical boundaries. The rule that works best for me is keeping my phone in another room while I study. If it's out of arm's reach, I'm far less tempted to grab it. I also turned off almost all my notifications, so my phone isn't constantly buzzing for my attention. On weekends, I try to take one full morning completely offline. These small limits help me use technology on purpose, instead of letting it pull me around all day."
   ]
  },
  {
@@ -69,6 +111,12 @@
    "What was the most unexpected thing you encountered there?",
    "How did travelling to that place change your perspective?",
    "Where would you like to travel next, and why?"
+  ],
+  "answers": [
+   "The trip that stands out most was a visit to a small mountain village with my family a few years ago. There was almost no phone signal, which sounds terrible but turned out to be wonderful. For three days, we just hiked, cooked over a fire, and actually talked to each other without any screens. I remember one evening watching the stars, and there were more than I'd ever seen in the city. That quiet, disconnected time is a memory I treasure deeply.",
+   "The most unexpected thing was how kind the local villagers were to complete strangers. One afternoon, it started pouring rain while we were hiking, and an elderly woman we'd never met waved us into her home. She gave us hot tea and dried our jackets by her stove, expecting absolutely nothing in return. Coming from a big city where people rarely talk to strangers, that warmth genuinely shocked me. It changed my assumption that you always have to be guarded around people you don't know.",
+   "That trip taught me that happiness doesn't require much. The villagers had simple homes and few possessions, but they seemed more content than a lot of people I know back home. It made me question how much I actually need in order to feel happy. I came back and honestly stopped chasing the newest phone or the trendiest clothes. Seeing people live so richly with so little rewired how I think about success. That shift in perspective has stayed with me long after the trip ended.",
+   "Next, I'd really love to visit Japan, mainly for the food culture. I've always been fascinated by how much care and tradition goes into their cooking, even something as simple as a bowl of ramen. I'd love to walk through the markets, try dishes I can't even name yet, and see how the meals connect to the seasons. Beyond the food, I'm drawn to how they balance ancient traditions with modern technology. I think experiencing that contrast in person would be incredible."
   ]
  },
  {
@@ -78,6 +126,12 @@
    "What was a typical day at that job like for you?",
    "What was the most valuable lesson you took away from it?",
    "How do you think that experience will help you in the future?"
+  ],
+  "answers": [
+   "Yes, last summer I worked part-time as a barista in a small local coffee shop. It was my first real job, so I was pretty nervous at the start. My main tasks were taking orders, making drinks, and keeping the place clean during the busy morning rushes. It could get chaotic when a long line formed, but I actually grew to love the fast pace. Learning to make a decent latte and remembering the regulars' orders gave me a surprising sense of pride, honestly.",
+   "A typical day started early, around six in the morning, before the shop even opened. I'd help set up the machines, brew the first batch of coffee, and prepare the pastries. Then the morning rush would hit, and for two solid hours it was nonstop, taking orders and making drinks as fast as I could. After that came a quieter stretch where I'd clean and restock. The days were long and physically tiring, but that busy rhythm made the time fly by surprisingly fast.",
+   "The most valuable lesson was how to stay calm and polite under pressure. One morning, a customer got really angry because we made his order wrong. My instinct was to get defensive, but instead I apologized, fixed it quickly, and handed him a small free cookie. He left smiling. That moment taught me that staying calm and taking responsibility can turn a bad situation completely around. That skill of handling difficult people gracefully is something I use way beyond just the coffee shop.",
+   "I think it built a foundation I'll use in any career. Beyond the coffee skills, I learned how to work on a team, manage my time under pressure, and communicate with all kinds of people. Those soft skills matter everywhere. More than that, earning my own money taught me the real value of a dollar and made me appreciate my parents' hard work so much more. Whatever job I end up in, that experience of showing up and being reliable will carry over."
   ]
  },
  {
@@ -87,6 +141,12 @@
    "What tends to cause you the most stress as a student?",
    "What strategies do you use to stay calm under pressure?",
    "How has your approach to managing stress changed over time?"
+  ],
+  "answers": [
+   "During a busy week, I rely heavily on planning everything out on Sunday night. I sit down and write out every deadline and commitment for the coming week in a simple planner. The trick that works best for me is breaking big tasks into small daily chunks. Instead of write the whole essay, I'll schedule write one section today. Seeing my week laid out visually keeps me from feeling overwhelmed, and crossing off each small task gives me a steady sense of progress and control.",
+   "Honestly, what stresses me most is when several deadlines pile up in the same week. It's not any single assignment that gets to me, it's the feeling of being pulled in five directions at once. Last semester I had three exams and a project all due within a few days, and I remember feeling almost frozen, not knowing where to even start. That overwhelming sense of too much at once is definitely my biggest source of stress, more than the difficulty of the work itself.",
+   "My go-to strategy is going for a short run. When I feel the pressure building, sitting there and stewing only makes it worse. So I'll step away and run for twenty minutes, and it genuinely resets my mind. The physical movement burns off that nervous energy, and I almost always come back able to think more clearly. I also remind myself to focus on just the next single task, not the entire mountain of work. Those two things together keep me grounded.",
+   "It's changed a lot, honestly. In high school, I dealt with stress by pulling all-nighters and just powering through, which completely burned me out. Now I've learned that rest is part of being productive, not the opposite of it. The biggest change is that I protect my sleep no matter what, even during exam week. I used to wear exhaustion like a badge of honor, but now I know a rested mind works far better. That shift has made me calmer and way more effective."
   ]
  },
  {
@@ -96,6 +156,12 @@
    "What was it about the story that resonated with you?",
    "Did it change any of your ideas or opinions?",
    "Would you recommend it to a friend, and how would you describe it?"
+  ],
+  "answers": [
+   "Definitely. The book that has really stayed with me is 'The Little Prince' by Antoine de Saint-Exupery. I first read it in high school, thinking it was just a children's story, but the ideas kept coming back to me for years. It's short, but every time I reread it I notice something new. Even now, whenever I feel overwhelmed by school or deadlines, I think about its message that what's essential is invisible to the eye, and it calms me down.",
+   "What really resonated with me was the idea that adults often lose sight of what truly matters. There's a line about how grown-ups only care about numbers and facts, and that hit me hard. As a student, I'd become obsessed with grades and test scores, and I'd almost forgotten why I loved learning in the first place. The story reminded me to protect that childlike curiosity, and honestly, that message felt like it was written directly for me.",
+   "Yes, it genuinely shifted how I see relationships. Before, I thought spending time efficiently meant doing more things. But the fox in the story teaches that the time you 'waste' on someone is exactly what makes them special to you. After reading that, I started calling my grandmother every week just to chat, even when I was busy. That small change made our bond so much stronger, and it taught me that relationships need unhurried, dedicated time to grow.",
+   "Absolutely, I recommend it to almost everyone. I'd describe it as a deceptively simple story about a little boy who travels between planets, but it's really a gentle book about love, loss, and what makes life meaningful. I always tell my friends not to be fooled by the fairy-tale illustrations, because the ideas underneath are surprisingly deep. It's the kind of book you can finish in an afternoon but keep thinking about for the rest of your life."
   ]
  },
  {
@@ -105,6 +171,12 @@
    "What motivated you to get involved in the first place?",
    "What did you find most difficult about the experience?",
    "How did helping others affect the way you see your community?"
+  ],
+  "answers": [
+   "Yes, I have. For about a year, I volunteered as a math tutor at a community center near my neighborhood, helping elementary school kids with their homework twice a week. Most of them came from families where the parents worked long hours and couldn't help with schoolwork. I'd sit with a group of five or six kids, explaining fractions or multiplication in simpler ways. It became one of the most meaningful parts of my week, and I really looked forward to it.",
+   "Honestly, what motivated me at first was pretty personal. When I was younger, I struggled a lot with math, and one patient tutor completely changed things for me. I remembered how powerless I felt before that, and I wanted to be that person for someone else. So when I saw a flyer asking for volunteers, I signed up almost immediately. I figured if I could spare a few hours a week to give another kid that same confidence, it was absolutely worth it.",
+   "The most difficult part was staying patient when a student just wasn't getting it. There was one boy who struggled with the same type of problem for weeks, and sometimes I felt frustrated, even though I never showed it. I had to keep reminding myself that everyone learns at a different pace. Eventually I found a new way to explain it using drawings, and when it finally clicked for him, that struggle made the breakthrough feel even more rewarding.",
+   "It completely changed how I see my community. Before, I mostly kept to myself and didn't really notice the people around me. But volunteering made me realize how many families are quietly struggling, and how much a little help can matter. Now I see my neighborhood as something I'm genuinely part of, not just a place I live. It made me feel more connected and responsible, and I think that sense of belonging is something I'll carry for a long time."
   ]
  },
  {
@@ -114,6 +186,12 @@
    "Which part of the language do you find the hardest?",
    "What methods have worked best for you in practicing it?",
    "How do you feel when you can finally communicate in that language?"
+  ],
+  "answers": [
+   "Learning English has honestly been a roller coaster for me. I started back in middle school, and at first it felt almost impossible, just endless grammar rules and vocabulary lists to memorize. But over the years, as I started watching English shows and talking to people online, it slowly became fun instead of a chore. There were times I wanted to give up, but the moments when I actually understood a joke or a song made all the frustration worth it.",
+   "For me, the hardest part is definitely listening, especially when native speakers talk fast and use slang. I can read an academic article pretty comfortably, but the moment someone speaks quickly or uses an idiom I've never heard, I get completely lost. Pronunciation is tricky too, because some sounds just don't exist in my first language. So even now, I really have to concentrate hard during fast conversations, and that's the skill I'm still working on the most.",
+   "The method that's worked best for me is immersing myself as much as possible. Instead of just studying textbooks, I changed my phone to English, watched movies without subtitles, and talked to myself out loud while cooking. My favorite trick was keeping a small notebook of new phrases I heard and forcing myself to use each one within a day. Learning the language in real, everyday situations helped it stick far better than memorizing word lists ever did.",
+   "It's honestly one of the best feelings in the world. The first time I had a long, natural conversation with a foreigner without translating in my head, I felt this rush of pride and excitement. It's like a door suddenly opening to a whole new world of people and ideas. Being able to express exactly what I mean in another language makes me feel more confident and capable, and it reminds me that all those hours of struggle really paid off."
   ]
  },
  {
@@ -123,6 +201,12 @@
    "Can you tell me how you met one of your closest friends?",
    "How do you keep a friendship strong over time?",
    "Has a friendship ever taught you something important about yourself?"
+  ],
+  "answers": [
+   "The quality I value most in a friend is honesty, even when it's uncomfortable. I have plenty of people who'll agree with everything I say, but a true friend is someone who'll tell me when I'm wrong. My closest friend, for example, once told me I was being unfair to my younger brother, and even though it stung, she was right. I trust her completely because I know she'll always tell me the truth, and that kind of honesty is rare.",
+   "I met my best friend in the most ordinary way, actually. We were assigned to sit next to each other in a chemistry class in tenth grade, and neither of us understood a single thing the teacher said. We started struggling through the homework together, complaining and laughing about how lost we were. That shared misery somehow turned into a really deep friendship. Ten years later, we're still close, and we still joke that chemistry was the one subject that actually gave us something valuable.",
+   "I think the key to keeping a friendship strong is making a real effort, especially now that we live in different cities. We can't meet often, so we schedule a video call every couple of weeks, no matter how busy things get. It doesn't have to be anything special, just catching up on our lives. I've learned that friendships fade when you take them for granted, so I try to show up consistently, remember the small things, and be there when it actually matters.",
+   "Definitely. A close friendship once taught me that I have a hard time asking for help. During a really rough period, I kept pretending everything was fine, until my friend gently called me out and said I didn't have to carry everything alone. That moment made me realize I'd been treating independence as a kind of pride. Because of her, I've learned to be more open about my struggles, and honestly, that's made me a much healthier and happier person."
   ]
  },
  {
@@ -132,6 +216,12 @@
    "What do you miss most about it when you are away?",
    "Is there something you would change about your hometown?",
    "How has growing up there shaped who you are today?"
+  ],
+  "answers": [
+   "I grew up in a small coastal town in the south, where life moves at a really relaxed pace. It's the kind of place where everyone seems to know each other, and you can walk from one end to the other in about twenty minutes. My favorite part was the harbor, where fishing boats came in every morning and the whole area smelled of salt and fresh seafood. It wasn't exciting or modern, but it felt warm, safe, and full of character.",
+   "What I miss most is definitely the food, especially the fresh seafood you just can't find in a big city. Every weekend, my family would go to a tiny restaurant by the water and eat fish that had been caught that same morning. But beyond the food, I miss the sense of familiarity, running into neighbors who've known me since I was a baby. In a huge city, you can feel invisible, so I really miss that feeling of belonging somewhere.",
+   "If I could change one thing, I'd want more opportunities for young people. The town is beautiful, but there are very few jobs or universities, so almost everyone my age eventually has to leave, including me. It's a little sad watching the town slowly age because the young people move away. I wish there were more industries or schools there, so people wouldn't have to choose between staying close to family and building a real career. That's the one thing I'd fix.",
+   "Growing up there shaped me in a big way. Because it was such a close-knit community, I learned early on to value relationships and to treat people with kindness, since you'd always see them again. The slower pace also taught me to appreciate simple things, like a good meal or a walk by the sea. Even though I live in a fast city now, that small-town warmth is still part of who I am, and it keeps me grounded when life gets hectic."
   ]
  },
  {
@@ -141,6 +231,12 @@
    "Why is this goal particularly meaningful to you?",
    "What obstacles do you expect to face along the way?",
    "How will you know when you have truly achieved it?"
+  ],
+  "answers": [
+   "Right now, my main goal is to get into a good graduate program abroad to study data science. I'm currently studying for standardized tests, improving my English, and working on research projects to strengthen my application. It's a lot to juggle alongside my regular classes, but I have a clear timeline and I try to make steady progress every week. This goal has basically shaped my entire schedule for the past year, and it keeps me motivated to push forward.",
+   "This goal is meaningful to me because it represents a chance to build the kind of future I've always imagined. I'm the first person in my family who'll study abroad, so it's not just about me, it's about making my parents' sacrifices worth it. They worked incredibly hard to give me opportunities they never had. Achieving this would prove that their belief in me was justified, and that's a huge source of motivation that keeps me going on tough days.",
+   "I expect to face a few big obstacles. The most obvious one is the competition, since top programs accept only a small percentage of applicants. There's also the financial pressure, because studying abroad is expensive and I'll need scholarships to make it work. And honestly, moving far from my family and adapting to a new culture will be emotionally hard. But I've been preparing for each of these step by step, so I feel ready to face them when they come.",
+   "I'll know I've truly achieved it not just when I get the acceptance letter, but when I'm actually sitting in a classroom abroad, contributing to real research. For me, the goal isn't only about being admitted, it's about thriving once I'm there. I imagine that first day, walking onto campus, and feeling like I genuinely belong. When I reach the point where I'm doing meaningful work in my field, that's when I'll know all the effort was completely worth it."
   ]
  },
  {
@@ -150,6 +246,12 @@
    "Do you have a form of exercise or activity that you enjoy?",
    "What makes it hard to stick to healthy habits sometimes?",
    "How do you feel physically and mentally when you stay active?"
+  ],
+  "answers": [
+   "I try to stay healthy through small, consistent habits rather than dramatic changes. I make an effort to cook most of my meals so I know exactly what I'm eating, and I try to get seven or eight hours of sleep, which is honestly the hardest part as a student. I also take the stairs instead of the elevator and go for a walk after dinner. None of it is extreme, but these little routines add up and keep me feeling balanced.",
+   "Yes, I really enjoy running, especially outdoors in the early morning. I started a couple of years ago just to clear my head before exams, and it gradually became something I genuinely look forward to. There's a park near my apartment with a nice trail along a river, and running there while the city is still quiet feels almost meditative. I usually go three times a week, and it's become my favorite way to reset both my body and my mind.",
+   "The hardest thing is definitely staying consistent when life gets busy. During exam season, healthy habits are the first thing I drop, because sleep and exercise feel like luxuries when I have deadlines piling up. It's also tempting to grab fast food when I'm exhausted and don't want to cook. What helps me is not being too hard on myself, so if I slip for a few days, I just restart instead of giving up completely. That mindset keeps me on track.",
+   "When I stay active, the difference is huge, both physically and mentally. Physically, I have way more energy and I sleep much better at night. But the mental benefits are even bigger for me. After a good run, my stress just melts away and my mind feels clear, which helps me focus when I study. On the days I exercise, I'm noticeably happier and more patient with people. It's honestly become my main tool for managing anxiety and staying positive."
   ]
  },
  {
@@ -159,6 +261,12 @@
    "What advantages did you notice compared to a physical classroom?",
    "What did you find frustrating or limiting about studying online?",
    "Which format do you prefer overall, and why?"
+  ],
+  "answers": [
+   "Yes, I took several online courses, especially during the pandemic when all my classes suddenly moved online. It was a strange adjustment at first. I'd wake up, open my laptop, and attend lectures from my bedroom, sometimes still half-asleep. Some courses were recorded, so I could watch them whenever I wanted, while others were live over video calls. It definitely had its ups and downs, but overall I learned a lot about being a more independent, self-directed learner.",
+   "The biggest advantage for me was flexibility. Because many lectures were recorded, I could pause and rewind whenever I didn't understand something, which is impossible in a normal classroom. I also saved almost an hour of commuting every day, and I used that time to study or rest. On top of that, I could learn at my own pace, speeding through easy topics and slowing down on hard ones. For a self-motivated student, that kind of control was genuinely valuable.",
+   "What frustrated me most was the lack of real interaction. In a physical classroom, I could easily ask the professor a quick question or discuss ideas with classmates, but online, everyone kept their cameras off and stayed silent. It felt isolating, and I really missed that energy of being around other students. It was also much harder to stay focused at home, with my bed and phone right there. Staying disciplined without any external structure was a constant challenge for me.",
+   "Overall, I still prefer studying in person. Even though online learning is convenient, I've realized I learn best when I'm physically present with other people. The classroom environment keeps me accountable, and I absorb far more from spontaneous discussions and face-to-face conversations with professors. For me, a lot of learning happens in those small, unplanned moments, like a chat after class. So while I appreciate online tools, nothing quite replaces the focus and connection of a real classroom for me."
   ]
  },
  {
@@ -168,6 +276,12 @@
    "What exactly went wrong in that situation?",
    "How did you react once you realized your mistake?",
    "What do you do differently now because of that experience?"
+  ],
+  "answers": [
+   "Sure. One mistake that really taught me a lesson was during my second year of university, when I completely underestimated a group presentation. I was in charge of the final slides, and I kept telling myself I had plenty of time, so I put it off until the night before. That single mistake ended up affecting my whole team, and it was honestly one of the most stressful and embarrassing experiences of my studies. But I learned so much from it.",
+   "What went wrong was basically a chain reaction from my procrastination. Because I started the slides so late, I was rushing at two in the morning and made careless errors, including a wrong chart and several typos. Since I finished so late, my teammates had no time to review my part before we presented. During the presentation, the professor immediately noticed the mistake, and my group looked unprepared. I felt terrible, because my poor time management had let down people who were counting on me.",
+   "Once I realized what I'd done, my first reaction was genuine guilt. Instead of making excuses, I apologized to my teammates right after class and took full responsibility for the errors. I didn't want to hide behind the group. Then I offered to do extra work to fix the slides and re-send a corrected version to the professor. Owning up to it was uncomfortable, but I knew blaming bad luck would've been dishonest. Facing it directly was the only right thing to do.",
+   "Because of that experience, I completely changed how I handle deadlines. Now I always start big tasks early and break them into smaller steps, so I'm never scrambling at the last minute. I also finish my part a day or two ahead, specifically so teammates have time to review it. That one embarrassing mistake basically cured me of procrastination on anything important. Ironically, I'm now the person in the group who reminds everyone else to start early, which still makes me laugh."
   ]
  },
  {
@@ -177,6 +291,12 @@
    "Is there a dish that is especially meaningful to you?",
    "Who taught you the most about food or cooking?",
    "How do your food choices reflect your culture or personality?"
+  ],
+  "answers": [
+   "I genuinely enjoy cooking, much more than eating out these days. When I was younger, I thought cooking was a boring chore, but once I moved out and had to feed myself, I discovered it's actually really relaxing. After a long, stressful day of studying, chopping vegetables and following a recipe helps me switch off my brain. Plus, I love knowing exactly what goes into my food. Eating out is fun occasionally, but cooking for myself feels more satisfying and personal.",
+   "Yes, there's one dish that's really meaningful to me: my grandmother's braised pork. It's the dish she always cooked whenever the whole family gathered for the holidays. The smell of it simmering instantly takes me back to those noisy, happy afternoons in her kitchen. After she passed away, I asked my mother to teach me how to make it, and now I cook it myself on special occasions. For me, it's not just food, it's a way of keeping her memory alive.",
+   "My mother taught me the most about cooking, without a doubt. Growing up, I'd sit in the kitchen and watch her prepare dinner, and she'd explain little things, like how to balance flavors or why you add ingredients in a certain order. She never really used recipes; she cooked by instinct and taste, and she encouraged me to do the same. Because of her, I'm not afraid to experiment and trust my own judgment in the kitchen. That confidence is her real gift.",
+   "I think my food choices reflect both my culture and my personality quite a lot. Culturally, I grew up sharing big family-style meals, so I love cooking dishes meant to be shared around a table rather than eating alone. Personality-wise, I'm curious and a bit adventurous, so I'm always trying ingredients and cuisines from other countries. My kitchen is a mix of traditional family recipes and random experiments I saw online. In a way, my cooking is a blend of where I'm from and who I'm becoming."
   ]
  },
  {
@@ -186,6 +306,12 @@
    "How has your hometown changed since you were a child?",
    "What do you think your hometown does better than other places you've been?",
    "If you could change one thing about where you grew up, what would it be and why?"
+  ],
+  "answers": [
+   "I grew up in a mid-sized city near the coast, and honestly the first place I'd take a visitor is the old riverside market. It's this narrow street packed with food stalls, and every morning the vendors call out to their regulars by name. I love it because it captures the whole personality of my hometown in one spot: it's noisy, friendly, and the food is incredible. I still remember buying warm dumplings there with my grandmother, so for me it's not just a market, it's home.",
+   "It's changed a lot, actually. When I was a kid, my neighborhood was mostly low houses with small gardens, and everyone knew each other. Now there are tall apartment buildings and even a subway line that didn't exist before. But the biggest change for me is the pace. It used to feel sleepy and slow, and now it buzzes like a real city. I have mixed feelings, honestly. It's more convenient and modern, but I do miss the quiet streets where I used to ride my bike after school.",
+   "What my hometown does better than anywhere else I've been is food, hands down. The street food culture is just unbeatable. In a lot of cities I've visited, you have to search hard for a good meal or pay a lot for it, but back home you can grab something delicious for almost nothing on any corner. I once took a friend from another province there, and she couldn't believe how cheap and tasty everything was. That everyday access to amazing food is something I really don't take for granted anymore.",
+   "If I could change one thing, it would be the traffic. As my hometown grew, the roads just couldn't keep up, so now rush hour is genuinely painful. I remember a bus ride that used to take fifteen minutes suddenly stretching to almost an hour. It frustrates me because it eats into people's time and adds so much stress to daily life. I'd love to see better public transport and more bike lanes, so people could actually move around the city without sitting in gridlock every single day."
   ]
  },
  {
@@ -195,6 +321,12 @@
    "How do you decide when it's time to put your phone away and disconnect?",
    "In what ways has technology changed how you keep in touch with the people you care about?",
    "Some people say we rely on technology too much. Where do you stand on that?"
+  ],
+  "answers": [
+   "Honestly, the first thing I reach for is my phone, specifically the weather app. I know that sounds boring, but I bike to campus every day, so checking the forecast decides what I wear and whether I need a jacket. Right after that, I glance at my messages to see if anything urgent came in overnight. I've actually tried leaving my phone in another room, but I always end up grabbing it first thing anyway. It's become this automatic little ritual that basically starts my whole morning.",
+   "For me, the clearest signal is when I catch myself scrolling without even reading anything. Once I notice I'm just flicking my thumb on autopilot, I know it's time to stop. I also have a personal rule: no phone at the dinner table. That started because I was out with a close friend once, and we both spent the whole meal on our phones. It felt so empty afterward that I decided to protect at least that time. So now, meals with people are basically a phone-free zone for me.",
+   "Technology has completely changed it, mostly for the better in my case. My closest friend moved abroad two years ago, and without video calls, I honestly think we would have drifted apart. Instead, we do this weekly call where we just cook dinner together over the screen, like we're in the same kitchen. That said, I've noticed I sometimes rely on quick texts instead of real conversations, which can feel a bit shallow. So technology keeps us connected across distance, but I try hard to make sure the connection still feels genuine.",
+   "I partly agree, honestly. I do think we lean on technology a lot, sometimes without thinking. For example, I used to remember dozens of phone numbers, and now I can't recall a single one because my phone does it for me. That did worry me a little. But at the same time, I don't see reliance as automatically bad. Technology lets me study, work, and stay close to family far away. So my stance is that the problem isn't the reliance itself, it's using it mindlessly instead of on purpose."
   ]
  },
  {
@@ -204,6 +336,12 @@
    "When you travel, do you prefer to plan every detail or leave room for surprises? Why?",
    "What's something traveling has taught you that you couldn't have learned at home?",
    "Do you think it's better to visit many places briefly or one place deeply? Explain."
+  ],
+  "answers": [
+   "The trip that really stayed with me was a solo trip I took to the mountains after a really stressful exam period. I spent four days hiking with almost no phone signal, which forced me to actually slow down. One evening, I sat alone watching the sunset spread over the valley, and I felt this deep sense of calm I hadn't felt in months. Even now, whenever I'm overwhelmed, I picture that exact moment. It taught me that sometimes disconnecting completely is precisely what I need to reset myself.",
+   "I'm definitely more of a planner, but I've learned to leave a little breathing room. I like having my transport and a place to sleep locked down, because uncertainty about the basics really stresses me out. But I keep whole afternoons open on purpose. On one trip, that flexibility led me to follow a local's tip to a tiny hillside temple that wasn't in any guidebook, and it became my favorite memory of the whole trip. So my approach is: plan the skeleton, but always leave room for the surprises.",
+   "Traveling taught me how to be comfortable being lost, and I really couldn't have learned that at home. At home, everything is familiar, so I'm always in control. But on a trip abroad, I once got completely lost in a city where I didn't speak the language, and I had to rely on strangers using gestures and a map. To my surprise, people were incredibly kind. That experience made me far more confident and open, because I realized I can handle uncertainty and that most people genuinely want to help.",
+   "Personally, I lean toward visiting one place deeply. I used to try to cram five cities into a single week, and honestly, it all blurred together afterward. Then I spent an entire week in just one town, and it was completely different. I got to know a cafe owner, learned the backstreets, and even picked up a few local phrases. That depth gave me real memories instead of a checklist of photos. So for me, quality beats quantity: I'd much rather truly know one place than merely skim ten."
   ]
  },
  {
@@ -213,6 +351,12 @@
    "What role do you usually take on when you're part of a group?",
    "How do you handle it when a teammate isn't pulling their weight?",
    "Do you get more done working alone or with a team? Why do you think that is?"
+  ],
+  "answers": [
+   "Last semester, four of us had to build a research presentation in just one week. We had to divide up the reading, analyze the data, and design the slides, all while juggling other classes. What made it work was that we met every evening for a quick check-in, even just fifteen minutes. I remember one night when we were totally stuck on our argument, and by talking it through together, we suddenly found a much stronger angle. We ended up getting the top grade, and it honestly felt like a shared win.",
+   "I usually end up being the organizer, almost naturally. I'm the person who creates the shared document, sets the deadlines, and checks that everyone actually knows what they're doing. It's not that I want to control things; I just get anxious when a project feels chaotic. In my last group, no one had scheduled anything, so I made a simple timeline, and you could feel everyone relax once the plan was clear. I've realized I'm honestly happiest in a team when I can bring a bit of structure to the group.",
+   "I try to address it early, but gently, because usually there's a reason behind it. In one group project, a teammate kept missing deadlines, and instead of getting angry, I asked him privately if everything was okay. It turned out he was overwhelmed with a difficult family situation. Once I understood that, we redistributed his tasks and he handled a smaller part really well. So my approach is to talk first and assume the best, rather than complain to everyone else. Most of the time, a calm, honest conversation actually fixes it.",
+   "It really depends on the task, but for creative work, I get more done with a team. When I'm alone, I sometimes get stuck in my own head and circle the same idea for hours. In a group, someone will say one small thing that completely unlocks my thinking. I remember brainstorming a project alone and getting nowhere, then solving it in ten minutes once I talked to a classmate. That said, for focused writing, I need to be alone. So teams spark my ideas, but solo time is where I actually execute them."
   ]
  },
  {
@@ -222,6 +366,12 @@
    "How did you first get into it?",
    "What does this hobby give you that the rest of your day doesn't?",
    "Would you recommend it to someone else, and what kind of person do you think it suits?"
+  ],
+  "answers": [
+   "No matter how packed my week is, I always make time for running. Even if it's just twenty minutes, I lace up and go. I protect that time because it's the one part of my day that's completely mine, with no assignments and no screens. I remember one week during finals when I was drowning in work, and that short evening run was honestly the only thing that kept me sane. For me, running isn't optional; it's basically the reset button I need in order to function properly.",
+   "I actually got into it kind of by accident. A couple of years ago, a friend signed up for a 5K charity run and basically dragged me along, even though I was really out of shape. I struggled the whole way and had to walk half of it, but crossing that finish line gave me such a rush. I was hooked almost immediately. The very next week, I started jogging on my own, slowly building up, and it just snowballed from there into something I genuinely love now.",
+   "What running gives me that nothing else does is mental clarity. During the day, my mind is constantly juggling deadlines, messages, and decisions. But when I run, all of that noise just fades away, and it's only me, my breathing, and the road. Some of my best ideas actually come mid-run, when I'm not even trying to think. I remember solving a problem I'd been stuck on for days, simply because I stopped forcing it. That quiet, moving headspace is something the rest of my busy day never really offers.",
+   "I'd absolutely recommend it, especially to someone who feels stressed or stuck in their own head a lot. You don't need any equipment or talent; you just step out the door, which is exactly what I love about it. I think it suits people who struggle to switch off, like I used to. A friend of mine was really anxious during exam season, so I invited her on an easy jog, and she told me afterward it was the calmest she'd felt in weeks. Honestly, I think almost anyone could benefit from it."
   ]
  },
  {
@@ -231,6 +381,12 @@
    "What specific quality of theirs would you most like to develop in yourself?",
    "Have your role models changed as you've gotten older? How so?",
    "Do you think public figures have a responsibility to be good role models? Why or why not?"
+  ],
+  "answers": [
+   "The person I've looked up to most is my aunt. She's a nurse, and what drew me to her is how calm she stays under real pressure. I remember visiting her hospital as a kid and watching her handle a chaotic emergency room without ever losing her warmth or patience. Even the most frightened patients seemed to relax around her. To me, that combination of real competence and genuine kindness is rare and powerful. She showed me that being good at your job and being caring aren't separate things at all.",
+   "The quality I'd most like to develop is her patience, especially the way she stays calm when everything is going wrong. I tend to get flustered and reactive under pressure, and I say things I later regret. But my aunt just breathes, focuses on the next small step, and handles it. I once saw her calm down a furious patient simply by listening carefully. I really want that kind of steadiness, because I think it would make me not just a better professional, but honestly a better person overall too.",
+   "They definitely have changed. When I was younger, my role models were mostly famous athletes and celebrities. I admired them for their fame and success, honestly, more than anything real. But as I've gotten older, I've shifted toward admiring people I actually know, like my aunt or a mentor. Now I care far more about how someone treats others than how impressive they look from the outside. I think growing up taught me that quiet, everyday character matters way more than the flashy success I used to chase.",
+   "I do think they have some responsibility, though maybe not a perfect one. When someone has millions of followers, especially young ones, their behavior genuinely influences how kids think and act. I've watched younger cousins copy the slang, the style, and even the attitudes of online figures they follow. So pretending your actions have no impact feels dishonest to me. That said, I don't expect them to be flawless, because nobody is. But I do think they should at least be aware that people are watching and learning from them."
   ]
  },
  {
@@ -240,6 +396,12 @@
    "What do you think people gain by living close to nature?",
    "Which conveniences of city life would be hardest for you to give up?",
    "Where do you imagine yourself settling down later in life, and what makes that appealing?"
+  ],
+  "answers": [
+   "Right now, I'd choose a busy city, mostly because of the energy and the opportunity. I love that I can step outside at almost any hour and find something happening, whether it's a lecture, a concert, or just a new cafe. When I moved to a big city for school, I felt genuinely alive in a way my quiet hometown never made me feel. The convenience matters too, but honestly it's the constant possibility that draws me. There's always something new to learn or someone new to meet.",
+   "I think people who live close to nature gain a real sense of calm and perspective. When I visited my grandparents' village last summer, there were no honking cars, just fields and birds, and within a few days I noticed my mind felt quieter. I slept better and I wasn't constantly checking my phone. Being surrounded by nature reminds you that life doesn't have to move at full speed all the time. That slower rhythm is something I think a lot of city people, including me, secretly crave deep down.",
+   "The hardest thing for me to give up would be the convenience of getting around without a car. In the city, I can hop on the subway or walk to almost anything I need, day or night. When I stayed in a rural area for a few weeks, I suddenly depended on someone to drive me everywhere, and it made me feel weirdly trapped. I really value that independence of just leaving my apartment and reaching a library, a doctor, or a friend within minutes. I'd genuinely miss that a lot.",
+   "Honestly, I imagine myself settling somewhere in between, like a small town on the edge of a city. When I was younger I wanted pure city life, but lately I crave more green space and quiet. What appeals to me is having a garden and calmer mornings, while still being a short drive from culture and good hospitals. My uncle lives exactly like that, and every time I visit, it just feels balanced. So my dream is that middle ground, where I get both peace and a real connection to the wider world."
   ]
  },
  {
@@ -249,6 +411,12 @@
    "How do you usually feel after spending a long time scrolling?",
    "Do you think what people post online reflects their real lives? Explain.",
    "If social media disappeared tomorrow, what would you miss and what wouldn't you?"
+  ],
+  "answers": [
+   "The platform I use most is Instagram, but mainly for keeping up with friends rather than posting. I like seeing small updates from people I don't get to meet often, like a classmate who moved abroad. I also follow a few cooking accounts, and honestly that's where I get most of my dinner ideas now. I rarely post anything myself, though. For me it's more of a window into other people's lives and a source of inspiration than a stage where I feel like I have to perform for others.",
+   "Honestly, it depends, but after a really long scroll, I usually feel a bit drained and restless. There's this strange emptiness, like I've spent thirty minutes but have absolutely nothing to show for it. I especially notice it late at night. One evening I scrolled for almost an hour before bed and ended up feeling weirdly anxious, comparing myself to everyone's highlights. That was a real wake-up call. Short bursts are fine and even fun, but long sessions almost always leave me feeling worse than when I started.",
+   "I don't think it reflects real life very accurately, no. Most people, including me, post only the polished highlights, not the boring or hard moments. I remember putting up a cheerful photo from a trip on a day when I was actually feeling really low and homesick. Anyone scrolling past would have assumed I was having the time of my life. So I've learned to take it all with a grain of salt. What we see online is a carefully chosen version of reality, not the messy, full picture behind it.",
+   "If it vanished tomorrow, the thing I'd genuinely miss is staying connected to distant friends and family. Seeing my cousin's baby photos from another country, for example, keeps us close despite the distance. What I would not miss at all, though, is the constant pressure to compare myself to everyone else. My mood honestly rises and falls a lot less when I'm off it for a while. So I'd feel a real loss of connection, but I think I'd also feel lighter and far more present in my own actual life."
   ]
  },
  {
@@ -258,6 +426,12 @@
    "Do you learn better by reading, watching, or actually doing? Give an example.",
    "Tell me about a subject that was hard for you at first but eventually clicked.",
    "What advice would you give someone who's struggling to stay motivated while learning?"
+  ],
+  "answers": [
+   "When I need to learn something new, I usually start by getting the big picture before any of the details. I'll watch a short overview video or read a simple summary, just to see how the whole thing fits together. If I dive straight into the details, I get lost and overwhelmed. For example, when I started learning to code, I first watched a ten-minute video explaining what programming actually does, and only then opened a textbook. Having that map in my head makes everything afterward click much faster and feel far less intimidating.",
+   "I definitely learn best by actually doing, hands down. Reading and watching help me understand, but nothing really sticks until I try it myself and make mistakes. When I was learning to cook, I watched dozens of videos, but I couldn't cook anything until I stood at the stove and burned a few dishes. Those failures taught me more than any tutorial ever did. So now, whenever I learn something new, I jump into practice as fast as possible, because for me, doing it wrong first is how I learn to do it right.",
+   "Statistics was brutal for me at first. In the beginning, all the formulas felt totally abstract, and I honestly thought I just wasn't a math person. What changed everything was connecting it to real examples I actually cared about, like predicting sports results. Suddenly the numbers meant something concrete instead of being random symbols. Once I could see the purpose behind each concept, it genuinely clicked, and I even started enjoying it. That experience taught me that when something feels impossible, I usually just need the right, relatable angle to finally get it.",
+   "My biggest advice would be to shrink the goal until it feels almost too easy to skip. When I was losing motivation learning a language, I stopped forcing myself to study a full hour a day and committed to just five minutes instead. Ironically, once I actually started, I usually kept going much longer. The hardest part is always beginning, so making that first step tiny removes the resistance. I'd tell anyone struggling to focus less on motivation and more on building a small, consistent habit they can't talk themselves out of."
   ]
  },
  {
@@ -267,6 +441,12 @@
    "What made you want to get involved, or what's held you back?",
    "How do you think volunteering affects the person doing it, not just those they help?",
    "Should schools require students to do community service? Where do you stand?"
+  ],
+  "answers": [
+   "Yes, I've volunteered at a local library's reading program for children. Every Saturday morning, I'd help young kids practice reading out loud, mostly ones who were struggling in school. What I loved was watching a shy child slowly gain confidence week after week. I remember one boy who could barely get through a sentence at first, and by the end of the term he was reading whole stories out loud, proudly. That transformation was incredibly rewarding, and honestly, I think I got just as much out of it as they did.",
+   "What got me involved was actually a pretty personal reason. When I was young, I struggled with reading myself, and a patient volunteer at my school made a huge difference for me. So years later, I really wanted to be that person for another kid. That memory is what pushed me to sign up. I'll admit, what almost held me back was time, since I worried about fitting it around my studies. But I decided even two hours a week was worth it, and looking back, giving that time was absolutely the right call.",
+   "I think volunteering changes the helper just as much, maybe even more. For me, it pulled me out of my own little bubble of stress and deadlines. Spending time with those kids reminded me what actually matters and gave me a real sense of purpose beyond grades. I also became more patient and a better communicator without even trying. Honestly, on weeks when I felt down, those Saturday mornings lifted my mood more than anything else. So helping others ended up quietly healing something in me too, which genuinely surprised me.",
+   "I'm mostly in favor, though with one condition. I think requiring some community service exposes students to experiences they'd never seek out on their own, and that can genuinely change them. I probably wouldn't have started volunteering without that first nudge. But I do worry that forcing it can make it feel like a chore, which kills the whole spirit of it. So my stance is: schools should require a small amount but give students real choice in what they do, so it feels meaningful instead of just another box to tick."
   ]
  },
  {
@@ -276,6 +456,12 @@
    "Is there a meal or food tradition that's special in your family?",
    "How have your tastes in food changed over the years?",
    "Do you think sharing meals brings people closer? Why do you feel that way?"
+  ],
+  "answers": [
+   "Honestly, the one dish I'd want everyone to try is hand-pulled beef noodle soup. The broth is simmered for hours until it's rich and deeply savory, and the noodles are stretched fresh right in front of you. What makes it special for me is that there's a tiny shop near my university where the owner still pulls every single bowl by hand. That first steaming spoonful on a cold morning is pure comfort. It's a simple dish, but it captures something warm and honest about how we eat back home.",
+   "Yes, every Lunar New Year my family makes dumplings together, and it's my favorite tradition by far. The night before, all of us crowd around the kitchen table, rolling wrappers and folding them while my grandmother tells old stories. One year she hid a coin inside a single dumpling, and whoever found it was supposed to have good luck for the year. My little cousin bit into it and screamed with joy. It's really less about the food and more about everyone's hands working together in one warm kitchen.",
+   "My tastes have changed a lot, honestly. As a kid I was really picky and refused anything spicy or bitter, so I basically lived on plain rice and fried chicken. But when I moved away for university, I started cooking for myself and trying whatever my roommates ate. Now I actually crave strong flavors like chili, garlic, and even the bitter greens I once hated. I think growing up made me more curious and open, and food became a way to explore other cultures instead of just filling my stomach.",
+   "Absolutely, I think sharing meals brings people much closer. When you sit at the same table, you naturally slow down, put your phone away, and actually talk. I noticed this during exam season, when my roommates and I were all stressed and barely speaking to each other. One night we decided to cook a big hotpot together, and something just shifted, we laughed for hours and forgot the pressure. There's something about passing dishes and eating from the same pot that quietly dissolves the distance between people."
   ]
  },
  {
@@ -285,6 +471,12 @@
    "What's one step you're taking right now to get there?",
    "What's the biggest obstacle standing between you and that goal?",
    "How do you define success for yourself, apart from what others expect?"
+  ],
+  "answers": [
+   "Five years from now, I hope to be working as a data scientist at a company that's actually solving real problems, maybe in healthcare or climate. I picture myself in a role where I'm still learning constantly and surrounded by people smarter than me. On a personal level, I'd love to have my own small apartment and finally feel financially independent from my parents. I'm honestly not chasing a fancy title. I just want work that feels meaningful and a life that feels stable and truly my own.",
+   "The main step I'm taking right now is building real projects instead of just studying theory. Recently I started a side project analyzing local air-quality data, and I'm teaching myself the tools that professionals actually use. Every week I set aside a few hours to code, even when I'm exhausted from classes. It's slow, and sometimes frustrating, but I'm gradually building a portfolio I can show employers someday. I figure the best way to become who I want to be is to start doing that work now, in small pieces.",
+   "Honestly, my biggest obstacle is my own tendency to doubt myself. Whenever I compare myself to classmates who seem years ahead, I get discouraged and want to give up. There's also the practical challenge that the job market is competitive and I don't have much professional experience yet. But the self-doubt is the harder one, because it's internal. When I let it win, I stop trying, which becomes a self-fulfilling prophecy. So the real battle is learning to keep going even when I'm not sure I'm good enough.",
+   "For me, success isn't about salary or a prestigious title, even though people often measure it that way. I define it as waking up genuinely interested in what I'm about to do that day. I remember watching my uncle, who earns a pretty modest income teaching, but he lights up whenever he talks about his students. That really stuck with me. If I can do work I'm proud of, support the people I love, and still have time for my own hobbies, then I'll consider myself successful, no matter what others expect."
   ]
  },
  {
@@ -294,6 +486,12 @@
    "Is there a song that instantly brings back a specific memory for you?",
    "How does music fit into your daily routine, like studying, exercising, or relaxing?",
    "Do you think the music someone likes says something about who they are? Explain."
+  ],
+  "answers": [
+   "These days I'm mostly into lo-fi and mellow indie music. I used to blast loud pop and rock, but this year has been really busy and stressful, so I've gravitated toward calmer, softer sounds. There's this one lo-fi playlist I keep on repeat while I study, with soft piano and light rain in the background. It helps me focus without pulling my attention away. I think our music taste often reflects what we need in the moment, and right now I clearly need something that slows my mind down.",
+   "Definitely. There's an old song my dad used to play in the car every summer when we drove to my grandparents' house. The moment I hear those opening chords, I'm instantly back in the backseat, windows down, watching the countryside blur past. I can almost smell the warm air. My dad would sing along terribly off-key, and my sister and I would laugh at him. That one song basically holds my entire childhood inside it. Music has this strange power to freeze a memory and bring it back whole.",
+   "Music is honestly woven through my whole day. The moment I wake up, I put on something upbeat to get my energy going while I get ready. When I exercise, I need fast, driving beats or I lose all motivation halfway through my run. And at night, I switch to something soft and slow to wind down before sleep. The only time I turn it off completely is when I'm doing really heavy reading, because lyrics distract me. So music basically sets the mood for each separate part of my day.",
+   "I think it says something, but definitely not everything. Music taste can hint at someone's personality, like whether they crave energy and excitement or prefer calm and introspection. For example, my closest friend loves intense, complex jazz, and she really is that kind of deep, analytical thinker. But I'd be careful about judging too quickly. People are complicated, and someone might love cheerful pop while going through a hard time inside. So I'd say music offers a real clue about a person, but never the full picture of who they are."
   ]
  },
  {
@@ -303,6 +501,12 @@
    "Do you prefer physical books or reading on a screen, and why?",
    "How do you usually decide what to read next?",
    "Some say people read less than they used to. Does that worry you, and why?"
+  ],
+  "answers": [
+   "A book that really stuck with me is 'The Little Prince.' I first read it as a kid and thought it was just a cute story about a boy and a rose. But I reread it in high school, and suddenly it felt profound, all about loneliness, love, and what truly matters in life. That famous line about how what's essential is invisible to the eye still gives me chills. It's amazing how a single book can grow up alongside you and reveal completely new meaning as you get older.",
+   "Honestly, I still prefer physical books, even though screens are more convenient. There's something about holding a real book, feeling the paper, and seeing how far I've come by the thickness of the pages. When I read on my phone, I get distracted every few minutes by notifications and end up scrolling social media instead. With a paper book, it's just me and the story, no interruptions. I also love scribbling little notes in the margins. So for deep, focused reading, paper wins for me every single time.",
+   "Usually I decide what to read next based on recommendations from people I trust. My older cousin and I have really similar taste, so whenever she finishes a book she loves, she passes it straight to me, and I've rarely been disappointed. Other times I fall down a rabbit hole, if I love one book, I'll immediately look up everything else that author wrote. I try not to rely too much on bestseller lists, because the most memorable books I've read were quiet recommendations, not the ones everyone was hyping up.",
+   "It does worry me a little, honestly. I've noticed even in myself that my attention span has gotten shorter because of short videos and constant scrolling. Sometimes I struggle to sit with a long book the way I easily used to. That concerns me because deep reading builds patience, empathy, and the ability to follow a complex idea to the end. But I try to stay hopeful. Plenty of people still read, just in newer formats like audiobooks and e-readers. So maybe reading isn't dying, it's just changing shape."
   ]
  },
  {
@@ -312,6 +516,12 @@
    "What first got you interested in that activity?",
    "How do you keep yourself going on days you don't feel like it?",
    "Do you think playing sports teaches lessons that carry over into the rest of life? How?"
+  ],
+  "answers": [
+   "My main way of staying active is running. I try to go for a jog three or four times a week, usually early in the morning before my classes start. I love that it's so simple, all I need is a pair of shoes and I can go anywhere. There's a river path near my apartment that I follow, and watching the sunrise while I run genuinely sets a good tone for my whole day. Honestly, running clears my head almost more than it works my body.",
+   "What got me into running was actually stress, not fitness. During my first year of university, I was overwhelmed and anxious pretty much all the time, and a friend suggested I just go outside and run to clear my mind. The first time, I could barely finish ten minutes, but I noticed my worries quieted right down afterward. That feeling completely hooked me. I kept going back, not because I wanted to be athletic, but because it became my way of coping. The fitness part was just a nice bonus.",
+   "On days I really don't feel like it, I use a little trick, I tell myself I only have to run for five minutes. Almost every time, once I'm out the door and moving, I end up finishing the whole thing anyway. The hardest part is honestly just starting. I also lay out my running clothes the night before, so there's less friction in the morning. And I remind myself how good I always feel afterward. I've never once finished a run and regretted going, so I lean on that.",
+   "Absolutely, I think sports teach lessons that carry far beyond the field. The biggest one for me is discipline. Training for a race taught me that real progress comes from small, boring, consistent effort, not sudden bursts of motivation. That completely changed how I study, too. I stopped cramming and started working a little every day. Running also taught me to sit with discomfort and keep pushing when things get hard. That mental toughness helps me with exams, deadlines, and honestly, whenever life gets uncomfortable in general."
   ]
  },
  {
@@ -321,6 +531,12 @@
    "Are you more of a saver or a spender, and why do you think that is?",
    "What's the best thing you've ever spent money on?",
    "Do you think money can buy happiness? Where do you draw the line?"
+  ],
+  "answers": [
+   "When I have money to spend on myself, I usually put it toward experiences rather than things. Instead of buying new clothes or gadgets, I'd rather use it on a concert, a short trip, or a nice meal out with friends. For example, last month I spent my savings on tickets to see my favorite band live, and I still think about that night constantly. Physical stuff tends to lose its shine quickly for me, but the memories from good experiences seem to last and keep giving back.",
+   "I'd say I'm more of a saver, honestly, sometimes to a fault. I grew up watching my parents budget really carefully, so being cautious with money is kind of in my blood now. I feel a genuine sense of security when I see my savings grow, and I hate the stressful feeling of running low. That said, I'm learning to loosen up a bit, because I realized I was sometimes denying myself things that would truly make me happy. So now I save most of it, but I let myself splurge occasionally.",
+   "The best thing I've ever spent money on was a good pair of noise-canceling headphones. It sounds small, but they've completely changed my daily life. As a student, I'm constantly in noisy libraries, cafes, and crowded buses, and before, I could never really focus. The moment I put those headphones on, the whole world goes quiet and I can finally concentrate deeply. I use them literally every single day, for studying, commuting, and relaxing. For something I rely on that much, they were absolutely worth every cent.",
+   "I think money can buy a certain kind of happiness, but only up to a point. It definitely removes stress, having enough to cover rent, food, and emergencies takes a huge weight off your mind, and I've felt that relief myself. But beyond covering your needs and a few small joys, I don't think more money keeps making you happier. The things I treasure most, like close friendships and a quiet walk at sunset, are basically free. So money buys comfort and security, but not the deeper stuff that really matters."
   ]
  },
  {
@@ -330,6 +546,12 @@
    "Have your habits around waste or energy changed in recent years?",
    "Whose job is it to solve environmental problems: individuals, companies, or governments?",
    "How optimistic are you about the environment's future, and why?"
+  ],
+  "answers": [
+   "One small thing I do is carry a reusable water bottle and coffee cup everywhere I go. It seems tiny, but I realized I was throwing away several plastic bottles and cups every single day without even thinking. Now I just refill my own bottle, and over a year that adds up to hundreds of items saved. My favorite cafe even gives a small discount for bringing your own cup, which is a nice bonus. It's a habit that took basically zero effort to build but genuinely makes me feel better.",
+   "Yes, my habits have definitely shifted over the last few years. I've become much more conscious about food waste, especially. I used to buy groceries impulsively and let half of them rot in my fridge, which honestly makes me cringe now. These days I plan my meals for the week and only buy what I'll actually eat. I've also started turning off lights and unplugging chargers out of habit. None of it is dramatic, but becoming aware of my own waste was really the turning point for me.",
+   "Honestly, I think it's a shared responsibility, but the biggest weight has to fall on companies and governments. Individuals like me can recycle and save energy, and we absolutely should, but our impact is small compared to giant corporations and their emissions. Governments have the power to set rules that actually force change at a large scale. That said, I don't think individuals are off the hook, our choices add up and push companies to do better. So everyone plays a part, but the powerful players really need to lead.",
+   "I'm cautiously optimistic, honestly. On one hand, the news about climate change can feel genuinely scary and overwhelming. But on the other hand, I see my whole generation caring about this in a way our grandparents never did. Renewable energy is getting cheaper every year, and people are demanding change loudly. I remember my campus switching entirely to solar power last year, and small wins like that give me real hope. Progress feels frustratingly slow, but it is happening. I choose to believe we can still turn things around."
   ]
  },
  {
@@ -339,6 +561,12 @@
    "What matters more to you in a job, a good salary or work you enjoy? Why?",
    "Tell me about someone whose career you admire.",
    "Do you think people should change careers if they're unhappy, even later in life? Explain."
+  ],
+  "answers": [
+   "I imagine myself working in data analysis, ideally somewhere I can turn messy numbers into insights that help people make better decisions. What appeals to me most is the mix of logic and creativity, it's like solving a puzzle, except the answer actually matters in the real world. I love that quiet satisfaction when a confusing dataset suddenly reveals a clear story. I also want work that keeps challenging me, because I get bored pretty easily with routine. A career where I never stop learning honestly sounds perfect to me.",
+   "For me, enjoying the work matters more than the salary, as long as the pay covers my basic needs. I've realized we spend the majority of our waking lives working, so dreading every single Monday would be a miserable way to live. I saw this with my aunt, who left a high-paying but soul-crushing job to become a teacher for a lot less money, and she's honestly never been happier. That really shaped my thinking. Money matters, of course, but no amount of it makes up for hating what you do daily.",
+   "Someone whose career I really admire is my former professor. She started out as an ordinary engineer, but she was genuinely curious and kept teaching herself new fields, eventually becoming a respected researcher and mentor. What I admire isn't just her success, it's that she stayed humble and always made time to help struggling students like me. She once spent an entire afternoon patiently explaining a concept I just couldn't grasp. To me, that combination of real achievement and genuine generosity is exactly the kind of career I hope to build.",
+   "Yes, I strongly believe people should change careers if they're truly unhappy, even later in life. Life is simply too short to spend decades miserable for the sake of stability. I know it's scary, there's real risk, lost income, and the fear of starting over, but staying stuck has its own quieter cost on your health and spirit. My neighbor switched from banking to running a small bakery at fifty, and everyone thought he was crazy. Now he's the happiest I've ever seen him. It's never too late to choose fulfillment."
   ]
  },
  {
@@ -348,6 +576,12 @@
    "How did that tradition get started, as far as you know?",
    "Which family traditions would you want to pass on someday?",
    "Do you think traditions matter as much now as they used to? Why or why not?"
+  ],
+  "answers": [
+   "The tradition I look forward to most is our big family reunion dinner every Lunar New Year. No matter how busy everyone is or how far away they've moved, all my relatives gather at my grandparents' house for one enormous meal. I love it because it's genuinely the only time of year I see all my cousins in one room. We stay up late playing cards, eating way too much, and catching up on everyone's lives. That warm, crowded, noisy house is honestly my favorite feeling in the entire world.",
+   "As far as I know, this tradition started with my great-grandmother, decades ago. The story goes that after some hard years when the family was scattered and struggling, she insisted that everyone come home at least once a year, no excuses allowed. She wanted to make absolutely sure the family never drifted completely apart. That first reunion was apparently just a simple meal, but it stuck, and it's been passed down ever since. I love knowing that something I enjoy so much today grew out of one woman's determination to keep us together.",
+   "The one I'd absolutely want to pass on is that same New Year reunion dinner. In a world where everyone's so busy and scattered, I think having one guaranteed time each year to reconnect is honestly priceless. I'd want my future kids to grow up knowing their cousins and grandparents the same way I did. I might update a few things, maybe add new dishes or games, but the heart of it, everyone gathering under one roof, is something I'd protect and carry forward no matter what.",
+   "I think traditions still matter, maybe even more than before, precisely because life has gotten so fast and scattered. These days people move away, work constantly, and communicate mostly through screens, so it's incredibly easy to drift apart. Traditions force us to pause and physically come together, which we rarely do otherwise. I'll admit some old customs feel outdated and naturally fade, and that's completely fine. But the ones that bring people closer are genuinely valuable. In our disconnected modern world, I'd argue we need those anchoring moments more than ever."
   ]
  }
 ]
