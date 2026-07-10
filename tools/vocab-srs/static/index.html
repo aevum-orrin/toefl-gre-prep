@@ -5,33 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vocab SRS</title>
 <style>
-  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#666; --line:#e3e3e6; --accent:#7048b5;
-          --again:#c0392b; --hard:#b5651d; --good:#2f8f6b; --easy:#3b6ea5; }
-  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#a389e0; } }
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#6a7078; --line:#e3e3e6; --accent:#7048b5;
+          --again:#c0392b; --hard:#b5651d; --good:#2f8f6b; --easy:#3b6ea5; --chip:#efeaf9; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#a389e0; --chip:#2c2740; } }
   * { box-sizing:border-box; }
-  body { margin:0; font:16.5px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
-  header { padding:16px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
-  h1 { font-size:18px; margin:0; }
+  body { margin:0; font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:14px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  h1 { font-size:19px; margin:0; }
   select { font:inherit; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:6px 9px; }
-  #counts { font-size:12px; color:var(--mut); margin-left:auto; }
-  .badge { font-size:11px; padding:2px 8px; border-radius:10px; background:var(--line); color:var(--mut); }
-  main { width:92%; max-width:900px; margin:0 auto; padding:26px 20px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:34px 24px; text-align:center; min-height:230px;
-          display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; }
-  .term { font-size:38px; font-weight:700; }
-  .pos { font-size:13px; color:var(--mut); font-style:italic; }
-  .def { font-size:19px; }
-  .ex { font-size:15px; color:var(--mut); font-style:italic; }
-  .divider { width:60%; border-top:1px solid var(--line); margin:6px 0; }
-  button { font:inherit; border:0; border-radius:10px; padding:12px 16px; font-weight:600; cursor:pointer; background:var(--line); color:var(--ink); }
-  .primary { background:var(--accent); color:#fff; width:100%; margin-top:16px; padding:14px; font-size:16px; }
-  .grades { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:16px; }
-  .grades button { color:#fff; }
+  .npd { font-size:13px; color:var(--mut); display:flex; align-items:center; gap:6px; }
+  .npd select { padding:4px 6px; }
+  #counts { font-size:12px; color:var(--mut); margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; }
+  .badge { font-size:12px; padding:2px 9px; border-radius:10px; background:var(--line); color:var(--mut); }
+  main { width:92%; max-width:940px; margin:0 auto; padding:24px 20px 80px; }
+
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px 26px; min-height:180px; }
+  /* front (question) */
+  .front { text-align:center; padding:26px 0; }
+  .front .pos { font-size:14px; color:var(--mut); font-style:italic; margin-bottom:6px; }
+  .front .term { font-size:46px; font-weight:800; letter-spacing:.3px; }
+  .front .phon { font-size:17px; color:var(--mut); margin-top:8px; }
+
+  /* reveal (answer) */
+  .head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:12px; }
+  .head .term { font-size:34px; font-weight:800; }
+  .head .phon { font-size:17px; color:var(--mut); }
+  .head .flags { margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .flag { font-size:11px; padding:2px 8px; border-radius:9px; background:var(--chip); color:var(--accent); }
+  .stars { color:#e0a41b; font-size:14px; letter-spacing:1px; }
+
+  /* grading buttons — directly under the word, first */
+  .grades { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin:16px 0 8px; }
+  .grades button { color:#fff; border:0; border-radius:11px; padding:13px 10px; font:inherit; font-weight:700; cursor:pointer; }
+  .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; margin-top:2px; }
   .g-again{ background:var(--again);} .g-hard{ background:var(--hard);} .g-good{ background:var(--good);} .g-easy{ background:var(--easy);}
-  .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; }
-  .done { text-align:center; color:var(--good); font-size:18px; padding:40px 0; }
+
+  /* primary sense block */
+  .primary { margin:14px 0 6px; padding:14px 16px; background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:12px; }
+  .primary .pdef { font-size:20px; font-weight:600; }
+  .primary .ppos { font-size:13px; color:var(--accent); font-style:italic; font-weight:700; margin-right:8px; text-transform:lowercase; }
+  .primary .pex { font-size:16px; color:var(--ink); font-style:italic; margin-top:8px; }
+  .primary .pzh { font-size:17px; color:var(--mut); margin-top:6px; }
+
+  .sectlabel { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); margin:16px 0 6px; }
+  details.sense { border:1px solid var(--line); border-radius:10px; margin:7px 0; background:var(--card); }
+  details.sense > summary { list-style:none; cursor:pointer; padding:11px 14px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; font-size:16px; }
+  details.sense > summary::-webkit-details-marker { display:none; }
+  details.sense > summary::before { content:"▸"; color:var(--mut); font-size:13px; transition:transform .15s; }
+  details.sense[open] > summary::before { transform:rotate(90deg); }
+  .spos { font-style:italic; color:var(--accent); font-weight:700; min-width:64px; }
+  .sde { }
+  .sdz { color:var(--mut); }
+  .sbody { padding:2px 16px 14px 30px; }
+  .sbody .more { margin:2px 0 8px; padding-left:18px; color:var(--mut); font-size:15px; }
+  .sbody .ex { font-style:italic; margin:4px 0; }
+  .sbody .cols { margin-top:8px; display:flex; gap:7px; flex-wrap:wrap; }
+  .sbody .col { font-size:14px; padding:3px 9px; border-radius:8px; background:var(--chip); }
+  .sbody .soon { color:var(--mut); font-size:14px; font-style:italic; }
+
+  .meta { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); font-size:13px; color:var(--mut); display:flex; gap:14px; flex-wrap:wrap; }
+  .meta b { color:var(--ink); font-weight:600; }
+
+  button.primarybtn { font:inherit; border:0; border-radius:12px; padding:15px; font-weight:700; font-size:17px; cursor:pointer; background:var(--accent); color:#fff; width:100%; margin-top:16px; }
+  .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
+  .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
   .hidden { display:none; }
-  .kbd { font-size:11px; color:var(--mut); text-align:center; margin-top:12px; }
+
   .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:150px; }
   .timer.run { border-color:var(--accent); }
   .t-display { font-size:30px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:1px; }
@@ -45,53 +84,109 @@
 <header>
   <h1>📚 Vocab SRS</h1>
   <select id="deck"></select>
+  <label class="npd">new/day <select id="npd">
+    <option>10</option><option selected>20</option><option>30</option><option>50</option><option>100</option>
+  </select></label>
   <span id="counts"></span>
 </header>
 <main>
-  <section class="card" id="card"><div class="term" id="term">…</div></section>
-  <button class="primary" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
-  <div class="grades hidden" id="grades">
-    <button class="g-again" data-g="again">Again<small>&lt;1d · 1</small></button>
-    <button class="g-hard"  data-g="hard">Hard<small>2</small></button>
-    <button class="g-good"  data-g="good">Good<small>3</small></button>
-    <button class="g-easy"  data-g="easy">Easy<small>4</small></button>
-  </div>
-  <div class="kbd">Space = show · 1 Again · 2 Hard · 3 Good · 4 Easy · SM-2 spaced repetition</div>
+  <section class="card" id="card"><div class="front"><div class="term">…</div></div></section>
+  <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
+  <div class="kbd">Space = show · 1 Again · 2 Hard · 3 Good · 4 Easy · SM-2 spaced repetition · reviews come first, then up to N new/day</div>
 </main>
 <script>
 const $ = s => document.querySelector(s);
-let deck = "toefl", cur = null, revealed = false;
+const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let deck = "toefl", npd = 20, cur = null, revealed = false;
 
 async function boot(){
   const decks = await (await fetch('/api/decks')).json();
   $('#deck').innerHTML = decks.map(d =>
-    `<option value="${d.deck}">${d.deck.toUpperCase()} (${d.total} words)</option>`).join('');
+    `<option value="${d.deck}">${d.deck.toUpperCase()} · ${d.total} words</option>`).join('');
   deck = decks[0]?.deck || "toefl";
   loadNext();
 }
-
 $('#deck').addEventListener('change', e => { deck = e.target.value; loadNext(); });
+$('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
 
 async function loadNext(){
   revealed = false;
-  const d = await (await fetch(`/api/next?deck=${deck}`)).json();
+  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
   updateCounts(d);
   if (d.done){
-    $('#card').innerHTML = `<div class="done">✅ All caught up on ${deck.toUpperCase()}!<br><small>Come back later for reviews.</small></div>`;
-    $('#show').classList.add('hidden'); $('#grades').classList.add('hidden'); cur = null; return;
+    $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
+      <small>New today are capped at ${npd}. Come back later for reviews, or raise new/day.</small></div>`;
+    $('#show').classList.add('hidden'); cur = null; return;
   }
   cur = d;
-  $('#card').innerHTML = `<div class="pos">${d.pos||''}</div><div class="term">${esc(d.term)}</div>`;
-  $('#show').classList.remove('hidden'); $('#grades').classList.add('hidden');
+  const pos = (d.senses && d.senses[0] && d.senses[0].pos) || '';
+  $('#card').innerHTML = `<div class="front">
+      ${pos?`<div class="pos">${esc(pos)}</div>`:''}
+      <div class="term">${esc(d.term)}</div>
+      ${d.phonetic?`<div class="phon">/${esc(d.phonetic)}/</div>`:''}
+      ${d.kind==='new'?'<div class="pos" style="color:var(--accent)">new word</div>':''}
+    </div>`;
+  $('#show').classList.remove('hidden');
+}
+
+function stars(n){ return n>0 ? `<span class="stars" title="Collins ${n}">${'★'.repeat(n)}</span>` : ''; }
+
+function senseHTML(s, open){
+  const de = s.def_en||[], dz = s.def_zh||[], ex = s.examples||[], col = s.collocations||[];
+  const head = `<span class="spos">${esc(s.pos||'—')}</span>`
+    + (de[0]?`<span class="sde">${esc(de[0])}</span>`:'')
+    + (dz.length?`<span class="sdz">${esc(dz.join('；'))}</span>`:'');
+  const parts = [];
+  if (de.length>1) parts.push('<ul class="more">'+de.slice(1).map(d=>`<li>${esc(d)}</li>`).join('')+'</ul>');
+  if (ex.length)  parts.push(ex.map(e=>`<div class="ex">“${esc(e)}”</div>`).join(''));
+  if (col.length) parts.push('<div class="cols">'+col.map(c=>`<span class="col">${esc(c)}</span>`).join('')+'</div>');
+  const body = parts.length ? parts.join('') : '<div class="soon">example &amp; collocations coming soon</div>';
+  return `<details class="sense"${open?' open':''}><summary>${head}</summary><div class="sbody">${body}</div></details>`;
+}
+
+function verbForms(x){
+  if (!x) return '';
+  const map = [['p','past'],['d','pp'],['i','-ing'],['3','3rd'],['s','pl'],['r','comp'],['t','sup']];
+  const out = map.filter(([k]) => x[k]).map(([k,lbl]) => `${lbl} <b>${esc(x[k])}</b>`);
+  return out.length ? `<span>forms: ${out.join(' · ')}</span>` : '';
 }
 
 function reveal(){
   if (!cur || revealed) return;
   revealed = true;
-  $('#card').innerHTML = `<div class="pos">${cur.pos||''}</div><div class="term">${esc(cur.term)}</div>
-    <div class="divider"></div><div class="def">${esc(cur.definition)}</div>` +
-    (cur.example ? `<div class="ex">“${esc(cur.example)}”</div>` : '');
-  $('#show').classList.add('hidden'); $('#grades').classList.remove('hidden');
+  const senses = cur.senses || [];
+  const p = senses[0] || {};
+  const primaryDef = cur.gloss_en || (p.def_en && p.def_en[0]) || '';
+  const primaryEx = (p.examples && p.examples[0]) || '';
+  const primaryZh = (p.def_zh && p.def_zh.join('；')) || '';
+  const flags = [
+    stars(cur.collins),
+    cur.oxford ? '<span class="flag">Oxford 3000</span>' : '',
+    cur.frq ? `<span class="flag">freq #${cur.frq}</span>` : '',
+    ...(cur.tags||[]).map(t => `<span class="flag">${esc(t)}</span>`)
+  ].filter(Boolean).join('');
+
+  $('#card').innerHTML = `
+    <div class="head">
+      <span class="term">${esc(cur.term)}</span>
+      ${cur.phonetic?`<span class="phon">/${esc(cur.phonetic)}/</span>`:''}
+      <span class="flags">${flags}</span>
+    </div>
+    <div class="grades" id="grades">
+      <button class="g-again" data-g="again">Again<small>&lt;10m · 1</small></button>
+      <button class="g-hard"  data-g="hard">Hard<small>2</small></button>
+      <button class="g-good"  data-g="good">Good<small>3</small></button>
+      <button class="g-easy"  data-g="easy">Easy<small>4</small></button>
+    </div>
+    <div class="primary">
+      <div class="pdef">${p.pos?`<span class="ppos">${esc(p.pos)}</span>`:''}${esc(primaryDef)||'<span class="sdz">'+esc(primaryZh)+'</span>'}</div>
+      ${primaryEx?`<div class="pex">“${esc(primaryEx)}”</div>`:''}
+      ${primaryZh&&primaryDef?`<div class="pzh">${esc(primaryZh)}</div>`:''}
+    </div>
+    <div class="sectlabel">All parts of speech — click ▸ to expand</div>
+    ${senses.map((s,i)=>senseHTML(s, i===0)).join('') || '<div class="soon">no senses</div>'}
+    <div class="meta">${verbForms(cur.exchange)}</div>`;
+  $('#show').classList.add('hidden');
 }
 
 async function grade(g){
@@ -105,17 +200,19 @@ async function grade(g){
 }
 
 function updateCounts(d){
-  if (d.total!=null) $('#counts').innerHTML =
-    `<span class="badge">due ${d.due}</span> <span class="badge">new ${d.new}</span> <span class="badge">${d.total} total</span>`;
+  if (d.total==null) return;
+  $('#counts').innerHTML =
+    `<span class="badge">review ${d.due||0}</span> <span class="badge">new ${d.new||0}</span>`
+    + `<span class="badge">learned ${d.learned||0}</span> <span class="badge">${d.total} total</span>`;
 }
 
 $('#show').addEventListener('click', reveal);
-$('#grades').addEventListener('click', e => { const b=e.target.closest('button'); if(b) grade(b.dataset.g); });
+$('#card').addEventListener('click', e => { const b=e.target.closest('button[data-g]'); if(b) grade(b.dataset.g); });
 document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
   else if (revealed && ['1','2','3','4'].includes(e.key)) grade(['again','hard','good','easy'][+e.key-1]);
 });
-const esc = s => (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 boot();
 </script>
 
