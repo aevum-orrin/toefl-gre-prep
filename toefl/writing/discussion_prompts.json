@@ -1,182 +1,602 @@
 [
-  {
-    "id": "disc-01",
-    "course": "Introduction to Economics",
-    "professor": "Some economists argue that governments should raise the minimum wage to reduce poverty, while others warn it could lead to job losses. In your view, do the benefits of raising the minimum wage outweigh the risks? Why or why not?",
-    "posts": [
-      {"name": "Maria", "text": "I think raising the minimum wage clearly helps low-income workers afford basic necessities. When people earn more, they also spend more, which actually strengthens the local economy."},
-      {"name": "Daniel", "text": "I'm not convinced. Small businesses operate on thin margins, and forcing higher wages could push owners to cut staff or raise prices, hurting the very people we want to help."}
-    ]
-  },
-  {
-    "id": "disc-02",
-    "course": "Environmental Science",
-    "professor": "As cities grow, they face difficult choices about transportation. Should governments invest primarily in public transit or continue expanding roads for private cars? Support your position with reasons.",
-    "posts": [
-      {"name": "Sofia", "text": "Public transit is the smarter long-term investment. Buses and trains move far more people using less energy and space, which cuts both traffic and carbon emissions."},
-      {"name": "James", "text": "I understand the appeal, but many people live in areas where transit simply isn't practical. Ignoring roads would strand rural commuters who have no other option."}
-    ]
-  },
-  {
-    "id": "disc-03",
-    "course": "Educational Psychology",
-    "professor": "Many schools are debating whether to assign homework in the early grades. Do you think daily homework benefits young children, or does it do more harm than good? Explain your reasoning.",
-    "posts": [
-      {"name": "Emily", "text": "A little homework helps children build discipline and reinforces what they learned in class. Practicing at home turns new skills into lasting habits."},
-      {"name": "Noah", "text": "Young kids already spend hours in class. They learn more from free play and family time, and piling on homework can make them dislike school before they even start."}
-    ]
-  },
-  {
-    "id": "disc-04",
-    "course": "Technology and Ethics",
-    "professor": "Artificial intelligence is increasingly used to screen job applications. Is it ethical for companies to let algorithms make hiring decisions, or should a human always be involved? Defend your view.",
-    "posts": [
-      {"name": "Priya", "text": "Algorithms can process thousands of applications fairly and quickly, removing the human biases that often creep into hiring. That efficiency benefits everyone."},
-      {"name": "Marcus", "text": "But algorithms learn from past data, and if that data is biased, the AI just repeats old discrimination at scale. A human should always have the final say."}
-    ]
-  },
-  {
-    "id": "disc-05",
-    "course": "Modern World History",
-    "professor": "Historians often debate whether individual leaders or broad social forces drive major historical change. Which do you believe plays the larger role, and why?",
-    "posts": [
-      {"name": "Olivia", "text": "Powerful leaders can absolutely change history. A single decision by a president or general has repeatedly altered the fate of entire nations."},
-      {"name": "Ethan", "text": "I'd argue the opposite. Leaders rise because underlying forces like economics and public frustration create the conditions. Remove one leader and another usually takes their place."}
-    ]
-  },
-  {
-    "id": "disc-06",
-    "course": "Business Management",
-    "professor": "Some companies now allow employees to work from home permanently. Do you think remote work makes teams more productive, or does it weaken collaboration? Share your opinion.",
-    "posts": [
-      {"name": "Grace", "text": "Remote work boosts productivity because employees avoid long commutes and can focus without constant office interruptions. Trusting workers with flexibility usually pays off."},
-      {"name": "Liam", "text": "In my experience, creativity suffers when everyone is remote. Spontaneous conversations and quick brainstorming are hard to replace over a video call."}
-    ]
-  },
-  {
-    "id": "disc-07",
-    "course": "Public Health",
-    "professor": "To reduce unhealthy eating, some governments have introduced taxes on sugary drinks. Do you think such taxes are an effective and fair way to improve public health? Why or why not?",
-    "posts": [
-      {"name": "Ava", "text": "Sugar taxes work. They make people think twice before buying soda, and the revenue can fund health programs. We already tax cigarettes for the same good reason."},
-      {"name": "Ryan", "text": "These taxes hit low-income families hardest since they spend a larger share of income on food. Education about nutrition would be fairer than punishing people's choices."}
-    ]
-  },
-  {
-    "id": "disc-08",
-    "course": "Sociology",
-    "professor": "Social media has transformed how people form relationships. Overall, do you think social media brings people closer together or pushes them further apart? Explain.",
-    "posts": [
-      {"name": "Chloe", "text": "Social media keeps me connected to friends and family across the world who I'd otherwise lose touch with. That kind of connection was impossible a generation ago."},
-      {"name": "Benjamin", "text": "Yet many people scroll for hours while ignoring the person sitting next to them. Online 'friends' often replace the deeper face-to-face relationships we actually need."}
-    ]
-  },
-  {
-    "id": "disc-09",
-    "course": "Political Science",
-    "professor": "Some countries make voting mandatory, fining citizens who fail to vote. Do you think compulsory voting strengthens democracy, or does it undermine individual freedom? Take a position.",
-    "posts": [
-      {"name": "Isabella", "text": "Compulsory voting ensures that leaders represent everyone, not just the most motivated few. High turnout gives a government real legitimacy."},
-      {"name": "Lucas", "text": "Forcing people to vote produces uninformed ballots and treats a right as an obligation. Democracy should include the freedom to abstain."}
-    ]
-  },
-  {
-    "id": "disc-10",
-    "course": "Urban Planning",
-    "professor": "As housing costs rise, some cities are building tall apartment towers while others prefer spreading out with smaller houses. Which approach do you think creates better communities? Why?",
-    "posts": [
-      {"name": "Mia", "text": "Dense, tall housing near transit is the answer. It uses land efficiently, keeps rents lower, and puts jobs and shops within walking distance."},
-      {"name": "Henry", "text": "I prefer lower-density neighborhoods. They offer green space, quiet, and a stronger sense of community that crowded high-rises often lack."}
-    ]
-  },
-  {
-    "id": "disc-11",
-    "course": "Cognitive Psychology",
-    "professor": "There is ongoing debate about whether multitasking helps or hurts our performance. Based on your experience and reasoning, do you think trying to do several tasks at once is beneficial? Explain.",
-    "posts": [
-      {"name": "Zoe", "text": "For simple tasks, multitasking saves time. I can easily listen to a lecture recording while organizing my notes without losing anything important."},
-      {"name": "Nathan", "text": "Research suggests our brains actually just switch rapidly between tasks, doing each one worse. When I focus on one thing at a time, my work improves noticeably."}
-    ]
-  },
-  {
-    "id": "disc-12",
-    "course": "Media Studies",
-    "professor": "With so much news now available online for free, many newspapers are struggling. Should quality journalism be supported by public funding, or should it survive on its own in the market? Defend your view.",
-    "posts": [
-      {"name": "Layla", "text": "A healthy democracy depends on trustworthy reporting, so public funding makes sense. Leaving journalism to the market pushes outlets toward clickbait to survive."},
-      {"name": "Owen", "text": "Government money risks turning journalists into mouthpieces for those in power. Independent, market-based media is more likely to hold leaders accountable."}
-    ]
-  },
-  {
-    "id": "disc-13",
-    "course": "Philosophy of Science",
-    "professor": "Some argue that scientific progress should never be slowed by ethical concerns, while others insist that certain research must be restricted. Where do you stand on limiting scientific research for ethical reasons?",
-    "posts": [
-      {"name": "Aria", "text": "Ethics has to come first. History shows that unrestricted experiments can cause terrible harm to people, so some boundaries are essential."},
-      {"name": "Caleb", "text": "I worry that heavy restrictions delay cures and discoveries that could save millions. Careful oversight is fine, but we shouldn't let fear halt progress."}
-    ]
-  },
-  {
-    "id": "disc-14",
-    "course": "Marketing",
-    "professor": "Advertising aimed at children is a controversial topic. Do you think companies should be allowed to market products directly to young children, or should this practice be banned? Share your reasoning.",
-    "posts": [
-      {"name": "Ella", "text": "Children can't tell the difference between entertainment and persuasion, so marketing to them is unfair. Ads aimed at kids should be strictly limited."},
-      {"name": "Jack", "text": "Parents, not governments, control what children buy. Banning ads is an overreaction; teaching kids to think critically about them is more realistic."}
-    ]
-  },
-  {
-    "id": "disc-15",
-    "course": "Linguistics",
-    "professor": "Every few weeks, a language somewhere in the world disappears. Do you think significant effort and money should be spent trying to preserve endangered languages? Why or why not?",
-    "posts": [
-      {"name": "Nora", "text": "Each language carries unique knowledge, history, and ways of seeing the world. Losing one is like losing an irreplaceable library, so preservation is worth every effort."},
-      {"name": "Adam", "text": "I sympathize, but resources are limited. If a community has already shifted to a common language, forcing preservation may not reflect what its speakers actually want."}
-    ]
-  },
-  {
-    "id": "disc-16",
-    "course": "Computer Science and Society",
-    "professor": "Some people believe coding should be a required subject for all students, like math or reading. Do you think every student should be required to learn to code? Explain your position.",
-    "posts": [
-      {"name": "Lily", "text": "Coding teaches logical thinking and problem-solving that help in almost any field. In a digital world, basic programming literacy is as essential as math."},
-      {"name": "David", "text": "Not everyone needs to code, just as not everyone becomes a mathematician. Forcing it could crowd out arts and other subjects that students may value more."}
-    ]
-  },
-  {
-    "id": "disc-17",
-    "course": "Anthropology",
-    "professor": "Tourism can bring money to local communities but can also disrupt traditional ways of life. On balance, do you think tourism does more good or more harm to local cultures? Justify your answer.",
-    "posts": [
-      {"name": "Hannah", "text": "Tourism gives communities income and a reason to protect their heritage. When visitors value local traditions, those customs are more likely to survive."},
-      {"name": "Samuel", "text": "Too often tourism turns living cultures into a staged performance for outsiders. Rising prices and crowds can push locals out of their own neighborhoods."}
-    ]
-  },
-  {
-    "id": "disc-18",
-    "course": "Environmental Policy",
-    "professor": "Governments must decide how to reduce carbon emissions. Some favor strict regulations on industry, while others prefer financial incentives that reward clean behavior. Which approach do you think works better? Why?",
-    "posts": [
-      {"name": "Victoria", "text": "Strict regulations get faster results. When rules are mandatory, companies have no choice but to cut pollution, rather than doing the bare minimum."},
-      {"name": "Leo", "text": "Incentives spark innovation because businesses compete to earn rewards for going green. Heavy-handed regulation often just leads to resistance and loopholes."}
-    ]
-  },
-  {
-    "id": "disc-19",
-    "course": "Health and Nutrition",
-    "professor": "Fitness trackers and health apps are now extremely popular. Do you think relying on these devices genuinely improves people's health, or does it create new problems? Share your view.",
-    "posts": [
-      {"name": "Sophia", "text": "These apps motivate people by turning exercise into measurable goals. Seeing my daily steps honestly pushes me to move more than I otherwise would."},
-      {"name": "William", "text": "For some, constant tracking becomes an unhealthy obsession, and the data isn't always accurate. Real fitness comes from habits, not from staring at numbers."}
-    ]
-  },
-  {
-    "id": "disc-20",
-    "course": "Art History",
-    "professor": "Museums around the world hold many artifacts taken from other countries during the colonial era. Do you think these objects should be returned to their countries of origin? Explain your reasoning.",
-    "posts": [
-      {"name": "Charlotte", "text": "These artifacts belong to the cultures that created them. Returning them corrects a historical wrong and lets people reconnect with their own heritage."},
-      {"name": "Gabriel", "text": "I see the moral case, but large museums preserve and share these works with millions of visitors. Splitting up collections might limit global access to human history."}
-    ]
-  }
+ {
+  "id": "disc-01",
+  "course": "Introduction to Economics",
+  "professor": "Some economists argue that governments should raise the minimum wage to reduce poverty, while others warn it could lead to job losses. In your view, do the benefits of raising the minimum wage outweigh the risks? Why or why not?",
+  "posts": [
+   {
+    "name": "Maria",
+    "text": "I think raising the minimum wage clearly helps low-income workers afford basic necessities. When people earn more, they also spend more, which actually strengthens the local economy."
+   },
+   {
+    "name": "Daniel",
+    "text": "I'm not convinced. Small businesses operate on thin margins, and forcing higher wages could push owners to cut staff or raise prices, hurting the very people we want to help."
+   }
+  ]
+ },
+ {
+  "id": "disc-02",
+  "course": "Environmental Science",
+  "professor": "As cities grow, they face difficult choices about transportation. Should governments invest primarily in public transit or continue expanding roads for private cars? Support your position with reasons.",
+  "posts": [
+   {
+    "name": "Sofia",
+    "text": "Public transit is the smarter long-term investment. Buses and trains move far more people using less energy and space, which cuts both traffic and carbon emissions."
+   },
+   {
+    "name": "James",
+    "text": "I understand the appeal, but many people live in areas where transit simply isn't practical. Ignoring roads would strand rural commuters who have no other option."
+   }
+  ]
+ },
+ {
+  "id": "disc-03",
+  "course": "Educational Psychology",
+  "professor": "Many schools are debating whether to assign homework in the early grades. Do you think daily homework benefits young children, or does it do more harm than good? Explain your reasoning.",
+  "posts": [
+   {
+    "name": "Emily",
+    "text": "A little homework helps children build discipline and reinforces what they learned in class. Practicing at home turns new skills into lasting habits."
+   },
+   {
+    "name": "Noah",
+    "text": "Young kids already spend hours in class. They learn more from free play and family time, and piling on homework can make them dislike school before they even start."
+   }
+  ]
+ },
+ {
+  "id": "disc-04",
+  "course": "Technology and Ethics",
+  "professor": "Artificial intelligence is increasingly used to screen job applications. Is it ethical for companies to let algorithms make hiring decisions, or should a human always be involved? Defend your view.",
+  "posts": [
+   {
+    "name": "Priya",
+    "text": "Algorithms can process thousands of applications fairly and quickly, removing the human biases that often creep into hiring. That efficiency benefits everyone."
+   },
+   {
+    "name": "Marcus",
+    "text": "But algorithms learn from past data, and if that data is biased, the AI just repeats old discrimination at scale. A human should always have the final say."
+   }
+  ]
+ },
+ {
+  "id": "disc-05",
+  "course": "Modern World History",
+  "professor": "Historians often debate whether individual leaders or broad social forces drive major historical change. Which do you believe plays the larger role, and why?",
+  "posts": [
+   {
+    "name": "Olivia",
+    "text": "Powerful leaders can absolutely change history. A single decision by a president or general has repeatedly altered the fate of entire nations."
+   },
+   {
+    "name": "Ethan",
+    "text": "I'd argue the opposite. Leaders rise because underlying forces like economics and public frustration create the conditions. Remove one leader and another usually takes their place."
+   }
+  ]
+ },
+ {
+  "id": "disc-06",
+  "course": "Business Management",
+  "professor": "Some companies now allow employees to work from home permanently. Do you think remote work makes teams more productive, or does it weaken collaboration? Share your opinion.",
+  "posts": [
+   {
+    "name": "Grace",
+    "text": "Remote work boosts productivity because employees avoid long commutes and can focus without constant office interruptions. Trusting workers with flexibility usually pays off."
+   },
+   {
+    "name": "Liam",
+    "text": "In my experience, creativity suffers when everyone is remote. Spontaneous conversations and quick brainstorming are hard to replace over a video call."
+   }
+  ]
+ },
+ {
+  "id": "disc-07",
+  "course": "Public Health",
+  "professor": "To reduce unhealthy eating, some governments have introduced taxes on sugary drinks. Do you think such taxes are an effective and fair way to improve public health? Why or why not?",
+  "posts": [
+   {
+    "name": "Ava",
+    "text": "Sugar taxes work. They make people think twice before buying soda, and the revenue can fund health programs. We already tax cigarettes for the same good reason."
+   },
+   {
+    "name": "Ryan",
+    "text": "These taxes hit low-income families hardest since they spend a larger share of income on food. Education about nutrition would be fairer than punishing people's choices."
+   }
+  ]
+ },
+ {
+  "id": "disc-08",
+  "course": "Sociology",
+  "professor": "Social media has transformed how people form relationships. Overall, do you think social media brings people closer together or pushes them further apart? Explain.",
+  "posts": [
+   {
+    "name": "Chloe",
+    "text": "Social media keeps me connected to friends and family across the world who I'd otherwise lose touch with. That kind of connection was impossible a generation ago."
+   },
+   {
+    "name": "Benjamin",
+    "text": "Yet many people scroll for hours while ignoring the person sitting next to them. Online 'friends' often replace the deeper face-to-face relationships we actually need."
+   }
+  ]
+ },
+ {
+  "id": "disc-09",
+  "course": "Political Science",
+  "professor": "Some countries make voting mandatory, fining citizens who fail to vote. Do you think compulsory voting strengthens democracy, or does it undermine individual freedom? Take a position.",
+  "posts": [
+   {
+    "name": "Isabella",
+    "text": "Compulsory voting ensures that leaders represent everyone, not just the most motivated few. High turnout gives a government real legitimacy."
+   },
+   {
+    "name": "Lucas",
+    "text": "Forcing people to vote produces uninformed ballots and treats a right as an obligation. Democracy should include the freedom to abstain."
+   }
+  ]
+ },
+ {
+  "id": "disc-10",
+  "course": "Urban Planning",
+  "professor": "As housing costs rise, some cities are building tall apartment towers while others prefer spreading out with smaller houses. Which approach do you think creates better communities? Why?",
+  "posts": [
+   {
+    "name": "Mia",
+    "text": "Dense, tall housing near transit is the answer. It uses land efficiently, keeps rents lower, and puts jobs and shops within walking distance."
+   },
+   {
+    "name": "Henry",
+    "text": "I prefer lower-density neighborhoods. They offer green space, quiet, and a stronger sense of community that crowded high-rises often lack."
+   }
+  ]
+ },
+ {
+  "id": "disc-11",
+  "course": "Cognitive Psychology",
+  "professor": "There is ongoing debate about whether multitasking helps or hurts our performance. Based on your experience and reasoning, do you think trying to do several tasks at once is beneficial? Explain.",
+  "posts": [
+   {
+    "name": "Zoe",
+    "text": "For simple tasks, multitasking saves time. I can easily listen to a lecture recording while organizing my notes without losing anything important."
+   },
+   {
+    "name": "Nathan",
+    "text": "Research suggests our brains actually just switch rapidly between tasks, doing each one worse. When I focus on one thing at a time, my work improves noticeably."
+   }
+  ]
+ },
+ {
+  "id": "disc-12",
+  "course": "Media Studies",
+  "professor": "With so much news now available online for free, many newspapers are struggling. Should quality journalism be supported by public funding, or should it survive on its own in the market? Defend your view.",
+  "posts": [
+   {
+    "name": "Layla",
+    "text": "A healthy democracy depends on trustworthy reporting, so public funding makes sense. Leaving journalism to the market pushes outlets toward clickbait to survive."
+   },
+   {
+    "name": "Owen",
+    "text": "Government money risks turning journalists into mouthpieces for those in power. Independent, market-based media is more likely to hold leaders accountable."
+   }
+  ]
+ },
+ {
+  "id": "disc-13",
+  "course": "Philosophy of Science",
+  "professor": "Some argue that scientific progress should never be slowed by ethical concerns, while others insist that certain research must be restricted. Where do you stand on limiting scientific research for ethical reasons?",
+  "posts": [
+   {
+    "name": "Aria",
+    "text": "Ethics has to come first. History shows that unrestricted experiments can cause terrible harm to people, so some boundaries are essential."
+   },
+   {
+    "name": "Caleb",
+    "text": "I worry that heavy restrictions delay cures and discoveries that could save millions. Careful oversight is fine, but we shouldn't let fear halt progress."
+   }
+  ]
+ },
+ {
+  "id": "disc-14",
+  "course": "Marketing",
+  "professor": "Advertising aimed at children is a controversial topic. Do you think companies should be allowed to market products directly to young children, or should this practice be banned? Share your reasoning.",
+  "posts": [
+   {
+    "name": "Ella",
+    "text": "Children can't tell the difference between entertainment and persuasion, so marketing to them is unfair. Ads aimed at kids should be strictly limited."
+   },
+   {
+    "name": "Jack",
+    "text": "Parents, not governments, control what children buy. Banning ads is an overreaction; teaching kids to think critically about them is more realistic."
+   }
+  ]
+ },
+ {
+  "id": "disc-15",
+  "course": "Linguistics",
+  "professor": "Every few weeks, a language somewhere in the world disappears. Do you think significant effort and money should be spent trying to preserve endangered languages? Why or why not?",
+  "posts": [
+   {
+    "name": "Nora",
+    "text": "Each language carries unique knowledge, history, and ways of seeing the world. Losing one is like losing an irreplaceable library, so preservation is worth every effort."
+   },
+   {
+    "name": "Adam",
+    "text": "I sympathize, but resources are limited. If a community has already shifted to a common language, forcing preservation may not reflect what its speakers actually want."
+   }
+  ]
+ },
+ {
+  "id": "disc-16",
+  "course": "Computer Science and Society",
+  "professor": "Some people believe coding should be a required subject for all students, like math or reading. Do you think every student should be required to learn to code? Explain your position.",
+  "posts": [
+   {
+    "name": "Lily",
+    "text": "Coding teaches logical thinking and problem-solving that help in almost any field. In a digital world, basic programming literacy is as essential as math."
+   },
+   {
+    "name": "David",
+    "text": "Not everyone needs to code, just as not everyone becomes a mathematician. Forcing it could crowd out arts and other subjects that students may value more."
+   }
+  ]
+ },
+ {
+  "id": "disc-17",
+  "course": "Anthropology",
+  "professor": "Tourism can bring money to local communities but can also disrupt traditional ways of life. On balance, do you think tourism does more good or more harm to local cultures? Justify your answer.",
+  "posts": [
+   {
+    "name": "Hannah",
+    "text": "Tourism gives communities income and a reason to protect their heritage. When visitors value local traditions, those customs are more likely to survive."
+   },
+   {
+    "name": "Samuel",
+    "text": "Too often tourism turns living cultures into a staged performance for outsiders. Rising prices and crowds can push locals out of their own neighborhoods."
+   }
+  ]
+ },
+ {
+  "id": "disc-18",
+  "course": "Environmental Policy",
+  "professor": "Governments must decide how to reduce carbon emissions. Some favor strict regulations on industry, while others prefer financial incentives that reward clean behavior. Which approach do you think works better? Why?",
+  "posts": [
+   {
+    "name": "Victoria",
+    "text": "Strict regulations get faster results. When rules are mandatory, companies have no choice but to cut pollution, rather than doing the bare minimum."
+   },
+   {
+    "name": "Leo",
+    "text": "Incentives spark innovation because businesses compete to earn rewards for going green. Heavy-handed regulation often just leads to resistance and loopholes."
+   }
+  ]
+ },
+ {
+  "id": "disc-19",
+  "course": "Health and Nutrition",
+  "professor": "Fitness trackers and health apps are now extremely popular. Do you think relying on these devices genuinely improves people's health, or does it create new problems? Share your view.",
+  "posts": [
+   {
+    "name": "Sophia",
+    "text": "These apps motivate people by turning exercise into measurable goals. Seeing my daily steps honestly pushes me to move more than I otherwise would."
+   },
+   {
+    "name": "William",
+    "text": "For some, constant tracking becomes an unhealthy obsession, and the data isn't always accurate. Real fitness comes from habits, not from staring at numbers."
+   }
+  ]
+ },
+ {
+  "id": "disc-20",
+  "course": "Art History",
+  "professor": "Museums around the world hold many artifacts taken from other countries during the colonial era. Do you think these objects should be returned to their countries of origin? Explain your reasoning.",
+  "posts": [
+   {
+    "name": "Charlotte",
+    "text": "These artifacts belong to the cultures that created them. Returning them corrects a historical wrong and lets people reconnect with their own heritage."
+   },
+   {
+    "name": "Gabriel",
+    "text": "I see the moral case, but large museums preserve and share these works with millions of visitors. Splitting up collections might limit global access to human history."
+   }
+  ]
+ },
+ {
+  "id": "disc-21",
+  "course": "Introduction to Psychology",
+  "professor": "Some psychologists argue that our personalities are largely fixed by early adulthood, while others believe traits keep evolving throughout life. In your view, can people meaningfully change core traits such as introversion or conscientiousness after the age of 30? Why or why not?",
+  "posts": [
+   {
+    "name": "Maya",
+    "text": "I actually think meaningful change is possible well into adulthood. When I moved abroad for work, I became far more outgoing than I ever was as a teenager, simply because my new environment demanded it. Traits may have a baseline, but life experiences and deliberate effort can genuinely reshape them over time."
+   },
+   {
+    "name": "Daniel",
+    "text": "I'm more skeptical about that. Research on personality tends to show that traits like introversion stay remarkably stable across decades, even when people are convinced they've transformed. In my experience, we mostly learn to manage our tendencies rather than actually rewrite them."
+   }
+  ]
+ },
+ {
+  "id": "disc-22",
+  "course": "Cognitive Psychology",
+  "professor": "This week we examined how switching between tasks affects mental performance. Do you think the ability to shift quickly between many tasks is a valuable skill in modern life, or does it mainly damage the quality of our thinking?",
+  "posts": [
+   {
+    "name": "Priya",
+    "text": "I think rapid task-switching mostly harms the depth of our thinking. Every time I bounce between messages and my actual work, it takes several minutes to refocus, and the quality clearly drops. What looks like efficient multitasking is often just doing several things poorly at the same time."
+   },
+   {
+    "name": "Leo",
+    "text": "I'd push back on that a little. Modern jobs constantly demand that we juggle competing priorities, so being able to redirect attention fast is a genuine advantage. As long as you know when to block out distractions for deep work, that flexibility is a strength rather than a flaw."
+   }
+  ]
+ },
+ {
+  "id": "disc-23",
+  "course": "Environmental Policy",
+  "professor": "Governments can cut carbon emissions either through carbon taxes or through direct regulations that cap pollution. Which approach do you think is more effective for achieving rapid emission reductions, and what trade-offs does your choice involve?",
+  "posts": [
+   {
+    "name": "Sofia",
+    "text": "I lean toward carbon taxes because they let the market find the cheapest ways to cut emissions. Once pollution carries a clear price, companies innovate to avoid paying it, often faster than a rigid rule would force them to. The main trade-off is that taxes can raise costs for ordinary consumers unless the revenue is returned to households."
+   },
+   {
+    "name": "Omar",
+    "text": "I see the appeal, but I think direct regulations deliver more certain results. A firm cap guarantees a specific level of emissions, whereas a tax only creates an incentive that firms may simply absorb and ignore. The downside is less flexibility, but for urgent cuts I'd rather have a guaranteed ceiling."
+   }
+  ]
+ },
+ {
+  "id": "disc-24",
+  "course": "Environmental Policy and Economics",
+  "professor": "Some cities have banned single-use plastics outright, while others rely on recycling programs and individual consumer choice. Do you think blanket bans are justified, or should people be free to decide for themselves?",
+  "posts": [
+   {
+    "name": "Hannah",
+    "text": "I support outright bans on single-use plastics because voluntary recycling simply hasn't worked. Most plastic is never actually recycled, and leaving the problem to consumer choice spreads responsibility so thin that little ever changes. Sometimes a clear rule is the only thing that shifts an entire industry's behavior."
+   },
+   {
+    "name": "Ethan",
+    "text": "I'm uneasy about blanket bans. They can hurt small businesses and lower-income people who rely on cheap disposable products, and they treat very different situations as if they were the same. I'd rather see stronger recycling infrastructure and incentives that let people adjust without being forced."
+   }
+  ]
+ },
+ {
+  "id": "disc-25",
+  "course": "Business Ethics",
+  "professor": "Imagine a company discovers that one of its products has a minor safety flaw unlikely to harm most users. Should it issue a costly recall or simply disclose the risk to customers? Which do you believe is the more ethical choice, and why?",
+  "posts": [
+   {
+    "name": "Grace",
+    "text": "For me the ethical choice is a recall, even when it's expensive. A company that knows about a flaw has already accepted a duty to the people who trusted its product, and 'unlikely to harm most users' still means that some will be harmed. Cutting costs at the expense of even a few customers' safety crosses a clear moral line."
+   },
+   {
+    "name": "Noah",
+    "text": "I think full disclosure can be the more reasonable choice in genuinely minor cases. A massive recall wastes resources and can even introduce new risks, while honest, prominent warnings respect customers' ability to decide for themselves. The key condition is that the disclosure must be truly transparent, not buried in fine print."
+   }
+  ]
+ },
+ {
+  "id": "disc-26",
+  "course": "Corporate Responsibility",
+  "professor": "Many corporations now publicize their commitments to social and environmental causes. Do you think businesses have a genuine responsibility to address social problems, or should they focus strictly on profit and leave such issues to governments?",
+  "posts": [
+   {
+    "name": "Amara",
+    "text": "I believe corporations do have a real responsibility to address social problems. They use public resources and shape the communities around them, so ignoring their wider impact isn't neutral, it's a choice. Firms that treat social good as part of their mission also tend to earn deeper trust from customers and employees."
+   },
+   {
+    "name": "Victor",
+    "text": "I disagree that this is really their job. A company's core duty is to its customers and shareholders, and when firms chase social causes it's often for marketing rather than genuine change. Social problems are better handled by elected governments that answer to everyone, not by corporations accountable to no one."
+   }
+  ]
+ },
+ {
+  "id": "disc-27",
+  "course": "Modern World History",
+  "professor": "Historians often debate whether major historical change is driven mainly by influential individuals or by broad social and economic forces. When you examine a revolution or a great reform, which do you think matters more, and can you point to why?",
+  "posts": [
+   {
+    "name": "Isabella",
+    "text": "I tend to think broad social and economic conditions matter most. Even a brilliant leader can only act within the pressures of their era, and revolutions usually erupt when underlying hardship reaches a breaking point. The famous names we remember are often just the faces of forces that had already been building for years."
+   },
+   {
+    "name": "Marcus",
+    "text": "I'd give individuals more weight than that suggests. History has plenty of moments where one leader's decisions pushed events down a path they could easily have avoided. Conditions may set the stage, but it takes particular people to seize the moment and turn mere possibility into real action."
+   }
+  ]
+ },
+ {
+  "id": "disc-28",
+  "course": "History of Technology",
+  "professor": "Some people argue that studying history helps societies avoid repeating past mistakes, while others insist each era is too unique for old lessons to apply. How useful do you think historical knowledge really is for solving the problems we face today?",
+  "posts": [
+   {
+    "name": "Chloe",
+    "text": "I think historical knowledge is genuinely useful, even if no two eras are identical. Patterns in how economies collapse or how propaganda spreads recur often enough to serve as real warnings. Studying the past won't hand us exact answers, but it sharpens the questions we ask about the present."
+   },
+   {
+    "name": "Ryan",
+    "text": "I'm more doubtful about drawing clean lessons from history. Each period has such different technology and values that old solutions rarely transfer, and leaders often twist historical 'lessons' to justify what they already wanted to do. History is fascinating, but I wouldn't lean on it as a reliable guide to today's unique problems."
+   }
+  ]
+ },
+ {
+  "id": "disc-29",
+  "course": "Introduction to Sociology",
+  "professor": "Social media has reshaped how people form and maintain friendships. Do you think online connections can be as meaningful as face-to-face relationships, or does digital communication ultimately weaken the bonds between people?",
+  "posts": [
+   {
+    "name": "Lucia",
+    "text": "In my experience, online connections can be every bit as meaningful as in-person ones. Some of my closest friendships are with people I first met through shared interests online, and we support each other through real struggles. Distance matters far less than the honesty and effort each person brings to the relationship."
+   },
+   {
+    "name": "Jamal",
+    "text": "I see it differently. Digital communication makes it easy to stay in constant contact while rarely sharing anything deep, so we pile up acquaintances instead of real closeness. Face-to-face time, with all its small unplanned moments, builds a kind of trust that a screen struggles to reproduce."
+   }
+  ]
+ },
+ {
+  "id": "disc-30",
+  "course": "Sociology of the Family",
+  "professor": "In many countries the traditional idea of the family is shifting, with more single-parent households, blended families, and people choosing not to have children. Do you think these changes strengthen or weaken society overall? Why?",
+  "posts": [
+   {
+    "name": "Elena",
+    "text": "I think these changes generally strengthen society by giving people more freedom to build lives that actually fit them. When family isn't forced into one rigid shape, individuals can leave unhappy or even harmful situations. A society that supports many kinds of families is, to me, a more humane and adaptable one."
+   },
+   {
+    "name": "Theo",
+    "text": "I worry that some of these trends weaken the stability families once provided. Traditional structures offered clear support networks for raising children and caring for aging parents, and those roles don't automatically get replaced. I'm not against change, but I think we underestimate what's lost when the family core fragments."
+   }
+  ]
+ },
+ {
+  "id": "disc-31",
+  "course": "Technology and Society",
+  "professor": "As artificial intelligence takes over more routine work, some predict it will free people for more creative tasks, while others fear widespread unemployment. Do you think AI will ultimately create more opportunities than it destroys?",
+  "posts": [
+   {
+    "name": "Aisha",
+    "text": "I'm optimistic that AI will create more opportunities than it eliminates. Every major technology, from the printing press to the computer, wiped out some jobs while opening entire industries we couldn't have imagined beforehand. If we invest seriously in retraining, people can move toward the creative and interpersonal work machines still handle poorly."
+   },
+   {
+    "name": "Ben",
+    "text": "I'm less hopeful this time around. Earlier technologies mostly replaced physical labor, but AI is starting to replace judgment and skill across many fields at once, leaving fewer obvious places for displaced workers to go. Without deliberate policies to share the gains, I fear the benefits will concentrate while unemployment climbs."
+   }
+  ]
+ },
+ {
+  "id": "disc-32",
+  "course": "Technology and Society",
+  "professor": "Many schools and workplaces now expect people to be reachable at all hours through their devices. Do you think constant connectivity improves our productivity, or should we set firmer limits on when technology is allowed to reach us?",
+  "posts": [
+   {
+    "name": "Nadia",
+    "text": "I think we badly need firmer limits on when technology can reach us. Being available at all hours blurs the line between work and rest, and I notice my focus and mood suffer when I can never fully switch off. Protecting uninterrupted time actually makes the hours I do spend working more productive."
+   },
+   {
+    "name": "Kevin",
+    "text": "I'd argue constant connectivity is mostly an advantage when it's used wisely. Being reachable lets teams solve problems quickly and gives me the freedom to work when and where I'm most effective. The real issue isn't the technology itself but our habits, and those are something each of us can learn to control."
+   }
+  ]
+ },
+ {
+  "id": "disc-33",
+  "course": "Foundations of Education",
+  "professor": "Some educators believe students learn best when grades and exams motivate them, while others argue that grades discourage genuine curiosity. In your opinion, do traditional grading systems help or hinder real learning?",
+  "posts": [
+   {
+    "name": "Fatima",
+    "text": "I've come to believe traditional grades often hinder real learning. When everything hangs on a single score, students focus on memorizing whatever is tested and then forget it, instead of exploring ideas that genuinely interest them. Some of my deepest learning happened in ungraded projects where curiosity, not fear, drove me forward."
+   },
+   {
+    "name": "Adrian",
+    "text": "I think grades, for all their flaws, still help most students learn. Clear standards and feedback tell us where we actually stand, and a bit of external pressure pushes people to master material they'd otherwise skip. Curiosity is wonderful, but on its own it rarely carries a whole class through difficult, unglamorous fundamentals."
+   }
+  ]
+ },
+ {
+  "id": "disc-34",
+  "course": "Educational Psychology",
+  "professor": "Online learning has made education far more accessible, yet some worry it cannot truly replace the classroom experience. Do you think a fully online degree can provide an education equal to in-person study? Why or why not?",
+  "posts": [
+   {
+    "name": "Yuki",
+    "text": "I think a fully online degree can absolutely equal in-person study for a motivated student. The core of learning is engaging with strong material and getting timely feedback, and both of those travel well over the internet. Online study also reaches people who could never attend a physical campus, which makes it a genuine equal rather than a lesser option."
+   },
+   {
+    "name": "Carlos",
+    "text": "I'm not convinced online learning can fully match the classroom. So much of what I gained at university came from spontaneous debates, lab work, and simply being surrounded by curious peers, and that's hard to recreate on a screen. Online study is valuable and convenient, but for many subjects I think something important gets lost."
+   }
+  ]
+ },
+ {
+  "id": "disc-35",
+  "course": "Urban Studies",
+  "professor": "To reduce traffic and pollution, some cities pour resources into public transit while others focus on making streets safer for cyclists and pedestrians. If a growing city could prioritize only one of these, which should it choose, and why?",
+  "posts": [
+   {
+    "name": "Ingrid",
+    "text": "If a city could pick only one, I'd prioritize public transit. Good buses and trains move enormous numbers of people efficiently and serve those who can't afford a car or a bike, including the elderly and people with disabilities. Cycling lanes are wonderful, but transit does far more to cut traffic and stitch an entire city together."
+   },
+   {
+    "name": "Diego",
+    "text": "I'd make the opposite choice and invest in walking and cycling. Those networks are much cheaper to build than rail, they improve public health, and they make neighborhoods more pleasant and human-scaled. A city designed for people on foot and on bikes tends to erase exactly the short car trips that clog its streets the most."
+   }
+  ]
+ },
+ {
+  "id": "disc-36",
+  "course": "Urban Planning",
+  "professor": "As housing costs climb, some argue that cities should build taller, denser apartment buildings, while others want to preserve low-rise neighborhoods and green space. Which approach do you think creates a better city to live in?",
+  "posts": [
+   {
+    "name": "Zara",
+    "text": "I favor building taller and denser to tackle housing costs. When supply can't grow upward, prices climb and people get pushed far from their jobs, stretching commutes for everyone. Well-designed density also supports better transit and livelier streets, so I see it as the more sustainable path for a growing city."
+   },
+   {
+    "name": "Oliver",
+    "text": "I'd rather protect low-rise neighborhoods and green space. Endless high-rises can overwhelm local infrastructure and erase the character that makes a place worth living in, and green areas are vital for both health and the climate. Cities can add homes more gently by filling in gaps rather than towering over everything."
+   }
+  ]
+ },
+ {
+  "id": "disc-37",
+  "course": "Public Health",
+  "professor": "When a serious new health threat emerges, governments must choose between strict measures that limit personal freedom and voluntary guidelines that rely on public cooperation. Which approach do you think better protects a community's health?",
+  "posts": [
+   {
+    "name": "Mei",
+    "text": "When a serious threat emerges, I think strict measures protect a community better. Voluntary guidelines depend on nearly everyone cooperating, and it only takes a minority ignoring them to endanger the whole population. Temporary limits on freedom are a fair price when lives are genuinely at stake and the science is clear."
+   },
+   {
+    "name": "Andre",
+    "text": "I lean toward voluntary guidelines backed by clear information. Heavy-handed rules can breed resentment and distrust that make people less cooperative over the long run, sometimes worsening the very crisis they were meant to stop. If authorities explain the risks honestly, most people will choose to protect themselves and those around them."
+   }
+  ]
+ },
+ {
+  "id": "disc-38",
+  "course": "Public Health Policy",
+  "professor": "Some public health campaigns focus on educating individuals to make healthier choices, while others push for structural changes such as taxes on sugary drinks. Which strategy do you think is more effective at improving a whole population's health? Why?",
+  "posts": [
+   {
+    "name": "Sara",
+    "text": "I think structural changes like taxes on sugary drinks tend to work better. Individual education is easily drowned out by advertising and by the plain fact that unhealthy options are cheap and everywhere. Reshaping the environment so the healthy choice becomes the easy choice reaches everyone, not only those who happen to be paying attention."
+   },
+   {
+    "name": "Tom",
+    "text": "I'd put more emphasis on educating individuals first. Taxes and bans can feel paternalistic and often hit lower-income people hardest without changing the beliefs behind their habits. When people truly understand why a choice matters, the change tends to stick and to spread into the rest of their lives."
+   }
+  ]
+ },
+ {
+  "id": "disc-39",
+  "course": "Media Studies",
+  "professor": "With so much news now flowing through social media, some believe citizens are better informed than ever, while others think the spread of misinformation has left the public less informed. On balance, has social media improved or harmed public understanding of important issues?",
+  "posts": [
+   {
+    "name": "Layla",
+    "text": "On balance I think social media has harmed public understanding. The same platforms that circulate solid reporting spread rumors just as quickly, and their algorithms reward outrage over accuracy. Many people now feel well informed while actually absorbing a stream of misleading headlines they never bother to verify."
+   },
+   {
+    "name": "Felix",
+    "text": "I take a more positive view. Social media lets ordinary people reach reporting and firsthand accounts that traditional gatekeepers once filtered out, and it has surfaced stories that would otherwise have stayed hidden. Misinformation is a genuine danger, but the answer is stronger media literacy, not less access to information."
+   }
+  ]
+ },
+ {
+  "id": "disc-40",
+  "course": "Media and Communication",
+  "professor": "Streaming services rely on algorithms to recommend content based on what we already watch and listen to. Do you think these personalized recommendations enrich our cultural experience, or do they narrow our tastes and limit what we discover?",
+  "posts": [
+   {
+    "name": "Nina",
+    "text": "I worry that recommendation algorithms mostly narrow our tastes. By constantly feeding us more of what we've already liked, they build a comfortable bubble that rarely challenges us with anything unfamiliar. I've noticed I discover far more surprising music from friends than from any 'recommended for you' list."
+   },
+   {
+    "name": "Raj",
+    "text": "I think the algorithms enrich my experience more than they limit it. With such an overwhelming amount of content available, good recommendations help me find hidden works I'd never have stumbled on alone, including films from other countries. The tools reflect our own choices, so if we deliberately explore, they'll happily lead us somewhere new."
+   }
+  ]
+ }
 ]

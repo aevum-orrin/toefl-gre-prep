@@ -940,5 +940,383 @@
     "explanation": "He states the flute has few strong overtones, giving it a fairly pure, smooth tone."
    }
   ]
+ },
+ {
+  "id": "ls_tk_11",
+  "kind": "academic_talk",
+  "title": "The Ocean Conveyor Belt: Thermohaline Circulation",
+  "transcript": "Alright, everyone, let's dive in — pun intended. Today we're talking about how the ocean moves heat around the entire planet, a system scientists call thermohaline circulation. Now, that's a mouthful, so let's break the word apart. 'Thermo' refers to temperature, and 'haline' refers to salt, or salinity. And those two things, temperature and saltiness, are what drive this enormous flow of water. Here's the basic idea. Water becomes denser, that is, heavier, when it gets colder and when it gets saltier. So picture warm surface water traveling north from the tropics, up toward the North Atlantic near Greenland. As it goes, it cools. And when sea ice forms up there, the ice leaves its salt behind in the water, making what's left even saltier. Cold plus salty equals dense. So this water becomes heavy enough to sink, plunging thousands of meters toward the ocean floor. That sinking is the engine of the whole system. Once that water is down deep, it spreads slowly across the globe, creeping along the bottom for centuries before it eventually rises again in other regions, in the Pacific, in the Indian Ocean. Scientists sometimes call this the 'global conveyor belt,' because a single parcel of water might take a thousand years to complete the full loop. Why should we care? Well, this circulation carries warmth. The reason Western Europe is so much milder than, say, Canada at the same latitude is that this current delivers tropical heat northward. And here's the concern. If too much fresh water, from melting glaciers for example, pours into the North Atlantic, it could dilute the salt, keep the water from sinking, and slow the conveyor down. That's an area of very active research today. So next time, we'll look at what the geological record tells us about past slowdowns.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "A global system that circulates ocean water and heat around the planet",
+     "How sea ice forms in the North Atlantic",
+     "Why Western Europe enjoys a mild climate",
+     "The effect of melting glaciers on sea level"
+    ],
+    "answer": 0,
+    "explanation": "The professor introduces thermohaline circulation and explains how temperature and salinity drive a worldwide flow of water and heat."
+   },
+   {
+    "q": "According to the professor, what happens to salt when sea ice forms?",
+    "options": [
+     "It is frozen into the ice itself",
+     "It evaporates into the atmosphere",
+     "It is left behind in the surrounding water",
+     "It sinks to the ocean floor on its own"
+    ],
+    "answer": 2,
+    "explanation": "He says the ice leaves its salt behind, making the remaining water saltier and therefore denser."
+   },
+   {
+    "q": "Why does the professor break apart the word 'thermohaline'?",
+    "options": [
+     "To show that the term was only recently invented",
+     "To introduce temperature and salt, the two factors that drive the system",
+     "To correct a common mispronunciation",
+     "To compare the ocean to a factory conveyor belt"
+    ],
+    "answer": 1,
+    "explanation": "He splits 'thermo' (temperature) and 'haline' (salt) to name the two forces behind the circulation."
+   },
+   {
+    "q": "What can be inferred about Western Europe's climate?",
+    "options": [
+     "It is unaffected by ocean currents",
+     "It is growing drier because of melting ice",
+     "It is colder than Canada at the same latitude",
+     "It would probably be colder if the circulation stopped"
+    ],
+    "answer": 3,
+    "explanation": "Since the current delivers tropical heat that keeps Europe mild, a slowdown would likely make it colder."
+   },
+   {
+    "q": "How does the professor explain why the northern water sinks?",
+    "options": [
+     "By comparing it to a laboratory experiment",
+     "By pointing to two conditions, cold and salty, that make water dense",
+     "By recounting the history of ocean exploration",
+     "By listing the different oceans of the world"
+    ],
+    "answer": 1,
+    "explanation": "He explains that cold plus salty makes the water dense enough to sink, combining the two conditions."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_12",
+  "kind": "academic_talk",
+  "title": "Mirror Neurons",
+  "transcript": "Okay, settle in. Today I want to introduce you to one of the more surprising discoveries in modern neuroscience, something called mirror neurons. And the story of how they were found is almost as interesting as the neurons themselves. Back in the 1990s, a team of researchers in Italy was studying the brains of macaque monkeys. They had placed tiny electrodes in a region involved in planning movement, and they were recording which neurons fired when a monkey reached for a piece of food. Nothing unusual so far. But then they noticed something strange. When one of the researchers reached for the food, while the monkey just sat there watching, some of the very same neurons in the monkey's brain fired. Think about that. The cell responded both when the monkey performed the action and when it merely observed someone else performing it. That's why they're called mirror neurons: the brain seems to mirror, internally, what it sees. Now, why is this such a big deal? Well, many scientists believe mirror neurons help us understand other people. Instead of coldly reasoning out what someone is doing, your brain may simulate their action as if you were doing it yourself. This could be the foundation of empathy, of literally sensing what another person feels. Some researchers go further and suggest mirror neurons are key to how we learn by imitation, how children pick up gestures and, perhaps, even language. But I want to add a note of caution. This is an exciting idea, and it has captured the public imagination, maybe too much. Mirror neurons have been used to explain everything from autism to why we cry at the movies. And honestly, some of those claims run far ahead of the evidence. So keep an open but critical mind. For next week, read the original paper, and we'll talk about what it does and does not prove.",
+  "questions": [
+   {
+    "q": "What is the main topic of the talk?",
+    "options": [
+     "How monkeys reach for pieces of food",
+     "A kind of brain cell that fires both when acting and when watching an action",
+     "The main causes of autism",
+     "How electrodes are implanted in the brain"
+    ],
+    "answer": 1,
+    "explanation": "The lecture introduces mirror neurons, cells that fire both when performing and when observing an action."
+   },
+   {
+    "q": "How were mirror neurons first discovered?",
+    "options": [
+     "By scanning human volunteers as they watched films",
+     "By building a computer model of the brain",
+     "By studying children as they learned to speak",
+     "By accident, while recording a monkey's brain as a researcher reached for food"
+    ],
+    "answer": 3,
+    "explanation": "Researchers unexpectedly saw the monkey's motor neurons fire as it merely watched a person reach for food."
+   },
+   {
+    "q": "Why does the professor say, 'Think about that'?",
+    "options": [
+     "To indicate that the experiment had failed",
+     "To ask students to memorize a definition",
+     "To draw attention to a surprising result",
+     "To signal that the lecture is ending"
+    ],
+    "answer": 2,
+    "explanation": "He pauses to emphasize the surprising fact that one cell fires for both doing and merely watching."
+   },
+   {
+    "q": "What does the professor imply about many popular claims regarding mirror neurons?",
+    "options": [
+     "Many may go beyond what the evidence actually supports",
+     "They have all been confirmed by careful experiments",
+     "They were first proposed by the original Italian team",
+     "They apply only to monkeys and not to humans"
+    ],
+    "answer": 0,
+    "explanation": "He warns that some claims 'run far ahead of the evidence,' implying they are not well supported."
+   },
+   {
+    "q": "How does the professor present the topic?",
+    "options": [
+     "By comparing several competing theories in detail",
+     "By listing experiments in order across a full century",
+     "By reading directly from the original paper",
+     "By telling the discovery story first, then discussing its meaning and its limits"
+    ],
+    "answer": 3,
+    "explanation": "He narrates how the neurons were found, then turns to why they matter and cautions against overstated claims."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_13",
+  "kind": "academic_talk",
+  "title": "The Gothic Flying Buttress",
+  "transcript": "Good morning. Last week we looked at the heavy, thick-walled churches of the Romanesque period. Today I want to explain how medieval builders escaped those heavy walls and reached for the sky, and the key to that story is a single clever invention: the flying buttress. So let's start with the problem. If you want to build a tall stone building with a high, vaulted stone ceiling, you run into physics. The weight of that heavy roof doesn't just push straight down. It also pushes outward, sideways, against the tops of the walls. Engineers call this outward push 'thrust.' And if nothing resists that thrust, the walls bow outward and, eventually, the whole thing collapses. Now, the old solution was simply to build the walls thick and massive, walls strong enough to absorb the push. But thick walls are dark. You can't cut many windows into them without weakening them. So Romanesque churches tend to be gloomy inside. The Gothic builders wanted something different. They wanted height, and they wanted light. Here's their solution. Instead of thickening the wall itself, they moved the support outside the building. Picture a stone arch, or a half-arch, that reaches from the upper wall out to a freestanding pillar some distance away. That arch catches the outward thrust of the roof and carries it safely down to the ground, out beyond the wall. Because the arch appears to leap through the air, it was later nicknamed a 'flying' buttress. And here's the payoff. With the thrust handled outside, the wall no longer has to be thick and solid. It can be opened up, filled with enormous stained-glass windows. That's why a Gothic cathedral feels so soaring and luminous compared with what came before. So the flying buttress isn't just decoration. It's the structural trick that made all that light possible. Next time, we'll trace how these ideas spread across Europe.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "The decorative carvings found on medieval churches",
+     "The history of stained-glass manufacturing",
+     "How one invention let Gothic churches rise tall and fill with light",
+     "The reasons Romanesque churches were torn down"
+    ],
+    "answer": 2,
+    "explanation": "The professor explains how the flying buttress solved a structural problem, enabling tall, light-filled Gothic cathedrals."
+   },
+   {
+    "q": "According to the professor, what is 'thrust'?",
+    "options": [
+     "The downward weight of the building's foundation",
+     "The outward, sideways push of a heavy roof against the walls",
+     "The pull of wind against the tall windows",
+     "The force that holds panes of stained glass in place"
+    ],
+    "answer": 1,
+    "explanation": "He defines thrust as the outward push a heavy vaulted roof exerts on the tops of the walls."
+   },
+   {
+    "q": "Why does the professor mention that Romanesque churches are gloomy inside?",
+    "options": [
+     "To praise their calm, peaceful atmosphere",
+     "To explain why they were so expensive to build",
+     "To suggest that they were poorly constructed",
+     "To highlight the drawback of thick walls that Gothic builders wanted to fix"
+    ],
+    "answer": 3,
+    "explanation": "Thick walls allow few windows, so the gloom sets up why Gothic builders sought a different approach."
+   },
+   {
+    "q": "What can be inferred about the walls of a Gothic cathedral?",
+    "options": [
+     "They are thicker than Romanesque walls",
+     "They can hold large windows because they no longer bear the thrust alone",
+     "They are built from a lighter type of stone",
+     "They need no support of any kind"
+    ],
+    "answer": 1,
+    "explanation": "With the thrust carried outside by the buttress, the wall can be opened up for large stained-glass windows."
+   },
+   {
+    "q": "How does the professor organize the talk?",
+    "options": [
+     "By first presenting a structural problem and then the invention that solved it",
+     "By comparing cathedrals in several different countries",
+     "By narrating the life of a single famous architect",
+     "By listing building materials from cheapest to most costly"
+    ],
+    "answer": 0,
+    "explanation": "He lays out the problem of outward thrust and thick walls, then introduces the flying buttress as the solution."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_14",
+  "kind": "academic_talk",
+  "title": "How Plants Defend Themselves Against Herbivores",
+  "transcript": "Let's get going. When we picture a plant, we tend to think of something passive, just sitting there, rooted in place, quietly getting eaten. But that picture is wrong. Plants can't run away from the insects and animals that feed on them, so over millions of years they've evolved a remarkable arsenal of defenses. I want to sort these defenses into three broad groups. The first group is physical. These are the defenses you can see and touch. Thorns and spines, for instance, that discourage a large grazing animal from taking a bite. Or tiny, stiff hairs on a leaf's surface that make it hard for a small insect to move around and feed. Some grasses even pack their tissues with microscopic particles of silica, essentially glass, which wear down the teeth of anything chewing on them. The second group is chemical, and this is where plants get really sophisticated. Many produce bitter or toxic compounds. Think of nicotine in the tobacco plant, or caffeine, which in high doses is actually a pesticide. These chemicals can taste terrible, interfere with digestion, or even poison the plant-eater outright. Now, here's the third group, and it's my favorite because it's so unexpected. Some plants defend themselves indirectly, by recruiting bodyguards. When certain plants are being chewed by caterpillars, they release specific chemical signals into the air. Those airborne signals attract wasps, and the wasps attack the caterpillars. So the plant, in effect, calls for reinforcements. It doesn't fight the attacker itself; it summons the attacker's enemy. Isn't that clever? So notice the pattern here: physical barriers, chemical weapons, and enlisting outside help. What I want you to take away is that a plant is not a passive victim. It's engaged in a constant, if slow-motion, struggle. And the plants we see today are the winners of that long arms race. Next week, we'll look at how the herbivores fight back.",
+  "questions": [
+   {
+    "q": "What is the main idea of the talk?",
+    "options": [
+     "Plants are passive victims of the animals that eat them",
+     "Plants have evolved several kinds of defenses against plant-eaters",
+     "Insects have found ways to digest plant toxins",
+     "Farmers can protect crops by adding silica to the soil"
+    ],
+    "answer": 1,
+    "explanation": "The professor argues plants are far from passive and describes three categories of defense they've evolved."
+   },
+   {
+    "q": "According to the professor, what does the silica in some grasses do?",
+    "options": [
+     "It wears down the teeth of animals that chew the grass",
+     "It makes the leaves taste sweeter",
+     "It attracts helpful wasps to the plant",
+     "It helps the plant absorb more sunlight"
+    ],
+    "answer": 0,
+    "explanation": "He says grasses pack their tissues with glass-like silica that wears down the teeth of herbivores."
+   },
+   {
+    "q": "Why does the professor mention nicotine and caffeine?",
+    "options": [
+     "To show that plants need these chemicals in order to grow",
+     "To explain how humans turn plants into medicine",
+     "To give examples of chemical defenses that harm plant-eaters",
+     "To argue that these plants have no natural enemies"
+    ],
+    "answer": 2,
+    "explanation": "They illustrate the chemical category, bitter or toxic compounds that deter or poison herbivores."
+   },
+   {
+    "q": "What can be inferred about the plants that attract wasps?",
+    "options": [
+     "They are unable to produce any toxic chemicals",
+     "They physically trap the caterpillars inside their leaves",
+     "They attack the wasps to protect themselves",
+     "They gain protection from the wasps without fighting the caterpillars directly"
+    ],
+    "answer": 3,
+    "explanation": "The plant summons wasps to attack the caterpillars, so it is protected without combating the pest itself."
+   },
+   {
+    "q": "How does the professor organize the information about plant defenses?",
+    "options": [
+     "By ranking the defenses from weakest to strongest",
+     "By grouping them into physical, chemical, and indirect categories",
+     "By following the life cycle of a single plant",
+     "By contrasting two competing scientific theories"
+    ],
+    "answer": 1,
+    "explanation": "He explicitly sorts the defenses into three groups: physical barriers, chemical weapons, and recruiting help."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_15",
+  "kind": "academic_talk",
+  "title": "The Strength of Weak Ties",
+  "transcript": "Alright, let's begin. I want to start today with a question that sounds simple. When people find a new job, a really good one, how do they usually hear about it? You might guess it's through their closest friends and family, the people who know them best and care about them most. But a famous study from the 1970s found something almost the opposite, and it changed how sociologists think about social networks. The researcher interviewed people who had recently found jobs through personal contacts. And he asked them: how often did you actually see the person who told you about the opening? The surprising answer was, not often. Most of the useful tips came not from close friends, but from acquaintances, people they saw only occasionally. He called this idea 'the strength of weak ties.' Now, why would that be? At first it seems backward. Here's the explanation. Your close friends tend to know all the same people you know. You move in the same circles, you go to the same places, you hear about the same opportunities. So the information your best friend has is mostly information you already have. It's redundant. But a weak tie, an old classmate, a friend of a friend, someone you met once at a conference, that person moves in a different circle. They're connected to a whole world you're not plugged into. So they can pass along news that would never otherwise reach you. In network terms, weak ties act as bridges between separate clusters of people. And information, a job lead, a rumor, a new idea, travels across those bridges. So the lesson isn't that close friends don't matter. Of course they do, in countless ways. The point is that when it comes to spreading new information across a society, it's often the weak connections, not the strong ones, that do the heavy lifting. Keep that paradox in mind.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "How to make a larger number of close friends",
+     "Why people tend to change jobs so frequently",
+     "The early history of sociology as a discipline",
+     "Why distant acquaintances are often the best source of new information"
+    ],
+    "answer": 3,
+    "explanation": "The lecture explains 'the strength of weak ties,' that acquaintances often provide information close friends cannot."
+   },
+   {
+    "q": "According to the study, how did most people hear about their new jobs?",
+    "options": [
+     "Through close friends and family members",
+     "Through acquaintances they saw only occasionally",
+     "Through newspaper advertisements",
+     "Through their former employers"
+    ],
+    "answer": 1,
+    "explanation": "The researcher found that most useful job tips came from acquaintances rather than from close contacts."
+   },
+   {
+    "q": "Why does the professor say the information from close friends is 'redundant'?",
+    "options": [
+     "Because close friends tend to know the same people and news you already know",
+     "Because close friends rarely tell you the truth",
+     "Because close friends change jobs too often",
+     "Because close friends usually live far away"
+    ],
+    "answer": 0,
+    "explanation": "Close friends share your circles, so their information largely overlaps with what you already have."
+   },
+   {
+    "q": "What can be inferred about weak ties?",
+    "options": [
+     "They are usually people you dislike",
+     "They always turn into strong ties over time",
+     "They connect you to circles and information you could not otherwise reach",
+     "They are useful only for finding jobs"
+    ],
+    "answer": 2,
+    "explanation": "Because acquaintances move in different circles, they act as bridges to otherwise unreachable information."
+   },
+   {
+    "q": "How does the professor develop the main point?",
+    "options": [
+     "By comparing job markets in several countries",
+     "By describing his own experience of finding a job",
+     "By posing a surprising finding and then explaining why it makes sense",
+     "By listing the steps for building a professional network"
+    ],
+    "answer": 2,
+    "explanation": "He opens with the counterintuitive study result, then explains the network logic that accounts for it."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_16",
+  "kind": "academic_talk",
+  "title": "Angular Momentum and the Spinning Skater",
+  "transcript": "Okay, everyone. I want to spend today on one of the most elegant ideas in physics, a conservation law. And I'm going to explain it with an image you've all seen: a figure skater spinning on the ice. You know the move. The skater starts spinning with both arms stretched out wide. Then she pulls her arms in close to her body, and suddenly she's whirling much faster, almost a blur. She didn't push off the ice again. Nobody gave her a shove. So where did that extra speed come from? The answer is a quantity physicists call angular momentum. For our purposes, think of angular momentum as a kind of 'amount of spinning' that a rotating object has. And here's the crucial law: as long as nothing from outside twists on the object, its angular momentum stays constant. It's conserved. It can't just appear or disappear. Now, here's the subtle part. Angular momentum depends on two things: how fast the object is spinning, and how spread out its mass is from the center. Those two factors trade off against each other. When the skater's arms are stretched out, her mass is far from her axis, so she can spin slowly and still have a certain amount of angular momentum. But when she pulls her arms in, her mass moves close to the axis. Since the total amount of spinning has to stay the same, something must compensate, and so her spin rate shoots up. Pull the mass in, spin faster. Push it out, spin slower. It's automatic. And this isn't just a skating trick. The very same principle explains how a collapsing cloud of gas in space spins faster and faster as it shrinks, eventually forming a swirling disk. Same law, wildly different scale. So next time you watch a skater, you're really watching a physics demonstration. We'll do the math behind it on Thursday.",
+  "questions": [
+   {
+    "q": "What is the main topic of the talk?",
+    "options": [
+     "The conservation of angular momentum, shown through a spinning skater",
+     "How figure skaters train to spin quickly",
+     "The formation of stars from clouds of gas",
+     "Why ice offers so little friction"
+    ],
+    "answer": 0,
+    "explanation": "The professor uses the skater to teach that angular momentum is conserved when no outside twist acts on an object."
+   },
+   {
+    "q": "According to the professor, what two things does angular momentum depend on?",
+    "options": [
+     "The object's temperature and the surface beneath it",
+     "The object's color and its overall shape",
+     "The direction of the spin and the time of day",
+     "How fast the object spins and how spread out its mass is"
+    ],
+    "answer": 3,
+    "explanation": "He states angular momentum depends on the spin rate and on how far the mass is from the center."
+   },
+   {
+    "q": "Why does the professor ask where the skater's extra speed 'came from'?",
+    "options": [
+     "To suggest the skater secretly pushed off the ice again",
+     "To set up the puzzle that the conservation law will solve",
+     "To argue that the whole thing must be an illusion",
+     "To point out a mistake that skaters commonly make"
+    ],
+    "answer": 1,
+    "explanation": "The rhetorical question poses the mystery that angular momentum conservation then explains."
+   },
+   {
+    "q": "What can be inferred about a skater who extends her arms while spinning?",
+    "options": [
+     "She will lose her balance and fall",
+     "Her angular momentum will disappear",
+     "She will slow down",
+     "She will spin even faster"
+    ],
+    "answer": 2,
+    "explanation": "Since pulling the arms in speeds the spin, the reverse, extending the arms, must slow it down."
+   },
+   {
+    "q": "How does the professor make the abstract law easier to understand?",
+    "options": [
+     "By deriving several equations step by step",
+     "By comparing many different sports to one another",
+     "By quoting the physicist who first discovered the law",
+     "By starting from a familiar example before extending it to stars"
+    ],
+    "answer": 3,
+    "explanation": "He grounds the law in the everyday image of a skater, then generalizes it to collapsing gas clouds in space."
+   }
+  ]
  }
 ]

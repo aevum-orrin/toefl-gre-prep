@@ -1118,5 +1118,509 @@
     "explanation": "Because the tail 'is blown outward by the Sun, it always points away from the Sun, not backward along the comet's path.'"
    }
   ]
+ },
+ {
+  "id": "rd_ac_13",
+  "kind": "academic_passage",
+  "title": "Whale Falls: Oases of the Deep",
+  "passage": "When a large whale dies in the open ocean, its body eventually sinks to the deep seafloor, where it creates a remarkable habitat known as a whale fall. In the cold, dark waters thousands of meters down, food is normally scarce, so the sudden arrival of tens of tons of flesh and bone triggers a burst of activity. Scientists have found that a single carcass can sustain life for decades, passing through several distinct stages.\n\nAt first, mobile scavengers such as hagfish, sleeper sharks, and crabs strip the soft tissue, sometimes removing most of it within months. Next, a community of worms, snails, and crustaceans colonizes the surrounding sediment, feeding on scraps and organic material that has seeped into the mud. The final and longest stage begins when specialized bacteria break down the fats stored inside the bones. These bacteria release chemical compounds that support animals found almost nowhere else, including a group of boneless worms that lack mouths and stomachs entirely.\n\nBecause whale falls resemble the chemical-based communities near deep-sea vents, some researchers suspect they act as stepping stones, allowing unusual organisms to spread across vast stretches of otherwise barren ocean floor.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "How a dead whale's body becomes a long-lasting habitat that changes over time",
+     "Why whales migrate to deep parts of the ocean before they die",
+     "How deep-sea bacteria digest fat in most kinds of marine animal",
+     "The reasons large whale populations have declined in recent years"
+    ],
+    "answer": 0,
+    "explanation": "The passage describes how a sunken whale supports life for decades through a series of distinct stages, so the changing habitat is the main topic."
+   },
+   {
+    "q": "According to the passage, what do mobile scavengers such as hagfish and crabs do?",
+    "options": [
+     "They break down the fats stored inside the whale's bones",
+     "They remove much of the soft tissue from the carcass",
+     "They colonize the sediment around the whale",
+     "They release chemical compounds into the water"
+    ],
+    "answer": 1,
+    "explanation": "The passage states that scavengers 'strip the soft tissue, sometimes removing most of it within months.'"
+   },
+   {
+    "q": "What can be inferred about the boneless worms mentioned in the passage?",
+    "options": [
+     "They arrive during the first stage of a whale fall",
+     "They feed directly on the whale's soft tissue",
+     "They depend on the activity of the bacteria in the bones",
+     "They are commonly found throughout the shallow ocean"
+    ],
+    "answer": 2,
+    "explanation": "The worms appear in the final stage alongside the bacteria that break down bone fat and 'lack mouths and stomachs,' implying they rely on the bacteria's chemical output."
+   },
+   {
+    "q": "In the passage, the word 'scarce' is closest in meaning to",
+    "options": [
+     "dangerous",
+     "hidden",
+     "limited",
+     "unhealthy"
+    ],
+    "answer": 2,
+    "explanation": "Food that is 'normally scarce' in the deep sea is in short supply, that is, limited."
+   },
+   {
+    "q": "Why does the author mention deep-sea vents in the last paragraph?",
+    "options": [
+     "To explain why whale falls form only near volcanic areas",
+     "To suggest how whale falls may help certain organisms spread",
+     "To contrast the temperature of vents with that of whale falls",
+     "To prove that vents and whale falls contain identical species"
+    ],
+    "answer": 1,
+    "explanation": "The resemblance to vents supports the idea that whale falls act as 'stepping stones' that let unusual organisms spread across the ocean floor."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_14",
+  "kind": "academic_passage",
+  "title": "Change Blindness and the Limits of Attention",
+  "passage": "People generally believe that they see the world around them in rich and complete detail. Research on a phenomenon called change blindness suggests otherwise. In a typical experiment, participants view a photograph, then see a nearly identical version in which one element has been altered - a building's color, a person's clothing, or even a large object that vanishes. When the two images are separated by a brief blank flash, observers often fail to notice the change, even after looking back and forth many times.\n\nPsychologists explain this surprising failure by arguing that vision is far more selective than it feels. Rather than storing a detailed picture of a scene, the brain appears to hold only the information it currently needs, updating that limited representation moment by moment. The blank flash matters because it masks the visual signal that a change would normally produce, forcing viewers to rely on memory alone.\n\nChange blindness has practical consequences. Eyewitnesses may overlook important details of a crime, and drivers can miss a pedestrian who steps into view at the wrong instant. For researchers, however, the effect is valuable precisely because it reveals the hidden limits of attention and exposes the gap between what we think we see and what we actually notice.",
+  "questions": [
+   {
+    "q": "What is the main point of the passage?",
+    "options": [
+     "Eyewitnesses and drivers are usually unreliable observers",
+     "Photographs can easily be altered without a viewer's consent",
+     "People notice far less of their visual world than they assume",
+     "The brain stores a complete and detailed record of every scene"
+    ],
+    "answer": 2,
+    "explanation": "The passage uses change blindness to argue that vision is selective and that we perceive much less than we believe we do."
+   },
+   {
+    "q": "According to the passage, why does the blank flash make a change hard to detect?",
+    "options": [
+     "It makes the two photographs look completely different",
+     "It causes participants to close their eyes briefly",
+     "It increases the amount of detail the brain stores",
+     "It hides the visual signal that a change usually creates"
+    ],
+    "answer": 3,
+    "explanation": "The passage says the flash 'masks the visual signal that a change would normally produce,' leaving viewers to rely on memory."
+   },
+   {
+    "q": "What can be inferred about a person who claims to remember a scene in complete detail?",
+    "options": [
+     "Their sense of complete detail may be partly an illusion",
+     "Their memory is probably more accurate than most people's",
+     "They must have viewed the scene without any blank flash",
+     "They are better at driving than the average person"
+    ],
+    "answer": 0,
+    "explanation": "Because the brain stores only the information it currently needs, the feeling of seeing everything in full detail is likely misleading."
+   },
+   {
+    "q": "In the passage, the word 'selective' is closest in meaning to",
+    "options": [
+     "highly accurate",
+     "slow to react",
+     "taking in only some things",
+     "easily confused"
+    ],
+    "answer": 2,
+    "explanation": "Vision being 'far more selective than it feels' means it takes in only part of a scene rather than everything."
+   },
+   {
+    "q": "Why does the author mention eyewitnesses and drivers?",
+    "options": [
+     "To argue that change blindness cannot be studied in a laboratory",
+     "To prove that most crimes are never solved",
+     "To explain how the blank flash is created",
+     "To give real-world examples of the effect's consequences"
+    ],
+    "answer": 3,
+    "explanation": "They are offered as 'practical consequences' showing why change blindness matters outside the laboratory."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_15",
+  "kind": "academic_passage",
+  "title": "Metals That Remember Their Shape",
+  "passage": "Most metals, once bent out of shape, stay bent. A special class of materials called shape-memory alloys behaves very differently: after being deformed, they can return to a previously fixed form when heated. The most widely used example is nitinol, a mixture of nickel and titanium first studied in the 1960s.\n\nThe unusual behavior comes from the way the alloy's atoms are arranged. At low temperatures the metal adopts a flexible atomic structure that can be twisted or folded with little force. Heating the alloy above a certain point causes the atoms to snap back into a rigid, orderly arrangement, and the object physically reshapes itself to match the form it \"remembers.\" Because the transformation happens in the solid state, no melting is involved, and the cycle can be repeated many times.\n\nEngineers have found numerous uses for this property. In medicine, collapsed nitinol tubes can be threaded into a narrow blood vessel and then expand to their full width at body temperature, propping the vessel open. Eyeglass frames made from the alloy spring back after being sat on, and aerospace designers use it to build components that unfold automatically once a spacecraft reaches orbit, replacing bulkier mechanical hinges and motors.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "Why nickel and titanium are difficult to combine",
+     "How ordinary metals lose their shape when heated",
+     "The history of medical devices made from metal",
+     "A metal alloy that returns to a set shape when heated, and its uses"
+    ],
+    "answer": 3,
+    "explanation": "The passage introduces shape-memory alloys, explains how they work, and describes their practical applications."
+   },
+   {
+    "q": "According to the passage, what happens to a shape-memory alloy at low temperatures?",
+    "options": [
+     "Its atomic structure becomes flexible and easy to deform",
+     "It melts and can be poured into a mold",
+     "It snaps into a rigid, orderly arrangement",
+     "It permanently loses its ability to reshape"
+    ],
+    "answer": 0,
+    "explanation": "The passage says that at low temperatures the metal 'adopts a flexible atomic structure that can be twisted or folded with little force.'"
+   },
+   {
+    "q": "What can be inferred about the nitinol tubes used in medicine?",
+    "options": [
+     "They must be heated with an external device after insertion",
+     "They work only in blood vessels that are already wide",
+     "The temperature of the human body is enough to make them expand",
+     "They can be used only once before losing their shape"
+    ],
+    "answer": 2,
+    "explanation": "The tubes 'expand to their full width at body temperature,' so ordinary body heat is enough to trigger the change."
+   },
+   {
+    "q": "In the passage, the word 'deformed' is closest in meaning to",
+    "options": [
+     "melted down",
+     "changed in shape",
+     "cooled quickly",
+     "broken apart"
+    ],
+    "answer": 1,
+    "explanation": "'After being deformed, they can return to a previously fixed form' shows that deformed means having its shape changed."
+   },
+   {
+    "q": "Why does the author mention eyeglass frames and aerospace components?",
+    "options": [
+     "To show that nitinol is too expensive for everyday products",
+     "To illustrate the range of practical uses for the alloy",
+     "To argue that mechanical hinges are more reliable",
+     "To explain how the atoms in the alloy are arranged"
+    ],
+    "answer": 1,
+    "explanation": "These are examples given to demonstrate the 'numerous uses' engineers have found for the shape-memory property."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_16",
+  "kind": "academic_passage",
+  "title": "The Antikythera Mechanism",
+  "passage": "In 1901, divers exploring an ancient shipwreck near the Greek island of Antikythera recovered a lump of corroded bronze that would puzzle scholars for more than a century. Hidden inside were dozens of interlocking gears, some no larger than a coin. The object, now called the Antikythera mechanism, dates to roughly the second century BCE, and nothing of comparable complexity is known from the following thousand years.\n\nFor decades the fragments resisted interpretation, because the metal had fused into shapeless masses. Only with modern imaging techniques, especially high-resolution X-ray scanning, could researchers trace the hidden gear teeth and read faint inscriptions on the surface. Their conclusions were startling. The device was a hand-cranked model of the cosmos: turning a knob advanced a set of dials that predicted the positions of the Sun and Moon, forecast eclipses, and even tracked the timing of athletic festivals such as the Olympic Games.\n\nThe mechanism forces historians to reconsider what ancient Greek engineers could achieve. Such precise gearing was long assumed to be a much later invention. Because only one example has ever been found, scholars cannot say how common such devices were, but its existence proves that the knowledge to build them certainly existed.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "How divers locate ancient shipwrecks in the Mediterranean",
+     "An unexpectedly advanced ancient Greek device and its significance",
+     "The rules of athletic festivals in the ancient world",
+     "The invention of X-ray scanning technology"
+    ],
+    "answer": 1,
+    "explanation": "The passage focuses on the Antikythera mechanism, what it could do, and why it changes our view of ancient Greek engineering."
+   },
+   {
+    "q": "According to the passage, what did the mechanism do when its knob was turned?",
+    "options": [
+     "It cleaned corrosion from the surrounding bronze",
+     "It recorded the names of Olympic athletes",
+     "It generated X-rays to reveal its own gears",
+     "It moved dials that predicted the positions of the Sun and Moon"
+    ],
+    "answer": 3,
+    "explanation": "The passage states that turning the knob 'advanced a set of dials that predicted the positions of the Sun and Moon.'"
+   },
+   {
+    "q": "What can be inferred about attempts to study the mechanism before modern imaging?",
+    "options": [
+     "Researchers could not clearly see the gears inside the fused metal",
+     "Researchers had already read all of its inscriptions",
+     "Scholars believed the object was made of gold",
+     "The gears were easy to count but hard to date"
+    ],
+    "answer": 0,
+    "explanation": "The fragments 'resisted interpretation' because the metal had fused, and only X-ray scanning let researchers trace the hidden teeth, so the gears were not visible before."
+   },
+   {
+    "q": "In the passage, the word 'startling' is closest in meaning to",
+    "options": [
+     "uncertain",
+     "disappointing",
+     "surprising",
+     "familiar"
+    ],
+    "answer": 2,
+    "explanation": "The conclusions were 'startling' because the device turned out to be far more sophisticated than expected."
+   },
+   {
+    "q": "Why does the author state that only one example has ever been found?",
+    "options": [
+     "To suggest that the mechanism was a modern forgery",
+     "To explain why the device eventually stopped working",
+     "To prove that such devices were extremely common",
+     "To show why scholars are unsure how widespread such devices were"
+    ],
+    "answer": 3,
+    "explanation": "Having only one example is given as the reason scholars 'cannot say how common such devices were.'"
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_17",
+  "kind": "academic_passage",
+  "title": "Reading the Past in Ice Cores",
+  "passage": "In the thick ice sheets of Antarctica and Greenland, scientists have found one of the most detailed records of Earth's past climate. Each winter, snow falls and is buried by the next year's snow. As the layers pile up, they are gradually compressed into solid ice, trapping tiny bubbles of the atmosphere that existed when the snow first fell. By drilling deep into the ice and extracting long cylinders called ice cores, researchers can sample air that is hundreds of thousands of years old.\n\nThese frozen bubbles are essentially preserved samples of ancient air. Measuring the gases inside them reveals how concentrations of carbon dioxide and methane have risen and fallen over time. The ice itself carries additional clues: the ratio of certain oxygen atoms in the frozen water indicates how warm the planet was in a given year, while layers of dust or volcanic ash mark major eruptions and dry, windy periods.\n\nBecause deeper ice is older, a single core provides a continuous timeline stretching back through many ice ages. This archive allows scientists to compare today's greenhouse-gas levels with those of the distant past. The cores show that current carbon dioxide concentrations are far higher than at any point in the record.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "How snow slowly turns into glaciers in cold regions",
+     "Why carbon dioxide levels are rising in the world today",
+     "How ice cores preserve a long record of Earth's climate",
+     "The dangers of drilling for ice in Antarctica and Greenland"
+    ],
+    "answer": 2,
+    "explanation": "The passage explains how ice cores trap air and other clues, providing a detailed record of past climate."
+   },
+   {
+    "q": "According to the passage, what do the bubbles trapped in the ice contain?",
+    "options": [
+     "Frozen droplets of ancient rainwater",
+     "Samples of the atmosphere from when the snow fell",
+     "Tiny fragments of volcanic rock",
+     "Living microorganisms from past ice ages"
+    ],
+    "answer": 1,
+    "explanation": "The passage describes the bubbles as 'preserved samples of ancient air,' trapping the atmosphere present when the snow first fell."
+   },
+   {
+    "q": "What can be inferred about the deepest layers of an ice core?",
+    "options": [
+     "They contain the youngest ice in the core",
+     "They hold no trapped air bubbles at all",
+     "They form more quickly than surface layers",
+     "They record climate conditions from the most distant past"
+    ],
+    "answer": 3,
+    "explanation": "Since 'deeper ice is older' and the core reaches back through many ice ages, the deepest layers correspond to the oldest climate."
+   },
+   {
+    "q": "In the passage, the word 'archive' is closest in meaning to",
+    "options": [
+     "stored record",
+     "frozen lake",
+     "drilling tool",
+     "chemical reaction"
+    ],
+    "answer": 0,
+    "explanation": "The ice core is called an 'archive' because it is a preserved record of climate information from the past."
+   },
+   {
+    "q": "Why does the author mention the ratio of oxygen atoms and layers of ash?",
+    "options": [
+     "To explain the equipment used to drill the ice cores",
+     "To warn readers about the dangers of volcanic eruptions",
+     "To show that ice cores reveal more than just past gas levels",
+     "To argue that dust makes the ice too dirty to study"
+    ],
+    "answer": 2,
+    "explanation": "These are 'additional clues' beyond the trapped gases, illustrating how much information the ice can preserve."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_18",
+  "kind": "academic_passage",
+  "title": "The Compromise of Equal Temperament",
+  "passage": "When a modern piano is tuned, no two notes are perfectly in tune with the natural relationships that the ear finds most pleasing. This small compromise, known as equal temperament, divides the octave into twelve equal steps. It has become the standard tuning system for Western keyboard instruments, but it was not always so.\n\nThe problem it solves is an old one. Simple, pure intervals, such as those produced by strings whose lengths form neat whole-number ratios, sound beautifully smooth. Unfortunately, these pure intervals cannot all fit together within a single scale. A keyboard tuned to sound perfect in one key will sound noticeably sour in a distant key, limiting the music a performer can play without retuning.\n\nEqual temperament resolves this by spreading the imperfection evenly. Every interval is very slightly out of tune, but none is badly so, and every key sounds equally acceptable. Composers gained the freedom to move smoothly from one key to another within a single piece. Johann Sebastian Bach celebrated this flexibility in a famous collection of works written in every major and minor key. The system's triumph was practical rather than acoustic: it sacrificed pure sound in exchange for unlimited freedom of movement.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "Why Bach is considered the greatest composer of his era",
+     "How pianos are physically built and maintained",
+     "The mathematics of whole-number ratios in music",
+     "Why Western music adopted a tuning system that trades pure sound for flexibility"
+    ],
+    "answer": 3,
+    "explanation": "The passage explains the problem with pure tuning and why equal temperament was adopted despite being slightly out of tune."
+   },
+   {
+    "q": "According to the passage, what is a drawback of tuning a keyboard with pure intervals?",
+    "options": [
+     "It sounds sour when the music moves to a distant key",
+     "It divides the octave into twelve equal steps",
+     "It makes every key sound equally out of tune",
+     "It prevents strings from forming whole-number ratios"
+    ],
+    "answer": 0,
+    "explanation": "The passage says a keyboard tuned for pure intervals 'will sound noticeably sour in a distant key.'"
+   },
+   {
+    "q": "What can be inferred about musicians before equal temperament became standard?",
+    "options": [
+     "They preferred instruments with no tuning at all",
+     "They could freely change keys within any single piece",
+     "They were more restricted in the keys they could use",
+     "They found pure intervals unpleasant to listen to"
+    ],
+    "answer": 2,
+    "explanation": "Because pure tuning limited 'the music a performer can play without retuning,' musicians had less freedom of key before equal temperament."
+   },
+   {
+    "q": "In the passage, the word 'compromise' is closest in meaning to",
+    "options": [
+     "a highly complicated instrument",
+     "a partial sacrifice made to gain something",
+     "a perfect and complete solution",
+     "a simple mathematical error"
+    ],
+    "answer": 1,
+    "explanation": "Equal temperament is called a 'small compromise' because it gives up some pure sound in exchange for flexibility."
+   },
+   {
+    "q": "Why does the author mention Johann Sebastian Bach?",
+    "options": [
+     "To prove that Bach personally invented equal temperament",
+     "To criticize composers who avoided distant keys",
+     "To explain how whole-number ratios are calculated",
+     "To give an example of the musical freedom the system allowed"
+    ],
+    "answer": 3,
+    "explanation": "Bach's collection in every key illustrates the freedom 'to move smoothly from one key to another' that equal temperament made possible."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_19",
+  "kind": "academic_passage",
+  "title": "Howard's Garden City",
+  "passage": "At the end of the nineteenth century, the industrial cities of Britain were crowded, polluted, and unhealthy. In response, an English planner named Ebenezer Howard proposed a bold alternative he called the garden city. His idea was to build entirely new towns of limited size, each surrounded by a permanent belt of farmland and open country that could never be built over.\n\nHoward designed his ideal town as a series of rings. Homes, parks, and public buildings occupied the center, while factories and workshops were placed on the outer edge, close to a circular railway that carried goods away. Crucially, the town would be owned collectively, so that rising land values benefited the whole community rather than private landlords. When a garden city reached its planned population, it would stop growing, and a fresh town would be started nearby.\n\nOnly a few garden cities were ever built exactly as Howard imagined, and most grew in ways he did not intend. Yet his vision proved enormously influential. The idea of ringing cities with protected green belts, separating dirty industry from housing, and planning towns before people arrived shaped urban policy across the world for the entire following century.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "The main causes of pollution in nineteenth-century Britain",
+     "A planner's design for new towns and its lasting influence",
+     "How railways were built around large industrial cities",
+     "Why private landlords opposed public ownership of land"
+    ],
+    "answer": 1,
+    "explanation": "The passage describes Howard's garden-city design and explains how his ideas shaped later urban planning."
+   },
+   {
+    "q": "According to the passage, where were factories located in Howard's design?",
+    "options": [
+     "In the center, next to homes and parks",
+     "Beyond the surrounding belt of farmland",
+     "On the outer edge, near a circular railway",
+     "Inside a separate garden city built nearby"
+    ],
+    "answer": 2,
+    "explanation": "The passage states that factories and workshops 'were placed on the outer edge, close to a circular railway.'"
+   },
+   {
+    "q": "What can be inferred about why the town would be owned collectively?",
+    "options": [
+     "So that the community, not individuals, would gain from rising land values",
+     "So that factories could expand without any limit",
+     "So that the government could later sell the land for profit",
+     "So that the town could keep growing beyond its planned size"
+    ],
+    "answer": 0,
+    "explanation": "Collective ownership meant 'rising land values benefited the whole community rather than private landlords.'"
+   },
+   {
+    "q": "In the passage, the word 'bold' is closest in meaning to",
+    "options": [
+     "careless",
+     "traditional",
+     "expensive",
+     "daring"
+    ],
+    "answer": 3,
+    "explanation": "Howard's 'bold alternative' was a daring, ambitious proposal that broke sharply with existing practice."
+   },
+   {
+    "q": "Why does the author describe the crowded, polluted cities in the first sentence?",
+    "options": [
+     "To argue that industry should never be allowed in any city",
+     "To explain the problem that Howard's garden city aimed to solve",
+     "To show that Britain had the largest cities in the world",
+     "To praise the health benefits of nineteenth-century towns"
+    ],
+    "answer": 1,
+    "explanation": "The unhealthy conditions set up the problem that motivated Howard, framing the garden city as a response to it."
+   }
+  ]
+ },
+ {
+  "id": "rd_ac_20",
+  "kind": "academic_passage",
+  "title": "How the Immune System Remembers",
+  "passage": "The human immune system does more than fight off an infection; it remembers the encounter. This ability, called immunological memory, explains why many diseases strike a person only once and why vaccines work. When the body first meets a new microbe, the immune system needs time to identify it and mount a defense, and during this delay a person may fall ill.\n\nThe key players are white blood cells that recognize specific features of a particular invader. After the threat is defeated, most of these cells die off, but a small population survives as long-lived memory cells. Should the same microbe return, these cells recognize it almost immediately and launch a response so swift and strong that the invader is destroyed before symptoms appear.\n\nVaccination takes advantage of this system. A vaccine introduces a harmless form or fragment of a microbe - one that cannot cause disease - yet still prompts the immune system to generate memory cells. The body is thus prepared in advance, without ever suffering the illness itself. Because protection depends on these surviving cells, some vaccines require booster doses to keep the population of memory cells large enough to guarantee a rapid response years later.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "How the immune system remembers past infections and how vaccines use this ability",
+     "Why some diseases cannot be prevented by any vaccine",
+     "How white blood cells are produced within the body",
+     "The reasons vaccines sometimes cause a mild illness"
+    ],
+    "answer": 0,
+    "explanation": "The passage explains immunological memory and then shows how vaccination relies on it to prepare the body in advance."
+   },
+   {
+    "q": "According to the passage, what happens to most of the white blood cells after a threat is defeated?",
+    "options": [
+     "They turn into memory cells that last for life",
+     "They keep attacking the same microbe for years",
+     "They die off",
+     "They lose the ability to recognize the invader"
+    ],
+    "answer": 2,
+    "explanation": "The passage says 'most of these cells die off, but a small population survives as long-lived memory cells.'"
+   },
+   {
+    "q": "What can be inferred about why a person often falls ill during a first infection but not a second?",
+    "options": [
+     "The microbe becomes weaker each time it returns",
+     "The first response is slow, while memory cells make the second one fast",
+     "A vaccine is always given between the first and second infections",
+     "The body produces fewer white blood cells the second time"
+    ],
+    "answer": 1,
+    "explanation": "The first encounter involves a delay, but memory cells respond 'almost immediately' the second time, destroying the microbe before symptoms appear."
+   },
+   {
+    "q": "In the passage, the word 'mount' (in 'mount a defense') is closest in meaning to",
+    "options": [
+     "climb onto",
+     "put off",
+     "gradually weaken",
+     "organize and carry out"
+    ],
+    "answer": 3,
+    "explanation": "To 'mount a defense' means to organize and launch a defensive response against the microbe."
+   },
+   {
+    "q": "Why does the author mention booster doses at the end of the passage?",
+    "options": [
+     "To argue that most vaccines are ultimately ineffective",
+     "To explain the process by which a microbe causes disease",
+     "To show that protection depends on keeping memory cells numerous",
+     "To describe how the body defeats a first infection"
+    ],
+    "answer": 2,
+    "explanation": "Boosters are needed because 'protection depends on these surviving cells,' keeping the memory-cell population large enough for a rapid response."
+   }
+  ]
  }
 ]

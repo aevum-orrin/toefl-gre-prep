@@ -226,5 +226,157 @@
     "explanation": "The librarian is explaining the due date and the renewal option, so acknowledging it and planning to renew (option 1) is the fitting reply. Option 0 misunderstands a library loan as a purchase; option 2 comments on when the book was written; option 3 asks an unrelated question about the café."
    }
   ]
+ },
+ {
+  "id": "ls_rs_13",
+  "kind": "choose_response",
+  "title": "Card declined at the café",
+  "transcript": "I'm sorry, but your card was just declined. Do you have another way to pay?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The coffee here is so much better than at the place across the street.",
+     "Oh, that's odd — let me try a different card.",
+     "Yes, I'd like to order a large latte, please.",
+     "I usually stop by here on my way to class."
+    ],
+    "answer": 1,
+    "explanation": "The cashier says the card didn't go through and asks for another payment method, so offering a different card (option 1) directly addresses the problem. Option 0 comments on the coffee's quality; option 2 places an order as if payment hadn't come up; option 3 makes small talk about the responder's routine instead of solving the payment issue."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_14",
+  "kind": "choose_response",
+  "title": "Congratulations on an internship",
+  "transcript": "I heard you landed the summer internship at the museum — that's fantastic news!",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The museum is closed on Mondays, I'm pretty sure.",
+     "No, I haven't been to the museum in years.",
+     "Thanks so much! I still can't quite believe it.",
+     "You should apply there too — it's a great place."
+    ],
+    "answer": 2,
+    "explanation": "This is warm congratulations, so a grateful, pleased reply (option 2) fits naturally. Option 0 offers unrelated trivia about hours; option 1 misreads the news as a question about visiting; option 3 turns the attention to the other person and never acknowledges the congratulations."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_15",
+  "kind": "choose_response",
+  "title": "Is this seat free?",
+  "transcript": "Excuse me, is anyone sitting here, or is this seat free?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I've been studying in here since this morning.",
+     "The library stays open until midnight tonight.",
+     "I usually like the desks over by the window.",
+     "Go ahead, it's all yours — nobody's using it."
+    ],
+    "answer": 3,
+    "explanation": "The question asks whether a seat is taken, so confirming it's free (option 3) is the direct, natural answer. Option 0 talks about how long the responder has been there; option 1 gives the library's hours; option 2 shares a seating preference — none of them actually tell the person whether they can sit down."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_16",
+  "kind": "choose_response",
+  "title": "Invited to office hours",
+  "transcript": "If the problem set is giving you trouble, feel free to stop by my office hours on Thursday.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "Thanks — I'll come by Thursday afternoon; I do have a few questions.",
+     "Those problems weren't on the exam last year.",
+     "I already turned in the reading response.",
+     "Your lectures are on Tuesdays and Thursdays, right?"
+    ],
+    "answer": 0,
+    "explanation": "The professor offers help during office hours, so accepting and naming a time (option 0) is the appropriate reply. Option 1 comments on old exams; option 2 refers to a different assignment; option 3 asks about the lecture schedule instead of taking up the offer of help."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_17",
+  "kind": "choose_response",
+  "title": "Ordering a drink first",
+  "transcript": "Can I start you off with something to drink while you look over the menu?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The table by the window was already taken when we came in.",
+     "Could I get the check whenever you're ready?",
+     "Yes, I'll have an iced tea, please.",
+     "This place gets really crowded on weekends."
+    ],
+    "answer": 2,
+    "explanation": "The server is offering to take a drink order, so naming a drink (option 2) is the natural response. Option 0 remarks on the seating; option 1 asks for the bill before the meal has even started, which doesn't fit; option 3 makes an off-topic comment about how busy the restaurant gets."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_18",
+  "kind": "choose_response",
+  "title": "Borrowing a phone charger",
+  "transcript": "My phone's about to die — do you happen to have a charger I could borrow?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I picked up a new phone case last week.",
+     "Sure, here you go — just give it back before you head out.",
+     "My battery usually lasts me the whole day.",
+     "There's a great phone store just downtown."
+    ],
+    "answer": 1,
+    "explanation": "The speaker is asking to borrow a charger, so lending one with a small condition (option 1) is the cooperative, fitting reply. Option 0 changes the subject to a phone case; option 2 talks about the responder's own battery instead of helping; option 3 suggests a store rather than answering the immediate request."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_19",
+  "kind": "choose_response",
+  "title": "Rain during the picnic",
+  "transcript": "It looks like it might rain this afternoon. Should we move the picnic inside?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I packed some sandwiches and a bit of fruit.",
+     "The park has really nice walking trails.",
+     "I've never been much good at predicting the weather.",
+     "Good idea — let's set up in the common room instead."
+    ],
+    "answer": 3,
+    "explanation": "The speaker suggests relocating the picnic because of rain, so agreeing and proposing an indoor spot (option 3) answers the question directly. Option 0 mentions the food; option 1 praises the park; option 2 sidesteps the decision with a joke about forecasting, none of which resolves where to hold the picnic."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_20",
+  "kind": "choose_response",
+  "title": "Returning a jacket",
+  "transcript": "Was there something wrong with the jacket, or would you just like to exchange it for a different size?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The size was just a little too small — I'd like a medium instead.",
+     "I bought a pair of shoes here last month too.",
+     "This jacket comes in three different colors.",
+     "Your store stays open pretty late on Fridays."
+    ],
+    "answer": 0,
+    "explanation": "The clerk asks whether the jacket was defective or the customer wants a different size, so explaining the fit and requesting another size (option 0) responds directly. Option 1 brings up an unrelated past purchase; option 2 states a product detail; option 3 comments on store hours — none of them answer the clerk's question."
+   }
+  ]
  }
 ]

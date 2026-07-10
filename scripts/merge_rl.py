@@ -28,16 +28,6 @@ KIND_FILE = {
         "choose_response": "choose_response.json",
     },
 }
-# generated scratch file -> (section, expected kind)
-GEN_FILES = {
-    "reading_academic.json": ("reading", "academic_passage"),
-    "reading_daily.json": ("reading", "daily_life"),
-    "reading_complete.json": ("reading", "complete_words"),
-    "listening_talk.json": ("listening", "academic_talk"),
-    "listening_conversation.json": ("listening", "conversation"),
-    "listening_announcement.json": ("listening", "announcement"),
-    "listening_response.json": ("listening", "choose_response"),
-}
 CANONICAL = {s: set(KIND_FILE[s].values()) for s in KIND_FILE}
 
 
@@ -84,13 +74,13 @@ def merge_section(section: str) -> None:
             if kind in by_kind:
                 by_kind[kind].setdefault(it["id"], it)
 
-    # 1) everything already in the section dir (old combined + any canonical files)
+    # 1) everything already in the section dir (canonical per-kind files)
     for f in sorted(sdir.glob("*.json")):
         ingest(_read(f))
-    # 2) freshly generated items from scratch
-    for fname, (sec, _kind) in GEN_FILES.items():
-        if sec == section:
-            ingest(_read(GEN / fname))
+    # 2) any freshly generated files in scratch — routed by each item's `kind`,
+    #    so a new batch just needs to be dropped into rl_gen/ (filename is ignored)
+    for f in sorted(GEN.glob("*.json")):
+        ingest(_read(f))
 
     # global id-uniqueness across kinds within the section
     seen: set[str] = set()

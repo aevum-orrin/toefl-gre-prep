@@ -618,5 +618,245 @@
     "explanation": "Step 4 says the green light turns off when brewing is complete."
    }
   ]
+ },
+ {
+  "id": "rd_dl_13",
+  "kind": "daily_life",
+  "title": "Online order confirmation",
+  "passage": "Order Confirmation — ShopNest #A20517\n\nThank you for your order, Ms. Reyes!\n\nRunning shoes (size 8, gray) … $64.00\nWool socks (3-pack) … $14.00\n\nSubtotal: $78.00\nStandard shipping: FREE (orders over $50)\n\nEstimated delivery: June 22–24\nShipping to: 12 Larch Ave, Apt 4\n\nYour card will not be charged until the items ship. To change your address, edit the order within 2 hours. After that, contact support at help@shopnest.com.",
+  "questions": [
+   {
+    "q": "Why did the order qualify for free shipping?",
+    "options": [
+     "The subtotal was over $50",
+     "It was Ms. Reyes's first order",
+     "The items were on sale",
+     "She entered a discount code"
+    ],
+    "answer": 0,
+    "explanation": "The confirmation lists free standard shipping for orders over $50, and the subtotal was $78."
+   },
+   {
+    "q": "What should Ms. Reyes do to change the delivery address after two hours?",
+    "options": [
+     "Edit the order on the website",
+     "Refuse the package at delivery",
+     "Email the support address",
+     "Wait until the items ship"
+    ],
+    "answer": 2,
+    "explanation": "After the two-hour editing window, the confirmation says to contact support at help@shopnest.com."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_14",
+  "kind": "daily_life",
+  "title": "Lost and found notice",
+  "passage": "LOST & FOUND — Riverside Public Library\n\nFound this week:\n• A pair of black gloves (children's section)\n• A blue umbrella (front entrance)\n• A silver house key on a green keychain\n\nItems are held at the circulation desk for 30 days. To claim yours, describe the item to a staff member; no receipt is needed. Unclaimed items are donated to a local charity at the end of each month.\n\nQuestions? Ask at the front desk or call 555-0143.",
+  "questions": [
+   {
+    "q": "How can someone show that a found item is theirs?",
+    "options": [
+     "Show the original receipt",
+     "Describe the item to a staff member",
+     "Present a photo ID",
+     "Pay a small holding fee"
+    ],
+    "answer": 1,
+    "explanation": "The notice says to describe the item to a staff member, and that no receipt is needed."
+   },
+   {
+    "q": "What happens to items that no one claims?",
+    "options": [
+     "They are thrown away after a week",
+     "They are kept at the desk indefinitely",
+     "They are sold at a library sale",
+     "They are donated to a local charity"
+    ],
+    "answer": 3,
+    "explanation": "The notice states unclaimed items are donated to a local charity at the end of each month."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_15",
+  "kind": "daily_life",
+  "title": "Email: gym membership renewal",
+  "passage": "Subject: Your FitZone membership renews soon\n\nHi Marcus,\n\nYour annual membership ends on August 31. It will renew automatically at $360 for the year unless you tell us otherwise. If you'd rather switch to monthly billing ($34/month), reply to this email before August 25.\n\nAs a renewing member, you'll keep your free locker and two guest passes per month. Want to pause instead? We can freeze your account for up to three months at no charge.\n\nThanks for training with us!\n— The FitZone Team",
+  "questions": [
+   {
+    "q": "What will happen on August 31 if Marcus does nothing?",
+    "options": [
+     "His membership will be canceled",
+     "He will be moved to monthly billing",
+     "His membership will renew for $360",
+     "His account will be frozen"
+    ],
+    "answer": 2,
+    "explanation": "The email says the annual membership renews automatically at $360 unless he responds."
+   },
+   {
+    "q": "What benefit does the email say renewing members keep?",
+    "options": [
+     "A free personal trainer",
+     "A free locker and two guest passes a month",
+     "Unlimited guest passes",
+     "A discount on monthly billing"
+    ],
+    "answer": 1,
+    "explanation": "The email states renewing members keep their free locker and two guest passes per month."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_16",
+  "kind": "daily_life",
+  "title": "Library overdue notice",
+  "passage": "OVERDUE NOTICE — Maple City Library\n\nAccount: T. Nguyen\n\nThe following item is 12 days overdue:\n\"World Atlas, 5th ed.\" — due May 3\n\nA late fee of $0.25 per day is now $3.00. Fines stop growing once they reach $10.00 per item. Please return the book to any branch or the outdoor drop box.\n\nIf the book is lost, you will be billed its $40 replacement cost instead of the fine. Borrowing is blocked once fines pass $15 total.",
+  "questions": [
+   {
+    "q": "How was the current $3.00 fine calculated?",
+    "options": [
+     "A flat fee for any overdue book",
+     "The book's replacement cost",
+     "A charge for using the drop box",
+     "$0.25 per day for 12 days"
+    ],
+    "answer": 3,
+    "explanation": "The daily late fee of $0.25 over 12 days adds up to the $3.00 now owed."
+   },
+   {
+    "q": "What happens if T. Nguyen reports the book as lost?",
+    "options": [
+     "They will be billed the $40 replacement cost",
+     "The fine will be forgiven",
+     "They will owe a flat $10 fine",
+     "Their account will be closed permanently"
+    ],
+    "answer": 0,
+    "explanation": "The notice says a lost book is billed at its $40 replacement cost instead of the daily fine."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_17",
+  "kind": "daily_life",
+  "title": "Group thread: farewell dinner RSVP",
+  "passage": "RSVP: Sofia's Farewell Dinner — Friday, 7 p.m.\n\nLeah (host): Please reply by Wednesday so I can book the table. Let me know if you're bringing a guest.\nOmar: Count me in! Bringing my sister, so that's two of us.\nPriya: I'll be a little late—coming straight from work around 7:30.\nJon: Sorry, can't make it that night. Give Sofia a hug from me!\nLeah: Thanks, everyone! I'll reserve the table and text the address.",
+  "questions": [
+   {
+    "q": "What does Leah ask everyone to do by Wednesday?",
+    "options": [
+     "Reply about whether they are coming",
+     "Pay for their own meal",
+     "Choose the restaurant",
+     "Buy a gift for Sofia"
+    ],
+    "answer": 0,
+    "explanation": "Leah asks people to reply by Wednesday so she can book the table."
+   },
+   {
+    "q": "Why does Priya say she will arrive around 7:30?",
+    "options": [
+     "She has to pick up Omar first",
+     "She is coming straight from work",
+     "The dinner was moved later",
+     "She needs to buy a gift on the way"
+    ],
+    "answer": 1,
+    "explanation": "Priya explains she'll be a little late because she is coming straight from work."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_18",
+  "kind": "daily_life",
+  "title": "Apartment tour schedule",
+  "passage": "Apartment Tours — 214 Birch Street\nSaturday, September 6\n\nUnit 1B (1 bed) — 10:00 a.m.\nUnit 3A (studio) — 10:45 a.m.\nUnit 3C (2 bed) — 11:30 a.m.\n\nTours last about 20 minutes. Please arrive five minutes early and bring a photo ID. Applications are accepted on the spot; bring proof of income if you'd like to apply the same day.\n\nParking is limited—street parking only. Reschedule by texting the leasing office at 555-0188.",
+  "questions": [
+   {
+    "q": "What should visitors bring if they want to apply on tour day?",
+    "options": [
+     "A holding deposit in cash",
+     "A signed lease",
+     "Proof of income",
+     "A letter of reference"
+    ],
+    "answer": 2,
+    "explanation": "The schedule says to bring proof of income in order to apply the same day."
+   },
+   {
+    "q": "What does the schedule say about parking?",
+    "options": [
+     "A free garage is provided",
+     "Parking is reserved for applicants",
+     "Visitors should use the rear lot",
+     "Only street parking is available"
+    ],
+    "answer": 3,
+    "explanation": "The notice states parking is limited and only street parking is available."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_19",
+  "kind": "daily_life",
+  "title": "Group-project team chat",
+  "passage": "BIO 210 Group Project — Team Chat\n\nMaya: Reminder that our slides are due to Prof. Lee Sunday night.\nDev: I finished the intro and methods sections. Uploading now.\nMaya: Great! Grace, are you still doing the results charts?\nGrace: Yes—should have them by Saturday afternoon.\nMaya: Perfect. I'll pull everything together Saturday night and check the formatting.\nDev: Can someone proofread before we submit?\nMaya: I'll do a final read Sunday morning. Send me anything new by then.",
+  "questions": [
+   {
+    "q": "What has Dev already finished?",
+    "options": [
+     "The results charts",
+     "The intro and methods sections",
+     "The final formatting",
+     "The proofreading"
+    ],
+    "answer": 1,
+    "explanation": "Dev says he finished the intro and methods sections and is uploading them."
+   },
+   {
+    "q": "When does Maya plan to do the final proofread?",
+    "options": [
+     "Saturday afternoon",
+     "Saturday night",
+     "Sunday night",
+     "Sunday morning"
+    ],
+    "answer": 3,
+    "explanation": "Maya says she'll do a final read Sunday morning and asks for any new material by then."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_20",
+  "kind": "daily_life",
+  "title": "Campus shuttle timetable",
+  "passage": "CAMPUS SHUTTLE — Route B (Weekdays)\n\nNorth Dorms → Library → Science Hall → Main Gate\n\nDepart North Dorms: :00, :20, :40 (every 20 minutes)\nFirst run 7:00 a.m. · Last run 10:40 p.m.\n\nThe full loop takes about 15 minutes. Shuttles do not run on weekends or holidays. Show your student ID to board. During exam week, extra shuttles run every 10 minutes from 6 p.m. to midnight.",
+  "questions": [
+   {
+    "q": "How often does the shuttle normally leave North Dorms?",
+    "options": [
+     "Every 20 minutes",
+     "Every 10 minutes",
+     "Every 15 minutes",
+     "Once an hour"
+    ],
+    "answer": 0,
+    "explanation": "The timetable shows departures at :00, :20, and :40—every 20 minutes."
+   },
+   {
+    "q": "What is different about the shuttle during exam week?",
+    "options": [
+     "It also runs on weekends",
+     "It skips the Library stop",
+     "Extra shuttles run every 10 minutes in the evening",
+     "Rides are free without an ID"
+    ],
+    "answer": 2,
+    "explanation": "During exam week, extra shuttles run every 10 minutes from 6 p.m. to midnight."
+   }
+  ]
  }
 ]

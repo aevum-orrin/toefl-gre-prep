@@ -726,5 +726,317 @@
     "explanation": "The tutor advises rewriting just the opening two paragraphs and bringing them to the follow-up."
    }
   ]
+ },
+ {
+  "id": "ls_cv_11",
+  "kind": "conversation",
+  "title": "Student & lab-safety officer: after-hours lab access",
+  "transcript": "Student: Hi, are you the lab safety officer? Professor Nolan said I should talk to you about getting evening access to the organic chemistry lab.\nOfficer: That's me. You're working on a research project with her?\nStudent: Yeah, it's an independent study, and the reactions I run take about six hours, so I really need to stay past when the building locks up at six.\nOfficer: Okay. Before I can issue you an after-hours badge, there are two things. First, you have to finish the online chemical hygiene course and pass the quiz at the end. Have you done that?\nStudent: I did the general one during orientation last year.\nOfficer: That one's expired, unfortunately. It's only good for twelve months, so you'll need to retake it. It runs about ninety minutes.\nStudent: Oh, I didn't realize it lapsed. Okay, I can knock that out tonight.\nOfficer: Good. The second thing is the buddy rule. Nobody works alone in a wet lab after hours, no exceptions. So you need a second trained person in the room whenever you're running reactions.\nStudent: Hmm, that's tricky. My old lab partner graduated.\nOfficer: Talk to Professor Nolan. She can usually pair you with another student on a similar schedule. Once you've got a buddy and the course certificate, bring both to me and I'll activate the badge.\nStudent: Got it. I'll start the course as soon as I get back to my room.",
+  "questions": [
+   {
+    "q": "Why does the student come to see the safety officer?",
+    "options": [
+     "To report a chemical spill in the organic chemistry lab.",
+     "To arrange access to the lab after the building closes.",
+     "To sign up for an independent study with Professor Nolan.",
+     "To return a badge she no longer needs."
+    ],
+    "answer": 1,
+    "explanation": "The student explains that her six-hour reactions require her to stay after the building locks at six, so she needs an after-hours badge."
+   },
+   {
+    "q": "What does the officer say about the safety course the student took during orientation?",
+    "options": [
+     "It has expired and must be taken again.",
+     "It never covered chemical hazards.",
+     "It already qualifies her for after-hours access.",
+     "It must be taken in person rather than online."
+    ],
+    "answer": 0,
+    "explanation": "The officer says the course is only valid for twelve months, so the year-old certificate has lapsed and she must retake it."
+   },
+   {
+    "q": "Why does the officer bring up the buddy rule?",
+    "options": [
+     "To warn the student that her project is too dangerous.",
+     "To suggest she change her research schedule.",
+     "To explain a safety requirement she must satisfy.",
+     "To offer to work in the lab alongside her himself."
+    ],
+    "answer": 2,
+    "explanation": "The buddy rule is presented as a second condition she must meet before she can work after hours, not a warning or an offer."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Ask a different professor to supervise her.",
+     "Give up on running the six-hour reactions.",
+     "Report to the officer that she has found a buddy.",
+     "Complete the online chemical hygiene course."
+    ],
+    "answer": 3,
+    "explanation": "She says she can knock out the course tonight and will start it as soon as she gets back to her room."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_12",
+  "kind": "conversation",
+  "title": "Student & study-abroad office: credit approval",
+  "transcript": "Student: Hi, I'm thinking about studying abroad next spring in Madrid, and I wanted to make sure it won't push back my graduation.\nAdvisor: Great, let's look at that. What's your major?\nStudent: Economics. I've already finished all my intro requirements, so I'd mostly need upper-level electives to count.\nAdvisor: That works well. The Madrid program is one of our direct-enroll partners, so the credits come back as real letter grades, not just pass-fail. The main thing is getting your course choices pre-approved before you go.\nStudent: How does that work?\nAdvisor: You fill out a course-approval form listing the classes you plan to take there, and the economics department signs off on which ones satisfy your electives. Do that early, because sometimes a course looks like a match but the department wants to see a syllabus first.\nStudent: Okay. What about the language? My Spanish is pretty basic.\nAdvisor: For the Madrid program, all the economics courses are taught in English, so you're fine. There's an optional Spanish class on the side if you want it.\nStudent: Oh, that's a relief. And the deadline?\nAdvisor: Applications for spring close October fifteenth, but the scholarship deadline is a month earlier, September fifteenth. If money's a factor, aim for that one.\nStudent: It definitely is. So should I start the application right away?\nAdvisor: Honestly, I'd start with the course-approval form today. It's the piece that takes the longest.\nStudent: Then that's where I'll begin.",
+  "questions": [
+   {
+    "q": "Why does the student come to the study-abroad office?",
+    "options": [
+     "To sign up for a Spanish language class.",
+     "To apply for a scholarship she just heard about.",
+     "To make sure studying abroad won't delay her graduation.",
+     "To switch her major to economics."
+    ],
+    "answer": 2,
+    "explanation": "Her opening concern is that the Madrid program not push back when she graduates."
+   },
+   {
+    "q": "What does the advisor say about the credits from the Madrid program?",
+    "options": [
+     "They count only as pass-fail.",
+     "They cannot be used toward the major.",
+     "They require the student to pass a Spanish exam.",
+     "They come back as regular letter grades."
+    ],
+    "answer": 3,
+    "explanation": "The advisor says the direct-enroll partnership means the credits transfer as real letter grades, not pass-fail."
+   },
+   {
+    "q": "Why does the advisor mention that a course might require a syllabus?",
+    "options": [
+     "To explain why the student should seek approval early.",
+     "To discourage the student from taking electives abroad.",
+     "To point out that the program is very selective.",
+     "To warn that the course is taught in Spanish."
+    ],
+    "answer": 0,
+    "explanation": "The syllabus point supports his advice to start the approval process early, since some matches take extra review."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Take an optional Spanish class before applying.",
+     "Begin the course-approval form.",
+     "Wait until the October application deadline.",
+     "Meet with the chair of the economics department."
+    ],
+    "answer": 1,
+    "explanation": "The advisor recommends starting with the course-approval form today, and the student agrees that is where she'll begin."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_13",
+  "kind": "conversation",
+  "title": "Student & health center nurse: same-day appointment",
+  "transcript": "Student: Hi, I was hoping to see a doctor today. I've had a sore throat and a low fever for about four days, and it's not getting better.\nNurse: I'm sorry you're feeling rough. Let me get a few details. Four days, you said, and a fever. Do you know how high?\nStudent: Around a hundred and one last night. And it really hurts to swallow.\nNurse: Okay. Any cough, or is it mainly the throat?\nStudent: Mostly the throat. No real cough.\nNurse: Given the fever and the pain on swallowing, we'll want a quick strep test, just a throat swab, and the provider will decide from there. The good news is we can fit you in this afternoon at two forty.\nStudent: That works. Do I need to do anything to prepare?\nNurse: Nothing special. But don't eat or drink anything strongly mint-flavored right before, it can irritate the swab. Water's fine.\nStudent: Got it. Um, one more thing, will this cost me? I'm on the student insurance.\nNurse: The visit itself is covered by your health fee, no charge. The strep test has a small lab fee, but student insurance usually waives it. The front desk can confirm the exact amount when you check in.\nStudent: Okay, I'll ask them. Two forty, then.\nNurse: Perfect. Come ten minutes early to fill out a short form, and feel better soon.\nStudent: Thanks, I'll be there.",
+  "questions": [
+   {
+    "q": "Why does the student contact the health center?",
+    "options": [
+     "To be seen for a sore throat and fever.",
+     "To get a form signed for a study-abroad program.",
+     "To refill a prescription she has run out of.",
+     "To ask about switching her insurance plan."
+    ],
+    "answer": 0,
+    "explanation": "She opens by saying she has had a sore throat and low fever for four days and wants to see a doctor."
+   },
+   {
+    "q": "What does the nurse tell the student to avoid before the visit?",
+    "options": [
+     "Drinking any water for an hour beforehand.",
+     "Taking any fever medication that morning.",
+     "Anything strongly mint-flavored.",
+     "Eating a large meal before the swab."
+    ],
+    "answer": 2,
+    "explanation": "The nurse warns that strong mint flavors can irritate the throat swab, though water is fine."
+   },
+   {
+    "q": "Why does the nurse mention the front desk?",
+    "options": [
+     "To explain that the appointment might be canceled.",
+     "To indicate who can confirm the exact cost.",
+     "To suggest the student pay before the visit.",
+     "To warn that the visit is not covered."
+    ],
+    "answer": 1,
+    "explanation": "The nurse says the front desk can confirm the exact lab-fee amount at check-in, directing the student's billing question."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Cancel the appointment and wait to feel better.",
+     "Go straight to a hospital emergency room.",
+     "Pay the lab fee online before arriving.",
+     "Come to the health center for the afternoon appointment."
+    ],
+    "answer": 3,
+    "explanation": "She confirms the two-forty slot and says she'll be there, so attending the appointment is the clear next step."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_14",
+  "kind": "conversation",
+  "title": "Student & dining services manager: food allergy",
+  "transcript": "Student: Hi, are you the dining hall manager? I just found out I'm allergic to tree nuts, and I'm kind of nervous about eating here now.\nManager: I am, and I'm really glad you came to talk to me. We take allergies seriously. How severe is it, if you don't mind my asking?\nStudent: Serious enough that I carry an epi-pen. Even trace amounts are a problem.\nManager: Okay, that's important for us to know. So, a couple of things. Every dish on the line has an ingredient card, and the top allergens, including tree nuts, are flagged in red. But I know cross-contact is the bigger worry for you.\nStudent: Exactly. Even if a dish has no nuts, what if the same serving spoon was used?\nManager: Right. That's why we keep a separate allergen-free station near the salad bar. The prep there is done on dedicated equipment, in its own area, and the staff change gloves for it. Nothing with nuts ever crosses into that zone.\nStudent: Oh, that's exactly what I needed to hear.\nManager: I'd also suggest you meet our registered dietitian. She can set you up with a personal meal plan and even walk you through the kitchen so you see the prep yourself.\nStudent: That would make me feel so much better. How do I reach her?\nManager: I'll email you her scheduling link this afternoon. Just keep an eye on your inbox.\nStudent: Thank you. I really appreciate this.",
+  "questions": [
+   {
+    "q": "Why does the student come to speak with the manager?",
+    "options": [
+     "To complain that a dish made her sick.",
+     "To apply for a job in the dining hall.",
+     "To ask for a refund on her meal plan.",
+     "To discuss eating safely with a new nut allergy."
+    ],
+    "answer": 3,
+    "explanation": "She says she just learned she is allergic to tree nuts and is nervous about eating in the dining hall."
+   },
+   {
+    "q": "What does the manager say about the allergen-free station?",
+    "options": [
+     "It is open only during breakfast hours.",
+     "Its food is prepared on dedicated, separate equipment.",
+     "It cannot guarantee that its dishes are nut-free.",
+     "It requires a doctor's note to use."
+    ],
+    "answer": 1,
+    "explanation": "The manager explains the station uses dedicated equipment in its own area with glove changes, so nuts never cross into it."
+   },
+   {
+    "q": "Why does the manager suggest meeting the dietitian?",
+    "options": [
+     "To shift responsibility away from the dining hall.",
+     "To explain why the student cannot eat there.",
+     "To offer the student additional, personalized help.",
+     "To point out that allergies are not his concern."
+    ],
+    "answer": 2,
+    "explanation": "The dietitian is offered as extra support, providing a personal meal plan and a kitchen walk-through."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Watch for the manager's email and schedule a meeting with the dietitian.",
+     "Stop eating in the dining hall entirely.",
+     "File a formal complaint about cross-contact.",
+     "Return her epi-pen to the health center."
+    ],
+    "answer": 0,
+    "explanation": "The manager will send a scheduling link that afternoon and tells her to watch her inbox, so she will look for it and set up the meeting."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_15",
+  "kind": "conversation",
+  "title": "Student & bookstore clerk: sold-out textbook",
+  "transcript": "Student: Excuse me, I'm looking for the textbook for Statistics two-twenty, but the shelf is empty. Are you out?\nClerk: Let me check. Stats two-twenty... yeah, it looks like the print copies sold out this morning. We ordered fewer than usual because a lot of students went digital this term.\nStudent: Oh no. The first problem set is due Monday. Is there any way to get one?\nClerk: A few options. We can order another print copy, but shipping takes about a week, so that won't help you by Monday.\nStudent: Yeah, that's too late.\nClerk: The faster route is the e-book. You buy an access code here at the register and it unlocks right away on your laptop or phone. It's actually about fifteen dollars cheaper than the print version too.\nStudent: Does the e-book have the same problem sets? I don't want to miss questions because the numbering's different.\nClerk: Same edition, same content, same numbering. The only difference is it's on a screen. And it comes with the online homework platform, if your professor uses that.\nStudent: She does, actually, so that's a bonus. Okay, let me go with the e-book.\nClerk: Great choice. I'll ring up the access code. You'll get an email with the activation link in a minute or two, then just follow the steps to redeem it.\nStudent: Perfect. I'll set it up before class tomorrow.",
+  "questions": [
+   {
+    "q": "Why does the student approach the clerk?",
+    "options": [
+     "To return a textbook she bought by mistake.",
+     "To ask when a new edition will be released.",
+     "To find a textbook that is missing from the shelf.",
+     "To sell a book back at the end of the term."
+    ],
+    "answer": 2,
+    "explanation": "She asks about the Statistics 220 textbook because the shelf where it should be is empty."
+   },
+   {
+    "q": "What does the clerk say about ordering another print copy?",
+    "options": [
+     "It would take about a week to arrive.",
+     "It is no longer published in print.",
+     "It would cost more but arrive sooner.",
+     "It can be picked up the same day."
+    ],
+    "answer": 0,
+    "explanation": "The clerk says a reordered print copy ships in about a week, which is too late for the Monday problem set."
+   },
+   {
+    "q": "Why does the student ask whether the e-book has the same problem sets?",
+    "options": [
+     "She wants to be able to resell it later.",
+     "She is unsure whether her laptop can open it.",
+     "She hopes it includes extra practice questions.",
+     "She wants to be sure it matches the assigned homework."
+    ],
+    "answer": 3,
+    "explanation": "She worries the numbering might differ and cause her to answer the wrong questions, so she wants it to match the assignment."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Wait a week for a print copy to ship.",
+     "Buy and activate the e-book access code.",
+     "Ask the professor to postpone the problem set.",
+     "Borrow the textbook from another student."
+    ],
+    "answer": 1,
+    "explanation": "She chooses the e-book, the clerk rings up the code, and she says she'll set it up before class tomorrow."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_16",
+  "kind": "conversation",
+  "title": "Student & teaching assistant: homework regrade",
+  "transcript": "Student: Hi, thanks for meeting me. I wanted to ask about problem three on the last homework. I lost six points and I'm not totally sure why.\nTA: Sure, let's take a look. Do you have it with you?\nStudent: Yeah, here. I set up the integral the way you showed in section, but the comment just says 'wrong bounds.'\nTA: Ah, I see it. Your setup is right, the integrand is perfect. But look at the region, it's bounded by the parabola and the line, and they cross at x equals one and x equals four, not zero and four.\nStudent: Oh... I used zero because that's where the parabola meets the axis.\nTA: Right, that's the trap. The axis crossing isn't the boundary of this region; the line is. So the lower limit should be one.\nStudent: That makes sense now. Ugh, I see it.\nTA: It's a really common mistake, don't worry. Here's the thing, though, your method was completely sound, so I'd count this as a small slip rather than a conceptual error.\nStudent: Does that mean I could get some points back?\nTA: For this one, yes. Since the approach was correct, I can restore four of the six points. Submit a regrade request on the course site and reference our conversation, and I'll approve it.\nStudent: That's great, thank you. I'll file it tonight.\nTA: Sounds good. And nice work on the rest of the set.",
+  "questions": [
+   {
+    "q": "Why does the student meet with the teaching assistant?",
+    "options": [
+     "To ask for an extension on the next homework.",
+     "To find out why she lost points on a problem.",
+     "To request extra practice problems.",
+     "To complain about the pace of the section."
+    ],
+    "answer": 1,
+    "explanation": "She says she lost six points on problem three and isn't sure why, so she wants an explanation."
+   },
+   {
+    "q": "According to the TA, what was wrong with the student's work?",
+    "options": [
+     "She set up the integrand incorrectly.",
+     "She used the wrong formula entirely.",
+     "She forgot to show her steps.",
+     "She used the wrong lower limit for the region."
+    ],
+    "answer": 3,
+    "explanation": "The TA says the setup was fine but she used zero instead of one as the lower bound, mistaking the axis crossing for the boundary."
+   },
+   {
+    "q": "Why does the TA say the error is 'a really common mistake'?",
+    "options": [
+     "To reassure the student and put her at ease.",
+     "To suggest the whole class will be regraded.",
+     "To warn that she will lose points again next time.",
+     "To explain that the problem was poorly worded."
+    ],
+    "answer": 0,
+    "explanation": "The remark is meant to comfort the student, telling her not to worry after she realizes her slip."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Redo the entire problem set.",
+     "Ask the professor to overrule the TA.",
+     "Submit a regrade request on the course site.",
+     "Drop the course."
+    ],
+    "answer": 2,
+    "explanation": "The TA tells her to file a regrade request referencing their talk, and she says she'll file it tonight."
+   }
+  ]
  }
 ]
