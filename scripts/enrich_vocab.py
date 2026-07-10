@@ -114,7 +114,7 @@ def _apply(entry: dict, enr: dict) -> None:
             sense["collocations"] = hit["collocations"][:4]
 
 
-def enrich(deck: str, limit: int | None, batch: int, sleep: float) -> None:
+def enrich(deck: str, limit: int | None, batch: int, sleep: float, provider: str | None = None) -> None:
     path = DECK_FILES[deck]
     words = json.loads(path.read_text(encoding="utf-8"))
     cdir = _cache_dir(deck)
@@ -133,9 +133,9 @@ def enrich(deck: str, limit: int | None, batch: int, sleep: float) -> None:
     if limit is not None:
         todo = todo[:limit]
 
-    prov = make_provider()
+    prov = make_provider(provider)
     if prov is None:
-        print("No LLM provider (set GEMINI_API_KEY in .env). Merged cache only.")
+        print("No LLM provider (set GEMINI_API_KEY / GROQ_API_KEY in .env). Merged cache only.")
         path.write_text(json.dumps(words, ensure_ascii=False, indent=1), encoding="utf-8")
         return
     print(f"[{deck}] {len(words)} words, {len(todo)} to enrich via {prov.name}/{prov.model}, batch={batch}")
@@ -174,9 +174,12 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--sleep", type=float, default=0.4)
+    ap.add_argument("--provider", default=None,
+                    help="gemini|groq|anthropic (default: auto, free-first). "
+                         "Use groq to dodge Gemini's low free daily cap.")
     args = ap.parse_args()
     load_env(REPO / ".env")
-    enrich(args.deck, args.limit, args.batch, args.sleep)
+    enrich(args.deck, args.limit, args.batch, args.sleep, args.provider)
 
 
 if __name__ == "__main__":
