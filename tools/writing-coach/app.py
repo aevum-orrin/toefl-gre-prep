@@ -82,7 +82,7 @@ for _tt, _items in PROMPTS.items():
     MODEL_ESSAYS[_tt] = _me
     SIMILARS[_tt] = _sims
 
-engine = FeedbackEngine()             # provider auto-picked from env; offline stub if no key
+engine = FeedbackEngine(provider=make_fallback_provider())   # live scoring: Gemini->Groq (env order)
 generator = QuestionGenerator(engine.provider)   # for similar-question suggestions
 # A model essay must appear even if the primary backend is down, so it uses a best-first fallback
 # chain (Claude > Groq > Gemini) that degrades until one model answers.

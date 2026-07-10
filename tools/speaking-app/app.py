@@ -24,7 +24,8 @@ from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from prep_core import FeedbackEngine, Rubric, ProgressStore, QuestionGenerator, load_env
+from prep_core import (FeedbackEngine, Rubric, ProgressStore, QuestionGenerator, load_env,
+                       make_fallback_provider)
 from prep_core.audio import Transcriber, word_accuracy
 
 HERE = Path(__file__).parent
@@ -76,7 +77,7 @@ def _load_interview_topics() -> list[dict]:
 
 TOPICS = _load_interview_topics()
 
-engine = FeedbackEngine()                   # provider auto-picked from env; offline stub if no key
+engine = FeedbackEngine(provider=make_fallback_provider())   # live scoring: Gemini->Groq (env order)
 generator = QuestionGenerator(engine.provider)   # real-time gen when a backend is available
 transcriber = Transcriber(os.environ.get("WHISPER_MODEL", "tiny.en"))
 progress = ProgressStore(DATA_DIR / "progress.jsonl")

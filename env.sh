@@ -23,3 +23,9 @@ export LANG_PREP_CACHE="${LANG_PREP_CACHE:-/scratch/nmasoud_owned_root/nmasoud_o
 export REAL_DATA_ROOT="${REAL_DATA_ROOT:-$LANG_PREP_CACHE/official-real}"   # real questions (ETS/TPO)
 export PREP_DATA_DIR="${PREP_DATA_DIR:-$LANG_PREP_CACHE/user-data}"          # user's own records
 mkdir -p "$PREP_DATA_DIR" "$REAL_DATA_ROOT" 2>/dev/null
+
+# Runtime free-AI fallback order (live scoring + live prompt gen at localhost): Gemini FIRST,
+# fall through to Groq only after Gemini's quota is exhausted / it fails repeatedly. Paid
+# Anthropic is intentionally EXCLUDED at runtime — free tiers only. (Opus pre-generation is done
+# offline via Claude Code subscription, not this runtime path.)
+export LLM_FALLBACK_ORDER="${LLM_FALLBACK_ORDER:-gemini,groq}"
