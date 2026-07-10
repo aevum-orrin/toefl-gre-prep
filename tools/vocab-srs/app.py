@@ -39,7 +39,7 @@ DECK_FILES = {
 
 # Anki-style buttons -> SM-2 grade (0-5). Again fails (resets); Hard/Good/Easy pass.
 GRADES = {"again": 1, "hard": 3, "good": 4, "easy": 5}
-DEFAULT_NEW_PER_DAY = 20
+DEFAULT_NEW_PER_DAY = 100000  # effectively unlimited: a 2-week sprint needs to blast whole deck
 
 CONTENT: dict[str, dict[str, dict]] = {}    # deck -> term -> full entry
 ORDER: dict[str, list[str]] = {}            # deck -> terms, frequency-sorted

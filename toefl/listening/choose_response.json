@@ -378,5 +378,62 @@
     "explanation": "The clerk asks whether the jacket was defective or the customer wants a different size, so explaining the fit and requesting another size (option 0) responds directly. Option 1 brings up an unrelated past purchase; option 2 states a product detail; option 3 comments on store hours — none of them answer the clerk's question."
    }
   ]
+ },
+ {
+  "id": "gen_choose_response_0710150113_00",
+  "kind": "choose_response",
+  "title": "Asking for a letter of recommendation",
+  "transcript": "I'm applying for a scholarship and I was wondering if you could write me a letter of recommendation?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I don't have time for that.",
+     "What's the deadline for the application?",
+     "You should apply for a different scholarship.",
+     "I've never written a letter of recommendation before."
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is the one that shows willingness to help and asks for more information about the application, which is a natural and cooperative response."
+   }
+  ]
+ },
+ {
+  "id": "gen_choose_response_0710150113_01",
+  "kind": "choose_response",
+  "title": "Requesting a book from a classmate",
+  "transcript": "I noticed you're selling your old psychology textbook, is it still available?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "No, I already sold it to someone else.",
+     "How much are you willing to pay for it?",
+     "I'm not sure I want to sell it anymore.",
+     "You can have it for free, but you have to give me your notes."
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is the one that shows interest in selling the book and asks about the price, which is a natural and cooperative response in a transaction."
+   }
+  ]
+ },
+ {
+  "id": "gen_choose_response_0710150113_02",
+  "kind": "choose_response",
+  "title": "Apologizing for a missed deadline",
+  "transcript": "I'm so sorry I missed the deadline for the project, it was an honest mistake.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "It's not a big deal, just turn it in whenever you can.",
+     "That's okay, but next time please make sure to communicate with the team.",
+     "You should have managed your time better.",
+     "I'm going to have to fail you for missing the deadline."
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is the one that acknowledges the mistake, expresses understanding, and provides feedback for future improvement, which is a natural and cooperative response."
+   }
+  ]
  }
 ]

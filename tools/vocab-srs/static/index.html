@@ -85,7 +85,8 @@
   <h1>📚 Vocab SRS</h1>
   <select id="deck"></select>
   <label class="npd">new/day <select id="npd">
-    <option>10</option><option selected>20</option><option>30</option><option>50</option><option>100</option>
+    <option>20</option><option>50</option><option>100</option><option>200</option><option>500</option>
+    <option value="100000" selected>∞ all</option>
   </select></label>
   <span id="counts"></span>
 </header>
@@ -97,7 +98,7 @@
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-let deck = "toefl", npd = 20, cur = null, revealed = false;
+let deck = "toefl", npd = 100000, cur = null, revealed = false;
 
 async function boot(){
   const decks = await (await fetch('/api/decks')).json();
@@ -114,8 +115,10 @@ async function loadNext(){
   const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
   updateCounts(d);
   if (d.done){
+    const capMsg = npd >= 100000 ? 'No new-word cap — you\'ve reached the end of the deck for now.'
+      : `New today are capped at ${npd}. Come back later for reviews, or raise new/day.`;
     $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
-      <small>New today are capped at ${npd}. Come back later for reviews, or raise new/day.</small></div>`;
+      <small>${capMsg}</small></div>`;
     $('#show').classList.add('hidden'); cur = null; return;
   }
   cur = d;
