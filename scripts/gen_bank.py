@@ -29,6 +29,29 @@ from prep_core import load_env, make_provider  # noqa: E402
 
 GEN = Path("/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/rl_gen")
 
+# The small real-question set can't span every field TOEFL draws on, so AI items must cover
+# ALL of them. Each run targets a rotating domain (by day-of-year) so daily scheduled runs
+# systematically sweep the whole taxonomy over ~a month, generating a deep batch per domain.
+DOMAINS = [
+    "cell biology", "genetics & heredity", "ecology & ecosystems", "evolution & natural selection",
+    "botany & plant science", "zoology & animal behavior", "marine biology", "microbiology",
+    "human physiology & anatomy", "neuroscience", "astronomy & cosmology", "planetary science",
+    "geology & plate tectonics", "meteorology & climate", "oceanography", "chemistry",
+    "physics & mechanics", "environmental science & conservation", "paleontology & fossils",
+    "anthropology & human origins", "archaeology & ancient civilizations", "art history & painting",
+    "architecture", "music history & theory", "literature & literary movements", "linguistics",
+    "psychology & cognition", "sociology & social structures", "economics & markets",
+    "business & management", "political science & government", "ancient history (Greece/Rome/Egypt)",
+    "medieval history", "modern & world history", "US history", "philosophy & ethics",
+    "education & learning", "technology & engineering", "medicine & public health",
+    "agriculture & food science", "geography & cartography", "photography & film",
+    "energy & materials science", "transportation & infrastructure",
+]
+
+
+def _domain_for(index: int) -> str:
+    return DOMAINS[index % len(DOMAINS)]
+
 # kind -> (section, body_field, n_questions, description used to steer the model)
 KINDS = {
     "academic_passage": ("reading", "passage", 4,
@@ -119,7 +142,8 @@ def _run_tag() -> str:
     return time.strftime("%m%d%H%M%S")
 
 
-def generate(kind: str, n: int, provider: str | None, sleep: float) -> None:
+def generate(kind: str, n: int, provider: str | None, sleep: float,
+             domain: str | None = None) -> None:
     if kind not in KINDS:
         print(f"unknown kind '{kind}'; choose from {list(KINDS)}")
         return
@@ -129,13 +153,22 @@ def generate(kind: str, n: int, provider: str | None, sleep: float) -> None:
         print("No LLM provider (set GEMINI_API_KEY / GROQ_API_KEY in .env).")
         return
 
+    # Academic kinds get a domain focus (rotating daily) so the bank sweeps every TOEFL field;
+    # campus/everyday kinds don't map to an academic domain, so they just stay varied.
+    academic = kind in ("academic_passage", "academic_talk")
+    focus = (domain or _domain_for(time.localtime().tm_yday)) if academic else None
+
     used = _existing_titles(kind)
     user = (
         f"Generate {n} NEW '{kind}' items. Already-used titles (avoid these and near-duplicates):\n"
         + json.dumps(used[-120:], ensure_ascii=False)
+        + (f"\nAll items in this batch must be on the academic domain: **{focus}**. Vary the "
+           "specific subtopics within that domain; be factually accurate and university-level."
+           if focus else "")
         + "\nReturn JSON per the schema."
     )
-    print(f"[{kind}] generating {n} via {prov.name}/{prov.model}; {len(used)} existing titles")
+    tag_msg = f" [domain: {focus}]" if focus else ""
+    print(f"[{kind}] generating {n} via {prov.name}/{prov.model}; {len(used)} existing titles{tag_msg}")
     try:
         out = prov.complete_json(_system(kind), user, _SCHEMA)
     except Exception as ex:
@@ -186,9 +219,11 @@ def main() -> None:
     ap.add_argument("--n", type=int, default=5)
     ap.add_argument("--provider", default=None, help="gemini|groq|anthropic (default free-first)")
     ap.add_argument("--sleep", type=float, default=1.0)
+    ap.add_argument("--domain", default=None,
+                    help="academic-domain focus (default: rotate by day-of-year across all domains)")
     args = ap.parse_args()
     load_env(REPO / ".env")
-    generate(args.kind, args.n, args.provider, args.sleep)
+    generate(args.kind, args.n, args.provider, args.sleep, args.domain)
 
 
 if __name__ == "__main__":
