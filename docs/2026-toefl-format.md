@@ -65,13 +65,32 @@ Official rubric PDF: https://www.ets.org/pdfs/toefl/writing-rubrics.pdf (© 2025
 > named sub-constructs *inside* each level — used to drive AI feedback, but ETS does not report
 > per-facet sub-scores.
 
-## Reading (50 items, 30 min, adaptive)
-Task types: **Complete the Words** (fill missing letters/vocab in context), **Read in Daily Life**
-(practical texts), **Read an Academic Passage** (main idea, detail, vocab). Auto-scored → 1–6 band.
+## Reading (up to ~50 items, ~28–30 min, multistage adaptive)
+Delivered in **two modules**: module 1 is the same for everyone; based on that performance module 2
+is **easy** (daily-life-heavy) or **hard** (academic-heavy). Task types:
+- **Read an Academic Text** — a ~200-word academic passage + ~5 MC questions (main idea, detail,
+  inference, vocabulary-in-context, purpose). Note: much shorter than the pre-2026 ~700-word passages.
+- **Read in Daily Life** — a 15–150-word practical text (email, text-message chain, memo, poster,
+  menu, invoice, schedule…) + a couple of MC questions.
+- **Complete the Words** — vocabulary-in-context cloze: an academic paragraph with target words
+  blanked; supply/choose the word. We model each blank as a 4-option MC so it auto-scores.
 
-## Listening (47 items, 29 min, adaptive)
-Task types: **Listen and Choose a Response**, **Listen to a Conversation**, **Listen to an
-Announcement**, **Listen to an Academic Talk**. Multiple native accents. Auto-scored → 1–6 band.
+All auto-scored → 1–6 band.
+
+## Listening (up to ~47 items, ~29 min, multistage adaptive)
+Also **two modules** (module 2 easy/hard by performance). Multiple native accents. Task types:
+- **Listen and Choose a Response** — hear one short statement/question, pick the most natural spoken
+  reply (1 MC).
+- **Listen to a Conversation** — a 2-speaker campus conversation + ~4 MC.
+- **Listen to an Announcement** — a campus/classroom announcement + ~3 MC.
+- **Listen to an Academic Talk** — a single-speaker mini-lecture + ~5 MC.
+
+All auto-scored → 1–6 band. Transcripts are played (TTS in our tool) and never shown.
+
+> Per-module item counts and the exact task mix are **not published by ETS** (the format is adaptive).
+> Our `mock-test` tool assembles a fixed, full-length approximation at "standard" difficulty and says
+> so — it does not fake the adaptive routing. Sources (fetched 2026-07-10): ETS content page +
+> BestMyTest / TOEFL Resources / Magoosh 2026-format write-ups.
 
 ## Official practice resources
 - **TOEFL Go! app** (free, AI scoring w/ the real rubrics): https://toeflgo.ets.org

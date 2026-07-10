@@ -1,0 +1,412 @@
+[
+ {
+  "id": "rd_cw_01",
+  "kind": "complete_words",
+  "title": "Mutualism in Ecosystems",
+  "passage": "In many ecosystems, organisms form partnerships that benefit both participants, a relationship biologists call mutualism. Certain flowering plants, for instance, produce sugary nectar to ____(1)____ insects, which in turn carry pollen from bloom to bloom. Because neither species could reproduce as efficiently alone, the association confers a clear ____(2)____ on both. Over long spans of time, such interactions can become so tightly linked that the two species evolve in tandem, each exerting selective pressure on the other. Scientists regard these coevolved systems as compelling ____(3)____ that cooperation, no less than competition, has shaped the diversity of life on Earth.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "attract",
+     "repel",
+     "detach",
+     "confine"
+    ],
+    "answer": 0,
+    "explanation": "Plants offer nectar to draw insects in, so 'attract' fits. 'Repel' is the opposite; 'detach' and 'confine' do not collocate with luring pollinators."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "obligation",
+     "advantage",
+     "restriction",
+     "hazard"
+    ],
+    "answer": 1,
+    "explanation": "A mutual benefit is an 'advantage.' 'Obligation,' 'restriction,' and 'hazard' all imply a cost or burden, contradicting the mutual gain described."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "speculation",
+     "coincidence",
+     "evidence",
+     "exception"
+    ],
+    "answer": 2,
+    "explanation": "Coevolved systems serve as 'evidence' for a scientific claim. 'Speculation' and 'coincidence' undercut the certainty implied by 'compelling'; 'exception' reverses the point."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_02",
+  "kind": "complete_words",
+  "title": "The Birth of Stars",
+  "passage": "Stars are born within vast clouds of gas and dust known as nebulae. When a region of such a cloud grows dense enough, gravity causes it to ____(1)____, drawing material inward toward a central core. As the core contracts, its temperature and pressure rise until hydrogen nuclei begin to fuse, releasing enormous energy. This outward flow of radiation eventually ____(2)____ the inward pull of gravity, and the young star settles into a stable state. Astronomers cannot watch a single star form from start to finish, for the process ____(3)____ millions of years, far longer than any human lifetime or recorded history.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "expand",
+     "collapse",
+     "disperse",
+     "rotate"
+    ],
+    "answer": 1,
+    "explanation": "Gravity pulling matter inward describes a gravitational 'collapse.' 'Expand' and 'disperse' mean the opposite; 'rotate' does not capture the inward motion."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "accelerates",
+     "magnifies",
+     "balances",
+     "conceals"
+    ],
+    "answer": 2,
+    "explanation": "Radiation pressure offsetting gravity so the star stabilizes means it 'balances' gravity. 'Accelerates' and 'magnifies' would intensify collapse; 'conceals' is meaningless here."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "spans",
+     "repeats",
+     "halts",
+     "precedes"
+    ],
+    "answer": 0,
+    "explanation": "A process lasting millions of years 'spans' that time. 'Repeats' and 'precedes' misstate the relationship, and 'halts' contradicts an ongoing process."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_03",
+  "kind": "complete_words",
+  "title": "Linear Perspective in Renaissance Art",
+  "passage": "During the Italian Renaissance, painters developed a technique called linear perspective, which allowed them to represent three-dimensional space on a flat surface with unprecedented realism. By making parallel lines appear to ____(1)____ at a single vanishing point, artists could create a convincing illusion of depth. This innovation did more than improve visual accuracy; it reflected a broader cultural shift toward observation and mathematical order. Wealthy patrons came to ____(2)____ works that demonstrated such technical mastery, and the new style spread rapidly across Europe. Today art historians ____(3)____ perspective as one of the defining achievements of the period.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "diverge",
+     "fluctuate",
+     "dissolve",
+     "converge"
+    ],
+    "answer": 3,
+    "explanation": "Parallel lines meeting at a vanishing point 'converge.' 'Diverge' is the opposite direction; 'fluctuate' and 'dissolve' do not describe lines meeting at a point."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "neglect",
+     "distrust",
+     "prize",
+     "conceal"
+    ],
+    "answer": 2,
+    "explanation": "Patrons valuing skilled works came to 'prize' them. 'Neglect' and 'distrust' imply the opposite reaction; 'conceal' does not fit the sense of appreciation."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "regard",
+     "dismiss",
+     "overlook",
+     "postpone"
+    ],
+    "answer": 0,
+    "explanation": "Historians 'regard' perspective as a major achievement (regard X as Y). 'Dismiss' and 'overlook' contradict its celebrated status; 'postpone' does not fit."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_04",
+  "kind": "complete_words",
+  "title": "Plate Tectonics",
+  "passage": "The theory of plate tectonics holds that Earth's rigid outer shell is broken into several large plates that slowly move over a hotter, softer layer beneath them. Where two plates collide, one may be forced downward beneath the other, a process that can ____(1)____ powerful earthquakes. Elsewhere, plates pull apart, allowing molten rock to rise and ____(2)____ new crust along the seafloor. Although these movements amount to only a few centimeters each year, their ____(3)____ effects over millions of years are immense, reshaping coastlines and raising entire mountain ranges high above the surrounding land.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "absorb",
+     "trigger",
+     "prevent",
+     "postpone"
+    ],
+    "answer": 1,
+    "explanation": "Subduction can 'trigger' earthquakes (set them off). 'Prevent' is the opposite; 'absorb' and 'postpone' do not collocate with causing earthquakes."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "erode",
+     "dissolve",
+     "consume",
+     "form"
+    ],
+    "answer": 3,
+    "explanation": "Rising molten rock creates crust, so it 'forms' new crust. 'Erode,' 'dissolve,' and 'consume' all describe destruction rather than creation."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "cumulative",
+     "immediate",
+     "negligible",
+     "temporary"
+    ],
+    "answer": 0,
+    "explanation": "Tiny yearly motions adding up over ages are 'cumulative.' 'Immediate' and 'temporary' clash with 'over millions of years'; 'negligible' contradicts 'immense.'"
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_05",
+  "kind": "complete_words",
+  "title": "Understanding Inflation",
+  "passage": "Economists use the term inflation to describe a sustained rise in the general level of prices across an economy. When prices climb, each unit of currency buys fewer goods, so the purchasing power of money ____(1)____. Moderate inflation is generally considered harmless, and central banks often aim for a small, predictable rate. Rapid or unpredictable inflation, however, can ____(2)____ economic stability, discouraging saving and complicating long-term planning. To keep prices in check, policymakers may raise interest rates, a measure intended to ____(3)____ the consumer demand that pushes prices steadily upward across markets.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "soars",
+     "stabilizes",
+     "declines",
+     "fluctuates"
+    ],
+    "answer": 2,
+    "explanation": "If money buys fewer goods, its purchasing power 'declines.' 'Soars' is the opposite; 'stabilizes' and 'fluctuates' ignore the clear downward direction stated."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "reinforce",
+     "undermine",
+     "guarantee",
+     "restore"
+    ],
+    "answer": 1,
+    "explanation": "Harmful inflation 'undermines' stability. 'Reinforce,' 'guarantee,' and 'restore' all suggest strengthening stability, the opposite of the harm described."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "stimulate",
+     "accelerate",
+     "satisfy",
+     "curb"
+    ],
+    "answer": 3,
+    "explanation": "Raising rates aims to 'curb' (restrain) demand. 'Stimulate' and 'accelerate' would increase demand; 'satisfy' does not fit a policy meant to reduce it."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_06",
+  "kind": "complete_words",
+  "title": "How Memories Are Formed",
+  "passage": "Not everything we experience becomes a lasting memory. Psychologists distinguish between short-term memory, which holds information only briefly, and long-term memory, which can ____(1)____ information for years. The transfer between the two depends on a process called consolidation, during which the brain strengthens the neural connections that ____(2)____ a memory. Sleep appears to play a crucial role, for studies show that people who rest soon after learning ____(3)____ new material more accurately than those who stay awake. These findings suggest that memory is not a passive recording but an active reconstruction shaped by biology and behavior alike.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "erase",
+     "distort",
+     "retain",
+     "release"
+    ],
+    "answer": 2,
+    "explanation": "Long-term memory keeps information, so it 'retains' it for years. 'Erase' and 'release' mean losing it; 'distort' changes rather than stores it."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "erase",
+     "encode",
+     "weaken",
+     "reveal"
+    ],
+    "answer": 1,
+    "explanation": "Neural connections that store a memory 'encode' it. 'Erase' and 'weaken' would destroy the memory; 'reveal' does not describe how connections hold information."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "forget",
+     "invent",
+     "ignore",
+     "recall"
+    ],
+    "answer": 3,
+    "explanation": "Remembering material more accurately means people 'recall' it better. 'Forget' and 'ignore' are opposites; 'invent' implies making it up rather than retrieving it."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_07",
+  "kind": "complete_words",
+  "title": "The Origins of Agriculture",
+  "passage": "Around ten thousand years ago, human societies in several parts of the world began to shift from hunting and gathering to farming. This transition, often called the Neolithic Revolution, did not happen overnight; rather, it ____(1)____ gradually as people learned to cultivate wild plants and domesticate animals. Farming allowed communities to produce a reliable food surplus, which in turn could ____(2)____ larger populations settled in one place. Yet the change brought new problems, including the spread of disease and greater social inequality. Archaeologists continue to ____(3)____ why so many independent cultures adopted agriculture within a relatively short span of time.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "collapsed",
+     "unfolded",
+     "ceased",
+     "reversed"
+    ],
+    "answer": 1,
+    "explanation": "A gradual transition 'unfolded' over time. 'Collapsed' and 'ceased' imply an ending, and 'reversed' means going backward, contradicting a forward shift."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "displace",
+     "scatter",
+     "sustain",
+     "diminish"
+    ],
+    "answer": 2,
+    "explanation": "A food surplus can 'sustain' (support) larger populations. 'Displace' and 'scatter' would break up settlements; 'diminish' means to reduce, the opposite of supporting growth."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "debate",
+     "ignore",
+     "confirm",
+     "dismiss"
+    ],
+    "answer": 0,
+    "explanation": "An unresolved question is one scholars still 'debate.' 'Ignore' and 'dismiss' contradict ongoing interest; 'confirm' wrongly implies the matter is settled."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_08",
+  "kind": "complete_words",
+  "title": "Catalysts and Enzymes",
+  "passage": "Many chemical reactions proceed too slowly to be useful unless they are helped along by a substance called a catalyst. A catalyst works by providing an alternative pathway that requires less energy, thereby ____(1)____ the rate at which reactants are converted into products. Crucially, the catalyst itself is not consumed; it emerges from the reaction unchanged and can be used again. Enzymes, the catalysts found in living cells, are remarkably ____(2)____, each speeding up only one specific reaction among the thousands occurring at once. Without such molecules, the chemistry of life would be far too sluggish to ____(3)____ the needs of a living organism.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "reducing",
+     "halting",
+     "disguising",
+     "accelerating"
+    ],
+    "answer": 3,
+    "explanation": "A catalyst speeds a reaction, so it is 'accelerating' the rate. 'Reducing' and 'halting' would slow or stop it; 'disguising' does not describe changing a reaction rate."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "selective",
+     "unstable",
+     "abundant",
+     "fragile"
+    ],
+    "answer": 0,
+    "explanation": "Acting on only one specific reaction makes enzymes 'selective.' 'Unstable' and 'fragile' describe durability, not specificity; 'abundant' concerns quantity, not choosiness."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "exceed",
+     "delay",
+     "meet",
+     "ignore"
+    ],
+    "answer": 2,
+    "explanation": "Reactions must be fast enough to 'meet' an organism's needs. 'Exceed' overstates the point, while 'delay' and 'ignore' contradict serving those needs."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_09",
+  "kind": "complete_words",
+  "title": "Why Languages Change",
+  "passage": "No language stays the same forever. Over many generations, the sounds, words, and grammar of a language gradually ____(1)____, so that speakers separated by centuries might scarcely understand one another. Contact with other languages accelerates the process, as words are borrowed and pronunciations shift. Some observers once regarded such changes as signs of decay, but modern linguists reject this view, arguing instead that variation is a ____(2)____ feature of every living language. What sounds like careless speech to one generation may become the accepted standard of the next. Linguists therefore ____(3)____ from labeling any dialect as inherently superior to another.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "freeze",
+     "evolve",
+     "vanish",
+     "repeat"
+    ],
+    "answer": 1,
+    "explanation": "Languages that change over time 'evolve.' 'Freeze' means to stay fixed, the opposite; 'vanish' overstates loss, and 'repeat' does not convey gradual change."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "temporary",
+     "artificial",
+     "natural",
+     "harmful"
+    ],
+    "answer": 2,
+    "explanation": "Linguists see variation as a 'natural' feature of living languages. 'Harmful' echoes the rejected 'decay' view; 'temporary' and 'artificial' contradict its being intrinsic."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "refrain",
+     "proceed",
+     "benefit",
+     "emerge"
+    ],
+    "answer": 0,
+    "explanation": "Rejecting the idea of superior dialects, linguists 'refrain' from labeling them (refrain from). 'Proceed' means the opposite; 'benefit' and 'emerge' do not fit the 'from' structure or sense."
+   }
+  ]
+ },
+ {
+  "id": "rd_cw_10",
+  "kind": "complete_words",
+  "title": "The Carbon Cycle",
+  "passage": "Carbon is constantly on the move, cycling among the atmosphere, the oceans, living things, and rocks. During photosynthesis, plants ____(1)____ carbon dioxide from the air, locking the carbon into their tissues. When plants and animals die and decay, or when they are burned, that carbon is ____(2)____ back into the atmosphere. For millions of years this exchange remained roughly in balance. The large-scale burning of fossil fuels, however, has ____(3)____ that balance, adding carbon to the air faster than natural processes can remove it and driving the shifts in climate that scientists observe today.",
+  "questions": [
+   {
+    "q": "Blank (1): choose the word that best completes the meaning.",
+    "options": [
+     "emit",
+     "release",
+     "expel",
+     "absorb"
+    ],
+    "answer": 3,
+    "explanation": "Plants take in carbon dioxide during photosynthesis, so they 'absorb' it. 'Emit,' 'release,' and 'expel' all mean giving it off, the reverse of what plants do here."
+   },
+   {
+    "q": "Blank (2): choose the word that best completes the meaning.",
+    "options": [
+     "absorbed",
+     "released",
+     "trapped",
+     "buried"
+    ],
+    "answer": 1,
+    "explanation": "Decay and burning return carbon to the air, so it is 'released.' 'Absorbed' is the opposite; 'trapped' and 'buried' imply it stays locked away."
+   },
+   {
+    "q": "Blank (3): choose the word that best completes the meaning.",
+    "options": [
+     "disrupted",
+     "preserved",
+     "restored",
+     "reinforced"
+    ],
+    "answer": 0,
+    "explanation": "Fossil-fuel burning throws the balance off, so it 'disrupted' it. 'Preserved,' 'restored,' and 'reinforced' all suggest keeping the balance, contradicting the resulting climate change."
+   }
+  ]
+ }
+]

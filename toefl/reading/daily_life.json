@@ -1,0 +1,622 @@
+[
+ {
+  "id": "read-08",
+  "kind": "daily_life",
+  "title": "Library Notice: Extended Exam Hours",
+  "passage": "ATTENTION ALL STUDENTS\n\nStarting Monday, May 4, the Central Library will extend its hours to support students during the final exam period. From May 4 through May 22, the library will be open from 7:00 a.m. until 2:00 a.m., Monday through Friday. Weekend hours will be 9:00 a.m. to midnight.\n\nPlease note that the third-floor Quiet Study Zone will be reserved for silent individual study only. Group work and discussions should take place in the second-floor Collaboration Rooms, which can be booked online up to three days in advance.\n\nFree coffee and tea will be available in the ground-floor lounge each night after 9:00 p.m. while supplies last. Remember to bring your student ID, as it is required for entry after 10:00 p.m.\n\nWe wish everyone success on their exams!",
+  "questions": [
+   {
+    "q": "What is the main purpose of this notice?",
+    "options": [
+     "To announce the closing of the library for repairs",
+     "To inform students about extended hours during exams",
+     "To explain how to apply for a new student ID",
+     "To advertise a coffee shop near the library"
+    ],
+    "answer": 1,
+    "explanation": "The notice announces extended library hours to support students during the final exam period, which is its main purpose."
+   },
+   {
+    "q": "Where should students go to do group work?",
+    "options": [
+     "The third-floor Quiet Study Zone",
+     "The ground-floor lounge",
+     "The second-floor Collaboration Rooms",
+     "The Central Library entrance"
+    ],
+    "answer": 2,
+    "explanation": "The notice states that group work and discussions should take place in the second-floor Collaboration Rooms."
+   },
+   {
+    "q": "What is required for entry after 10:00 p.m.?",
+    "options": [
+     "A booking confirmation",
+     "A student ID",
+     "A cup of coffee",
+     "A library membership fee"
+    ],
+    "answer": 1,
+    "explanation": "The notice says to bring your student ID, as it is required for entry after 10:00 p.m."
+   },
+   {
+    "q": "When is free coffee and tea available?",
+    "options": [
+     "All day in the ground-floor lounge",
+     "Each night after 9:00 p.m. while supplies last",
+     "Only on weekends at midnight",
+     "In the Collaboration Rooms after booking"
+    ],
+    "answer": 1,
+    "explanation": "The notice states that free coffee and tea will be available in the ground-floor lounge each night after 9:00 p.m. while supplies last."
+   }
+  ]
+ },
+ {
+  "id": "read-09",
+  "kind": "daily_life",
+  "title": "Email: Change to Group Project Meeting",
+  "passage": "From: Maria Alvarez\nTo: Project Team\nSubject: Change to Thursday's Meeting\n\nHi everyone,\n\nI wanted to let you know that our usual meeting room, Room 210, is unavailable this Thursday because the department is using it for a workshop. I've booked Room 305 instead, which is one floor up. The meeting time stays the same, 4:00 p.m.\n\nBefore we meet, please finish reading the two articles Dr. Chen shared last week so we can discuss them. Kevin, could you bring the printed survey results? We'll need them to plan the next section of the report.\n\nAlso, a quick reminder that our final presentation slides are due to Dr. Chen by next Monday, so let's aim to finalize them on Thursday.\n\nSee you all there,\nMaria",
+  "questions": [
+   {
+    "q": "Why is the meeting room changing this Thursday?",
+    "options": [
+     "Room 210 is being repaired.",
+     "The department is using Room 210 for a workshop.",
+     "The team wanted a larger room.",
+     "Dr. Chen requested a different location."
+    ],
+    "answer": 1,
+    "explanation": "The email states that Room 210 is unavailable because the department is using it for a workshop."
+   },
+   {
+    "q": "What is Kevin asked to bring?",
+    "options": [
+     "The two articles from Dr. Chen",
+     "The final presentation slides",
+     "The printed survey results",
+     "Coffee for the team"
+    ],
+    "answer": 2,
+    "explanation": "Maria asks Kevin to bring the printed survey results, which the team needs to plan the next section of the report."
+   },
+   {
+    "q": "What should team members do before the meeting?",
+    "options": [
+     "Finish reading the two articles Dr. Chen shared",
+     "Reserve Room 305 themselves",
+     "Submit the final slides to Dr. Chen",
+     "Print copies of the report"
+    ],
+    "answer": 0,
+    "explanation": "The email asks everyone to finish reading the two articles Dr. Chen shared so they can discuss them at the meeting."
+   },
+   {
+    "q": "When are the final presentation slides due?",
+    "options": [
+     "This Thursday at 4:00 p.m.",
+     "By next Monday",
+     "During the department workshop",
+     "At the end of the semester"
+    ],
+    "answer": 1,
+    "explanation": "The email reminds the team that the final presentation slides are due to Dr. Chen by next Monday."
+   }
+  ]
+ },
+ {
+  "id": "read-10",
+  "kind": "daily_life",
+  "title": "Campus Shuttle Schedule Update",
+  "passage": "CAMPUS SHUTTLE - SUMMER SCHEDULE\n\nBeginning June 1, the campus shuttle will run on a reduced summer schedule. The shuttle will operate Monday through Friday only; there will be no weekend service until the fall term begins.\n\nOn weekdays, shuttles depart from the Main Gate every 30 minutes between 7:30 a.m. and 6:00 p.m. The route now includes a new stop at the Science Complex, added in response to student requests. Please note that the stop at the old Sports Center has been removed for the summer, since that building is closed for renovation.\n\nRiders can track shuttle locations in real time using the CampusGo app, available for free download. If a shuttle is running more than ten minutes late, an alert will appear in the app. For questions, contact the Transportation Office at the Student Center.",
+  "questions": [
+   {
+    "q": "What is the main change described in this notice?",
+    "options": [
+     "The shuttle will stop running permanently.",
+     "The shuttle will follow a reduced summer schedule.",
+     "The shuttle will only run on weekends.",
+     "The shuttle will become a paid service."
+    ],
+    "answer": 1,
+    "explanation": "The notice announces that beginning June 1 the campus shuttle will run on a reduced summer schedule."
+   },
+   {
+    "q": "Which new stop has been added to the route?",
+    "options": [
+     "The Sports Center",
+     "The Main Gate",
+     "The Science Complex",
+     "The Student Center"
+    ],
+    "answer": 2,
+    "explanation": "The notice states that a new stop at the Science Complex was added in response to student requests."
+   },
+   {
+    "q": "Why was the Sports Center stop removed?",
+    "options": [
+     "The building is closed for renovation.",
+     "No students used that stop.",
+     "It was too far from the Main Gate.",
+     "The shuttle route became too long."
+    ],
+    "answer": 0,
+    "explanation": "The notice explains that the old Sports Center stop was removed because that building is closed for renovation."
+   },
+   {
+    "q": "How can riders find out if a shuttle is running late?",
+    "options": [
+     "By calling the Main Gate",
+     "By checking an alert in the CampusGo app",
+     "By visiting the Science Complex",
+     "By reading a printed schedule at the stop"
+    ],
+    "answer": 1,
+    "explanation": "The notice says that if a shuttle is more than ten minutes late, an alert will appear in the CampusGo app."
+   }
+  ]
+ },
+ {
+  "id": "read-11",
+  "kind": "daily_life",
+  "title": "Advertisement: Community Cooking Classes",
+  "passage": "LEARN TO COOK WITH RIVERSIDE COMMUNITY CENTER\n\nHave you always wanted to cook delicious meals at home? Join our popular evening cooking classes this fall! Whether you are a complete beginner or looking to sharpen your skills, we have a class for you.\n\nBeginner classes meet on Tuesday evenings from 6:00 to 8:00 p.m. and focus on simple, healthy weeknight dinners. Intermediate classes meet on Thursday evenings and explore dishes from around the world. Each session is led by a professional chef, and all ingredients and equipment are provided.\n\nClasses cost $15 per session, or $120 for a full ten-week term, a saving of thirty dollars. Space is limited to twelve students per class to ensure everyone gets personal attention. To reserve your spot, sign up at the front desk or call us at 555-0199. Aprons are provided, but please wear closed-toe shoes for safety.",
+  "questions": [
+   {
+    "q": "Who are these cooking classes intended for?",
+    "options": [
+     "Only professional chefs",
+     "Both beginners and those improving their skills",
+     "Only children under twelve",
+     "Only people who own restaurants"
+    ],
+    "answer": 1,
+    "explanation": "The advertisement says the classes are for complete beginners or those looking to sharpen their skills, so both groups are welcome."
+   },
+   {
+    "q": "What do the Thursday intermediate classes focus on?",
+    "options": [
+     "Simple weeknight dinners",
+     "Dishes from around the world",
+     "Baking desserts only",
+     "Vegetarian cooking"
+    ],
+    "answer": 1,
+    "explanation": "The advertisement states that intermediate classes meet on Thursday evenings and explore dishes from around the world."
+   },
+   {
+    "q": "How much can a student save by paying for the full ten-week term?",
+    "options": [
+     "Fifteen dollars",
+     "Thirty dollars",
+     "One hundred twenty dollars",
+     "Nothing; the prices are the same"
+    ],
+    "answer": 1,
+    "explanation": "The full term costs $120 instead of $15 per session for ten weeks ($150), a saving of thirty dollars, as the ad states."
+   },
+   {
+    "q": "What are students asked to wear for safety?",
+    "options": [
+     "An apron they bring themselves",
+     "Closed-toe shoes",
+     "A chef's hat",
+     "Gloves and a mask"
+    ],
+    "answer": 1,
+    "explanation": "The advertisement asks students to wear closed-toe shoes for safety, noting that aprons are already provided."
+   }
+  ]
+ },
+ {
+  "id": "read-12",
+  "kind": "daily_life",
+  "title": "Notice: New Recycling Rules in the Dormitory",
+  "passage": "IMPORTANT: NEW RECYCLING RULES\n\nStarting next week, our dormitory will follow new recycling guidelines set by the city. Please read carefully, as sorting waste correctly helps our building avoid fines.\n\nThere will now be three separate bins on each floor. The blue bin is for paper and cardboard, the green bin is for glass, metal, and plastic containers, and the gray bin is for general trash that cannot be recycled. Food waste should NOT go in any of the recycling bins; instead, please use the compost bin located in the kitchen on each floor.\n\nBefore placing containers in the green bin, rinse them so that leftover food does not attract insects. Flatten cardboard boxes to save space in the blue bin. If you are unsure where something belongs, a sorting guide is posted above the bins. Thank you for helping keep our building clean and reducing waste.",
+  "questions": [
+   {
+    "q": "Why are the new recycling rules being introduced?",
+    "options": [
+     "To follow new city guidelines and avoid fines",
+     "To reduce the number of bins on each floor",
+     "To close the dormitory kitchens",
+     "To charge students a recycling fee"
+    ],
+    "answer": 0,
+    "explanation": "The notice explains that the dormitory will follow new city guidelines and that sorting correctly helps the building avoid fines."
+   },
+   {
+    "q": "Which items go in the green bin?",
+    "options": [
+     "Paper and cardboard",
+     "Glass, metal, and plastic containers",
+     "Food waste",
+     "General trash that cannot be recycled"
+    ],
+    "answer": 1,
+    "explanation": "The notice states that the green bin is for glass, metal, and plastic containers."
+   },
+   {
+    "q": "What should students do with food waste?",
+    "options": [
+     "Put it in the gray bin",
+     "Put it in the blue bin",
+     "Use the compost bin in the kitchen",
+     "Rinse it and put it in the green bin"
+    ],
+    "answer": 2,
+    "explanation": "The notice says food waste should not go in any recycling bin and should instead go in the compost bin in the kitchen."
+   },
+   {
+    "q": "Why should containers be rinsed before recycling?",
+    "options": [
+     "So they can be reused by other students",
+     "So leftover food does not attract insects",
+     "Because the city charges for dirty containers",
+     "To make them easier to flatten"
+    ],
+    "answer": 1,
+    "explanation": "The notice advises rinsing containers so that leftover food does not attract insects."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_01",
+  "kind": "daily_life",
+  "title": "Email: roommate about rent",
+  "passage": "Hi Jordan,\n\nJust a reminder that rent is due this Friday, the 15th. My share is already in our shared account, so we just need your half—$650—before then. The landlord charges a $40 late fee if it arrives even a day late, and last month we barely made it.\n\nAlso, the water bill came in higher than usual ($72). Could you transfer your portion when you send the rent? Thanks!\n\nMaya",
+  "questions": [
+   {
+    "q": "Why does Maya mention the $40 late fee?",
+    "options": [
+     "To explain why the rent increased this month",
+     "To ask Jordan to pay a fee left over from last month",
+     "To complain about the landlord's new rules",
+     "To warn Jordan to pay before Friday so they avoid the charge"
+    ],
+    "answer": 3,
+    "explanation": "Maya notes the late fee right after the due date to urge Jordan to send his share on time."
+   },
+   {
+    "q": "Besides his share of the rent, what does Maya ask Jordan to send?",
+    "options": [
+     "The $40 late fee",
+     "A cleaning deposit",
+     "His portion of the water bill",
+     "The full electricity bill"
+    ],
+    "answer": 2,
+    "explanation": "She asks him to transfer his portion of the higher-than-usual $72 water bill along with the rent."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_02",
+  "kind": "daily_life",
+  "title": "Text chain: friends planning a movie",
+  "passage": "Priya: Are we still on for the 7:30 movie tonight?\nDan: I can't make 7:30—my meeting runs till 7. Can we do the 9:00 show instead?\nPriya: Works for me. Should I buy the tickets now?\nDan: Yes please, before they sell out. I'll pay you back at the theater.\nPriya: Got it. Let's meet at the popcorn stand at 8:45.\nDan: Perfect. See you there!",
+  "questions": [
+   {
+    "q": "Why do they switch to the 9:00 show?",
+    "options": [
+     "Dan's meeting ends at 7",
+     "Priya has to work late",
+     "The 7:30 show is sold out",
+     "The theater changed the showtime"
+    ],
+    "answer": 0,
+    "explanation": "Dan says his meeting runs till 7, so he can't make the 7:30 showing."
+   },
+   {
+    "q": "What does Dan say he will do at the theater?",
+    "options": [
+     "Buy the tickets himself",
+     "Pay Priya back for his ticket",
+     "Wait for Priya at the entrance",
+     "Bring popcorn for both of them"
+    ],
+    "answer": 1,
+    "explanation": "Priya buys the tickets, and Dan promises to pay her back when they meet at the theater."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_03",
+  "kind": "daily_life",
+  "title": "Memo: shared office kitchen",
+  "passage": "MEMO\nTo: All Staff\nFrom: Office Management\nRe: Shared Kitchen\n\nWe've received several complaints about the state of the third-floor kitchen. Effective Monday, please rinse your dishes and load them into the dishwasher rather than leaving them in the sink. Any items left in the sink overnight will be placed in the 'lost and found' bin by the door.\n\nThe fridge will be cleaned out every Friday at 5 p.m. Unlabeled food will be thrown away, so mark your items with your name and the date.\n\nThank you for helping keep our space clean.",
+  "questions": [
+   {
+    "q": "What happens to dishes left in the sink overnight?",
+    "options": [
+     "They are washed by the cleaning staff",
+     "They are placed in the lost and found bin",
+     "They are thrown away right away",
+     "They are returned to the owner's desk"
+    ],
+    "answer": 1,
+    "explanation": "The memo states items left in the sink overnight go into the 'lost and found' bin by the door."
+   },
+   {
+    "q": "How can employees keep their food from being thrown away on Friday?",
+    "options": [
+     "Store it in a personal cooler",
+     "Take it home before 5 p.m.",
+     "Leave it in the dishwasher",
+     "Label it with their name and the date"
+    ],
+    "answer": 3,
+    "explanation": "Unlabeled food is discarded, so items must be marked with a name and date to be kept."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_04",
+  "kind": "daily_life",
+  "title": "Notice: scheduled water shut-off",
+  "passage": "NOTICE TO ALL RESIDENTS\n\nScheduled Water Shut-Off\nBuilding C — Tuesday, June 18\n\nTo repair a leaking main pipe, the water supply will be turned off from 9:00 a.m. to 3:00 p.m. Please store enough drinking water for the day and avoid running washing machines or dishwashers during this time.\n\nWater may look cloudy or brown for a short while after service resumes. Let your cold tap run for two minutes to clear it.\n\nWe apologize for the inconvenience.\n— Building Management",
+  "questions": [
+   {
+    "q": "Why will the water be turned off?",
+    "options": [
+     "To repair a leaking main pipe",
+     "To install new water meters",
+     "To clean the building's storage tanks",
+     "To test the fire sprinkler system"
+    ],
+    "answer": 0,
+    "explanation": "The notice says the shut-off is needed to repair a leaking main pipe."
+   },
+   {
+    "q": "What should residents do if the water looks brown after it comes back on?",
+    "options": [
+     "Call building management immediately",
+     "Boil the water before drinking it",
+     "Run the cold tap for two minutes",
+     "Wait until the next morning to use it"
+    ],
+    "answer": 2,
+    "explanation": "The notice advises running the cold tap for two minutes to clear the cloudy or brown water."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_05",
+  "kind": "daily_life",
+  "title": "Menu: weekday lunch specials",
+  "passage": "CORNER CAFÉ — Weekday Lunch Specials (11–3)\n\nSoup & Half Sandwich … $8.50\n   Choice of tomato or lentil soup\nGrilled Veggie Wrap … $9.00\n   Add avocado +$1.50\nChicken Caesar Salad … $10.00\nHouse Iced Tea … $2.50 (free refills)\n\nAll specials include a cookie. Add any drink for $2.\nAsk about our gluten-free bread.\nCash or card. No separate checks for parties over six.",
+  "questions": [
+   {
+    "q": "What comes free with every lunch special?",
+    "options": [
+     "A drink",
+     "A cookie",
+     "Extra avocado",
+     "Refills on iced tea"
+    ],
+    "answer": 1,
+    "explanation": "The menu states all specials include a cookie; drinks and add-ons cost extra."
+   },
+   {
+    "q": "A group of eight wants the bill split onto separate checks. What does the menu say?",
+    "options": [
+     "They can have up to six separate checks",
+     "They must pay a $2 fee per person",
+     "Only cash is accepted for large groups",
+     "Separate checks are not available for their group"
+    ],
+    "answer": 3,
+    "explanation": "The menu states there are no separate checks for parties over six, and eight is over six."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_06",
+  "kind": "daily_life",
+  "title": "Receipt: electronics store",
+  "passage": "TECH HUB — Sales Receipt #4471\nDate: 03/12\n\nWireless headphones      $79.99\nUSB-C cable (2-pack)      $12.99\nScreen protector          $9.99\n--------------------------------\nSubtotal                 $102.97\nSales tax (6%)             $6.18\n--------------------------------\nTOTAL                    $109.15\n\nPaid by card ending 3092.\n\nReturns accepted within 30 days with this receipt. Opened headphones may only be exchanged, not refunded.",
+  "questions": [
+   {
+    "q": "Which item was the most expensive?",
+    "options": [
+     "The USB-C cable 2-pack",
+     "The screen protector",
+     "The wireless headphones",
+     "The sales tax"
+    ],
+    "answer": 2,
+    "explanation": "The wireless headphones cost $79.99, more than any other line item on the receipt."
+   },
+   {
+    "q": "The customer opened the headphones and wants their money back. What does the receipt indicate?",
+    "options": [
+     "They can only exchange the headphones, not get a refund",
+     "They can get a full refund within 30 days",
+     "They must pay a restocking fee",
+     "Returns are not accepted at all"
+    ],
+    "answer": 0,
+    "explanation": "The receipt states opened headphones may only be exchanged, not refunded."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_07",
+  "kind": "daily_life",
+  "title": "Class schedule: community gym",
+  "passage": "RIVERSIDE GYM — Group Class Schedule\n\nMONDAY\n  6:00 a.m. — Spin (Studio A)\n  6:00 p.m. — Beginner Yoga (Studio B)\nWEDNESDAY\n  7:00 a.m. — Boxing Basics (Studio A)\n  6:00 p.m. — Pilates (Studio B)\nSATURDAY\n  9:00 a.m. — Zumba (Main Hall)\n  10:30 a.m. — Deep Stretch (Studio B)\n\nClasses are 45 minutes. Sign up at the front desk up to 24 hours ahead. Bring your own mat for yoga and Pilates.",
+  "questions": [
+   {
+    "q": "Which class is offered on Saturday morning?",
+    "options": [
+     "Spin",
+     "Boxing Basics",
+     "Pilates",
+     "Zumba"
+    ],
+    "answer": 3,
+    "explanation": "The schedule lists Zumba at 9:00 a.m. on Saturday in the Main Hall."
+   },
+   {
+    "q": "What must members bring for the yoga class?",
+    "options": [
+     "Their own mat",
+     "Boxing gloves",
+     "Only a water bottle",
+     "A towel provided by the gym"
+    ],
+    "answer": 0,
+    "explanation": "The schedule says to bring your own mat for yoga and Pilates."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_08",
+  "kind": "daily_life",
+  "title": "Flyer: community yard sale",
+  "passage": "COMMUNITY YARD SALE!\n\nSaturday, May 10 — 8 a.m. to 1 p.m.\nMaple Street (rain date: Sunday, May 11)\n\nOver 20 families selling furniture, books, toys, kitchenware, and more. Early birds welcome!\n\nCash only. Bring your own bags.\nFree coffee and doughnuts while they last.\n\nWant a table? Reserve a spot for $15 by calling Rosa at 555-0132 before May 5.",
+  "questions": [
+   {
+    "q": "What will happen if it rains on May 10?",
+    "options": [
+     "The sale will be canceled",
+     "The sale will be held on May 11 instead",
+     "The sale will move indoors",
+     "The sale will start later in the day"
+    ],
+    "answer": 1,
+    "explanation": "The flyer lists a rain date of Sunday, May 11, so the sale would move to that day."
+   },
+   {
+    "q": "How can someone get their own table at the sale?",
+    "options": [
+     "Show up early on the day of the sale",
+     "Bring their own bags and cash",
+     "Pay $15 and call Rosa before May 5",
+     "Sign up at the coffee stand"
+    ],
+    "answer": 2,
+    "explanation": "The flyer says to reserve a table for $15 by calling Rosa before May 5."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_09",
+  "kind": "daily_life",
+  "title": "Social post: lost dog",
+  "passage": "Posted in Oakwood Neighbors group · 2h\n\nLOST DOG — please share!\nOur beagle, Cooper, slipped out of the yard this morning near Elm Park. He's brown and white and wears a red collar with no tag. He's friendly but shy around strangers, so please don't chase him—call or text me at 555-0177 if you spot him.\n\nWe miss him so much. Thank you, neighbors!",
+  "questions": [
+   {
+    "q": "Why does the owner ask people not to chase Cooper?",
+    "options": [
+     "He might bite strangers",
+     "He is too fast to catch",
+     "He is not wearing a collar",
+     "He is shy and could run away"
+    ],
+    "answer": 3,
+    "explanation": "The post says Cooper is shy around strangers, implying chasing him could scare him into running off."
+   },
+   {
+    "q": "Why might it be hard to identify Cooper from his collar?",
+    "options": [
+     "The collar has no tag",
+     "The collar is a very common color",
+     "He is not wearing a collar",
+     "The tag shows the wrong name"
+    ],
+    "answer": 0,
+    "explanation": "The post notes the red collar has no tag, so it carries no identifying information."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_10",
+  "kind": "daily_life",
+  "title": "Voicemail: dentist reminder",
+  "passage": "[Voicemail transcript]\n\nHi, this is Bright Smile Dental calling for Mr. Alvarez. This is a reminder that you have a cleaning scheduled for Thursday, April 4th, at 2:15 p.m. with Dr. Okafor.\n\nPlease arrive ten minutes early to update your insurance information. If you need to reschedule, call us at 555-0148 at least 24 hours in advance to avoid a $30 missed-appointment fee. See you soon!",
+  "questions": [
+   {
+    "q": "Why is Mr. Alvarez asked to arrive early?",
+    "options": [
+     "To pay the $30 fee",
+     "To update his insurance information",
+     "To meet a new dentist",
+     "To fill out a health survey"
+    ],
+    "answer": 1,
+    "explanation": "The message asks him to come ten minutes early to update his insurance information."
+   },
+   {
+    "q": "How can Mr. Alvarez avoid the $30 fee?",
+    "options": [
+     "Arrive ten minutes early",
+     "Pay for the visit in advance",
+     "Reschedule at least 24 hours ahead",
+     "Bring his insurance card"
+    ],
+    "answer": 2,
+    "explanation": "The fee applies to missed appointments unless he reschedules at least 24 hours in advance."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_11",
+  "kind": "daily_life",
+  "title": "Sign-up sheet: beach cleanup",
+  "passage": "BEACH CLEANUP — VOLUNTEER SIGN-UP\nSaturday, July 12 · 8:00–11:00 a.m. · North Beach\n\nGloves and bags provided. Please bring sunscreen and a refillable water bottle. Volunteers under 16 must be accompanied by an adult.\n\nName / Phone / Shift (early 8–9:30 or late 9:30–11)\n1. Ken T. / 555-0190 / early\n2. Aisha R. / 555-0166 / late\n3. ____________ / __________ / ______\n\nSign up by July 10. Free T-shirt for the first 30 volunteers!",
+  "questions": [
+   {
+    "q": "What are volunteers asked to bring themselves?",
+    "options": [
+     "Sunscreen and a water bottle",
+     "Gloves and trash bags",
+     "A free T-shirt",
+     "Their own cleaning tools"
+    ],
+    "answer": 0,
+    "explanation": "Gloves and bags are provided, but volunteers must bring their own sunscreen and refillable water bottle."
+   },
+   {
+    "q": "What is required for a 14-year-old who wants to volunteer?",
+    "options": [
+     "They must bring their own gloves",
+     "They must sign up before July 8",
+     "They cannot volunteer at all",
+     "They must be accompanied by an adult"
+    ],
+    "answer": 3,
+    "explanation": "The sheet states volunteers under 16 must be accompanied by an adult, and 14 is under 16."
+   }
+  ]
+ },
+ {
+  "id": "rd_dl_12",
+  "kind": "daily_life",
+  "title": "Instructions: coffee maker quick start",
+  "passage": "QUICK-START GUIDE — AutoBrew 300\n\nBefore first use, wash the carafe and filter basket with warm, soapy water.\n\n1. Fill the tank with cold water to the line for your desired number of cups.\n2. Place a paper filter in the basket and add one scoop of ground coffee per cup.\n3. Close the lid, set the carafe on the warming plate, and press START.\n4. The green light turns off when brewing is complete.\n\nNote: The warming plate shuts off automatically after 40 minutes.",
+  "questions": [
+   {
+    "q": "How much ground coffee should you add?",
+    "options": [
+     "One scoop for the whole pot",
+     "One scoop per cup",
+     "Two scoops per cup",
+     "One paper filter per cup"
+    ],
+    "answer": 1,
+    "explanation": "Step 2 says to add one scoop of ground coffee per cup."
+   },
+   {
+    "q": "How do you know when brewing is finished?",
+    "options": [
+     "The green light turns off",
+     "The warming plate shuts off",
+     "The machine beeps three times",
+     "The carafe fills to the line"
+    ],
+    "answer": 0,
+    "explanation": "Step 4 says the green light turns off when brewing is complete."
+   }
+  ]
+ }
+]

@@ -1,0 +1,944 @@
+[
+ {
+  "id": "listen-01",
+  "kind": "academic_talk",
+  "title": "Biology Lecture: How Plants Defend Themselves",
+  "transcript": "Okay, so today I want to talk about something you might not expect from plants, and that's defense. We tend to think of plants as passive, right? They just sit there and get eaten. But actually, plants have a remarkable set of strategies for protecting themselves against the animals and insects that feed on them.\n\nThe first strategy is physical. Think about thorns on a rose bush, or the sharp spines on a cactus. These make it painful, or at least difficult, for an animal to take a bite. Some plants also have tiny, needle-like hairs on their leaves that irritate the mouths of insects.\n\nBut the more interesting strategy, in my opinion, is chemical. Many plants produce toxic or bitter compounds that make them unpleasant or even dangerous to eat. Caffeine, for example, is a natural pesticide. In high enough doses it can paralyze or kill insects that try to feed on the plant. The same goes for nicotine in tobacco plants.\n\nAnd here's the really fascinating part. Some plants can actually respond to being attacked. When a caterpillar starts chewing on a leaf, the plant may release chemicals into the air. These airborne signals can attract predatory wasps that hunt the very caterpillars eating the plant. So in a sense, the plant is calling for help. It's recruiting bodyguards.\n\nSo as you can see, plants are far from defenseless. They've evolved an impressive toolkit, and understanding it can even help us develop better ways to protect our crops.",
+  "questions": [
+   {
+    "q": "What is the main topic of this lecture?",
+    "options": [
+     "How plants grow toward sunlight",
+     "The various ways plants defend themselves",
+     "Why insects prefer certain plants",
+     "How farmers use pesticides on crops"
+    ],
+    "answer": 1,
+    "explanation": "The professor announces the topic as plant defense and discusses physical and chemical strategies throughout, making that the main topic."
+   },
+   {
+    "q": "According to the professor, what is one function of caffeine in plants?",
+    "options": [
+     "It helps the plant absorb water.",
+     "It acts as a natural pesticide against insects.",
+     "It attracts pollinating bees.",
+     "It gives leaves their green color."
+    ],
+    "answer": 1,
+    "explanation": "The professor says caffeine is a natural pesticide that can paralyze or kill insects that try to feed on the plant."
+   },
+   {
+    "q": "Why does the professor mention predatory wasps?",
+    "options": [
+     "To explain how caterpillars reproduce",
+     "To show that some plants can call for help when attacked",
+     "To describe a threat to the plant's roots",
+     "To illustrate how wasps damage crops"
+    ],
+    "answer": 1,
+    "explanation": "The professor describes how an attacked plant releases chemicals that attract predatory wasps, illustrating that the plant is effectively calling for help."
+   },
+   {
+    "q": "What can be inferred about the professor's view of plants?",
+    "options": [
+     "Plants are passive and easily destroyed.",
+     "Plants have surprisingly active and sophisticated defenses.",
+     "Plants cannot survive without human protection.",
+     "Plants are more dangerous than animals."
+    ],
+    "answer": 1,
+    "explanation": "The professor repeatedly emphasizes that plants are far from defenseless and have an impressive toolkit, implying their defenses are surprisingly sophisticated."
+   }
+  ]
+ },
+ {
+  "id": "listen-02",
+  "kind": "academic_talk",
+  "title": "Astronomy Lecture: What Are Comets?",
+  "transcript": "Let's turn now to comets, which are some of the most spectacular objects you can see in the night sky. So what exactly is a comet? Well, a comet is essentially a small body made of ice, dust, and rocky material. Astronomers sometimes call them dirty snowballs, and honestly, that's not a bad description. They're leftovers from the formation of the solar system billions of years ago.\n\nMost comets spend the vast majority of their time in the cold, distant outer regions of the solar system, far beyond the planets. Out there, a comet is just a dark, frozen lump. You wouldn't see anything dramatic. But every so often, a comet's orbit brings it swinging in close to the Sun, and that's when things get interesting.\n\nAs the comet approaches the Sun, it heats up. The ice doesn't melt into liquid; instead it turns directly into gas, a process we call sublimation. This releases dust and gas that form a huge glowing cloud around the comet, called the coma. And the solar wind and sunlight push some of that material outward, forming the comet's tail. Here's a detail people often get wrong: the tail always points away from the Sun, not backward along the comet's path. So even as the comet moves away from the Sun, its tail streams out ahead of it.\n\nAfter the comet loops around and heads back out, it cools down, the tail disappears, and it becomes a frozen lump once again until its next visit, which could be decades or even centuries later.",
+  "questions": [
+   {
+    "q": "What is a comet mainly made of?",
+    "options": [
+     "Molten rock and metal",
+     "Ice, dust, and rocky material",
+     "Compressed gas only",
+     "Liquid water surrounded by dust"
+    ],
+    "answer": 1,
+    "explanation": "The professor describes a comet as a small body made of ice, dust, and rocky material, likening it to a dirty snowball."
+   },
+   {
+    "q": "What happens to a comet's ice as it approaches the Sun?",
+    "options": [
+     "It melts into liquid water.",
+     "It turns directly into gas through sublimation.",
+     "It freezes even more solidly.",
+     "It breaks apart into small rocks."
+    ],
+    "answer": 1,
+    "explanation": "The professor explains that the ice does not melt into liquid but turns directly into gas, a process called sublimation."
+   },
+   {
+    "q": "According to the professor, in what direction does a comet's tail point?",
+    "options": [
+     "Backward along the comet's path",
+     "Directly toward the Sun",
+     "Away from the Sun",
+     "Straight down toward the nearest planet"
+    ],
+    "answer": 2,
+    "explanation": "The professor stresses that the tail always points away from the Sun, correcting a common misconception."
+   },
+   {
+    "q": "Why does the professor say 'that's when things get interesting'?",
+    "options": [
+     "Because the comet collides with a planet",
+     "Because the comet develops a glowing coma and tail near the Sun",
+     "Because the comet disappears forever",
+     "Because the comet turns into a new planet"
+    ],
+    "answer": 1,
+    "explanation": "The professor uses that phrase to introduce how, near the Sun, the comet heats up and forms the dramatic coma and tail."
+   }
+  ]
+ },
+ {
+  "id": "listen-03",
+  "kind": "academic_talk",
+  "title": "History Lecture: The Silk Road",
+  "transcript": "Today we're going to look at the Silk Road, and I want to start by clearing up a common misunderstanding. When people hear the name Silk Road, they often picture a single paved highway stretching from China to Europe. But that's not what it was at all. The Silk Road was actually a whole network of trade routes, connecting East Asia with Central Asia, the Middle East, and eventually Europe. And it wasn't really a road in the modern sense. It was a shifting set of paths across deserts, mountains, and grasslands.\n\nNow, silk was certainly one of the famous goods traded along these routes, and that's where the name comes from. Chinese silk was highly prized in the West. But silk was just one of many items. Traders also carried spices, precious metals, glassware, horses, and much more. Goods often passed through many hands. A single merchant rarely traveled the entire distance; instead, items were exchanged from one trader to the next, moving gradually across thousands of miles.\n\nBut here's what I really want you to remember. The Silk Road carried more than goods. It carried ideas. Religions like Buddhism spread along these routes. Technologies, artistic styles, and even diseases traveled with the merchants. So the Silk Road wasn't just an economic phenomenon. It was one of history's great channels for cultural exchange, connecting civilizations that might otherwise have known nothing of each other.",
+  "questions": [
+   {
+    "q": "What misunderstanding does the professor correct at the start?",
+    "options": [
+     "That silk was never actually traded",
+     "That the Silk Road was a single paved highway",
+     "That the Silk Road connected only China and India",
+     "That the Silk Road existed only in ancient times"
+    ],
+    "answer": 1,
+    "explanation": "The professor corrects the idea that the Silk Road was a single paved highway, explaining it was a network of shifting routes."
+   },
+   {
+    "q": "According to the professor, how did goods usually travel the full distance?",
+    "options": [
+     "A single merchant carried them the whole way.",
+     "They were exchanged from one trader to the next.",
+     "They were shipped entirely by sea.",
+     "They were transported by government officials."
+    ],
+    "answer": 1,
+    "explanation": "The professor states that a single merchant rarely traveled the entire distance; instead goods passed from one trader to the next."
+   },
+   {
+    "q": "What does the professor most want students to remember about the Silk Road?",
+    "options": [
+     "That it carried ideas and culture, not just goods",
+     "That silk was the only important product",
+     "That it was mainly a military route",
+     "That it was located entirely within China"
+    ],
+    "answer": 0,
+    "explanation": "The professor emphasizes that the Silk Road carried more than goods, spreading religions, technologies, and ideas, making it a channel for cultural exchange."
+   },
+   {
+    "q": "What can be inferred about the impact of the Silk Road?",
+    "options": [
+     "It kept distant civilizations isolated from one another.",
+     "It connected civilizations that might otherwise have had no contact.",
+     "It was important only for the silk trade.",
+     "It had little effect on religion or technology."
+    ],
+    "answer": 1,
+    "explanation": "The professor concludes that the Silk Road connected civilizations that might otherwise have known nothing of each other, implying it broke down isolation."
+   }
+  ]
+ },
+ {
+  "id": "listen-04",
+  "kind": "academic_talk",
+  "title": "Environmental Science Lecture: Wetlands",
+  "transcript": "So far we've talked about forests and grasslands, but today I want to focus on an ecosystem that's often overlooked and, frankly, underappreciated: wetlands. Wetlands are areas where the land is either covered by water or saturated with water for at least part of the year. This includes marshes, swamps, and bogs. For a long time, people viewed wetlands as useless, even unpleasant, land, and many were drained to make room for farms or cities.\n\nBut we now understand that wetlands provide enormous benefits. Let me highlight a few. First, they act like giant sponges. During heavy rains or storms, wetlands absorb large amounts of water and release it slowly. This helps reduce flooding in nearby areas. Without wetlands, floodwaters would rush downstream much faster and cause far more damage.\n\nSecond, wetlands act as natural water filters. As water moves slowly through a wetland, sediments settle out and plants absorb pollutants and excess nutrients. The water that emerges is often significantly cleaner than the water that entered. In a way, wetlands do for free what expensive treatment plants do at great cost.\n\nAnd third, wetlands are incredibly rich in biodiversity. They provide habitat and breeding grounds for countless species of birds, fish, amphibians, and insects. Many species depend on wetlands for at least part of their life cycle.\n\nSo when we lose wetlands, we don't just lose some soggy ground. We lose flood protection, clean water, and vital habitat. That's why protecting and restoring wetlands has become such an important goal in environmental science.",
+  "questions": [
+   {
+    "q": "What is the main purpose of this lecture?",
+    "options": [
+     "To explain why wetlands should be drained for farming",
+     "To describe the benefits that wetlands provide",
+     "To compare forests and grasslands",
+     "To discuss the cost of water treatment plants"
+    ],
+    "answer": 1,
+    "explanation": "The professor focuses on the benefits of wetlands, listing flood control, water filtering, and biodiversity, making that the main purpose."
+   },
+   {
+    "q": "How do wetlands help reduce flooding?",
+    "options": [
+     "They block rivers with dense plant growth.",
+     "They absorb water and release it slowly.",
+     "They redirect water underground permanently.",
+     "They evaporate water quickly during storms."
+    ],
+    "answer": 1,
+    "explanation": "The professor compares wetlands to sponges that absorb large amounts of water and release it slowly, reducing flooding."
+   },
+   {
+    "q": "Why does the professor compare wetlands to treatment plants?",
+    "options": [
+     "To show that wetlands clean water at no cost",
+     "To argue that treatment plants are unnecessary",
+     "To explain how wetlands are built by engineers",
+     "To describe how wetlands pollute nearby water"
+    ],
+    "answer": 0,
+    "explanation": "The professor says wetlands do for free what expensive treatment plants do at great cost, highlighting their filtering value."
+   },
+   {
+    "q": "What does the professor imply about the past treatment of wetlands?",
+    "options": [
+     "Wetlands were always carefully protected.",
+     "People wrongly viewed wetlands as useless and drained them.",
+     "Wetlands were never affected by human activity.",
+     "Farmers valued wetlands more than forests."
+    ],
+    "answer": 1,
+    "explanation": "The professor notes that people once viewed wetlands as useless and drained many of them, implying this was a mistake given their benefits."
+   }
+  ]
+ },
+ {
+  "id": "listen-05",
+  "kind": "academic_talk",
+  "title": "Psychology Lecture: Memory and Sleep",
+  "transcript": "Let's talk about something that affects every single one of you, especially around exam time: the relationship between sleep and memory. You've probably heard people say that pulling an all-nighter before a test is a bad idea. Well, it turns out there's solid science behind that advice.\n\nHere's the basic idea. When you learn something new during the day, your brain forms a fragile, temporary memory. But for that memory to become stable and long-lasting, it has to go through a process called consolidation. And a great deal of consolidation happens while you sleep. During certain stages of sleep, the brain appears to replay and strengthen the connections associated with what you learned earlier.\n\nResearchers have demonstrated this in the lab. In a typical experiment, participants learn a task, such as a list of words or a sequence of finger movements. Then one group is allowed to sleep, while another group stays awake for the same amount of time. Later, both groups are tested. And consistently, the group that slept performs better. They remember more, and they perform the skill more smoothly.\n\nWhat this tells us is that sleep is not wasted time. It's an active part of learning. So when you stay up all night cramming, you may actually be depriving your brain of the very process it needs to lock in that information. A better strategy is to study, then get a full night's sleep, and let your brain do the rest.",
+  "questions": [
+   {
+    "q": "What is the main idea of this lecture?",
+    "options": [
+     "Sleep plays an active role in strengthening memory.",
+     "Cramming all night is the best way to study.",
+     "People need less sleep as they get older.",
+     "Memory has nothing to do with sleep."
+    ],
+    "answer": 0,
+    "explanation": "The professor argues that sleep is an active part of learning, helping consolidate memories, which is the central idea."
+   },
+   {
+    "q": "What is 'consolidation,' according to the professor?",
+    "options": [
+     "The process of forgetting unimportant information",
+     "The process by which a memory becomes stable and long-lasting",
+     "The act of learning something for the first time",
+     "A stage of sleep with no brain activity"
+    ],
+    "answer": 1,
+    "explanation": "The professor defines consolidation as the process by which a fragile new memory becomes stable and long-lasting, much of which happens during sleep."
+   },
+   {
+    "q": "In the experiments described, which group performed better?",
+    "options": [
+     "The group that stayed awake",
+     "The group that slept",
+     "Both groups performed equally.",
+     "Neither group remembered the task."
+    ],
+    "answer": 1,
+    "explanation": "The professor says that consistently the group that slept performed better, remembering more and performing skills more smoothly."
+   },
+   {
+    "q": "Why does the professor mention all-nighters?",
+    "options": [
+     "To recommend them as an effective study method",
+     "To warn that they may deprive the brain of memory consolidation",
+     "To explain how they improve finger movements",
+     "To describe how they help students relax"
+    ],
+    "answer": 1,
+    "explanation": "The professor cautions that staying up all night cramming may deprive the brain of the consolidation process it needs to lock in information."
+   }
+  ]
+ },
+ {
+  "id": "listen-06",
+  "kind": "academic_talk",
+  "title": "Economics Lecture: Opportunity Cost",
+  "transcript": "Alright, today I want to introduce one of the most fundamental ideas in all of economics. It's a concept called opportunity cost. And once you understand it, you'll start seeing it everywhere in daily life.\n\nSo here's the basic idea. Whenever you make a choice, you give up something else. The opportunity cost of a decision is the value of the next best alternative that you didn't choose. It's not just about money. It's about what you sacrifice.\n\nLet me give you an example. Suppose you have a free Saturday afternoon. You could work a part-time job and earn, let's say, fifty dollars. Or you could go to a concert. Now, if you choose the concert, the opportunity cost isn't zero, even if the concert ticket was free. The opportunity cost includes the fifty dollars you gave up by not working. You're sacrificing that income for the enjoyment of the concert.\n\nAnd this applies to big decisions too. Think about the decision to attend college. There's the tuition, of course, but there's also the opportunity cost of the years you spend studying instead of working full time. Economists include that lost income when they calculate the true cost of a degree.\n\nThe key lesson here is that resources, whether money, time, or effort, are limited. Every choice to use them one way is also a choice not to use them another way. Thinking clearly about opportunity cost helps individuals, businesses, and governments make smarter decisions about how to use what they have.",
+  "questions": [
+   {
+    "q": "How does the professor define opportunity cost?",
+    "options": [
+     "The total amount of money spent on a purchase",
+     "The value of the next best alternative you gave up",
+     "The cost of borrowing money from a bank",
+     "The price difference between two products"
+    ],
+    "answer": 1,
+    "explanation": "The professor defines opportunity cost as the value of the next best alternative that you did not choose."
+   },
+   {
+    "q": "In the Saturday example, what is the opportunity cost of going to the concert?",
+    "options": [
+     "The price of the concert ticket",
+     "The fifty dollars given up by not working",
+     "The cost of transportation to the concert",
+     "Nothing, because the ticket was free"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains that even with a free ticket, the opportunity cost includes the fifty dollars of income given up by not working."
+   },
+   {
+    "q": "Why does the professor mention the decision to attend college?",
+    "options": [
+     "To argue that college is too expensive",
+     "To show that opportunity cost applies to big decisions, including lost income",
+     "To explain how tuition is calculated",
+     "To compare different universities"
+    ],
+    "answer": 1,
+    "explanation": "The professor uses college to show opportunity cost in a major decision, including the income lost while studying instead of working."
+   },
+   {
+    "q": "What is the key lesson of the lecture?",
+    "options": [
+     "Money is the only limited resource.",
+     "Every choice to use limited resources one way rules out another use.",
+     "Opportunity cost applies only to businesses.",
+     "Free activities have no cost at all."
+    ],
+    "answer": 1,
+    "explanation": "The professor concludes that resources are limited and every choice to use them one way is also a choice not to use them another way."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_01",
+  "kind": "academic_talk",
+  "title": "Bioluminescence in the Natural World",
+  "transcript": "Okay, let's get started. Today I want to talk about one of my favorite phenomena in the natural world: bioluminescence, the ability of living organisms to produce their own light. Now, when most people think of glowing creatures, they picture fireflies blinking on a summer evening. But actually, the vast majority of bioluminescent species live in the ocean. In the deep sea, where sunlight never reaches, it's estimated that most animals can make light in one way or another. So how does it work? The light comes from a chemical reaction. There's a molecule, generally called 'luciferin', and an enzyme called 'luciferase'. When the luciferin reacts with oxygen, and the enzyme speeds things along, energy is released as light. And here's the remarkable part: it's almost cold light. In a household bulb, most of the energy is wasted as heat. But in these organisms, nearly all of the energy comes out as visible light. Extraordinarily efficient. Now, why would an animal want to glow? Well, there are several reasons. Some use it as a defense. A startled shrimp might spew a cloud of glowing fluid to confuse a predator, the way a squid uses ink. Others use it to attract prey. The anglerfish, for example, dangles a glowing lure right in front of its mouth. And some use light to find mates, which brings us back to those fireflies. Each species has its own blinking pattern, a kind of Morse code of courtship. Here's something I find fascinating. In many marine animals, the light isn't made by the animal itself at all. Instead, it hosts colonies of glowing bacteria and, in effect, rents out living quarters in exchange for light. It's a partnership. So, as you can see, this single trait has evolved independently dozens of times, a beautiful example of convergent evolution. Keep that idea in mind for next week.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "The ability of certain organisms to produce their own light",
+     "Why fireflies are disappearing from many regions",
+     "How deep-sea animals survive without any sunlight",
+     "The chemical structure of a common enzyme"
+    ],
+    "answer": 0,
+    "explanation": "The professor introduces bioluminescence and spends the talk explaining how and why organisms make light."
+   },
+   {
+    "q": "According to the professor, where do most bioluminescent species live?",
+    "options": [
+     "In tropical rainforests",
+     "In the ocean",
+     "In freshwater lakes",
+     "In caves"
+    ],
+    "answer": 1,
+    "explanation": "He notes that although people picture fireflies, the vast majority of glowing species live in the ocean."
+   },
+   {
+    "q": "Why does the professor mention a household bulb?",
+    "options": [
+     "To explain how electricity produces light",
+     "To suggest that bulbs were modeled on nature",
+     "To contrast wasted heat with the efficiency of biological light",
+     "To describe a recent invention inspired by fireflies"
+    ],
+    "answer": 2,
+    "explanation": "The bulb wastes most energy as heat, which highlights how efficiently organisms turn energy into light."
+   },
+   {
+    "q": "What can be inferred about the anglerfish?",
+    "options": [
+     "It uses its light mainly to attract mates",
+     "It uses its glowing lure to draw in prey",
+     "It cannot survive in shallow water",
+     "It produces no light of its own"
+    ],
+    "answer": 1,
+    "explanation": "The lure dangles in front of its mouth, implying the glow lures prey close enough to be eaten."
+   },
+   {
+    "q": "Why does the professor mention glowing bacteria?",
+    "options": [
+     "To show that some animals do not produce light on their own",
+     "To describe a disease affecting marine life",
+     "To explain how bacteria harm their hosts",
+     "To warn that the light attracts predators"
+    ],
+    "answer": 0,
+    "explanation": "He points out that many animals host light-producing bacteria rather than making the light themselves."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_02",
+  "kind": "academic_talk",
+  "title": "Finding Planets Around Other Stars",
+  "transcript": "Alright, so last time we talked about the planets in our own solar system. Today I want to push outward, way outward, to planets orbiting other stars. We call these 'exoplanets'. And the obvious question is: how on Earth do we even find them? These planets are incredibly far away, and they're tiny and dim compared to the stars they orbit. Trying to see one directly is like trying to spot a firefly sitting right next to a searchlight, from miles away. Almost impossible. So astronomers got clever. The most productive technique so far is called the 'transit method'. Here's the idea. Imagine you're watching a star, measuring its brightness very carefully over time. If a planet happens to pass directly between us and that star, a transit, it blocks a tiny fraction of the star's light. The star dims, just slightly, and then brightens again once the planet moves on. We never see the planet itself. We just see the star flicker. Now, that dip in brightness is remarkably informative. How much the light drops tells us the size of the planet, since a bigger planet blocks more light. And how often the dip repeats tells us the length of the planet's year, its orbital period. From the period, we can work out how far the planet sits from its star. There is one catch I should mention. The method only works if the planet's orbit is lined up edge-on from our point of view. If the orbit is tilted, the planet never crosses the face of the star, and we see nothing. So for every planet we detect this way, there are many more we simply miss. Even so, space telescopes using this method have found thousands of worlds. Some are scorching gas giants; a few are rocky planets at just the right distance for liquid water. And that, of course, is what everyone really wants to know about.",
+  "questions": [
+   {
+    "q": "What is the main topic of the talk?",
+    "options": [
+     "The planets of our own solar system",
+     "The search for life on the planet Mars",
+     "How stars produce their light",
+     "A method for detecting planets around other stars"
+    ],
+    "answer": 3,
+    "explanation": "The professor focuses on how astronomers find exoplanets, centering on the transit method."
+   },
+   {
+    "q": "What does the amount of dimming during a transit reveal?",
+    "options": [
+     "The size of the planet",
+     "The temperature of the planet",
+     "The color of the star",
+     "The planet's distance from Earth"
+    ],
+    "answer": 0,
+    "explanation": "He says a bigger planet blocks more light, so the depth of the dip indicates the planet's size."
+   },
+   {
+    "q": "Why does the professor compare an exoplanet to a firefly beside a searchlight?",
+    "options": [
+     "To show that planets produce their own light",
+     "To emphasize how difficult it is to observe exoplanets directly",
+     "To explain why stars appear to flicker",
+     "To describe the color of distant planets"
+    ],
+    "answer": 1,
+    "explanation": "The image conveys how a faint planet is lost in the glare of its bright star, so direct viewing is nearly impossible."
+   },
+   {
+    "q": "What can be inferred about a planet whose orbit is tilted relative to our line of sight?",
+    "options": [
+     "It orbits its star very quickly",
+     "It is likely to be a gas giant",
+     "It cannot be detected by the transit method",
+     "It is too hot to support water"
+    ],
+    "answer": 2,
+    "explanation": "If the planet never crosses the star's face from our viewpoint, no dip occurs, so the method misses it."
+   },
+   {
+    "q": "How do astronomers determine the length of a planet's year?",
+    "options": [
+     "By measuring how much the star dims",
+     "By how often the dip in brightness repeats",
+     "By the color of the transiting planet",
+     "By the overall size of the star"
+    ],
+    "answer": 1,
+    "explanation": "The repetition interval of the dip gives the orbital period, which is the planet's year."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_03",
+  "kind": "academic_talk",
+  "title": "How Limestone Caves Form",
+  "transcript": "So today we're going underground, literally. I want to explain how some of the world's most spectacular caves form. And the key thing to understand up front is that these caves aren't carved by some violent event. They're dissolved, slowly, by water. This whole landscape of caves, sinkholes, and underground rivers even has a name. We call it 'karst'. It all starts with a particular kind of rock, limestone. Limestone is made mostly of calcium carbonate, and it has one crucial property: it dissolves in mildly acidic water. Now, you might ask, where does the acid come from? Rainwater. As rain falls and then trickles through the soil, it picks up carbon dioxide, and this turns it into a weak carbonic acid. It's very weak, nothing that would hurt you, but given enough time, it's powerful enough to eat away at solid rock. Here's how it unfolds. That slightly acidic water seeps into tiny cracks in the limestone. As it moves through, it dissolves the rock along the way, and those hairline cracks slowly widen into passages, and the passages widen into chambers. We're talking about a process that takes tens of thousands, even hundreds of thousands, of years. Patience, on a geological scale. And then something interesting happens. Once a cave is hollowed out and air gets in, the process can reverse. Water dripping from the ceiling leaves behind tiny deposits of that same mineral it once dissolved. Drop by drop, these build up into those iconic stone icicles hanging from the ceiling, stalactites, and the ones rising from the floor, stalagmites. A quick way to remember: stalactites hold tight to the ceiling. So the same chemistry that carves the cave out later decorates it. It's really one continuous story. Next time, we'll look at what these mineral formations can tell us about ancient climates, because, believe it or not, they keep a record.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "How violent geological events create caves",
+     "How caves in limestone are gradually dissolved and decorated",
+     "Why limestone is a valuable building material",
+     "How underground rivers change their course"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains the slow dissolving of limestone into caves and the later formation of stone decorations."
+   },
+   {
+    "q": "According to the professor, what makes rainwater slightly acidic?",
+    "options": [
+     "Minerals dissolved from the limestone",
+     "Pollution in the atmosphere",
+     "Carbon dioxide it picks up in the soil",
+     "Salt carried inland from the ocean"
+    ],
+    "answer": 2,
+    "explanation": "Rain absorbs carbon dioxide as it moves through soil, becoming weak carbonic acid."
+   },
+   {
+    "q": "Why does the professor say that 'stalactites hold tight to the ceiling'?",
+    "options": [
+     "To describe how strong the formations are",
+     "To help students remember which formation is which",
+     "To explain why the ceiling sometimes collapses",
+     "To warn about the danger of falling rocks"
+    ],
+    "answer": 1,
+    "explanation": "It is a memory aid distinguishing ceiling stalactites from floor stalagmites."
+   },
+   {
+    "q": "What can be inferred about a region that has no limestone?",
+    "options": [
+     "It would experience more earthquakes",
+     "Its rainwater would contain no acid at all",
+     "Its caves would form much more quickly",
+     "It would be unlikely to develop this kind of cave"
+    ],
+    "answer": 3,
+    "explanation": "Since the caves depend on dissolving limestone, an area without limestone would not form karst caves this way."
+   },
+   {
+    "q": "How does the professor describe the formation of stalagmites?",
+    "options": [
+     "As deposits left by dripping water that build up from the floor",
+     "As rock pushed upward by underground pressure",
+     "As cracks in the ceiling that widen over time",
+     "As limestone that has not yet dissolved"
+    ],
+    "answer": 0,
+    "explanation": "Dripping water leaves mineral deposits that accumulate upward from the floor as stalagmites."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_04",
+  "kind": "academic_talk",
+  "title": "Flashbulb Memories",
+  "transcript": "Let's begin. I want to start today with a question. Can you remember where you were when you heard about some major, shocking public event? Many people feel they can recall that moment with incredible vividness, the room they were in, who told them, what they were doing. Psychologists have a name for this kind of vivid, detailed recollection of the moment you learned surprising news. We call it a 'flashbulb memory'. The term is a nice metaphor, right? It's as if the brain took a flash photograph, capturing the whole scene in an instant, preserving it perfectly. And that's certainly how it feels from the inside. These memories come with tremendous confidence. People are absolutely sure they've got the details right. But, and here's the twist that makes this such an interesting area of research, that confidence is often misplaced. Researchers have actually tested this. Right after a shocking event, they ask people to write down exactly what they were doing. Then they come back years later and ask the same people again. And what they find is striking: the memories have often changed. Details shift. People misremember who they were with, or where they heard the news. Yet, and this is the crucial part, they remain just as confident as ever. The vividness doesn't fade, even as the accuracy does. So what does this tell us? It suggests that the strong feeling of remembering, and the actual accuracy of a memory, are two separate things. They can come apart. And that's a genuinely important lesson, because our whole legal system, for instance, leans heavily on eyewitness testimony, on the assumption that a confident witness is a reliable one. Now, why flashbulb memories form at all probably has to do with emotion. Strong emotional arousal seems to stamp certain events into memory more firmly. We'll get into the brain mechanisms, the role of a structure called the amygdala, next week.",
+  "questions": [
+   {
+    "q": "What is the main point the professor makes about flashbulb memories?",
+    "options": [
+     "They fade very quickly after an event",
+     "They feel vivid but are often inaccurate",
+     "They form only during childhood",
+     "They are more accurate than ordinary memories"
+    ],
+    "answer": 1,
+    "explanation": "The central point is that these memories feel vivid and certain yet frequently turn out to be wrong."
+   },
+   {
+    "q": "What is a flashbulb memory?",
+    "options": [
+     "A vivid recollection of the moment one learned shocking news",
+     "A memory that is deliberately rehearsed many times",
+     "A memory that returns only in dreams",
+     "A memory of a bright visual image"
+    ],
+    "answer": 0,
+    "explanation": "The professor defines it as a vivid, detailed memory of the moment one heard surprising news."
+   },
+   {
+    "q": "Why does the professor mention eyewitness testimony in court?",
+    "options": [
+     "To argue that witnesses usually lie",
+     "To show a real-world situation where the findings matter",
+     "To explain how memories are physically recorded",
+     "To describe a recent legal reform"
+    ],
+    "answer": 1,
+    "explanation": "Courts assume a confident witness is reliable, so the research on confidence versus accuracy has real stakes."
+   },
+   {
+    "q": "What can be inferred from the research the professor describes?",
+    "options": [
+     "Emotional events are always forgotten",
+     "Older people have far better memories",
+     "A person's confidence does not guarantee a memory's accuracy",
+     "Writing something down erases the memory"
+    ],
+    "answer": 2,
+    "explanation": "People stayed confident even as details changed, showing confidence and accuracy are independent."
+   },
+   {
+    "q": "How did researchers study the accuracy of flashbulb memories?",
+    "options": [
+     "By scanning participants' brains during the event",
+     "By interviewing only eyewitnesses in court",
+     "By comparing accounts given soon after an event with accounts years later",
+     "By asking people to memorize photographs"
+    ],
+    "answer": 2,
+    "explanation": "They recorded what people reported right after the event and compared it with reports years later."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_05",
+  "kind": "academic_talk",
+  "title": "The Standardization of Time",
+  "transcript": "Here's something we take completely for granted: the time. You glance at your phone, and you know it's, say, ten fifteen, and you assume it's ten fifteen for everyone in your time zone. But this idea, standardized time, is surprisingly recent. For most of human history, time was a strictly local affair. Let me explain what I mean. Traditionally, towns set their clocks by the sun. When the sun was highest in the sky, that was noon, local noon. But of course, the sun reaches its peak a few minutes earlier in a town to the east than in a town to the west. So every city kept its own slightly different time. Noon in one town might be twelve-oh-six in the next one down the road. And for centuries, this caused nobody any real trouble. If it took you two days by horse to travel between them, who cared about six minutes? Then came the railroad. And this changed everything. Suddenly you could travel hundreds of miles in a single day, and railway companies had to publish timetables. But whose time should the timetable use? If every station along the line kept its own local time, the schedules became a nightmare, genuinely dangerous, actually, because two trains running on different clocks might end up on the same track. So the railway companies took matters into their own hands. They imposed a single, standard railway time across their whole network, regardless of local sun time. And gradually, towns fell in line with the railway's clock. Eventually this was formalized into the system of broad time zones we use today, coordinated internationally. I think there's a larger lesson here. A new technology, in this case fast transportation, didn't just move people around faster. It quietly reshaped something as basic as how we measure the day. Technology and social convention, pushing on each other. Hold onto that idea.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "How the first railways were invented",
+     "Why the sun reaches its peak at noon",
+     "How to read a railway timetable",
+     "How standardized time developed and why"
+    ],
+    "answer": 3,
+    "explanation": "The professor traces the shift from local sun time to standardized time zones and explains its cause."
+   },
+   {
+    "q": "How did towns traditionally set their clocks?",
+    "options": [
+     "By the position of the sun",
+     "By a signal sent from the capital city",
+     "By the schedule of the railway",
+     "By an international agreement"
+    ],
+    "answer": 0,
+    "explanation": "Towns set noon by when the sun was highest, so each kept its own local sun time."
+   },
+   {
+    "q": "Why does the professor mention two trains ending up on the same track?",
+    "options": [
+     "To explain how railways were physically built",
+     "To show the danger created by inconsistent local times",
+     "To describe a famous historical accident",
+     "To illustrate how fast trains had become"
+    ],
+    "answer": 1,
+    "explanation": "Different local clocks could put trains on the same track at once, illustrating why standard time was needed."
+   },
+   {
+    "q": "What can be inferred about travel before the railroad?",
+    "options": [
+     "It was too expensive for most people",
+     "It was so slow that small time differences didn't matter",
+     "It required very accurate clocks",
+     "It was mostly done at night"
+    ],
+    "answer": 1,
+    "explanation": "Because a trip took days by horse, a few minutes' difference between towns was irrelevant."
+   },
+   {
+    "q": "According to the professor, what first imposed a single standard time?",
+    "options": [
+     "National governments",
+     "International scientists",
+     "The railway companies",
+     "Clock manufacturers"
+    ],
+    "answer": 2,
+    "explanation": "Railway companies imposed a uniform railway time across their networks before it was later formalized."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_06",
+  "kind": "academic_talk",
+  "title": "The Paint Tube and Impressionism",
+  "transcript": "Today I want to make an argument that might sound strange at first. I want to argue that one of the most important developments in nineteenth-century painting was not a new idea or a new artist. It was a new container. Specifically, the collapsible metal paint tube. Bear with me, because this really does matter. Let's back up. Before the eighteen-forties, if you were a painter, storing your paint was a real problem. Oil paint doesn't keep well once it's mixed; it dries out when exposed to air. Painters, or their assistants, had to grind pigments and mix paint fresh, often storing it in little pouches made from pig bladders. These were messy, they leaked, and they certainly weren't something you could toss in a bag and carry around. So, by and large, painters worked indoors, in the studio. Then, in eighteen forty-one, an American painter patented a small tin tube with a screw cap, essentially the same design we still use today. And this solved everything. The paint stayed fresh, sealed away from air. It was portable. It came in a huge range of ready-made colors. Now, here's why this matters for art history. Suddenly, painters could leave the studio and set up their easels outdoors, in a field, by a river, on a city street. And that is precisely what the Impressionists did. Artists like Monet became obsessed with painting outdoors, capturing the fleeting effects of natural light, the way sunlight flickers on water, how colors shift at different times of day. That whole project depended on being able to work on location, quickly. As one Impressionist reportedly put it, without the paint tube, there would have been no Impressionism. So the next time you see one of those luminous Monet landscapes, remember: behind that burst of light and color sits a humble piece of technology. Art doesn't happen in a vacuum. The tools shape what's possible.",
+  "questions": [
+   {
+    "q": "What is the main argument of the talk?",
+    "options": [
+     "Impressionism was invented by a single artist",
+     "A new kind of paint container helped make Impressionism possible",
+     "Oil paint is superior to every other kind of paint",
+     "Monet preferred to work inside his studio"
+    ],
+    "answer": 1,
+    "explanation": "The professor argues that the portable paint tube enabled the outdoor painting central to Impressionism."
+   },
+   {
+    "q": "Before the paint tube, why did painters mostly work indoors?",
+    "options": [
+     "Paint was difficult to store and carry",
+     "Outdoor light was considered unattractive",
+     "The law forbade painting in public",
+     "Canvases were too heavy to move outside"
+    ],
+    "answer": 0,
+    "explanation": "Freshly mixed oil paint dried out and was stored in messy, leaky pouches, so it wasn't portable."
+   },
+   {
+    "q": "Why does the professor quote an Impressionist about the paint tube?",
+    "options": [
+     "To show the artists disliked the new tubes",
+     "To identify who first invented the tube",
+     "To criticize modern painting methods",
+     "To emphasize how essential the tube was to the movement"
+    ],
+    "answer": 3,
+    "explanation": "The quotation stresses that without the tube, Impressionism could not have happened."
+   },
+   {
+    "q": "What can be inferred about the Impressionists?",
+    "options": [
+     "They rejected the use of new technology",
+     "They were mainly interested in indoor portraits",
+     "They valued capturing natural light on location",
+     "They mixed all of their own pigments by hand"
+    ],
+    "answer": 2,
+    "explanation": "Their obsession with fleeting outdoor light implies they prized painting directly on location."
+   },
+   {
+    "q": "According to the professor, how was paint often stored before the tube?",
+    "options": [
+     "In small glass jars",
+     "In sealed wooden boxes",
+     "In pouches made from animal bladders",
+     "In airtight metal cans"
+    ],
+    "answer": 2,
+    "explanation": "He says paint was often kept in little pouches made from pig bladders."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_07",
+  "kind": "academic_talk",
+  "title": "Network Effects",
+  "transcript": "Alright, today's concept is one that helps explain why a handful of technology companies have become so enormously powerful. The concept is called the 'network effect'. And the basic idea is simple enough to state: a network effect exists when a product becomes more valuable to each user as more people use it. Let me give you the classic example, the telephone. Imagine you own the very first telephone in the world. How useful is it? Completely useless. There's nobody to call. Now a second person gets one. Now you can call one person. As more and more people get telephones, your telephone becomes more and more valuable, not because the device itself changed, but because of who else is on the network. The value is in the connections. Now fast-forward to today, and you can see the same logic driving social media platforms, messaging apps, online marketplaces. Why do you join a particular social network? Usually because that's where your friends already are. And why are your friends there? Because their friends are there. You see the loop. And this leads to a very important consequence, which is worth dwelling on. Network effects tend to produce winners that take most, or even all, of the market. Because once a platform pulls ahead and gets more users, it becomes more attractive, which pulls in even more users, which makes it more attractive still. Success feeds on itself. The rich get richer. This also explains something you may have noticed: why it can be so hard for a superior new product to break in. Suppose someone builds a messaging app that's genuinely better than the popular one. It may still fail, because everyone you want to talk to is already somewhere else. The competitor isn't fighting the product; it's fighting the network. So when we analyze these markets, we can't just ask which product is best. We have to ask where the users already are. Keep that distinction in mind.",
+  "questions": [
+   {
+    "q": "What is the main topic of the talk?",
+    "options": [
+     "How the telephone was originally invented",
+     "Why many technology companies eventually fail",
+     "How to design a successful messaging app",
+     "Why some products gain value as more people use them"
+    ],
+    "answer": 3,
+    "explanation": "The talk defines and explores network effects, where a product's value rises with its number of users."
+   },
+   {
+    "q": "What point does the telephone example illustrate?",
+    "options": [
+     "Older technology is generally more reliable",
+     "A single telephone is expensive to produce",
+     "A product's value grows as more people join the network",
+     "Telephones changed very little over time"
+    ],
+    "answer": 2,
+    "explanation": "One telephone is useless; each additional user makes every telephone more valuable."
+   },
+   {
+    "q": "Why does the professor describe owning the very first telephone?",
+    "options": [
+     "To praise the device's inventor",
+     "To show it has no value without others on the network",
+     "To explain the mechanics of how telephones work",
+     "To compare old phones with new ones"
+    ],
+    "answer": 1,
+    "explanation": "The lone first telephone has no one to call, dramatizing that value comes from other users."
+   },
+   {
+    "q": "What can be inferred about a new product that is better than an established one?",
+    "options": [
+     "It will always replace the older product",
+     "It must be cheaper in order to succeed",
+     "It will create its own network effect immediately",
+     "It may still fail because users are already elsewhere"
+    ],
+    "answer": 3,
+    "explanation": "Even a superior app can fail if the people users want to reach are already on the rival network."
+   },
+   {
+    "q": "According to the professor, what tends to happen in markets with strong network effects?",
+    "options": [
+     "Many small competitors share the market equally",
+     "Prices eventually fall to zero",
+     "A single platform tends to dominate",
+     "Products become less useful over time"
+    ],
+    "answer": 2,
+    "explanation": "Because success feeds on itself, one platform tends to capture most or all of the market."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_08",
+  "kind": "academic_talk",
+  "title": "The Urban Heat Island Effect",
+  "transcript": "Have you ever noticed, on a hot summer night, that a city stays warm long after the surrounding countryside has cooled off? You drive out of town and roll down the window, and there's a genuine, measurable drop in temperature. This isn't your imagination. It's a well-documented phenomenon called the 'urban heat island effect', and it's what we're looking at today. The basic observation is this: cities are consistently warmer than the rural areas around them, sometimes by several degrees, and the difference is most dramatic at night. So the question for us as scientists is, why? What is it about a city that traps heat? A few factors combine here. First, and probably most important, are the materials. Think about what a city is made of, asphalt, concrete, brick, dark rooftops. These surfaces are very good at absorbing solar energy during the day and then slowly releasing it as heat through the night. Contrast that with a forest or a field, where much of the sun's energy goes into evaporating water from soil and plants, a process that actually cools the surroundings. Cities have stripped most of that vegetation away. Second, there's the sheer geometry of the place. Tall buildings packed close together create these narrow canyons that trap heat and block breezes that might otherwise carry it away. And third, though this one is smaller, cities generate their own heat directly, from cars, air conditioners, all that machinery. Now, why should we care? Well, beyond comfort, this has real consequences. Hotter cities mean higher demand for air conditioning, which means more energy use, which, in a warming climate, can become a dangerous feedback loop. And during heat waves, these elevated temperatures can be a serious public health risk, especially for the elderly. The encouraging news is that the causes point toward solutions. Planting trees, adding parks, painting roofs a lighter color to reflect sunlight, these all measurably cool a city down. We'll look at some case studies on Thursday.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "Why cities are warmer than the areas around them",
+     "How an air conditioner works internally",
+     "Why the global climate is warming",
+     "How tall buildings are constructed"
+    ],
+    "answer": 0,
+    "explanation": "The professor explains the urban heat island effect: why cities run hotter than nearby rural areas."
+   },
+   {
+    "q": "According to the professor, what is probably the most important cause of the effect?",
+    "options": [
+     "Heat given off by cars and machines",
+     "Building materials that absorb and release heat",
+     "The great height of the buildings",
+     "A general lack of wind"
+    ],
+    "answer": 1,
+    "explanation": "He calls the materials, such as asphalt and concrete, probably the most important factor."
+   },
+   {
+    "q": "Why does the professor mention a forest or a field?",
+    "options": [
+     "To suggest people should move to the countryside",
+     "To explain how plants grow",
+     "To describe a cooler climate zone",
+     "To contrast it with how a city handles the sun's energy"
+    ],
+    "answer": 3,
+    "explanation": "In vegetated land, energy goes into cooling evaporation, unlike a city, highlighting why cities heat up."
+   },
+   {
+    "q": "What can be inferred about painting rooftops a lighter color?",
+    "options": [
+     "It would reduce the heat a city absorbs",
+     "It would make buildings more attractive",
+     "It would increase overall energy use",
+     "It would have no measurable effect"
+    ],
+    "answer": 0,
+    "explanation": "Lighter roofs reflect sunlight, so they would lower how much heat the city takes in."
+   },
+   {
+    "q": "When is the temperature difference between city and country most dramatic?",
+    "options": [
+     "In the early morning",
+     "During rainfall",
+     "At night",
+     "In winter"
+    ],
+    "answer": 2,
+    "explanation": "The professor states the gap is most dramatic at night, as city materials release stored heat."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_09",
+  "kind": "academic_talk",
+  "title": "How New Languages Are Born: Pidgins and Creoles",
+  "transcript": "Today I want to explore a genuinely remarkable process: how a brand-new language can be born, sometimes in just a generation or two. Most languages, as you know, evolve slowly over centuries from older languages. But under certain conditions, humans build a language almost from scratch. To understand how, we need two terms: 'pidgin' and 'creole'. Let's start with the pidgin. Picture a situation, historically this often happened at trading ports or on plantations, where groups of people who share no common language are suddenly thrown together and need to communicate. What emerges is a kind of makeshift, stripped-down language: a pidgin. It borrows words from the languages in contact, but it has very simple grammar, a limited vocabulary. It's nobody's native language. It's a practical tool, used to get business done and not much more. Now here's where it gets fascinating. Suppose children grow up in that community, surrounded by this simplified pidgin. What happens? The children don't just learn the pidgin as-is. They take it and, remarkably, they enrich it. They add grammatical rules, expand the vocabulary, make it more regular and expressive. In effect, they transform a bare-bones pidgin into a full, complete language. And once a language has native speakers like this, children who grow up speaking it, we no longer call it a pidgin. We call it a 'creole'. That transition is the key point I want you to take away. A pidgin has no native speakers; a creole does. The children are the crucial ingredient. And many linguists find this deeply revealing about the human mind. The fact that children can take impoverished, irregular input and spontaneously generate a rich, rule-governed language, that suggests something about our built-in capacity for language. It's as if the drive toward grammatical structure comes from inside the child, not just from the input. And that's a profound clue about how the mind is organized. We'll pick up there.",
+  "questions": [
+   {
+    "q": "What is the main topic of the talk?",
+    "options": [
+     "How children first learn to read",
+     "How entirely new languages can come into being",
+     "Why some languages die out over time",
+     "How historical trade routes developed"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains how pidgins and creoles show new languages being created."
+   },
+   {
+    "q": "According to the professor, what is a pidgin?",
+    "options": [
+     "A language spoken only by young children",
+     "The oldest known human language",
+     "A simplified language used by people with no common tongue",
+     "A written form of an ancient language"
+    ],
+    "answer": 2,
+    "explanation": "A pidgin is a makeshift, simplified language that arises when groups without a shared language must communicate."
+   },
+   {
+    "q": "Why does the professor emphasize the role of children?",
+    "options": [
+     "Because children are quick to forget languages",
+     "Because children prefer very simple grammar",
+     "Because children rarely learn a pidgin at all",
+     "Because children transform a pidgin into a full language"
+    ],
+    "answer": 3,
+    "explanation": "Children enrich the pidgin's grammar and vocabulary, turning it into a complete creole."
+   },
+   {
+    "q": "What does the creole process suggest to many linguists?",
+    "options": [
+     "That humans have an inborn capacity for language structure",
+     "That grammar must always be formally taught",
+     "That simpler languages are generally better",
+     "That adults learn languages faster than children"
+    ],
+    "answer": 0,
+    "explanation": "Children generating rich grammar from poor input points to a built-in human capacity for language."
+   },
+   {
+    "q": "What distinguishes a creole from a pidgin?",
+    "options": [
+     "A creole is used only for trade",
+     "A creole has simpler grammar",
+     "A creole has native speakers",
+     "A creole is never written down"
+    ],
+    "answer": 2,
+    "explanation": "The professor stresses that a pidgin has no native speakers, whereas a creole does."
+   }
+  ]
+ },
+ {
+  "id": "ls_tk_10",
+  "kind": "academic_talk",
+  "title": "Timbre: Why Instruments Sound Different",
+  "transcript": "Here's a puzzle to start us off. Play a note, say the note A, on a violin, and then play the very same note, the same pitch, on a flute. You can tell them apart instantly, with your eyes closed. But how? If they're playing the identical pitch, what is your ear actually responding to? The answer is a property called 'timbre', sometimes people call it 'tone color', and understanding it takes us into some lovely physics. So here's the key idea. When an instrument plays a note, it's almost never producing a single, pure frequency. What you hear as one note is actually a whole stack of frequencies sounding at once. There's the main one, the 'fundamental', which is the pitch you identify. But layered on top of it are higher frequencies called 'overtones', or harmonics. They're quieter, and you don't consciously separate them out, but they're there. And here's the crucial part: different instruments produce different mixtures of these overtones. A violin might emphasize one set of overtones; a flute, a different set. The flute, in fact, produces a fairly pure tone with few strong overtones, which is why it sounds so smooth and clear. A violin's tone is richer, more complex, because it's got more overtones in the mix. So the particular recipe of overtones, which ones are present and how strong each one is, that recipe is what gives each instrument its characteristic voice. Let me offer an analogy. Think of it like a color. Two painters can both paint red, but by blending in different amounts of other colors, they get very different shades of red. Timbre works the same way. The fundamental gives you the basic color of the pitch, and the overtones are the subtle shadings that make a violin's red different from a flute's red. So the next time you recognize an instrument instantly, you'll know your ear is doing a sophisticated bit of frequency analysis, without you even trying.",
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "options": [
+     "Why different instruments playing the same pitch sound different",
+     "How to properly tune a violin",
+     "Which musical instrument is the loudest",
+     "How musicians learn to read sheet music"
+    ],
+    "answer": 0,
+    "explanation": "The professor explains timbre and how overtones make instruments sound distinct on the same pitch."
+   },
+   {
+    "q": "What does the professor mean by the 'fundamental'?",
+    "options": [
+     "The oldest note in a musical scale",
+     "The main frequency that determines the pitch you hear",
+     "The loudest instrument in an orchestra",
+     "A very quiet, high overtone"
+    ],
+    "answer": 1,
+    "explanation": "The fundamental is the primary frequency you identify as the note's pitch."
+   },
+   {
+    "q": "Why does the professor compare timbre to different shades of red?",
+    "options": [
+     "To argue that music and painting are the same",
+     "To explain how the human eye sees color",
+     "To describe how paint is manufactured",
+     "To show that overtones create an instrument's distinctive sound"
+    ],
+    "answer": 3,
+    "explanation": "As blended colors make different reds, different overtone mixes give instruments their distinct timbres."
+   },
+   {
+    "q": "What can be inferred about an instrument that produces few strong overtones?",
+    "options": [
+     "It will sound smooth and pure",
+     "It cannot play high notes",
+     "It is difficult to keep in tune",
+     "It always plays more loudly"
+    ],
+    "answer": 0,
+    "explanation": "The flute, with few strong overtones, sounds smooth and clear, so few overtones imply a pure tone."
+   },
+   {
+    "q": "According to the professor, why does a flute sound clear and smooth?",
+    "options": [
+     "Because it is made of metal",
+     "Because it plays only very high notes",
+     "Because it produces few strong overtones",
+     "Because it is louder than a violin"
+    ],
+    "answer": 2,
+    "explanation": "He states the flute has few strong overtones, giving it a fairly pure, smooth tone."
+   }
+  ]
+ }
+]

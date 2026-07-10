@@ -1,0 +1,230 @@
+[
+ {
+  "id": "ls_rs_01",
+  "kind": "choose_response",
+  "title": "Borrowing lecture notes",
+  "transcript": "Hey, I missed yesterday's lecture. Do you think I could borrow your notes to copy them?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "Yeah, the lecture was pretty dull, honestly.",
+     "I didn't miss any classes this week.",
+     "Sure, no problem — I'll send you a photo of them tonight.",
+     "I prefer taking my notes on a laptop."
+    ],
+    "answer": 2,
+    "explanation": "The speaker is politely asking to borrow notes, so agreeing and offering to share them (option 2) is the natural, cooperative response. Option 0 comments on the lecture instead of answering the request; option 1 talks about the responder's own attendance and ignores the favor; option 3 is a self-focused remark that never addresses whether the notes can be shared."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_02",
+  "kind": "choose_response",
+  "title": "Professor offers an extension",
+  "transcript": "If you're having trouble finishing the essay, I can give you a couple of extra days.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "That would really help — thank you. I'll have it in by Friday.",
+     "The library closes at ten on weekdays.",
+     "I already finished reading the assigned chapters.",
+     "No, I didn't think the essay was too long."
+    ],
+    "answer": 0,
+    "explanation": "The professor is offering more time, so gratefully accepting and naming a new deadline (option 0) fits perfectly. Option 1 is unrelated information about the library; option 2 answers a question that wasn't asked; option 3 misreads the offer as a comment about the essay's length."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_03",
+  "kind": "choose_response",
+  "title": "Roommate asks to lower the music",
+  "transcript": "Would you mind turning the music down a little? I've got an exam first thing tomorrow.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "Your exam is in the science building, isn't it?",
+     "I just bought these speakers last week.",
+     "Music actually helps me focus.",
+     "Oh, sorry — I didn't realize. I'll put my headphones on."
+    ],
+    "answer": 3,
+    "explanation": "A polite request to lower the volume calls for an apology and a fix (option 3). Option 0 redirects to the exam's location and ignores the request; option 1 changes the subject to the speakers; option 2 is dismissive and refuses to accommodate the roommate."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_04",
+  "kind": "choose_response",
+  "title": "Directions to the registrar",
+  "transcript": "Excuse me, could you tell me how to get to the registrar's office from here?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I registered for four classes this semester.",
+     "Sure — it's on the second floor of the admin building, just past the elevators.",
+     "You'll need to make an appointment first.",
+     "The staff there were really helpful when I called."
+    ],
+    "answer": 1,
+    "explanation": "The person wants directions, so giving the location and route (option 1) is the appropriate reply. Option 0 plays on the word 'register' but gives no directions; option 2 adds a requirement without saying how to get there; option 3 comments on the staff rather than the way to the office."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_05",
+  "kind": "choose_response",
+  "title": "Scheduling a group meeting",
+  "transcript": "Are you free to meet up this weekend to work on the group presentation?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The presentation went really well, thanks.",
+     "I think our topic is climate policy.",
+     "Saturday afternoon works for me — how about the library at two?",
+     "I usually don't enjoy working in groups."
+    ],
+    "answer": 2,
+    "explanation": "The question asks about availability, so proposing a specific time and place (option 2) is the natural response. Option 0 uses the past tense as if the presentation already happened; option 1 names the topic instead of answering about meeting; option 3 is a dismissive remark that avoids committing."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_06",
+  "kind": "choose_response",
+  "title": "Ordering coffee",
+  "transcript": "Would you like me to leave room for cream, or fill it all the way up?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "Leave a little room, please — I take mine with cream.",
+     "Just a small coffee, thanks.",
+     "I'll pay with my card.",
+     "Do you have any muffins left?"
+    ],
+    "answer": 0,
+    "explanation": "The barista is asking a yes-or-no style choice about cream, so stating the preference (option 0) answers it directly. Option 1 answers an earlier question about size; option 2 jumps ahead to payment; option 3 asks an unrelated new question."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_07",
+  "kind": "choose_response",
+  "title": "Feedback after a presentation",
+  "transcript": "You made some strong points today, though you did run a bit over the time limit.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "No, I don't think anyone else presented today.",
+     "The projector kept freezing on me.",
+     "I still haven't picked a topic.",
+     "Thank you — I'll try to keep it tighter next time."
+    ],
+    "answer": 3,
+    "explanation": "The comment mixes praise with gentle criticism, so accepting both graciously (option 3) is ideal. Option 0 answers a question that wasn't asked; option 1 makes an excuse and ignores the compliment; option 2 refers to a topic as if the presentation hadn't happened yet."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_08",
+  "kind": "choose_response",
+  "title": "Offer to help move",
+  "transcript": "I heard you're moving into a new apartment on Saturday. Do you need a hand?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "The new place has two bedrooms.",
+     "That's really kind of you — an extra pair of hands would be great.",
+     "I moved here from Chicago last year.",
+     "The gym gets pretty crowded on Saturdays."
+    ],
+    "answer": 1,
+    "explanation": "The friend is offering help, so thanking them and accepting (option 1) is the warm, natural reply. Option 0 shares a detail about the apartment but ignores the offer; option 2 talks about a past move; option 3 changes the subject to the gym."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_09",
+  "kind": "choose_response",
+  "title": "Advisor questions the course load",
+  "transcript": "Taking five classes while working part-time might be a lot. Are you sure you can manage it?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "All my classes are in the morning.",
+     "I work at the campus bookstore.",
+     "I've thought it over, and I think I can handle it if I stay organized.",
+     "Five has always been my lucky number."
+    ],
+    "answer": 2,
+    "explanation": "The advisor is voicing concern about workload, so reassuring them with a reasoned answer (option 2) addresses it directly. Option 0 gives a schedule detail that doesn't settle the concern; option 1 mentions the job without addressing whether it's manageable; option 3 is an absurd, off-tone reply."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_10",
+  "kind": "choose_response",
+  "title": "A found umbrella",
+  "transcript": "Is this your umbrella? I found it by the door on my way in.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "They say it'll rain all week.",
+     "I usually take the bus when it's raining.",
+     "You can leave lost items at the front desk.",
+     "Oh, it is mine — thank you so much for grabbing it!"
+    ],
+    "answer": 3,
+    "explanation": "The speaker is checking whether the umbrella belongs to the listener, so confirming and thanking them (option 3) fits. Option 0 comments on the weather; option 1 talks about commuting; option 2 gives lost-and-found advice as if the umbrella weren't the listener's own."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_11",
+  "kind": "choose_response",
+  "title": "Dinner invitation",
+  "transcript": "We're all heading to the dining hall for dinner around six. Want to come along?",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "Sure, count me in — I'll meet you at the entrance.",
+     "I had a sandwich for lunch.",
+     "The dining hall added a new salad bar.",
+     "I already had breakfast, thanks."
+    ],
+    "answer": 0,
+    "explanation": "This is an invitation to dinner, so accepting and arranging where to meet (option 0) is the natural response. Option 1 refers to an earlier meal; option 2 shares trivia about the dining hall instead of replying to the invite; option 3 declines by referencing breakfast, which makes no sense for a dinner plan."
+   }
+  ]
+ },
+ {
+  "id": "ls_rs_12",
+  "kind": "choose_response",
+  "title": "Library checkout",
+  "transcript": "This book is due back in two weeks, but you can renew it online if you need more time.",
+  "questions": [
+   {
+    "q": "Choose the best response.",
+    "options": [
+     "I'd like to buy this one, please.",
+     "Great, thanks — I'll renew it if I haven't finished by then.",
+     "This book was written back in the 1990s.",
+     "Is the café upstairs still open?"
+    ],
+    "answer": 1,
+    "explanation": "The librarian is explaining the due date and the renewal option, so acknowledging it and planning to renew (option 1) is the fitting reply. Option 0 misunderstands a library loan as a purchase; option 2 comments on when the book was written; option 3 asks an unrelated question about the café."
+   }
+  ]
+ }
+]

@@ -1,0 +1,434 @@
+[
+ {
+  "id": "listen-11",
+  "kind": "announcement",
+  "title": "Announcement: Campus Career Fair",
+  "transcript": "Good morning, students. This is an important announcement about the upcoming Fall Career Fair. The fair will take place next Wednesday, October 14th, in the main gymnasium from 10 a.m. to 4 p.m. This is one of the largest events of the semester, and this year more than eighty companies will be attending, representing fields from engineering and healthcare to business and the arts.\n\nHere are a few things to keep in mind so you can make the most of the day. First, dress professionally. First impressions matter, and recruiters do notice. Second, bring several printed copies of your resume. Even though many companies accept online applications, having a physical copy ready to hand over makes a strong impression. If you need help polishing your resume, the Career Center is offering free walk-in reviews all this week.\n\nThird, do a little research beforehand. A full list of attending companies is posted on the Career Center website. We strongly recommend choosing a few you're most interested in and learning about them in advance, so you can ask thoughtful questions.\n\nFinally, don't forget to bring your student ID, which is required for entry. We look forward to seeing you there, and we wish you great success in your job search.",
+  "questions": [
+   {
+    "q": "What is the main purpose of this announcement?",
+    "options": [
+     "To cancel the Fall Career Fair",
+     "To inform students about the career fair and how to prepare",
+     "To advertise a resume-writing course for credit",
+     "To announce a change in gym hours"
+    ],
+    "answer": 1,
+    "explanation": "The announcement informs students about the upcoming career fair and gives advice on how to prepare, which is its main purpose."
+   },
+   {
+    "q": "Why does the announcement advise bringing printed copies of a resume?",
+    "options": [
+     "Because online applications are not allowed",
+     "Because a physical copy makes a strong impression",
+     "Because recruiters cannot read digital files",
+     "Because printing is not available at the fair"
+    ],
+    "answer": 1,
+    "explanation": "The announcement says that even though companies accept online applications, having a physical copy ready makes a strong impression."
+   },
+   {
+    "q": "Where can students find a list of attending companies?",
+    "options": [
+     "On the main gymnasium door",
+     "On the Career Center website",
+     "In the student newspaper",
+     "At the entrance on the day of the fair"
+    ],
+    "answer": 1,
+    "explanation": "The announcement states that a full list of attending companies is posted on the Career Center website."
+   },
+   {
+    "q": "What is required for entry to the career fair?",
+    "options": [
+     "A printed resume",
+     "A student ID",
+     "An appointment with the Career Center",
+     "A registration fee"
+    ],
+    "answer": 1,
+    "explanation": "The announcement notes that a student ID is required for entry to the fair."
+   }
+  ]
+ },
+ {
+  "id": "listen-12",
+  "kind": "announcement",
+  "title": "Announcement: Gym Closure for Renovation",
+  "transcript": "Attention, members of the University Recreation Center. We want to let you know about some important changes coming up next month. Starting Monday, November 2nd, the main fitness center on the first floor will be closed for renovations. The upgrade will include new cardio equipment, additional weight machines, and improved lighting and ventilation. We expect the work to take about three weeks, with a planned reopening on Monday, November 23rd.\n\nWe know this is a busy time of year, and we don't want to leave you without options. During the renovation, the second-floor studio will remain open and will host an expanded schedule of group fitness classes, including yoga, cycling, and strength training. In addition, members can use the swimming pool and the indoor track, both of which will keep their normal hours.\n\nWe've also arranged something special. During the closure, your membership card will grant you free access to the Downtown Community Gym, located just two blocks from campus. Simply show your university ID and membership card at their front desk.\n\nWe appreciate your patience during this upgrade, and we're confident you'll love the improved facilities when they reopen. For questions, please stop by the front desk or check our website.",
+  "questions": [
+   {
+    "q": "What is the main purpose of this announcement?",
+    "options": [
+     "To announce that the recreation center is closing permanently",
+     "To inform members about a temporary gym renovation and alternatives",
+     "To advertise new membership rates",
+     "To cancel all group fitness classes"
+    ],
+    "answer": 1,
+    "explanation": "The announcement informs members that the main fitness center will close for renovation and describes alternative options, which is its purpose."
+   },
+   {
+    "q": "What improvements will the renovation include?",
+    "options": [
+     "A new swimming pool and indoor track",
+     "New cardio equipment, weight machines, and better lighting and ventilation",
+     "A larger parking lot",
+     "A new second-floor studio"
+    ],
+    "answer": 1,
+    "explanation": "The announcement lists new cardio equipment, additional weight machines, and improved lighting and ventilation as part of the upgrade."
+   },
+   {
+    "q": "What can members do at the Downtown Community Gym during the closure?",
+    "options": [
+     "Get free access by showing their university ID and membership card",
+     "Sign up for a paid membership at a discount",
+     "Take classes not offered on campus",
+     "Store their gym equipment"
+    ],
+    "answer": 0,
+    "explanation": "The announcement says members can get free access to the Downtown Community Gym by showing their university ID and membership card."
+   },
+   {
+    "q": "What can be inferred about facilities like the pool and indoor track during the renovation?",
+    "options": [
+     "They will be closed along with the fitness center.",
+     "They will remain open at their normal hours.",
+     "They will move to the second-floor studio.",
+     "They will only be open on weekends."
+    ],
+    "answer": 1,
+    "explanation": "The announcement states that the swimming pool and indoor track will keep their normal hours during the renovation."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_01",
+  "kind": "announcement",
+  "title": "Chemistry lecture room change",
+  "transcript": "Good morning, everyone. Before Professor Hensley begins, I have a quick announcement about next week's schedule. Starting Monday, our Introduction to Chemistry lectures will no longer meet here in Whitmore Hall, Room 210. The building's ventilation system is being upgraded, and the work is expected to last through the end of the month. So for the next three weeks, all lectures will move across campus to the Science Center, Room 145. That's the large auditorium on the ground floor, just past the main entrance. Please note that the lecture time stays exactly the same, nine fifteen on Mondays, Wednesdays, and Fridays. Only the location is changing. I'd also remind you that the Friday discussion sections are not affected; those still meet in their usual seminar rooms in Whitmore. If you're unsure which room your section uses, check the course website. And please arrive a few minutes early on Monday, since the new auditorium can be a little tricky to find. Thanks.",
+  "questions": [
+   {
+    "q": "Why does the speaker make this announcement?",
+    "options": [
+     "To explain a change in the location of a course's lectures",
+     "To introduce a new professor for the chemistry course",
+     "To cancel all classes while a building is repaired",
+     "To announce a change in the time of the lectures"
+    ],
+    "answer": 0,
+    "explanation": "The speaker's main point is that lectures are relocating from Whitmore Hall 210 to the Science Center auditorium, while the meeting time stays the same."
+   },
+   {
+    "q": "What is the reason for the change?",
+    "options": [
+     "The current room is too small for the class",
+     "The building's ventilation system is being upgraded",
+     "The professor requested a larger auditorium",
+     "Another course needs to use Room 210"
+    ],
+    "answer": 1,
+    "explanation": "The speaker says the move is necessary because the building's ventilation system is being upgraded through the end of the month."
+   },
+   {
+    "q": "What does the speaker suggest students do on Monday?",
+    "options": [
+     "Meet first in their Friday discussion sections",
+     "Contact the professor about their section room",
+     "Arrive early because the new room is hard to find",
+     "Confirm that the Friday lectures were canceled"
+    ],
+    "answer": 2,
+    "explanation": "The speaker advises arriving a few minutes early because the new auditorium can be a little tricky to find."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_02",
+  "kind": "announcement",
+  "title": "Library study room reservation policy",
+  "transcript": "Attention, library users. We'd like to let you know about a change to our group study room policy that takes effect this Saturday. Until now, students could reserve a study room for up to four hours at a time. Because demand has grown so much this semester, we're reducing the maximum reservation to two hours per group. This will let more students get access to the rooms, especially during busy exam periods. You can still book online through the library portal, and reservations open seventy-two hours in advance. One more thing: if your group hasn't arrived within fifteen minutes of your start time, the system will automatically release the room to the next person in line. So please be punctual, or cancel ahead of time if your plans change. We know this is a big adjustment, but we hope it makes the space fairer for everyone. If you have questions, staff at the front desk are always happy to help. Thank you.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To explain how to book a study room online",
+     "To describe the library's new exam-period hours",
+     "To introduce an updated library booking portal",
+     "To announce a new limit on study room reservations"
+    ],
+    "answer": 3,
+    "explanation": "The announcement introduces a new rule cutting the maximum study-room reservation from four hours to two."
+   },
+   {
+    "q": "What happens if a group is more than fifteen minutes late?",
+    "options": [
+     "The group is charged a small fee",
+     "The reservation is extended automatically",
+     "The room is released to the next person in line",
+     "Staff call the group to remind them"
+    ],
+    "answer": 2,
+    "explanation": "If a group has not arrived within fifteen minutes, the system automatically releases the room to the next person in line."
+   },
+   {
+    "q": "What does the speaker imply about the study rooms?",
+    "options": [
+     "Too few students have been using them",
+     "They are in very high demand this semester",
+     "They need repairs before the exam period",
+     "They will be closed during busy periods"
+    ],
+    "answer": 1,
+    "explanation": "The change is meant to give more students access, especially during exams, which implies the rooms are in high demand."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_03",
+  "kind": "announcement",
+  "title": "Fall career fair reminder",
+  "transcript": "Hi, everyone. I want to remind you all about the fall career fair, which is coming up next Thursday in the Student Union ballroom. It runs from ten in the morning until four in the afternoon, and more than eighty employers have confirmed they'll be there, everything from tech startups to hospitals to government agencies. This is a great chance to hand out your resume, practice talking with recruiters, and maybe even line up an interview. A couple of tips. First, dress professionally; a lot of students underestimate how much of a difference that makes. Second, bring plenty of printed copies of your resume, at least fifteen or twenty. And third, do a little homework beforehand. The full list of companies is posted on the Career Center website, so look it over and pick a few you're excited about. That way you can ask smart questions and stand out. Oh, and admission is free, but you'll need your student ID to get in. See you there.",
+  "questions": [
+   {
+    "q": "Why is the speaker giving this announcement?",
+    "options": [
+     "To remind students about an upcoming career fair",
+     "To teach students how to write a better resume",
+     "To describe new companies now hiring on campus",
+     "To explain how to schedule a job interview"
+    ],
+    "answer": 0,
+    "explanation": "The speaker is reminding students about the upcoming fall career fair and how to prepare for it."
+   },
+   {
+    "q": "What does the speaker recommend students bring?",
+    "options": [
+     "A written list of questions for each employer",
+     "A laptop for filling out applications",
+     "A letter of recommendation from a professor",
+     "At least fifteen to twenty copies of their resume"
+    ],
+    "answer": 3,
+    "explanation": "The speaker advises bringing plenty of printed resumes, at least fifteen or twenty copies."
+   },
+   {
+    "q": "What should students do before attending the fair?",
+    "options": [
+     "Register for the event in advance online",
+     "Review the list of companies on the website",
+     "Email the employers they want to meet",
+     "Sign up for a resume-writing workshop"
+    ],
+    "answer": 1,
+    "explanation": "Students are told to look over the company list on the Career Center website so they can ask smart questions and stand out."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_04",
+  "kind": "announcement",
+  "title": "Annual emergency evacuation drill",
+  "transcript": "May I have your attention, please. This is a reminder that the university will hold its annual emergency evacuation drill tomorrow morning at ten o'clock. When you hear the alarm, a series of loud, repeating tones, please stop what you're doing and leave the building calmly through the nearest marked exit. Do not use the elevators; take the stairs instead. Once outside, move to the designated assembly area, which for this building is the grassy courtyard near the west parking lot. Please stay there until a fire marshal tells you it's safe to return. The whole drill should take no more than fifteen minutes. I want to stress that although this is only a practice, we ask everyone to treat it as though it were a real emergency. That's the best way to make sure we're all prepared. Instructors, please help direct any students who may be visiting the building for the first time. Thank you for your cooperation, and let's make this a smooth, quick drill.",
+  "questions": [
+   {
+    "q": "What is the announcement mainly about?",
+    "options": [
+     "A recent emergency that occurred on campus",
+     "New locations for the building's exits",
+     "A scheduled emergency evacuation drill",
+     "Repairs being made to the alarm system"
+    ],
+    "answer": 2,
+    "explanation": "The announcement is a reminder about tomorrow's scheduled annual emergency evacuation drill."
+   },
+   {
+    "q": "Where should people go after leaving the building?",
+    "options": [
+     "The nearest available classroom",
+     "The main lobby of the building",
+     "Anywhere inside the west parking lot",
+     "The grassy courtyard near the west parking lot"
+    ],
+    "answer": 3,
+    "explanation": "The designated assembly area for this building is the grassy courtyard near the west parking lot."
+   },
+   {
+    "q": "What does the speaker ask instructors to do?",
+    "options": [
+     "Help direct students visiting the building for the first time",
+     "Take attendance before leaving the building",
+     "Test the alarm system before the drill begins",
+     "Use the elevators to assist slower students"
+    ],
+    "answer": 0,
+    "explanation": "The speaker asks instructors to help direct any students who may be visiting the building for the first time."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_05",
+  "kind": "announcement",
+  "title": "Add/drop deadline reminder",
+  "transcript": "Good afternoon. I want to make sure nobody misses an important deadline coming up. This Friday, the fifteenth, is the last day to add or drop a course for the spring semester without any penalty. After Friday, if you drop a class, it will show up on your transcript as a withdrawal, and you won't get a refund for it. So if you've been thinking about changing your schedule, now is the time to act. You can make all these changes yourself through the online registration system; you don't need to come to the office or fill out any paper forms. However, a few courses do require your advisor's approval before you can add them, and those tend to fill up quickly. If you're planning to add one of those, I'd strongly encourage you to email your advisor today rather than waiting until Friday afternoon. The system closes at exactly five o'clock, and it will not let you make changes after that, so don't leave it to the last minute. Thanks, everyone.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To explain how to use the online registration system",
+     "To remind students about the add/drop deadline",
+     "To describe changes to the spring course catalog",
+     "To announce new advising office hours"
+    ],
+    "answer": 1,
+    "explanation": "The main purpose is to remind students that Friday is the last day to add or drop a course without penalty."
+   },
+   {
+    "q": "What happens if a student drops a course after Friday?",
+    "options": [
+     "It will appear as a withdrawal on their transcript",
+     "They will be automatically re-enrolled in it",
+     "They must get their advisor's written approval",
+     "The course is added back the following semester"
+    ],
+    "answer": 0,
+    "explanation": "After Friday, dropping a class means it shows up on the transcript as a withdrawal, with no refund."
+   },
+   {
+    "q": "What does the speaker suggest for adding a course that needs approval?",
+    "options": [
+     "Waiting until Friday to make a final decision",
+     "Submitting a paper form to the registration office",
+     "Dropping another class first to make room",
+     "Emailing their advisor today rather than waiting"
+    ],
+    "answer": 3,
+    "explanation": "For courses requiring approval, the speaker urges students to email their advisor today because those courses fill up quickly."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_06",
+  "kind": "announcement",
+  "title": "Scheduled campus Wi-Fi maintenance",
+  "transcript": "Hello, this is an announcement from the Office of Information Technology. We want to give you advance notice that the campus wireless network will be down for scheduled maintenance this Sunday, from midnight until roughly six in the morning. During this window, you won't be able to connect to Wi-Fi anywhere on campus, including in the dorms, the library, and all academic buildings. The wired connections in faculty offices will not be affected. We chose these early-morning hours specifically to cause the least disruption, but we realize some of you like to study late or work on assignments overnight. If you have anything due Monday, we strongly recommend you download whatever files you'll need ahead of time, or plan to work somewhere off campus during those six hours. The upgrade will make the network noticeably faster once it's complete, so we appreciate your patience. If the network is still giving you trouble after six on Sunday, please contact the help desk and we'll look into it. Thank you.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To announce that a faster network is available now",
+     "To explain how to connect to the campus Wi-Fi",
+     "To notify people about scheduled Wi-Fi maintenance",
+     "To report an unexpected network outage"
+    ],
+    "answer": 2,
+    "explanation": "The purpose is to give advance notice that scheduled maintenance will take the campus Wi-Fi offline early Sunday morning."
+   },
+   {
+    "q": "What will continue to work during the maintenance window?",
+    "options": [
+     "Wi-Fi in the residence halls",
+     "Wired connections in faculty offices",
+     "Wi-Fi in the library",
+     "The networks in academic buildings"
+    ],
+    "answer": 1,
+    "explanation": "The speaker notes that the wired connections in faculty offices will not be affected."
+   },
+   {
+    "q": "What does the speaker recommend for students with work due Monday?",
+    "options": [
+     "Download the files they need in advance",
+     "Ask their instructors for an extension",
+     "Use the computers at the help desk office",
+     "Connect using a wired line in the dorms"
+    ],
+    "answer": 0,
+    "explanation": "Students with Monday deadlines are advised to download needed files ahead of time or work off campus during the outage."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_07",
+  "kind": "announcement",
+  "title": "New student orientation schedule",
+  "transcript": "Welcome, everyone, and congratulations again on joining the university. I'm going to walk you through how the rest of today's orientation will work. Right now we're all together in the main hall, but in about ten minutes we'll split into smaller groups by college, engineering, arts and sciences, business, and so on. Your group number is printed on the name tag you received at the front desk, so take a look at that now. Each group will spend the afternoon with a student guide who'll give you a walking tour of campus and show you the buildings you'll use most. Wear comfortable shoes, because there's a fair amount of walking involved. At four o'clock, everyone comes back here for a welcome reception with free food and a chance to meet some of the faculty. Attendance at the tour is not strictly required, but I really encourage you to go; it's the easiest way to learn your way around before classes start next week. Any questions can wait until we break into groups.",
+  "questions": [
+   {
+    "q": "What is the speaker mainly doing?",
+    "options": [
+     "Introducing the members of the faculty",
+     "Giving a guided tour of the main hall",
+     "Handing out name tags to new students",
+     "Explaining how the orientation day is organized"
+    ],
+    "answer": 3,
+    "explanation": "The speaker is walking students through how the rest of the orientation day will work, from splitting into groups to the reception."
+   },
+   {
+    "q": "How can students find out which group they are in?",
+    "options": [
+     "By checking their name tag",
+     "By asking their student guide",
+     "By looking at a list posted in the hall",
+     "By returning to the front desk"
+    ],
+    "answer": 0,
+    "explanation": "The speaker says each student's group number is printed on the name tag they received at the front desk."
+   },
+   {
+    "q": "What does the speaker imply about the walking tour?",
+    "options": [
+     "It is required of all new students",
+     "It will be canceled if the weather is bad",
+     "It is optional but strongly recommended",
+     "It takes the place of the welcome reception"
+    ],
+    "answer": 2,
+    "explanation": "The speaker says attendance is not strictly required but strongly encourages it, implying the tour is optional yet recommended."
+   }
+  ]
+ },
+ {
+  "id": "ls_an_08",
+  "kind": "announcement",
+  "title": "New dining hall composting program",
+  "transcript": "Hey, everyone, quick announcement from Dining Services. Starting next Monday, we're rolling out a new composting program in all three dining halls, and we need your help to make it work. You'll notice we've added a third bin next to the usual trash and recycling stations. The new green bin is for food scraps, things like fruit peels, leftover vegetables, and even napkins. Please don't put plastic, foil, or drink cups in there, because even a little bit of that can ruin an entire batch of compost. There will be clear signs above each bin with pictures, so when you're not sure, just check the picture. Student volunteers will also be standing by the bins during the first week to answer questions and point you to the right one. Our goal is to cut the amount of waste we send to the landfill roughly in half by the end of the year. It's a small change in your routine, but together it adds up to a big difference. Thanks for pitching in.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To explain why the dining halls will close",
+     "To introduce a new composting program in the dining halls",
+     "To describe a change to the dining hall menu",
+     "To recruit students to work in the kitchen"
+    ],
+    "answer": 1,
+    "explanation": "The announcement introduces a new composting program launching in all three dining halls."
+   },
+   {
+    "q": "What should be put in the new green bin?",
+    "options": [
+     "Plastic cups and foil wrappers",
+     "Empty glass bottles",
+     "Food scraps such as fruit peels and napkins",
+     "Only clean, recyclable paper"
+    ],
+    "answer": 2,
+    "explanation": "The green bin is for food scraps like fruit peels, leftover vegetables, and napkins, not plastic, foil, or cups."
+   },
+   {
+    "q": "What does the speaker suggest doing when unsure which bin to use?",
+    "options": [
+     "Ask a dining hall manager for help",
+     "Put the item in the regular trash",
+     "Wait until the program's second week",
+     "Check the pictures on the signs above the bins"
+    ],
+    "answer": 3,
+    "explanation": "The speaker says there are clear signs with pictures above each bin, so when unsure, just check the picture."
+   }
+  ]
+ }
+]

@@ -1,0 +1,730 @@
+[
+ {
+  "id": "listen-07",
+  "kind": "conversation",
+  "title": "Conversation: Choosing a Major",
+  "transcript": "Advisor: Hi, come on in. You said you wanted to talk about your major?\n\nStudent: Yeah, thanks for seeing me. So, I'm a sophomore right now, and I've been a biology major since I started. But honestly, lately I've been thinking about switching to environmental science. I'm just not sure if it's a good idea this late.\n\nAdvisor: It's not too late at all, especially as a sophomore. Let me ask, what's drawing you toward environmental science?\n\nStudent: Well, I took an intro environmental science course last semester, and I loved it. It felt more connected to real problems, like climate change and conservation. In my biology classes, I enjoy the material, but I don't feel as excited about where it leads.\n\nAdvisor: That's a really important thing to notice. Now, the good news is that biology and environmental science share a lot of the same introductory requirements, so many of your credits will still count. You wouldn't be starting over.\n\nStudent: Oh, that's a relief. I was worried I'd lose a whole year.\n\nAdvisor: Not at all. The main difference is that environmental science adds some courses in earth systems and policy. Let me pull up the requirements so we can map out which classes you still need. Have you thought about what kind of career you'd want afterward?\n\nStudent: I think I'd like to work for a conservation organization, maybe doing fieldwork.\n\nAdvisor: Then environmental science would actually suit you very well. Let's build a plan so you can make the switch smoothly next term.",
+  "questions": [
+   {
+    "q": "Why does the student come to see the advisor?",
+    "options": [
+     "To drop out of school for a year",
+     "To discuss switching from biology to environmental science",
+     "To complain about a biology professor",
+     "To apply for a scholarship"
+    ],
+    "answer": 1,
+    "explanation": "The student explains that she has been a biology major but is thinking about switching to environmental science, which is the reason for the visit."
+   },
+   {
+    "q": "What does the student say attracted her to environmental science?",
+    "options": [
+     "It has fewer required courses.",
+     "It felt more connected to real problems like climate change.",
+     "It is easier than biology.",
+     "Her friends are all in that major."
+    ],
+    "answer": 1,
+    "explanation": "The student says she loved the intro course because it felt more connected to real problems, such as climate change and conservation."
+   },
+   {
+    "q": "Why does the advisor say the student would not be starting over?",
+    "options": [
+     "Because the student can skip all requirements",
+     "Because biology and environmental science share many intro requirements",
+     "Because the student already graduated",
+     "Because environmental science has no requirements"
+    ],
+    "answer": 1,
+    "explanation": "The advisor explains that the two majors share many of the same introductory requirements, so many credits will still count."
+   },
+   {
+    "q": "What can be inferred about the advisor's attitude toward the switch?",
+    "options": [
+     "The advisor discourages the student from switching.",
+     "The advisor thinks the switch could suit the student well.",
+     "The advisor is indifferent to the student's choice.",
+     "The advisor insists the student stay in biology."
+    ],
+    "answer": 1,
+    "explanation": "The advisor says environmental science would suit the student well given her career interest and offers to build a plan, showing support for the switch."
+   }
+  ]
+ },
+ {
+  "id": "listen-08",
+  "kind": "conversation",
+  "title": "Conversation: A Problem with a Dorm Room",
+  "transcript": "Student: Excuse me, I'm here about a problem with my dorm room. I filled out a maintenance request online, but that was over a week ago and nothing's happened.\n\nHousing Staff: I'm sorry to hear that. Let me look into it. What's the issue exactly?\n\nStudent: The heater in my room isn't working. It's been getting really cold at night, and I've been piling on extra blankets, but it's hard to sleep and even harder to study.\n\nHousing Staff: That definitely shouldn't wait a week. Let me pull up your request. What's your room number?\n\nStudent: It's room 214 in Maple Hall.\n\nHousing Staff: Okay, I see it here. Hmm, it looks like the request was logged, but it got marked as low priority by mistake. A broken heater in winter should be high priority. I apologize for that.\n\nStudent: So what happens now? I have exams next week and I really need to be able to sleep.\n\nHousing Staff: I completely understand. I'm going to reclassify this as urgent right now, and I'll contact the maintenance team directly. Someone should be able to come by tomorrow morning. Will you be in your room around nine?\n\nStudent: I have a class at ten, so nine works.\n\nHousing Staff: Perfect. If for some reason no one shows up by ten, call this office and ask for me directly. My name is Tom.\n\nStudent: Thank you, Tom. That's a big relief.",
+  "questions": [
+   {
+    "q": "What is the student's main problem?",
+    "options": [
+     "The heater in her room is not working.",
+     "She was assigned the wrong room.",
+     "Her online account is locked.",
+     "She lost her dorm key."
+    ],
+    "answer": 0,
+    "explanation": "The student explains that the heater in her room is not working, making it cold and hard to sleep and study."
+   },
+   {
+    "q": "Why had the maintenance request not been handled?",
+    "options": [
+     "The student never actually submitted it.",
+     "It was marked as low priority by mistake.",
+     "The maintenance team was on vacation.",
+     "The room number was recorded incorrectly."
+    ],
+    "answer": 1,
+    "explanation": "The housing staff discovers that the request was logged but got marked as low priority by mistake, which delayed it."
+   },
+   {
+    "q": "What does Tom decide to do about the request?",
+    "options": [
+     "Cancel it and ask the student to submit a new one",
+     "Reclassify it as urgent and contact maintenance directly",
+     "Move the student to a different room",
+     "Tell the student to wait another week"
+    ],
+    "answer": 1,
+    "explanation": "Tom says he will reclassify the request as urgent right away and contact the maintenance team directly."
+   },
+   {
+    "q": "What should the student do if no one arrives by ten?",
+    "options": [
+     "Submit another online request",
+     "Call the office and ask for Tom",
+     "Go to a different dorm",
+     "Wait until the next day"
+    ],
+    "answer": 1,
+    "explanation": "Tom tells the student that if no one shows up by ten, she should call the office and ask for him directly."
+   }
+  ]
+ },
+ {
+  "id": "listen-09",
+  "kind": "conversation",
+  "title": "Conversation: Asking About a Research Job",
+  "transcript": "Student: Hi, Professor Reyes. Do you have a minute? I wanted to ask about the research assistant position you posted.\n\nProfessor: Of course, come in. Yes, I'm looking for a couple of undergraduates to help with my lab this summer. Have you taken any statistics courses?\n\nStudent: I have. I finished Introduction to Statistics last fall, and I'm currently taking a data analysis course where we use programming to work with datasets.\n\nProfessor: That's great. A lot of the work involves cleaning and analyzing survey data, so those skills would be very useful. What year are you?\n\nStudent: I'm a junior, majoring in sociology.\n\nProfessor: Perfect. This project is actually a sociology study, so your background fits well. The position is about fifteen hours a week over the summer. Would that work with your schedule?\n\nStudent: Yes, I'm staying on campus this summer, and I don't have any other commitments besides one online course.\n\nProfessor: Wonderful. Now, I should mention, the position does pay, but it's a modest stipend, not a large salary. A lot of students take it mainly for the experience and for a chance to be listed as a contributor on a paper.\n\nStudent: Honestly, the experience is what I care about most. I'm hoping to apply to graduate school, and research experience would really strengthen my application.\n\nProfessor: That's exactly the right attitude. Why don't you send me your resume by Friday, and we'll set up a proper interview next week.",
+  "questions": [
+   {
+    "q": "Why does the student go to see Professor Reyes?",
+    "options": [
+     "To ask about a grade on an exam",
+     "To ask about a research assistant position",
+     "To request an extension on an assignment",
+     "To change her major to sociology"
+    ],
+    "answer": 1,
+    "explanation": "The student says she wants to ask about the research assistant position the professor posted."
+   },
+   {
+    "q": "What relevant experience does the student mention?",
+    "options": [
+     "She has worked in a laboratory before.",
+     "She has taken statistics and is taking a data analysis course.",
+     "She has published a paper already.",
+     "She has taught a statistics class."
+    ],
+    "answer": 1,
+    "explanation": "The student mentions completing Introduction to Statistics and currently taking a data analysis course using programming, which are relevant skills."
+   },
+   {
+    "q": "What does the professor point out about the pay for the position?",
+    "options": [
+     "It is a large salary.",
+     "There is no pay at all.",
+     "It is a modest stipend, not a large salary.",
+     "The pay depends on the number of papers published."
+    ],
+    "answer": 2,
+    "explanation": "The professor mentions that the position pays a modest stipend, not a large salary, and many students take it for the experience."
+   },
+   {
+    "q": "Why is the student mainly interested in the position?",
+    "options": [
+     "For the large salary it offers",
+     "For research experience to strengthen a graduate school application",
+     "Because it requires very few hours",
+     "Because it is close to her dorm"
+    ],
+    "answer": 1,
+    "explanation": "The student says she cares most about the experience because she hopes to apply to graduate school and research would strengthen her application."
+   }
+  ]
+ },
+ {
+  "id": "listen-10",
+  "kind": "conversation",
+  "title": "Conversation: Returning a Library Book Late",
+  "transcript": "Student: Hi, I need to return these books, and I think a couple of them might be overdue. I'm really sorry.\n\nLibrarian: No problem, let's take a look. Can I have your student ID card? Okay, scanning them now. Yes, two of these are about five days late.\n\nStudent: Oh no. Is there a big fine? I've been so busy with midterms that I completely lost track of the dates.\n\nLibrarian: Don't worry too much. For regular books, the fine is fairly small, twenty-five cents per day per book. So for two books over five days, that comes to two dollars and fifty cents.\n\nStudent: Oh, that's not as bad as I feared. Can I pay that now?\n\nLibrarian: You can, or it can be added to your student account and paid later. Whichever you prefer. But I should mention something for next time. Did you know you can renew most books online?\n\nStudent: Really? I didn't know that.\n\nLibrarian: Yes. As long as no one else has requested the book, you can log into your library account and extend the due date for another three weeks. It only takes a few seconds, and it saves you from late fines.\n\nStudent: That's really helpful. I'll definitely do that next time. I'll just pay the two-fifty now to be safe.\n\nLibrarian: Sounds good. Here's your receipt, and you're all set. Good luck with the rest of your midterms.",
+  "questions": [
+   {
+    "q": "Why does the student come to the library desk?",
+    "options": [
+     "To borrow several new books",
+     "To return books, some of which are overdue",
+     "To apply for a new library card",
+     "To complain about a fine"
+    ],
+    "answer": 1,
+    "explanation": "The student says she needs to return books and thinks a couple of them might be overdue."
+   },
+   {
+    "q": "How much is the total fine the student owes?",
+    "options": [
+     "Twenty-five cents",
+     "Two dollars and fifty cents",
+     "Five dollars",
+     "There is no fine."
+    ],
+    "answer": 1,
+    "explanation": "The librarian calculates twenty-five cents per day per book for two books over five days, totaling two dollars and fifty cents."
+   },
+   {
+    "q": "What helpful tip does the librarian give the student?",
+    "options": [
+     "She can renew most books online to avoid late fines.",
+     "She should return books a week early.",
+     "She can keep books as long as she wants.",
+     "She should stop borrowing during midterms."
+    ],
+    "answer": 0,
+    "explanation": "The librarian explains that most books can be renewed online for another three weeks, which saves the student from late fines."
+   },
+   {
+    "q": "What condition must be met to renew a book online?",
+    "options": [
+     "The book must be less than a week overdue.",
+     "No one else has requested the book.",
+     "The student must pay a renewal fee.",
+     "The book must be a reference book."
+    ],
+    "answer": 1,
+    "explanation": "The librarian says that as long as no one else has requested the book, the student can renew it online."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_01",
+  "kind": "conversation",
+  "title": "Student & advisor: schedule conflict",
+  "transcript": "Student: Hi, Professor Reyes, you're my academic advisor, right? I have kind of a scheduling emergency.\nAdvisor: I am. Come in, sit down. What's going on?\nStudent: I'm a junior in biology, and I just found out that Genetics and Organic Chemistry Two are both offered Tuesday and Thursday at ten this fall. They're both required for the major, and I need them both to graduate on time.\nAdvisor: Ah, the classic collision. Let me pull up the schedule. Okay, yes, I see it, both at ten. Well, the good news is that Genetics also runs a second section, Monday, Wednesday, and Friday at nine.\nStudent: Oh, really? I didn't see that when I searched.\nAdvisor: It only opened last week. It's smaller, capped at thirty, but there are still seats. If you take that section, you clear the conflict entirely.\nStudent: That would be perfect. But wait, does the nine a.m. section have the same professor?\nAdvisor: A different instructor, Dr. Osei. She's excellent, honestly, and she coordinates the lab component more tightly with the lectures. I'd recommend her either way.\nStudent: Okay, I trust you. How do I switch? The system says Genetics is closed.\nAdvisor: That's the ten o'clock section you're seeing. I'll send you an override code for the nine a.m. one right now. Enter it under add course before Friday, or the seat could go.\nStudent: Got it. I'll do it the second I get back to my dorm. Thank you so much.",
+  "questions": [
+   {
+    "q": "Why does the student go to see her advisor?",
+    "options": [
+     "Two courses she needs are scheduled at the same time.",
+     "She wants to withdraw from the biology major.",
+     "She failed Organic Chemistry and must retake it.",
+     "She needs a recommendation letter for graduate school."
+    ],
+    "answer": 0,
+    "explanation": "The student explains that Genetics and Organic Chemistry Two, both required, meet at the same hour, creating a conflict she needs to resolve."
+   },
+   {
+    "q": "What does the advisor say about the second section of Genetics?",
+    "options": [
+     "It meets Tuesday and Thursday at ten.",
+     "It is taught by the same professor as the first section.",
+     "It opened only last week and has limited seats.",
+     "It has already reached its enrollment cap."
+    ],
+    "answer": 2,
+    "explanation": "The advisor notes the nine a.m. section opened the previous week, is capped at thirty, but still has open seats."
+   },
+   {
+    "q": "Why does the advisor mention that Dr. Osei coordinates the lab with the lectures?",
+    "options": [
+     "To warn the student that the course is unusually hard.",
+     "To recommend the instructor as a good choice.",
+     "To suggest the student skip the lab.",
+     "To explain that the section may be canceled."
+    ],
+    "answer": 1,
+    "explanation": "The remark is offered as praise, supporting his recommendation of Dr. Osei's section."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Wait until the fall semester to register.",
+     "Ask a different advisor for a second opinion.",
+     "Enter the override code to add the nine a.m. section.",
+     "Drop Organic Chemistry Two from her plan."
+    ],
+    "answer": 2,
+    "explanation": "She says she will use the override code the moment she gets back to her dorm."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_02",
+  "kind": "conversation",
+  "title": "Student & professor: paper extension request",
+  "transcript": "Student: Professor Nwosu, do you have a minute? It's about the research paper due Friday.\nProfessor: Of course. You're in my American History seminar, Daniel, right?\nStudent: Yes. I wanted to ask, in person, whether I could have a few extra days. I've been dealing with a bad case of the flu since last weekend, and I basically lost a week.\nProfessor: I'm sorry to hear that. Are you feeling better now?\nStudent: Getting there. But I'm behind on the archival sources, and I don't want to hand in something rushed and half-finished.\nProfessor: I appreciate that you care about the quality. Here's my policy: I grant extensions for documented illness. Do you have a note from the health center?\nStudent: I saw a doctor there Monday. I can bring the note tomorrow morning.\nProfessor: That works. With documentation, I can give you until the following Wednesday, five extra days. That shouldn't collide with anything else on the syllabus.\nStudent: That's more than I hoped for. Thank you.\nProfessor: Don't thank me yet, use the time well. And one suggestion: the primary sources you need are on microfilm in the basement of the library. It's slow going, so start there first, not with the secondary reading.\nStudent: Microfilm, okay, I've never used it.\nProfessor: The reference desk will show you. Ask for Ms. Alvarez; she practically runs that collection.\nStudent: I'll go this afternoon. And I'll drop the doctor's note by your office first thing tomorrow.",
+  "questions": [
+   {
+    "q": "Why does the student come to the professor's office?",
+    "options": [
+     "To ask for an extension on a research paper.",
+     "To dispute the grade on his last paper.",
+     "To withdraw from the American History seminar.",
+     "To request a different paper topic."
+    ],
+    "answer": 0,
+    "explanation": "He asks in person for a few extra days on the paper due Friday because illness set him back a week."
+   },
+   {
+    "q": "What must the student do to receive the extension?",
+    "options": [
+     "Rewrite his thesis statement.",
+     "Provide a note from the health center.",
+     "Present his archival sources first.",
+     "Attend an extra class session."
+    ],
+    "answer": 1,
+    "explanation": "The professor grants extensions only for documented illness and asks for the health-center note."
+   },
+   {
+    "q": "Why does the professor mention Ms. Alvarez?",
+    "options": [
+     "To warn that the library is closing.",
+     "To recommend a co-author for the paper.",
+     "To suggest someone who can help him use the microfilm.",
+     "To explain who will grade the assignment."
+    ],
+    "answer": 2,
+    "explanation": "Ms. Alvarez runs the microfilm collection, so she can help the student, who has never used microfilm."
+   },
+   {
+    "q": "What will the student most likely do this afternoon?",
+    "options": [
+     "Begin reading the secondary sources.",
+     "Go to the library to start on the microfilm.",
+     "Email the professor his rough draft.",
+     "Reschedule his doctor's appointment."
+    ],
+    "answer": 1,
+    "explanation": "He says he'll go to the library that afternoon, following the advice to start with the microfilm."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_03",
+  "kind": "conversation",
+  "title": "Student & librarian: recalled book",
+  "transcript": "Student: Excuse me, I'm trying to check out this book for my thesis, but the catalog says it's recalled. What does that mean?\nLibrarian: It means the copy you found is currently checked out to someone else, and the system has requested it back for you. But that can take up to two weeks.\nStudent: Two weeks? My literature review is due in ten days. That's cutting it really close.\nLibrarian: I understand. Let's look at faster options. First, is this the only edition you need, or would another printing work?\nStudent: The content's the same across editions, I think. It's a 1998 study on coastal erosion.\nLibrarian: Good. In that case, I can request it through interlibrary loan. We partner with about forty libraries in the region, and a copy usually arrives in three to five business days.\nStudent: Oh, that's much better. Is there a fee?\nLibrarian: For currently enrolled students, no charge, as long as you return it on time. Late returns on loaned items do carry a fine, though, because the lending library sets the terms.\nStudent: Understood. I'll guard it with my life. How do I put in the request?\nLibrarian: I'll start it for you at this desk. I just need your student ID and an email where we can notify you when it arrives.\nStudent: Here's my ID. And you can use my university email.\nLibrarian: Perfect. You'll get a message the moment it's ready for pickup.",
+  "questions": [
+   {
+    "q": "What is the student's main problem?",
+    "options": [
+     "She has been charged a fine for a late book.",
+     "The book she needs is recalled and may take two weeks.",
+     "She cannot locate the library's online catalog.",
+     "She lost a book she borrowed for her thesis."
+    ],
+    "answer": 1,
+    "explanation": "The recalled book could take up to two weeks, but her literature review is due in ten days."
+   },
+   {
+    "q": "What does the librarian say about interlibrary loan for enrolled students?",
+    "options": [
+     "It always costs a small processing fee.",
+     "It typically takes up to two weeks.",
+     "It is free unless the item is returned late.",
+     "It is available only for the newest editions."
+    ],
+    "answer": 2,
+    "explanation": "There is no charge for enrolled students, but late returns on loaned items carry a fine set by the lending library."
+   },
+   {
+    "q": "What does the student mean when she says, 'I'll guard it with my life'?",
+    "options": [
+     "She plans to keep the book permanently.",
+     "She is worried the book is dangerous.",
+     "She is annoyed about the fine policy.",
+     "She is joking to promise she will return it on time."
+    ],
+    "answer": 3,
+    "explanation": "It's a lighthearted way of assuring the librarian she'll return the loaned book promptly to avoid a fine."
+   },
+   {
+    "q": "What will the librarian do next?",
+    "options": [
+     "Recall the book from its current borrower.",
+     "Start the interlibrary loan request at the desk.",
+     "Charge the student a late fee.",
+     "Send the student to a different branch."
+    ],
+    "answer": 1,
+    "explanation": "The librarian offers to begin the interlibrary loan right there, needing only the student's ID and email."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_04",
+  "kind": "conversation",
+  "title": "Student & registrar: registration hold",
+  "transcript": "Student: Hi, I'm trying to register for spring classes, but the portal keeps blocking me. It says there's a hold on my account. I have no idea what that means.\nRegistrar: Let's find out. Can I have your student ID number? Okay, pulling up your record now. Yes, I see two holds, actually.\nStudent: Two? Great. What are they?\nRegistrar: The first is an advising hold. Every second-year student has to meet with their academic advisor before registering. It's routine; once you've had that meeting, your advisor clears it electronically.\nStudent: Oh. I did email my advisor, but we haven't met yet. And the second one?\nRegistrar: The second is a small balance on your account, forty-two dollars from a library fine last term. The system won't let you register until it's paid.\nStudent: Forty-two dollars? I thought I'd taken care of that.\nRegistrar: It may have been a partial payment. You can settle it online through the student account portal, or at the bursar's window down the hall. Once it posts, that hold drops within an hour.\nStudent: Okay. So I need the advising meeting and the payment, and then I can register?\nRegistrar: Exactly. I'd book the advising appointment today, slots fill up fast in November. The payment you can do in five minutes.\nStudent: Right. I'll pay the balance now while I'm here, then email my advisor to set up a time.\nRegistrar: Sounds like a plan. Come back if the holds don't clear.",
+  "questions": [
+   {
+    "q": "Why is the student unable to register for classes?",
+    "options": [
+     "The registration deadline has already passed.",
+     "There are two holds on his account.",
+     "The classes he wants are full.",
+     "He has not yet declared a major."
+    ],
+    "answer": 1,
+    "explanation": "The registrar finds two holds, an advising hold and an unpaid balance, both blocking registration."
+   },
+   {
+    "q": "What is required to remove the advising hold?",
+    "options": [
+     "Paying the forty-two dollar library fine.",
+     "Filing a form with the registrar's office.",
+     "Meeting with his academic advisor.",
+     "Retaking a placement test."
+    ],
+    "answer": 2,
+    "explanation": "Second-year students must meet their advisor, who then clears the hold electronically."
+   },
+   {
+    "q": "Why does the registrar say, 'I'd book the advising appointment today'?",
+    "options": [
+     "To warn that appointment slots fill up quickly.",
+     "To suggest the student switch advisors.",
+     "To indicate the office is about to close.",
+     "To explain that advising is optional."
+    ],
+    "answer": 0,
+    "explanation": "She urges quick action because November advising slots fill fast, unlike the quick payment."
+   },
+   {
+    "q": "What does the student say he will do first?",
+    "options": [
+     "Email the registrar again for help.",
+     "Wait for the holds to clear on their own.",
+     "Pay the outstanding balance while he is there.",
+     "Register for classes right away."
+    ],
+    "answer": 2,
+    "explanation": "He plans to pay the balance immediately, then email his advisor to schedule the meeting."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_05",
+  "kind": "conversation",
+  "title": "Student & housing staff: broken heater",
+  "transcript": "Student: Hi, I need to report a problem in my dorm room. The heater's been broken for three days, and it's freezing.\nHousing Staff: Three days? That should've been fixed already. Which building and room?\nStudent: Whitman Hall, room 214.\nHousing Staff: Let me check the maintenance log. Hmm. I see a request from Tuesday, but it's marked unable to access, no answer. Were you out?\nStudent: Oh. I had midterms all week, so I was at the library from morning to night. I never heard anyone knock.\nHousing Staff: That explains it. Our technicians knock, and if no one answers, they move on, for safety and privacy reasons. But you can authorize entry when you're not there.\nStudent: I didn't know that was an option. Can I do it now?\nHousing Staff: Absolutely. I'll add a note granting maintenance permission to enter room 214 even if you're out. I'll also flag it as urgent, since a heating failure in winter counts as a priority repair.\nStudent: Thank you. How soon might someone come?\nHousing Staff: With the urgent flag, usually within twenty-four hours. If it's not resolved by tomorrow evening, call this desk directly and ask for me, I'm Priya.\nStudent: Got it. In the meantime, is there anything I can do? It's genuinely cold.\nHousing Staff: I can lend you a space heater from our supply closet tonight. Just return it once the repair's done. Sign here and it's yours.\nStudent: Lifesaver. I'll take it right now.",
+  "questions": [
+   {
+    "q": "Why does the student come to the housing office?",
+    "options": [
+     "To request a permanent room change.",
+     "To report that the heater in her room is broken.",
+     "To complain about a noisy roommate.",
+     "To return a borrowed space heater."
+    ],
+    "answer": 1,
+    "explanation": "She reports that her dorm heater has been broken for three days and the room is freezing."
+   },
+   {
+    "q": "Why was the earlier repair request not completed?",
+    "options": [
+     "The wrong room number had been listed.",
+     "No technicians were available that week.",
+     "No one answered when the technician came by.",
+     "The heater was found to be beyond repair."
+    ],
+    "answer": 2,
+    "explanation": "The log shows the visit was marked 'unable to access, no answer' because she was at the library."
+   },
+   {
+    "q": "Why does the staff member tell the student her name is Priya?",
+    "options": [
+     "So the student can ask for her if the repair isn't done in time.",
+     "Because she wants the student to file a formal complaint.",
+     "Because she is transferring to another department.",
+     "So the student can thank her supervisor later."
+    ],
+    "answer": 0,
+    "explanation": "She gives her name so the student can follow up with her directly if the repair isn't done by the next evening."
+   },
+   {
+    "q": "What will the student most likely do right away?",
+    "options": [
+     "Stay in the library until her room warms up.",
+     "Call maintenance to reschedule the visit.",
+     "Move into a different dormitory.",
+     "Take the loaner space heater to her room."
+    ],
+    "answer": 3,
+    "explanation": "She accepts the offered space heater and says she'll take it right now."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_06",
+  "kind": "conversation",
+  "title": "Student & IT help desk: login lockout",
+  "transcript": "Student: Hi, I'm hoping you can help. I can't log into my student email or the campus wifi anymore. Both just started rejecting my password this morning.\nIT Staff: Both at once usually points to one thing: your university password expired. We require a reset every one hundred eighty days. When did you last change it?\nStudent: Uh, honestly, never? I set it up freshman year, and I'm a junior now.\nIT Staff: That's your answer, then. The system locks you out until you set a new one. Let's do it now. Can I see your student ID to verify it's you?\nStudent: Sure, here.\nIT Staff: Thanks. Okay, you're verified. I'm sending a reset link to your backup email, the personal one on file. Do you still have access to it?\nStudent: The one from high school? Yes, I can open it on my phone.\nIT Staff: Great. Click the link, choose a new password, at least twelve characters, and don't reuse the old one. The system remembers your last five.\nStudent: Done. It says password updated.\nIT Staff: Perfect. Now, one catch: your phone and laptop still have the old password saved for wifi. You'll need to forget the campus network on each device and reconnect with the new one, or they'll keep failing and could lock the account again.\nStudent: Ah, good to know. I'll update my laptop the second I'm back.\nIT Staff: And set a calendar reminder for six months out, so this doesn't surprise you next time.",
+  "questions": [
+   {
+    "q": "What problem brings the student to the IT desk?",
+    "options": [
+     "He cannot access his email or the campus wifi.",
+     "His laptop will not turn on.",
+     "He has lost his student ID card.",
+     "He wants to create a new email account."
+    ],
+    "answer": 0,
+    "explanation": "Both his student email and the campus wifi suddenly began rejecting his password."
+   },
+   {
+    "q": "According to the IT staff member, why was the student locked out?",
+    "options": [
+     "He entered the wrong student ID number.",
+     "His account had been hacked.",
+     "His university password had expired.",
+     "The campus wifi network was down."
+    ],
+    "answer": 2,
+    "explanation": "Passwords must be reset every 180 days; he never changed his since freshman year, so it expired."
+   },
+   {
+    "q": "Why does the staff member tell the student to 'forget' the campus network on his devices?",
+    "options": [
+     "So the saved old password won't lock the account again.",
+     "Because the network's name is being changed.",
+     "To free up storage space on his devices.",
+     "Because his devices are no longer supported."
+    ],
+    "answer": 0,
+    "explanation": "Devices still storing the old password would keep failing and could re-lock the account, so they must be updated."
+   },
+   {
+    "q": "What will the student most likely do when he returns?",
+    "options": [
+     "Create a second backup email address.",
+     "Reconnect his laptop to the wifi with the new password.",
+     "Buy a new laptop computer.",
+     "Change his password a second time."
+    ],
+    "answer": 1,
+    "explanation": "He says he'll update his laptop as soon as he's back, meaning reconnect it with the new password."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_07",
+  "kind": "conversation",
+  "title": "Student & financial aid: delayed disbursement",
+  "transcript": "Student: Hi, I'm a bit worried. My financial aid was supposed to be disbursed last week, but nothing's shown up in my account, and now my tuition's marked overdue.\nAid Officer: Let's sort it out. Your name and student ID? Okay. I see your aid package here: a grant, a subsidized loan, and a work-study award. The grant and loan are ready, but they're on hold.\nStudent: On hold? Why?\nAid Officer: It looks like you haven't completed entrance counseling for the loan. Federal rules require it before any loan funds release. Once that hold is on, it freezes the whole disbursement, grant included.\nStudent: Oh no. I got an email about counseling but thought it was optional.\nAid Officer: Understandable mistake, but it's mandatory the first time you borrow. The good news: it's an online module, takes about thirty minutes, and the hold lifts automatically the next business day after you finish.\nStudent: So if I do it today, the money could post tomorrow?\nAid Officer: Most likely, yes. And since the delay was on the counseling side, I'll put a note on your account so the overdue tuition flag doesn't trigger a late fee.\nStudent: That's a huge relief. And the work-study part, how does that work?\nAid Officer: That's separate. Work-study is money you earn hourly at a campus job; it's paid to you in a paycheck, not applied to tuition. You'll need to find a position and log hours.\nStudent: Got it. I'll finish the counseling module the moment I leave here.",
+  "questions": [
+   {
+    "q": "Why does the student visit the financial aid office?",
+    "options": [
+     "To apply for a new scholarship.",
+     "To look for a work-study job.",
+     "To appeal a rejected loan application.",
+     "Her financial aid has not been disbursed."
+    ],
+    "answer": 3,
+    "explanation": "Her aid never posted and her tuition is now marked overdue, so she asks the office to investigate."
+   },
+   {
+    "q": "Why is the student's disbursement on hold?",
+    "options": [
+     "She missed the aid application deadline.",
+     "Her grades were too low to qualify.",
+     "She has not completed loan entrance counseling.",
+     "Her tuition had already been paid in full."
+    ],
+    "answer": 2,
+    "explanation": "Federal rules require entrance counseling before loan funds release, and that hold froze the whole disbursement."
+   },
+   {
+    "q": "What does the officer imply by saying work-study is 'paid to you in a paycheck, not applied to tuition'?",
+    "options": [
+     "Work-study is the largest part of her aid.",
+     "Work-study money will not reduce her tuition bill directly.",
+     "Work-study must be repaid after graduation.",
+     "Work-study is currently on hold as well."
+    ],
+    "answer": 1,
+    "explanation": "Unlike the grant and loan, work-study is earned wages paid to the student, so it doesn't lower the tuition balance."
+   },
+   {
+    "q": "What will the student most likely do next?",
+    "options": [
+     "Complete the online entrance counseling module.",
+     "Appeal the overdue tuition charge.",
+     "Look for a campus job immediately.",
+     "Take out an additional loan."
+    ],
+    "answer": 0,
+    "explanation": "She says she'll finish the counseling module the moment she leaves, which will release the funds."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_08",
+  "kind": "conversation",
+  "title": "Student & professor: independent research project",
+  "transcript": "Student: Professor Larkin, thanks for seeing me during office hours. I wanted to ask about doing an independent research project with you next semester.\nProfessor: I'm glad you're interested. You did strong work in my ecology course. What area were you thinking?\nStudent: I've become fascinated by how urban green spaces affect local bird populations. I'd love to design a study around that.\nProfessor: That's a rich topic, and timely. But it's broad. For a one-semester project, you'd need to narrow it. Are you more interested in species diversity, or in how birds behave near human activity?\nStudent: Hmm. Probably diversity. Whether bigger parks support more species than scattered small ones.\nProfessor: Now that's a focused, testable question. You could survey, say, six sites of varying sizes and compare. It's very doable in a semester.\nStudent: I love that. What would I need to get started?\nProfessor: Two things. First, submit an independent-study proposal form to the department, one page, your question and rough methods. I'll sign off as your supervisor. Second, and this is important, any study involving field observation has to be logged with the biology office before you collect data.\nStudent: Okay. Should I write the proposal before we meet again?\nProfessor: Yes. Draft it this week, email it to me, and we'll refine it together. Don't aim for perfect, aim for a clear question and a realistic plan.\nStudent: Understood. I'll have a draft to you by Friday.",
+  "questions": [
+   {
+    "q": "Why does the student come to the professor's office hours?",
+    "options": [
+     "To ask about doing an independent research project.",
+     "To discuss her grade in the ecology course.",
+     "To request a letter of recommendation.",
+     "To withdraw from the professor's course."
+    ],
+    "answer": 0,
+    "explanation": "She opens by saying she wants to do an independent research project with him next semester."
+   },
+   {
+    "q": "How does the professor suggest the student narrow her topic?",
+    "options": [
+     "By studying a single bird species in depth.",
+     "By comparing species diversity across parks of different sizes.",
+     "By focusing on how birds behave near people.",
+     "By observing birds in a laboratory setting."
+    ],
+    "answer": 1,
+    "explanation": "The student chooses the diversity angle, whether larger parks support more species than small scattered ones."
+   },
+   {
+    "q": "Why does the professor say, 'Don't aim for perfect, aim for a clear question and a realistic plan'?",
+    "options": [
+     "To lower his overall expectations of the student.",
+     "To reassure her that a rough first draft is acceptable.",
+     "To suggest that she change her topic entirely.",
+     "To warn her that the project will probably fail."
+    ],
+    "answer": 1,
+    "explanation": "He is encouraging her to draft freely, signaling the proposal need not be polished, just clear and realistic."
+   },
+   {
+    "q": "What will the student most likely do this week?",
+    "options": [
+     "Begin collecting field data at the sites.",
+     "Submit the final version of her thesis.",
+     "Draft the independent-study proposal.",
+     "Choose a different faculty supervisor."
+    ],
+    "answer": 2,
+    "explanation": "She agrees to draft the proposal and email it to him by Friday."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_09",
+  "kind": "conversation",
+  "title": "Student & career services: internship credit",
+  "transcript": "Student: Hi, I landed a summer internship at a local engineering firm, and I want to earn academic credit for it. A friend said career services handles that?\nCareer Advisor: We help you start the process, yes, though the credit itself is approved by your department. Congratulations on the offer, by the way. What's the role?\nStudent: Assistant to the design team, mostly CAD work and testing prototypes.\nCareer Advisor: That sounds like a great fit for credit. Here's how it works. First, the internship has to be substantive and supervised, and yours clearly is. Second, you need a faculty sponsor in your major who agrees to oversee your learning goals and grade a final report.\nStudent: So I need a professor to sign on. Any professor?\nCareer Advisor: Ideally one whose expertise matches the work, mechanical or design engineering, in your case. Dr. Fowler often sponsors these. Third, you register for the internship course, which is how the credit actually appears on your transcript.\nStudent: Is there a minimum number of hours?\nCareer Advisor: Yes. For three credits, you'll need at least a hundred forty hours over the summer, plus the report. Your firm's full-time schedule covers that easily.\nStudent: Great. What should I do first?\nCareer Advisor: Talk to a potential faculty sponsor before the term ends, that's the piece that takes the longest. Once someone agrees, come back and we'll finalize the paperwork together.\nStudent: Perfect. I'll email Dr. Fowler today to ask if he'll sponsor me.",
+  "questions": [
+   {
+    "q": "What does the student want to do?",
+    "options": [
+     "Find a summer internship to apply for.",
+     "Earn academic credit for an internship he already has.",
+     "Switch his major to engineering.",
+     "Get help writing his resume."
+    ],
+    "answer": 1,
+    "explanation": "He already has the internship offer and wants to receive academic credit for it."
+   },
+   {
+    "q": "What is required for the student to earn three credits?",
+    "options": [
+     "At least one hundred forty hours plus a final report.",
+     "A paid position at the firm.",
+     "Approval from career services alone.",
+     "A minimum grade-point average of 3.0."
+    ],
+    "answer": 0,
+    "explanation": "The advisor states three credits require at least 140 hours over the summer plus a final report."
+   },
+   {
+    "q": "Why does the advisor mention Dr. Fowler?",
+    "options": [
+     "Because Dr. Fowler runs the engineering firm.",
+     "To suggest a faculty member who often sponsors internships.",
+     "To warn that faculty rarely agree to sponsor students.",
+     "Because Dr. Fowler teaches the required report course."
+    ],
+    "answer": 1,
+    "explanation": "Dr. Fowler is named as an example of a faculty sponsor whose expertise fits the engineering work."
+   },
+   {
+    "q": "What will the student most likely do first?",
+    "options": [
+     "Register for the internship course right away.",
+     "Fill out the credit paperwork with career services.",
+     "Email a potential faculty sponsor.",
+     "Start his internship earlier than planned."
+    ],
+    "answer": 2,
+    "explanation": "He says he'll email Dr. Fowler that day, matching the advice to secure a sponsor first."
+   }
+  ]
+ },
+ {
+  "id": "ls_cv_10",
+  "kind": "conversation",
+  "title": "Student & writing tutor: scholarship essay",
+  "transcript": "Student: Hi, I booked a thirty-minute session. I've got a scholarship application essay due Monday, and I'm not happy with it.\nTutor: Welcome. Let's take a look. What specifically feels off to you?\nStudent: I don't know, it just reads flat. Like I'm listing accomplishments instead of telling a story.\nTutor: That's a really useful instinct, actually. Let me read the opening aloud. Okay. So here in the first paragraph, you mention volunteering at a clinic, then jump straight to your GPA. The reader never learns why the clinic mattered to you.\nStudent: Right. That's exactly the gap.\nTutor: For a scholarship essay, the why is everything. Committees read hundreds of these; the accomplishments blur together, but a specific moment sticks. Was there one patient, one shift, that changed how you saw the work?\nStudent: Actually, yes. There was an elderly man I helped every week. Talking with him is why I switched to nursing.\nTutor: That's your essay. Open with him. Let the accomplishments support the story instead of leading it.\nStudent: That reframes the whole thing. Should I rewrite it before Monday?\nTutor: I'd rewrite just the opening two paragraphs first, then book a follow-up. We can't fix everything in thirty minutes, but a strong opening changes the rest.\nStudent: That makes sense. Can I book another session for Saturday?\nTutor: Absolutely, grab a slot at the front desk on your way out. Bring the revised opening.",
+  "questions": [
+   {
+    "q": "Why did the student come to the writing center?",
+    "options": [
+     "To get feedback on a scholarship application essay.",
+     "To apply for a scholarship in person.",
+     "To find a tutor for a nursing class.",
+     "To learn how to cite her sources."
+    ],
+    "answer": 0,
+    "explanation": "She booked the session because she's unhappy with a scholarship essay due Monday."
+   },
+   {
+    "q": "What problem does the tutor identify in the opening paragraph?",
+    "options": [
+     "It contains several grammatical errors.",
+     "It is far too long for the application.",
+     "It lists accomplishments without explaining their meaning.",
+     "It fails to mention the student's GPA."
+    ],
+    "answer": 2,
+    "explanation": "The tutor notes the essay jumps from volunteering to GPA without saying why the clinic mattered."
+   },
+   {
+    "q": "What does the tutor mean by, 'That's your essay. Open with him'?",
+    "options": [
+     "The student should begin with the story of the elderly man.",
+     "The student should write the essay about the tutor.",
+     "The essay is already essentially finished.",
+     "The student should delete the clinic entirely."
+    ],
+    "answer": 0,
+    "explanation": "The tutor urges her to lead with the meaningful personal moment and let accomplishments support it."
+   },
+   {
+    "q": "What will the student most likely do before her next session?",
+    "options": [
+     "Submit the essay exactly as it is.",
+     "Rewrite the opening two paragraphs.",
+     "Choose a different scholarship to apply for.",
+     "Rewrite the entire essay from scratch."
+    ],
+    "answer": 1,
+    "explanation": "The tutor advises rewriting just the opening two paragraphs and bringing them to the follow-up."
+   }
+  ]
+ }
+]

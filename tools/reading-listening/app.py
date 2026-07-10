@@ -25,18 +25,26 @@ HERE = Path(__file__).parent
 REPO = HERE.parents[1]
 DATA_DIR = REPO / "data"
 
-SECTIONS = {
-    "reading": Path(os.environ.get("READING_FILE") or REPO / "toefl" / "reading" / "passages.json"),
-    "listening": Path(os.environ.get("LISTENING_FILE") or REPO / "toefl" / "listening" / "talks.json"),
+# One directory per section; every *.json inside is a task-type bank file (academic.json,
+# daily_life.json, complete_words.json / academic_talk.json, conversation.json, …). Drop a new
+# file in and it is picked up on restart.
+SECTION_DIRS = {
+    "reading": Path(os.environ.get("READING_DIR") or REPO / "toefl" / "reading"),
+    "listening": Path(os.environ.get("LISTENING_DIR") or REPO / "toefl" / "listening"),
 }
 
 
 def _load(section: str) -> list[dict]:
-    p = SECTIONS[section]
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+    items: list[dict] = []
+    for f in sorted(SECTION_DIRS[section].glob("*.json")):
+        try:
+            items += json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, ValueError):
+            continue
+    return items
 
 
-ITEMS: dict[str, list[dict]] = {s: _load(s) for s in SECTIONS}
+ITEMS: dict[str, list[dict]] = {s: _load(s) for s in SECTION_DIRS}
 BY_ID: dict[str, dict[str, dict]] = {s: {it["id"]: it for it in items} for s, items in ITEMS.items()}
 
 progress = ProgressStore(DATA_DIR / "progress.jsonl")
@@ -62,7 +70,7 @@ def _public_item(section: str, it: dict) -> dict:
 
 @app.get("/api/status")
 def status():
-    return {s: len(ITEMS[s]) for s in SECTIONS}
+    return {s: len(ITEMS[s]) for s in SECTION_DIRS}
 
 
 @app.get("/api/item")

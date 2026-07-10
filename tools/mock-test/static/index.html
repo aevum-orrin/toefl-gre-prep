@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOEFL Mock Test</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#6a7078; --line:#e3e3e6; --accent:#385e9d;
+          --ok:#2f8f6b; --bad:#c0392b; --chip:#eef1f6; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#6c9be0; --chip:#262a31; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:14px 22px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  h1 { font-size:19px; margin:0; }
+  #sub { font-size:12px; color:var(--mut); }
+  main { width:92%; max-width:1100px; margin:0 auto; padding:22px 20px 90px; }
+  .hidden { display:none; }
+  button { font:inherit; border:0; border-radius:10px; padding:12px 18px; font-weight:700; cursor:pointer; background:var(--accent); color:#fff; }
+  button.ghost { background:var(--line); color:var(--ink); }
+  .note { font-size:13px; color:var(--mut); background:var(--chip); border-radius:10px; padding:12px 14px; margin:14px 0; }
+
+  .pick { display:flex; gap:16px; flex-wrap:wrap; margin-top:18px; }
+  .pick .opt { flex:1; min-width:240px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; cursor:pointer; }
+  .pick .opt:hover { border-color:var(--accent); }
+  .pick .opt h2 { margin:0 0 6px; font-size:22px; }
+  .pick .opt p { margin:0; color:var(--mut); font-size:14px; }
+
+  .modbar { display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:14px; padding-bottom:10px; border-bottom:1px solid var(--line); }
+  .modbar .step { font-weight:700; font-size:18px; }
+  .modbar .pill { font-size:12px; padding:3px 10px; border-radius:10px; background:var(--chip); color:var(--mut); }
+
+  .item { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-bottom:16px; }
+  .kind { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); }
+  .title { font-weight:700; font-size:17px; margin:2px 0 8px; }
+  .passage { white-space:pre-wrap; margin:8px 0 4px; }
+  .listen { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:6px 0; }
+  .listen .hint { font-size:13px; color:var(--mut); }
+  .q { margin:14px 0; }
+  .q .stem { font-weight:600; margin-bottom:6px; }
+  .opt2 { display:block; padding:9px 12px; border:1px solid var(--line); border-radius:9px; margin:5px 0; cursor:pointer; }
+  .opt2 input { margin-right:9px; }
+  .opt2.correct { border-color:var(--ok); background:color-mix(in srgb, var(--ok) 13%, transparent); }
+  .opt2.wrong { border-color:var(--bad); background:color-mix(in srgb, var(--bad) 13%, transparent); }
+  .expl { font-size:14px; color:var(--mut); margin-top:5px; }
+
+  .scorewrap { text-align:center; padding:26px 0; }
+  .band { font-size:64px; font-weight:800; color:var(--accent); line-height:1; }
+  .bandsub { font-size:16px; color:var(--mut); margin-top:8px; }
+  .breakdown { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin:16px 0; }
+  .breakdown .b { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 18px; }
+  .breakdown .b b { font-size:24px; }
+  details.rev { border:1px solid var(--line); border-radius:10px; margin:8px 0; background:var(--card); }
+  details.rev > summary { cursor:pointer; padding:11px 14px; font-weight:600; display:flex; gap:10px; align-items:center; }
+  details.rev > summary::-webkit-details-marker { display:none; }
+  details.rev > summary::before { content:"▸"; color:var(--mut); }
+  details.rev[open] > summary::before { content:"▾"; }
+  details.rev .body { padding:4px 16px 14px; }
+  .tag-ok { color:var(--ok); font-weight:700; } .tag-bad { color:var(--bad); font-weight:700; }
+
+  .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:160px; }
+  .timer.run { border-color:var(--accent); }
+  .t-display { font-size:32px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:1px; }
+  .t-display.over { color:#c0392b; }
+  .t-row { display:flex; gap:6px; align-items:center; justify-content:center; margin-top:7px; font-size:12px; color:var(--mut); }
+  .t-btn { margin:0; background:var(--line); color:var(--ink); border-radius:8px; padding:6px 10px; font-weight:700; font-size:14px; }
+  .t-min { width:52px; margin:0; padding:4px 6px; text-align:center; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
+</style>
+</head>
+<body>
+<header><h1>📝 TOEFL Mock Test</h1><span id="sub">2026 format · Reading &amp; Listening · timed · auto-scored</span></header>
+<main>
+  <!-- landing -->
+  <section id="landing">
+    <div class="note">A <b>full-length, timed</b> simulation of the 2026 Reading/Listening sections in
+      two adaptive modules (module 2 gets harder or easier based on your module-1 score). Auto-scored
+      with a 1–6 band estimate. This is an honest approximation — ETS doesn't publish exact per-module
+      counts or the raw→band table, so difficulty is fixed at "standard".</div>
+    <div class="pick">
+      <div class="opt" data-sec="reading"><h2>📖 Reading</h2><p>~30 minutes · academic texts, daily-life texts, complete-the-words</p></div>
+      <div class="opt" data-sec="listening"><h2>🎧 Listening</h2><p>~29 minutes · conversations, talks, announcements, choose-a-response</p></div>
+    </div>
+    <div id="counts" class="note"></div>
+  </section>
+
+  <!-- test -->
+  <section id="test" class="hidden">
+    <div class="modbar">
+      <span class="step" id="stepLabel">Module 1</span>
+      <span class="pill" id="variantPill"></span>
+      <span class="pill" id="secPill"></span>
+      <span class="pill" id="progressPill"></span>
+    </div>
+    <div id="items"></div>
+    <button id="submitBtn">Submit module 1 ▸</button>
+  </section>
+
+  <!-- results -->
+  <section id="results" class="hidden">
+    <div class="scorewrap">
+      <div class="band" id="bandBig">–</div>
+      <div class="bandsub" id="bandSub"></div>
+    </div>
+    <div class="breakdown" id="breakdown"></div>
+    <h3>Review</h3>
+    <div id="review"></div>
+    <div style="margin-top:18px"><button id="againBtn">◂ New test</button></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let ST = null;   // {test_id, section, module, items}
+
+async function boot(){
+  try{
+    const st = await (await fetch('/api/status')).json();
+    const fmt = o => Object.entries(o).map(([k,v])=>`${k.replace(/_/g,' ')}: ${v}`).join(' · ');
+    $('#counts').innerHTML = `Bank available — <b>Reading</b> ${fmt(st.reading||{})}; <b>Listening</b> ${fmt(st.listening||{})}.`;
+  }catch(e){ $('#counts').textContent=''; }
+}
+
+document.querySelectorAll('.pick .opt').forEach(el =>
+  el.addEventListener('click', () => startTest(el.dataset.sec)));
+
+async function startTest(section){
+  const d = await (await fetch('/api/mock/start',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({section})})).json();
+  if (d.error){ alert(d.error); return; }
+  ST = { test_id:d.test_id, section, module:1, items:d.items };
+  $('#landing').classList.add('hidden'); $('#results').classList.add('hidden');
+  $('#test').classList.remove('hidden');
+  $('#secPill').textContent = section.toUpperCase();
+  renderModule(1, d.items, '');
+  const mins = Math.round(d.time_limit_sec/60);
+  window.setTimerMinutes(mins); window.startTimer();
+}
+
+function renderModule(mod, items, variant){
+  ST.module = mod; ST.items = items;
+  $('#stepLabel').textContent = `Module ${mod} of 2`;
+  $('#variantPill').textContent = variant ? `module 2: ${variant}` : '';
+  $('#submitBtn').textContent = mod===1 ? 'Submit module 1 ▸' : 'Finish test ▸';
+  let nq=0;
+  $('#items').innerHTML = items.map(it => {
+    const isL = ST.section==='listening';
+    const stim = isL
+      ? `<div class="listen"><button class="play" data-id="${it.id}">🔊 Play</button>
+         <button class="ghost replay" data-id="${it.id}">↻ Replay</button>
+         <span class="hint">Listening — transcript hidden. Play, take notes, answer.</span></div>`
+      : `<div class="passage">${esc(it.passage||'')}</div>`;
+    const qs = it.questions.map((q,qi)=>{
+      const gi = nq++;
+      return `<div class="q"><div class="stem">${qi+1}. ${esc(q.q)}</div>` +
+        q.options.map((o,oi)=>`<label class="opt2"><input type="radio" name="a_${it.id}_${qi}" value="${oi}">${esc(o)}</label>`).join('') +
+        `</div>`;
+    }).join('');
+    return `<div class="item" data-id="${it.id}">
+       <div class="kind">${esc((it.kind||'').replace(/_/g,' '))}</div>
+       <div class="title">${esc(it.title||'')}</div>${stim}${qs}</div>`;
+  }).join('');
+  $('#progressPill').textContent = `${items.length} items · ${nq} questions`;
+  bindAudio();
+  window.scrollTo(0,0);
+}
+
+function bindAudio(){
+  const speak = id => {
+    const it = ST.items.find(x=>x.id===id); if(!it) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(it.transcript||''); u.lang='en-US'; u.rate=1.0;
+    speechSynthesis.speak(u);
+  };
+  document.querySelectorAll('.play,.replay').forEach(b => b.onclick = () => speak(b.dataset.id));
+}
+
+function collect(){
+  const r = {};
+  ST.items.forEach(it => {
+    r[it.id] = it.questions.map((_,qi) => {
+      const sel = document.querySelector(`input[name="a_${it.id}_${qi}"]:checked`);
+      return sel ? +sel.value : -1;
+    });
+  });
+  return r;
+}
+
+let submitting=false;
+async function submitModule(){
+  if (submitting || !ST) return; submitting=true;
+  const responses = collect();
+  const d = await (await fetch('/api/mock/submit',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({test_id:ST.test_id, module:ST.module, responses})})).json();
+  submitting=false;
+  if (d.error){ alert(d.error); return; }
+  if (d.module===2){ renderModule(2, d.items, d.variant); }
+  else if (d.done){ speechSynthesis.cancel(); window.stopTimer(); showResults(d); }
+}
+$('#submitBtn').addEventListener('click', submitModule);
+window.onTimerExpire = () => { if(ST) submitModule(); };   // auto-submit current module at 0:00
+
+function showResults(d){
+  $('#test').classList.add('hidden'); $('#results').classList.remove('hidden');
+  $('#bandBig').textContent = d.band.toFixed(1);
+  $('#bandSub').innerHTML = `${d.section.toUpperCase()} band (1–6) · CEFR <b>${d.cefr}</b> · module 2 was <b>${d.variant}</b>`;
+  $('#breakdown').innerHTML =
+    `<div class="b"><b>${d.correct}/${d.total}</b><div class="kind">correct</div></div>
+     <div class="b"><b>${d.pct}%</b><div class="kind">accuracy</div></div>
+     <div class="b"><b>${d.band.toFixed(1)}</b><div class="kind">estimated band</div></div>`;
+  $('#review').innerHTML = d.review.map((it,ii) => {
+    const nok = it.results.filter(r=>r.correct).length;
+    const body = it.results.map(r => {
+      const opts = r.options.map((o,oi)=>{
+        let cls=''; if(oi===r.answer) cls='correct'; else if(oi===r.chosen&&!r.correct) cls='wrong';
+        return `<label class="opt2 ${cls}">${esc(o)}</label>`;
+      }).join('');
+      return `<div class="q"><div class="stem">${esc(r.q)} ${r.correct?'<span class="tag-ok">✓</span>':'<span class="tag-bad">✗</span>'}</div>
+        ${opts}<div class="expl">💡 ${esc(r.explanation)}</div></div>`;
+    }).join('');
+    return `<details class="rev"><summary>${esc((it.kind||'').replace(/_/g,' '))} — ${esc(it.title||'')}
+      <span class="pill">${nok}/${it.results.length}</span></summary><div class="body">${body}</div></details>`;
+  }).join('');
+  window.scrollTo(0,0);
+}
+$('#againBtn').addEventListener('click', () => {
+  ST=null; $('#results').classList.add('hidden'); $('#landing').classList.remove('hidden');
+});
+boot();
+</script>
+
+<!-- section timer (auto-set, auto-submit at 0:00) -->
+<div class="timer" id="timerWidget">
+  <div class="t-display" id="tDisplay">30:00</div>
+  <div class="t-row">
+    <button class="t-btn" id="tStart" title="start / pause">▶</button>
+    <button class="t-btn" id="tReset" title="reset">↺</button>
+    <input class="t-min" id="tMin" type="number" min="0" max="180" value="30"> m
+  </div>
+</div>
+<script>
+(function(){
+  const g=id=>document.getElementById(id);
+  const disp=g('tDisplay'), minEl=g('tMin'), widget=g('timerWidget'), startBtn=g('tStart');
+  let running=false, elapsed=0, target=1800, raf=null, last=0, fired=false;
+  const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');};
+  function render(){let s=target-elapsed; if(s<=0){s=0;disp.classList.add('over'); if(running){stop(); if(!fired){fired=true; if(window.onTimerExpire)window.onTimerExpire();}}} else disp.classList.remove('over'); disp.textContent=fmt(s);}
+  function loop(ts){if(!running)return;if(!last)last=ts;elapsed+=(ts-last)/1000;last=ts;render();raf=requestAnimationFrame(loop);}
+  function start(){if(running)return;running=true;last=0;fired=false;widget.classList.add('run');startBtn.textContent='⏸';raf=requestAnimationFrame(loop);}
+  function stop(){running=false;cancelAnimationFrame(raf);widget.classList.remove('run');startBtn.textContent='▶';}
+  function reset(){stop();elapsed=0;fired=false;target=(+minEl.value||0)*60;disp.classList.remove('over');render();}
+  startBtn.onclick=()=>running?stop():start();
+  g('tReset').onclick=reset;
+  minEl.onchange=()=>{target=(+minEl.value||0)*60;if(!running)reset();};
+  window.setTimerMinutes=m=>{minEl.value=m;target=m*60;elapsed=0;fired=false;render();};
+  window.startTimer=start; window.stopTimer=stop;
+  render();
+})();
+</script>
+</body>
+</html>
