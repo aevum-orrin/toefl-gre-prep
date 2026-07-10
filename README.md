@@ -43,9 +43,9 @@ toefl-gre-prep/
 │   ├── writing/       # email (20) + academic-discussion (20) prompt banks
 │   ├── reading/       # academic · daily_life · complete_words   (task-typed MCQ)
 │   ├── listening/     # academic_talk · conversation · announcement · choose_response
-│   ├── vocab/         # TOEFL wordlist — 6955 words (ECDICT-derived)
+│   ├── vocab/         # TOEFL wordlist — 9927 words (ECDICT-derived)
 │   └── plan/          # 14-day plan
-├── gre/vocab/         # GRE wordlist — 7485 words (ECDICT-derived)
+├── gre/vocab/         # GRE wordlist — 10526 words (ECDICT-derived)
 ├── docs/              # 2026-toefl-format.md — verified official format + scoring (source of truth)
 └── data/              # recordings, progress, SRS state (gitignored)
 ```
@@ -72,16 +72,16 @@ unavailable. **Grading is strict** — a top score means a genuinely flawless re
 
 ## Vocabulary decks (ECDICT-backed) & Reading/Listening bank
 
-`scripts/build_vocab.py` derives the decks from the open **ECDICT** dictionary, filtered to its
-official **TOEFL** (6955 words) and **GRE** (7485 words) exam tags — each word carries IPA, per-part-
-of-speech English + Chinese senses, a Collins difficulty star, a frequency rank, and verb forms, all
-offline. `scripts/enrich_vocab.py` then layers on a clean learner definition, one example sentence per
+`scripts/build_vocab.py` derives the decks from the open **ECDICT** dictionary, filtered by exam tags —
+widened to neighbouring academic-exam lists for comprehensive ~10k decks (**TOEFL 9927** = toefl∪ielts∪ky,
+**GRE 10526** = gre∪ky, incl. harder/rarer words). Each word carries IPA, per-part-of-speech English +
+Chinese senses, a Collins difficulty star, a frequency rank, and verb forms, all offline. `scripts/enrich_vocab.py` then layers on a clean learner definition, one example sentence per
 part of speech, and common collocations (free Gemini, **cached in scratch** so identical input never
 re-calls). vocab-srs schedules reviews with SM-2 and introduces a capped number of new words per day
 (default 20), most-frequent first.
 
 The Reading/Listening bank is **task-typed** — one JSON file per 2026 task type, loaded by directory
-glob (98 items / ~336 questions and growing). `scripts/merge_rl.py` merges freshly generated items into
+glob (134 items / ~454 questions and growing). `scripts/merge_rl.py` merges freshly generated items into
 the canonical per-type files. `mock-test` assembles these into a full-length, timed section.
 
 ## Environment (Great Lakes login node)
@@ -121,9 +121,10 @@ forward the port to your laptop (VS Code does this automatically).
   Progress + Rubric + faster-whisper — unit tests pass
 - [x] Verified **2026 official format + 4-section scoring** (`docs/2026-toefl-format.md`); rubrics on
   official 0–5 facets (dropped Integrated Writing, added Write an Email)
-- [x] **Big vocab decks** from ECDICT — TOEFL 6955 / GRE 7485, per-POS senses + difficulty + frequency
+- [x] **Big vocab decks** from ECDICT — TOEFL 9927 / GRE 10526 (~10k each), per-POS senses + difficulty + frequency
 - [x] **Five apps** (writing-coach, speaking-app, vocab-srs, reading-listening, mock-test) — end-to-end tested
-- [x] **Task-typed R/L bank** (98 items / ~336 Q) + full-length timed **mock-test** (2 adaptive modules, 1–6 band)
+- [x] **Task-typed R/L bank** (134 items / ~454 Q) + full-length timed **mock-test** (2 adaptive modules, 1–6 band)
+- [x] Expanded prompt banks: Email 40 · Academic-Discussion 40 · Listen&Repeat 120 · Interview 39
 - [x] Real (live) Gemini scoring + live generation verified; strict grading
 - [~] Vocab enrichment (examples + collocations) filling in the background, most-frequent first
 - [ ] Real microphone speaking test (on your laptop)
