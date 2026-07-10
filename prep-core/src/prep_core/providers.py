@@ -201,6 +201,63 @@ def make_provider(name: str | None = None, model: str | None = None,
     return None
 
 
+# --------------------------------------------------------------------------- Fallback chain
+# Quality order for the "must-succeed" chain: Claude best, then the two free tiers. Gemini goes
+# LAST because its free daily cap is the lowest — so a call rides Groq first and only falls through
+# to Gemini as a backup. Override with env LLM_FALLBACK_ORDER="groq,gemini" etc.
+def _fallback_order() -> tuple[str, ...]:
+    env = os.environ.get("LLM_FALLBACK_ORDER")
+    if env:
+        return tuple(x.strip().lower() for x in env.split(",") if x.strip())
+    return ("anthropic", "groq", "gemini")
+
+
+class FallbackProvider(Provider):
+    """Try several backends best-first, degrading on ANY failure until one succeeds.
+
+    Guarantees an answer as long as any configured backend is reachable — used where a call must
+    not just give up (e.g. generating a model essay). Each sub-provider already retries transient
+    errors internally; this adds cross-provider failover on top.
+    """
+    name = "fallback"
+
+    def __init__(self, providers: list[Provider]):
+        if not providers:
+            raise ValueError("FallbackProvider needs at least one provider")
+        super().__init__(providers[0].model)
+        self._providers = providers
+        self.name = "fallback:" + ">".join(p.name for p in providers)
+
+    def _try(self, method: str, *args):
+        last = None
+        for p in self._providers:
+            try:
+                return getattr(p, method)(*args)
+            except Exception as e:  # rate limit / quota / network -> degrade to the next backend
+                last = e
+        raise last  # every backend failed
+
+    def complete_json(self, system: str, user: str, schema: dict) -> dict:
+        return self._try("complete_json", system, user, schema)
+
+    def complete_text(self, system: str, user: str) -> str:
+        return self._try("complete_text", system, user)
+
+
+def make_fallback_provider() -> Provider | None:
+    """Best-first chain of every backend that has a key. Returns None only if NO key is set."""
+    provs: list[Provider] = []
+    for name in _fallback_order():
+        key = os.environ.get(_ENV_KEY.get(name, ""))
+        if not key:
+            continue
+        try:
+            provs.append(_PROVIDERS[name](key))
+        except Exception:
+            pass
+    return FallbackProvider(provs) if provs else None
+
+
 def _gemini_schema(schema: dict) -> dict:
     """Gemini's response_schema is an OpenAPI-3.0 subset: it rejects `additionalProperties`.
     Strip it (and recurse) so our strict JSON Schema is accepted."""

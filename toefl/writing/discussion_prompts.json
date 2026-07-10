@@ -12,7 +12,8 @@
     "name": "Daniel",
     "text": "I'm not convinced. Small businesses operate on thin margins, and forcing higher wages could push owners to cut staff or raise prices, hurting the very people we want to help."
    }
-  ]
+  ],
+  "model_essay": "While both Maria and Daniel raise fair points, I think the benefits of a modest minimum-wage increase outweigh the risks. Daniel is right that small firms run on thin margins, but the evidence from cities like Seattle suggests that gradual, phased increases rarely trigger the mass layoffs critics predict. Employers often absorb the cost through slightly higher prices or lower turnover, since better-paid workers quit less often. Meanwhile, as Maria notes, low-wage households spend almost everything they earn locally, so the extra income circulates back into the same small businesses. The key, in my view, is calibration: raise the floor steadily and tie it to regional living costs rather than imposing one dramatic nationwide jump."
  },
  {
   "id": "disc-02",
@@ -27,7 +28,8 @@
     "name": "James",
     "text": "I understand the appeal, but many people live in areas where transit simply isn't practical. Ignoring roads would strand rural commuters who have no other option."
    }
-  ]
+  ],
+  "model_essay": "I side largely with Sofia: a growing city should put public transit first. Her point about efficiency is decisive for me, because a single bus lane can carry as many people as several packed car lanes while using far less land and fuel. James raises a legitimate worry about rural commuters, but I'd argue that's an argument for smarter transit design, not for endless road expansion. Cities can run express bus routes and park-and-ride lots that connect outlying areas to rail hubs, giving those commuters a real alternative. Widening highways, by contrast, tends to invite even more traffic within a few years, a pattern planners call induced demand. Investing in transit tackles congestion and emissions at their root rather than chasing them."
  },
  {
   "id": "disc-03",
@@ -42,7 +44,8 @@
     "name": "Noah",
     "text": "Young kids already spend hours in class. They learn more from free play and family time, and piling on homework can make them dislike school before they even start."
    }
-  ]
+  ],
+  "model_essay": "My view is that daily homework does more harm than good in the earliest grades, so I lean toward Noah's position. Emily is right that practice builds habits, but I'd distinguish between older students and six- or seven-year-olds whose attention spans are still short. At that age, a worksheet completed reluctantly after school teaches little beyond frustration. Research on early literacy actually points the other way: children who are read to at home, or who simply play and talk with their families, develop stronger language skills than those drilled with formal assignments. Rather than nightly homework, I'd encourage teachers to send home a book and suggest twenty minutes of shared reading. That builds discipline gently while keeping young children genuinely curious about learning."
  },
  {
   "id": "disc-04",
@@ -57,7 +60,8 @@
     "name": "Marcus",
     "text": "But algorithms learn from past data, and if that data is biased, the AI just repeats old discrimination at scale. A human should always have the final say."
    }
-  ]
+  ],
+  "model_essay": "I don't think an algorithm should ever make the final hiring decision alone, which puts me close to Marcus. Priya is right that software can screen large applicant pools quickly, and I'd happily use it to handle a first pass. The problem is exactly what Marcus identifies: these systems learn from a company's past hires, so if that history favored one type of candidate, the model quietly reproduces that pattern while appearing objective. Amazon famously scrapped a recruiting tool that had taught itself to downgrade resumes containing the word 'women's.' A human reviewer can catch that kind of blind spot and weigh context a model misses. So I'd keep AI as an assistant that flags candidates, never as the judge that rejects them."
  },
  {
   "id": "disc-05",
@@ -72,7 +76,8 @@
     "name": "Ethan",
     "text": "I'd argue the opposite. Leaders rise because underlying forces like economics and public frustration create the conditions. Remove one leader and another usually takes their place."
    }
-  ]
+  ],
+  "model_essay": "This is a genuine puzzle, but I ultimately agree with Ethan that broad social forces matter more. Olivia is correct that a single decision can shift a nation's course, yet I'd point out that leaders almost never act in a vacuum. The conditions that make a decision possible, and popular, are usually the deeper cause. Take the Russian Revolution: Lenin was undeniably pivotal, but without years of wartime famine, military defeat, and mass discontent, no amount of individual brilliance would have toppled the tsar. Remove Lenin and the pressures still existed, ready for another figure to channel them. That's why I see leaders more as the visible spark than the fuel. The underlying forces determine which sparks catch fire and which fizzle out."
  },
  {
   "id": "disc-06",
@@ -87,7 +92,8 @@
     "name": "Liam",
     "text": "In my experience, creativity suffers when everyone is remote. Spontaneous conversations and quick brainstorming are hard to replace over a video call."
    }
-  ]
+  ],
+  "model_essay": "In my opinion, remote work raises productivity for most focused, individual tasks, so I largely agree with Grace. The hours reclaimed from commuting and the freedom from constant office interruptions are real gains I've felt myself when writing or analyzing data from home. That said, Liam's concern about creativity is too important to dismiss. Spontaneous hallway conversations genuinely do spark ideas that scheduled video calls rarely match. Rather than choosing one side, I think the honest answer is that the two views describe different kinds of work. My preference is a hybrid arrangement: deep, solo work done remotely, and a couple of in-person days reserved for brainstorming and team building. That way we capture Grace's focus without sacrificing the collaboration Liam rightly values."
  },
  {
   "id": "disc-07",
@@ -102,7 +108,8 @@
     "name": "Ryan",
     "text": "These taxes hit low-income families hardest since they spend a larger share of income on food. Education about nutrition would be fairer than punishing people's choices."
    }
-  ]
+  ],
+  "model_essay": "I think sugar taxes are effective, and Ryan's fairness objection, while serious, can be answered. Ava is right that a price bump makes people pause at the register; Mexico's soda tax, for instance, cut sugary-drink purchases by roughly twelve percent within two years, with the biggest drop among low-income households. That last point actually speaks to Ryan's worry. Poorer families do pay more of the tax at first, but they also suffer the highest rates of diabetes, so they gain the most health benefit when consumption falls. The fairness question really depends on what governments do with the revenue. If it funds free school meals or clinics in the same neighborhoods, the policy becomes both effective and fair rather than simply punitive."
  },
  {
   "id": "disc-08",
@@ -117,7 +124,8 @@
     "name": "Benjamin",
     "text": "Yet many people scroll for hours while ignoring the person sitting next to them. Online 'friends' often replace the deeper face-to-face relationships we actually need."
    }
-  ]
+  ],
+  "model_essay": "On balance, I believe social media pushes people apart more than it draws them together, so I find Benjamin's argument more persuasive. Chloe makes a fair point that these platforms preserve long-distance ties, and I value that too; I still keep up with friends who moved overseas. But the deeper question is what social media does to the relationships right in front of us. Benjamin's image of people scrolling past the person beside them rings true. Studies of 'phubbing,' where someone snubs a companion to check a phone, link the habit to lower relationship satisfaction. The connections we gain online are often wide but shallow, while the ones we neglect in person are the few that sustain us. That trade rarely feels worth it."
  },
  {
   "id": "disc-09",
@@ -132,7 +140,8 @@
     "name": "Lucas",
     "text": "Forcing people to vote produces uninformed ballots and treats a right as an obligation. Democracy should include the freedom to abstain."
    }
-  ]
+  ],
+  "model_essay": "I come down on the side of compulsory voting, though I take Lucas's freedom argument seriously. Isabella's point about legitimacy is the crux for me: when turnout is near universal, elected officials must answer to the whole population, not just the older, wealthier citizens who reliably show up. Australia, where voting has been mandatory for a century, consistently posts turnout above ninety percent and a political culture that treats voting as a shared civic duty. Lucas worries about uninformed ballots, but the law only requires showing up, not choosing blindly; voters can still leave a paper blank. To me, being asked to spend a few minutes participating in the system that governs you is a reasonable obligation, not a real violation of freedom."
  },
  {
   "id": "disc-10",
@@ -147,7 +156,8 @@
     "name": "Henry",
     "text": "I prefer lower-density neighborhoods. They offer green space, quiet, and a stronger sense of community that crowded high-rises often lack."
    }
-  ]
+  ],
+  "model_essay": "I favor Mia's approach: denser, taller housing near transit builds better communities in a growing city. Henry is right that low-rise neighborhoods offer quiet and green space, and I wouldn't want a city of nothing but towers. But when housing stays scarce, prices climb until ordinary workers, teachers and nurses among them, get pushed to distant suburbs with hours-long commutes. Density, done well, keeps people close to their jobs, shops, and each other. What Henry calls a stronger sense of community actually thrives on foot traffic; a lively neighborhood needs enough residents to support cafes and corner stores within walking distance. The real key is good design, mid-rise buildings with parks and wide sidewalks, so we get density and livability together rather than either alone."
  },
  {
   "id": "disc-11",
@@ -162,7 +172,8 @@
     "name": "Nathan",
     "text": "Research suggests our brains actually just switch rapidly between tasks, doing each one worse. When I focus on one thing at a time, my work improves noticeably."
    }
-  ]
+  ],
+  "model_essay": "My reasoning lines up with Nathan's: trying to do several demanding things at once usually hurts performance. Zoe makes a reasonable exception for simple, automatic tasks, and I'd grant that; I can fold laundry while listening to a podcast without losing much. But the moment both tasks require real thought, the picture changes. What feels like multitasking is actually the brain toggling back and forth, and each switch carries a small cost in time and accuracy. When I've tried writing an essay while answering messages, both came out worse, and the essay took far longer. Psychologists call this the 'switch cost,' and it adds up quickly. So for anything cognitively demanding, I've learned that single-tasking, however old-fashioned it sounds, is genuinely the faster route."
  },
  {
   "id": "disc-12",
@@ -177,7 +188,8 @@
     "name": "Owen",
     "text": "Government money risks turning journalists into mouthpieces for those in power. Independent, market-based media is more likely to hold leaders accountable."
    }
-  ]
+  ],
+  "model_essay": "I think quality journalism needs some public support, so I'm closer to Layla, though Owen's warning deserves a real answer. Layla is right that a pure market pushes outlets toward clickbait, since outrage and gossip simply draw more clicks than careful investigative work. Owen fears that government money turns reporters into mouthpieces, and that danger is genuine. The solution, though, is not to abandon funding but to insulate it. Countries like Britain and Germany fund public broadcasters through independent bodies and fixed charters that keep politicians at arm's length from editorial decisions. The BBC regularly criticizes the very government that funds it. Structured that way, public money can protect the serious reporting a democracy needs without handing officials a leash over the newsroom."
  },
  {
   "id": "disc-13",
@@ -192,7 +204,8 @@
     "name": "Caleb",
     "text": "I worry that heavy restrictions delay cures and discoveries that could save millions. Careful oversight is fine, but we shouldn't let fear halt progress."
    }
-  ]
+  ],
+  "model_essay": "I stand with Aria: some scientific research must be limited for ethical reasons, even at the cost of slower progress. Caleb's worry about delaying cures is fair, and I agree that cautious oversight shouldn't harden into blanket bans. But history gives Aria's side hard evidence. The unethical experiments of the twentieth century, from Tuskegee to wartime human trials, produced some data yet inflicted lasting suffering and destroyed public trust in science itself. That erosion of trust arguably slows progress more than any ethics board does. Crucially, limits and discovery aren't truly opposed: modern review systems still approve the overwhelming majority of studies, just with consent and safeguards attached. So I'd frame ethics not as a brake on science but as the condition that keeps it legitimate."
  },
  {
   "id": "disc-14",
@@ -207,7 +220,8 @@
     "name": "Jack",
     "text": "Parents, not governments, control what children buy. Banning ads is an overreaction; teaching kids to think critically about them is more realistic."
    }
-  ]
+  ],
+  "model_essay": "I believe advertising aimed directly at young children should be tightly restricted, so I side with Ella. Her core point is developmental, and it's well supported: below about age eight, children cannot reliably tell a commercial's persuasive intent from ordinary entertainment, which makes the pitch fundamentally unfair. Jack replies that parents, not governments, should police what kids consume, and I agree parents matter enormously. But that misjudges the imbalance involved. A single parent is up against teams of professionals engineering cartoon characters and jingles to trigger 'pester power' in a four-year-old. Several countries, including Sweden, already ban ads targeting under-twelves, without collapsing their economies. Teaching media literacy, as Jack suggests, is valuable, but it works best alongside limits, not as a replacement for them."
  },
  {
   "id": "disc-15",
@@ -222,7 +236,8 @@
     "name": "Adam",
     "text": "I sympathize, but resources are limited. If a community has already shifted to a common language, forcing preservation may not reflect what its speakers actually want."
    }
-  ]
+  ],
+  "model_essay": "I firmly believe the effort to preserve endangered languages is worth serious investment, so Nora's view resonates with me. Her library metaphor is apt: each language encodes knowledge, place names, plant lore, oral history, that often exists nowhere else. Adam raises the pragmatic objection that resources are limited and speakers may have already moved on, and I'd take that seriously by following communities' own wishes rather than imposing preservation from outside. But those goals rarely conflict in practice. Much of what saves a language, recording elders, building dictionaries, teaching children, is relatively cheap and driven by the community itself. Where speakers do want to keep their language alive, as the Maori revival in New Zealand shows, modest support can reverse decline. That return more than justifies the cost."
  },
  {
   "id": "disc-16",
@@ -237,7 +252,8 @@
     "name": "David",
     "text": "Not everyone needs to code, just as not everyone becomes a mathematician. Forcing it could crowd out arts and other subjects that students may value more."
    }
-  ]
+  ],
+  "model_essay": "I don't think every student should be required to code, which puts me closer to David, though I value Lily's reasoning. She's right that programming teaches logic and problem-solving, and I'd happily see coding offered as a strong elective in every school. My hesitation is with the word 'required.' Lily equates coding with math, but math underlies countless daily decisions in a way that writing software does not; plenty of thriving careers never touch a line of code. As David notes, a packed mandatory curriculum crowds out music, history, and languages that other students may need just as much. The logical thinking Lily prizes can also be built through mathematics or even chess. So I'd make coding widely available and genuinely encouraged, but leave the choice to students."
  },
  {
   "id": "disc-17",
@@ -252,7 +268,8 @@
     "name": "Samuel",
     "text": "Too often tourism turns living cultures into a staged performance for outsiders. Rising prices and crowds can push locals out of their own neighborhoods."
    }
-  ]
+  ],
+  "model_essay": "Weighing both sides, I lean toward Samuel's more cautious view: tourism, as it's usually practiced, does local cultures more harm than good. Hannah is right that visitors can fund heritage and give communities a reason to protect it, and where tourism is small and locally controlled, that happens. But at scale the dynamic Samuel describes tends to dominate. Traditions get compressed into a photogenic show performed on schedule, while soaring rents and crowds hollow out the very neighborhoods tourists come to see, Venice and Barcelona being obvious examples. The deciding factor, in my view, is who holds the power. When outside operators capture the profits, culture becomes a product; when residents set the terms and limit the numbers, tourism can help rather than harm."
  },
  {
   "id": "disc-18",
@@ -267,7 +284,8 @@
     "name": "Leo",
     "text": "Incentives spark innovation because businesses compete to earn rewards for going green. Heavy-handed regulation often just leads to resistance and loopholes."
    }
-  ]
+  ],
+  "model_essay": "In my view, financial incentives generally work better than strict regulations for cutting emissions, so I'm inclined toward Leo. Victoria is right that mandates deliver fast, certain results, and for the worst pollutants I'd keep hard limits in place. But her approach has a ceiling: once a company meets the rule, it has no reason to do more. Incentives, as Leo says, reward companies for exceeding the baseline, which keeps driving innovation. The spread of solar power is telling, subsidies and feed-in tariffs pulled in private investment that no regulation demanded, and costs fell dramatically as firms competed. The strongest policy, honestly, blends both: firm floors to stop the worst behavior, plus incentives that reward everyone racing past the minimum toward genuinely clean technology."
  },
  {
   "id": "disc-19",
@@ -282,7 +300,8 @@
     "name": "William",
     "text": "For some, constant tracking becomes an unhealthy obsession, and the data isn't always accurate. Real fitness comes from habits, not from staring at numbers."
    }
-  ]
+  ],
+  "model_essay": "I think fitness trackers genuinely improve health for most people, so I'm broadly with Sophia, though William's caution is worth keeping. Sophia's point is one I've felt directly: turning vague intentions into a visible daily step count creates accountability that actually changes behavior. William rightly notes that the numbers can become an obsession and aren't perfectly accurate, and for a small minority that's a real risk. But precision isn't really the point. A tracker doesn't need a flawless heart-rate reading to nudge someone off the couch; the rough feedback is enough to build a habit. The sensible response to William's worry is better design, gentle reminders and rest days rather than relentless streaks, not abandoning a tool that gets millions of otherwise sedentary people moving."
  },
  {
   "id": "disc-20",
@@ -297,7 +316,8 @@
     "name": "Gabriel",
     "text": "I see the moral case, but large museums preserve and share these works with millions of visitors. Splitting up collections might limit global access to human history."
    }
-  ]
+  ],
+  "model_essay": "On balance, I think artifacts taken during the colonial era should generally be returned, so I'm with Charlotte, though Gabriel's access argument matters. Charlotte is right that many of these objects were seized by force, and returning them addresses a real injustice while letting people reconnect with their own heritage. Gabriel worries that dispersing collections limits global access, but I'd question that trade-off. Returning an object doesn't have to mean hiding it; source countries can display it, and modern loan agreements and high-quality reproductions let works still travel and be shared. Nigeria's campaign for the Benin Bronzes is a fair case: these were looted in a violent raid, and their return corrects that specific wrong. Rightful ownership, to me, should usually outweigh the convenience of the current holder."
  },
  {
   "id": "disc-21",
@@ -312,7 +332,8 @@
     "name": "Daniel",
     "text": "I'm more skeptical about that. Research on personality tends to show that traits like introversion stay remarkably stable across decades, even when people are convinced they've transformed. In my experience, we mostly learn to manage our tendencies rather than actually rewrite them."
    }
-  ]
+  ],
+  "model_essay": "I side largely with Maya on this. Daniel is right that trait averages look stable across big studies, but those averages hide the people who genuinely shift. Conscientiousness in particular tends to rise as adults take on demanding jobs and caregiving, which suggests that roles reshape traits rather than merely masking them. My aunt was famously disorganized until she began running a small clinic in her forties; a decade on, that discipline is clearly part of who she is, not a performance she drops at home. Change is slow and rarely total, so I wouldn't promise anyone a personality transplant after thirty. But dismissing it as mere coping, as Daniel does, understates how deeply sustained circumstances can rewrite even our default settings."
  },
  {
   "id": "disc-22",
@@ -327,7 +348,8 @@
     "name": "Leo",
     "text": "I'd push back on that a little. Modern jobs constantly demand that we juggle competing priorities, so being able to redirect attention fast is a genuine advantage. As long as you know when to block out distractions for deep work, that flexibility is a strength rather than a flaw."
    }
-  ]
+  ],
+  "model_essay": "Priya's point matches what I feel myself: the cost of switching is real and easy to underestimate. Studies on attention residue show that part of your mind stays stuck on the previous task, so each jump quietly taxes the next one. That said, I don't think Leo is wrong that modern work demands juggling. The distinction I'd draw is between switching and choosing what to switch to. Reacting to every notification is what erodes thinking; deliberately deciding when to handle email and when to close it protects depth. So I'd reframe the skill Leo praises. The real advantage isn't fast switching but disciplined control over one's own attention, and that usually means switching far less than our devices invite us to."
  },
  {
   "id": "disc-23",
@@ -342,7 +364,8 @@
     "name": "Omar",
     "text": "I see the appeal, but I think direct regulations deliver more certain results. A firm cap guarantees a specific level of emissions, whereas a tax only creates an incentive that firms may simply absorb and ignore. The downside is less flexibility, but for urgent cuts I'd rather have a guaranteed ceiling."
    }
-  ]
+  ],
+  "model_essay": "Because the professor stresses rapid reductions, I lean toward Omar's preference for direct caps. Sofia is right that a tax harnesses the market's ingenuity, but its pace depends entirely on how high the price is set, and politically that price usually starts too low to bite. A cap instead fixes the environmental outcome first and lets firms scramble to meet it. Europe's rules phasing out certain refrigerant gases, for instance, cut those emissions quickly precisely because the deadline was non-negotiable. The trade-off Omar concedes is genuine: caps can lock in inefficient methods and invite lobbying over who receives which allowance. For urgent targets, though, I would accept some inefficiency in exchange for a guaranteed ceiling rather than gamble on a price signal firms might simply absorb."
  },
  {
   "id": "disc-24",
@@ -357,7 +380,8 @@
     "name": "Ethan",
     "text": "I'm uneasy about blanket bans. They can hurt small businesses and lower-income people who rely on cheap disposable products, and they treat very different situations as if they were the same. I'd rather see stronger recycling infrastructure and incentives that let people adjust without being forced."
    }
-  ]
+  ],
+  "model_essay": "I come down closer to Hannah, though Ethan raises a fair worry. The evidence that voluntary recycling has failed is hard to ignore: globally, less than a tenth of plastic is ever actually recycled, and hopeful sorting doesn't change that. Where I'd temper Hannah's position is by aiming bans narrowly at the worst offenders, such as plastic bags and foam containers, rather than every disposable at once. That directly answers Ethan, since exemptions and lead time can shield small vendors while the genuinely wasteful items disappear. Leaving so entrenched a problem to individual choice simply spreads responsibility until no one carries it. A firm rule, thoughtfully targeted, is often the only thing that shifts an entire industry, and here I think it's justified."
  },
  {
   "id": "disc-25",
@@ -372,7 +396,8 @@
     "name": "Noah",
     "text": "I think full disclosure can be the more reasonable choice in genuinely minor cases. A massive recall wastes resources and can even introduce new risks, while honest, prominent warnings respect customers' ability to decide for themselves. The key condition is that the disclosure must be truly transparent, not buried in fine print."
    }
-  ]
+  ],
+  "model_essay": "I'm with Grace that a recall is the sounder ethical default, though Noah's conditions deserve real weight. The heart of the matter is who bears the risk. The company knows exactly how the flaw behaves; the customer, even a well-warned one, does not, and 'unlikely to harm most users' quietly accepts that a few will be hurt. Noah is right that some recalls waste resources, but disclosure shifts the burden onto the very people who trusted the product, and warnings get overlooked no matter how prominent they are. If a firm truly believes the risk is trivial, then the recall should be cheap too. When it isn't cheap, that cost is usually a signal that the danger is more real than the company wants to admit."
  },
  {
   "id": "disc-26",
@@ -387,7 +412,8 @@
     "name": "Victor",
     "text": "I disagree that this is really their job. A company's core duty is to its customers and shareholders, and when firms chase social causes it's often for marketing rather than genuine change. Social problems are better handled by elected governments that answer to everyone, not by corporations accountable to no one."
    }
-  ]
+  ],
+  "model_essay": "I find Amara's argument more convincing, but Victor puts his finger on a genuine problem. Firms don't operate in a vacuum: they draw on public roads, an educated workforce, and a legal system, so pretending they owe nothing back is itself a choice, not neutrality. Where Victor is right is about accountability. A corporation answers to shareholders, not voters, so its social mission can easily drift into self-serving marketing. Yet that argues for a modest, honest version of responsibility rather than none at all. A company that pays fair wages and curbs its own pollution addresses social problems directly, without pretending to replace government. Leaving every such issue to overstretched public agencies, as Victor suggests, lets the actors causing much of the harm off the hook."
  },
  {
   "id": "disc-27",
@@ -402,7 +428,8 @@
     "name": "Marcus",
     "text": "I'd give individuals more weight than that suggests. History has plenty of moments where one leader's decisions pushed events down a path they could easily have avoided. Conditions may set the stage, but it takes particular people to seize the moment and turn mere possibility into real action."
    }
-  ]
+  ],
+  "model_essay": "I lean toward Isabella's emphasis on underlying conditions, though Marcus identifies where individuals truly matter. Structural pressures set the range of the possible: the French Revolution needed decades of debt, hunger, and resentment before any leader could channel them, and no orator could have sparked it in a contented, prosperous France. That said, Marcus is right that conditions rarely dictate a single outcome. Once a crisis opens, particular people choose among several roads, and those choices shape whether change turns moderate or violent, lasting or brief. So I'd frame it as a division of labor: forces decide that something will break, while individuals influence how it breaks. Between the two, the forces seem primary, since they build the very stage the famous names later walk onto."
  },
  {
   "id": "disc-28",
@@ -417,7 +444,8 @@
     "name": "Ryan",
     "text": "I'm more doubtful about drawing clean lessons from history. Each period has such different technology and values that old solutions rarely transfer, and leaders often twist historical 'lessons' to justify what they already wanted to do. History is fascinating, but I wouldn't lean on it as a reliable guide to today's unique problems."
    }
-  ]
+  ],
+  "model_essay": "Chloe captures my view well, though Ryan's caution keeps it honest. History rarely repeats exactly, yet certain patterns recur reliably enough to matter: how speculative bubbles inflate, how societies scapegoat minorities under stress, how propaganda exploits fear. Knowing these won't hand us a formula, but it tells us which warning signs deserve attention. Ryan is right that leaders cherry-pick the past to justify what they'd already decided, and that misuse is real. The remedy, though, is studying history more carefully, not abandoning it. Its value isn't a set of ready-made answers, as Chloe nicely puts it, but a sharper set of questions. Facing a genuinely new crisis, I would still rather reason from centuries of human experience than from a blank slate."
  },
  {
   "id": "disc-29",
@@ -432,7 +460,8 @@
     "name": "Jamal",
     "text": "I see it differently. Digital communication makes it easy to stay in constant contact while rarely sharing anything deep, so we pile up acquaintances instead of real closeness. Face-to-face time, with all its small unplanned moments, builds a kind of trust that a screen struggles to reproduce."
    }
-  ]
+  ],
+  "model_essay": "I side with Lucia that online bonds can be fully meaningful, while thinking Jamal describes the more common outcome. What makes a friendship deep isn't the channel but the honesty and effort behind it, and a long, candid exchange of messages can carry more real intimacy than years of small talk with a neighbor. During a hard stretch after a family loss, the people who checked on me daily were friends I had first met through an online forum. Jamal is right, though, that the medium tempts us toward breadth over depth; it's easy to collect hundreds of contacts and confide in none. So the platform doesn't guarantee closeness, but it hardly prevents it. The deciding factor, as Lucia suggests, is what each person chooses to invest."
  },
  {
   "id": "disc-30",
@@ -447,7 +476,8 @@
     "name": "Theo",
     "text": "I worry that some of these trends weaken the stability families once provided. Traditional structures offered clear support networks for raising children and caring for aging parents, and those roles don't automatically get replaced. I'm not against change, but I think we underestimate what's lost when the family core fragments."
    }
-  ]
+  ],
+  "model_essay": "I'm broadly with Elena that these shifts strengthen society, though Theo names a cost we shouldn't wave away. Rigid norms once trapped people in unhappy or abusive homes because leaving carried enormous stigma, so the freedom to form single-parent, blended, or child-free households is, on balance, a humane gain. Theo is right that traditional structures supplied ready-made support for raising children and caring for elders, and those functions don't vanish simply because the old form does. But the answer isn't to mourn one model; it's to build public support, from childcare to elder care, that no longer assumes a single household shape. A society flexible enough to back many kinds of families strikes me as more resilient, not less, precisely because it doesn't depend on everyone living identically."
  },
  {
   "id": "disc-31",
@@ -462,7 +492,8 @@
     "name": "Ben",
     "text": "I'm less hopeful this time around. Earlier technologies mostly replaced physical labor, but AI is starting to replace judgment and skill across many fields at once, leaving fewer obvious places for displaced workers to go. Without deliberate policies to share the gains, I fear the benefits will concentrate while unemployment climbs."
    }
-  ]
+  ],
+  "model_essay": "My honest answer is a conditional yes, which places me between Aisha and Ben. Aisha's historical pattern is real: technologies that destroyed whole categories of work also created ones no one had foreseen, and I doubt human wants will ever be fully satisfied. But Ben identifies what feels different this time, and I take it seriously. When machines encroach on judgment across many fields at once, displaced workers can't simply move to the next sector, because that sector is being automated too. So whether opportunities outnumber losses isn't settled by the technology; it depends on the retraining and redistribution Ben mentions. Left alone, I fear the gains concentrate. Paired with deliberate policy, Aisha's optimism becomes achievable. The tool creates the potential, but our choices decide who actually benefits from it."
  },
  {
   "id": "disc-32",
@@ -477,7 +508,8 @@
     "name": "Kevin",
     "text": "I'd argue constant connectivity is mostly an advantage when it's used wisely. Being reachable lets teams solve problems quickly and gives me the freedom to work when and where I'm most effective. The real issue isn't the technology itself but our habits, and those are something each of us can learn to control."
    }
-  ]
+  ],
+  "model_essay": "I'm largely with Nadia, though Kevin's point about habits contains the seed of a solution. Constant reachability carries a hidden tax: even when no message arrives, part of my attention stays on guard for one, which is why sustained focus feels so hard. Protecting blocks of unreachable time, as Nadia argues, tends to make the remaining hours far more productive. Kevin is right that the technology isn't the villain and that discipline matters, but I'd resist leaving it purely to individual willpower. When a workplace expects instant replies, no personal habit can fully withstand that pressure. That's why I favor firmer shared limits, such as norms against after-hours messaging, rather than trusting each person to switch off inside a culture that quietly punishes anyone who does."
  },
  {
   "id": "disc-33",
@@ -492,7 +524,8 @@
     "name": "Adrian",
     "text": "I think grades, for all their flaws, still help most students learn. Clear standards and feedback tell us where we actually stand, and a bit of external pressure pushes people to master material they'd otherwise skip. Curiosity is wonderful, but on its own it rarely carries a whole class through difficult, unglamorous fundamentals."
    }
-  ]
+  ],
+  "model_essay": "I lean toward Fatima, but I think the debate blurs two things Adrian rightly values. Feedback and clear standards genuinely help learning; the trouble is the single ranked score we attach to them. Once a grade becomes the goal, students optimize for the test and discard the material afterward, exactly as Fatima describes. My most lasting learning also came from ungraded work, where I could chase a question without fear of a bad mark. Adrian is right that curiosity alone won't carry a class through dull fundamentals, and that some structure helps. But that structure could be detailed feedback and mastery checkpoints rather than a competitive letter. Keep the standards and the pressure Adrian wants; just detach them from a number that so easily hijacks the whole purpose."
  },
  {
   "id": "disc-34",
@@ -507,7 +540,8 @@
     "name": "Carlos",
     "text": "I'm not convinced online learning can fully match the classroom. So much of what I gained at university came from spontaneous debates, lab work, and simply being surrounded by curious peers, and that's hard to recreate on a screen. Online study is valuable and convenient, but for many subjects I think something important gets lost."
    }
-  ]
+  ],
+  "model_essay": "The honest answer sits between Yuki and Carlos and turns on the subject. Yuki is right that learning's core, strong material plus timely feedback, transmits well online, and for a motivated student of history, mathematics, or programming, a remote degree can genuinely match a campus one. But Carlos names something real that doesn't travel as easily. A chemistry lab, a design studio, or a seminar that lives on spontaneous disagreement depends on physical co-presence in ways a video call only approximates. So I wouldn't call online study simply equal or simply lesser; it is equal for some fields and still short in others. What it undeniably adds is access for people who could never reach a campus at all, and that alone makes it far more than a consolation prize."
  },
  {
   "id": "disc-35",
@@ -522,7 +556,8 @@
     "name": "Diego",
     "text": "I'd make the opposite choice and invest in walking and cycling. Those networks are much cheaper to build than rail, they improve public health, and they make neighborhoods more pleasant and human-scaled. A city designed for people on foot and on bikes tends to erase exactly the short car trips that clog its streets the most."
    }
-  ]
+  ],
+  "model_essay": "Forced to choose one, I'd back Ingrid and prioritize public transit. Diego makes a strong case, and I agree that walkable, bike-friendly streets are cheaper to build and healthier to use. But his approach mainly captures short trips, while a growing city's worst congestion comes from longer commutes no one will cover on foot or by bicycle. Reliable buses and trains move enormous numbers along exactly those routes, and crucially they serve people a cycling network leaves behind: the elderly, those with disabilities, and anyone traveling several miles in bad weather. Cycling lanes are a wonderful complement, and I'd add them the moment budgets allowed. As the single first priority for a growing city, though, transit does far more to cut traffic and connect distant neighborhoods."
  },
  {
   "id": "disc-36",
@@ -537,7 +572,8 @@
     "name": "Oliver",
     "text": "I'd rather protect low-rise neighborhoods and green space. Endless high-rises can overwhelm local infrastructure and erase the character that makes a place worth living in, and green areas are vital for both health and the climate. Cities can add homes more gently by filling in gaps rather than towering over everything."
    }
-  ]
+  ],
+  "model_essay": "I side with Zara that a city facing rising housing costs has to build up, though Oliver points toward how to do it well. The arithmetic is stubborn: when supply can't grow, prices climb and push people ever farther from their jobs, worsening the very sprawl Oliver dislikes. Density done well also makes frequent transit and lively streets financially viable. Where Oliver is right is that endless towers can overwhelm infrastructure and flatten a neighborhood's character, and that green space is genuinely essential. But those are arguments for good density, not against density itself: mid-rise blocks, gentle infill, and parks woven throughout can add many homes without walling off the sky. Preserving every low-rise street intact, in a city priced out of reach, mostly protects those already inside it."
  },
  {
   "id": "disc-37",
@@ -552,7 +588,8 @@
     "name": "Andre",
     "text": "I lean toward voluntary guidelines backed by clear information. Heavy-handed rules can breed resentment and distrust that make people less cooperative over the long run, sometimes worsening the very crisis they were meant to stop. If authorities explain the risks honestly, most people will choose to protect themselves and those around them."
    }
-  ]
+  ],
+  "model_essay": "For a genuinely serious threat, I come down on Mei's side, though Andre is right about the long game. When a danger spreads through a population and the science is clear, voluntary cooperation has a fatal weakness: it takes only a stubborn minority to keep transmission going and endanger everyone, including those doing their part. Temporary limits on freedom are a fair price in that acute window. Andre's warning still matters, because heavy rules imposed without explanation do breed the distrust that erodes cooperation later. So the resolution is sequencing: act decisively while the threat is sharp, but justify every measure transparently and lift it the moment it's no longer warranted. Trust and firmness aren't opposites; losing the public's confidence is exactly what makes future firmness impossible."
  },
  {
   "id": "disc-38",
@@ -567,7 +604,8 @@
     "name": "Tom",
     "text": "I'd put more emphasis on educating individuals first. Taxes and bans can feel paternalistic and often hit lower-income people hardest without changing the beliefs behind their habits. When people truly understand why a choice matters, the change tends to stick and to spread into the rest of their lives."
    }
-  ]
+  ],
+  "model_essay": "I'm persuaded by Sara that structural changes usually do more for a whole population's health. Education is valuable, but it competes against billion-dollar advertising and against the plain fact that the cheapest, most available options are often the unhealthiest. Reshaping that environment, so the healthy choice is also the easy and affordable one, reaches everyone rather than only the attentive few. Tom's objections aren't empty: taxes can feel paternalistic and, if poorly designed, can hit lower-income families hardest. But that's an argument for careful design, not retreat, since the revenue can fund subsidies that flip the regressive effect. And education isn't the opposite of structural policy; it works best beside it. As the primary lever, though, changing the environment simply outperforms asking people to resist it by willpower alone."
  },
  {
   "id": "disc-39",
@@ -582,7 +620,8 @@
     "name": "Felix",
     "text": "I take a more positive view. Social media lets ordinary people reach reporting and firsthand accounts that traditional gatekeepers once filtered out, and it has surfaced stories that would otherwise have stayed hidden. Misinformation is a genuine danger, but the answer is stronger media literacy, not less access to information."
    }
-  ]
+  ],
+  "model_essay": "On balance I side with Layla, while conceding that Felix names social media's real virtue. Felix is right that these platforms cracked open a gatekept media system and surfaced firsthand accounts the old outlets buried. The trouble is that the same architecture distributes falsehood just as efficiently as truth, and its engagement-driven algorithms actively favor whatever provokes the strongest reaction over whatever is accurate. The result is a public that often feels better informed while absorbing a stream of unverified headlines. Felix's remedy, stronger media literacy, is necessary but not sufficient, because it asks individuals to out-discipline systems engineered to capture their attention. More information is only a gain if the environment rewards accuracy, and right now it largely doesn't. That, for me, tips the balance toward harm."
  },
  {
   "id": "disc-40",
@@ -597,6 +636,7 @@
     "name": "Raj",
     "text": "I think the algorithms enrich my experience more than they limit it. With such an overwhelming amount of content available, good recommendations help me find hidden works I'd never have stumbled on alone, including films from other countries. The tools reflect our own choices, so if we deliberately explore, they'll happily lead us somewhere new."
    }
-  ]
+  ],
+  "model_essay": "I lean toward Nina, though Raj identifies the escape hatch. In principle Raj is right that an algorithm can surface a hidden film I'd never have found alone. But its objective isn't to broaden me; it's to keep me watching, and the safest way to do that is to serve more of what I already like. Left to run, that logic tightens the circle of my taste, exactly as Nina describes. Raj's condition, that we deliberately explore, is the crucial qualifier, but it also concedes the point: the system's default pulls toward comfort, and resisting it takes effort most viewers won't spend. My best discoveries, like Nina's, still come from friends handing me something I'd never have picked. The tools can enrich us, but only against their own grain."
  }
 ]

@@ -2,201 +2,241 @@
  {
   "id": "email-01",
   "situation": "You missed an important lecture because you were sick, and your professor covered material that will appear on the upcoming midterm exam.",
-  "prompt": "Write an email to your professor. Explain why you were absent, ask what you missed, and request the lecture notes or a chance to make up the work."
+  "prompt": "Write an email to your professor. Explain why you were absent, ask what you missed, and request the lecture notes or a chance to make up the work.",
+  "model_essay": "Dear Professor Reynolds,\n\nI am writing to explain that I missed Tuesday's lecture because I came down with a bad case of the flu and was unable to leave my room. I understand you covered material that will appear on the upcoming midterm, so I am eager to catch up quickly. Could you please tell me which topics I missed and whether any handouts were distributed? If possible, I would be very grateful if you could share the lecture notes or let me know how I might make up the work. Thank you for your understanding.\n\nBest regards,\nDaniel Cho"
  },
  {
   "id": "email-02",
   "situation": "Your university library recently reduced its weekend opening hours, which makes it difficult for you and other students to study on Saturdays and Sundays.",
-  "prompt": "Write an email to the library director. Explain the problem the new hours cause, and propose a solution that would better serve students."
+  "prompt": "Write an email to the library director. Explain the problem the new hours cause, and propose a solution that would better serve students.",
+  "model_essay": "Dear Dr. Hughes,\n\nI am writing on behalf of many students to express concern about the recently reduced weekend hours at the university library. Because the library now closes early on Saturdays and Sundays, students who work or attend classes during the week have far less time to study or access research materials when we need them most. Would it be possible to restore some evening hours on weekends, perhaps by keeping the main reading room open until 10 p.m.? Even a partial extension would greatly help those of us preparing for exams. Thank you for considering this request.\n\nSincerely,\nMaria Santos"
  },
  {
   "id": "email-03",
   "situation": "A friend from another city is planning to visit you for a weekend, and they have asked you for suggestions about what to do.",
-  "prompt": "Write an email to your friend. Give information about two or three activities you could do together and explain why you think they would enjoy them."
+  "prompt": "Write an email to your friend. Give information about two or three activities you could do together and explain why you think they would enjoy them.",
+  "model_essay": "Hi Sofia,\n\nI'm so excited that you're coming to visit this weekend! I've been thinking about what we could do together. On Saturday, we could hike up to the lookout point above the city — you love photography, and the view at sunset is incredible. Afterward, I know a cozy jazz café downtown with amazing desserts, which is perfect since you always enjoy live music. On Sunday, we could wander through the weekend market for local crafts. I think you'll really like its relaxed pace. Let me know which of these sounds good to you!\n\nSee you soon,\nEmma"
  },
  {
   "id": "email-04",
   "situation": "You signed up for a group presentation, but one of your teammates has not responded to any messages and the deadline is approaching.",
-  "prompt": "Write an email to your teammate. Explain the situation, express your concern, and propose a plan so the group can finish the project on time."
+  "prompt": "Write an email to your teammate. Explain the situation, express your concern, and propose a plan so the group can finish the project on time.",
+  "model_essay": "Hi Jordan,\n\nI hope everything is okay with you. I'm reaching out because I haven't been able to reach you through our group chat or email, and our presentation is due next Friday. I'm getting a little worried, since we still need to divide the slides and rehearse together. Could you let me know as soon as possible whether you're still able to take part? If we connect by Wednesday, I suggest you handle the introduction and one main section, and we meet Thursday afternoon to practice. Please reply when you can so we can finish this on time.\n\nBest,\nAlex"
  },
  {
   "id": "email-05",
   "situation": "You ordered a textbook online from the campus bookstore, but the package that arrived contained the wrong edition of the book.",
-  "prompt": "Write an email to the bookstore. Describe the problem, provide the relevant order details, and request either a replacement or a refund."
+  "prompt": "Write an email to the bookstore. Describe the problem, provide the relevant order details, and request either a replacement or a refund.",
+  "model_essay": "Dear Campus Bookstore Team,\n\nI am writing about a problem with a recent order. On July 3rd, I ordered the third edition of Principles of Economics (order number 48217), but the package I received contained the first edition instead. Unfortunately, my course requires the third edition, so I cannot use the book that arrived. Could you please send me the correct edition as a replacement? If it is out of stock, I would prefer a full refund. I have kept the original packaging and can return the wrong book whenever is convenient. Thank you for helping me resolve this.\n\nSincerely,\nKevin Park"
  },
  {
   "id": "email-06",
   "situation": "Your academic advisor asked you to choose your elective courses for next semester and email your choices with a brief explanation.",
-  "prompt": "Write an email to your advisor. Tell them which two elective courses you have chosen and explain why each one fits your goals."
+  "prompt": "Write an email to your advisor. Tell them which two elective courses you have chosen and explain why each one fits your goals.",
+  "model_essay": "Dear Dr. Klein,\n\nThank you for reminding me to finalize my elective choices for next semester. After reviewing the catalog, I have decided on two courses. The first is Data Visualization, which will strengthen the analytical and communication skills I need for my goal of becoming a data analyst. The second is Behavioral Economics, since understanding how people make decisions will complement my major and support my interest in market research. I believe both fit well with my long-term plans. Please let me know if you foresee any conflicts or would recommend adjustments. Thank you again for your guidance.\n\nBest regards,\nPriya Nair"
  },
  {
   "id": "email-07",
   "situation": "A club you belong to wants to organize a fundraising event, and the club president has asked members to suggest ideas by email.",
-  "prompt": "Write an email to the club president. Propose an idea for the fundraising event and explain how it could be organized successfully."
+  "prompt": "Write an email to the club president. Propose an idea for the fundraising event and explain how it could be organized successfully.",
+  "model_essay": "Dear Nathan,\n\nThank you for inviting members to suggest ideas for our fundraising event. I'd like to propose a charity talent show featuring student performers from across campus. To organize it, we could book the student center auditorium, charge a small entry fee, and invite acts to sign up through an online form. Some members could manage ticketing while others handle sound and promotion on social media. Local businesses might also donate small prizes in exchange for a mention in the program. I think it would draw a large crowd and raise a good amount. I'm happy to help coordinate.\n\nBest,\nLucia Fernandez"
  },
  {
   "id": "email-08",
   "situation": "You have been offered a part-time job on campus, but the proposed schedule conflicts with one of your required classes.",
-  "prompt": "Write an email to your future supervisor. Explain the scheduling conflict and request an adjustment that would allow you to accept the job."
+  "prompt": "Write an email to your future supervisor. Explain the scheduling conflict and request an adjustment that would allow you to accept the job.",
+  "model_essay": "Dear Ms. Coleman,\n\nThank you again for offering me the part-time position at the campus writing center. I am eager to accept, but I have noticed a scheduling conflict I hope we can resolve. The proposed Monday shift overlaps with my required statistics lecture, which meets from 2 to 3:30 p.m. and cannot be rescheduled. Would it be possible to move my Monday hours to the morning, or to reassign that shift to another weekday? I am free on Tuesdays, Wednesdays, and Thursdays and happy to work around the center's needs. I would truly appreciate any adjustment that lets me join the team.\n\nSincerely,\nOmar Haddad"
  },
  {
   "id": "email-09",
   "situation": "Your neighbor in the dormitory frequently plays loud music late at night, making it hard for you to sleep and study.",
-  "prompt": "Write an email to your neighbor. Politely describe the problem, explain how it affects you, and suggest a reasonable solution."
+  "prompt": "Write an email to your neighbor. Politely describe the problem, explain how it affects you, and suggest a reasonable solution.",
+  "model_essay": "Hi Marcus,\n\nI hope you're settling in well this semester. I wanted to reach out about something that's been on my mind. I've noticed that music often plays quite loudly from your room late at night, usually after midnight. Because my bedroom shares a wall with yours, the sound makes it hard for me to sleep and to concentrate when I have early classes or exams the next day. Would you mind lowering the volume or using headphones after around 11 p.m.? I'd really appreciate it, and please tell me if I'm ever too noisy myself. Thanks so much for understanding.\n\nBest,\nTom"
  },
  {
   "id": "email-10",
   "situation": "A professor sent an email inviting students to join a new research project, and you are interested in participating.",
-  "prompt": "Write an email to the professor. Express your interest, briefly describe why you are a good fit, and ask what the next steps would be."
+  "prompt": "Write an email to the professor. Express your interest, briefly describe why you are a good fit, and ask what the next steps would be.",
+  "model_essay": "Dear Professor Adler,\n\nThank you for your email inviting students to join your new research project on urban air quality. I would be very interested in taking part. As a third-year environmental science major, I have completed coursework in data analysis and recently helped with a field study measuring pollution near highways, so I am comfortable collecting and organizing datasets. I am eager to contribute and to learn from your team. Could you let me know what the next steps would be, such as an application, an interview, or a meeting to discuss how I might help? I look forward to the opportunity.\n\nSincerely,\nHannah Weiss"
  },
  {
   "id": "email-11",
   "situation": "You planned to attend a friend's birthday dinner, but you now realize you have an exam early the next morning and cannot stay out late.",
-  "prompt": "Write an email to your friend. Apologize, explain the situation, and suggest another way to celebrate together."
+  "prompt": "Write an email to your friend. Apologize, explain the situation, and suggest another way to celebrate together.",
+  "model_essay": "Hi Rachel,\n\nI'm so sorry, but I don't think I'll be able to stay for your birthday dinner on Friday after all. I just realized I have my organic chemistry final at 8 the next morning, and I really need a full night's sleep and some last-minute review to do well. I feel terrible about missing the celebration, because I've been looking forward to it. Could we do something together this weekend instead — maybe a birthday brunch on Sunday, once my exam is behind me? It would be my treat. Again, I'm sorry, and happy birthday in advance!\n\nLove,\nJenna"
  },
  {
   "id": "email-12",
   "situation": "The Wi-Fi connection in your dormitory has been unreliable for the past two weeks, disrupting your online classes and assignments.",
-  "prompt": "Write an email to the campus IT department. Describe the problem in detail and request that it be fixed as soon as possible."
+  "prompt": "Write an email to the campus IT department. Describe the problem in detail and request that it be fixed as soon as possible.",
+  "model_essay": "Dear IT Support Team,\n\nI am writing to report a persistent problem with the Wi-Fi in Building C of the North Campus dormitories. For the past two weeks, the connection has dropped repeatedly, often several times an hour, and the signal is especially weak in the evenings. This has disrupted my online classes, cut me off during quizzes, and made it hard to upload assignments before their deadlines. Several neighbors on my floor are having the same trouble. Could you please investigate and repair the network as soon as possible? I would be grateful for an update on when it might be resolved. Thank you.\n\nSincerely,\nRavi Menon"
  },
  {
   "id": "email-13",
   "situation": "Your student association is looking for a guest speaker for an upcoming event, and you know a local professional who might be willing to speak.",
-  "prompt": "Write an email to the professional. Introduce yourself, explain the event, and invite them to speak while giving the key details."
+  "prompt": "Write an email to the professional. Introduce yourself, explain the event, and invite them to speak while giving the key details.",
+  "model_essay": "Dear Ms. Alvarez,\n\nMy name is Chris Bennett, and I am the events coordinator for the Business Students' Association at Riverside University. I am writing to invite you to speak at our annual Career Insights evening. Given your experience leading a successful marketing firm, we believe our members would benefit greatly from hearing about your career path. The event will take place on Thursday, October 12th, from 6 to 8 p.m. in the Wilson Hall auditorium, and we would ask for a 30-minute talk followed by a short Q&A. We would be honored to have you join us. Please let me know if you are available.\n\nSincerely,\nChris Bennett"
  },
  {
   "id": "email-14",
   "situation": "You borrowed a friend's laptop for a presentation and accidentally spilled coffee on it, causing minor damage to the keyboard.",
-  "prompt": "Write an email to your friend. Explain what happened, apologize sincerely, and propose how you will make things right."
+  "prompt": "Write an email to your friend. Explain what happened, apologize sincerely, and propose how you will make things right.",
+  "model_essay": "Hi Ben,\n\nI need to tell you something, and I'm really sorry. While I was using your laptop for my presentation this morning, I knocked over a cup of coffee, and a little spilled onto the keyboard. A few keys now feel sticky, though the computer still turns on and works. I feel awful about it, especially since you were kind enough to lend it to me. I'd like to make things right by taking it to a repair shop and covering the full cost of cleaning or replacing the keyboard. Please let me know what works best for you. Again, I'm so sorry.\n\nYour friend,\nDanny"
  },
  {
   "id": "email-15",
   "situation": "A company where you applied for an internship has offered you a position, and they have asked you to confirm whether you accept.",
-  "prompt": "Write an email to the company. Accept the offer, express your enthusiasm, and ask any questions you have about starting."
+  "prompt": "Write an email to the company. Accept the offer, express your enthusiasm, and ask any questions you have about starting.",
+  "model_essay": "Dear Ms. Turner,\n\nThank you very much for offering me the summer marketing internship at Brightwave Media. I am delighted to accept the position and truly excited to join your team and contribute to your upcoming campaigns. Before I begin, I have a few questions. Could you let me know my official start date and expected working hours? I would also appreciate any guidance on the dress code and whether there are documents or training materials I should review beforehand. Please tell me if you need anything from me to complete the paperwork. I look forward to getting started and to learning from your team.\n\nSincerely,\nGrace Lim"
  },
  {
   "id": "email-16",
   "situation": "The cafeteria on campus offers very few healthy or vegetarian options, and several students have complained about the limited menu.",
-  "prompt": "Write an email to the cafeteria manager. Describe the concern on behalf of students and propose specific improvements to the menu."
+  "prompt": "Write an email to the cafeteria manager. Describe the concern on behalf of students and propose specific improvements to the menu.",
+  "model_essay": "Dear Mr. Dawson,\n\nI am writing on behalf of several students to raise a concern about the cafeteria menu. Many of us have noticed there are very few healthy or vegetarian options, which makes it hard for students with dietary restrictions to eat well on campus. To address this, we would like to suggest adding a daily vegetarian main dish, a fresh salad bar, and a few whole-grain or low-sugar choices. Even a small rotating selection would make a real difference. We would gladly share more feedback or help survey students about their preferences. Thank you for considering our suggestions.\n\nSincerely,\nElla Brooks"
  },
  {
   "id": "email-17",
   "situation": "You need a letter of recommendation from a former teacher for a scholarship application, and the deadline is in two weeks.",
-  "prompt": "Write an email to your former teacher. Politely request the recommendation, explain the scholarship, and mention the deadline and how to submit it."
+  "prompt": "Write an email to your former teacher. Politely request the recommendation, explain the scholarship, and mention the deadline and how to submit it.",
+  "model_essay": "Dear Ms. Patterson,\n\nI hope you are doing well. I was fortunate to have you as my history teacher last year, and your guidance meant a great deal to me. I am now applying for the Horizon Scholarship, which supports students pursuing degrees in the social sciences, and it requires a strong letter of recommendation. Would you be willing to write one on my behalf? The deadline is July 24th, and the letter is submitted through an online portal — I would send you a secure link along with a few notes about my activities. I completely understand if you are too busy. Thank you for considering my request.\n\nWarm regards,\nIsabel Ortiz"
  },
  {
   "id": "email-18",
   "situation": "You and a classmate agreed to study together for a final exam, but you have realized your study styles are very different and it is not working well.",
-  "prompt": "Write an email to your classmate. Tactfully raise the issue and suggest a new arrangement that could work better for both of you."
+  "prompt": "Write an email to your classmate. Tactfully raise the issue and suggest a new arrangement that could work better for both of you.",
+  "model_essay": "Hi Leo,\n\nThanks for studying with me this past week — I really appreciate the effort you've put in. I wanted to share a thought about our sessions. I've realized we tend to work in quite different ways: I focus best by writing out detailed summaries slowly, while you prefer to move quickly through practice problems. Lately I've found it hard to keep up, and I suspect the pace isn't ideal for you either. Rather than give up on studying together, what if we each prepare on our own first, then meet once a week to quiz each other and compare notes? I think that could suit us both.\n\nBest,\nNina"
  },
  {
   "id": "email-19",
   "situation": "Your department is planning to move a popular course to an early morning time slot, and many students think this change is inconvenient.",
-  "prompt": "Write an email to the department coordinator. Explain why the new time is a problem and propose an alternative scheduling solution."
+  "prompt": "Write an email to the department coordinator. Explain why the new time is a problem and propose an alternative scheduling solution.",
+  "model_essay": "Dear Ms. Whitfield,\n\nI am writing regarding the plan to move Introduction to Psychology to the 8 a.m. slot next semester. While I understand scheduling is difficult, many students are concerned about this change. A large number of us commute or work early-morning shifts, so an 8 a.m. start would force us to choose between a popular required course and our other commitments. Attendance and focus may also suffer at such an early hour. As an alternative, could the course be offered at 11 a.m. or in an early-afternoon slot, which tend to have fewer conflicts? I would gladly gather feedback from other students. Thank you for considering our concerns.\n\nSincerely,\nMarcus Reed"
  },
  {
   "id": "email-20",
   "situation": "A relative has generously offered to help pay for part of your studies, and you want to thank them and update them on your progress.",
-  "prompt": "Write an email to your relative. Express your gratitude, share information about how your studies are going, and describe your goals."
+  "prompt": "Write an email to your relative. Express your gratitude, share information about how your studies are going, and describe your goals.",
+  "model_essay": "Dear Aunt Carol,\n\nI wanted to write and thank you sincerely for your generous offer to help pay for part of my studies. Your support has taken a real weight off my shoulders, and I am deeply grateful. I'm happy to tell you that my first year has gone well: I passed all my courses, earned a place on the dean's list, and joined the campus engineering club. Looking ahead, I hope to complete a summer internship next year and eventually work as a civil engineer, designing sustainable buildings. I promise to keep working hard and to put your generosity to good use. Thank you again for believing in me.\n\nWith love,\nSam"
  },
  {
   "id": "email-21",
   "situation": "You were sick for several days and could not finish a research paper that is due tomorrow for your history seminar.",
-  "prompt": "Write an email to your professor. Explain why you were unable to complete the paper on time, request a short extension, and propose a specific new due date."
+  "prompt": "Write an email to your professor. Explain why you were unable to complete the paper on time, request a short extension, and propose a specific new due date.",
+  "model_essay": "Dear Professor Ellis,\n\nI am writing about the research paper for our history seminar, which is due tomorrow. Unfortunately, I came down with a bad case of the flu and spent the past several days in bed, unable to do any reading or writing. Because of this, I have not been able to finish the paper to the standard I want.\n\nI would be very grateful for a short extension. Would it be possible to submit the paper this Friday instead? That would give me two additional days to complete my analysis properly. Thank you for understanding.\n\nSincerely,\nJordan Mills"
  },
  {
   "id": "email-22",
   "situation": "You are thinking about changing your major from economics to computer science and need guidance before the next registration period.",
-  "prompt": "Write an email to your academic advisor. Explain your reasons for wanting to switch, ask which required courses you would still need to take, and request a meeting to discuss your options."
+  "prompt": "Write an email to your academic advisor. Explain your reasons for wanting to switch, ask which required courses you would still need to take, and request a meeting to discuss your options.",
+  "model_essay": "Dear Dr. Patel,\n\nI am currently majoring in economics, but I am seriously considering switching to computer science before the next registration period. Over the past year I have discovered that I enjoy programming far more than economic theory, and I believe a computer science degree fits my career goals in software development much better.\n\nBefore I decide, I would like to know which required courses I would still need to take, especially since I have already completed several math courses. Could we schedule a short meeting next week to discuss my options? I am available most afternoons. Thank you for your guidance.\n\nBest regards,\nAlex Turner"
  },
  {
   "id": "email-23",
   "situation": "The heating in your rented apartment has stopped working during a cold week and previous phone calls to the office went unanswered.",
-  "prompt": "Write an email to your landlord. Describe the problem and how long it has lasted, express your concern about the lack of response, and request that a repair be scheduled as soon as possible."
+  "prompt": "Write an email to your landlord. Describe the problem and how long it has lasted, express your concern about the lack of response, and request that a repair be scheduled as soon as possible.",
+  "model_essay": "Dear Mr. Reynolds,\n\nI am writing about the heating in my apartment, unit 4B, which stopped working five days ago. With temperatures near freezing this week, the apartment has become extremely cold and uncomfortable, especially at night.\n\nI have called the office several times over the past few days, but I have not received any response, which I find quite concerning. I would appreciate it if a technician could be scheduled to repair the heating as soon as possible, ideally within the next day or two. Please let me know when I can expect someone. Thank you for your prompt attention.\n\nSincerely,\nMorgan Lee"
  },
  {
   "id": "email-24",
   "situation": "You work part-time at a campus bookstore and need to attend your sister's wedding in another city next month.",
-  "prompt": "Write an email to your manager. Request two days off on specific dates, explain the reason, and offer a plan for covering your shifts while you are away."
+  "prompt": "Write an email to your manager. Request two days off on specific dates, explain the reason, and offer a plan for covering your shifts while you are away.",
+  "model_essay": "Dear Ms. Alvarez,\n\nI am writing to request two days off next month, on Friday, August 14th and Saturday, August 15th. My sister is getting married in Chicago that weekend, and I need to travel there to attend the ceremony and help with the preparations.\n\nI understand these are busy days for the store, so I have already spoken with Daniel, who has kindly agreed to cover my Friday shift, and Priya, who can take my Saturday shift. I will make sure everything is handed over smoothly beforehand. Please let me know if this arrangement works for you. Thank you very much.\n\nBest regards,\nSam Carter"
  },
  {
   "id": "email-25",
   "situation": "You missed the last lecture in your biology course and have a group project meeting coming up with a classmate you do not know well.",
-  "prompt": "Write an email to your classmate. Ask to borrow the lecture notes you missed, suggest a time and place to meet about the project, and propose how the two of you could divide the work."
+  "prompt": "Write an email to your classmate. Ask to borrow the lecture notes you missed, suggest a time and place to meet about the project, and propose how the two of you could divide the work.",
+  "model_essay": "Dear Chris,\n\nI am in your biology class, and unfortunately I missed the last lecture. Would you mind sharing your notes from that session with me? I want to make sure I am caught up before we begin our group project.\n\nSpeaking of which, could we meet to plan it? I am free on Wednesday afternoon and could meet at the library coffee shop around 3 p.m., if that suits you. As for the work, perhaps I could handle the research and data, while you focus on the slides and presentation. Let me know what you think. Looking forward to working together.\n\nBest,\nTaylor Brooks"
  },
  {
   "id": "email-26",
   "situation": "Many students in your program feel there are too few quiet study spaces open late at night on campus.",
-  "prompt": "Write an email to the dean of students. Describe the shortage of late-night study space, propose a concrete solution such as extending library hours, and offer to help gather student feedback."
+  "prompt": "Write an email to the dean of students. Describe the shortage of late-night study space, propose a concrete solution such as extending library hours, and offer to help gather student feedback.",
+  "model_essay": "Dear Dean Foster,\n\nI am writing on behalf of many students in my program to raise a concern about the lack of quiet study spaces open late at night. Most campus buildings close by 10 p.m., yet a large number of us study best in the late evening, and we often struggle to find anywhere suitable.\n\nOne practical solution would be to extend the main library's hours until at least 1 a.m., even in just a single wing. If it would help, I would gladly organize a short survey to gather feedback from students on this issue. Thank you for considering our request.\n\nRespectfully,\nJamie Nguyen"
  },
  {
   "id": "email-27",
   "situation": "You have several library books due this week, but you still need them to finish a term paper and cannot renew them online.",
-  "prompt": "Write an email to the university librarian. Explain your situation, request an extension on the due date, and ask whether any of the titles can be reserved so no one else recalls them."
+  "prompt": "Write an email to the university librarian. Explain your situation, request an extension on the due date, and ask whether any of the titles can be reserved so no one else recalls them.",
+  "model_essay": "Dear Ms. Hughes,\n\nI am writing about several library books I currently have checked out, all due this week. I am in the middle of writing my term paper and still rely on these sources, but the system will not let me renew them online.\n\nWould it be possible to extend the due date by one week so I can finish my research? In addition, could any of the titles be placed on reserve under my name, so that no one else is able to recall them before I am done? I would be very grateful for your help. Thank you.\n\nSincerely,\nRiley Adams"
  },
  {
   "id": "email-28",
   "situation": "You are interested in joining the campus photography club and would like to help organize its upcoming spring exhibition.",
-  "prompt": "Write an email to the club president. Introduce yourself and your experience, ask how to become a member, and offer to volunteer for the exhibition planning committee."
+  "prompt": "Write an email to the club president. Introduce yourself and your experience, ask how to become a member, and offer to volunteer for the exhibition planning committee.",
+  "model_essay": "Dear Ms. Coleman,\n\nMy name is Devon Park, a second-year student and a keen amateur photographer. I have spent the last three years shooting portraits and landscapes, and I recently exhibited a few prints at a local community gallery.\n\nI would love to join the campus photography club. Could you tell me how to become a member and whether there are any fees or requirements? I noticed that the club is preparing a spring exhibition, and I would be very happy to volunteer for the planning committee, whether that means curating, promoting, or helping set up. I look forward to hearing from you.\n\nBest regards,\nDevon Park"
  },
  {
   "id": "email-29",
   "situation": "You cannot log in to the online learning platform, and your homework submission is due in a few hours.",
-  "prompt": "Write an email to IT support. Describe exactly what error you see when you try to log in, explain that a deadline is approaching, and ask for an urgent fix or a temporary way to submit your work."
+  "prompt": "Write an email to IT support. Describe exactly what error you see when you try to log in, explain that a deadline is approaching, and ask for an urgent fix or a temporary way to submit your work.",
+  "model_essay": "Dear IT Support,\n\nI am unable to log in to the online learning platform, and I urgently need help. Each time I enter my username and password, the page reloads and displays the message \"Error 403: Access Denied,\" even though my credentials are correct and I reset my password an hour ago.\n\nUnfortunately, I have a homework assignment due in just three hours, and I cannot submit it without access. Could you please fix this issue as quickly as possible, or provide a temporary way for me to turn in my work, such as an email submission? I would greatly appreciate an urgent response. Thank you.\n\nRegards,\nCasey Wong"
  },
  {
   "id": "email-30",
   "situation": "You overslept and missed an important chemistry lecture where a midterm review was given.",
-  "prompt": "Write an email to your professor. Apologize for missing the class, ask what material and announcements were covered, and request any handouts or slides that were distributed."
+  "prompt": "Write an email to your professor. Apologize for missing the class, ask what material and announcements were covered, and request any handouts or slides that were distributed.",
+  "model_essay": "Dear Professor Kim,\n\nI am very sorry that I missed today's chemistry lecture. I overslept after a late night of studying, and I realize this is no excuse for missing such an important class, particularly the midterm review.\n\nCould you please let me know what material was covered during the session, along with any announcements about the exam that I should be aware of? I would also be grateful if you could send me any handouts or slides that were distributed in class, so that I can go over everything thoroughly on my own. Thank you for your understanding.\n\nSincerely,\nJordan Reyes"
  },
  {
   "id": "email-31",
   "situation": "You signed a one-year lease but have been offered an internship in another state and need to move out three months early.",
-  "prompt": "Write an email to your landlord. Explain why you need to end the lease early, ask about any fees or conditions involved, and propose helping to find a replacement tenant."
+  "prompt": "Write an email to your landlord. Explain why you need to end the lease early, ask about any fees or conditions involved, and propose helping to find a replacement tenant.",
+  "model_essay": "Dear Mr. Bennett,\n\nI am writing regarding my lease at 22 Maple Street, which runs until next spring. I have recently been offered an internship in another state, and I will need to move out about three months early, at the end of September.\n\nI understand this is earlier than agreed, so I would like to ask what fees or conditions apply to ending the lease early. I am also happy to help find a reliable replacement tenant to take over the apartment, which I hope would make the transition easier for you. Please let me know how you would like to proceed. Thank you.\n\nSincerely,\nAvery Scott"
  },
  {
   "id": "email-32",
   "situation": "You received a grade on your statistics exam that seems much lower than you expected based on your answers.",
-  "prompt": "Write an email to your teaching assistant. Politely explain which questions you would like reviewed, ask for an appointment to go over the exam, and request clarification on how the points were assigned."
+  "prompt": "Write an email to your teaching assistant. Politely explain which questions you would like reviewed, ask for an appointment to go over the exam, and request clarification on how the points were assigned.",
+  "model_essay": "Dear Mr. Thompson,\n\nI recently received my statistics exam grade, and it was considerably lower than I expected based on my answers. I would like to ask if we could review a few specific questions together, particularly numbers 4 and 7, where I believe my working was correct but received little credit.\n\nWould it be possible to arrange a short appointment this week to go over the exam in person? I would also appreciate some clarification on how the points were assigned for the problem-solving questions, so I can understand where I lost marks. Thank you very much for your time and help.\n\nBest regards,\nJesse Morgan"
  },
  {
   "id": "email-33",
   "situation": "Your class schedule this semester conflicts with your regular shifts at your part-time job.",
-  "prompt": "Write an email to your employer. Describe the scheduling conflict, propose a new set of working hours that fits your classes, and reassure your employer that your work quality will not suffer."
+  "prompt": "Write an email to your employer. Describe the scheduling conflict, propose a new set of working hours that fits your classes, and reassure your employer that your work quality will not suffer.",
+  "model_essay": "Dear Mr. Foster,\n\nI am writing about a scheduling conflict this semester. My new class timetable overlaps with my regular Monday and Wednesday afternoon shifts, as I now have lectures from 1 to 4 p.m. on both days, making it impossible for me to come in at those times.\n\nTo resolve this, I would like to propose working Tuesday and Thursday afternoons instead, along with a full shift on Saturdays. I want to assure you that this change will not affect the quality or reliability of my work, and I remain fully committed to my responsibilities. Thank you for your flexibility and understanding.\n\nBest regards,\nRobin Hayes"
  },
  {
   "id": "email-34",
   "situation": "You want to spend a semester studying abroad in Spain but are unsure about the application requirements and deadlines.",
-  "prompt": "Write an email to the study abroad office. Ask about the eligibility requirements for the Spain program, request the key application deadlines, and inquire whether financial aid can be applied to the program."
+  "prompt": "Write an email to the study abroad office. Ask about the eligibility requirements for the Spain program, request the key application deadlines, and inquire whether financial aid can be applied to the program.",
+  "model_essay": "Dear Study Abroad Office,\n\nI am a third-year student interested in spending next semester studying in Spain, and I have a few questions about the program. First, could you tell me what the eligibility requirements are, such as the minimum GPA or any Spanish-language prerequisites?\n\nI would also appreciate knowing the key application deadlines, so that I can prepare my documents in good time. Finally, I would like to ask whether my existing financial aid can be applied toward the cost of the program, or whether separate funding is required. Thank you very much for your help, and I look forward to your reply.\n\nSincerely,\nQuinn Rivera"
  },
  {
   "id": "email-35",
   "situation": "You ordered a laptop online for your coursework, but it arrived with a cracked screen.",
-  "prompt": "Write an email to the online store's customer service. Describe the damage and your order number, express your dissatisfaction, and request either a replacement or a full refund."
+  "prompt": "Write an email to the online store's customer service. Describe the damage and your order number, express your dissatisfaction, and request either a replacement or a full refund.",
+  "model_essay": "Dear Customer Service,\n\nI recently ordered a laptop from your store for my university coursework, order number 583920. Unfortunately, when the package arrived, the screen was badly cracked, with a large split running across the display that makes the laptop unusable.\n\nI am quite disappointed, as I paid for a new product and needed it urgently for my studies. The item was clearly damaged before it reached me. I would therefore like to request either a replacement laptop, sent as soon as possible, or a full refund of my payment. Please let me know how you would like to handle the return. Thank you.\n\nRegards,\nCameron Bell"
  },
  {
   "id": "email-36",
   "situation": "You are applying to graduate school and need a strong letter of recommendation from a professor who taught you last year.",
-  "prompt": "Write an email to your professor. Remind the professor of the course and work you did, request a recommendation letter, and provide the submission deadline along with an offer to send your resume."
+  "prompt": "Write an email to your professor. Remind the professor of the course and work you did, request a recommendation letter, and provide the submission deadline along with an offer to send your resume.",
+  "model_essay": "Dear Professor Nguyen,\n\nI hope you are well. I was a student in your Advanced Microeconomics course last year, where I completed my final project on labor market trends, which you kindly praised for its thorough analysis.\n\nI am now applying to graduate school and would be honored if you would write a letter of recommendation on my behalf. Your insight into my academic work would mean a great deal to my application. The submission deadline is November 15th, and letters are uploaded through an online portal. I am also happy to send you my resume and a summary of my goals to make the process easier. Thank you.\n\nSincerely,\nDana Willis"
  },
  {
   "id": "email-37",
   "situation": "Your roommate has been playing loud music late at night, making it hard for you to study and sleep before exams.",
-  "prompt": "Write an email to your roommate. Explain how the noise is affecting you, propose some quiet hours the two of you could agree on, and suggest meeting to talk it over calmly."
+  "prompt": "Write an email to your roommate. Explain how the noise is affecting you, propose some quiet hours the two of you could agree on, and suggest meeting to talk it over calmly.",
+  "model_essay": "Dear Sam,\n\nI wanted to talk with you about something that has been on my mind. Lately the music late at night has made it really hard for me to sleep and concentrate, and with final exams coming up, I am finding it difficult to stay focused and rested.\n\nI completely understand that you enjoy your music, so I was hoping we could agree on some quiet hours, perhaps keeping the volume down after 11 p.m. on weeknights. Could we sit down together sometime this week to talk it over calmly and find a fair arrangement? I really value living well together. Thanks so much.\n\nBest,\nJordan"
  },
  {
   "id": "email-38",
   "situation": "Several machines at the campus gym have been broken for weeks, and members have not been told when they will be fixed.",
-  "prompt": "Write an email to the gym facility manager. Report which equipment is out of order, express your frustration on behalf of other members, and ask for a timeline for the repairs."
+  "prompt": "Write an email to the gym facility manager. Report which equipment is out of order, express your frustration on behalf of other members, and ask for a timeline for the repairs.",
+  "model_essay": "Dear Mr. Patterson,\n\nI am writing to report several pieces of equipment at the campus gym that have been out of order for weeks. Specifically, two of the treadmills and one of the rowing machines are broken, and the leg-press machine has a torn cable.\n\nMany members, myself included, are quite frustrated, as these machines are among the most popular, and we have received no information about when they will be repaired. Could you please provide a timeline for fixing this equipment, or at least an update on the situation? We would all greatly appreciate some communication. Thank you for your attention to this matter.\n\nSincerely,\nKelly Barnes"
  },
  {
   "id": "email-39",
   "situation": "You missed the registration deadline for an academic conference where you hoped to present your research poster.",
-  "prompt": "Write an email to the conference organizers. Apologize for the late request, explain your situation, and ask whether it is still possible to register and present your poster."
+  "prompt": "Write an email to the conference organizers. Apologize for the late request, explain your situation, and ask whether it is still possible to register and present your poster.",
+  "model_essay": "Dear Conference Committee,\n\nI am writing to apologize for contacting you after the registration deadline has passed. I had fully intended to sign up in time to present a research poster, but a family emergency kept me away from my work for over a week, and the date slipped by before I realized it.\n\nI understand that late requests are not ideal, and I am sorry for any inconvenience. However, I wanted to ask whether it might still be possible to register and present my poster at the conference. I would be very grateful for any flexibility you could offer. Thank you for considering my request.\n\nRespectfully,\nReese Coleman"
  },
  {
   "id": "email-40",
   "situation": "You hosted a small gathering that ran late and disturbed a neighbor who lives in the apartment below you.",
-  "prompt": "Write an email to your neighbor. Apologize for the noise and inconvenience, explain that it was a one-time event, and propose how you will prevent similar disturbances in the future."
+  "prompt": "Write an email to your neighbor. Apologize for the noise and inconvenience, explain that it was a one-time event, and propose how you will prevent similar disturbances in the future.",
+  "model_essay": "Dear Ms. Sullivan,\n\nI am writing to sincerely apologize for the noise from my apartment last night. I hosted a small gathering with a few friends that ran later than planned, and I realize it must have disturbed you in the apartment below, for which I am truly sorry.\n\nPlease rest assured that this was a one-time occasion, not something that happens regularly. To make sure it does not happen again, I will keep future gatherings small, end them by ten o'clock, and remind my guests to keep their voices down. Thank you for your patience and understanding, and I apologize once more.\n\nWarm regards,\nElliot Price"
  }
 ]

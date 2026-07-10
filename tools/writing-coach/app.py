@@ -18,7 +18,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from prep_core import FeedbackEngine, Rubric, ProgressStore, QuestionGenerator, load_env
+from prep_core import (FeedbackEngine, Rubric, ProgressStore, QuestionGenerator,
+                       make_fallback_provider, load_env)
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]                                    # monorepo root
@@ -46,7 +47,25 @@ for task_type, fname in _PROMPT_FILES.items():
 
 engine = FeedbackEngine()             # provider auto-picked from env; offline stub if no key
 generator = QuestionGenerator(engine.provider)   # for similar-question suggestions
+# A model essay must appear even if the primary backend is down, so it uses a best-first fallback
+# chain (Claude > Groq > Gemini) that degrades until one model answers.
+essay_provider = make_fallback_provider()
 progress = ProgressStore(DATA_DIR / "progress.jsonl")
+
+_ESSAY_SYSTEM = {
+    "write_email": (
+        "You are an expert TOEFL iBT 2026 test-taker. Write a MODEL response to the given "
+        "'Write an Email' task that would earn the top band (5/5): 80-120 words, appropriate "
+        "salutation and closing, accomplish EVERY requirement stated in the task, polite and "
+        "appropriately formal register, clear organization. Return ONLY the email text."
+    ),
+    "academic_discussion": (
+        "You are an expert TOEFL iBT 2026 test-taker. Write a MODEL post for the given 'Write for "
+        "an Academic Discussion' task that would earn the top band (5/5): 100-130 words, a clear "
+        "opinion that directly answers the professor and is backed by a specific reason or example, "
+        "engaging naturally with the classmates' posts, natural academic register. Return ONLY the post."
+    ),
+}
 
 app = FastAPI(title="Writing Coach")
 
@@ -60,6 +79,12 @@ class ScoreRequest(BaseModel):
 class SimilarRequest(BaseModel):
     task_type: str
     example: str = ""
+
+
+class EssayRequest(BaseModel):
+    task_type: str
+    prompt_id: str = ""
+    prompt_text: str = ""
 
 
 @app.get("/api/tasks")
@@ -76,8 +101,8 @@ def status():
 
 @app.get("/api/prompts")
 def prompts(task_type: str):
-    """The prompt bank for a task (empty list if none generated yet)."""
-    return PROMPTS.get(task_type, [])
+    """The prompt bank for a task (model_essay stripped so it isn't revealed before scoring)."""
+    return [{k: v for k, v in it.items() if k != "model_essay"} for it in PROMPTS.get(task_type, [])]
 
 
 @app.post("/api/similar")
@@ -103,6 +128,25 @@ def score(req: ScoreRequest):
     progress.log("writing", task=req.task_type, band=fb.band, offline=fb.offline,
                  words=len(req.essay.split()))
     return fb.to_dict()
+
+
+@app.post("/api/model_essay")
+def model_essay(req: EssayRequest):
+    """A top-band model answer (范文). Pre-written for base-bank prompts (instant); otherwise
+    generated on demand with the best available model, degrading until one succeeds."""
+    if req.prompt_id:
+        for it in PROMPTS.get(req.task_type, []):
+            if it.get("id") == req.prompt_id and it.get("model_essay"):
+                return {"essay": it["model_essay"], "source": "bank", "provider": "pre-written"}
+    if essay_provider is None:
+        return {"error": "No model backend configured — add GEMINI_API_KEY or GROQ_API_KEY to .env."}
+    system = _ESSAY_SYSTEM.get(req.task_type, _ESSAY_SYSTEM["academic_discussion"])
+    task = req.prompt_text.strip() or "(the task prompt was not provided)"
+    try:
+        essay = essay_provider.complete_text(system, f"Task:\n{task}\n\nWrite the model response now.")
+    except Exception as e:                       # every backend in the chain failed
+        return {"error": f"All model providers are busy — please retry. ({type(e).__name__})"}
+    return {"essay": (essay or "").strip(), "source": "generated", "provider": essay_provider.name}
 
 
 @app.get("/")

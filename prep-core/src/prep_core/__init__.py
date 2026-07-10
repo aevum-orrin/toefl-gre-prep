@@ -1,7 +1,7 @@
 """prep-core: exam-agnostic building blocks shared by TOEFL and GRE prep tools."""
 from .rubric import Rubric, Criterion
 from .feedback import FeedbackEngine, WritingFeedback
-from .providers import make_provider, Provider
+from .providers import make_provider, make_fallback_provider, Provider, FallbackProvider
 from .generate import QuestionGenerator
 from .srs import SRS, Card
 from .progress import ProgressStore
@@ -13,7 +13,9 @@ __all__ = [
     "FeedbackEngine",
     "WritingFeedback",
     "make_provider",
+    "make_fallback_provider",
     "Provider",
+    "FallbackProvider",
     "QuestionGenerator",
     "SRS",
     "Card",

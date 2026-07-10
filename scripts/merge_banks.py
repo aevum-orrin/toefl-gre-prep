@@ -54,6 +54,31 @@ def merge_strings(repo_p: Path, gen_p: Path) -> tuple[int, int]:
     return len(base), added
 
 
+def merge_essays(repo_p: Path, gen_names: list[str]) -> tuple[int, int]:
+    """Attach a pre-written `model_essay` to each prompt item by id."""
+    items = _read(repo_p)
+    essays: dict[str, str] = {}
+    for name in gen_names:
+        d = _read(GEN / name)
+        if isinstance(d, dict):
+            essays.update(d)
+        elif not d:  # _read returns [] for a JSON object; re-read as dict
+            try:
+                obj = json.loads((GEN / name).read_text(encoding="utf-8"))
+                if isinstance(obj, dict):
+                    essays.update(obj)
+            except (json.JSONDecodeError, ValueError, OSError):
+                pass
+    n = 0
+    for it in items:
+        e = essays.get(it.get("id"))
+        if isinstance(e, str) and e.strip():
+            it["model_essay"] = e.strip()
+            n += 1
+    _write(repo_p, items)
+    return len(items), n
+
+
 def main() -> None:
     total, added = merge_keyed(REPO / "toefl/writing/email_prompts.json",
                                GEN / "email_b.json", "id", ["situation", "prompt"])
@@ -67,6 +92,13 @@ def main() -> None:
     total, added = merge_strings(REPO / "toefl/speaking/sentences.json",
                                  GEN / "sentences_b.json")
     print(f"  sentences   +{added:3} -> {total}")
+
+    total, added = merge_essays(REPO / "toefl/writing/email_prompts.json",
+                                ["email_essays_a.json", "email_essays_b.json"])
+    print(f"  email model essays:      {added}/{total}")
+    total, added = merge_essays(REPO / "toefl/writing/discussion_prompts.json",
+                                ["discussion_essays_a.json", "discussion_essays_b.json"])
+    print(f"  discussion model essays: {added}/{total}")
 
 
 if __name__ == "__main__":
