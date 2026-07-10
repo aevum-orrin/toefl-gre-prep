@@ -31,18 +31,21 @@ toefl-gre-prep/
 │   └── src/prep_core/ # FeedbackEngine · providers (multi-backend) · generate (live gen)
 │                      #   · SRS · ProgressStore · Rubric · audio (faster-whisper)
 ├── tools/             # shared apps — used by both TOEFL and GRE
-│   ├── writing-coach/ # AI essay scoring/polish (FastAPI + web)              :8001
+│   ├── writing-coach/ # AI essay scoring/polish (FastAPI + web)                 :8001
 │   ├── speaking-app/  # speaking: Listen&Repeat + Interview (record+Whisper+AI) :8002
-│   └── vocab-srs/     # vocabulary: SM-2 spaced-repetition flashcards        :8003
-│   └── reading-listening/ # Reading + Listening MCQ, auto-scored, free       :8004
+│   ├── vocab-srs/     # vocabulary: SM-2 flashcards over big ECDICT decks       :8003
+│   ├── reading-listening/ # Reading + Listening practice, auto-scored, free     :8004
+│   └── mock-test/     # full-length TIMED R/L, 2 adaptive modules, 1–6 band     :8005
+├── scripts/           # data pipeline: build_vocab · enrich_vocab · merge_rl
 ├── toefl/             # TOEFL-specific data
 │   ├── rubrics/{writing,speaking}/  # official 2026 0–5 facets
 │   ├── speaking/      # Listen&Repeat sentences (60) + interview topics (20 × 4 Qs)
 │   ├── writing/       # email (20) + academic-discussion (20) prompt banks
-│   ├── reading/ listening/  # passage + talk banks (12 each) with MCQ
-│   ├── vocab/         # TOEFL wordlist (100)
+│   ├── reading/       # academic · daily_life · complete_words   (task-typed MCQ)
+│   ├── listening/     # academic_talk · conversation · announcement · choose_response
+│   ├── vocab/         # TOEFL wordlist — 6955 words (ECDICT-derived)
 │   └── plan/          # 14-day plan
-├── gre/vocab/         # GRE wordlist (100); other GRE content added later
+├── gre/vocab/         # GRE wordlist — 7485 words (ECDICT-derived)
 ├── docs/              # 2026-toefl-format.md — verified official format + scoring (source of truth)
 └── data/              # recordings, progress, SRS state (gitignored)
 ```
@@ -67,6 +70,20 @@ Speech is free and local throughout: **faster-whisper** (STT) + browser **Web Sp
 prompt banks double as offline practice material and as the fallback when live generation is
 unavailable. **Grading is strict** — a top score means a genuinely flawless response.
 
+## Vocabulary decks (ECDICT-backed) & Reading/Listening bank
+
+`scripts/build_vocab.py` derives the decks from the open **ECDICT** dictionary, filtered to its
+official **TOEFL** (6955 words) and **GRE** (7485 words) exam tags — each word carries IPA, per-part-
+of-speech English + Chinese senses, a Collins difficulty star, a frequency rank, and verb forms, all
+offline. `scripts/enrich_vocab.py` then layers on a clean learner definition, one example sentence per
+part of speech, and common collocations (free Gemini, **cached in scratch** so identical input never
+re-calls). vocab-srs schedules reviews with SM-2 and introduces a capped number of new words per day
+(default 20), most-frequent first.
+
+The Reading/Listening bank is **task-typed** — one JSON file per 2026 task type, loaded by directory
+glob (98 items / ~336 questions and growing). `scripts/merge_rl.py` merges freshly generated items into
+the canonical per-type files. `mock-test` assembles these into a full-length, timed section.
+
 ## Environment (Great Lakes login node)
 
 ```bash
@@ -83,27 +100,31 @@ subscription**; with no card added it simply fails rather than charging silently
 
 ## Usage
 
+Launch any tool with the helper (loads the env, starts uvicorn, prints the URL):
+
 ```bash
-# writing feedback
-cd tools/writing-coach && uvicorn app:app --reload --port 8001    # http://localhost:8001
-# speaking (needs a mic → run on your laptop; over SSH forward the port to localhost)
-cd tools/speaking-app && uvicorn app:app --reload --port 8002     # http://localhost:8002
-# vocabulary (SM-2 spaced repetition, shared by TOEFL/GRE)
-cd tools/vocab-srs && uvicorn app:app --reload --port 8003        # http://localhost:8003
-# reading + listening (auto-scored, no key needed)
-cd tools/reading-listening && uvicorn app:app --reload --port 8004 # http://localhost:8004
+./run.sh writing    # writing-coach       http://localhost:8001
+./run.sh speaking   # speaking-app        http://localhost:8002  (needs a mic → run on your laptop)
+./run.sh vocab      # vocab-srs           http://localhost:8003
+./run.sh reading    # reading-listening   http://localhost:8004
+./run.sh mock       # mock-test (timed)   http://localhost:8005
 ```
+
+…or run one directly: `source env.sh && cd tools/writing-coach && uvicorn app:app --reload --port 8001`.
+Each tool has its own port, so several can run at once; `Ctrl+C` stops one. For speaking over SSH,
+forward the port to your laptop (VS Code does this automatically).
 
 ## Progress
 
-- [x] Monorepo + GitHub remote (repo renamed `toefl-gre-prep`)
-- [x] `prep-core`: **multi-backend engine** (gemini/groq/anthropic/offline) + **live generation** +
-  SRS + Progress + Rubric + faster-whisper — 4 unit tests pass
-- [x] Verified **2026 official format + 4-section scoring** (`docs/2026-toefl-format.md`); rubrics
-  updated to official 0–5 facets (drop Integrated Writing, add Write an Email)
-- [x] Content banks: Listen&Repeat 60 / interview 20 topics / email 20 / discussion 20 / reading 12 /
-  listening 12 / vocab 100×2
-- [x] Four apps (writing-coach, speaking-app, vocab-srs, reading-listening) — end-to-end tested
+- [x] Monorepo + GitHub remote `aevum-orrin/toefl-gre-prep`
+- [x] `prep-core`: **multi-backend engine** (gemini/groq/anthropic/offline) + live generation + SRS +
+  Progress + Rubric + faster-whisper — unit tests pass
+- [x] Verified **2026 official format + 4-section scoring** (`docs/2026-toefl-format.md`); rubrics on
+  official 0–5 facets (dropped Integrated Writing, added Write an Email)
+- [x] **Big vocab decks** from ECDICT — TOEFL 6955 / GRE 7485, per-POS senses + difficulty + frequency
+- [x] **Five apps** (writing-coach, speaking-app, vocab-srs, reading-listening, mock-test) — end-to-end tested
+- [x] **Task-typed R/L bank** (98 items / ~336 Q) + full-length timed **mock-test** (2 adaptive modules, 1–6 band)
 - [x] Real (live) Gemini scoring + live generation verified; strict grading
+- [~] Vocab enrichment (examples + collocations) filling in the background, most-frequent first
 - [ ] Real microphone speaking test (on your laptop)
-- [ ] GRE: add `gre/rubrics/*.json` (Issue/Argument), reuse the four apps
+- [ ] GRE: add `gre/rubrics/*.json` (Issue/Argument), reuse the apps
