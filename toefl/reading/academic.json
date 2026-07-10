@@ -1622,5 +1622,509 @@
     "explanation": "Boosters are needed because 'protection depends on these surviving cells,' keeping the memory-cell population large enough for a rapid response."
    }
   ]
+ },
+ {
+  "id": "opus_ap_01",
+  "kind": "academic_passage",
+  "title": "The Migration of Monarch Butterflies",
+  "passage": "The monarch butterfly performs one of the most remarkable migrations in the animal kingdom. Each autumn, millions of these insects travel from breeding grounds in the northern United States and southern Canada to a handful of forested mountain sites in central Mexico, a journey that can exceed 4,000 kilometers. What makes this feat especially astonishing is that no single butterfly completes the entire round trip. The individuals that fly south in the fall are the great-grandchildren of those that departed Mexico the previous spring. This means the migrating generation navigates to a destination it has never seen, relying on inherited biological mechanisms rather than learned experience.\n\nScientists have identified several tools that monarchs use to find their way. Foremost among these is a time-compensated sun compass. Because the sun moves across the sky during the day, using it as a fixed reference point would send the butterflies steadily off course. To correct for this, monarchs possess an internal clock, located partly in their antennae, that adjusts their reading of the sun's position throughout the day. When researchers removed or painted over the antennae of test butterflies, the insects lost their ability to hold a consistent southward heading, confirming the antennae's role in timekeeping.\n\nThe sun compass alone, however, cannot explain how monarchs cope with cloudy days. Additional research suggests that the butterflies can also detect the Earth's magnetic field, giving them a backup system for navigation when sunlight is unavailable. This magnetic sense appears to depend on light in the ultraviolet range, hinting at a sophisticated interplay between the two navigational strategies.\n\nThe monarch migration is now a subject of conservation concern. The overwintering colonies in Mexico depend on a specific type of high-altitude fir forest, and illegal logging has reduced this habitat. Meanwhile, the milkweed plants on which monarchs lay their eggs have declined across North American farmland due to herbicide use. Because the species relies on a fragile chain of conditions spanning an entire continent, disruptions at any single point can threaten the whole population. Understanding the biology behind the migration is therefore not merely an academic exercise but a prerequisite for protecting a natural phenomenon that has captivated observers for generations.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the passage?",
+    "options": [
+     "To argue that the monarch butterfly should be classified as an endangered species",
+     "To describe the monarch's migration and the mechanisms and threats associated with it",
+     "To compare the navigation abilities of monarch butterflies with those of birds",
+     "To explain why milkweed plants are disappearing from North American farmland"
+    ],
+    "answer": 1,
+    "explanation": "The passage surveys the migration, the navigational tools monarchs use, and conservation threats, making (1) the correct scope; the others each address only a narrow detail or an unmentioned comparison."
+   },
+   {
+    "q": "According to the passage, why would using the sun as a fixed reference point cause problems for a monarch?",
+    "options": [
+     "The sun is often hidden by clouds during the migration season",
+     "The sun's ultraviolet light interferes with the butterfly's magnetic sense",
+     "The sun changes position in the sky over the course of the day",
+     "The sun is not visible from the high-altitude forests in Mexico"
+    ],
+    "answer": 2,
+    "explanation": "The text states the sun 'moves across the sky during the day,' so a fixed reading would send butterflies off course; the other options misattribute the reason to clouds, magnetism, or forest location."
+   },
+   {
+    "q": "The word \"astonishing\" in the passage is closest in meaning to",
+    "options": [
+     "amazing",
+     "ordinary",
+     "gradual",
+     "uncertain"
+    ],
+    "answer": 0,
+    "explanation": "\"Astonishing\" means surprising or amazing, matching (0); \"ordinary\" is its opposite, and \"gradual\" and \"uncertain\" are unrelated in meaning."
+   },
+   {
+    "q": "It can be inferred from the passage that the monarch's magnetic sense is most useful when",
+    "options": [
+     "the butterflies are laying eggs on milkweed plants",
+     "the sky is overcast and the sun cannot be seen",
+     "the butterflies are flying north in the spring",
+     "the antennae have been damaged or removed"
+    ],
+    "answer": 1,
+    "explanation": "The passage presents the magnetic sense as a 'backup system' for 'cloudy days' when sunlight is unavailable, supporting (1); the other situations are not linked to magnetic navigation."
+   },
+   {
+    "q": "Which of the following is NOT mentioned in the passage as a factor threatening monarch butterflies?",
+    "options": [
+     "Illegal logging of forests in Mexico",
+     "Decline of milkweed plants due to herbicides",
+     "Increased predation by migratory birds",
+     "Dependence on a fragile chain of conditions across a continent"
+    ],
+    "answer": 2,
+    "explanation": "The passage names logging, milkweed decline, and the fragile continental chain, but never mentions bird predation, making (2) the unstated option."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_02",
+  "kind": "academic_passage",
+  "title": "The Invention of Printing in East Asia",
+  "passage": "Long before Johannes Gutenberg introduced movable-type printing to Europe in the fifteenth century, the essential techniques of printing had already been developed and refined in East Asia. The earliest form, known as woodblock printing, appeared in China during the Tang dynasty. In this method, a craftsman carved an entire page of text or an image in reverse onto a single wooden block, applied ink to the raised surface, and pressed paper against it. Because the block could be reused many times, woodblock printing made it possible to reproduce Buddhist scriptures and other texts far more efficiently than by hand copying.\n\nA significant advance came in the eleventh century when a Chinese artisan named Bi Sheng created movable type made from baked clay. Instead of carving a whole page at once, Bi Sheng produced individual characters that could be arranged into a page, printed, and then rearranged for a different page. In principle this system offered great flexibility. In practice, however, movable type faced a distinctive obstacle in China: the written language uses thousands of separate characters rather than a small alphabet. Assembling and storing so many pieces of type was cumbersome, and for many purposes woodblock printing remained more practical.\n\nThe situation was different in Korea, where printers made important contributions to the technology. By the thirteenth century, Korean craftsmen were casting movable type in metal, which was far more durable than clay. The Korean court, eager to preserve and circulate important works, supported these efforts, and a Korean text printed with metal movable type predates the Gutenberg Bible by several decades. The comparatively smaller number of symbols in the Korean writing system, developed later, would eventually make movable type especially well suited to the language.\n\nHistorians continue to debate whether knowledge of East Asian printing traveled westward and influenced Gutenberg, or whether he arrived at his method independently. Direct evidence of transmission is lacking, and the two traditions differed in important respects, including the presses and inks they used. What is clear is that printing did not spring from a single moment of genius in one place. Rather, it emerged from centuries of experimentation across several societies, each adapting the underlying idea to the demands of its own language, materials, and needs.",
+  "questions": [
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "Gutenberg copied his printing method directly from Chinese and Korean sources",
+     "Printing techniques were developed and refined in East Asia well before Gutenberg",
+     "Woodblock printing was always superior to movable type in every society",
+     "The Korean writing system was the first alphabet designed for printing"
+    ],
+    "answer": 1,
+    "explanation": "The passage traces East Asian printing developments that predate Gutenberg and stresses their gradual emergence, matching (1); (0) is explicitly left unresolved, and (2) and (3) overstate or distort specific details."
+   },
+   {
+    "q": "According to the passage, what obstacle limited the usefulness of movable type in China?",
+    "options": [
+     "The clay type crumbled after only a few uses",
+     "The Chinese written language uses thousands of separate characters",
+     "Chinese craftsmen lacked access to suitable wood",
+     "The government forbade the printing of Buddhist scriptures"
+    ],
+    "answer": 1,
+    "explanation": "The passage states the language 'uses thousands of separate characters,' making assembly cumbersome (1); the other options introduce problems the text does not describe."
+   },
+   {
+    "q": "The word \"cumbersome\" in the passage is closest in meaning to",
+    "options": [
+     "inexpensive",
+     "delicate",
+     "burdensome",
+     "temporary"
+    ],
+    "answer": 2,
+    "explanation": "\"Cumbersome\" means awkward or burdensome to handle, matching (2); the other choices do not capture the sense of difficulty and inconvenience."
+   },
+   {
+    "q": "What can be inferred about metal movable type as developed in Korea?",
+    "options": [
+     "It lasted longer than type made from baked clay",
+     "It was invented before woodblock printing",
+     "It was rejected by the Korean court",
+     "It required no ink to produce clear impressions"
+    ],
+    "answer": 0,
+    "explanation": "The passage says metal was 'far more durable than clay,' so metal type lasted longer (0); the other statements contradict the chronology or the court's support described in the text."
+   },
+   {
+    "q": "Which sentence best summarizes the passage's conclusion about the origins of printing?",
+    "options": [
+     "Printing was invented in a single moment by one brilliant individual",
+     "Printing emerged from centuries of experimentation across several societies",
+     "Printing was only possible once metal type had been developed",
+     "Printing spread from Europe to Asia over several centuries"
+    ],
+    "answer": 1,
+    "explanation": "The final paragraph explicitly rejects a single moment of genius and credits gradual, multi-society experimentation (1); the other options contradict the passage's stated conclusion or reverse its geography."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_03",
+  "kind": "academic_passage",
+  "title": "How Coral Reefs Build Themselves",
+  "passage": "Coral reefs are among the largest structures on Earth created by living organisms, yet the animals responsible for them are individually tiny. A coral reef is built by colonies of small creatures called polyps, each only a few millimeters across. Each polyp secretes a hard skeleton of calcium carbonate around the lower half of its body. As generations of polyps live, reproduce, and die, their skeletons accumulate and cement together, forming the massive limestone framework of the reef. A structure like Australia's Great Barrier Reef represents the labor of countless polyps over thousands of years.\n\nCentral to the reef's success is a partnership between the coral polyps and microscopic algae called zooxanthellae that live inside the polyps' tissues. Through photosynthesis, the algae convert sunlight into energy-rich compounds, a large share of which they pass to their coral hosts. In return, the polyps supply the algae with shelter and with the nutrients they need. This mutually beneficial arrangement allows corals to thrive in tropical waters that are otherwise remarkably poor in nutrients. It also explains why reef-building corals are confined to shallow, sunlit waters: without adequate light, the algae cannot photosynthesize, and the partnership collapses.\n\nThat dependence, however, makes corals vulnerable. When water temperatures rise even slightly above the normal range for an extended period, the relationship breaks down. Stressed polyps expel their algae, and because the algae give coral much of its color, the reef turns a ghostly white. This phenomenon, known as coral bleaching, does not kill the coral immediately, but a bleached colony is starving. If normal conditions return quickly, the polyps may regain their algae and recover. If the stress persists, the coral dies.\n\nReefs are ecologically valuable far out of proportion to the area they cover. Although they occupy less than one percent of the ocean floor, they provide habitat for roughly a quarter of all marine species. They also shelter coastlines from storm waves and support fisheries that feed millions of people. For these reasons, scientists monitor reef health closely, viewing the frequency and severity of bleaching events as an important signal of broader changes in the ocean environment.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "The commercial value of fisheries near coral reefs",
+     "How coral reefs are formed and why they are vulnerable",
+     "The history of scientific expeditions to the Great Barrier Reef",
+     "The differences between tropical and temperate ocean waters"
+    ],
+    "answer": 1,
+    "explanation": "The passage explains how polyps build reefs, the algae partnership, bleaching, and reef value, so (1) captures its scope; the others focus on incidental details."
+   },
+   {
+    "q": "According to the passage, what do the zooxanthellae provide to the coral polyps?",
+    "options": [
+     "A hard skeleton of calcium carbonate",
+     "Protection from rising water temperatures",
+     "Energy-rich compounds produced by photosynthesis",
+     "Shelter within the polyps' tissues"
+    ],
+    "answer": 2,
+    "explanation": "The passage states the algae 'pass' energy-rich compounds from photosynthesis to their hosts (2); the skeleton is made by the polyp, shelter flows the other way, and the algae do not protect against heat."
+   },
+   {
+    "q": "The word \"expel\" in the passage is closest in meaning to",
+    "options": [
+     "absorb",
+     "drive out",
+     "nourish",
+     "conceal"
+    ],
+    "answer": 1,
+    "explanation": "\"Expel\" means to force out, matching \"drive out\" (1); \"absorb\" and \"nourish\" are opposite in direction, and \"conceal\" is unrelated."
+   },
+   {
+    "q": "Why does the passage state that reef-building corals are confined to shallow, sunlit waters?",
+    "options": [
+     "Because polyps cannot secrete calcium carbonate in deep water",
+     "Because predators are less common near the surface",
+     "Because the algae need light to photosynthesize",
+     "Because storm waves keep deeper water too turbulent"
+    ],
+    "answer": 2,
+    "explanation": "The passage directly links the shallow-water requirement to the algae's need for light to photosynthesize (2); the other explanations are not supported by the text."
+   },
+   {
+    "q": "It can be inferred from the passage that a bleached coral colony",
+    "options": [
+     "has permanently lost its ability to build a skeleton",
+     "can recover if normal conditions return quickly",
+     "is no longer inhabited by any polyps",
+     "has gained a new source of nutrition"
+    ],
+    "answer": 1,
+    "explanation": "The text says polyps 'may regain their algae and recover' if conditions improve soon (1); the other options contradict the passage, which describes a bleached colony as starving but still alive."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_04",
+  "kind": "academic_passage",
+  "title": "The Rise of the Public Museum",
+  "passage": "The idea that ordinary citizens should have free access to great collections of art and artifacts is a relatively modern one. For most of history, valuable objects were gathered into private collections owned by rulers, aristocrats, and wealthy merchants. Renaissance princes assembled so-called cabinets of curiosities, crowded rooms displaying paintings, exotic shells, ancient coins, and scientific instruments. Such collections were meant to impress select visitors and to advertise the owner's wealth and learning; they were not intended for the general public.\n\nThe transformation of private collections into public institutions occurred gradually and was tied to broader intellectual changes. During the eighteenth-century Enlightenment, thinkers increasingly argued that knowledge should be shared rather than hoarded and that exposure to fine objects could educate and improve ordinary people. In this climate, several important museums opened their doors. The British Museum, founded in 1753, was among the first designed as a national institution held in trust for the public, although in its early years visitors had to apply in advance and were guided through in small groups.\n\nThe French Revolution accelerated the shift. When the revolutionary government opened the Louvre as a public museum in 1793, it made a deliberate political statement: the royal art collection, once the private treasure of kings, now belonged to the nation. Similar reasoning spread across Europe and later to the Americas, where new museums were often founded not by monarchs but by civic groups and private donors who believed that cultural institutions strengthened society.\n\nThe public museum brought with it new responsibilities and new debates that continue today. Curators had to decide how objects should be arranged and explained so that untrained visitors could understand them. Questions arose about who owned cultural treasures, especially artifacts removed from distant lands during periods of empire, and whether some should be returned to their places of origin. The museum thus became more than a storehouse of beautiful things. It became a public space where a society displays what it values, argues about its past, and considers how knowledge and culture ought to be shared among all its members.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the passage?",
+    "options": [
+     "To trace how collections shifted from private ownership to public museums",
+     "To argue that artifacts taken during empire should be returned",
+     "To describe the specific holdings of the British Museum and the Louvre",
+     "To explain how Renaissance princes acquired exotic objects"
+    ],
+    "answer": 0,
+    "explanation": "The passage narrates the historical shift from private collections to public institutions and its consequences (0); the other choices name details that serve this larger narrative rather than defining it."
+   },
+   {
+    "q": "According to the passage, what was the purpose of a Renaissance cabinet of curiosities?",
+    "options": [
+     "To educate the general public about science",
+     "To impress select visitors and advertise the owner's wealth and learning",
+     "To preserve artifacts returned from distant lands",
+     "To train curators in methods of display"
+    ],
+    "answer": 1,
+    "explanation": "The passage says such collections were 'meant to impress select visitors and to advertise the owner's wealth and learning' (1); the other options describe purposes the text explicitly denies or never mentions."
+   },
+   {
+    "q": "The word \"hoarded\" in the passage is closest in meaning to",
+    "options": [
+     "displayed openly",
+     "kept and stored away",
+     "sold for profit",
+     "carefully studied"
+    ],
+    "answer": 1,
+    "explanation": "\"Hoarded\" means accumulated and kept from others, matching (1); it is contrasted in the sentence with sharing, so \"displayed openly\" is the opposite, and the other choices are unrelated."
+   },
+   {
+    "q": "According to the passage, what political statement did the opening of the Louvre in 1793 make?",
+    "options": [
+     "That art should be sold to fund the revolutionary government",
+     "That only trained scholars should be allowed to view art",
+     "That the royal art collection now belonged to the nation",
+     "That France would return foreign artifacts to their origins"
+    ],
+    "answer": 2,
+    "explanation": "The passage states the opening declared that the once-royal collection 'now belonged to the nation' (2); the other options attribute claims to the event that the text does not support."
+   },
+   {
+    "q": "Which of the following is NOT mentioned in the passage as a development associated with public museums?",
+    "options": [
+     "Debates about who owns cultural treasures",
+     "Decisions about how to arrange and explain objects",
+     "The founding of museums by civic groups and donors",
+     "The requirement that all visitors pay an entrance fee"
+    ],
+    "answer": 3,
+    "explanation": "The passage mentions ownership debates, arrangement decisions, and civic founders, but never a universal entrance fee, making (3) the unstated option."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_05",
+  "kind": "academic_passage",
+  "title": "The Science of Sleep and Memory",
+  "passage": "For a long time, sleep was regarded mainly as a period of rest during which the brain simply shut down. Modern research has overturned that view. Far from being idle, the sleeping brain is intensely active, and one of its most important tasks appears to be the consolidation of memory, the process by which fragile new memories are stabilized and integrated into long-term storage.\n\nSleep is not a uniform state but cycles through distinct stages. Two are especially relevant to memory. During deep slow-wave sleep, which dominates the early part of the night, the brain produces large, synchronized waves of electrical activity. Researchers believe that during these periods the brain replays recent experiences, strengthening the connections that encode factual and event-based memories. Later in the night, rapid eye movement, or REM, sleep becomes more prominent. REM sleep, when most vivid dreaming occurs, has been linked to emotional processing and to certain kinds of skill learning.\n\nEvidence for the memory-consolidation role of sleep comes from a range of experiments. In a typical study, participants learn a task, such as a sequence of finger movements or a list of word pairs, and are then tested either after a night of sleep or after an equivalent period of daytime wakefulness. Those who sleep between learning and testing consistently perform better. Notably, the improvement is not merely the absence of fatigue; sleeping subjects often show gains that wakeful subjects do not, as if the memory itself had been actively enhanced overnight.\n\nThese findings carry practical implications, particularly for students. Cramming through the night before an examination deprives the brain of the very stage it needs to lock in newly learned material, which may explain why exhausted students often struggle to recall information they thought they had mastered. The research suggests that spreading study across several days, with a full night's sleep after each session, makes for more durable learning. Sleep, in this light, is not time subtracted from productive work but an essential component of it, a period during which the brain quietly completes work that waking hours have only begun.",
+  "questions": [
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "Dreaming is the most important function of sleep",
+     "Sleep plays an active and essential role in consolidating memory",
+     "Students should avoid studying on the night before an exam",
+     "The brain shuts down completely during deep slow-wave sleep"
+    ],
+    "answer": 1,
+    "explanation": "The passage's central claim is that the sleeping brain actively consolidates memory (1); (2) is one practical implication, while (0) and (3) contradict the text."
+   },
+   {
+    "q": "According to the passage, what is believed to happen during deep slow-wave sleep?",
+    "options": [
+     "The brain replays recent experiences to strengthen memory connections",
+     "The brain becomes completely inactive to conserve energy",
+     "Most vivid dreaming and emotional processing occur",
+     "New skills are learned for the first time"
+    ],
+    "answer": 0,
+    "explanation": "The passage states that during slow-wave sleep the brain 'replays recent experiences,' strengthening memory connections (0); vivid dreaming is tied to REM sleep, and the other options contradict the text."
+   },
+   {
+    "q": "The word \"consolidation\" in the passage is closest in meaning to",
+    "options": [
+     "erasing",
+     "strengthening",
+     "delaying",
+     "questioning"
+    ],
+    "answer": 1,
+    "explanation": "\"Consolidation\" here means stabilizing and reinforcing memories, matching \"strengthening\" (1); the passage explicitly describes memories being stabilized, so the other choices are inconsistent."
+   },
+   {
+    "q": "Why does the author mention studies in which participants are tested after sleeping or after staying awake?",
+    "options": [
+     "To show that daytime naps are as effective as nighttime sleep",
+     "To provide evidence that sleep actively enhances memory",
+     "To argue that fatigue is the main cause of poor test performance",
+     "To demonstrate that word pairs are harder to learn than finger movements"
+    ],
+    "answer": 1,
+    "explanation": "The experiments are cited as 'evidence for the memory-consolidation role of sleep,' with sleepers outperforming the awake group (1); the passage specifically rules out fatigue as the sole explanation."
+   },
+   {
+    "q": "It can be inferred from the passage that a student who stays awake all night to study before an exam",
+    "options": [
+     "will remember emotional material especially well",
+     "may fail to lock in newly learned material",
+     "will benefit from replaying experiences during REM sleep",
+     "has found the most efficient way to prepare"
+    ],
+    "answer": 1,
+    "explanation": "The passage says all-night cramming 'deprives the brain of the very stage it needs to lock in' new material (1); the other options contradict the passage's argument against cramming."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_06",
+  "kind": "academic_passage",
+  "title": "Volcanoes and the Cooling of the Climate",
+  "passage": "Volcanic eruptions are usually thought of as sources of heat, spewing molten rock and superheated gas. Yet some of the largest eruptions in history have had the opposite effect on the planet as a whole, temporarily cooling the global climate. Understanding how this happens reveals a great deal about the connections between the solid Earth and its atmosphere.\n\nThe key lies not in the visible ash but in a colorless gas: sulfur dioxide. During a powerful eruption, a volcano can inject enormous quantities of sulfur dioxide high into the stratosphere, the stable layer of atmosphere above the altitude where weather occurs. There the gas reacts with water vapor to form tiny droplets of sulfuric acid, creating a fine haze of particles called aerosols. Because these particles are light and the stratosphere is calm, the haze can spread around the globe and linger for a year or more. The aerosols reflect a portion of incoming sunlight back into space before it can reach and warm the surface, and the result is a measurable drop in average temperatures.\n\nHistory offers striking examples. The 1815 eruption of Mount Tambora in what is now Indonesia was one of the most powerful in recorded history. The following year, 1816, became known in Europe and North America as 'the year without a summer.' Unseasonable cold and frost destroyed crops, contributing to food shortages and hardship far from the volcano itself. More recently, the 1991 eruption of Mount Pinatubo in the Philippines lowered average global temperatures by roughly half a degree Celsius for about two years, an effect that scientists were able to measure and even predict with reasonable accuracy.\n\nThe cooling caused by volcanoes is temporary because the aerosols eventually settle out of the atmosphere, after which temperatures return to their previous course. For this reason, volcanic eruptions do not offset long-term warming driven by the steady accumulation of greenhouse gases. Nevertheless, studying these natural episodes is valuable. Each major eruption is, in effect, a global experiment that helps scientists refine their models of how particles in the atmosphere influence climate, knowledge that informs debates about both natural variability and human proposals to deliberately alter the atmosphere.",
+  "questions": [
+   {
+    "q": "What is the passage mainly about?",
+    "options": [
+     "How volcanic eruptions can temporarily cool the global climate",
+     "Why Mount Tambora was the most destructive volcano in history",
+     "How greenhouse gases accumulate in the stratosphere",
+     "The difference between ash and sulfur dioxide in eruptions"
+    ],
+    "answer": 0,
+    "explanation": "The passage explains the mechanism and examples of volcanic cooling (0); the other options name details or misstatements that fall short of the passage's overall topic."
+   },
+   {
+    "q": "According to the passage, what directly causes the cooling effect after a large eruption?",
+    "options": [
+     "Ash blocking sunlight near the ground",
+     "Molten rock releasing heat into space",
+     "Sulfuric acid aerosols reflecting sunlight back into space",
+     "Greenhouse gases accumulating in the stratosphere"
+    ],
+    "answer": 2,
+    "explanation": "The passage attributes cooling to sulfuric acid aerosols that reflect incoming sunlight (2); it stresses that the key is sulfur dioxide, not the visible ash, and greenhouse gases play the opposite role."
+   },
+   {
+    "q": "The word \"linger\" in the passage is closest in meaning to",
+    "options": [
+     "remain",
+     "dissolve",
+     "descend",
+     "brighten"
+    ],
+    "answer": 0,
+    "explanation": "\"Linger\" means to persist or remain, matching (0); the sentence describes the haze lasting a year or more, so \"dissolve\" and \"descend\" are contrary and \"brighten\" is unrelated."
+   },
+   {
+    "q": "Why does the author mention 'the year without a summer'?",
+    "options": [
+     "To show that volcanic cooling can have serious human consequences far from the eruption",
+     "To argue that 1816 was colder than any year since",
+     "To explain how sulfur dioxide forms in the stratosphere",
+     "To prove that volcanoes offset long-term global warming"
+    ],
+    "answer": 0,
+    "explanation": "The example of crop failure and hardship in 1816 illustrates the far-reaching human effects of volcanic cooling (0); the passage does not claim 1816 was the coldest year, and it denies that volcanoes offset long-term warming."
+   },
+   {
+    "q": "It can be inferred from the passage that volcanic eruptions cannot solve long-term global warming because",
+    "options": [
+     "eruptions occur too rarely to have any measurable effect",
+     "the cooling they cause is only temporary",
+     "they release large amounts of greenhouse gases",
+     "their aerosols never reach the stratosphere"
+    ],
+    "answer": 1,
+    "explanation": "The passage explains the aerosols settle out so cooling is temporary and does not offset warming from accumulating greenhouse gases (1); the other options contradict details in the text."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_07",
+  "kind": "academic_passage",
+  "title": "The Domestication of the Horse",
+  "passage": "The domestication of the horse ranks among the most consequential developments in human history, yet reconstructing when and where it occurred has challenged researchers for generations. Unlike pottery or metal tools, the act of taming an animal leaves few obvious traces in the archaeological record. Scholars must therefore piece together indirect clues from bones, artifacts, and, more recently, genetic evidence.\n\nOne difficulty is distinguishing domesticated horses from their wild relatives. Simply finding horse bones at a human settlement does not prove domestication, since early people also hunted wild horses for meat. Archaeologists have looked instead for subtler signs. A concentration of bones from horses of many different ages, for example, may suggest a managed herd rather than the results of hunting, which tends to target particular animals. Wear on horse teeth caused by a bit, the mouthpiece used to control a ridden animal, offers more direct evidence, though such wear can be difficult to identify with certainty.\n\nGenetic research has recently reshaped the picture. By comparing DNA from ancient and modern horses, scientists have concluded that the domestic horses found across the world today descend largely from a population that spread rapidly out of the grasslands of the western Eurasian steppe several thousand years ago. This expansion appears to have replaced or absorbed other horse lineages that had been managed elsewhere, suggesting that one particularly successful line of domesticated horses came to dominate.\n\nWhy did these horses spread so quickly and widely? Part of the answer may lie in the technologies that accompanied them, including improved harnesses and, crucially, the spoked-wheel chariot. Horses transformed human societies by revolutionizing transport, warfare, trade, and communication, allowing people and goods to move across great distances at unprecedented speed. Communities that adopted horses gained significant advantages over those that did not, which helps explain how horse-based cultures expanded. In tracing the horse's domestication, then, researchers are not merely satisfying curiosity about one animal; they are illuminating a turning point after which human mobility, and much of human history, would never be the same.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the passage?",
+    "options": [
+     "To describe how researchers study the domestication of the horse and why it mattered",
+     "To argue that genetic evidence is always more reliable than archaeology",
+     "To explain how the spoked-wheel chariot was constructed",
+     "To compare horse domestication with the domestication of other animals"
+    ],
+    "answer": 0,
+    "explanation": "The passage discusses the methods used to study horse domestication and its historical importance (0); the other options address narrow details or unmentioned comparisons."
+   },
+   {
+    "q": "According to the passage, why does finding horse bones at a settlement fail to prove domestication?",
+    "options": [
+     "Because the bones may belong to a different species entirely",
+     "Because early people also hunted wild horses for meat",
+     "Because bones do not survive long enough to be studied",
+     "Because horses were never kept near human settlements"
+    ],
+    "answer": 1,
+    "explanation": "The passage explains that early people hunted wild horses, so bones alone do not indicate a managed herd (1); the other options are not supported by the text."
+   },
+   {
+    "q": "The word \"subtler\" in the passage is closest in meaning to",
+    "options": [
+     "more obvious",
+     "less easily noticed",
+     "more ancient",
+     "less reliable"
+    ],
+    "answer": 1,
+    "explanation": "\"Subtler\" describes signs that are harder to detect than mere bones, matching \"less easily noticed\" (1); \"more obvious\" is the opposite, and the other choices distort the meaning."
+   },
+   {
+    "q": "What have genetic studies concluded about today's domestic horses?",
+    "options": [
+     "They descend mainly from a population that spread from the western Eurasian steppe",
+     "They are unrelated to any wild horse population",
+     "They come from many separate lineages that never mixed",
+     "They were first domesticated in the Americas"
+    ],
+    "answer": 0,
+    "explanation": "The passage states modern domestic horses 'descend largely from a population that spread rapidly out of the grasslands of the western Eurasian steppe' (0); the other options contradict this finding."
+   },
+   {
+    "q": "It can be inferred from the passage that communities which adopted horses",
+    "options": [
+     "abandoned all forms of trade and warfare",
+     "gained advantages over communities that did not",
+     "were unable to travel long distances",
+     "lost their earlier technologies such as the wheel"
+    ],
+    "answer": 1,
+    "explanation": "The passage states that horse-adopting communities 'gained significant advantages over those that did not' (1); the other options contradict the passage's account of expanded mobility and technology."
+   }
+  ]
+ },
+ {
+  "id": "opus_ap_08",
+  "kind": "academic_passage",
+  "title": "The Economics of Public Goods",
+  "passage": "Economists draw a useful distinction between ordinary private goods and a special category known as public goods. A private good, such as a sandwich or a pair of shoes, has two familiar features: it is excludable, meaning the seller can prevent people who do not pay from consuming it, and it is rival, meaning that one person's use leaves less for others. Public goods possess the opposite characteristics. They are non-excludable, so it is difficult or impossible to keep non-payers from benefiting, and non-rival, so one person's enjoyment does not diminish what is available to anyone else.\n\nClassic examples include national defense, a lighthouse, and clean air. Consider the lighthouse. Once its beam is shining, every passing ship benefits from the warning, whether or not its owner has contributed to the cost, and one ship's use of the light does not reduce the guidance available to the next. These properties, which make public goods valuable to society, also create a stubborn economic problem.\n\nThe problem is often called the free-rider problem. Because people can enjoy a public good without paying for it, each individual has an incentive to let others bear the cost while still reaping the benefit. If enough people reason this way, too little money is collected, and the good is never provided at all, even though everyone would be better off if it existed. In this situation, the private market, which usually does an efficient job of supplying private goods, tends to fail.\n\nThis reasoning provides a widely accepted justification for certain government activities. Because a government can require payment through taxation, it can fund public goods that the market would under-supply, from national defense to basic scientific research whose benefits are widely shared. Economists caution, however, that labeling something a public good does not automatically settle how much of it should be provided or how efficiently a government will manage it. The concept clarifies why some valuable things are unlikely to emerge from voluntary exchange alone, while leaving the harder questions of policy and priority open to debate.",
+  "questions": [
+   {
+    "q": "What is the main idea of the passage?",
+    "options": [
+     "Governments always manage public goods more efficiently than markets",
+     "Public goods differ from private goods and pose a challenge that markets struggle to solve",
+     "Lighthouses are the most important example of a public good",
+     "Taxation is an unfair way to fund national defense"
+    ],
+    "answer": 1,
+    "explanation": "The passage defines public goods, contrasts them with private goods, and explains the free-rider problem that markets struggle with (1); the other options overstate, narrow, or distort the argument."
+   },
+   {
+    "q": "According to the passage, what does it mean for a good to be 'non-rival'?",
+    "options": [
+     "One person's use does not diminish what is available to others",
+     "The seller cannot prevent non-payers from using it",
+     "The good can only be provided by a government",
+     "The good is more valuable than a private good"
+    ],
+    "answer": 0,
+    "explanation": "The passage defines non-rival as 'one person's enjoyment does not diminish what is available to anyone else' (0); (1) defines non-excludable, and the other choices are not part of the definition."
+   },
+   {
+    "q": "The word \"stubborn\" in the passage is closest in meaning to",
+    "options": [
+     "easily solved",
+     "recently discovered",
+     "persistent",
+     "widely ignored"
+    ],
+    "answer": 2,
+    "explanation": "\"Stubborn\" here describes a problem that is hard to resolve, matching \"persistent\" (2); \"easily solved\" is the opposite, and the other choices do not fit the context."
+   },
+   {
+    "q": "Why does the author use the example of a lighthouse?",
+    "options": [
+     "To show that public goods are always funded by ship owners",
+     "To illustrate the non-excludable and non-rival features of a public good",
+     "To argue that lighthouses are no longer economically useful",
+     "To demonstrate that markets supply public goods efficiently"
+    ],
+    "answer": 1,
+    "explanation": "The lighthouse illustrates that every ship benefits regardless of payment (non-excludable) and one ship's use does not reduce the light for others (non-rival) (1); the other options misrepresent the example's purpose."
+   },
+   {
+    "q": "Which of the following is NOT stated in the passage about public goods?",
+    "options": [
+     "They are non-excludable and non-rival",
+     "The free-rider problem can lead to their under-supply",
+     "Calling something a public good settles how much should be provided",
+     "Government can fund them through taxation"
+    ],
+    "answer": 2,
+    "explanation": "The passage explicitly says labeling something a public good does 'not automatically settle how much of it should be provided,' so (2) is the false statement; the other options are all stated in the text."
+   }
+  ]
  }
 ]

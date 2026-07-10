@@ -1318,5 +1318,509 @@
     "explanation": "He grounds the law in the everyday image of a skater, then generalizes it to collapsing gas clouds in space."
    }
   ]
+ },
+ {
+  "id": "opus_at_01",
+  "kind": "academic_talk",
+  "title": "Bioluminescence in the Deep Ocean",
+  "transcript": "Okay, so today I want to talk about bioluminescence, which is, put simply, the production of light by living organisms. Now, you've probably seen fireflies on a summer evening, right? That's the example everybody thinks of. But here's the thing that surprises a lot of people: bioluminescence is actually way more common in the ocean than it is on land. In fact, if you go down into the deep sea, below about, oh, a thousand meters, where sunlight basically never reaches, the majority of animals you'd encounter can produce their own light. The majority. That's a striking figure. So the question we want to ask is, why? Why would light be so useful down there in the dark? Well, let's think about it. In an environment with no sunlight, light becomes an incredibly valuable signal, and animals have evolved to use it in, I'd say, three main ways. First, and maybe most obviously, there's finding food. Some fish, like the anglerfish, dangle a little glowing lure in front of their mouths. Smaller prey get curious, they swim toward the light, and, well, that doesn't end well for the prey. Second, there's defense. This one's clever. Certain squid and shrimp, when a predator attacks, they eject a cloud of glowing material, sort of a luminous smokescreen, and while the predator is confused by this bright cloud, the animal escapes into the darkness. Some deep-sea creatures even use light for camouflage, believe it or not. They produce a faint glow on their undersides that matches the dim light filtering from above, so a predator looking up from below can't see their silhouette. That's called counterillumination, and it's remarkably sophisticated. And third, there's communication, especially finding a mate. In the vast, dark ocean, how do you locate another member of your species? A distinctive flash pattern works like a signal, kind of like Morse code. Now, most of this light, chemically speaking, comes from a reaction between a molecule called luciferin and an enzyme called luciferase. When luciferin is oxidized, it releases energy as light, and, importantly, almost no heat. We call that cold light, and it's extraordinarily efficient. Compare that to an old incandescent bulb, which wastes most of its energy as heat. So the next time you flip a light switch, remember that these deep-sea organisms figured out a far more efficient trick millions of years ago.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the lecture?",
+    "options": [
+     "To explain why and how deep-sea organisms produce light",
+     "To compare fireflies with deep-sea fish",
+     "To describe the chemical structure of luciferin in detail",
+     "To argue that the deep ocean should be protected"
+    ],
+    "answer": 0,
+    "explanation": "The professor frames the talk around why light is useful in the dark and the ways animals use it, so option 0 captures the scope; the others are minor details or unmentioned points."
+   },
+   {
+    "q": "According to the professor, how does an anglerfish use bioluminescence?",
+    "options": [
+     "It confuses predators with a glowing cloud",
+     "It dangles a glowing lure to attract prey",
+     "It matches the light from above to hide its silhouette",
+     "It flashes patterns to attract a mate"
+    ],
+    "answer": 1,
+    "explanation": "The anglerfish is given as the food-finding example with a dangling lure; the other options describe defense, counterillumination, and communication respectively."
+   },
+   {
+    "q": "Why does the professor mention an old incandescent bulb?",
+    "options": [
+     "To suggest that bulbs are modeled on deep-sea animals",
+     "To explain how luciferase was first discovered",
+     "To contrast its wastefulness with the efficiency of biological cold light",
+     "To show that light is dangerous in the deep sea"
+    ],
+    "answer": 2,
+    "explanation": "The bulb is a comparison highlighting how inefficient it is versus the near-heatless cold light of organisms; the other options misstate the reason for the comparison."
+   },
+   {
+    "q": "What can be inferred about counterillumination?",
+    "options": [
+     "It is used mainly to attract prey toward the animal",
+     "It works because predators often attack from below looking upward",
+     "It produces large amounts of heat",
+     "It is the most common use of light in the deep sea"
+    ],
+    "answer": 1,
+    "explanation": "The professor says a predator looking up from below cannot see the silhouette, implying attacks come from below; the other options contradict the passage."
+   },
+   {
+    "q": "The professor discusses three main uses of bioluminescence. Match each use with its example. Which pairing is correct?",
+    "options": [
+     "Defense — the anglerfish lure",
+     "Communication — a distinctive flash pattern to find a mate",
+     "Finding food — the luminous smokescreen",
+     "Camouflage — Morse-code-like flashing"
+    ],
+    "answer": 1,
+    "explanation": "The professor pairs communication with distinctive flash patterns for mating; the other pairings scramble the examples given for defense, food-finding, and camouflage."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_02",
+  "kind": "academic_talk",
+  "title": "The Printing Press and the Spread of Ideas",
+  "transcript": "Alright, let's pick up where we left off with the fifteenth century. I want to spend today on a single piece of technology that, honestly, reshaped the whole of European society: the printing press with movable type, introduced by Johannes Gutenberg around 1440. Now, before we get carried away, I want to be careful here, because there's a common misconception I want to clear up. People often say Gutenberg invented printing. He didn't, not exactly. Printing existed long before him. In China, printing with carved wooden blocks had been around for centuries, and movable type made of clay was developed there too. So what did Gutenberg actually do? His real innovation was combining several things: durable metal type that could be reused, an oil-based ink that stuck to metal, and, crucially, a press adapted from the kind used for making wine. Put those together and suddenly you can produce books quickly and cheaply, at a scale nobody had seen before. So let me give you a sense of the scale. Before the press, a book had to be copied by hand, usually by monks, and a single copy might take months. Months. As a result, books were rare and fantastically expensive. After the press, within just fifty years, printers across Europe had produced something like twenty million volumes. Twenty million. Think about what that does to a society. First, literacy. When books become affordable, more people learn to read, and reading is no longer confined to the clergy and the wealthy. Second, and this is the part I find most interesting, it becomes much harder for any single authority to control information. Here's the classic case. In 1517, Martin Luther posted his critiques of the church, and thanks to the press, copies spread across Germany in weeks, not years. The church simply couldn't suppress them fast enough. Whether or not the Reformation would have happened anyway, the press poured fuel on the fire. There's also a subtler effect worth noting. Handwritten copies always contained small errors, a slip of the pen here, a misreading there, so no two manuscripts were quite identical. Print produced standardized, identical copies. That standardization mattered enormously for science, because now a scholar in one city could reference the exact same page, the exact same diagram, as a colleague hundreds of miles away. So when we ask why ideas started moving so much faster in this period, a big part of the answer is sitting right there in the print shop.",
+  "questions": [
+   {
+    "q": "What is the lecture mainly about?",
+    "options": [
+     "The biography of Johannes Gutenberg",
+     "How the printing press transformed the spread of information in Europe",
+     "The differences between Chinese and European inks",
+     "The causes of the Protestant Reformation"
+    ],
+    "answer": 1,
+    "explanation": "The professor centers on the social effects of the press on literacy, information control, and standardization; the other options are narrower details or unmentioned as the main focus."
+   },
+   {
+    "q": "According to the professor, what was Gutenberg's actual innovation?",
+    "options": [
+     "He invented printing for the first time in history",
+     "He created the first paper suitable for books",
+     "He combined reusable metal type, oil-based ink, and an adapted press",
+     "He trained monks to copy books faster"
+    ],
+    "answer": 2,
+    "explanation": "The professor explicitly lists the combination of metal type, oil-based ink, and a wine-press adaptation; option 0 is the misconception he corrects and the others are unmentioned."
+   },
+   {
+    "q": "Why does the professor say 'Months. As a result, books were rare and fantastically expensive'?",
+    "options": [
+     "To emphasize how slow and costly hand-copying was before the press",
+     "To praise the skill of medieval monks",
+     "To argue that early books were more beautiful",
+     "To explain why paper was scarce"
+    ],
+    "answer": 0,
+    "explanation": "The repetition of 'months' stresses the slowness of manual copying to set up the contrast with print's speed; the other options misread the rhetorical purpose."
+   },
+   {
+    "q": "What can be inferred about the church's relationship to printing in 1517?",
+    "options": [
+     "The church owned most of the printing presses in Germany",
+     "The church benefited from the rapid spread of printed material",
+     "The church struggled to control information once it could be printed quickly",
+     "The church invented movable type to spread its message"
+    ],
+    "answer": 2,
+    "explanation": "The professor says the church couldn't suppress Luther's copies fast enough, implying lost control; the other options contradict or reverse the point."
+   },
+   {
+    "q": "How does standardization from printing connect to the professor's point about science?",
+    "options": [
+     "It made books cheaper for scientists to buy",
+     "It let scholars in different places reference identical pages and diagrams",
+     "It reduced the number of scientists who could read",
+     "It eliminated the need for diagrams in scientific work"
+    ],
+    "answer": 1,
+    "explanation": "The professor links identical copies to scholars referencing the exact same page and diagram across distances; the other options misstate or invert that benefit."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_03",
+  "kind": "academic_talk",
+  "title": "How Trees Communicate Underground",
+  "transcript": "So, if I asked you to picture a forest, you'd probably imagine a bunch of individual trees, right, each one standing on its own, competing with its neighbors for sunlight. And that picture isn't wrong, exactly, but it turns out it's badly incomplete. Because underground, something quite different is going on. Let me explain. Beneath the forest floor, the roots of most trees are wrapped in a dense web of fungal threads. These fungi are called mycorrhizae, from the Greek words for fungus and root. Now, this is a partnership, what biologists call a symbiosis, meaning both sides benefit. The fungus can't make its own food the way a plant can, so it takes some sugars from the tree. In exchange, the fungal threads are incredibly fine, much finer than roots, and they spread out over a huge area, so they're excellent at absorbing water and nutrients like phosphorus from the soil, and they hand a good share of that back to the tree. So far, so neat. But here's where it gets really interesting. These fungal networks don't just connect one tree to one patch of soil. They connect trees to each other, sometimes dozens of trees, even trees of different species, all linked underground into one enormous shared network. Researchers, with a bit of a wink, have nicknamed this the wood wide web. And through this network, trees can actually transfer resources to one another. In some experiments, scientists used a harmless radioactive tracer to follow carbon, and they watched it move from a large, sunlit tree to a small seedling struggling in the shade. Think about that. A big tree is, in effect, subsidizing a little one. Now, I want to add a note of caution here, because this is where popular articles sometimes get carried away. It's tempting to say the trees are being generous, that they're helping their neighbors out of kindness. But we have to be careful about assuming intention. The tree isn't deciding anything. What we're likely seeing is a system that evolved because, on balance, it helps the whole forest survive shocks like drought or disease, and a healthier forest benefits the individual tree too. There's also evidence that trees can send warning signals through this network. When one tree is attacked by insects, chemical signals can travel to its neighbors, and those neighbors start ramping up their own defenses before the insects even arrive. So the lesson I want you to take away is this: a forest is far less a collection of individuals than it looks, and far more a connected community.",
+  "questions": [
+   {
+    "q": "What is the main idea of the lecture?",
+    "options": [
+     "Trees compete with each other only for sunlight",
+     "Fungi are harmful parasites that weaken forests",
+     "Forests are interconnected communities linked by underground fungal networks",
+     "Radioactive tracers are the best way to study soil"
+    ],
+    "answer": 2,
+    "explanation": "The professor's takeaway is that a forest is a connected community rather than isolated individuals; the other options are either the incomplete view he corrects or minor methodological points."
+   },
+   {
+    "q": "According to the professor, what does the tree provide to the mycorrhizal fungus?",
+    "options": [
+     "Phosphorus from the soil",
+     "Sugars that the tree makes",
+     "Water absorbed by its roots",
+     "Warning signals about insects"
+    ],
+    "answer": 1,
+    "explanation": "The professor says the fungus takes sugars from the tree while providing water and nutrients like phosphorus in return; the other options are what the fungus gives, not receives."
+   },
+   {
+    "q": "Why does the professor caution against saying trees are being 'generous'?",
+    "options": [
+     "Because trees cannot actually transfer any resources",
+     "Because we should not assume trees act with intention or kindness",
+     "Because the fungi, not the trees, control the network",
+     "Because generosity would harm the individual tree"
+    ],
+    "answer": 1,
+    "explanation": "He explicitly warns against assuming intention, noting the tree isn't deciding anything; the other options misrepresent his caution or contradict the passage."
+   },
+   {
+    "q": "What can be inferred about why the resource-sharing system may have evolved?",
+    "options": [
+     "Because it helps the overall forest survive stresses, which also benefits individual trees",
+     "Because seedlings are more valuable than mature trees",
+     "Because fungi force trees to share against their interest",
+     "Because sunlight is unimportant to forest survival"
+    ],
+    "answer": 0,
+    "explanation": "The professor suggests the system persists because a healthier forest resists shocks and that benefits the individual tree; the other options are not supported."
+   },
+   {
+    "q": "How does the example of insect attack connect to the professor's larger point?",
+    "options": [
+     "It shows that fungi attack trees during droughts",
+     "It shows trees are purely competitive with neighbors",
+     "It demonstrates the network also carries warning signals, reinforcing the idea of a connected community",
+     "It proves trees can move to escape insects"
+    ],
+    "answer": 2,
+    "explanation": "The warning-signal example extends the theme that the network links trees into a community; the other options contradict the lecture's content."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_04",
+  "kind": "academic_talk",
+  "title": "Why We Forget: Memory and Retrieval",
+  "transcript": "Let's talk about forgetting, which is something we all do constantly, and which, I'd argue, we usually misunderstand. Most people think of memory like a video recording. You experience something, the recorder captures it faithfully, and later you press play. And forgetting, in this view, is just the tape wearing out or getting erased. It's an appealing picture. It's also, unfortunately, pretty much wrong. Let me give you a better model. Psychologists find it useful to separate memory into three stages: encoding, storage, and retrieval. Encoding is getting the information in. Storage is holding onto it over time. And retrieval is pulling it back out when you need it. Now, the key insight, and this is really the heart of today's lecture, is that a lot of what we call forgetting is not a storage problem at all. It's a retrieval problem. The information is still in there. You just can't access it at the moment. You've all had this experience, right? A name is on the tip of your tongue. You know that you know it. You might even know the first letter. And then, hours later, when you've stopped trying, it suddenly pops up. Well, if the memory had really been erased, that couldn't happen. So retrieval depends heavily on cues, on the little hooks that lead you back to the memory. And here's a practical consequence that I want you to remember for your own studying. There's a well-documented effect called context-dependent memory. In one classic study, divers learned lists of words either underwater or on the beach, and then they were tested in one of those two settings. The finding? They recalled words best when they were tested in the same environment where they'd learned them. Same context, better retrieval. The cues in the environment were doing part of the work. Now, you might be thinking, does this mean I should study underwater before my exam? No, obviously not. But it does suggest something useful: if you always study in one specific spot, in total silence, and then take your test in a different, noisier room, you've lost some of those retrieval cues. So a smarter strategy is to vary where and how you study, which builds more diverse routes back to the same information. One more thing, and this is a bit counterintuitive. Forgetting isn't purely a defect. A memory system that held onto absolutely everything, every trivial detail, would actually be overwhelmed and inefficient. Some forgetting helps us generalize and focus on what matters. So forgetting, in the end, is less a failure of the machine and more a feature of how it's designed to work.",
+  "questions": [
+   {
+    "q": "What is the professor's main point about forgetting?",
+    "options": [
+     "Forgetting is mainly caused by memories being permanently erased",
+     "Much forgetting is a failure of retrieval rather than of storage",
+     "Memory works exactly like a video recording",
+     "Studying underwater improves exam scores"
+    ],
+    "answer": 1,
+    "explanation": "The heart of the lecture is that forgetting is often a retrieval problem, not lost storage; option 0 and 2 are the view he rejects, and option 3 misreads the diver study."
+   },
+   {
+    "q": "What are the three stages of memory the professor describes?",
+    "options": [
+     "Recording, playback, and erasing",
+     "Encoding, storage, and retrieval",
+     "Learning, testing, and forgetting",
+     "Input, cue, and output"
+    ],
+    "answer": 1,
+    "explanation": "The professor names encoding, storage, and retrieval explicitly; the other options are inventions or the flawed recorder metaphor he criticizes."
+   },
+   {
+    "q": "Why does the professor mention a name being 'on the tip of your tongue'?",
+    "options": [
+     "To show that some memories are truly erased",
+     "To illustrate that a memory can still exist even when it can't be retrieved",
+     "To argue that names are harder to store than faces",
+     "To demonstrate the encoding stage"
+    ],
+    "answer": 1,
+    "explanation": "The tip-of-the-tongue example shows the memory is present but momentarily inaccessible, supporting the retrieval-problem thesis; the other options miss that purpose."
+   },
+   {
+    "q": "What can be inferred about the best studying strategy, based on the lecture?",
+    "options": [
+     "Always study in one silent location to build strong storage",
+     "Study underwater to strengthen memory",
+     "Vary where and how you study to create diverse retrieval cues",
+     "Avoid taking tests in noisy rooms at all costs"
+    ],
+    "answer": 2,
+    "explanation": "The professor advises varying study conditions to build more routes back to information; option 0 is the weaker approach and the others misapply the study."
+   },
+   {
+    "q": "How does the professor's final point about forgetting connect to his overall argument?",
+    "options": [
+     "It shows forgetting is a defect that should be eliminated",
+     "It reframes forgetting as a useful feature that aids generalization, not just a flaw",
+     "It contradicts the idea that retrieval matters",
+     "It proves memory is like a video recording after all"
+    ],
+    "answer": 1,
+    "explanation": "The closing point casts forgetting as a designed feature that helps us focus, extending his reframing of forgetting; the other options contradict the lecture."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_05",
+  "kind": "academic_talk",
+  "title": "The Economics of the Commons",
+  "transcript": "Today I want to introduce a problem that shows up everywhere once you learn to see it, in fisheries, in traffic, in climate policy, you name it. It's usually called the tragedy of the commons. The phrase comes from an essay by Garrett Hardin in 1968, though the underlying idea is older. So let me set up the classic scenario. Imagine a pasture, open to everyone in a village. Any herder can bring their cattle to graze there for free. Now, put yourself in the shoes of one herder. You're deciding whether to add one more cow to your herd. If you add that cow, you get the full benefit, you own it, you sell it, the gain is all yours. But the cost, the extra wear on the shared pasture, that's spread across everyone in the village. So from your individual, rational point of view, adding the cow makes sense. The benefit to you outweighs your small share of the cost. Here's the trap, though. Every single herder faces exactly the same calculation, and every one of them reasons the same way. So everyone adds cows, the pasture gets overgrazed, the grass fails to recover, and eventually it collapses, and everybody loses, including the very herders who were acting sensibly. That's the tragedy. Each person acting rationally in their own interest produces an outcome that's terrible for all of them. And I want to stress, the individuals aren't being stupid or greedy in any special way. The structure of the situation is the problem. Now, for a long time people concluded there were only two solutions. One, privatize the commons, divide the pasture into plots that individuals own, so each person bears the full cost of their own overuse. Two, government regulation, an outside authority sets and enforces limits. And both of those can work. But here's what I find genuinely exciting, and it's why the economist Elinor Ostrom won a Nobel Prize. She went out and studied real communities, actual fisheries and forests and irrigation systems, and she found that groups often invent their own solutions, without privatizing and without a government stepping in. They create shared rules, they monitor each other, they develop ways to punish people who take too much. In other words, the two-solution story was too pessimistic about human beings. People can cooperate, under the right conditions. So the tragedy of the commons is real, but it isn't destiny. Whether it ends in collapse depends a great deal on whether a community can build the institutions to govern itself.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the lecture?",
+    "options": [
+     "To explain the tragedy of the commons and show it is not inevitable",
+     "To prove that government regulation always fails",
+     "To describe the life of Garrett Hardin",
+     "To argue that herders are greedy and irrational"
+    ],
+    "answer": 0,
+    "explanation": "The professor lays out the commons problem and then argues collapse isn't destiny; the other options misstate his conclusions or focus on trivial details."
+   },
+   {
+    "q": "In the pasture example, why does an individual herder decide to add another cow?",
+    "options": [
+     "Because the government pays herders to expand their herds",
+     "Because the herder gets the full benefit while the cost is shared by all",
+     "Because the pasture can never be overgrazed",
+     "Because other herders have agreed to remove their cows"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains the herder gains the whole benefit but bears only a small share of the cost; the other options contradict the scenario."
+   },
+   {
+    "q": "Why does the professor stress that the herders 'aren't being stupid or greedy in any special way'?",
+    "options": [
+     "To blame the villagers for the collapse",
+     "To emphasize that the problem lies in the structure of the situation, not personal flaws",
+     "To argue that greed is always the cause of overuse",
+     "To suggest the herders should be punished"
+    ],
+    "answer": 1,
+    "explanation": "He makes this point to locate the cause in the situation's structure rather than character; the other options invert or misread his intent."
+   },
+   {
+    "q": "What can be inferred about the significance of Elinor Ostrom's work?",
+    "options": [
+     "It confirmed that only privatization can solve the commons problem",
+     "It showed the two-solution view underestimated people's ability to cooperate",
+     "It proved that commons always collapse without government",
+     "It demonstrated that herders are naturally selfish"
+    ],
+    "answer": 1,
+    "explanation": "The professor says Ostrom found communities inventing their own solutions, showing the pessimistic two-solution story was too limited; the other options contradict that."
+   },
+   {
+    "q": "How do the traffic and climate examples mentioned at the start connect to the pasture story?",
+    "options": [
+     "They are unrelated topics the professor abandons",
+     "They are additional cases of the same commons structure of shared costs and private benefits",
+     "They prove privatization is impossible",
+     "They show the tragedy only applies to farming"
+    ],
+    "answer": 1,
+    "explanation": "The professor names traffic and climate as places the same commons problem appears, generalizing the pasture logic; the other options misread that framing."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_06",
+  "kind": "academic_talk",
+  "title": "Volcanoes and the Carbon Cycle",
+  "transcript": "So we've been talking about climate over deep time, and today I want to zoom out to a really long-term perspective, the kind that operates over hundreds of thousands, even millions of years. And at that scale, one of the main characters is, believe it or not, volcanoes. Now, when you think of a volcano, you probably picture an eruption, lava, ash, maybe a disaster movie. But for our purposes today, the interesting thing volcanoes do is quieter: they release carbon dioxide from deep inside the Earth into the atmosphere. This happens all the time, not just during big eruptions, and over geological timescales it's a major source of atmospheric carbon dioxide. Okay, so if volcanoes are constantly adding carbon dioxide, and they've been doing it for billions of years, you might ask, why hasn't the atmosphere just filled up with it? Why isn't the Earth as hot as a furnace? That's a great question, and the answer reveals something beautiful about how the planet regulates itself. There's a process that pulls carbon dioxide back out, and it's called chemical weathering. Here's how it works. Rainwater absorbs a little carbon dioxide from the air, which makes the rain slightly acidic, a very weak acid. When that mildly acidic rain falls on certain rocks, especially silicate rocks, it slowly dissolves them. The chemical reaction locks the carbon away, eventually washing it to the ocean where it gets stored in sediments, sometimes for millions of years. So weathering is the drain, and volcanoes are the faucet, if you like that metaphor. Now here's the part that makes it a genuine regulating system, a thermostat. The rate of chemical weathering depends on temperature. When the planet is warmer, weathering happens faster, so more carbon dioxide gets pulled out, which cools things down. And when the planet is colder, weathering slows down, carbon dioxide from volcanoes builds back up, and that warms things up. Do you see what that does? It's a feedback loop that tends to push the climate back toward a moderate range. Over the very long run, it keeps the Earth from getting permanently frozen or permanently boiling. Now, I have to add one crucial caveat, because I don't want you to walk out with the wrong idea. This thermostat is extremely slow. It operates over hundreds of thousands of years. So it is no help at all with the rapid, human-caused warming happening right now, which is unfolding over mere decades. The natural drain simply cannot keep pace with how fast we're currently opening the faucet.",
+  "questions": [
+   {
+    "q": "What is the lecture mainly about?",
+    "options": [
+     "How volcanic eruptions cause natural disasters",
+     "A long-term natural system that regulates atmospheric carbon dioxide",
+     "The chemical composition of silicate rocks",
+     "Why rain is slightly acidic"
+    ],
+    "answer": 1,
+    "explanation": "The professor focuses on the volcano-weathering feedback that regulates carbon dioxide over geological time; the other options are supporting details, not the main topic."
+   },
+   {
+    "q": "According to the professor, how does chemical weathering remove carbon dioxide?",
+    "options": [
+     "Volcanoes reabsorb the gas during eruptions",
+     "Slightly acidic rain dissolves silicate rocks, locking carbon away in ocean sediments",
+     "Plants breathe in the carbon dioxide directly",
+     "The ocean releases the carbon back into the air"
+    ],
+    "answer": 1,
+    "explanation": "The professor describes acidic rain dissolving silicate rocks and storing carbon in sediments; the other options are not the mechanism he gives."
+   },
+   {
+    "q": "Why does the professor use the metaphor of a 'faucet' and a 'drain'?",
+    "options": [
+     "To argue that volcanoes should be shut off",
+     "To help students picture volcanoes adding carbon dioxide and weathering removing it",
+     "To explain how rainwater forms",
+     "To show that the ocean is like a sink"
+    ],
+    "answer": 1,
+    "explanation": "The faucet-and-drain image illustrates the input from volcanoes and removal by weathering; the other options misread the metaphor's purpose."
+   },
+   {
+    "q": "What can be inferred about the Earth's climate 'thermostat' when the planet gets colder?",
+    "options": [
+     "Weathering speeds up and cools the planet further",
+     "Weathering slows, so volcanic carbon dioxide accumulates and warms the planet",
+     "Volcanoes stop releasing carbon dioxide entirely",
+     "The ocean immediately releases stored carbon"
+    ],
+    "answer": 1,
+    "explanation": "The professor states that in colder conditions weathering slows and carbon dioxide builds up, warming the planet; the other options contradict the feedback he describes."
+   },
+   {
+    "q": "How does the professor connect this natural thermostat to present-day climate change?",
+    "options": [
+     "It will quickly reverse human-caused warming",
+     "It is too slow to counteract the rapid warming humans are causing now",
+     "It has already stopped functioning permanently",
+     "It causes the warming we see today"
+    ],
+    "answer": 1,
+    "explanation": "The professor's caveat is that the thermostat operates over hundreds of thousands of years and cannot keep pace with decades-scale human warming; the other options misstate that."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_07",
+  "kind": "academic_talk",
+  "title": "The Origins of Perspective in Renaissance Art",
+  "transcript": "Let's turn to painting today, and specifically to a problem that sounds simple but took a very long time for artists to solve: how do you represent a three-dimensional world on a flat, two-dimensional surface convincingly? If you look at European paintings from the medieval period, you'll notice something. The space often looks, well, a little off to our modern eyes. Figures might be sized according to their importance rather than their distance, so an important saint could be larger than a building behind him. Objects don't recede into the distance the way our eyes actually perceive them. Now, I want to be fair here, because this wasn't because medieval artists were incompetent. Not at all. Many were highly skilled. It's that their goals were different. They were often more interested in symbolic and spiritual meaning than in optical realism. But in the early fifteenth century, in Florence, something changed. An architect named Filippo Brunelleschi worked out the mathematical rules of what we call linear perspective. And the core idea is elegant. Imagine lines receding from the viewer into the distance. Brunelleschi showed that parallel lines going away from you appear to converge, to meet, at a single point on the horizon, which we call the vanishing point. Think of standing on a straight railroad track and watching the two rails seem to come together far away. Once you understand that principle, you can construct a picture with mathematically consistent depth. Suddenly, painted space looks like real space. Now, this was more than a clever trick. I'd argue it reflects a broader shift in how people were thinking. The Renaissance placed new emphasis on observation, on measurement, on the human viewer's actual experience of the world. Linear perspective is, in a sense, mathematics applied to vision, and its rise runs parallel to the growing prestige of geometry and empirical observation more generally. So the technique and the intellectual climate reinforced each other. Let me add one caution, though, because students sometimes overstate this. Perspective did not make art strictly better, and it's not that realism is the only worthy goal. Plenty of magnificent art, before and after and in other cultures entirely, ignores linear perspective on purpose. What the invention did was give European artists a powerful new tool, and, just as importantly, it tells us something about what that society had begun to value: a measurable, human-centered way of seeing the world.",
+  "questions": [
+   {
+    "q": "What is the main idea of the lecture?",
+    "options": [
+     "Medieval artists lacked the skill to paint realistically",
+     "Linear perspective solved a representational problem and reflected Renaissance values",
+     "Railroad tracks inspired Renaissance painting",
+     "Realism is the highest goal of all art"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains perspective as both a technical solution and a mirror of Renaissance thinking; option 0 and 3 are views he explicitly rejects and option 2 is only an analogy."
+   },
+   {
+    "q": "According to the professor, how did many medieval paintings determine the size of figures?",
+    "options": [
+     "By their distance from the viewer",
+     "By the vanishing point",
+     "By the figures' importance rather than their distance",
+     "By strict mathematical rules"
+    ],
+    "answer": 2,
+    "explanation": "The professor says figures were often sized by importance, so a saint could dwarf a building; the other options describe perspective-based sizing he contrasts with this."
+   },
+   {
+    "q": "Why does the professor mention standing on a straight railroad track?",
+    "options": [
+     "To criticize modern transportation",
+     "To give a familiar example of parallel lines converging at a vanishing point",
+     "To show that trains influenced Brunelleschi",
+     "To explain how horizons are measured"
+    ],
+    "answer": 1,
+    "explanation": "The railroad image concretely illustrates parallel lines meeting at the vanishing point; the other options misread the analogy."
+   },
+   {
+    "q": "Why does the professor insist that medieval artists were not incompetent?",
+    "options": [
+     "To argue their work was actually more realistic",
+     "To make clear their different goals, not lack of skill, explain their style",
+     "To claim they secretly used perspective",
+     "To show they invented linear perspective first"
+    ],
+    "answer": 1,
+    "explanation": "He stresses their goals were symbolic rather than optical, correcting an unfair assumption; the other options contradict the passage."
+   },
+   {
+    "q": "How does the professor connect linear perspective to the broader Renaissance?",
+    "options": [
+     "It shows the Renaissance rejected mathematics",
+     "It reflects a growing emphasis on observation, measurement, and human experience",
+     "It proves art improved steadily over time",
+     "It had no connection to other Renaissance ideas"
+    ],
+    "answer": 1,
+    "explanation": "The professor ties perspective to the era's prestige of geometry and empirical observation; the other options contradict his argument."
+   }
+  ]
+ },
+ {
+  "id": "opus_at_08",
+  "kind": "academic_talk",
+  "title": "How Vaccines Train the Immune System",
+  "transcript": "Alright, today I want to demystify how vaccines actually work, because there's a lot of confusion out there, and the underlying biology is genuinely elegant once you see it. So let's start with the immune system itself. Your immune system has, roughly speaking, two branches. There's the innate branch, which is fast but general, it responds to any invader in more or less the same way. And then there's the adaptive branch, which is slower to get going but highly specific, and, crucially for today, it remembers. That memory is the whole key. Here's the situation the body faces. When a genuinely new pathogen, say a virus, enters your body for the first time, the adaptive immune system has never seen it. So it has to figure out how to fight it from scratch, and that takes time, often several days. During those days, you can get quite sick, because the virus is multiplying while your defenses are still ramping up. But, and this is the beautiful part, once the infection is cleared, the adaptive system doesn't forget. It keeps a population of memory cells that recognize that specific pathogen. So if the same virus ever shows up again, the response is dramatically faster and stronger, and you often don't even notice you were exposed. Now, here's the clever idea behind vaccination. What if we could give the immune system that memory without ever making you endure the dangerous first infection? That's exactly what a vaccine does. A vaccine presents your immune system with a harmless version or piece of the pathogen. It might be a weakened form, or a killed form, or just a fragment, a characteristic protein from the pathogen's surface. Your immune system responds as if it were a real infection, but because the vaccine can't actually make you sick, you get the training without the disease. And afterward, you've got those memory cells ready to go. I want to address one common misunderstanding, because it comes up a lot. Some people worry that a vaccine gives you the disease it's meant to prevent. For the vast majority of vaccines, that's simply not possible, because there's no live, functional pathogen in there capable of causing the illness. What you might feel, a sore arm, a mild fever for a day, that's not the disease. That's actually your immune system doing its job, mounting the very response we wanted to provoke. So in a real sense, those mild symptoms are a sign the training is working.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the lecture?",
+    "options": [
+     "To explain how vaccines give the immune system protective memory without causing disease",
+     "To describe the discovery of the first vaccine",
+     "To compare different manufacturers of vaccines",
+     "To argue that the innate immune system is more important than the adaptive one"
+    ],
+    "answer": 0,
+    "explanation": "The professor's aim is to explain the mechanism of vaccination via immune memory; the other options are unmentioned or misstate the emphasis."
+   },
+   {
+    "q": "According to the professor, what makes the adaptive immune branch especially important for vaccination?",
+    "options": [
+     "It responds to every invader in the same general way",
+     "It is the fastest branch to react",
+     "It is specific and it remembers past pathogens",
+     "It never gets involved in real infections"
+    ],
+    "answer": 2,
+    "explanation": "The professor stresses the adaptive branch is specific and remembers, which is the key to vaccines; option 0 describes the innate branch and the others are wrong."
+   },
+   {
+    "q": "Why does a person often get sick during a first infection with a new virus?",
+    "options": [
+     "Because the vaccine has weakened their immune system",
+     "Because the adaptive system needs several days to mount a response while the virus multiplies",
+     "Because memory cells attack the body's own tissue",
+     "Because the innate branch refuses to respond"
+    ],
+    "answer": 1,
+    "explanation": "The professor explains the adaptive system takes days to respond to a novel pathogen while it multiplies; the other options contradict the lecture."
+   },
+   {
+    "q": "Why does the professor say that a sore arm or mild fever after a vaccine is 'a sign the training is working'?",
+    "options": [
+     "Because those symptoms mean the vaccine gave you the disease",
+     "Because they show the immune system is mounting the response the vaccine was designed to provoke",
+     "Because they indicate the vaccine has failed",
+     "Because they come from a live, functional pathogen"
+    ],
+    "answer": 1,
+    "explanation": "He reframes mild symptoms as evidence of the desired immune response, not the disease; the other options are the misunderstanding he corrects."
+   },
+   {
+    "q": "How does the concept of memory cells connect the professor's two main points about infection and vaccination?",
+    "options": [
+     "Memory cells are only produced by real infections, never by vaccines",
+     "Memory cells explain both the faster second response to a real virus and how vaccines grant protection safely",
+     "Memory cells are part of the innate branch",
+     "Memory cells cause the initial illness during a first infection"
+    ],
+    "answer": 1,
+    "explanation": "Memory cells link the faster repeat response and the vaccine's ability to pre-train the system; the other options contradict the lecture's explanation."
+   }
+  ]
  }
 ]

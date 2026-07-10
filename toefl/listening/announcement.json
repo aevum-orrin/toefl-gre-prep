@@ -430,5 +430,525 @@
     "explanation": "The speaker says there are clear signs with pictures above each bin, so when unsure, just check the picture."
    }
   ]
+ },
+ {
+  "id": "opus_ann_01",
+  "kind": "announcement",
+  "title": "Library Renovation and Temporary Study Space",
+  "transcript": "Good morning, everyone. Before you head off to your study groups, I want to give you a heads-up about some changes happening here at the main library. Starting next Monday, the entire third floor will be closed for renovation. Now, I know a lot of you rely on those quiet study rooms up there, so let me tell you what we've arranged. For the duration of the project, which we expect to run about six weeks, we've set up an alternative study area in the basement of the Student Union, just across the courtyard. It's got the same long hours, open until two in the morning, and we've moved most of the comfortable chairs and about forty desks down there. One thing to keep in mind, though: the printers and scanners won't be relocated, so if you need to print something, you'll want to use the machines on the first floor of the library here, which stay open as usual. Also, the group study rooms in that temporary space can't be reserved online during the renovation. It'll be strictly first-come, first-served, so come early if you want a spot during exam week. We apologize for any inconvenience, but I promise the new third floor will be worth the wait. It'll have more outlets, better lighting, and soundproof booths. Thanks for your patience, and if you have questions, the front desk staff can help you out.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To explain how to reserve group study rooms online",
+     "To inform students about a library closure and temporary arrangements",
+     "To encourage students to join study groups this semester",
+     "To describe new printing equipment being installed"
+    ],
+    "answer": 1,
+    "explanation": "The speaker's central message is the third-floor closure and the alternative study space; the other options are minor details or not mentioned."
+   },
+   {
+    "q": "Where should students go if they need to print a document during the renovation?",
+    "options": [
+     "The basement of the Student Union",
+     "The third floor of the library",
+     "The first floor of the library",
+     "The front desk of the Student Union"
+    ],
+    "answer": 2,
+    "explanation": "The speaker states printers stay on the first floor of the library, not in the relocated study area or the closed third floor."
+   },
+   {
+    "q": "Why does the speaker mention that the temporary rooms are first-come, first-served?",
+    "options": [
+     "To warn students that online reservations won't work there",
+     "To explain that the rooms are free of charge",
+     "To announce that the rooms will close early",
+     "To suggest students study alone instead"
+    ],
+    "answer": 0,
+    "explanation": "The point is made right after noting reservations can't be done online, so it clarifies the booking change; the other options are not implied."
+   },
+   {
+    "q": "What can be inferred about the renovated third floor?",
+    "options": [
+     "It will be smaller than the original space",
+     "It will offer improved facilities for studying",
+     "It will no longer include study rooms",
+     "It will be reserved only for graduate students"
+    ],
+    "answer": 1,
+    "explanation": "The speaker lists more outlets, better lighting, and soundproof booths, implying improvements, while nothing suggests it will shrink or restrict access."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_02",
+  "kind": "announcement",
+  "title": "Campus Shuttle Schedule Change",
+  "transcript": "Hi everyone, this is a quick service update from campus transportation. Beginning this Saturday, we're making some adjustments to the Route B shuttle, the one that runs between the north dorms and the science complex. Because of road construction on Maple Avenue, the shuttle will no longer stop at the corner of Maple and Fifth. Instead, we've added a temporary stop right in front of the recreation center, which is only about a two-minute walk away. If you usually catch the bus at the old stop, please plan for that small change. On top of that, we're actually increasing service during peak hours. From seven-thirty to nine-thirty in the morning, buses will now come every ten minutes instead of every fifteen, so your morning commute should be a little smoother. In the evenings, though, the last shuttle will now leave at eleven rather than midnight, so if you tend to stay late in the labs, keep that earlier cutoff in mind. All of these changes will be posted at the stops and on the transit app by Friday afternoon. And remember, the app shows real-time locations, so you can see exactly where your bus is instead of standing out in the cold guessing. If the construction wraps up ahead of schedule, we'll switch back to the regular route and let you know. Safe travels, and thanks for riding with us.",
+  "questions": [
+   {
+    "q": "Why is the Route B shuttle stop being moved?",
+    "options": [
+     "Because of low ridership at the old stop",
+     "Because of road construction on Maple Avenue",
+     "Because the recreation center requested it",
+     "Because the science complex is closing"
+    ],
+    "answer": 1,
+    "explanation": "The speaker directly attributes the change to construction on Maple Avenue; the other reasons are never given."
+   },
+   {
+    "q": "What change is being made to evening service?",
+    "options": [
+     "The last shuttle will leave earlier than before",
+     "Evening buses will run every ten minutes",
+     "Evening service is being canceled entirely",
+     "The last shuttle will leave at midnight"
+    ],
+    "answer": 0,
+    "explanation": "The last shuttle moves from midnight to eleven, an earlier cutoff; the ten-minute frequency applies to mornings only."
+   },
+   {
+    "q": "According to the speaker, what is one benefit of the transit app?",
+    "options": [
+     "It offers discounted fares to students",
+     "It lets riders reserve a seat in advance",
+     "It shows the real-time location of buses",
+     "It provides free coffee at each stop"
+    ],
+    "answer": 2,
+    "explanation": "The speaker highlights real-time locations so riders aren't left guessing; the other features are not mentioned."
+   },
+   {
+    "q": "What will happen if the construction finishes early?",
+    "options": [
+     "Route B will be permanently discontinued",
+     "The shuttle will return to its regular route",
+     "Service will be reduced to save money",
+     "A new stop will be added at the labs"
+    ],
+    "answer": 1,
+    "explanation": "The speaker says they'll switch back to the regular route if construction wraps up ahead of schedule; the other outcomes contradict the talk."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_03",
+  "kind": "announcement",
+  "title": "Museum Tour Introduction",
+  "transcript": "Welcome, everyone, to the City Natural History Museum. My name is Daniel, and I'll be your guide this afternoon. Before we start walking, let me give you a quick overview of what's ahead so you know what to expect. Our tour today will last about ninety minutes, and we'll focus mainly on the newly reopened marine life wing, which just finished a two-year restoration. Now, one thing that makes this wing special is the suspended whale skeleton in the central hall. It's nearly eighteen meters long, and it's the actual skeleton of a blue whale that washed ashore on our coast back in the nineteen-twenties. A team of scientists spent decades preserving it. As we move through the exhibits, I'd ask that you keep flash photography turned off. The lighting in some rooms is deliberately kept low to protect the more delicate specimens, and camera flashes can actually damage them over time. Regular photos without flash are perfectly fine, so snap away. At the end of the tour, we'll stop by the interactive touch tank, where you'll be able to gently handle a few live sea stars and other tide-pool creatures, so this is a great one for the kids. If at any point you can't hear me, just wave, and I'll speak up. Alright, if everyone's ready, let's begin over here by the entrance to the marine wing. Please stay together as a group.",
+  "questions": [
+   {
+    "q": "What is the speaker mainly doing in this talk?",
+    "options": [
+     "Explaining the history of the entire museum",
+     "Introducing the tour and its guidelines",
+     "Describing how to become a museum volunteer",
+     "Comparing several different exhibits"
+    ],
+    "answer": 1,
+    "explanation": "The guide is orienting visitors to the tour's plan and rules; he does not cover the museum's full history or volunteering."
+   },
+   {
+    "q": "What is notable about the blue whale skeleton?",
+    "options": [
+     "It was created as an artificial model",
+     "It is the smallest specimen in the wing",
+     "It comes from a whale that washed ashore in the 1920s",
+     "It was donated by another museum last year"
+    ],
+    "answer": 2,
+    "explanation": "The guide says it is the real skeleton of a whale that washed ashore in the 1920s; it is neither a model nor a recent donation."
+   },
+   {
+    "q": "Why does the speaker ask visitors to turn off flash photography?",
+    "options": [
+     "Because flashes can damage delicate specimens",
+     "Because photography is banned in the museum",
+     "Because the flashes disturb other tour groups",
+     "Because the camera batteries drain too quickly"
+    ],
+    "answer": 0,
+    "explanation": "The speaker explains that low lighting protects specimens and flashes can damage them over time; general photos are allowed."
+   },
+   {
+    "q": "What will visitors be able to do at the end of the tour?",
+    "options": [
+     "Purchase souvenirs at a gift shop",
+     "Watch a documentary film about whales",
+     "Touch live tide-pool creatures in a tank",
+     "Meet the scientists who restored the wing"
+    ],
+    "answer": 2,
+    "explanation": "The guide mentions the interactive touch tank with live sea stars at the end; the other activities are not described."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_04",
+  "kind": "announcement",
+  "title": "New Student Orientation Talk",
+  "transcript": "Hello, first-years, and welcome to campus. I'm one of the orientation leaders, and I want to spend a few minutes walking you through some things you'll need to take care of this week. First and most important: your student ID card. You can pick it up at the administration building anytime before Friday. That card isn't just for identification. It's how you get into the dining halls, it unlocks your dorm, and you'll tap it to borrow books, so don't put this off. Second, I strongly encourage you to attend at least one of the academic advising sessions. These are where you meet with a faculty advisor who helps you build your class schedule. Spots fill up fast, so sign up online today if you can. Now, a lot of you have been asking about the club fair. It's this Thursday afternoon on the main quad, and honestly, it's one of the best ways to meet people who share your interests, whether that's robotics, hiking, or debate. There will be over a hundred booths. One last practical tip: download the campus safety app before the weekend. It has a feature that lets you request a walking escort at night, which is really handy if you're heading back from the library late. That's it from me. Explore, ask questions, and don't be shy. Everyone here was new once, and we're all happy to help you find your way around.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the talk?",
+    "options": [
+     "To describe the university's academic history",
+     "To guide new students through important first-week tasks",
+     "To recruit students for the robotics club",
+     "To explain the rules of the dining halls"
+    ],
+    "answer": 1,
+    "explanation": "The speaker walks first-years through several tasks to complete during their first week; the other options are narrow details."
+   },
+   {
+    "q": "Why does the speaker say the student ID card is so important?",
+    "options": [
+     "It gives access to dining halls, dorms, and library books",
+     "It is required to graduate on time",
+     "It replaces the need for a class schedule",
+     "It provides free public transportation"
+    ],
+    "answer": 0,
+    "explanation": "The speaker lists dining, dorm access, and borrowing books as functions of the card; the other uses are not mentioned."
+   },
+   {
+    "q": "What does the speaker recommend doing about academic advising?",
+    "options": [
+     "Waiting until the second week to sign up",
+     "Meeting with other first-years instead of an advisor",
+     "Signing up online today because spots fill quickly",
+     "Skipping it unless you have a declared major"
+    ],
+    "answer": 2,
+    "explanation": "The speaker urges signing up online today since spots fill fast; the other choices contradict the advice."
+   },
+   {
+    "q": "What feature of the campus safety app does the speaker highlight?",
+    "options": [
+     "It lets you order food to your dorm",
+     "It allows you to request a walking escort at night",
+     "It tracks your class attendance",
+     "It shows the club fair schedule"
+    ],
+    "answer": 1,
+    "explanation": "The speaker points out the nighttime walking-escort feature; the other functions are invented distractors."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_05",
+  "kind": "announcement",
+  "title": "Recreation Center Pool Maintenance",
+  "transcript": "Attention all members, this is a notice from the campus recreation center. We wanted to let you know in advance that the main swimming pool will be closed for annual maintenance from the fifteenth through the twenty-second of this month. During that week, our staff will be draining the pool, resurfacing the tiles, and giving the filtration system a thorough overhaul, which is something we do once a year to keep the water safe and clean. We know a lot of our regular swimmers count on their morning laps, so here's the good news. The smaller lap pool on the lower level will remain open the entire time. It's only four lanes instead of eight, so we're asking everyone to be courteous and share lanes during busy hours. Circle swimming will be in effect, meaning you stay to the right side of your lane, just like driving. If you've never done that before, the lifeguards will be happy to show you how. Also, please note that all group water aerobics classes are moved to the lower-level pool for that week, and a couple of the evening sessions have been shortened by fifteen minutes to fit the smaller space. The full adjusted class schedule is posted at the front desk and on our website. We appreciate your flexibility, and we promise the main pool will be sparkling and ready when it reopens on the twenty-third. Thanks, and keep swimming.",
+  "questions": [
+   {
+    "q": "What is the announcement mainly about?",
+    "options": [
+     "A permanent closure of the recreation center",
+     "A temporary pool closure and alternative arrangements",
+     "A new membership pricing structure",
+     "The hiring of additional lifeguards"
+    ],
+    "answer": 1,
+    "explanation": "The talk centers on the week-long maintenance closure and the backup lap pool; the other topics are not discussed."
+   },
+   {
+    "q": "What does 'circle swimming' require members to do?",
+    "options": [
+     "Swim only in the deep end of the pool",
+     "Swim in a clockwise loop around the whole pool",
+     "Stay to the right side of the lane while sharing it",
+     "Take turns using the lane one person at a time"
+    ],
+    "answer": 2,
+    "explanation": "The speaker explains circle swimming means staying to the right of the lane like driving; the other definitions are incorrect."
+   },
+   {
+    "q": "Why does the speaker mention that the main pool maintenance happens once a year?",
+    "options": [
+     "To reassure members it is a routine safety measure",
+     "To warn that fees will increase annually",
+     "To explain why the pool is being permanently removed",
+     "To encourage members to volunteer for the work"
+    ],
+    "answer": 0,
+    "explanation": "Framing it as annual upkeep to keep water safe reassures members it's routine; the other interpretations are unsupported."
+   },
+   {
+    "q": "What change is being made to some evening aerobics classes?",
+    "options": [
+     "They are canceled for the entire month",
+     "They are shortened by fifteen minutes",
+     "They are moved to the main pool",
+     "They are combined into a single class"
+    ],
+    "answer": 1,
+    "explanation": "The speaker says a couple of evening sessions are shortened by fifteen minutes; they are relocated, not canceled or merged."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_06",
+  "kind": "announcement",
+  "title": "Career Fair Preparation Session",
+  "transcript": "Good afternoon, everyone. Thanks for coming to this quick info session about next month's career fair. I want to make sure you all walk in prepared, because a little preparation really does make a difference. The fair takes place on the twelfth in the main gymnasium, and this year we've got a record number of employers signed up, more than eighty companies across engineering, finance, healthcare, and the creative fields. Here's my first piece of advice: do your homework before you go. Look up which companies are attending, and pick maybe five or six you're genuinely excited about. Trying to talk to all eighty is a recipe for exhaustion, and recruiters can tell when you haven't done any research. Second, bring plenty of printed copies of your resume. Yes, most applications happen online now, but handing a recruiter a physical copy still leaves a strong impression, and you never know when someone will ask for one. I'd bring at least fifteen. Third, and people forget this one, dress professionally even though it's on campus. First impressions form in seconds. Oh, and one logistical note: the career center is offering free professional headshots in the lobby that day, so bring a clean shirt if you want a nice photo for your online profiles. If you'd like a mock interview to practice beforehand, email our office and we'll pair you with a counselor. Alright, go get those offers.",
+  "questions": [
+   {
+    "q": "What is the speaker's main goal in this session?",
+    "options": [
+     "To announce that the career fair has been canceled",
+     "To help students prepare for the upcoming career fair",
+     "To describe the history of the career center",
+     "To recruit students to work for a specific company"
+    ],
+    "answer": 1,
+    "explanation": "The speaker gives practical advice for preparing for the fair; the other options misrepresent the talk's purpose."
+   },
+   {
+    "q": "Why does the speaker suggest choosing only five or six companies?",
+    "options": [
+     "Because only six companies are attending",
+     "Because talking to all of them is exhausting and unfocused",
+     "Because each student is limited to six interviews",
+     "Because the other companies charge a fee"
+    ],
+    "answer": 1,
+    "explanation": "The speaker warns that targeting all eighty leads to exhaustion and shows lack of research; there is no attendance limit or fee."
+   },
+   {
+    "q": "Why does the speaker recommend bringing printed resumes?",
+    "options": [
+     "Because online applications are not accepted",
+     "Because printing is not available on campus",
+     "Because a physical copy still makes a strong impression",
+     "Because recruiters keep them as souvenirs"
+    ],
+    "answer": 2,
+    "explanation": "Even with online applications, the speaker says a physical resume leaves a strong impression; the other reasons are not given."
+   },
+   {
+    "q": "What free service is offered in the lobby on the day of the fair?",
+    "options": [
+     "Professional headshots for online profiles",
+     "Free lunch for all attendees",
+     "Printed maps of the gymnasium",
+     "On-the-spot job offers"
+    ],
+    "answer": 0,
+    "explanation": "The speaker mentions free professional headshots in the lobby; the other services are not offered."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_07",
+  "kind": "announcement",
+  "title": "Botanical Garden Seasonal Exhibit",
+  "transcript": "Hello, and welcome to the university botanical garden. I'd like to tell you about a special exhibit we've just opened that I think you'll really enjoy. For the next three months, our conservatory is hosting a display of carnivorous plants, the kind that actually trap and digest insects. Now, I know that sounds like something out of a science fiction movie, but these are real plants that have evolved remarkable ways to survive in poor, boggy soils where nutrients are scarce. The star of the show is the Venus flytrap, whose hinged leaves snap shut in a fraction of a second when an insect touches the tiny trigger hairs inside. We also have pitcher plants, which lure insects into slippery, tube-shaped leaves filled with digestive fluid. A quick word of caution: please don't trigger the traps yourself by poking them. Each trap can only close a limited number of times before it wears out and dies, so touching them actually harms the plant. Our staff will do live feeding demonstrations twice a day, at eleven and at three, and that's the best time to see the traps in action. The exhibit is included with your regular admission, no extra ticket needed. And if you'd like to take one home, the garden shop sells young flytraps along with a care guide, since they do need a bit of special attention. Enjoy your visit, and feel free to ask our gardeners anything.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "options": [
+     "To warn visitors that the conservatory is closing",
+     "To introduce a special exhibit of carnivorous plants",
+     "To explain how to become a garden volunteer",
+     "To advertise a sale on gardening tools"
+    ],
+    "answer": 1,
+    "explanation": "The speaker introduces the new carnivorous-plant exhibit and its features; the other options are not the focus."
+   },
+   {
+    "q": "According to the speaker, why have these plants evolved to trap insects?",
+    "options": [
+     "To defend themselves from larger animals",
+     "To attract pollinators to their flowers",
+     "To obtain nutrients missing from poor soils",
+     "To store water during dry seasons"
+    ],
+    "answer": 2,
+    "explanation": "The speaker says they survive in nutrient-poor boggy soils by trapping insects; the other explanations are not given."
+   },
+   {
+    "q": "Why does the speaker ask visitors not to trigger the traps?",
+    "options": [
+     "Because the traps can pinch a person's finger",
+     "Because each trap wears out after closing a limited number of times",
+     "Because the plants are poisonous to touch",
+     "Because it disturbs the feeding demonstrations"
+    ],
+    "answer": 1,
+    "explanation": "The speaker explains traps can only close a limited number of times before dying, so poking harms the plant."
+   },
+   {
+    "q": "What can be inferred about the flytraps sold in the garden shop?",
+    "options": [
+     "They require some special care to keep alive",
+     "They are fully grown adult plants",
+     "They cannot survive outside the conservatory",
+     "They are given away for free with admission"
+    ],
+    "answer": 0,
+    "explanation": "The shop sells young flytraps with a care guide because they need special attention; the other claims are unsupported."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_08",
+  "kind": "announcement",
+  "title": "Dormitory Fire Drill Notice",
+  "transcript": "Good evening, residents. This is your resident advisor with an important notice about tomorrow. At ten o'clock in the morning, we'll be conducting a scheduled fire drill for the entire building. I'm telling you now so nobody's caught off guard when the alarm goes off. When you hear it, please treat it exactly as you would a real emergency. Stop what you're doing, grab your keys, and leave the building immediately using the nearest stairwell. Do not, under any circumstances, use the elevators. In a real fire, elevators can trap you or open onto a smoke-filled floor, which is why we always take the stairs. Once you're outside, gather at the designated assembly point, which is the grass field across from the parking lot, not the front sidewalk. We need everyone in that field so the floor captains can count heads and confirm the building is empty. Please stay there until you hear the all-clear announcement. The whole thing should take no more than fifteen minutes. Now, I realize some of you have early classes or might be sleeping after a night shift, but participation is mandatory. It's a safety requirement, and honestly, knowing the evacuation route could save your life someday. If you use a mobility device or need any assistance evacuating, please come talk to me tonight so we can make a plan for you. Thanks, everyone, and I'll see you out on the field tomorrow.",
+  "questions": [
+   {
+    "q": "Why is the resident advisor giving this notice?",
+    "options": [
+     "To announce a real fire in the building",
+     "To inform residents about a scheduled fire drill",
+     "To report a change in dormitory rules",
+     "To recruit volunteers to be floor captains"
+    ],
+    "answer": 1,
+    "explanation": "The advisor is notifying residents about tomorrow's planned drill; there is no real fire or rule change."
+   },
+   {
+    "q": "Why does the speaker tell residents not to use the elevators?",
+    "options": [
+     "Because the elevators are out of service",
+     "Because using them wastes electricity",
+     "Because elevators can trap people or open onto smoke",
+     "Because the stairwell is faster to reach the field"
+    ],
+    "answer": 2,
+    "explanation": "The speaker explains elevators can trap you or open onto a smoke-filled floor in a real fire; the other reasons are not stated."
+   },
+   {
+    "q": "Where are residents supposed to gather during the drill?",
+    "options": [
+     "On the front sidewalk of the building",
+     "In the lobby near the front desk",
+     "In the parking lot",
+     "On the grass field across from the parking lot"
+    ],
+    "answer": 3,
+    "explanation": "The speaker specifies the grass field across from the parking lot, explicitly not the front sidewalk."
+   },
+   {
+    "q": "What does the speaker ask residents who need evacuation assistance to do?",
+    "options": [
+     "Speak with the advisor tonight to make a plan",
+     "Stay in their rooms during the drill",
+     "Wait for the fire department to arrive",
+     "Use the elevator instead of the stairs"
+    ],
+    "answer": 0,
+    "explanation": "The advisor asks those needing assistance to talk to him tonight to plan; the other options contradict the safety guidance."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_09",
+  "kind": "announcement",
+  "title": "Bookstore Textbook Buyback Program",
+  "transcript": "Hey, everybody, quick announcement from the campus bookstore before the semester wraps up. Starting next week, we're running our end-of-term textbook buyback program, and this is your chance to turn those heavy books you're done with into some cash. Here's how it works. Bring your used textbooks to the counter near the main entrance between Monday and Friday, nine to five. We'll scan the barcode, check the condition, and make you an offer on the spot. Now, I want to be upfront about a few things so nobody's disappointed. First, we can only buy back books that will be used again in courses next term, so if a professor is switching editions or dropping a title, unfortunately we can't take it. Second, condition matters a lot. Books with heavy highlighting, water damage, or missing pages will get a lower offer, or we may not be able to accept them at all. So if your book is in decent shape, you'll get more for it. One more thing worth knowing: the earlier you sell, the better. We work with a limited budget, and once we've bought enough copies of a particular title, we stop taking that book, even if it's still in demand. So don't wait until the last day. If your book doesn't qualify here, consider selling it directly to another student online. Thanks, and good luck with finals.",
+  "questions": [
+   {
+    "q": "What is the main topic of the announcement?",
+    "options": [
+     "A sale on new textbooks for next semester",
+     "A program to buy back used textbooks from students",
+     "A change in the bookstore's operating hours",
+     "A new online platform for students to trade books"
+    ],
+    "answer": 1,
+    "explanation": "The announcement is about the buyback program for used textbooks; the other options are minor or not the focus."
+   },
+   {
+    "q": "Why might the bookstore refuse to buy a particular textbook?",
+    "options": [
+     "Because it will not be used in courses next term",
+     "Because it was purchased from another store",
+     "Because the student has already graduated",
+     "Because it is a hardcover rather than paperback"
+    ],
+    "answer": 0,
+    "explanation": "The speaker says they only buy books used again next term; format and place of purchase are not mentioned as factors."
+   },
+   {
+    "q": "Why does the speaker advise students to sell their books early?",
+    "options": [
+     "Because prices drop each day of the week",
+     "Because the bookstore closes early on Fridays",
+     "Because the store stops buying a title once it has enough copies",
+     "Because early sellers receive a free gift"
+    ],
+    "answer": 2,
+    "explanation": "The speaker explains the limited budget means they stop buying a title after enough copies; the other reasons are invented."
+   },
+   {
+    "q": "What does the speaker suggest for books that do not qualify?",
+    "options": [
+     "Donating them to the library",
+     "Returning them to the professor",
+     "Throwing them away to save space",
+     "Selling them directly to another student online"
+    ],
+    "answer": 3,
+    "explanation": "The speaker recommends selling unqualified books directly to another student online; the other suggestions are not mentioned."
+   }
+  ]
+ },
+ {
+  "id": "opus_ann_10",
+  "kind": "announcement",
+  "title": "Community Garden Volunteer Day",
+  "transcript": "Hi, folks, and thanks for stopping by the information table. I'm here to tell you about our community garden's big volunteer day coming up this Saturday morning. The garden, as some of you know, sits on the empty lot behind the community center, and over the past two years, neighborhood volunteers have transformed it from a weedy patch into a real source of fresh vegetables for local families. This Saturday, from eight in the morning until noon, we're getting together to prepare the beds for the fall planting season. No gardening experience is needed at all, I promise. We'll have experienced gardeners on hand to show you everything, from turning the soil to spacing out the seedlings. Just wear clothes you don't mind getting dirty, and bring a water bottle and maybe a hat, because there's not much shade out there. We'll provide all the tools, gloves, and even a light breakfast of coffee and pastries to keep everyone fueled. Here's the part I really want to emphasize: everything we grow gets donated to the community food pantry down the street, which serves hundreds of families every month. So the few hours you spend digging in the dirt really do go toward feeding your neighbors. If you can't make it Saturday but still want to help, we're always looking for people to water the beds on weekday evenings. Sign up right here at the table, and I hope to see you out in the garden.",
+  "questions": [
+   {
+    "q": "What is the main purpose of the talk?",
+    "options": [
+     "To sell vegetables grown in the community garden",
+     "To invite people to a garden volunteer day",
+     "To announce the closing of the community center",
+     "To teach an advanced gardening course"
+    ],
+    "answer": 1,
+    "explanation": "The speaker is recruiting volunteers for Saturday's garden workday; the other options misstate the purpose."
+   },
+   {
+    "q": "What does the speaker emphasize about the vegetables grown in the garden?",
+    "options": [
+     "They are sold to raise money for the garden",
+     "They are shared only among the volunteers",
+     "They are donated to a local food pantry",
+     "They are shipped to other cities"
+    ],
+    "answer": 2,
+    "explanation": "The speaker stresses that everything grown is donated to the community food pantry; the other uses are contradicted."
+   },
+   {
+    "q": "What does the speaker suggest volunteers bring on Saturday?",
+    "options": [
+     "Their own gardening tools and gloves",
+     "A water bottle and a hat",
+     "Seeds and fertilizer for the beds",
+     "A packed lunch and a folding chair"
+    ],
+    "answer": 1,
+    "explanation": "The speaker asks volunteers to bring a water bottle and hat, noting tools, gloves, and breakfast are provided."
+   },
+   {
+    "q": "What can people do if they cannot attend on Saturday?",
+    "options": [
+     "Help water the beds on weekday evenings",
+     "Donate money instead of time",
+     "Attend a makeup session next month",
+     "Take home free vegetables from the garden"
+    ],
+    "answer": 0,
+    "explanation": "The speaker offers weekday-evening watering as an alternative; the other options are not mentioned."
+   }
+  ]
  }
 ]

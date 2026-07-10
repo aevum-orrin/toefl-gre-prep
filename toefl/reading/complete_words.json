@@ -408,5 +408,415 @@
     "explanation": "Fossil-fuel burning throws the balance off, so it 'disrupted' it. 'Preserved,' 'restored,' and 'reinforced' all suggest keeping the balance, contradicting the resulting climate change."
    }
   ]
+ },
+ {
+  "id": "opus_cw_01",
+  "kind": "complete_words",
+  "title": "The Formation of Coral Reefs",
+  "passage": "Coral reefs are among the most biologically diverse ecosystems on the planet, yet they arise from a remarkably simple partnership. The reef-building corals are tiny animals called polyps, which secrete a hard skeleton of calcium carbonate. Inside their tissues live microscopic algae that carry out photosynthesis, providing the polyps with much of their food. This intimate _____ benefits both organisms: the algae gain shelter and nutrients, while the corals receive energy. Because the algae require sunlight, reefs can only _____ in shallow, clear tropical waters where light penetrates easily. Over thousands of years, the accumulated skeletons of countless polyps build up into massive structures visible even from space. When ocean temperatures rise too high, however, the corals expel their algae in a process known as bleaching, which leaves them pale and vulnerable. Prolonged bleaching can be _____, killing colonies that took centuries to form. Scientists now monitor reefs closely, recognizing that these fragile systems serve as sensitive indicators of the broader health of the oceans.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "symbiosis",
+     "rivalry",
+     "isolation",
+     "sequence"
+    ],
+    "answer": 0,
+    "explanation": "\"Symbiosis\" names a mutually beneficial partnership, which the passage describes; \"rivalry\" and \"isolation\" contradict cooperation, and \"sequence\" refers to order, not a relationship."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "dissolve",
+     "flourish",
+     "migrate",
+     "erode"
+    ],
+    "answer": 1,
+    "explanation": "\"Flourish\" means to thrive, fitting the reefs' growth in favorable waters; \"dissolve\" and \"erode\" imply breakdown, and \"migrate\" wrongly suggests reefs move."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "temporary",
+     "beneficial",
+     "catastrophic",
+     "gradual"
+    ],
+    "answer": 2,
+    "explanation": "\"Catastrophic\" matches the killing of centuries-old colonies; \"beneficial\" is the opposite, \"temporary\" understates lethal damage, and \"gradual\" describes pace, not severity."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_02",
+  "kind": "complete_words",
+  "title": "The Printing Revolution",
+  "passage": "Before the mid-fifteenth century, books in Europe were copied by hand, a laborious task that made them scarce and enormously expensive. Only the wealthy and the clergy could afford them, and literacy remained the privilege of a small elite. Johannes Gutenberg's introduction of movable-type printing around 1450 fundamentally _____ this situation. By casting individual letters in metal that could be arranged, inked, and reused, his press could produce identical copies far more quickly than any scribe. The cost of books fell sharply, and their numbers multiplied. This sudden _____ of printed material accelerated the spread of new ideas across the continent. Scholars could compare texts, merchants could standardize records, and reformers could circulate their arguments to audiences no manuscript could ever reach. Some authorities, alarmed by the flood of unapproved writings, attempted to _____ the presses through censorship and licensing. Yet the technology proved impossible to contain. Within a few decades, printing shops had opened in cities throughout Europe, laying the groundwork for the Renaissance, the Reformation, and the scientific revolutions that followed.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "transformed",
+     "preserved",
+     "questioned",
+     "postponed"
+    ],
+    "answer": 0,
+    "explanation": "\"Transformed\" captures the sweeping change the press caused; \"preserved\" means to keep unchanged, \"questioned\" is too weak, and \"postponed\" implies mere delay."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "shortage",
+     "abundance",
+     "decline",
+     "concealment"
+    ],
+    "answer": 1,
+    "explanation": "\"Abundance\" reflects the multiplied numbers of books; \"shortage\" and \"decline\" mean the reverse, and \"concealment\" contradicts wide circulation."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "encourage",
+     "finance",
+     "suppress",
+     "duplicate"
+    ],
+    "answer": 2,
+    "explanation": "\"Suppress\" fits alarmed authorities using censorship; \"encourage\" and \"finance\" suggest support, and \"duplicate\" describes copying, not control."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_03",
+  "kind": "complete_words",
+  "title": "How Vaccines Train the Immune System",
+  "passage": "The human immune system possesses a remarkable capacity to remember pathogens it has encountered before. When a virus first invades the body, specialized white blood cells slowly learn to recognize it and mount a defense, but this initial response is often too _____ to prevent illness. Vaccination exploits the immune system's memory without exposing a person to the dangers of the actual disease. A vaccine introduces a harmless fragment or weakened form of a pathogen, prompting the body to produce antibodies and memory cells as if it had faced the real threat. Should the genuine pathogen later appear, these primed defenses respond so rapidly that the infection is _____ before symptoms develop. The strategy has proven extraordinarily effective: smallpox, once a devastating killer, has been entirely _____ from the natural world through a global vaccination campaign. Diseases such as polio and measles have likewise been driven to the brink of elimination in many regions. Public health experts emphasize that widespread immunization protects not only vaccinated individuals but also those who cannot receive vaccines, by reducing the pathogen's ability to circulate.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "aggressive",
+     "sluggish",
+     "precise",
+     "permanent"
+    ],
+    "answer": 1,
+    "explanation": "\"Sluggish\" explains why the slow first response fails to prevent illness; \"aggressive\" and \"precise\" would imply success, and \"permanent\" describes duration, not speed."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "neutralized",
+     "transmitted",
+     "delayed",
+     "magnified"
+    ],
+    "answer": 0,
+    "explanation": "\"Neutralized\" means the infection is stopped, matching primed defenses; \"transmitted\" and \"magnified\" worsen it, and \"delayed\" only postpones symptoms."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "recovered",
+     "eradicated",
+     "isolated",
+     "inherited"
+    ],
+    "answer": 1,
+    "explanation": "\"Eradicated\" fits smallpox's complete removal; \"isolated\" implies mere containment, \"recovered\" and \"inherited\" do not describe eliminating a disease."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_04",
+  "kind": "complete_words",
+  "title": "The Silk Road and Cultural Exchange",
+  "passage": "The Silk Road was never a single paved highway but rather a sprawling network of overland routes linking China with Central Asia, the Middle East, and eventually Europe. For centuries, caravans of merchants carried goods across deserts and mountain passes, exchanging Chinese silk, Indian spices, and Persian textiles at bustling market towns. Yet the routes conveyed far more than luxury commodities. Along with merchandise traveled religions, technologies, and artistic styles, so that distant cultures gradually came to _____ one another's innovations. Buddhism spread from India into China, papermaking moved westward, and mathematical concepts passed between civilizations that never met directly. This constant _____ of ideas enriched every society the routes touched. Unfortunately, the same pathways that carried silk and philosophy could also transmit disease; historians believe the plague spread along these corridors with devastating effect. As maritime trade routes expanded in later centuries, the overland network gradually _____, and many of its once-thriving oasis cities faded into obscurity. Today archaeologists excavate their ruins, uncovering coins, manuscripts, and artifacts that testify to a remarkably interconnected ancient world.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "reject",
+     "adopt",
+     "conceal",
+     "outlaw"
+    ],
+    "answer": 1,
+    "explanation": "\"Adopt\" fits cultures taking up each other's innovations; \"reject\" and \"outlaw\" mean refusal, and \"conceal\" contradicts open exchange."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "suppression",
+     "circulation",
+     "duplication",
+     "shortage"
+    ],
+    "answer": 1,
+    "explanation": "\"Circulation\" describes ideas moving among societies; \"suppression\" and \"shortage\" contradict enrichment, and \"duplication\" misses the sense of flow."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "expanded",
+     "flourished",
+     "declined",
+     "diversified"
+    ],
+    "answer": 2,
+    "explanation": "\"Declined\" matches the network fading as sea routes rose; \"expanded\" and \"flourished\" are opposites, and \"diversified\" does not explain the cities' obscurity."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_05",
+  "kind": "complete_words",
+  "title": "Why Some Metals Resist Corrosion",
+  "passage": "When iron is exposed to moist air, it reacts with oxygen to form rust, a flaky reddish compound that weakens the metal over time. This process, called corrosion, causes enormous economic damage, degrading everything from bridges to automobiles. Not all metals _____ so readily, however. Some, such as gold and platinum, are chemically inert and remain bright for centuries. Others owe their durability to a more subtle mechanism. Aluminum, for example, reacts instantly with oxygen, but the thin oxide layer it forms is dense and adherent rather than flaky. This film acts as a protective _____, sealing the surface and preventing further reaction with the metal beneath. Engineers exploit similar principles when they add chromium to steel to produce stainless steel, whose invisible oxide coating renders it highly _____ to rust. Understanding these reactions allows manufacturers to select the right material for each application, from surgical instruments that must never corrode to inexpensive structures where periodic repainting is acceptable. Corrosion science thus blends chemistry and engineering to extend the working life of the metal objects that surround us.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "harden",
+     "corrode",
+     "conduct",
+     "expand"
+    ],
+    "answer": 1,
+    "explanation": "\"Corrode\" continues the discussion of metals resisting rust; \"harden,\" \"conduct,\" and \"expand\" describe unrelated properties."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "barrier",
+     "conductor",
+     "catalyst",
+     "solvent"
+    ],
+    "answer": 0,
+    "explanation": "\"Barrier\" fits a film that seals the surface; \"catalyst\" and \"solvent\" would promote reaction, and \"conductor\" relates to electricity, not protection."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "prone",
+     "resistant",
+     "sensitive",
+     "vulnerable"
+    ],
+    "answer": 1,
+    "explanation": "\"Resistant\" describes stainless steel not rusting; \"prone,\" \"sensitive,\" and \"vulnerable\" all imply susceptibility, the opposite meaning."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_06",
+  "kind": "complete_words",
+  "title": "The Rise of Impressionism",
+  "passage": "In the 1870s a group of French painters broke sharply with the polished conventions of the official art establishment. Rather than laboring for months in the studio to produce smooth, meticulously finished canvases, artists such as Claude Monet worked quickly outdoors, attempting to capture the fleeting effects of light and atmosphere. Their loose, visible brushstrokes and unblended colors struck many critics as crude and _____, and one reviewer coined the mocking label \"Impressionism\" after a Monet painting titled Impression, Sunrise. The name, intended as an insult, was soon embraced by the movement itself. What critics dismissed as carelessness was in fact a deliberate _____ to record perception as the eye actually experiences it, before the mind organizes a scene into tidy detail. Because the painters worked so rapidly, they could depict the same subject under changing conditions, showing how a haystack or a cathedral facade shifted in color from morning to dusk. Although initially _____, Impressionism gradually won acceptance and profoundly influenced the course of modern art, opening the door to still bolder experiments in the decades that followed.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "exquisite",
+     "unfinished",
+     "traditional",
+     "priceless"
+    ],
+    "answer": 1,
+    "explanation": "\"Unfinished\" matches critics seeing the loose brushwork as crude; \"exquisite\" and \"priceless\" are praise, and \"traditional\" contradicts the break with convention."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "refusal",
+     "attempt",
+     "failure",
+     "accident"
+    ],
+    "answer": 1,
+    "explanation": "\"Attempt\" fits a deliberate effort to record perception; \"refusal\" negates the goal, and \"failure\" and \"accident\" deny the described intent."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "celebrated",
+     "ridiculed",
+     "profitable",
+     "forgotten"
+    ],
+    "answer": 1,
+    "explanation": "\"Ridiculed\" fits the early hostility before acceptance; \"celebrated\" and \"profitable\" contradict it, and \"forgotten\" misses the active mockery described."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_07",
+  "kind": "complete_words",
+  "title": "The Economics of Public Goods",
+  "passage": "Economists distinguish between ordinary commodities and a special category known as public goods. A loaf of bread is a private good: if one person eats it, no one else can, and a baker can easily withhold it from anyone who refuses to pay. National defense, clean air, and street lighting behave quite differently. Once such goods are provided, it is nearly impossible to _____ anyone from enjoying them, and one person's use does not diminish what remains available to others. These two features create a well-known dilemma. Because individuals can benefit without paying, many are tempted to _____ contributing, hoping that others will bear the cost while they enjoy the result free of charge. If enough people reason this way, the good may never be supplied at all, even though everyone would gain from its existence. This is why economists argue that markets alone tend to _____ public goods, producing less than society actually wants. Governments therefore step in, funding such goods through taxation so that the benefits reach everyone regardless of individual willingness to pay.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "exclude",
+     "protect",
+     "reward",
+     "distinguish"
+    ],
+    "answer": 0,
+    "explanation": "\"Exclude\" fits the impossibility of barring people from a public good; \"protect\" and \"reward\" miss the sense, and \"distinguish\" does not concern access."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "begin",
+     "avoid",
+     "resume",
+     "double"
+    ],
+    "answer": 1,
+    "explanation": "\"Avoid\" captures free-riders declining to contribute; \"begin,\" \"resume,\" and \"double\" all imply paying more, not less."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "overproduce",
+     "underprovide",
+     "regulate",
+     "monopolize"
+    ],
+    "answer": 1,
+    "explanation": "\"Underprovide\" matches producing less than society wants; \"overproduce\" is the opposite, and \"regulate\" and \"monopolize\" describe other behaviors."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_08",
+  "kind": "complete_words",
+  "title": "Plate Tectonics and Mountain Building",
+  "passage": "The Earth's rigid outer shell is not a single continuous layer but is broken into roughly a dozen large plates that drift slowly over the hotter, more fluid material below. Though they move only a few centimeters each year, their interactions over millions of years have reshaped the surface of the planet. Where two continental plates collide, neither is dense enough to sink beneath the other, so their edges crumple and _____ upward, raising vast mountain ranges. The Himalayas, still growing today, formed in exactly this way as the Indian plate pushed relentlessly into Asia. Along other boundaries the plates instead _____ past one another, grinding sideways and periodically releasing built-up stress as earthquakes. Elsewhere plates pull apart, allowing molten rock to rise and create new crust along mid-ocean ridges. This grand cycle of creation and destruction is remarkably _____: crust generated at the ridges is eventually consumed where one plate dives beneath another, so the planet's surface is continually recycled. Recognizing these processes has allowed geologists to explain phenomena that once seemed unrelated, from the distribution of fossils to the location of volcanoes.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "dissolve",
+     "buckle",
+     "flatten",
+     "scatter"
+    ],
+    "answer": 1,
+    "explanation": "\"Buckle\" describes crumpling edges rising into mountains; \"flatten\" and \"scatter\" contradict raising ranges, and \"dissolve\" is chemically wrong here."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "slide",
+     "merge",
+     "vanish",
+     "descend"
+    ],
+    "answer": 0,
+    "explanation": "\"Slide\" fits plates grinding sideways past each other; \"merge\" and \"descend\" describe different boundaries, and \"vanish\" makes no sense for grinding plates."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "wasteful",
+     "balanced",
+     "recent",
+     "random"
+    ],
+    "answer": 1,
+    "explanation": "\"Balanced\" fits crust created and consumed in equal measure; \"wasteful\" and \"random\" misread the cycle, and \"recent\" contradicts millions of years."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_09",
+  "kind": "complete_words",
+  "title": "The Psychology of Habit Formation",
+  "passage": "Much of daily behavior is governed not by conscious decision but by habit, the automatic routines that free the mind to focus on other things. Psychologists describe a habit as a loop with three parts: a cue that triggers the behavior, the routine itself, and a reward that reinforces it. When a particular action reliably produces a satisfying outcome, the brain gradually _____ the connection between cue and response, so that the behavior eventually unfolds with little effort or awareness. This efficiency is enormously useful, allowing skilled drivers to navigate traffic or experienced typists to write without pondering each keystroke. The same mechanism, however, can entrench behaviors people would rather abandon. Because established habits are so _____, simply resolving to stop is rarely enough to break them. Researchers suggest that a more effective strategy is not to erase a habit but to _____ it, keeping the original cue and reward while substituting a healthier routine in between. A smoker who lights a cigarette to relieve stress, for instance, might learn to take a brief walk instead, satisfying the same underlying need through a different action.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "weakens",
+     "strengthens",
+     "ignores",
+     "delays"
+    ],
+    "answer": 1,
+    "explanation": "\"Strengthens\" fits reinforcement making behavior automatic; \"weakens\" and \"delays\" contradict the loop, and \"ignores\" makes no sense for the brain building a link."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "fragile",
+     "entrenched",
+     "recent",
+     "harmless"
+    ],
+    "answer": 1,
+    "explanation": "\"Entrenched\" explains why habits resist mere resolve; \"fragile\" and \"recent\" imply easy change, and \"harmless\" ignores the difficulty being discussed."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "reward",
+     "abandon",
+     "modify",
+     "repeat"
+    ],
+    "answer": 2,
+    "explanation": "\"Modify\" fits substituting a new routine while keeping cue and reward; \"abandon\" contradicts the strategy, and \"reward\" and \"repeat\" miss the change."
+   }
+  ]
+ },
+ {
+  "id": "opus_cw_10",
+  "kind": "complete_words",
+  "title": "The Domestication of Plants",
+  "passage": "The transition from hunting and gathering to farming ranks among the most consequential developments in human history. It did not happen overnight, nor was it the result of a single invention. Instead, early peoples in several regions of the world gradually _____ wild plants by saving and replanting the seeds of individuals with useful traits. Over many generations, this selective planting altered the plants themselves. Wild grasses, for example, tend to scatter their seeds as soon as they ripen, an adaptation that helps them spread but frustrates any harvester. Farmers unconsciously favored the rare plants whose seeds remained _____ to the stalk, and in time cultivated grains lost the ability to disperse on their own, becoming dependent on humans to sow them. Similar changes produced larger fruits, sweeter kernels, and reduced natural toxins. This slow reshaping of species is a striking example of how human choices can _____ the course of biological evolution. The resulting agricultural surplus supported denser populations, permanent settlements, and eventually the specialized crafts and institutions from which the first cities arose.",
+  "questions": [
+   {
+    "q": "Choose the word that best completes gap 1.",
+    "options": [
+     "abandoned",
+     "domesticated",
+     "harvested",
+     "discovered"
+    ],
+    "answer": 1,
+    "explanation": "\"Domesticated\" names the gradual taming through replanting; \"harvested\" and \"discovered\" are one-time acts, and \"abandoned\" contradicts cultivation."
+   },
+   {
+    "q": "Choose the word that best completes gap 2.",
+    "options": [
+     "attached",
+     "loose",
+     "hidden",
+     "poisonous"
+    ],
+    "answer": 0,
+    "explanation": "\"Attached\" fits seeds staying on the stalk for harvest; \"loose\" describes the scattering trait farmers avoided, and \"hidden\" and \"poisonous\" are irrelevant here."
+   },
+   {
+    "q": "Choose the word that best completes gap 3.",
+    "options": [
+     "reverse",
+     "redirect",
+     "halt",
+     "predict"
+    ],
+    "answer": 1,
+    "explanation": "\"Redirect\" captures human choices steering evolution's course; \"reverse\" and \"halt\" overstate the effect, and \"predict\" describes foresight, not influence."
+   }
+  ]
  }
 ]
