@@ -34,25 +34,44 @@ load_env(REPO / ".env")
 # Exam-specific content lives under the exam folder (this tool stays exam-agnostic).
 SPEAKING_DIR = Path(os.environ.get("SPEAKING_DIR") or REPO / "toefl" / "speaking")
 RUBRIC = Rubric.from_json(REPO / "toefl" / "rubrics" / "speaking" / "speaking_interview.json")
-DATA_DIR = REPO / "data"
-REC_DIR = DATA_DIR / "recordings"          # gitignored
+DATA_DIR = Path(os.environ.get("PREP_DATA_DIR") or REPO / "data")   # user records -> scratch (env.sh)
+REC_DIR = DATA_DIR / "recordings"          # recordings can get large -> scratch
 
-SENTENCES: list[str] = json.loads((SPEAKING_DIR / "sentences.json").read_text(encoding="utf-8"))
+# Real ETS/TPO speaking content lives on scratch (REAL_DATA_ROOT); mixed in, real first.
+REAL_ROOT = Path(os.environ.get("REAL_DATA_ROOT")
+                 or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real")
+
+
+def _read_json(p: Path, default):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return default
+
+
+# Listen-and-Repeat sentences: real first, then AI bank; SENT_SRC tracks provenance per index.
+_real_sents = [s for s in _read_json(REAL_ROOT / "speaking" / "sentences.json", []) if isinstance(s, str)]
+_ai_sents = [s for s in _read_json(SPEAKING_DIR / "sentences.json", []) if isinstance(s, str)]
+SENTENCES: list[str] = _real_sents + _ai_sents
+SENT_SRC: list[str] = ["real"] * len(_real_sents) + ["ai"] * len(_ai_sents)
+
+
+def _norm_topic(item, src):
+    if isinstance(item, dict) and "questions" in item:
+        return {"topic": item.get("topic", "Interview"),
+                "questions": [q for q in item["questions"] if isinstance(q, str)],
+                "answers": [a for a in item.get("answers", []) if isinstance(a, str)],
+                "source": item.get("source", src)}
+    if isinstance(item, str):
+        return {"topic": "Interview", "questions": [item], "answers": [], "source": src}
+    return None
 
 
 def _load_interview_topics() -> list[dict]:
-    """Normalize the interview bank to [{topic, questions:[...]}], tolerating the old
-    flat list-of-strings format so the app keeps working before the bank is regenerated."""
-    raw = json.loads((SPEAKING_DIR / "interview_questions.json").read_text(encoding="utf-8"))
-    topics = []
-    for item in raw:
-        if isinstance(item, dict) and "questions" in item:
-            topics.append({"topic": item.get("topic", "Interview"),
-                           "questions": [q for q in item["questions"] if isinstance(q, str)],
-                           "answers": [a for a in item.get("answers", []) if isinstance(a, str)]})
-        elif isinstance(item, str):
-            topics.append({"topic": "Interview", "questions": [item]})
-    return topics
+    """Interview bank as [{topic, questions, answers, source}] — real (scratch) first, then AI."""
+    real = [_norm_topic(x, "real") for x in _read_json(REAL_ROOT / "speaking" / "interview.json", [])]
+    ai = [_norm_topic(x, "ai") for x in _read_json(SPEAKING_DIR / "interview_questions.json", [])]
+    return [t for t in real + ai if t]
 
 
 TOPICS = _load_interview_topics()
@@ -86,7 +105,8 @@ def status():
 @app.get("/api/repeat")
 def repeat(i: int = 0):
     i %= len(SENTENCES)
-    return {"i": i, "total": len(SENTENCES), "sentence": SENTENCES[i], "source": "bank"}
+    return {"i": i, "total": len(SENTENCES), "sentence": SENTENCES[i], "source": "bank",
+            "provenance": SENT_SRC[i]}
 
 
 @app.get("/api/repeat/generate")
@@ -115,7 +135,7 @@ def interview(i: int = 0):
     i %= len(TOPICS)
     t = TOPICS[i]
     return {"i": i, "total": len(TOPICS), "topic": t["topic"], "questions": t["questions"],
-            "source": "bank"}
+            "source": "bank", "provenance": t.get("source", "ai")}
 
 
 @app.get("/api/interview/generate")

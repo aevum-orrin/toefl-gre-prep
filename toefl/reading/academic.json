@@ -49,7 +49,8 @@
     "answer": 0,
     "explanation": "The passage says skepticism arose because many scientists doubted that such symbolic communication existed outside of humans."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-02",
@@ -101,7 +102,8 @@
     "answer": 0,
     "explanation": "The passage notes that supernovae scatter heavy elements into space, and these later become the raw material for new stars and planets."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-03",
@@ -153,7 +155,8 @@
     "answer": 1,
     "explanation": "The passage explains that the press enabled controversial ideas to spread widely before they could be suppressed, which is why it is linked to the Reformation and Scientific Revolution."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-04",
@@ -205,7 +208,8 @@
     "answer": 0,
     "explanation": "The passage says that when supply falls, the good becomes scarcer and its price tends to rise until quantity demanded falls to match the smaller supply."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-05",
@@ -257,7 +261,8 @@
     "answer": 1,
     "explanation": "The passage says perspective reflected a broader cultural interest in mathematics, observation, and the rational ordering of the world."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-06",
@@ -309,7 +314,8 @@
     "answer": 1,
     "explanation": "The passage notes that reefs shelter coastlines from storms and support fisheries that millions of people depend on, so their decline has wider consequences."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-07",
@@ -361,7 +367,8 @@
     "answer": 1,
     "explanation": "The passage advises that a person needing help should single out one specific individual and make a direct request, which cuts through diffusion of responsibility."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_01",
@@ -424,7 +431,8 @@
     "answer": 1,
     "explanation": "The bulb, which 'wastes most of its energy as heat,' is contrasted with the firefly's reaction, in which 'nearly all of the released energy becomes visible light.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_02",
@@ -487,7 +495,8 @@
     "answer": 0,
     "explanation": "The text states that 'an individual spot may last from a few days to a couple of months before fading.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_03",
@@ -550,7 +559,8 @@
     "answer": 3,
     "explanation": "The comparison stresses that keeping the marsh's free 'services' is cheaper than paying to build structures that would replace them."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_04",
@@ -613,7 +623,8 @@
     "answer": 2,
     "explanation": "The comparison illustrates the idea that effortful recall 'strengthens the underlying trace, much as a muscle grows through repeated exercise.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_05",
@@ -676,7 +687,8 @@
     "answer": 3,
     "explanation": "The caution acknowledges that the press 'accelerated' change but was not the sole cause of the 'upheavals that followed.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_06",
@@ -739,7 +751,8 @@
     "answer": 1,
     "explanation": "The technique 'let the viewer's eye do the mixing, producing a livelier sense of light than smooth blending could achieve.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_07",
@@ -802,7 +815,8 @@
     "answer": 0,
     "explanation": "The example qualifies the principle, noting that the nation may gain overall even though some individuals lose."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_08",
@@ -865,7 +879,8 @@
     "answer": 2,
     "explanation": "Geologists 'read them almost like tree rings, using bands within them to reconstruct patterns of ancient rainfall and climate.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_09",
@@ -928,7 +943,8 @@
     "answer": 1,
     "explanation": "The arrowhead 'indicates that he did not simply succumb to the cold but was attacked.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_10",
@@ -991,7 +1007,8 @@
     "answer": 3,
     "explanation": "The passage stresses that a catalyst 'cannot force a reaction that is not already possible' and 'does not change how much product ultimately forms,' defining its limits."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_11",
@@ -1054,7 +1071,8 @@
     "answer": 2,
     "explanation": "The word 'delicate' is immediately supported by the example of warming water causing the coral to expel its algae and bleach."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_12",
@@ -1117,7 +1135,8 @@
     "answer": 0,
     "explanation": "Because the tail 'is blown outward by the Sun, it always points away from the Sun, not backward along the comet's path.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_13",
@@ -1180,7 +1199,8 @@
     "answer": 1,
     "explanation": "The resemblance to vents supports the idea that whale falls act as 'stepping stones' that let unusual organisms spread across the ocean floor."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_14",
@@ -1243,7 +1263,8 @@
     "answer": 3,
     "explanation": "They are offered as 'practical consequences' showing why change blindness matters outside the laboratory."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_15",
@@ -1306,7 +1327,8 @@
     "answer": 1,
     "explanation": "These are examples given to demonstrate the 'numerous uses' engineers have found for the shape-memory property."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_16",
@@ -1369,7 +1391,8 @@
     "answer": 3,
     "explanation": "Having only one example is given as the reason scholars 'cannot say how common such devices were.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_17",
@@ -1432,7 +1455,8 @@
     "answer": 2,
     "explanation": "These are 'additional clues' beyond the trapped gases, illustrating how much information the ice can preserve."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_18",
@@ -1495,7 +1519,8 @@
     "answer": 3,
     "explanation": "Bach's collection in every key illustrates the freedom 'to move smoothly from one key to another' that equal temperament made possible."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_19",
@@ -1558,7 +1583,8 @@
     "answer": 1,
     "explanation": "The unhealthy conditions set up the problem that motivated Howard, framing the garden city as a response to it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_ac_20",
@@ -1621,7 +1647,8 @@
     "answer": 2,
     "explanation": "Boosters are needed because 'protection depends on these surviving cells,' keeping the memory-cell population large enough for a rapid response."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_01",
@@ -1684,7 +1711,8 @@
     "answer": 2,
     "explanation": "The passage names logging, milkweed decline, and the fragile continental chain, but never mentions bird predation, making (2) the unstated option."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_02",
@@ -1747,7 +1775,8 @@
     "answer": 1,
     "explanation": "The final paragraph explicitly rejects a single moment of genius and credits gradual, multi-society experimentation (1); the other options contradict the passage's stated conclusion or reverse its geography."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_03",
@@ -1810,7 +1839,8 @@
     "answer": 1,
     "explanation": "The text says polyps 'may regain their algae and recover' if conditions improve soon (1); the other options contradict the passage, which describes a bleached colony as starving but still alive."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_04",
@@ -1873,7 +1903,8 @@
     "answer": 3,
     "explanation": "The passage mentions ownership debates, arrangement decisions, and civic founders, but never a universal entrance fee, making (3) the unstated option."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_05",
@@ -1936,7 +1967,8 @@
     "answer": 1,
     "explanation": "The passage says all-night cramming 'deprives the brain of the very stage it needs to lock in' new material (1); the other options contradict the passage's argument against cramming."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_06",
@@ -1999,7 +2031,8 @@
     "answer": 1,
     "explanation": "The passage explains the aerosols settle out so cooling is temporary and does not offset warming from accumulating greenhouse gases (1); the other options contradict details in the text."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_07",
@@ -2062,7 +2095,8 @@
     "answer": 1,
     "explanation": "The passage states that horse-adopting communities 'gained significant advantages over those that did not' (1); the other options contradict the passage's account of expanded mobility and technology."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ap_08",
@@ -2125,6 +2159,7 @@
     "answer": 2,
     "explanation": "The passage explicitly says labeling something a public good does 'not automatically settle how much of it should be provided,' so (2) is the false statement; the other options are all stated in the text."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

@@ -49,7 +49,8 @@
     "answer": 1,
     "explanation": "The announcement notes that a student ID is required for entry to the fair."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-12",
@@ -101,7 +102,8 @@
     "answer": 1,
     "explanation": "The announcement states that the swimming pool and indoor track will keep their normal hours during the renovation."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_01",
@@ -142,7 +144,8 @@
     "answer": 2,
     "explanation": "The speaker advises arriving a few minutes early because the new auditorium can be a little tricky to find."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_02",
@@ -183,7 +186,8 @@
     "answer": 1,
     "explanation": "The change is meant to give more students access, especially during exams, which implies the rooms are in high demand."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_03",
@@ -224,7 +228,8 @@
     "answer": 1,
     "explanation": "Students are told to look over the company list on the Career Center website so they can ask smart questions and stand out."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_04",
@@ -265,7 +270,8 @@
     "answer": 0,
     "explanation": "The speaker asks instructors to help direct any students who may be visiting the building for the first time."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_05",
@@ -306,7 +312,8 @@
     "answer": 3,
     "explanation": "For courses requiring approval, the speaker urges students to email their advisor today because those courses fill up quickly."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_06",
@@ -347,7 +354,8 @@
     "answer": 0,
     "explanation": "Students with Monday deadlines are advised to download needed files ahead of time or work off campus during the outage."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_07",
@@ -388,7 +396,8 @@
     "answer": 2,
     "explanation": "The speaker says attendance is not strictly required but strongly encourages it, implying the tour is optional yet recommended."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_an_08",
@@ -429,7 +438,8 @@
     "answer": 3,
     "explanation": "The speaker says there are clear signs with pictures above each bin, so when unsure, just check the picture."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_01",
@@ -481,7 +491,8 @@
     "answer": 1,
     "explanation": "The speaker lists more outlets, better lighting, and soundproof booths, implying improvements, while nothing suggests it will shrink or restrict access."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_02",
@@ -533,7 +544,8 @@
     "answer": 1,
     "explanation": "The speaker says they'll switch back to the regular route if construction wraps up ahead of schedule; the other outcomes contradict the talk."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_03",
@@ -585,7 +597,8 @@
     "answer": 2,
     "explanation": "The guide mentions the interactive touch tank with live sea stars at the end; the other activities are not described."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_04",
@@ -637,7 +650,8 @@
     "answer": 1,
     "explanation": "The speaker points out the nighttime walking-escort feature; the other functions are invented distractors."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_05",
@@ -689,7 +703,8 @@
     "answer": 1,
     "explanation": "The speaker says a couple of evening sessions are shortened by fifteen minutes; they are relocated, not canceled or merged."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_06",
@@ -741,7 +756,8 @@
     "answer": 0,
     "explanation": "The speaker mentions free professional headshots in the lobby; the other services are not offered."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_07",
@@ -793,7 +809,8 @@
     "answer": 0,
     "explanation": "The shop sells young flytraps with a care guide because they need special attention; the other claims are unsupported."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_08",
@@ -845,7 +862,8 @@
     "answer": 0,
     "explanation": "The advisor asks those needing assistance to talk to him tonight to plan; the other options contradict the safety guidance."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_09",
@@ -897,7 +915,8 @@
     "answer": 3,
     "explanation": "The speaker recommends selling unqualified books directly to another student online; the other suggestions are not mentioned."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_ann_10",
@@ -949,6 +968,7 @@
     "answer": 0,
     "explanation": "The speaker offers weekday-evening watering as an alternative; the other options are not mentioned."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

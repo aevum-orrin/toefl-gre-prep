@@ -49,7 +49,8 @@
     "answer": 1,
     "explanation": "The advisor says environmental science would suit the student well given her career interest and offers to build a plan, showing support for the switch."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-08",
@@ -101,7 +102,8 @@
     "answer": 1,
     "explanation": "Tom tells the student that if no one shows up by ten, she should call the office and ask for him directly."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-09",
@@ -153,7 +155,8 @@
     "answer": 1,
     "explanation": "The student says she cares most about the experience because she hopes to apply to graduate school and research would strengthen her application."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-10",
@@ -205,7 +208,8 @@
     "answer": 1,
     "explanation": "The librarian says that as long as no one else has requested the book, the student can renew it online."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_01",
@@ -257,7 +261,8 @@
     "answer": 2,
     "explanation": "She says she will use the override code the moment she gets back to her dorm."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_02",
@@ -309,7 +314,8 @@
     "answer": 1,
     "explanation": "He says he'll go to the library that afternoon, following the advice to start with the microfilm."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_03",
@@ -361,7 +367,8 @@
     "answer": 1,
     "explanation": "The librarian offers to begin the interlibrary loan right there, needing only the student's ID and email."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_04",
@@ -413,7 +420,8 @@
     "answer": 2,
     "explanation": "He plans to pay the balance immediately, then email his advisor to schedule the meeting."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_05",
@@ -465,7 +473,8 @@
     "answer": 3,
     "explanation": "She accepts the offered space heater and says she'll take it right now."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_06",
@@ -517,7 +526,8 @@
     "answer": 1,
     "explanation": "He says he'll update his laptop as soon as he's back, meaning reconnect it with the new password."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_07",
@@ -569,7 +579,8 @@
     "answer": 0,
     "explanation": "She says she'll finish the counseling module the moment she leaves, which will release the funds."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_08",
@@ -621,7 +632,8 @@
     "answer": 2,
     "explanation": "She agrees to draft the proposal and email it to him by Friday."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_09",
@@ -673,7 +685,8 @@
     "answer": 2,
     "explanation": "He says he'll email Dr. Fowler that day, matching the advice to secure a sponsor first."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_10",
@@ -725,7 +738,8 @@
     "answer": 1,
     "explanation": "The tutor advises rewriting just the opening two paragraphs and bringing them to the follow-up."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_11",
@@ -777,7 +791,8 @@
     "answer": 3,
     "explanation": "She says she can knock out the course tonight and will start it as soon as she gets back to her room."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_12",
@@ -829,7 +844,8 @@
     "answer": 1,
     "explanation": "The advisor recommends starting with the course-approval form today, and the student agrees that is where she'll begin."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_13",
@@ -881,7 +897,8 @@
     "answer": 3,
     "explanation": "She confirms the two-forty slot and says she'll be there, so attending the appointment is the clear next step."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_14",
@@ -933,7 +950,8 @@
     "answer": 0,
     "explanation": "The manager will send a scheduling link that afternoon and tells her to watch her inbox, so she will look for it and set up the meeting."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_15",
@@ -985,7 +1003,8 @@
     "answer": 1,
     "explanation": "She chooses the e-book, the clerk rings up the code, and she says she'll set it up before class tomorrow."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_cv_16",
@@ -1037,6 +1056,7 @@
     "answer": 2,
     "explanation": "The TA tells her to file a regrade request referencing their talk, and she says she'll file it tonight."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

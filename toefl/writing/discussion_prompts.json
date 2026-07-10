@@ -30,7 +30,8 @@
     "text": "Course: Introduction to Economics\n\nProfessor: Some governments place tariffs on imported goods to protect domestic industries and jobs, while others argue tariffs mainly raise prices for consumers. In your view, do the benefits of import tariffs outweigh the costs? Why or why not?\n\nPriya: Tariffs give local industries breathing room to survive against cheaper foreign competition. Protecting those jobs keeps whole communities from collapsing when a factory would otherwise close.\nDaniel: But someone pays for that protection, and it's usually ordinary shoppers facing higher prices. Tariffs also invite retaliation, so exporters lose the foreign markets they depend on.",
     "model_essay": "On balance I side with Daniel: the costs of tariffs usually outweigh their benefits. Priya makes a fair point that protection can save specific factories and the communities built around them, and I wouldn't dismiss that human cost lightly. But tariffs spread a hidden tax across every consumer to preserve a relatively small number of jobs, and the arithmetic rarely favors it. Studies of recent steel tariffs found that each job saved cost consumers hundreds of thousands of dollars in higher prices. Worse, as Daniel warns, trading partners retaliate, so a protected steelworker's gain becomes a farmer's loss when exports collapse. If we want to help displaced workers, direct retraining and relocation support target the problem far more efficiently than taxing everyone's purchases."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-02",
@@ -63,7 +64,8 @@
     "text": "Course: Environmental Science\n\nProfessor: To manage growing volumes of urban waste, some cities expand recycling programs while others build waste-to-energy incinerators that burn trash for electricity. Which approach should a city prioritize, and why?\n\nLena: Recycling should come first because it keeps materials in use and cuts the need to extract new resources. Burning trash just destroys things we could have reused and can pollute the air.\nOwen: Recycling sounds ideal, but in practice much of what we sort still ends up in landfills. Modern incinerators shrink that waste dramatically and generate power, which seems more honest about how little actually gets recycled.",
     "model_essay": "I lean toward Lena's emphasis on recycling, while taking Owen's realism seriously. He's right that a discouraging share of sorted material still ends up in landfills, and pretending otherwise helps no one. But that argues for fixing recycling systems, not abandoning them for incinerators. Burning trash for power locks a city into feeding the furnace, which quietly discourages the reduction and reuse that matter most, and it releases emissions even with good filters. Recycling, done properly, keeps materials circulating and cuts the mining and drilling needed for new goods. Owen's point does set a sensible boundary: incineration is a reasonable last resort for genuinely non-recyclable waste. As the primary strategy, though, I'd invest in better recycling and waste reduction before committing to plants that need trash to run."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-03",
@@ -96,7 +98,8 @@
     "text": "Course: Educational Psychology\n\nProfessor: Schools often enter young children into academic competitions such as spelling bees and math contests. Do you think these competitions benefit young children, or do they do more harm than good?\n\nMaya: A friendly competition can motivate children and teach them to handle both winning and losing. Preparing for a spelling bee gave my nephew real pride and a reason to practice.\nEthan: For every winner there are many children who feel like failures. At such a young age, ranking kids against each other can breed anxiety and make them associate learning with pressure.",
     "model_essay": "I find myself closer to Ethan, though Maya captures a real benefit. She's right that a friendly contest can motivate a child and teach graceful winning and losing, and for a confident, well-supported kid like her nephew, it clearly worked. But young children vary enormously, and Ethan names the hidden cost: for every winner, many walk away feeling they lost, and at an age when attitudes toward school are still forming, that sting can attach itself to learning itself. The research on early motivation favors encouraging effort and personal progress over ranking children against one another. So I wouldn't forbid competitions, but I'd keep them low-stakes and optional, and pair them with praise for improvement, so the anxiety Ethan describes never overshadows Maya's pride."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-04",
@@ -129,7 +132,8 @@
     "text": "Course: Technology and Ethics\n\nProfessor: Some courts use algorithms that predict whether a defendant is likely to reoffend to help guide sentencing. Is it ethical to let AI shape criminal sentences, or should such decisions remain entirely human?\n\nNadia: A well-built algorithm could make sentencing more consistent, reducing the wild disparities that depend on which judge you happen to get. Data might be fairer than a tired judge's gut feeling.\nOmar: These tools learn from arrest records shaped by past discrimination, so they can bake bias into a number that looks objective. Decisions about someone's freedom must stay fully in human hands.",
     "model_essay": "I firmly believe sentencing must remain a human decision, so I stand with Omar. Nadia raises a real problem, since sentences really do vary alarmingly from one judge to the next, and I share her wish for more consistency. But her proposed cure risks something worse. As Omar says, these algorithms train on arrest and conviction data already distorted by discrimination, so they can reproduce that bias while wrapping it in the false authority of a number. Investigations of one widely used risk tool found it wrongly flagged Black defendants as high-risk far more often than white ones. Consistency that is consistently unfair is no improvement. Better to pursue Nadia's goal through clear sentencing guidelines that constrain human bias, while keeping the actual judgment, and its accountability, with a person."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-05",
@@ -162,7 +166,8 @@
     "text": "Course: Modern World History\n\nProfessor: We often credit scientific breakthroughs to brilliant individuals, yet others argue progress depends on broad communities of collaborators. Which do you think drives scientific advance more, the exceptional individual or the collective effort?\n\nOlivia: Certain individuals clearly change everything. A Newton or an Einstein saw what no one around them could, and their singular insight redirected entire fields for centuries.\nEthan: Even those geniuses built on the work of countless predecessors and contemporaries. Discovery usually happens when the groundwork is ready, and if one person hadn't made the leap, another soon would.",
     "model_essay": "I lean toward Ethan's emphasis on the collective, though Olivia names something real. She's right that a Newton or Einstein saw further than anyone around them, and individual brilliance genuinely accelerates discovery. But those leaps almost always arrive when the surrounding community has laid the groundwork, which is Ethan's key point. Calculus was invented by Newton and Leibniz nearly simultaneously; oxygen and the theory of evolution had near-contemporaneous claimants too. That pattern of independent co-discovery suggests the ideas were ripe, waiting for someone prepared to grasp them. So I'd frame the genius as the person who reaches a fruit the whole orchard had been growing. Exceptional individuals matter, but they matter most as the sharpest expression of a community's accumulated knowledge rather than as lone origins of it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-06",
@@ -195,7 +200,8 @@
     "text": "Course: Business Management\n\nProfessor: Some companies tie a large share of each employee's pay to individual performance. Do you think performance-based pay motivates employees effectively, or does it undermine teamwork?\n\nAmara: Linking pay to performance rewards the people who contribute most and pushes everyone to raise their game. It feels fair that stronger results should mean stronger paychecks.\nDiego: The danger is that people start competing instead of cooperating, hoarding information to look good individually. In team-based work, that can quietly damage the collaboration a company depends on.",
     "model_essay": "I find Diego's concern more compelling, so I think heavy performance-based pay often undermines teamwork. Amara is right that rewarding strong contributors feels fair and can sharpen individual effort, and for genuinely solo roles like commissioned sales, I'd support it. But most modern work is interdependent, and that's where Diego's warning bites. When bonuses hinge on standing out individually, people start competing internally, guarding information and chasing measurable targets over shared goals. Studies of such schemes often find exactly that erosion of cooperation. My preferred middle path honors Amara's fairness instinct without the damage: keep base pay competitive and reward results largely at the team level, so people still gain from excelling but win by helping the group succeed rather than by outshining the colleagues they depend on."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-07",
@@ -228,7 +234,8 @@
     "text": "Course: Public Health\n\nProfessor: Many governments add small amounts of fluoride to public drinking water to prevent tooth decay. Do you think water fluoridation is an effective and fair way to improve public health? Why or why not?\n\nSara: Fluoridation is one of the cheapest, most effective health measures we have. It protects everyone's teeth automatically, especially poorer children who can't afford regular dental care.\nTom: But it medicates the whole population without individual consent, and people who prefer to avoid fluoride have no easy way to opt out. Health measures shouldn't be added to something we all must drink.",
     "model_essay": "I think water fluoridation is effective and, on balance, fair, so I side with Sara. The effectiveness is well documented: decades of data show meaningful drops in tooth decay in fluoridated areas, and Sara rightly stresses that it reaches poorer children who lack regular dental care, exactly those who need it most. Tom's consent objection is the serious counterargument, and I take it seriously; adding anything to shared water does limit individual choice. But we already treat public water for collective safety, and the fluoride levels involved are tiny and closely monitored. Those who wish to avoid it can use filters, so the opt-out Tom wants does exist. Given a large, equitably shared benefit at very low cost and risk, fluoridation seems a fair public-health measure to me."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-08",
@@ -261,7 +268,8 @@
     "text": "Course: Sociology\n\nProfessor: As more people work from home, some argue this strengthens local neighborhoods while others say it weakens community ties. Overall, do you think remote work brings a community closer together or pushes it apart?\n\nGrace: Working from home keeps people in their neighborhoods all day, so they shop locally, greet neighbors, and join daytime activities. That steady presence can revive a sense of community offices once drained away.\nLiam: I see it differently. Home workers can go days barely speaking to anyone, losing the everyday contact an office provides without replacing it. Isolation at home doesn't automatically turn into neighborhood connection.",
     "model_essay": "I find Grace's optimism more persuasive, though Liam names a genuine failure mode. Grace's mechanism makes sense: people who spend their days at home shop at nearby cafes, recognize their neighbors, and can join a midday class or volunteer, presence that helps knit a neighborhood back together after decades of commuting emptied it out. Liam is right that this isn't automatic; a remote worker can just as easily sit alone all day and speak to no one, so isolation at home doesn't magically become local connection. The deciding factor, then, is whether people actually step outside and engage. Remote work removes the office as a ready-made social world but hands back the time and rootedness to build a local one. Used deliberately, as Grace suggests, it draws a community closer."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-09",
@@ -294,7 +302,8 @@
     "text": "Course: Political Science\n\nProfessor: Some argue that major national decisions should be settled by public referendum rather than left to elected representatives. Do you think governing by referendum strengthens democracy, or does it undermine representative government?\n\nIsabella: Referendums let citizens decide the biggest questions directly, which is democracy in its purest form. On issues where politicians have their own interests, going straight to the people is more legitimate.\nLucas: But complex issues get reduced to a yes-or-no question that voters may not have time to study. Representatives can weigh details, hear expert testimony, and compromise in ways a blunt referendum cannot.",
     "model_essay": "I side with Lucas that heavy reliance on referendums tends to undermine good democratic government. Isabella is right that direct votes carry a special legitimacy, and on a few clearly framed constitutional questions I'd welcome them. But most major decisions are tangled bundles of trade-offs, and Lucas identifies the core problem: squeezing them into a yes-or-no choice strips away the nuance, compromise, and expert scrutiny that representative bodies exist to provide. A referendum offers no room to amend a flawed proposal, and campaigns often turn on slogans rather than substance. Representatives, for all their faults, can hold hearings, negotiate, and be voted out if they choose badly. So except for a narrow class of fundamental questions, I'd keep complex governing where deliberation can happen, not at the ballot box."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-10",
@@ -327,7 +336,8 @@
     "text": "Course: Urban Planning\n\nProfessor: As cities grow, some prioritize preserving old historic buildings while others favor replacing them with modern development. Which approach do you think builds a better community, and why?\n\nMia: Historic buildings give a place its identity and memory, connecting residents to a shared past. Once they're demolished for generic towers, a neighborhood loses the character that made it feel special.\nHenry: But cities have to grow and modernize. Clinging to old buildings can block badly needed housing and offices, keeping rents high and freezing a neighborhood in the past.",
     "model_essay": "I lean toward Mia's instinct to preserve, but Henry's point about growth keeps me from going all the way. Mia is right that historic buildings anchor a neighborhood's identity and memory, and once they fall to interchangeable towers, something irreplaceable goes with them. Henry counters that a city must grow, and that freezing every old block in place chokes off the housing that keeps rents affordable. Both are true, which is why I resist either-or. The best communities weave the two together: they protect significant buildings while allowing dense new development around and above them, and they convert old structures to new uses rather than demolishing them. That way we keep the character Mia values without the stagnation Henry warns against, letting a neighborhood grow without erasing its past."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-11",
@@ -360,7 +370,8 @@
     "text": "Course: Cognitive Psychology\n\nProfessor: Some students study intensively in the days right before an exam, while others spread their studying out over weeks. Which approach do you believe produces better learning, and why?\n\nNora: Cramming works for me because the material is fresh in my mind when I walk into the exam. Concentrating everything into a few intense days also keeps me motivated by the pressure of the deadline.\nAdrian: I disagree. When I cram, I can repeat facts the next morning but forget almost everything a week later. Studying a little each day makes the knowledge actually last.",
     "model_essay": "I side with Adrian: spreading study out beats cramming for anything you want to keep. Nora is right that cramming can work in a narrow sense, since fresh material is easy to recall the next morning, and deadline pressure is genuinely motivating. But that short-term success hides a long-term cost. When everything is packed into two frantic days, the memories fade almost as fast as they formed, which is why Adrian forgets it a week later. Research on the 'spacing effect' shows that revisiting material across several sessions forces the brain to reconstruct it each time, and that repeated effort is what makes knowledge durable. Cramming may rescue a single test, but if you actually want to remember what you learned, spaced study wins."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-12",
@@ -393,7 +404,8 @@
     "text": "Course: Media Studies\n\nProfessor: Some argue that news organizations should be required to clearly separate opinion pieces from factual reporting. Do you think such a rule would improve public understanding, or is it unnecessary? Share your reasoning.\n\nSofia: A clear label would genuinely help. Many readers can't tell a columnist's personal argument from a verified news report, and that confusion feeds a lot of unnecessary distrust in the media.\nVictor: I think most readers already understand the difference, and heavy-handed labeling rules could let governments start policing what counts as 'opinion.' Outlets should be free to organize their own content.",
     "model_essay": "I find Sofia's case more convincing, though Victor points to a genuine risk. Sofia is right that many readers, especially when a story arrives stripped of context through social media, cannot tell a columnist's argument from a verified report, and that blur feeds needless distrust of journalism as a whole. A clear, consistent label would help. Victor's fear that governments might abuse such rules to police what counts as 'opinion' deserves weight, but it argues for who enforces the standard, not against the standard itself. Newsrooms already distinguish these categories internally; requiring them to signal it plainly to readers is a modest step, ideally set by the industry rather than the state. Helping people know what they're reading strikes me as a small price for clearer public understanding."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-13",
@@ -426,7 +438,8 @@
     "text": "Course: Philosophy of Science\n\nProfessor: Should scientists be free to publish research that could be misused to cause harm, such as detailed methods for making a dangerous virus more contagious? Explain your position.\n\nIsabella: Open publication is the foundation of science. Restricting research invites secrecy and abuse, and the same knowledge that sounds dangerous is often exactly what we need to design defenses.\nNoah: Some information is simply too risky to release openly. A freely published recipe for a deadly pathogen could reach anyone, and no defensive benefit is worth handing that to a bad actor.",
     "model_essay": "I come down closer to Noah on the most dangerous cases, though Isabella defends a principle worth protecting. Isabella is right that openness drives science: secrecy breeds error and abuse, and defensive research does depend on understanding threats. For most studies, publish freely. But her argument reaches a limit where Noah points. A step-by-step method for making a pathogen more lethal is not ordinary knowledge; once online, it can reach anyone, and no defensive upside reliably offsets that. Here I'd accept careful review that shares such findings with qualified researchers while withholding the operational recipe from open publication. That isn't a betrayal of openness; it's recognizing that a narrow class of information carries risks the ordinary presumption of full disclosure was never designed to handle."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-14",
@@ -459,7 +472,8 @@
     "text": "Course: Marketing\n\nProfessor: Is it ethical for companies to sell products by playing on people's fears or insecurities, for example about their appearance or social status? Take a position.\n\nCharlotte: I think it crosses an ethical line. Deliberately making people feel inadequate so they'll buy a fix is manipulative, and it can do real damage to self-esteem, especially among the young.\nGabriel: Advertising has always appealed to emotions, and pointing out a problem a product solves isn't automatically wrong. Consumers aren't helpless; they can recognize a sales pitch and decide for themselves.",
     "model_essay": "I find Charlotte's argument more persuasive, though Gabriel draws a line worth keeping. Gabriel is right that all advertising appeals to emotion, and simply showing how a product solves a real problem is legitimate. The difference Charlotte identifies is between meeting an existing need and manufacturing a fresh insecurity to exploit. An ad that convinces teenagers their normal skin is a defect, so they'll buy a cure, isn't informing anyone; it's creating the very wound it sells a bandage for. Gabriel says consumers can see through a pitch, and adults often can, but campaigns of this kind deliberately target the young and anxious, who are least equipped to resist. Emotional persuasion is fair game; profiting by deepening people's self-doubt is where, for me, marketing tips into something genuinely unethical."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-15",
@@ -492,7 +506,8 @@
     "text": "Course: Linguistics\n\nProfessor: Should learning a second language be a required part of every student's education, or should it be optional? Defend your position.\n\nElena: Learning another language should be required. It opens the mind to different cultures and ways of thinking, and those benefits reach far beyond simply being able to order food abroad.\nTheo: I'd make it optional. Not everyone needs a second language, and for students who won't use one, those hours might be better spent on subjects closer to their goals.",
     "model_essay": "I come down on Elena's side: a second language belongs in every student's education. Elena is right that the payoff runs deeper than travel convenience. Studying another language reshapes how you see your own, builds tolerance for unfamiliar ways of thinking, and, research suggests, even sharpens general cognitive flexibility. Theo's efficiency argument, that some students won't use a second language and could spend the hours elsewhere, sounds practical but proves too much. We require history and music for the same broadening reasons, even though many students won't 'use' them directly either. Nor can a teenager reliably predict which skills a long life will demand. I'd keep the requirement while letting students choose which language, so the mandate broadens everyone without forcing a single narrow path."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-16",
@@ -525,7 +540,8 @@
     "text": "Course: Computer Science and Society\n\nProfessor: Should schools replace printed textbooks entirely with laptops and tablets? Do you think this shift improves education or creates new problems? Explain.\n\nHannah: Going fully digital makes sense. Devices are lighter than a bag of books, content stays up to date, and interactive lessons can engage students far more than a static page.\nSamuel: I'm not sold. Screens invite distraction, not every family has reliable devices at home, and there's real evidence people remember less from reading on a screen than on paper.",
     "model_essay": "I find myself closer to Samuel, though Hannah's advantages are genuine. Hannah is right that tablets are lighter, easily updated, and can host interactive lessons a printed page can't match, and I wouldn't keep technology out of schools. But 'replace entirely' is where I hesitate, for the reasons Samuel gives. Screens invite constant drift, the gap between families with reliable devices and those without can widen inequality, and studies do suggest readers absorb less from screens than paper for demanding texts. None of that argues against digital tools; it argues against making them the only option. A thoughtful blend, using devices where interactivity helps while keeping print for deep reading, captures Hannah's benefits without accepting Samuel's costs wholesale. Total replacement trades one set of limitations for another."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-17",
@@ -558,7 +574,8 @@
     "text": "Course: Anthropology\n\nProfessor: Is it respectful or harmful for people to adopt elements, food, dress, music, from cultures that are not their own? Take a position and defend it.\n\nPriya: Cultural borrowing is mostly a good thing. Sharing food, music, and styles across communities builds appreciation and connection, and few traditions were ever truly 'pure' to begin with.\nLiam: It depends heavily on how it's done. Borrowing becomes harmful when a group's sacred symbols are treated as fashion, or when outsiders profit from a culture whose members are still marginalized.",
     "model_essay": "I think Priya and Liam are each right about different situations, and the truth lies in Liam's distinction. Priya is correct that cultural exchange is largely healthy: sharing food, music, and dress builds genuine appreciation, and no living tradition was ever sealed off and 'pure.' Treating all borrowing as theft would freeze cultures in place. But Liam identifies where exchange curdles into harm. When sacred symbols are worn as costume, or outsiders profit from a style whose originators remain marginalized and uncredited, borrowing stops being mutual and becomes extraction. So the useful test isn't whether people borrow but how: with respect and credit, or with careless profit at someone else's expense. Framed that way, most everyday sharing is fine, and the real target is exploitation, not exchange."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-18",
@@ -591,7 +608,8 @@
     "text": "Course: Environmental Policy\n\nProfessor: Should governments set a firm deadline to ban the sale of new gasoline-powered cars? Do you think this is a wise policy? Explain your reasoning.\n\nIsabella: A firm deadline is exactly what's needed. Without one, carmakers and buyers keep delaying, but a clear cutoff date forces the whole industry to commit to electric vehicles and build the infrastructure to match.\nNoah: I worry a hard deadline could hurt people who can't yet afford electric cars or lack places to charge them. I'd prefer strong incentives that let the switch happen without punishing those left behind.",
     "model_essay": "I lean toward Isabella's firm deadline, provided it carries the support Noah demands. Isabella is right that without a fixed cutoff, both carmakers and buyers keep delaying, while a clear date galvanizes the whole industry to build electric models and the charging network to match. Deadlines create the certainty that unlocks investment. Noah's concern isn't really an objection to the deadline but a condition on it: a poorly designed ban could strand people who can't yet afford an electric car or find somewhere to charge. But that argues for pairing the deadline with subsidies, charging infrastructure, and a used-electric market, not for dropping the target. Incentives alone tend to drift; a deadline backed by real help for those left behind gets us there without abandoning them."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-19",
@@ -624,7 +642,8 @@
     "text": "Course: Health and Nutrition\n\nProfessor: Should schools completely ban sugary snacks and drinks from their campuses to promote healthier habits? Do you support such a ban? Explain.\n\nAva: I support a full ban. Children struggle to resist sweets that are right in front of them, and schools should model healthy eating rather than sell the very products harming students' health.\nEthan: I'm doubtful a ban works. Kids just buy sugary snacks elsewhere, and forbidding them can make them more tempting. I'd rather schools teach good habits than simply police what's available.",
     "model_essay": "I lean toward Ava, though Ethan's point means a ban shouldn't stand alone. Ava is right that young children have little defense against sweets placed in front of them, and it's inconsistent for a school to teach nutrition while selling the sugary drinks that undermine it. Removing them from campus makes the healthy choice the default. Ethan objects that kids just buy sweets elsewhere and that forbidden things grow more tempting, and that's partly true. But the school day is when habits form, and controlling what's available then cuts consumption even if children find sweets outside. His solution, teaching good habits, is essential, yet works far better when the environment reinforces it. So I'd ban the snacks and teach the reasons, not treat them as either-or."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-20",
@@ -657,7 +676,8 @@
     "text": "Course: Art History\n\nProfessor: Should historic buildings always be preserved, even when a growing city needs the land for new housing or development? Where do you stand? Explain.\n\nIsabella: I believe we should strongly protect historic buildings. Once demolished, they're gone forever, along with the history and character they give a city. New construction can almost always go somewhere else.\nGabriel: I value history too, but a living city has to meet the needs of the people in it now. Freezing every old building in place can block badly needed housing and keep a city stuck in its past.",
     "model_essay": "I find myself between the two, but closer to Isabella with one important qualification. Isabella is right that demolition is irreversible: a historic building, once gone, takes its history and character with it, and a city stripped of its past becomes anonymous. That argues for a strong presumption toward preservation. Yet Gabriel's point holds, because a city that freezes every old structure can choke the housing its residents urgently need. The word doing the damage in the prompt is 'always.' I'd firmly protect buildings of genuine historical or architectural significance, while allowing that not every old structure qualifies. Cities can also adapt historic shells for new uses instead of demolishing them. Preservation should be the default, but a considered one, not an absolute."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-21",
@@ -690,7 +710,8 @@
     "text": "Course: Introduction to Psychology\n\nProfessor: Research suggests that memory works less like a recording and more like a reconstruction we rebuild each time we recall it. Do you think we can generally trust our own memories of important past events, or are they too easily distorted to rely on?\n\nHana: I think we can generally trust our core memories, even if the details blur. I might misremember what someone wore, but I clearly recall the important events of my life and their emotional truth. Perfect accuracy isn't the point; the gist is usually reliable enough to act on.\nMateo: I'm more cautious. Studies show people can vividly remember events that never happened once someone suggests them. If confident, detailed memories can be entirely false, then feeling sure about a memory tells us surprisingly little about whether it's actually accurate.",
     "model_essay": "I find myself between Hana and Mateo, but closer to Hana's practical trust. Mateo is right that memory can be startlingly unreliable; the research on implanted false memories is genuinely unsettling, and confidence clearly isn't proof. Yet if we treated every memory as untrustworthy, ordinary life would be impossible. Hana's distinction between gist and detail is the key. I may misremember the exact words of an important conversation, but the fact that it happened, and how it changed me, is usually sound. Where I would heed Mateo is precisely when the stakes are high and someone else has shaped the account, as in eyewitness testimony. So I trust the emotional core of my memories while staying humble about specifics, especially any I have retold many times."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-22",
@@ -723,7 +744,8 @@
     "text": "Course: Cognitive Psychology\n\nProfessor: Many students study while listening to music. Based on what we've learned about attention and working memory, do you think background music generally helps or harms performance on mentally demanding tasks?\n\nDario: I think music mostly harms demanding work. Lyrics compete for the same mental resources I need for reading or writing, so even when it feels motivating, it's quietly splitting my attention. When a task gets truly hard, I always end up turning the music off.\nFreya: In my experience music helps more than it hurts. It masks distracting background noise and keeps me from getting bored and drifting off. As long as it's familiar and without lyrics, it seems to steady my focus rather than break it.",
     "model_essay": "I lean toward Dario, but Freya's caveat is where the truth lives. On genuinely demanding verbal tasks, the evidence is fairly clear: lyrics draw on the same working-memory resources as reading and writing, so they compete for attention even when the music feels energizing. That is Dario's experience, and mine. Yet Freya isn't wrong, because context matters. In a noisy environment, steady instrumental music can mask worse distractions, and for repetitive or dull tasks it fends off the boredom that itself derails focus. The deciding factors are the task and the track. For hard analytical work I would study in silence or with wordless, familiar music, exactly Freya's condition, and save the lyric-heavy playlists for chores where attention isn't the bottleneck."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-23",
@@ -756,7 +778,8 @@
     "text": "Course: Environmental Policy\n\nProfessor: Some argue that meaningful climate action must come from national governments, while others believe cities and local authorities can move faster. Which level of government do you think is better positioned to cut emissions effectively?\n\nBram: I think national governments are essential. Only they can price carbon across a whole economy, set energy policy, and negotiate with other countries. Cities can experiment, but without national frameworks their efforts stay small and inconsistent, and companies simply relocate emissions across the city border.\nTalia: I'd bet on cities. They control transport, buildings, and zoning, the areas where most emissions actually live, and they can act while national politics stalls. Mayors also feel direct pressure from residents, so they tend to move faster and more pragmatically than distant legislatures.",
     "model_essay": "This isn't really either-or, but if forced I would emphasize Bram's national level while prizing what Talia describes. Talia is right that cities control transport, buildings, and zoning, and that they often act while national politics is paralyzed; that agility genuinely matters. Yet the biggest levers, an economy-wide carbon price, the electricity grid, vehicle standards, and international agreements, sit with national governments, and without them local wins stay scattered and easily undone. The most effective pattern is layered: national policy sets the binding framework and price signals, while cities innovate and implement on the ground, then export what works. Relying on cities alone risks a patchwork that leaks emissions across borders, but ignoring their speed and closeness to residents wastes the fastest movers we have."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-24",
@@ -789,7 +812,8 @@
     "text": "Course: Environmental Policy and Economics\n\nProfessor: To cut container waste, some regions require a refundable deposit on every bottle and can, while others rely on voluntary curbside recycling. Do you think mandatory deposit schemes are justified, or should recycling remain voluntary?\n\nSanne: I strongly support deposit schemes. Attaching real money to each container transforms behavior overnight, and the regions that use them recover the vast majority of their bottles. Voluntary recycling, however well-intentioned, consistently leaves most containers in the trash or scattered as litter.\nOscar: I see the appeal, but deposits add cost and hassle, and they single out one kind of waste. I'd rather improve curbside recycling for everything at once. A well-run collection system can lift recycling broadly without making people haul bottles back to a machine.",
     "model_essay": "I am firmly with Sanne here, though Oscar's efficiency point deserves a reply. The evidence is striking: regions with container deposits routinely recover eighty to ninety percent of their bottles, while voluntary curbside systems often recover a fraction of that. The reason is simple behavioral economics, a small refundable sum turns each container into money worth returning, which is exactly Sanne's argument. Oscar is right that deposits add some hassle and cover only certain items, but that narrowness is a strength, not a flaw: bottles and cans are among the most littered objects, and the scheme tackles them directly. Better curbside recycling, which I would also support, complements deposits rather than replacing them. Given how reliably deposits outperform good intentions, the minor inconvenience seems a small price to pay."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-25",
@@ -822,7 +846,8 @@
     "text": "Course: Business Ethics\n\nProfessor: A company can lower costs by producing in a country where wages and working conditions are legal but far below its home standards. Is it ethical to continue operating there, or does the firm have a duty to demand better conditions?\n\nWanjiru: I believe the firm has a duty to do better than the local minimum. 'It's legal there' can't be the whole moral test, since laws in some places barely protect workers. A company profiting from those low costs shares responsibility for the conditions that make them possible.\nEmre: I'd be careful here. These jobs, imperfect as they are, often pay better than local alternatives and lift families out of poverty. If a company demands home-country standards everywhere, it may simply leave, and the workers lose everything. Gradual improvement beats moral withdrawal.",
     "model_essay": "I am closer to Wanjiru, but Emre's warning shapes how I would act. Wanjiru's core point is sound: legality is a floor, not a moral ceiling, and a firm that profits from very low costs shares responsibility for the conditions producing them. Simply hiding behind local law won't do. Yet Emre is right that these jobs often beat the local alternatives, and a company that pulls out on principle can leave workers worse off than before. That tension points to a middle path. The ethical move isn't to flee or to demand home-country wages overnight; it is to stay and steadily raise standards, safer facilities, fair regional pay, real oversight of suppliers. Engagement that improves lives, held to Wanjiru's insistence that legality alone isn't enough."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-26",
@@ -855,7 +880,8 @@
     "text": "Course: Corporate Responsibility\n\nProfessor: Some firms now link executive bonuses to environmental and social targets rather than to profit alone. Do you think this genuinely improves corporate behavior, or is it mostly symbolic?\n\nRosa: I think it genuinely helps. Executives chase whatever they're paid to chase, so building real environmental and social targets into their bonuses redirects their attention in a way that speeches never do. What gets measured and rewarded is what actually gets done.\nKwame: I'm skeptical it's more than symbolic. These targets are often vague and easy to hit, letting executives collect bonuses for modest gestures while the core business continues as before. Without tough, independently verified metrics, it risks becoming public relations dressed up as accountability.",
     "model_essay": "I think both are right, and which one wins depends entirely on the details Kwame stresses. Rosa's underlying principle is sound: executives pursue what they are paid to pursue, so tying compensation to social and environmental outcomes can genuinely redirect behavior in ways that mission statements never do. Incentives shape action. But Kwame's skepticism is the necessary check, because in practice these targets are often soft, vague, easily hit, and self-reported, letting leaders bank bonuses for cosmetic gestures. So the mechanism isn't inherently symbolic or substantive; its design decides. Linked to hard, externally audited metrics with real money at stake, it works as Rosa hopes. Left loose and self-graded, it becomes the public relations Kwame fears. I would support the tool, but only with rigorous verification."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-27",
@@ -888,7 +914,8 @@
     "text": "Course: Modern World History\n\nProfessor: It is often said that history is written by the victors. Do you think our understanding of the past is inevitably distorted by whoever held power, or can historians reconstruct a reasonably fair account?\n\nDelphine: I think the distortion is real but not inevitable. Yes, the powerful once controlled the records, but modern historians deliberately dig for suppressed voices, letters, archaeology, and the accounts of the defeated, precisely to correct that bias. Awareness of the problem is the first step to overcoming it.\nAziz: I'm more pessimistic. Even the surviving evidence was mostly produced and preserved by the winners, so the gaps themselves are shaped by power. Historians do their best, but they're reconstructing from a record that was filtered long before they ever arrived.",
     "model_essay": "I side with Delphine, while taking Aziz's caution as a permanent discipline rather than a defeat. Aziz is right that the archive is already skewed before a historian opens it: winners produced and preserved much of the record, and the silences are not neutral. That bias is real and never fully vanishes. But Delphine describes exactly how the craft answers it, by hunting deliberately for suppressed voices, reading official documents against the grain, and drawing on archaeology and the testimony of the defeated. Recovered slave narratives and captured wartime archives have both restored histories the powerful would have buried. So the saying is a warning, not a life sentence. A fair reconstruction is genuinely possible, provided historians stay as alert to the gaps as Aziz rightly insists."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-28",
@@ -921,7 +948,8 @@
     "text": "Course: History of Technology\n\nProfessor: As technologies become obsolete, the knowledge to build, operate, and repair them often disappears. Do you think societies should invest in preserving old technologies and skills, or is it acceptable to let them fade?\n\nCorina: I think some deliberate preservation is worth it. Old skills carry knowledge we don't fully understand until we've lost it, and obsolete technologies sometimes become useful again when circumstances change. A society that forgets how things were made loses part of its resilience and its history.\nIshaan: I'd let most of it fade naturally. Resources are limited, and clinging to every outdated method is nostalgic and costly. We keep the important knowledge in records and museums; expecting people to maintain living mastery of obsolete tools seems like an inefficient use of effort.",
     "model_essay": "I lean toward Corina, though Ishaan is right that we can't preserve everything. Corina's strongest point is resilience: skills look worthless right up until conditions change and we suddenly need them again, and some craft knowledge is tacit, impossible to reconstruct from a manual once the last practitioner is gone. That argues for keeping certain old skills alive, not filed away. Ishaan fairly notes that resources are finite and that reflexive nostalgia is costly, and I would concede most obsolete methods can safely live in museums and records. The distinction I would draw is between documenting and practicing. Trivial or fully recorded technologies can fade, as Ishaan says; but where the knowledge is tacit or the technology might return, maintaining living mastery is a modest insurance worth paying for."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-29",
@@ -954,7 +982,8 @@
     "text": "Course: Introduction to Sociology\n\nProfessor: The workplace has long been a place where people form friendships and a sense of belonging. As remote work spreads, do you think we are losing something socially important, or are these bonds simply moving elsewhere?\n\nIngmar: I think we're losing something real. So many friendships, and a sense of belonging, grew out of daily proximity at work, the shared lunches and small talk. Remote work is efficient, but those unplanned human moments don't happen over scheduled video calls, and I don't think they simply relocate.\nNour: I'm more hopeful. Freed from the office, people invest their social energy in neighborhoods, hobbies, and family instead. The workplace was never the only source of belonging, and for those who felt lonely or excluded there, remote work can actually be a relief.",
     "model_essay": "I find myself between Ingmar and Nour, tilting slightly toward Ingmar. He is right that the workplace has quietly served as a major source of adult friendship, and that the unplanned moments, shared lunches, hallway jokes, don't reliably survive a calendar full of video calls. Something genuine is at risk of thinning. But Nour's reply matters: the office was never everyone's community, and for people who felt excluded there, reclaiming that time for neighborhood, family, or hobbies is a real gain. So the honest answer is that the bonds partly move and partly evaporate. They relocate for those with strong outside networks, as Nour says, but weaken for those who relied on work to meet people at all. Whether we are losing something therefore depends on who you are."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-30",
@@ -987,7 +1016,8 @@
     "text": "Course: Sociology of the Family\n\nProfessor: With birth rates falling in many countries, some argue that governments should actively encourage people to have more children. Do you think this is a wise social goal, or should the decision be left entirely to individuals?\n\nLudmila: I think governments can reasonably encourage childbearing, as long as they do it through support rather than pressure. Falling birth rates strain pensions and care for the elderly, so making it easier to afford children, through childcare and leave, serves everyone, not just parents.\nHassan: I'm wary of the state taking an interest in something so personal. Whether to have children is one of the most private decisions there is, and encouragement can slide into pressure or blame. I'd rather governments fix the conditions people complain about and then respect whatever they choose.",
     "model_essay": "I find Ludmila and Hassan closer than they sound, and I would combine them. Ludmila is right that falling birth rates aren't a purely private matter; they strain pensions and elder care, so society has a legitimate interest in how the next generation is raised. Yet Hassan's unease is well founded: the decision to have a child is deeply personal, and encouragement can curdle into pressure or blame aimed especially at women. The reconciliation is in Ludmila's own condition, support rather than persuasion. If a government makes children genuinely affordable, through childcare, housing, and leave, and then respects whatever people decide, it serves the collective interest without trespassing on private choice. What crosses the line is treating birth rates as a target and citizens as means to hit it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-31",
@@ -1020,7 +1050,8 @@
     "text": "Course: Technology and Society\n\nProfessor: Self-driving vehicles may soon handle much of the work now done by professional drivers. Some see this as freeing millions from tedious, risky jobs, while others see a wave of unemployment with nowhere for those workers to go. Do you think this shift will open more opportunities than it closes?\n\nLeilani: I think it will open more than it closes. Driving is exhausting and often dangerous, and automating it could lower costs, save lives, and let former drivers move into logistics, dispatch, and vehicle servicing. Societies have absorbed shifts this large before, and I expect new roles to emerge around the technology.\nKwame: I'm not convinced the timing works out so neatly. Driving is one of the most common jobs for workers without a college degree, and the new roles Leilani mentions are fewer and demand different skills. If millions are displaced within a decade, 'eventually new jobs appear' is little comfort to those caught in the gap.",
     "model_essay": "Kwame's point about timing decides this for me, though Leilani describes the likely long run. Leilani is right that driving is tiring and dangerous, and that past upheavals eventually generated new work; I don't doubt fresh roles will cluster around autonomous fleets. The difficulty is the word 'eventually.' Driving is among the most common jobs for workers without a degree, and the replacement roles are fewer and demand retraining those workers can't finance alone. A transition that plays out over a decade can devastate a generation even if the century-long trend is positive. So I'd call the opportunities real but back-loaded, and the losses immediate and concentrated. Unless policy bridges that gap, the verdict for the workers themselves is closer to Kwame's."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-32",
@@ -1053,7 +1084,8 @@
     "text": "Course: Technology and Society\n\nProfessor: Children today grow up with constant access to screens and devices. Some argue this connectivity prepares them for a digital world and opens rich resources, while others insist we must set firm limits on their screen time. Where do you stand?\n\nGustavo: I think reasonable access does more good than harm. Devices give children knowledge, creative tools, and ways to stay close to distant family that earlier generations never had. Rather than fearing screens, we should teach kids to use them well, since blanket restrictions just leave them unprepared for a world built around this technology.\nHana: I'd argue for firmer limits, at least while they're young. Constant screens crowd out the sleep, play, and face-to-face time that children genuinely need to develop, and the apps are deliberately designed to be hard to put down. Teaching good habits matters, but small children can't resist that pull on their own.",
     "model_essay": "I side with Hana for young children while granting Gustavo's larger point. Gustavo is right that devices open genuine resources and that a blanket ban would leave kids unprepared, so the goal can't be zero screens. But Hana identifies why age matters so much: the hours a screen absorbs are hours not spent on the sleep, unstructured play, and face-to-face interaction that early development depends on, and the apps are engineered to override a child's fragile self-control. Expecting a six-year-old to self-regulate against that design is unrealistic. So I'd frame it as limits first, autonomy later: firm boundaries while children are small, loosened deliberately as they mature and can be taught the judgment Gustavo rightly prizes. Access and restraint aren't opposites here; they're a sequence."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-33",
@@ -1086,7 +1118,8 @@
     "text": "Course: Foundations of Education\n\nProfessor: Some schools publicly rank students or post their scores to spur effort. Do you think this kind of competition drives students to learn more, or does it undermine genuine learning and confidence? Explain your position.\n\nViktor: I think a degree of competition helps. Seeing where I stood pushed me to work harder and take subjects seriously that I might otherwise have coasted through. Life beyond school is competitive too, and learning to strive against a clear benchmark prepared me for that better than a system where everyone is simply told they did fine.\nImani: I think public ranking does real damage. It teaches students that learning is about beating others rather than understanding anything, and it quietly convinces those near the bottom that they simply aren't capable. The pressure pushed some of my classmates to cheat or give up entirely, neither of which has anything to do with genuine learning.",
     "model_essay": "I come down closer to Imani, though Viktor captures why competition tempts educators. Viktor is right that a benchmark can motivate, and that striving against a clear standard has its place; I've felt that push myself. But public ranking does something more corrosive than motivate. It reframes learning as beating classmates rather than understanding material, and it quietly persuades those near the bottom that ability, not effort, is what separates them, which is exactly when students disengage or cheat. The motivation Viktor values doesn't require humiliation to work. Private feedback measured against one's own past performance drives effort just as effectively while keeping the goal on mastery rather than rank. Competition can sharpen learning, but broadcasting where everyone stands mostly sharpens anxiety."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-34",
@@ -1119,7 +1152,8 @@
     "text": "Course: Educational Psychology\n\nProfessor: Language-learning apps promise that anyone can become fluent from their phone. Do you think an app can teach a language as effectively as a classroom or living among native speakers, or does it fall short? Why?\n\nTariq: I think a good app can take you impressively far. It builds vocabulary and grammar through daily practice that fits any schedule, gives instant feedback, and never makes you feel judged for a mistake. For the foundations of a language, the consistency an app encourages matters more than where the learning happens.\nPetra: I think apps hit a ceiling. They're great for vocabulary, but real fluency comes from messy, unscripted conversation, reading a room, catching humor, recovering from misunderstanding, and that only develops with actual people. I know learners who aced every app exercise yet froze the moment a native speaker replied in a way the app never rehearsed.",
     "model_essay": "Tariq and Petra describe two different stages, and both are right about theirs. Tariq is correct that a well-built app is superb for foundations: it makes daily practice easy, drills vocabulary and grammar, and removes the fear of being judged, often what stalls beginners. But Petra names the ceiling honestly. Fluency lives in unscripted exchange, catching a joke, repairing a misunderstanding, reading tone, and an app can only simulate that, never truly stage it. So an app can equal a classroom up to a point, even surpass it for discipline and reach, yet it can't finish the job alone. The realistic path uses the app to build the base cheaply, then spends its real advantage, access, to put the learner in front of actual speakers."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-35",
@@ -1152,7 +1186,8 @@
     "text": "Course: Urban Studies\n\nProfessor: As a city grows, planners can either revitalize aging existing neighborhoods or build entirely new districts on the outskirts. If resources allowed only one path, which should a city prioritize, and why?\n\nWesley: I'd revitalize existing neighborhoods. They already have roads, pipes, schools, and communities, so improving them is cheaper and greener than starting from scratch. Building new districts on the edge tends to spread the city outward, lengthening commutes and eating into farmland, when the smarter move is to make better use of what we already have.\nUma: I'd build new districts. Old neighborhoods are hard to change without displacing the people who live there, and cramming more into them strains infrastructure that's already stretched. A planned new district can be designed properly from day one, with modern transit and housing, instead of forcing a growing population into spaces never meant to hold it.",
     "model_essay": "I favor Wesley's approach, though Uma pinpoints its hardest problem. Wesley is right that existing neighborhoods already carry the expensive bones of a city, roads, pipes, schools, so improving them is cheaper and far greener than paving new districts across farmland and stretching everyone's commute. That efficiency is decisive for a growing city. Uma's objection isn't idle, though: revitalizing an old area can displace the very residents who make it a community, and its infrastructure may already be strained. But the answer to that is to renew neighborhoods with the residents rather than over them, adding homes and upgrading pipes while protecting existing tenants. Sprawling outward simply relocates the growth without solving it, and locks in car dependence for decades. Prioritizing what already exists, done fairly, serves the city better."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-36",
@@ -1185,7 +1220,8 @@
     "text": "Course: Urban Planning\n\nProfessor: Some cities keep their centers built around cars, with ample roads and parking, while others are turning their cores into car-free, pedestrian-focused zones. Which vision do you think creates a better city to live in, and why?\n\nYoussef: I support car-free centers. When you remove the traffic, streets fill with people, shops thrive, the air clears, and the space once buried under parking becomes plazas and cafes. The European cities that pedestrianized their cores became far more pleasant places, and I've never heard anyone wish they'd kept the gridlock instead.\nGemma: I'm cautious about going car-free. It sounds lovely until you're elderly, disabled, or hauling a week's shopping, and suddenly the car you relied on is banned. Not everyone can cycle or walk long distances, and pushing cars out can hurt exactly those residents and the small businesses that depend on customers being able to drive in.",
     "model_essay": "I lean toward Youssef, but Gemma names the people a car-free plan must not forget. Youssef is right about the transformation: cities that pedestrianized their centers saw livelier streets, cleaner air, and reclaimed space, and few wished the gridlock back. That's a strong track record. Gemma's caution is where such schemes go wrong, when they treat 'car-free' as absolute and strand the elderly, the disabled, or anyone hauling heavy loads. The better version isn't zero cars but far fewer, with guaranteed access for those who need it and deliveries timed to keep shops supplied. Designed that way, a center serves people first without abandoning the minority who depend on driving. Youssef's vision makes the more livable city, provided it's built with Gemma's exceptions in mind."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-37",
@@ -1218,7 +1254,8 @@
     "text": "Course: Public Health\n\nProfessor: To keep restaurant food safe, authorities can enforce strict inspections and rules or instead rely on published hygiene ratings that let customers decide. Which approach do you think better protects public health, and why?\n\nFarid: I think strict inspections are essential. Foodborne illness can hospitalize or kill, and by the time customers could react to a bad reputation, people have already been harmed. Ratings assume diners can judge a hidden kitchen, which they can't. Enforceable standards catch dangers before anyone gets sick, which is exactly what public health should do.\nEsther: I'd lean on transparency and ratings. Posting clear hygiene grades pressures every restaurant to compete on cleanliness, and it respects customers' ability to choose. Heavy inspection regimes are costly, can be inconsistent, and often burden small family restaurants most, whereas visible ratings harness ordinary customers to keep standards high day to day.",
     "model_essay": "I come down on Farid's side, while keeping Esther's transparency as a valuable add-on. Farid identifies why this problem resists a market solution: a diner cannot see the kitchen, and foodborne illness harms people before any reputation adjusts, so waiting for customers to punish a bad restaurant means someone is already sick. Enforceable standards act before harm, precisely public health's job. Esther is right that published grades create pressure and respect customer choice, and I'd keep them; the best systems post inspection results publicly. But ratings work because inspections generate them; transparency is the complement, not the foundation. Relying on ratings alone assumes diners can judge a hidden risk they can't observe. Mandatory inspection has to be the floor, with public grades amplifying it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-38",
@@ -1251,7 +1288,8 @@
     "text": "Course: Public Health Policy\n\nProfessor: To reduce the harms of heavy drinking, governments can run awareness campaigns aimed at individuals or impose structural limits such as minimum pricing and restrictions on where alcohol is sold and advertised. Which approach do you think is more effective, and why?\n\nZaid: I favor awareness campaigns. Drinking is bound up with culture and personal choice, and heavy-handed limits breed resentment and black markets rather than healthier habits. Helping people understand the risks and recognize their own patterns respects their autonomy and produces change they actually own, instead of rules that feel like the state policing private life.\nOdile: I think structural limits work better. Research consistently shows alcohol harm tracks price and availability, so minimum pricing and fewer outlets cut the damage across a whole population, especially the heaviest drinkers. Campaigns are easily drowned out by pervasive advertising and cheap drinks, whereas changing price and access reaches everyone, not just the already health-conscious.",
     "model_essay": "I find Odile's case stronger, while granting Zaid's concern about overreach. Zaid is right that drinking is cultural and that clumsy prohibition can backfire into resentment or black markets, so I wouldn't lurch toward bans. But the evidence Odile cites is hard to dismiss: alcohol harm tracks price and availability closely, and measures like minimum unit pricing reduce consumption most among the heaviest drinkers, exactly the group campaigns reach least. Awareness competes against saturating advertising and cheap, ubiquitous drink, an uneven fight that favors structure over slogans. Zaid's autonomy point is best honored not by dropping structural measures but by choosing proportionate ones, nudging price and access rather than forbidding, while keeping education alongside. Reshaping the environment does the population-level work persuasion alone has repeatedly failed to deliver."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-39",
@@ -1284,7 +1322,8 @@
     "text": "Course: Media Studies\n\nProfessor: Much online discussion now happens anonymously, in comment sections and forums where people speak without revealing who they are. Do you think this anonymity has enriched public debate by freeing people to speak, or degraded it? Explain your view.\n\nRavi: I think anonymity has degraded debate more than it's freed it. When names and consequences disappear, so does much of the civility that keeps a discussion productive, and threads fill with insults and bad faith. The loudest, cruelest voices dominate, which drives thoughtful people away and leaves the conversation coarser than it needs to be.\nNour: I'd defend anonymity's value. It lets people raise unpopular truths, whistleblowers, dissidents, or anyone fearing retaliation, that they'd never voice under their real names. Yes, it enables some ugliness, but forcing real identities would silence exactly the vulnerable voices that open debate most needs. The problem is moderation, not anonymity itself.",
     "model_essay": "Both name something real, but on balance I lean toward Ravi for everyday discussion while conceding Nour's exception. Ravi is right that stripping away names and consequences erodes civility, letting the cruelest voices dominate and driving thoughtful people out, which coarsens debate rather than enriching it. Yet Nour identifies the case anonymity exists to protect: whistleblowers, dissidents, and the vulnerable can raise truths they'd never speak under their names, and forcing identity would silence them first. These describe different arenas. In ordinary comment sections, accountability improves the conversation; under real danger, anonymity is indispensable. So the answer isn't to abolish or absolutize it but to moderate well, protecting the exposed speaker while curbing the anonymous mob. Blanket anonymity, though, degrades more than it frees."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "disc-40",
@@ -1317,6 +1356,7 @@
     "text": "Course: Media and Communication\n\nProfessor: Streaming and reading platforms recommend books and films based on what we've already chosen, guiding much of what people watch and read next. Do you think these recommendations broaden our cultural horizons, or do they steer us into ever-narrower ruts?\n\nQuan: I think they broaden mine. Faced with millions of titles, I'd be paralyzed without help, and a good recommendation has led me to authors and foreign films I'd never have searched for myself. The system connects what I've enjoyed to things adjacent but new, which has genuinely widened what I read rather than confining it.\nFreya: I'm more skeptical. 'Adjacent but new' is still a narrow orbit around what I already like, and these systems rarely offer the jarring, unfamiliar work that truly expands taste. They optimize for what I'll reliably finish, not for what will stretch me, so over time they polish my existing preferences into a rut rather than breaking me out of one.",
     "model_essay": "This is finely balanced, but I ultimately agree with Freya while crediting Quan's point. Quan is right that faced with millions of titles, recommendations rescue us from paralysis and can lead to authors or films we'd never have searched for, which does widen a reader's range at the margin. But Freya identifies the deeper limit: these systems optimize for what I'll reliably finish, not for what will stretch me, so their 'new' suggestions orbit closely around my existing taste. Genuine horizon-broadening usually comes from the jarring recommendation a friend or a wandering bookshop provides, exactly what an engagement-tuned system avoids. So recommendations broaden us comfortably, yet rarely deliver the disorienting encounter that most expands taste. On balance they refine the rut more than they break it."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

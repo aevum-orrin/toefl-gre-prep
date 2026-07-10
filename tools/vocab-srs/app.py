@@ -17,6 +17,7 @@ Run:  source ../../env.sh && uvicorn app:app --reload --port 8003
 from __future__ import annotations
 
 import json
+import os
 import random
 from datetime import date
 from pathlib import Path
@@ -30,7 +31,8 @@ from prep_core import SRS
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
-DATA_DIR = REPO / "data" / "srs"            # gitignored scheduling + intro state
+# User records live on scratch (PREP_DATA_DIR, set by env.sh); falls back to home/data for dev.
+DATA_DIR = Path(os.environ.get("PREP_DATA_DIR") or REPO / "data") / "srs"
 
 DECK_FILES = {
     "toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",

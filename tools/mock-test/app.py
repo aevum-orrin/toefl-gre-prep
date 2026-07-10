@@ -15,6 +15,7 @@ Open http://localhost:8005
 from __future__ import annotations
 
 import json
+import os
 import random
 import secrets
 from collections import defaultdict
@@ -32,6 +33,9 @@ SECTION_DIRS = {
     "reading": REPO / "toefl" / "reading",
     "listening": REPO / "toefl" / "listening",
 }
+# Real ETS/TPO items live on scratch (see env.sh REAL_DATA_ROOT); mixed into the mock bank.
+REAL_ROOT = Path(os.environ.get("REAL_DATA_ROOT")
+                 or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real")
 TIME_LIMIT_SEC = {"reading": 30 * 60, "listening": 29 * 60}
 
 # Module blueprint: (kind, how many items to sample without replacement).
@@ -52,12 +56,16 @@ BLUEPRINTS = {
 
 def _load_by_kind(section: str) -> dict[str, list[dict]]:
     by: dict[str, list[dict]] = defaultdict(list)
-    for f in sorted(SECTION_DIRS[section].glob("*.json")):
-        try:
-            for it in json.loads(f.read_text(encoding="utf-8")):
-                by[it.get("kind", "")].append(it)
-        except (json.JSONDecodeError, ValueError):
+    for base in (REAL_ROOT / section, SECTION_DIRS[section]):    # real + AI, mixed by kind
+        if not base.exists():
             continue
+        for f in sorted(base.glob("*.json")):
+            try:
+                for it in json.loads(f.read_text(encoding="utf-8")):
+                    it.setdefault("source", "ai")
+                    by[it.get("kind", "")].append(it)
+            except (json.JSONDecodeError, ValueError):
+                continue
     return by
 
 

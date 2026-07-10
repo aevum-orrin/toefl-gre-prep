@@ -49,7 +49,8 @@
     "answer": 1,
     "explanation": "The professor repeatedly emphasizes that plants are far from defenseless and have an impressive toolkit, implying their defenses are surprisingly sophisticated."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-02",
@@ -101,7 +102,8 @@
     "answer": 1,
     "explanation": "The professor uses that phrase to introduce how, near the Sun, the comet heats up and forms the dramatic coma and tail."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-03",
@@ -153,7 +155,8 @@
     "answer": 1,
     "explanation": "The professor concludes that the Silk Road connected civilizations that might otherwise have known nothing of each other, implying it broke down isolation."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-04",
@@ -205,7 +208,8 @@
     "answer": 1,
     "explanation": "The professor notes that people once viewed wetlands as useless and drained many of them, implying this was a mistake given their benefits."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-05",
@@ -257,7 +261,8 @@
     "answer": 1,
     "explanation": "The professor cautions that staying up all night cramming may deprive the brain of the consolidation process it needs to lock in information."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "listen-06",
@@ -309,7 +314,8 @@
     "answer": 1,
     "explanation": "The professor concludes that resources are limited and every choice to use them one way is also a choice not to use them another way."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_01",
@@ -372,7 +378,8 @@
     "answer": 0,
     "explanation": "He points out that many animals host light-producing bacteria rather than making the light themselves."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_02",
@@ -435,7 +442,8 @@
     "answer": 1,
     "explanation": "The repetition interval of the dip gives the orbital period, which is the planet's year."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_03",
@@ -498,7 +506,8 @@
     "answer": 0,
     "explanation": "Dripping water leaves mineral deposits that accumulate upward from the floor as stalagmites."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_04",
@@ -561,7 +570,8 @@
     "answer": 2,
     "explanation": "They recorded what people reported right after the event and compared it with reports years later."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_05",
@@ -624,7 +634,8 @@
     "answer": 2,
     "explanation": "Railway companies imposed a uniform railway time across their networks before it was later formalized."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_06",
@@ -687,7 +698,8 @@
     "answer": 2,
     "explanation": "He says paint was often kept in little pouches made from pig bladders."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_07",
@@ -750,7 +762,8 @@
     "answer": 2,
     "explanation": "Because success feeds on itself, one platform tends to capture most or all of the market."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_08",
@@ -813,7 +826,8 @@
     "answer": 2,
     "explanation": "The professor states the gap is most dramatic at night, as city materials release stored heat."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_09",
@@ -876,7 +890,8 @@
     "answer": 2,
     "explanation": "The professor stresses that a pidgin has no native speakers, whereas a creole does."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_10",
@@ -939,7 +954,8 @@
     "answer": 2,
     "explanation": "He states the flute has few strong overtones, giving it a fairly pure, smooth tone."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_11",
@@ -1002,7 +1018,8 @@
     "answer": 1,
     "explanation": "He explains that cold plus salty makes the water dense enough to sink, combining the two conditions."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_12",
@@ -1065,7 +1082,8 @@
     "answer": 3,
     "explanation": "He narrates how the neurons were found, then turns to why they matter and cautions against overstated claims."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_13",
@@ -1128,7 +1146,8 @@
     "answer": 0,
     "explanation": "He lays out the problem of outward thrust and thick walls, then introduces the flying buttress as the solution."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_14",
@@ -1191,7 +1210,8 @@
     "answer": 1,
     "explanation": "He explicitly sorts the defenses into three groups: physical barriers, chemical weapons, and recruiting help."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_15",
@@ -1254,7 +1274,8 @@
     "answer": 2,
     "explanation": "He opens with the counterintuitive study result, then explains the network logic that accounts for it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_tk_16",
@@ -1317,7 +1338,8 @@
     "answer": 3,
     "explanation": "He grounds the law in the everyday image of a skater, then generalizes it to collapsing gas clouds in space."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_01",
@@ -1380,7 +1402,8 @@
     "answer": 1,
     "explanation": "The professor pairs communication with distinctive flash patterns for mating; the other pairings scramble the examples given for defense, food-finding, and camouflage."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_02",
@@ -1443,7 +1466,8 @@
     "answer": 1,
     "explanation": "The professor links identical copies to scholars referencing the exact same page and diagram across distances; the other options misstate or invert that benefit."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_03",
@@ -1506,7 +1530,8 @@
     "answer": 2,
     "explanation": "The warning-signal example extends the theme that the network links trees into a community; the other options contradict the lecture's content."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_04",
@@ -1569,7 +1594,8 @@
     "answer": 1,
     "explanation": "The closing point casts forgetting as a designed feature that helps us focus, extending his reframing of forgetting; the other options contradict the lecture."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_05",
@@ -1632,7 +1658,8 @@
     "answer": 1,
     "explanation": "The professor names traffic and climate as places the same commons problem appears, generalizing the pasture logic; the other options misread that framing."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_06",
@@ -1695,7 +1722,8 @@
     "answer": 1,
     "explanation": "The professor's caveat is that the thermostat operates over hundreds of thousands of years and cannot keep pace with decades-scale human warming; the other options misstate that."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_07",
@@ -1758,7 +1786,8 @@
     "answer": 1,
     "explanation": "The professor ties perspective to the era's prestige of geometry and empirical observation; the other options contradict his argument."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_at_08",
@@ -1821,6 +1850,7 @@
     "answer": 1,
     "explanation": "Memory cells link the faster repeat response and the vaccine's ability to pre-train the system; the other options contradict the lecture's explanation."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

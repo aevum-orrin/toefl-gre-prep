@@ -23,7 +23,7 @@ from prep_core import ProgressStore
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
-DATA_DIR = REPO / "data"
+DATA_DIR = Path(os.environ.get("PREP_DATA_DIR") or REPO / "data")   # user records -> scratch (env.sh)
 
 # One directory per section; every *.json inside is a task-type bank file (academic.json,
 # daily_life.json, complete_words.json / academic_talk.json, conversation.json, …). Drop a new
@@ -32,15 +32,31 @@ SECTION_DIRS = {
     "reading": Path(os.environ.get("READING_DIR") or REPO / "toefl" / "reading"),
     "listening": Path(os.environ.get("LISTENING_DIR") or REPO / "toefl" / "listening"),
 }
+# Real ETS/TPO items live on SCRATCH (not home/not git) — dozens of TPO sets + listening
+# audio would blow the home-folder budget, so heavy real data stays on scratch. They're
+# served alongside the AI-practice bank; real items load FIRST so they surface early; each
+# item carries a `source` ("real" 真题 | "ai" AI 练习题) that the UI badges.
+REAL_ROOT = Path(os.environ.get("REAL_DATA_ROOT")
+                 or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real")
+REAL_DIRS = {
+    "reading": REAL_ROOT / "reading",
+    "listening": REAL_ROOT / "listening",
+}
 
 
 def _load(section: str) -> list[dict]:
     items: list[dict] = []
-    for f in sorted(SECTION_DIRS[section].glob("*.json")):
-        try:
-            items += json.loads(f.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, ValueError):
+    for base in (REAL_DIRS[section], SECTION_DIRS[section]):   # real first, then AI
+        if not base.exists():
             continue
+        for f in sorted(base.glob("*.json")):
+            try:
+                loaded = json.loads(f.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, ValueError):
+                continue
+            for it in loaded:
+                it.setdefault("source", "ai")
+            items += loaded
     return items
 
 
@@ -60,7 +76,8 @@ class Answers(BaseModel):
 def _public_item(section: str, it: dict) -> dict:
     """Strip answers/explanations before sending to the browser."""
     qs = [{"q": q["q"], "options": q["options"]} for q in it["questions"]]
-    out = {"id": it["id"], "kind": it.get("kind", ""), "title": it.get("title", ""), "questions": qs}
+    out = {"id": it["id"], "kind": it.get("kind", ""), "title": it.get("title", ""),
+           "source": it.get("source", "ai"), "questions": qs}
     if section == "reading":
         out["passage"] = it["passage"]       # reading text is meant to be read
     else:

@@ -49,7 +49,8 @@
     "answer": 1,
     "explanation": "The notice states that free coffee and tea will be available in the ground-floor lounge each night after 9:00 p.m. while supplies last."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-09",
@@ -101,7 +102,8 @@
     "answer": 1,
     "explanation": "The email reminds the team that the final presentation slides are due to Dr. Chen by next Monday."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-10",
@@ -153,7 +155,8 @@
     "answer": 1,
     "explanation": "The notice says that if a shuttle is more than ten minutes late, an alert will appear in the CampusGo app."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-11",
@@ -205,7 +208,8 @@
     "answer": 1,
     "explanation": "The advertisement asks students to wear closed-toe shoes for safety, noting that aprons are already provided."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "read-12",
@@ -257,7 +261,8 @@
     "answer": 1,
     "explanation": "The notice advises rinsing containers so that leftover food does not attract insects."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_01",
@@ -287,7 +292,8 @@
     "answer": 2,
     "explanation": "She asks him to transfer his portion of the higher-than-usual $72 water bill along with the rent."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_02",
@@ -317,7 +323,8 @@
     "answer": 1,
     "explanation": "Priya buys the tickets, and Dan promises to pay her back when they meet at the theater."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_03",
@@ -347,7 +354,8 @@
     "answer": 3,
     "explanation": "Unlabeled food is discarded, so items must be marked with a name and date to be kept."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_04",
@@ -377,7 +385,8 @@
     "answer": 2,
     "explanation": "The notice advises running the cold tap for two minutes to clear the cloudy or brown water."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_05",
@@ -407,7 +416,8 @@
     "answer": 3,
     "explanation": "The menu states there are no separate checks for parties over six, and eight is over six."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_06",
@@ -437,7 +447,8 @@
     "answer": 0,
     "explanation": "The receipt states opened headphones may only be exchanged, not refunded."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_07",
@@ -467,7 +478,8 @@
     "answer": 0,
     "explanation": "The schedule says to bring your own mat for yoga and Pilates."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_08",
@@ -497,7 +509,8 @@
     "answer": 2,
     "explanation": "The flyer says to reserve a table for $15 by calling Rosa before May 5."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_09",
@@ -527,7 +540,8 @@
     "answer": 0,
     "explanation": "The post notes the red collar has no tag, so it carries no identifying information."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_10",
@@ -557,7 +571,8 @@
     "answer": 2,
     "explanation": "The fee applies to missed appointments unless he reschedules at least 24 hours in advance."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_11",
@@ -587,7 +602,8 @@
     "answer": 3,
     "explanation": "The sheet states volunteers under 16 must be accompanied by an adult, and 14 is under 16."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_12",
@@ -617,7 +633,8 @@
     "answer": 0,
     "explanation": "Step 4 says the green light turns off when brewing is complete."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_13",
@@ -647,7 +664,8 @@
     "answer": 2,
     "explanation": "After the two-hour editing window, the confirmation says to contact support at help@shopnest.com."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_14",
@@ -677,7 +695,8 @@
     "answer": 3,
     "explanation": "The notice states unclaimed items are donated to a local charity at the end of each month."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_15",
@@ -707,7 +726,8 @@
     "answer": 1,
     "explanation": "The email states renewing members keep their free locker and two guest passes per month."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_16",
@@ -737,7 +757,8 @@
     "answer": 0,
     "explanation": "The notice says a lost book is billed at its $40 replacement cost instead of the daily fine."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_17",
@@ -767,7 +788,8 @@
     "answer": 1,
     "explanation": "Priya explains she'll be a little late because she is coming straight from work."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_18",
@@ -797,7 +819,8 @@
     "answer": 3,
     "explanation": "The notice states parking is limited and only street parking is available."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_19",
@@ -827,7 +850,8 @@
     "answer": 3,
     "explanation": "Maya says she'll do a final read Sunday morning and asks for any new material by then."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_dl_20",
@@ -857,6 +881,7 @@
     "answer": 2,
     "explanation": "During exam week, extra shuttles run every 10 minutes from 6 p.m. to midnight."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

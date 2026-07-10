@@ -16,7 +16,8 @@
     "answer": 2,
     "explanation": "The speaker is politely asking to borrow notes, so agreeing and offering to share them (option 2) is the natural, cooperative response. Option 0 comments on the lecture instead of answering the request; option 1 talks about the responder's own attendance and ignores the favor; option 3 is a self-focused remark that never addresses whether the notes can be shared."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_02",
@@ -35,7 +36,8 @@
     "answer": 0,
     "explanation": "The professor is offering more time, so gratefully accepting and naming a new deadline (option 0) fits perfectly. Option 1 is unrelated information about the library; option 2 answers a question that wasn't asked; option 3 misreads the offer as a comment about the essay's length."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_03",
@@ -54,7 +56,8 @@
     "answer": 3,
     "explanation": "A polite request to lower the volume calls for an apology and a fix (option 3). Option 0 redirects to the exam's location and ignores the request; option 1 changes the subject to the speakers; option 2 is dismissive and refuses to accommodate the roommate."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_04",
@@ -73,7 +76,8 @@
     "answer": 1,
     "explanation": "The person wants directions, so giving the location and route (option 1) is the appropriate reply. Option 0 plays on the word 'register' but gives no directions; option 2 adds a requirement without saying how to get there; option 3 comments on the staff rather than the way to the office."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_05",
@@ -92,7 +96,8 @@
     "answer": 2,
     "explanation": "The question asks about availability, so proposing a specific time and place (option 2) is the natural response. Option 0 uses the past tense as if the presentation already happened; option 1 names the topic instead of answering about meeting; option 3 is a dismissive remark that avoids committing."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_06",
@@ -111,7 +116,8 @@
     "answer": 0,
     "explanation": "The barista is asking a yes-or-no style choice about cream, so stating the preference (option 0) answers it directly. Option 1 answers an earlier question about size; option 2 jumps ahead to payment; option 3 asks an unrelated new question."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_07",
@@ -130,7 +136,8 @@
     "answer": 3,
     "explanation": "The comment mixes praise with gentle criticism, so accepting both graciously (option 3) is ideal. Option 0 answers a question that wasn't asked; option 1 makes an excuse and ignores the compliment; option 2 refers to a topic as if the presentation hadn't happened yet."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_08",
@@ -149,7 +156,8 @@
     "answer": 1,
     "explanation": "The friend is offering help, so thanking them and accepting (option 1) is the warm, natural reply. Option 0 shares a detail about the apartment but ignores the offer; option 2 talks about a past move; option 3 changes the subject to the gym."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_09",
@@ -168,7 +176,8 @@
     "answer": 2,
     "explanation": "The advisor is voicing concern about workload, so reassuring them with a reasoned answer (option 2) addresses it directly. Option 0 gives a schedule detail that doesn't settle the concern; option 1 mentions the job without addressing whether it's manageable; option 3 is an absurd, off-tone reply."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_10",
@@ -187,7 +196,8 @@
     "answer": 3,
     "explanation": "The speaker is checking whether the umbrella belongs to the listener, so confirming and thanking them (option 3) fits. Option 0 comments on the weather; option 1 talks about commuting; option 2 gives lost-and-found advice as if the umbrella weren't the listener's own."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_11",
@@ -206,7 +216,8 @@
     "answer": 0,
     "explanation": "This is an invitation to dinner, so accepting and arranging where to meet (option 0) is the natural response. Option 1 refers to an earlier meal; option 2 shares trivia about the dining hall instead of replying to the invite; option 3 declines by referencing breakfast, which makes no sense for a dinner plan."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_12",
@@ -225,7 +236,8 @@
     "answer": 1,
     "explanation": "The librarian is explaining the due date and the renewal option, so acknowledging it and planning to renew (option 1) is the fitting reply. Option 0 misunderstands a library loan as a purchase; option 2 comments on when the book was written; option 3 asks an unrelated question about the café."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_13",
@@ -244,7 +256,8 @@
     "answer": 1,
     "explanation": "The cashier says the card didn't go through and asks for another payment method, so offering a different card (option 1) directly addresses the problem. Option 0 comments on the coffee's quality; option 2 places an order as if payment hadn't come up; option 3 makes small talk about the responder's routine instead of solving the payment issue."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_14",
@@ -263,7 +276,8 @@
     "answer": 2,
     "explanation": "This is warm congratulations, so a grateful, pleased reply (option 2) fits naturally. Option 0 offers unrelated trivia about hours; option 1 misreads the news as a question about visiting; option 3 turns the attention to the other person and never acknowledges the congratulations."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_15",
@@ -282,7 +296,8 @@
     "answer": 3,
     "explanation": "The question asks whether a seat is taken, so confirming it's free (option 3) is the direct, natural answer. Option 0 talks about how long the responder has been there; option 1 gives the library's hours; option 2 shares a seating preference — none of them actually tell the person whether they can sit down."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_16",
@@ -301,7 +316,8 @@
     "answer": 0,
     "explanation": "The professor offers help during office hours, so accepting and naming a time (option 0) is the appropriate reply. Option 1 comments on old exams; option 2 refers to a different assignment; option 3 asks about the lecture schedule instead of taking up the offer of help."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_17",
@@ -320,7 +336,8 @@
     "answer": 2,
     "explanation": "The server is offering to take a drink order, so naming a drink (option 2) is the natural response. Option 0 remarks on the seating; option 1 asks for the bill before the meal has even started, which doesn't fit; option 3 makes an off-topic comment about how busy the restaurant gets."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_18",
@@ -339,7 +356,8 @@
     "answer": 1,
     "explanation": "The speaker is asking to borrow a charger, so lending one with a small condition (option 1) is the cooperative, fitting reply. Option 0 changes the subject to a phone case; option 2 talks about the responder's own battery instead of helping; option 3 suggests a store rather than answering the immediate request."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_19",
@@ -358,7 +376,8 @@
     "answer": 3,
     "explanation": "The speaker suggests relocating the picnic because of rain, so agreeing and proposing an indoor spot (option 3) answers the question directly. Option 0 mentions the food; option 1 praises the park; option 2 sidesteps the decision with a joke about forecasting, none of which resolves where to hold the picnic."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "ls_rs_20",
@@ -377,7 +396,8 @@
     "answer": 0,
     "explanation": "The clerk asks whether the jacket was defective or the customer wants a different size, so explaining the fit and requesting another size (option 0) responds directly. Option 1 brings up an unrelated past purchase; option 2 states a product detail; option 3 comments on store hours — none of them answer the clerk's question."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "gen_choose_response_0710150113_00",
@@ -396,7 +416,8 @@
     "answer": 1,
     "explanation": "The correct answer is the one that shows willingness to help and asks for more information about the application, which is a natural and cooperative response."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "gen_choose_response_0710150113_01",
@@ -415,7 +436,8 @@
     "answer": 1,
     "explanation": "The correct answer is the one that shows interest in selling the book and asks about the price, which is a natural and cooperative response in a transaction."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "gen_choose_response_0710150113_02",
@@ -434,6 +456,7 @@
     "answer": 1,
     "explanation": "The correct answer is the one that acknowledges the mistake, expresses understanding, and provides feedback for future improvement, which is a natural and cooperative response."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

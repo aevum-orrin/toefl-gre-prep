@@ -92,7 +92,10 @@ async function load(){
   const d = await (await fetch(`/api/item?section=${SEC}&i=${idx}`)).json();
   if (d.error){ $('#questions').innerHTML = `<p class="hint">${d.error}</p>`; $('#passage').textContent=''; return; }
   cur = d; idx = d.i;
-  $('#kind').textContent = (d.kind||'').replace(/_/g,' ') + `  ·  ${d.i+1}/${d.total}`;
+  const tag = d.source === 'real'
+    ? '<span class="badge" style="background:#2f8f6b;color:#fff">🟢 真题 Real</span>'
+    : '<span class="badge" style="background:#3b6ea5;color:#fff">🔵 AI 练习题</span>';
+  $('#kind').innerHTML = tag + ' ' + (d.kind||'').replace(/_/g,' ') + `  ·  ${d.i+1}/${d.total}`;
   $('#title').textContent = d.title || '';
   if (SEC === 'listening'){
     $('#listenControls').classList.remove('hidden');

@@ -38,7 +38,8 @@
     "answer": 2,
     "explanation": "Coevolved systems serve as 'evidence' for a scientific claim. 'Speculation' and 'coincidence' undercut the certainty implied by 'compelling'; 'exception' reverses the point."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_02",
@@ -79,7 +80,8 @@
     "answer": 0,
     "explanation": "A process lasting millions of years 'spans' that time. 'Repeats' and 'precedes' misstate the relationship, and 'halts' contradicts an ongoing process."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_03",
@@ -120,7 +122,8 @@
     "answer": 0,
     "explanation": "Historians 'regard' perspective as a major achievement (regard X as Y). 'Dismiss' and 'overlook' contradict its celebrated status; 'postpone' does not fit."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_04",
@@ -161,7 +164,8 @@
     "answer": 0,
     "explanation": "Tiny yearly motions adding up over ages are 'cumulative.' 'Immediate' and 'temporary' clash with 'over millions of years'; 'negligible' contradicts 'immense.'"
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_05",
@@ -202,7 +206,8 @@
     "answer": 3,
     "explanation": "Raising rates aims to 'curb' (restrain) demand. 'Stimulate' and 'accelerate' would increase demand; 'satisfy' does not fit a policy meant to reduce it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_06",
@@ -243,7 +248,8 @@
     "answer": 3,
     "explanation": "Remembering material more accurately means people 'recall' it better. 'Forget' and 'ignore' are opposites; 'invent' implies making it up rather than retrieving it."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_07",
@@ -284,7 +290,8 @@
     "answer": 0,
     "explanation": "An unresolved question is one scholars still 'debate.' 'Ignore' and 'dismiss' contradict ongoing interest; 'confirm' wrongly implies the matter is settled."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_08",
@@ -325,7 +332,8 @@
     "answer": 2,
     "explanation": "Reactions must be fast enough to 'meet' an organism's needs. 'Exceed' overstates the point, while 'delay' and 'ignore' contradict serving those needs."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_09",
@@ -366,7 +374,8 @@
     "answer": 0,
     "explanation": "Rejecting the idea of superior dialects, linguists 'refrain' from labeling them (refrain from). 'Proceed' means the opposite; 'benefit' and 'emerge' do not fit the 'from' structure or sense."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "rd_cw_10",
@@ -407,7 +416,8 @@
     "answer": 0,
     "explanation": "Fossil-fuel burning throws the balance off, so it 'disrupted' it. 'Preserved,' 'restored,' and 'reinforced' all suggest keeping the balance, contradicting the resulting climate change."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_01",
@@ -448,7 +458,8 @@
     "answer": 2,
     "explanation": "\"Catastrophic\" matches the killing of centuries-old colonies; \"beneficial\" is the opposite, \"temporary\" understates lethal damage, and \"gradual\" describes pace, not severity."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_02",
@@ -489,7 +500,8 @@
     "answer": 2,
     "explanation": "\"Suppress\" fits alarmed authorities using censorship; \"encourage\" and \"finance\" suggest support, and \"duplicate\" describes copying, not control."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_03",
@@ -530,7 +542,8 @@
     "answer": 1,
     "explanation": "\"Eradicated\" fits smallpox's complete removal; \"isolated\" implies mere containment, \"recovered\" and \"inherited\" do not describe eliminating a disease."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_04",
@@ -571,7 +584,8 @@
     "answer": 2,
     "explanation": "\"Declined\" matches the network fading as sea routes rose; \"expanded\" and \"flourished\" are opposites, and \"diversified\" does not explain the cities' obscurity."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_05",
@@ -612,7 +626,8 @@
     "answer": 1,
     "explanation": "\"Resistant\" describes stainless steel not rusting; \"prone,\" \"sensitive,\" and \"vulnerable\" all imply susceptibility, the opposite meaning."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_06",
@@ -653,7 +668,8 @@
     "answer": 1,
     "explanation": "\"Ridiculed\" fits the early hostility before acceptance; \"celebrated\" and \"profitable\" contradict it, and \"forgotten\" misses the active mockery described."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_07",
@@ -694,7 +710,8 @@
     "answer": 1,
     "explanation": "\"Underprovide\" matches producing less than society wants; \"overproduce\" is the opposite, and \"regulate\" and \"monopolize\" describe other behaviors."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_08",
@@ -735,7 +752,8 @@
     "answer": 1,
     "explanation": "\"Balanced\" fits crust created and consumed in equal measure; \"wasteful\" and \"random\" misread the cycle, and \"recent\" contradicts millions of years."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_09",
@@ -776,7 +794,8 @@
     "answer": 2,
     "explanation": "\"Modify\" fits substituting a new routine while keeping cue and reward; \"abandon\" contradicts the strategy, and \"reward\" and \"repeat\" miss the change."
    }
-  ]
+  ],
+  "source": "ai"
  },
  {
   "id": "opus_cw_10",
@@ -817,6 +836,7 @@
     "answer": 1,
     "explanation": "\"Redirect\" captures human choices steering evolution's course; \"reverse\" and \"halt\" overstate the effect, and \"predict\" describes foresight, not influence."
    }
-  ]
+  ],
+  "source": "ai"
  }
 ]

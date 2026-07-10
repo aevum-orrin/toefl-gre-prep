@@ -29,7 +29,7 @@ load_env(REPO / ".env")                                  # in-process only (keep
 # GRE reuses this same app by pointing RUBRICS_DIR / WRITING_DIR at gre/.
 RUBRIC_DIR = Path(os.environ.get("RUBRICS_DIR") or REPO / "toefl" / "rubrics" / "writing")
 WRITING_DIR = Path(os.environ.get("WRITING_DIR") or REPO / "toefl" / "writing")
-DATA_DIR = REPO / "data"                                  # gitignored
+DATA_DIR = Path(os.environ.get("PREP_DATA_DIR") or REPO / "data")   # user records -> scratch (env.sh)
 
 # Load every rubric JSON once, keyed by task_type.
 RUBRICS: dict[str, Rubric] = {}
@@ -37,13 +37,30 @@ for p in sorted(RUBRIC_DIR.glob("*.json")):
     r = Rubric.from_json(p)
     RUBRICS[r.task_type] = r
 
-# Optional prompt banks (generated content). task_type -> list of prompt objects.
+# Prompt banks. task_type -> list of prompt objects. Real ETS/TPO prompts (scratch, source:"real")
+# load FIRST, then the AI-practice bank (source:"ai"); the UI badges each.
 _PROMPT_FILES = {"write_email": "email_prompts.json", "academic_discussion": "discussion_prompts.json"}
+_REAL_FILES = {"write_email": "email.json", "academic_discussion": "discussion.json"}
+REAL_ROOT = Path(os.environ.get("REAL_DATA_ROOT")
+                 or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real")
 PROMPTS: dict[str, list] = {}
 for task_type, fname in _PROMPT_FILES.items():
+    items: list = []
+    real_fp = REAL_ROOT / "writing" / _REAL_FILES[task_type]
+    if real_fp.exists():
+        try:
+            for it in json.loads(real_fp.read_text(encoding="utf-8")):
+                it.setdefault("source", "real")
+                items.append(it)
+        except (json.JSONDecodeError, ValueError):
+            pass
     fp = WRITING_DIR / fname
     if fp.exists():
-        PROMPTS[task_type] = json.loads(fp.read_text(encoding="utf-8"))
+        for it in json.loads(fp.read_text(encoding="utf-8")):
+            it.setdefault("source", "ai")
+            items.append(it)
+    if items:
+        PROMPTS[task_type] = items
 
 # Indexes over the bank so base prompts serve instantly: pre-written model essays keyed by BOTH the
 # base id and each similar-prompt id, and the pre-written set of 3 similar prompts per base prompt.

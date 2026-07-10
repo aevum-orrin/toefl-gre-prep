@@ -166,6 +166,7 @@ def generate(kind: str, n: int, provider: str | None, sleep: float) -> None:
             "title": (raw.get("title") or f"{kind} {i}").strip(),
             field: body,
             "questions": clean_qs,
+            "source": "ai",   # AI 练习题 (real ETS/TPO items are tagged "real")
         })
         kept += 1
 
