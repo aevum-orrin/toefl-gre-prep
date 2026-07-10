@@ -43,9 +43,14 @@ ECDICT-backed decks `toefl/vocab` (9927) + `gre/vocab` (10526), each word tagged
 default UNLIMITED; Enter=graduate-forever, Space→reveal→1/2/3 (Again/Hard/Good), ←undo/→redo.
 
 ## Scheduled jobs (scrontab; `scrontab -l`)
-- vocab enrich 02:00 (drjieliu99) + 04:00 (nmasoud) — `scripts/enrich_cron.sh`
-- R/L gen: reading 10:00 + listening 18:00 (engin1) — `scripts/gen_cron.sh <section>`
+- vocab enrich 02:00 (drjieliu99) + 04:00 (nmasoud) — `scripts/enrich_cron.sh`. This is the
+  ONLY scheduled generation: ~20k words is genuinely huge + quota-bound, so a daily drip fits.
 - (pre-existing `glcfs_fetch` 7:30 engin1 — NOT ours, preserve it)
+- **R/L question generation is NOT scheduled** (removed 2026-07-10): it's deterministic, so it's
+  run in ONE Opus batch on demand (`scripts/gen_bank.py` / subagents), sweeping all 44 domains at
+  once — the 2-week exam timeline can't wait for a daily rotation. Do the bulk sweep AFTER the
+  user uploads TPO (dedupe/fill gaps against real coverage). Principle: anything determinable now
+  is done now with Opus, not dripped by a free model on a timer.
 NODE POLICY: heavy/long jobs on owned accounts (nmasoud/drjieliu99); engin1 short jobs only.
 
 ## Conventions
