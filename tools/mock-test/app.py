@@ -63,7 +63,10 @@ def _load_by_kind(section: str) -> dict[str, list[dict]]:
             try:
                 for it in json.loads(f.read_text(encoding="utf-8")):
                     it.setdefault("source", "ai")
-                    by[it.get("kind", "")].append(it)
+                    it["questions"] = [q for q in it.get("questions", [])
+                                       if isinstance(q.get("options"), list) and len(q["options"]) >= 2]
+                    if it.get("questions"):
+                        by[it.get("kind", "")].append(it)
             except (json.JSONDecodeError, ValueError):
                 continue
     return by

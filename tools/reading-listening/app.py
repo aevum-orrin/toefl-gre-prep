@@ -56,7 +56,11 @@ def _load(section: str) -> list[dict]:
                 continue
             for it in loaded:
                 it.setdefault("source", "ai")
-            items += loaded
+                # keep only real multiple-choice questions (>=2 options); drop fill-in-the-
+                # blank "complete words" real items that have a single option (degenerate as MC)
+                it["questions"] = [q for q in it.get("questions", [])
+                                   if isinstance(q.get("options"), list) and len(q["options"]) >= 2]
+            items += [it for it in loaded if it.get("questions")]
     return items
 
 
