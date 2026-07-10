@@ -1,21 +1,28 @@
 #!/usr/bin/env bash
-# Staggered Reading/Listening bank top-up for scrontab. Each invocation generates ONE
-# task kind (small batch) so a single run is a light, few-minute API burst that won't
-# trip the free-tier rate limit — schedule several rows a few hours apart to cover all
-# kinds through the day. After generating, it folds new items into the canonical files.
+# ONE scrontab job per section: generate a small batch for every task kind in that
+# section (reading = 3 kinds, listening = 4 kinds) in a single run, spacing the API
+# calls with a sleep so a run stays under the free-tier per-minute rate limit, then
+# fold everything in once via merge_rl.py. Two jobs total (reading + listening),
+# not one-per-kind. Updates local JSON only; commit/push yourself.
 #
-# Arg 1 = task kind (default: rotate is caller's job). Arg 2 = count (default 4).
-# Runs on the free provider (Groq preferred; Gemini fallback). Updates local JSON only;
-# commit/push yourself when you want the new items on GitHub.
+# Usage: gen_cron.sh reading|listening [n_per_kind]   (default n_per_kind = 4)
 set -uo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.." || exit 1
 source env.sh >/dev/null 2>&1
 
-KIND="${1:?usage: gen_cron.sh <kind> [count]}"
+SECTION="${1:?usage: gen_cron.sh reading|listening [n_per_kind]}"
 N="${2:-4}"
 
-echo "===== gen $KIND x$N  $(date '+%F %T') on $(hostname) ====="
-python3 scripts/gen_bank.py "$KIND" --n "$N" --provider groq || \
-  python3 scripts/gen_bank.py "$KIND" --n "$N" --provider gemini
+case "$SECTION" in
+  reading)   KINDS=(academic_passage daily_life complete_words) ;;
+  listening) KINDS=(academic_talk conversation announcement choose_response) ;;
+  *) echo "unknown section '$SECTION' (use reading|listening)"; exit 1 ;;
+esac
+
+echo "===== gen $SECTION ($N per kind) $(date '+%F %T') on $(hostname) ====="
+for k in "${KINDS[@]}"; do
+  python3 scripts/gen_bank.py "$k" --n "$N" --provider groq --sleep 6 || \
+    python3 scripts/gen_bank.py "$k" --n "$N" --provider gemini --sleep 6
+done
 python3 scripts/merge_rl.py
 echo "===== gen done $(date '+%F %T') ====="
