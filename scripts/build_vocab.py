@@ -26,6 +26,15 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 WORD_RE = re.compile(r"^[a-z][a-z'\-]{1,}$")  # single lowercase headword, len>=2
 
+# Which ECDICT exam tags make up each deck. TOEFL/GRE proper are small-ish (~7k), so we widen
+# each deck to the neighbouring academic-exam lists (IELTS, 考研/ky) to reach the comprehensive
+# ~10k the user wants (incl. harder / rarer words). Every card still shows its tags, so the source
+# of each word stays visible. Counts: toefl∪ielts∪ky ≈ 9927, gre∪ky ≈ 10526.
+DECK_TAGS = {
+    "toefl": {"toefl", "ielts", "ky"},
+    "gre": {"gre", "ky"},
+}
+
 # leading part-of-speech token -> display name (covers EN WordNet + ZH CN-dict styles)
 POS_MAP = {
     "n": "noun", "v": "verb", "vt": "verb", "vi": "verb", "vbl": "verb",
@@ -113,7 +122,7 @@ def build():
             total += 1
             tags = set((row.get("tag") or "").split())
             tag_counts.update(tags)
-            if "toefl" not in tags and "gre" not in tags:
+            if not any(tags & wanted for wanted in DECK_TAGS.values()):
                 continue
             word = (row.get("word") or "").strip()
             if not WORD_RE.match(word):
@@ -133,8 +142,8 @@ def build():
                 "tags": sorted(tags),
                 "exchange": _exchange(row.get("exchange")),
             }
-            for deck in ("toefl", "gre"):
-                if deck in tags:
+            for deck, wanted in DECK_TAGS.items():
+                if tags & wanted:
                     decks[deck].append(entry)
 
     def freq_key(e):
