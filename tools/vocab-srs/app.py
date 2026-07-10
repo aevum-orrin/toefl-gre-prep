@@ -37,9 +37,18 @@ DECK_FILES = {
     "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
 }
 
-# Anki-style buttons -> SM-2 grade (0-5). Again fails (resets); Hard/Good/Easy pass.
+# Three buttons after Space: 1 Again (repeat in <1 day), 2 Hard (fuzzy), 3 Good (fine).
+# "easy" is kept only for backward-compat; the 4th button is gone — a word you know cold
+# is handled by Enter-before-reveal (graduate-forever) instead. Values are SM-2 grades.
 GRADES = {"again": 1, "hard": 3, "good": 4, "easy": 5}
 DEFAULT_NEW_PER_DAY = 100000  # effectively unlimited: a 2-week sprint needs to blast whole deck
+
+GRADUATED_DUE = "9999-12-31"  # a card marked "known" gets a due so far out it never returns
+_CARD_FIELDS = ("ease", "interval", "reps", "due")
+# Per-deck undo/redo stacks (single-user, single-process app). Each record captures a card's
+# state before+after an action so Left=undo restores it and Right=redo re-applies it.
+_UNDO: dict[str, list[dict]] = {}
+_REDO: dict[str, list[dict]] = {}
 
 CONTENT: dict[str, dict[str, dict]] = {}    # deck -> term -> full entry
 ORDER: dict[str, list[str]] = {}            # deck -> terms, frequency-sorted
@@ -88,13 +97,41 @@ def _intro_today(deck: str) -> int:
     return data.get(date.today().isoformat(), 0)
 
 
-def _intro_bump(deck: str) -> None:
+def _intro_adjust(deck: str, delta: int) -> None:
     p = _intro_path(deck)
     data = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
     k = date.today().isoformat()
-    data[k] = data.get(k, 0) + 1
+    data[k] = max(0, data.get(k, 0) + delta)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(data), encoding="utf-8")
+
+
+def _intro_bump(deck: str) -> None:
+    _intro_adjust(deck, 1)
+
+
+def _snap(card) -> dict:
+    return {k: getattr(card, k) for k in _CARD_FIELDS}
+
+
+def _restore(card, snap: dict) -> None:
+    for k, v in snap.items():
+        setattr(card, k, v)
+
+
+def _record(deck: str, term: str, before: dict, after: dict, intro_delta: int) -> None:
+    _UNDO.setdefault(deck, []).append(
+        {"term": term, "before": before, "after": after, "intro_delta": intro_delta})
+    _REDO[deck] = []  # any fresh action invalidates the redo chain
+
+
+def _payload(deck: str, term: str, stats: dict, extra: dict | None = None) -> dict:
+    """Build a next-card-style response body for a given term (used by /next and /undo)."""
+    srs = SRS_BY_DECK[deck]
+    card = srs.cards[term]
+    kind = "new" if not card.due else "review"
+    entry = CONTENT[deck].get(term, {"term": term})
+    return {"done": False, "kind": kind, "reps": card.reps, **entry, **stats, **(extra or {})}
 
 
 def _stats(deck: str, new_per_day: int = DEFAULT_NEW_PER_DAY) -> dict:
@@ -146,13 +183,80 @@ def review(r: Review):
     grade = GRADES.get(r.grade.lower())
     if grade is None:
         return {"error": f"bad grade '{r.grade}'; use {list(GRADES)}"}
-    was_new = not srs.cards[r.term].due
-    card = srs.review(r.term, grade)
+    card = srs.cards[r.term]
+    before = _snap(card)
+    was_new = not card.due
+    srs.review(r.term, grade)
+    if r.grade.lower() == "again":       # "repeat in <1 day": make it due again today
+        card.due = date.today().isoformat()
+        card.interval = 0
     srs.save()
     if was_new:
         _intro_bump(r.deck)
+    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
     return {"term": card.term, "interval_days": card.interval, "due": card.due,
             "ease": round(card.ease, 2), **_stats(r.deck)}
+
+
+class DeckTerm(BaseModel):
+    deck: str
+    term: str
+
+
+@app.post("/api/known")
+def known(r: DeckTerm):
+    """Graduate a word the user knows cold (Enter before reveal): never show it again."""
+    srs = SRS_BY_DECK.get(r.deck)
+    if srs is None or r.term not in srs.cards:
+        return {"error": "unknown deck or term"}
+    card = srs.cards[r.term]
+    before = _snap(card)
+    was_new = not card.due
+    card.reps = max(card.reps, 8)
+    card.interval = 36500
+    card.ease = max(card.ease, 2.6)
+    card.due = GRADUATED_DUE
+    srs.save()
+    if was_new:
+        _intro_bump(r.deck)
+    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
+    return {"term": card.term, "known": True, **_stats(r.deck)}
+
+
+class DeckOnly(BaseModel):
+    deck: str
+
+
+@app.post("/api/undo")
+def undo(r: DeckOnly):
+    """Left arrow: revert the last graded/graduated word to its prior state and re-show it."""
+    stack = _UNDO.get(r.deck) or []
+    if not stack:
+        return {"none": True, **_stats(r.deck)}
+    rec = stack.pop()
+    srs = SRS_BY_DECK[r.deck]
+    _restore(srs.cards[rec["term"]], rec["before"])
+    srs.save()
+    if rec["intro_delta"]:
+        _intro_adjust(r.deck, -rec["intro_delta"])
+    _REDO.setdefault(r.deck, []).append(rec)
+    return _payload(r.deck, rec["term"], _stats(r.deck), {"undone": True})
+
+
+@app.post("/api/redo")
+def redo(r: DeckOnly):
+    """Right arrow: cancel the undo — re-apply the action and move on."""
+    stack = _REDO.get(r.deck) or []
+    if not stack:
+        return {"none": True, **_stats(r.deck)}
+    rec = stack.pop()
+    srs = SRS_BY_DECK[r.deck]
+    _restore(srs.cards[rec["term"]], rec["after"])
+    srs.save()
+    if rec["intro_delta"]:
+        _intro_adjust(r.deck, rec["intro_delta"])
+    _UNDO.setdefault(r.deck, []).append(rec)
+    return {"ok": True, **_stats(r.deck)}
 
 
 @app.get("/")

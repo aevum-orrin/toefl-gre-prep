@@ -35,7 +35,7 @@
   .stars { color:#e0a41b; font-size:14px; letter-spacing:1px; }
 
   /* grading buttons — directly under the word, first */
-  .grades { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin:16px 0 8px; }
+  .grades { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin:16px 0 8px; }
   .grades button { color:#fff; border:0; border-radius:11px; padding:13px 10px; font:inherit; font-weight:700; cursor:pointer; }
   .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; margin-top:2px; }
   .g-again{ background:var(--again);} .g-hard{ background:var(--hard);} .g-good{ background:var(--good);} .g-easy{ background:var(--easy);}
@@ -66,7 +66,13 @@
   .meta { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); font-size:13px; color:var(--mut); display:flex; gap:14px; flex-wrap:wrap; }
   .meta b { color:var(--ink); font-weight:600; }
 
-  button.primarybtn { font:inherit; border:0; border-radius:12px; padding:15px; font-weight:700; font-size:17px; cursor:pointer; background:var(--accent); color:#fff; width:100%; margin-top:16px; }
+  .actionrow { display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+  button.primarybtn { font:inherit; border:0; border-radius:12px; padding:15px; font-weight:700; font-size:17px; cursor:pointer; background:var(--accent); color:#fff; flex:1 1 260px; }
+  button.ghostbtn { font:inherit; border:1px solid var(--line); border-radius:12px; padding:15px 16px; font-weight:700; font-size:15px; cursor:pointer; background:var(--card); color:var(--ink); }
+  button.ghostbtn:hover { border-color:var(--accent); }
+  button.ghostbtn .badge, button.primarybtn .badge { background:rgba(127,127,127,.25); }
+  .tierbadge { font-size:11px; padding:2px 8px; border-radius:9px; font-weight:700; }
+  .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
   .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
   .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
   .hidden { display:none; }
@@ -92,8 +98,12 @@
 </header>
 <main>
   <section class="card" id="card"><div class="front"><div class="term">…</div></div></section>
-  <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
-  <div class="kbd">Space = show · 1 Again · 2 Hard · 3 Good · 4 Easy · SM-2 spaced repetition · reviews come first, then up to N new/day</div>
+  <div class="actionrow">
+    <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
+    <button class="ghostbtn" id="know" title="I know this cold — never show it again">I know it ✓ <span class="badge">Enter</span></button>
+    <button class="ghostbtn" id="undo" title="Undo last card (revert to first-seen)">↩ Undo <span class="badge">←</span></button>
+  </div>
+  <div class="kbd"><b>Enter</b> = I know it, never show again · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
 </main>
 <script>
 const $ = s => document.querySelector(s);
@@ -110,26 +120,40 @@ async function boot(){
 $('#deck').addEventListener('change', e => { deck = e.target.value; loadNext(); });
 $('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
 
-async function loadNext(){
-  revealed = false;
-  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
-  updateCounts(d);
-  if (d.done){
-    const capMsg = npd >= 100000 ? 'No new-word cap — you\'ve reached the end of the deck for now.'
-      : `New today are capped at ${npd}. Come back later for reviews, or raise new/day.`;
-    $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
-      <small>${capMsg}</small></div>`;
-    $('#show').classList.add('hidden'); cur = null; return;
-  }
-  cur = d;
+const TIERS = {1:['tier1','high-freq'],2:['tier2','tricky'],3:['tier3','simple']};
+
+function showActions(on){
+  $('#show').classList.toggle('hidden', !on);
+  $('#know').classList.toggle('hidden', !on);
+}
+function renderFront(d){
+  revealed = false; cur = d;
   const pos = (d.senses && d.senses[0] && d.senses[0].pos) || '';
+  const t = TIERS[d.tier];
   $('#card').innerHTML = `<div class="front">
       ${pos?`<div class="pos">${esc(pos)}</div>`:''}
       <div class="term">${esc(d.term)}</div>
       ${d.phonetic?`<div class="phon">/${esc(d.phonetic)}/</div>`:''}
-      ${d.kind==='new'?'<div class="pos" style="color:var(--accent)">new word</div>':''}
+      <div class="pos" style="margin-top:8px">
+        ${d.kind==='new'?'<span style="color:var(--accent)">new word</span> ':''}
+        ${t?`<span class="tierbadge ${t[0]}">${t[1]}</span>`:''}
+      </div>
     </div>`;
-  $('#show').classList.remove('hidden');
+  showActions(true);
+}
+function renderDone(){
+  const capMsg = npd >= 100000 ? 'No new-word cap — you\'ve reached the end of the deck for now.'
+    : `New today are capped at ${npd}. Come back later for reviews, or raise new/day.`;
+  $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
+    <small>${capMsg}</small></div>`;
+  showActions(false); cur = null; revealed = false;
+}
+async function loadNext(){
+  revealed = false;
+  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
+  updateCounts(d);
+  if (d.done){ renderDone(); return; }
+  renderFront(d);
 }
 
 function stars(n){ return n>0 ? `<span class="stars" title="Collins ${n}">${'★'.repeat(n)}</span>` : ''; }
@@ -162,7 +186,9 @@ function reveal(){
   const primaryDef = cur.gloss_en || (p.def_en && p.def_en[0]) || '';
   const primaryEx = (p.examples && p.examples[0]) || '';
   const primaryZh = (p.def_zh && p.def_zh.join('；')) || '';
+  const tb = TIERS[cur.tier];
   const flags = [
+    tb ? `<span class="tierbadge ${tb[0]}">${tb[1]}</span>` : '',
     stars(cur.collins),
     cur.oxford ? '<span class="flag">Oxford 3000</span>' : '',
     cur.frq ? `<span class="flag">freq #${cur.frq}</span>` : '',
@@ -176,10 +202,9 @@ function reveal(){
       <span class="flags">${flags}</span>
     </div>
     <div class="grades" id="grades">
-      <button class="g-again" data-g="again">Again<small>&lt;10m · 1</small></button>
-      <button class="g-hard"  data-g="hard">Hard<small>2</small></button>
-      <button class="g-good"  data-g="good">Good<small>3</small></button>
-      <button class="g-easy"  data-g="easy">Easy<small>4</small></button>
+      <button class="g-again" data-g="again">Again<small>repeat &lt;1 day · 1</small></button>
+      <button class="g-hard"  data-g="hard">Hard<small>fuzzy · 2</small></button>
+      <button class="g-good"  data-g="good">Good<small>fine · 3</small></button>
     </div>
     <div class="primary">
       <div class="pdef">${p.pos?`<span class="ppos">${esc(p.pos)}</span>`:''}${esc(primaryDef)||'<span class="sdz">'+esc(primaryZh)+'</span>'}</div>
@@ -202,6 +227,36 @@ async function grade(g){
   loadNext();
 }
 
+async function graduate(){          // Enter before reveal: "I know it", never show again
+  if (!cur || revealed) return;
+  const d = await (await fetch('/api/known', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck, term: cur.term })
+  })).json();
+  updateCounts(d);
+  loadNext();
+}
+
+async function undo(){              // Left arrow: revert last card, re-show it
+  const d = await (await fetch('/api/undo', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck })
+  })).json();
+  updateCounts(d);
+  if (d.none){ return; }            // nothing to undo
+  renderFront(d);                   // show the reverted word (unrevealed) so you can re-grade
+}
+
+async function redo(){             // Right arrow: cancel the undo, move on
+  const d = await (await fetch('/api/redo', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck })
+  })).json();
+  updateCounts(d);
+  if (d.none){ return; }
+  loadNext();
+}
+
 function updateCounts(d){
   if (d.total==null) return;
   $('#counts').innerHTML =
@@ -210,11 +265,16 @@ function updateCounts(d){
 }
 
 $('#show').addEventListener('click', reveal);
+$('#know').addEventListener('click', graduate);
+$('#undo').addEventListener('click', undo);
 $('#card').addEventListener('click', e => { const b=e.target.closest('button[data-g]'); if(b) grade(b.dataset.g); });
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
-  else if (revealed && ['1','2','3','4'].includes(e.key)) grade(['again','hard','good','easy'][+e.key-1]);
+  else if (e.code === 'Enter'){ e.preventDefault(); graduate(); }   // know-it: only fires when not revealed
+  else if (e.code === 'ArrowLeft'){ e.preventDefault(); undo(); }
+  else if (e.code === 'ArrowRight'){ e.preventDefault(); redo(); }
+  else if (revealed && ['1','2','3'].includes(e.key)) grade(['again','hard','good'][+e.key-1]);
 });
 boot();
 </script>
