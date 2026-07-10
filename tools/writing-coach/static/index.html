@@ -60,7 +60,7 @@
     <label for="task">Task</label>
     <select id="task"></select>
     <button id="loadPrompt" type="button" class="ghost" title="Fill in a real 2026-format prompt from the bank">🎲 Load a 2026 prompt</button>
-    <label for="prompt">Prompt / question (the task shown to you — from the bank or your own)</label>
+    <label for="prompt">Prompt / question (the task shown to you — from the bank or your own) <span id="promptSrc"></span></label>
     <textarea id="prompt" placeholder="Click “Load a 2026 prompt”, or paste your own."></textarea>
     <label for="essay">Your response</label>
     <textarea id="essay" placeholder="Write or paste your response here…"></textarea>
@@ -131,6 +131,9 @@ $('#loadPrompt').addEventListener('click', async () => {
   if (!list.length){ $('#prompt').value = '(no prompt bank for this task yet)'; return; }
   const p = list[pidx[task] % list.length]; pidx[task]++;
   loadPromptText(formatPrompt(task, p), p.id || '');
+  $('#promptSrc').innerHTML = p.source === 'real'
+    ? '<span class="badge" style="background:#2f8f6b;color:#fff">🟢 真题</span>'
+    : '<span class="badge" style="background:#3b6ea5;color:#fff">🔵 AI 练习题</span>';
 });
 
 // load a prompt into the box and refresh the rest of the page
@@ -145,7 +148,7 @@ function loadPromptText(text, id=''){
 $('#essay').addEventListener('input', e => {
   $('#wc').textContent = (e.target.value.trim().match(/\S+/g) || []).length;
 });
-$('#prompt').addEventListener('input', () => { curPromptId = ''; });  // an edited prompt != a bank prompt
+$('#prompt').addEventListener('input', () => { curPromptId = ''; $('#promptSrc').innerHTML = ''; });  // edited != bank prompt
 
 $('#go').addEventListener('click', async () => {
   const btn = $('#go'); btn.disabled = true; btn.textContent = 'Scoring…';

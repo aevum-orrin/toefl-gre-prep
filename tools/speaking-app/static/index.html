@@ -73,7 +73,7 @@
 <script>
 const $ = s => document.querySelector(s);
 let MODE = "repeat", idx = 0, current = "", OFFLINE = false, LIVEGEN = false;
-let questions = [], qi = 0, topic = "", total = 0, isBank = true;
+let questions = [], qi = 0, topic = "", total = 0, isBank = true, prov = 'ai';
 let mediaRecorder, chunks = [], stream;
 
 async function boot(){
@@ -96,18 +96,24 @@ async function loadItem(){
   $('#result').classList.add('hidden');
   if (MODE === 'repeat'){
     const d = await (await fetch(`/api/repeat?i=${idx}`)).json();
-    idx = d.i; total = d.total; $('#topic').textContent = '';
+    idx = d.i; total = d.total; prov = d.provenance; $('#topic').textContent = '';
     showRepeat(d.sentence, `Repeat this sentence (${idx+1}/${total})`);
   } else {
     const d = await (await fetch(`/api/interview?i=${idx}`)).json();
-    idx = d.i; total = d.total; questions = d.questions; qi = 0; isBank = true;
+    idx = d.i; total = d.total; questions = d.questions; qi = 0; isBank = true; prov = d.provenance;
     showInterview(d.topic);
   }
 }
 
+function provBadge(p){
+  return p === 'real'
+    ? '<span class="badge" style="background:#2f8f6b;color:#fff">🟢 真题</span> '
+    : '<span class="badge" style="background:#3b6ea5;color:#fff">🔵 AI 练习题</span> ';
+}
+
 function showRepeat(sentence, label){
   current = sentence;
-  $('#promptLabel').textContent = label;
+  $('#promptLabel').innerHTML = provBadge(prov) + label;
   $('#prompt').textContent = sentence;
   $('#modelBtn').classList.add('hidden');
 }
@@ -115,7 +121,7 @@ function showRepeat(sentence, label){
 function showInterview(t){
   topic = t;
   current = questions[qi] || '';
-  $('#topic').textContent = `Interview topic: ${topic}`;
+  $('#topic').innerHTML = provBadge(prov) + `Interview topic: ${topic}`;
   $('#promptLabel').textContent = `Answer this question (Q${qi+1}/${questions.length}` +
      (MODE==='interview' && total ? `, topic ${idx+1}/${total}` : '') + `)`;
   $('#prompt').textContent = current;
