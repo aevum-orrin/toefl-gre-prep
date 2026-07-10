@@ -114,7 +114,8 @@ def _apply(entry: dict, enr: dict) -> None:
             sense["collocations"] = hit["collocations"][:4]
 
 
-def enrich(deck: str, limit: int | None, batch: int, sleep: float, provider: str | None = None) -> None:
+def enrich(deck: str, limit: int | None, batch: int, sleep: float,
+           provider: str | None = None, max_fails: int = 0) -> None:
     path = DECK_FILES[deck]
     words = json.loads(path.read_text(encoding="utf-8"))
     cdir = _cache_dir(deck)
@@ -141,6 +142,7 @@ def enrich(deck: str, limit: int | None, batch: int, sleep: float, provider: str
     print(f"[{deck}] {len(words)} words, {len(todo)} to enrich via {prov.name}/{prov.model}, batch={batch}")
 
     done = 0
+    fails = 0
     for bi in range(0, len(todo), batch):
         chunk = todo[bi:bi + batch]
         payload = [{"term": e["term"], "zh": _zh(e), "pos": _pos_list(e)} for e in chunk]
@@ -148,9 +150,14 @@ def enrich(deck: str, limit: int | None, batch: int, sleep: float, provider: str
         try:
             out = prov.complete_json(_SYSTEM, user, _SCHEMA)
         except Exception as ex:  # transient overload / parse error -> skip, retry next run
-            print(f"  batch {bi//batch}: FAILED ({type(ex).__name__}: {str(ex)[:80]}); will retry next run")
+            fails += 1
+            print(f"  batch {bi//batch}: FAILED ({type(ex).__name__}: {str(ex)[:80]})")
+            if max_fails and fails >= max_fails:  # daily quota likely reached -> stop cleanly
+                print(f"  stopping early after {fails} consecutive failures (quota reached?)")
+                break
             time.sleep(sleep)
             continue
+        fails = 0
         by_term = {w.get("term", "").lower(): w for w in out.get("words", [])}
         for e in chunk:
             rec = by_term.get(e["term"].lower())
@@ -177,9 +184,12 @@ def main() -> None:
     ap.add_argument("--provider", default=None,
                     help="gemini|groq|anthropic (default: auto, free-first). "
                          "Use groq to dodge Gemini's low free daily cap.")
+    ap.add_argument("--max-fails", type=int, default=0,
+                    help="stop after this many consecutive batch failures (0 = never). "
+                         "Set >0 in scheduled runs so a hit daily quota exits cleanly instead of grinding.")
     args = ap.parse_args()
     load_env(REPO / ".env")
-    enrich(args.deck, args.limit, args.batch, args.sleep, args.provider)
+    enrich(args.deck, args.limit, args.batch, args.sleep, args.provider, args.max_fails)
 
 
 if __name__ == "__main__":

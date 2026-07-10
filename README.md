@@ -76,9 +76,12 @@ unavailable. **Grading is strict** — a top score means a genuinely flawless re
 widened to neighbouring academic-exam lists for comprehensive ~10k decks (**TOEFL 9927** = toefl∪ielts∪ky,
 **GRE 10526** = gre∪ky, incl. harder/rarer words). Each word carries IPA, per-part-of-speech English +
 Chinese senses, a Collins difficulty star, a frequency rank, and verb forms, all offline. `scripts/enrich_vocab.py` then layers on a clean learner definition, one example sentence per
-part of speech, and common collocations (free Gemini, **cached in scratch** so identical input never
-re-calls). vocab-srs schedules reviews with SM-2 and introduces a capped number of new words per day
-(default 20), most-frequent first.
+part of speech, and common collocations (free Gemini/Groq, **cached in scratch** so identical input
+never re-calls). A daily **scrontab** (Slurm cron) job — `scripts/enrich_cron.sh` at 4 AM — resumes
+enrichment on a compute node (which has outbound internet on Great Lakes), spending that day's free API
+quota and stopping cleanly when it's used up (`--max-fails`), until both decks are fully enriched.
+vocab-srs schedules reviews with SM-2 and introduces a capped number of new words per day (default 20),
+most-frequent first.
 
 The Reading/Listening bank is **task-typed** — one JSON file per 2026 task type, loaded by directory
 glob (134 items / ~454 questions and growing). `scripts/merge_rl.py` merges freshly generated items into
