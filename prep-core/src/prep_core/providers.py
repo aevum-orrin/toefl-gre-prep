@@ -114,22 +114,34 @@ class GroqProvider(Provider):
         from groq import Groq  # lazy
         self._client = Groq(api_key=api_key)
 
+    def _chat(self, messages: list, temperature: float, response_format: dict | None = None):
+        """create() with retry on transient rate-limit / 5xx — the free tier throttles bursts (429)."""
+        import time
+        last = None
+        for attempt in range(3):
+            try:
+                kw = {"model": self.model, "temperature": temperature, "messages": messages}
+                if response_format:
+                    kw["response_format"] = response_format
+                return self._client.chat.completions.create(**kw)
+            except Exception as e:  # groq.APIStatusError et al. carry .status_code
+                last = e
+                if getattr(e, "status_code", None) in _TRANSIENT and attempt < 2:
+                    time.sleep(4 * (attempt + 1))
+                    continue
+                raise
+        raise last
+
     def complete_json(self, system: str, user: str, schema: dict) -> dict:
         # Groq's json_object mode guarantees valid JSON but not the exact shape, so we pin the
         # shape by appending the schema to the system prompt; the engine coerces with defaults.
         sys = f"{system}\n\nReturn ONLY a JSON object matching this schema:\n{json.dumps(schema)}"
-        resp = self._client.chat.completions.create(
-            model=self.model, temperature=0.2,
-            response_format={"type": "json_object"},
-            messages=[{"role": "system", "content": sys}, {"role": "user", "content": user}],
-        )
+        resp = self._chat([{"role": "system", "content": sys}, {"role": "user", "content": user}],
+                          0.2, {"type": "json_object"})
         return json.loads(resp.choices[0].message.content)
 
     def complete_text(self, system: str, user: str) -> str:
-        resp = self._client.chat.completions.create(
-            model=self.model, temperature=0.9,
-            messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
-        )
+        resp = self._chat([{"role": "system", "content": system}, {"role": "user", "content": user}], 0.9)
         return resp.choices[0].message.content or ""
 
 
