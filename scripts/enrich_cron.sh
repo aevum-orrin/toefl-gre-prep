@@ -29,4 +29,18 @@ for d, p in [("toefl", "toefl/vocab/toefl_vocab.json"), ("gre", "gre/vocab/gre_v
     x = json.load(open(p)); e = sum(1 for w in x if w.get("gloss_en"))
     print(f"  {d}: {e}/{len(x)} enriched")
 PY
+
+# ---- scratch-purge protection ----------------------------------------------------------
+# /scratch auto-deletes files not ACCESSED for 60 days (ARC policy; touch-evasion is a
+# violation). Nightly, mirror the small IRREPLACEABLE data into home (data/ is gitignored):
+#   user-data (SRS progress, notes, recordings, logs; ~MBs) and official-real minus raw/
+#   (parsed real questions + source PDFs; ~100 MB). raw/ (2.5 GB extracted archives) is NOT
+#   mirrored — keep the original downloads on your laptop. No --delete: a purge on scratch
+#   must never propagate into the backup.
+BACKUP="$(pwd)/data/backup"
+mkdir -p "$BACKUP"
+rsync -a "$PREP_DATA_DIR/" "$BACKUP/user-data/" 2>/dev/null \
+  && echo "backup: user-data mirrored to home"
+rsync -a --exclude 'raw/' "$REAL_DATA_ROOT/" "$BACKUP/official-real-lite/" 2>/dev/null \
+  && echo "backup: official-real (minus raw/) mirrored to home"
 echo "===== done $(date '+%F %T') ====="

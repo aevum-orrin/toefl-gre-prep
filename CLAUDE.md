@@ -39,7 +39,13 @@ Everything heavy, private, or growing lives on **scratch (Neda's owned space)** 
 
 `env.sh` exports `LANG_PREP_CACHE`, `REAL_DATA_ROOT`, `PREP_DATA_DIR`; apps read them (fall
 back to `home/data/` only if unset). **Change `LANG_PREP_CACHE` once to relocate everything.**
-Home `data/` is gitignored; it should end up nearly empty (records now live on scratch).
+Home `data/` is gitignored; it holds only `data/backup/` (see below).
+
+⚠️ **Scratch auto-purge**: /scratch deletes files not ACCESSED for 60 days (rolling per-file;
+owned roots included; touch-evasion prohibited). Caches (tts/enrich/ipa-dict) are re-generable
+= fine; the irreplaceable bits (user-data; official-real minus raw/) are mirrored nightly by
+`enrich_cron.sh` into home `data/backup/` (rsync, no --delete). `official-real/raw/` (2.5 GB)
+is NOT backed up — user keeps original archives on laptop. Details: docs/STORAGE.md.
 
 ## Question provenance (labeling rule the user set)
 Every question item carries `source`: **`"real"`** (真题 = official ETS + TPO) or **`"ai"`**

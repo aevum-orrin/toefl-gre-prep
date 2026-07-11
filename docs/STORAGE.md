@@ -39,6 +39,30 @@ $LANG_PREP_CACHE = /scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-c
     └── essays/        # (future) saved essays + feedback
 ```
 
+## ⚠️ Scratch auto-purge (and our protection)
+
+Great Lakes **/scratch deletes any file not *accessed* for 60 days** (rolling, per-file —
+not a fixed calendar sweep; the clock resets every time a file is actually read/written).
+This applies to owned roots (`nmasoud_owned_root`) too, and artificially `touch`-ing files
+to dodge the purge is an explicit policy violation (escalating penalties).
+
+Consequences for this repo, by data class:
+
+- **Re-generable caches — fine to lose**: `tts/` (re-synthesized on demand), `enrich/` +
+  `enrich_etym/` (results already merged into the deck JSONs in git; cache only exists for
+  resume), `ipa-dict/` (already merged; re-downloadable), `rl_gen/ gen_banks/ build/`.
+- **Irreplaceable — protected by nightly backup**: `enrich_cron.sh` mirrors (rsync, no
+  --delete so a purge never propagates) into home `data/backup/` (gitignored):
+  - `user-data/` → `data/backup/user-data/` (SRS progress, notes, recordings, logs; ~MBs)
+  - `official-real/` minus `raw/` → `data/backup/official-real-lite/` (~100 MB: parsed real
+    questions, tpo_txt, source PDFs)
+- **`official-real/raw/` (2.5 GB extracted archives) is NOT backed up** — too big for home;
+  keep the original downloads on your laptop. If a stretch of >60 days without touching them
+  is expected, re-upload or ask for a Turbo/other plan.
+
+During active daily study everything hot is being accessed anyway; the real risk window is
+a multi-week pause (e.g. after TOEFL, before resuming GRE).
+
 ## How it's wired
 
 `env.sh` exports three vars (with sane defaults); every app reads them and falls back to
