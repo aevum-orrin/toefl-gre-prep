@@ -175,6 +175,7 @@
       <label><span>UK ♂</span><select data-slot="ukM"></select><button class="spkbtn" data-slot="ukM">▶</button></label>
       <label><span>UK ♀</span><select data-slot="ukF"></select><button class="spkbtn" data-slot="ukF">▶</button></label>
       <label class="auto"><input type="checkbox" id="autoSay" checked> auto-pronounce on each new card (US ♂)</label>
+      <div id="ttsStat" style="margin-top:6px;font-size:12px;color:var(--mut)"></div>
     </div>
   </details>
   <span id="counts"></span>
@@ -202,7 +203,18 @@ const FEMALE_HINTS = ['female','samantha','victoria','zira','jenny','aria','mich
 const MALE_HINTS = ['male','alex','fred','david','mark','aaron','guy','christopher','eric','andrew','brian','daniel',
   'arthur','george','ryan','oliver','thomas','james','john','matthew','justin','joey','russell','liam','nathan','tom'];
 let VOICES = [];
+let lastUtter = null;       // keep a live reference: Chrome GCs local utterances and goes silent
+let speakTimer = null;
 const voiceCfg = JSON.parse(localStorage.getItem('ttsVoices') || '{}');
+
+function ttsStatus(msg, bad){
+  const el = $('#ttsStat');
+  if (el){ el.textContent = msg; el.style.color = bad ? '#c0392b' : ''; }
+}
+function refreshVoices(){
+  const v = speechSynthesis.getVoices();
+  if (v.length) VOICES = v;           // getVoices() is empty until Chrome loads them async
+}
 
 function slotPool(slot){
   const pref = slot.startsWith('us') ? 'en-us' : 'en-gb';
@@ -223,14 +235,27 @@ function slotVoice(slot){
       || pool[0];
 }
 function speak(text, slot='usM'){
-  if (!('speechSynthesis' in window) || !text) return;
+  if (!text) return;
+  if (!('speechSynthesis' in window)){ ttsStatus('⚠️ 此浏览器不支持 speechSynthesis', true); return; }
+  refreshVoices();
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  const v = slotVoice(slot);
-  if (v) u.voice = v;
-  u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
-  u.rate = 0.95;                       // relaxed, not newsreader-formal
-  speechSynthesis.speak(u);
+  clearTimeout(speakTimer);
+  // Chrome swallows a speak() issued in the same tick as cancel() — defer a beat
+  speakTimer = setTimeout(() => {
+    const u = new SpeechSynthesisUtterance(text);
+    const v = slotVoice(slot);
+    if (v) u.voice = v;
+    u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
+    u.rate = 0.95;                     // relaxed, not newsreader-formal
+    u.onstart = () => ttsStatus('▶ ' + (v ? v.name : 'default voice'));
+    u.onerror = e => ttsStatus('⚠️ TTS error: ' + (e.error || 'unknown')
+      + (e.error === 'not-allowed' ? ' — 先点击页面任意处，再切词/按喇叭' : ''), true);
+    lastUtter = u;
+    speechSynthesis.resume();          // un-stick a synth left in paused state (Chrome quirk)
+    speechSynthesis.speak(u);
+    if (!VOICES.length)
+      ttsStatus('⚠️ 此浏览器 0 个语音包 — VNC/Linux 桌面常见，请在笔记本本地浏览器打开', true);
+  }, 60);
 }
 /* browsers block audio before the first user gesture: queue the very first card */
 let interacted = false, pendingSay = null;
@@ -243,13 +268,16 @@ function autoSay(term){
   if (interacted) speak(term, 'usM'); else pendingSay = term;
 }
 function fillVoicePanel(){
-  VOICES = speechSynthesis.getVoices();
+  refreshVoices();
   const en = VOICES.filter(v => v.lang.toLowerCase().startsWith('en'));
   document.querySelectorAll('.ttspanel select').forEach(sel => {
     const slot = sel.dataset.slot, pick = slotVoice(slot);
     sel.innerHTML = en.map(v =>
       `<option ${pick && v.name===pick.name ? 'selected':''}>${esc(v.name)}</option>`).join('') || '<option>(no voices)</option>';
   });
+  ttsStatus(VOICES.length
+    ? `${VOICES.length} voices available (${en.length} English)`
+    : '⚠️ 0 个语音包 — VNC/Linux 桌面常见，请在笔记本本地浏览器打开', !VOICES.length);
 }
 if ('speechSynthesis' in window){
   fillVoicePanel();
