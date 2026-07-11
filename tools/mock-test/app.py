@@ -61,14 +61,22 @@ def _load_by_kind(section: str) -> dict[str, list[dict]]:
             continue
         for f in sorted(base.glob("*.json")):
             try:
-                for it in json.loads(f.read_text(encoding="utf-8")):
-                    it.setdefault("source", "ai")
-                    it["questions"] = [q for q in it.get("questions", [])
-                                       if isinstance(q.get("options"), list) and len(q["options"]) >= 2]
-                    if it.get("questions"):
-                        by[it.get("kind", "")].append(it)
+                loaded = json.loads(f.read_text(encoding="utf-8"))
             except (json.JSONDecodeError, ValueError):
                 continue
+            if isinstance(loaded, dict):         # a single-item file (e.g. one TPO passage)
+                loaded = [loaded]
+            for it in loaded:
+                if not isinstance(it, dict):
+                    continue
+                it.setdefault("source", "ai")
+                # single-answer MC only (int answer): "Select TWO" list answers can't be
+                # scored by the one-chosen-index grader
+                it["questions"] = [q for q in it.get("questions", [])
+                                   if isinstance(q.get("options"), list) and len(q["options"]) >= 2
+                                   and isinstance(q.get("answer"), int)]
+                if it.get("questions"):
+                    by[it.get("kind", "")].append(it)
     return by
 
 

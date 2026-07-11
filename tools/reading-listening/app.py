@@ -58,10 +58,12 @@ def _load(section: str) -> list[dict]:
                 loaded = [loaded]
             for it in loaded:
                 it.setdefault("source", "ai")
-                # keep only real multiple-choice questions (>=2 options); drop fill-in-the-
-                # blank "complete words" real items that have a single option (degenerate as MC)
+                # keep only single-answer MC the UI can score: >=2 options AND an int answer
+                # (drops degenerate fill-in items and real "Select TWO" questions whose
+                # answer is a list — the grader compares one chosen index)
                 it["questions"] = [q for q in it.get("questions", [])
-                                   if isinstance(q.get("options"), list) and len(q["options"]) >= 2]
+                                   if isinstance(q.get("options"), list) and len(q["options"]) >= 2
+                                   and isinstance(q.get("answer"), int)]
             items += [it for it in loaded if it.get("questions")]
     return items
 

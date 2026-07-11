@@ -100,6 +100,31 @@ vocab-srs UI extras (2026-07-10):
   is done now with Opus, not dripped by a free model on a timer.
 NODE POLICY: heavy/long jobs on owned accounts (nmasoud/drjieliu99); engin1 short jobs only.
 
+## ⚠️ Token-window rule (user-set, 2026-07-11)
+**Whenever the rolling 5-hour token window reaches ~90% used, STOP generating immediately**:
+pause the work, save progress (update this file + auto-memory RESUME state), and `git commit`.
+Resume when the window refreshes — same Effort, continue where left off.
+
+## Real-question extraction state (2026-07-11)
+Real banks live on scratch `official-real/` and auto-load into the apps (🟢真题 badge):
+- **Reading: 97 real items / 976 Q** — TPO21-35 complete (45 passages, keyed, from 新东方
+  bank), TPO58-74 (wave-1 + spec retries), ETS 2015 sampler. All content-filter blocks
+  solved via `scripts/assemble_spec.py` line-range specs (agent never outputs passage text).
+- **Listening: 76 real items / 106 Q** — 2026 official tests, 题型 drills (28 items from
+  新东方 8-题型 handouts, keyed by trailing-period), ETS sampler (2 items/11 Q).
+- **Writing: discussion.json = 113 real-prompt items** (111 real past prompts + AI-generated
+  student posts, `note` marks the hybrid; posts format = [{name,text}]). Plus on scratch:
+  `model_essays.json` (7), `ets_scored_samples.json` (4 ETS-scored essays for grader
+  calibration), raw prompt files `real_prompts_{xdf,lisheng}.json`.
+- **Speaking: interview.json = 75 real topics / ~372 real prompts** (172 folded by
+  `scripts/fold_speaking_prompts.py` from 核桃50/60题 + 88 TPO + 27 dated-2018; answers[]
+  carries model answers/outlines). Raw files `real_independent_prompts_{a,b}.json`.
+- Apps' loaders keep only single-answer MC (int answer; "Select TWO" list-answers dropped).
+- STILL PENDING (survey `_materials/_survey_full.json` has details): TPO40-54 listening
+  transcripts (~85, no keys), TPO45/46 listening stems (no keys), 48 Task-5 conv+prompt
+  items, TPO1-34 Task3/4/6 gold outlines, 17 integrated-writing sets, 阅读题型专项 81 Q
+  (keys recoverable), TPO54-75 listening parse (audio MP3s exist), GRE enrichment.
+
 ## Conventions
 - Commits: author `aevum-orrin`, `Co-Authored-By: Claude`, noreply email. Push when "差不多了".
 - Docs/READMEs English; chat mixed zh-en.
