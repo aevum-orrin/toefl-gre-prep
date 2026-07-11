@@ -37,6 +37,9 @@ DATA_DIR = Path(os.environ.get("PREP_DATA_DIR") or REPO / "data") / "srs"
 DECK_FILES = {
     "toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
     "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
+    # topical scene vocab (listening scenarios, academic subjects, phrase patterns) parsed
+    # from the user's uploaded real prep material; built by scripts/fold_scene_vocab.py
+    "scenes": REPO / "toefl" / "vocab" / "scene_vocab.json",
 }
 
 # Three buttons after Space: 1 Again (repeat in <1 day), 2 Hard (fuzzy), 3 Good (fine).
@@ -149,7 +152,7 @@ def _stats(deck: str, new_per_day: int = DEFAULT_NEW_PER_DAY) -> dict:
 
 @app.get("/api/decks")
 def decks():
-    return [_stats(d) for d in DECK_FILES if d in SRS_BY_DECK]
+    return [_stats(d) for d in DECK_FILES if d in SRS_BY_DECK and CONTENT[d]]
 
 
 @app.get("/api/next")

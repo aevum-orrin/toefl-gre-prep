@@ -73,6 +73,8 @@
   button.ghostbtn .badge, button.primarybtn .badge { background:rgba(127,127,127,.25); }
   .tierbadge { font-size:11px; padding:2px 8px; border-radius:9px; font-weight:700; }
   .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
+  .hfbadge { background:#d9480f22; color:#d9480f; }   /* word attested in real TPO tests */
+  .topicbadge { background:#1c7ed622; color:#1c7ed6; }
   .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
   .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
   .hidden { display:none; }
@@ -137,6 +139,8 @@ function renderFront(d){
       <div class="pos" style="margin-top:8px">
         ${d.kind==='new'?'<span style="color:var(--accent)">new word</span> ':''}
         ${t?`<span class="tierbadge ${t[0]}">${t[1]}</span>`:''}
+        ${d.tpo_hf?'<span class="tierbadge hfbadge">🔥 TPO高频</span>':''}
+        ${d.topic?`<span class="tierbadge topicbadge">${esc(d.topic)}</span>`:''}
       </div>
     </div>`;
   showActions(true);
@@ -189,6 +193,8 @@ function reveal(){
   const tb = TIERS[cur.tier];
   const flags = [
     tb ? `<span class="tierbadge ${tb[0]}">${tb[1]}</span>` : '',
+    cur.tpo_hf ? '<span class="tierbadge hfbadge">🔥 TPO高频</span>' : '',
+    cur.topic ? `<span class="tierbadge topicbadge">${esc(cur.topic)}</span>` : '',
     stars(cur.collins),
     cur.oxford ? '<span class="flag">Oxford 3000</span>' : '',
     cur.frq ? `<span class="flag">freq #${cur.frq}</span>` : '',
