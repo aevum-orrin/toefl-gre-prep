@@ -19,9 +19,16 @@ uvicorn app:app --reload --port 8003   # http://localhost:8003
 
 ## Pronunciation & phonetics
 - Every card shows **US and UK IPA** (merged from open-dict-data/ipa-dict by `scripts/add_ipa.py`)
-  with **4 speaker buttons**: US ♂ / US ♀ / UK ♂ / UK ♀ — all via the browser's Web Speech API.
-- Each new card (and each undo) **auto-plays** once with the US male voice; toggle in the 🔊⚙ menu.
-- Voices are picked per OS heuristically; override any of the 4 slots in 🔊⚙ (saved in localStorage).
+  with **4 speaker buttons**: US ♂ / US ♀ / UK ♂ / UK ♀.
+- Two engines (pick in 🔊⚙; default = server):
+  - **Server neural voices** (`/api/tts`, edge-tts → Andrew/Aria/Ryan/Sonia): free Microsoft
+    endpoint, needs outbound internet on the serving node; mp3s cached forever on scratch
+    (`$LANG_PREP_CACHE/tts/`, ~9 KB/word — ~150 MB realistic, ≈0.5 GB absolute worst case).
+    Works in any browser, immune to browser TTS bugs.
+  - **Browser Web Speech API** (fallback): zero storage, but macOS Chrome randomly drops
+    utterances ("canceled", a known Chromium bug) and VNC desktops have no voices at all.
+    Voice per slot is heuristic; override in 🔊⚙ (saved in localStorage).
+- Each new card (and each undo) **auto-plays** once with the US male voice; toggle in 🔊⚙.
 - Each part-of-speech row also has an IPA + a US-male speaker button.
 
 ## On the reveal page

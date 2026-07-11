@@ -16,19 +16,27 @@ Run:  source ../../env.sh && uvicorn app:app --reload --port 8003
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import random
+import re
+import tempfile
 from collections import deque
 from datetime import date
 from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from prep_core import SRS
+
+try:                                     # optional: server-side neural TTS (free MS endpoint)
+    import edge_tts
+except ImportError:                      # app still works; frontend falls back to browser TTS
+    edge_tts = None
 
 HERE = Path(__file__).parent
 REPO = HERE.parents[1]
@@ -295,6 +303,43 @@ def redo(r: DeckOnly):
         _intro_adjust(r.deck, rec["intro_delta"])
     _UNDO.setdefault(r.deck, []).append(rec)
     return {"ok": True, **_stats(r.deck)}
+
+
+# Server-side pronunciation: free Microsoft Edge neural voices (edge-tts). The browser's own
+# speechSynthesis is flaky (macOS Chrome "canceled" bug) and unavailable in VNC sessions, so
+# the frontend prefers this endpoint and falls back to speechSynthesis only if it fails.
+# mp3s are tiny (~6 KB/word) and cached forever on scratch: $LANG_PREP_CACHE/tts/<voice>/.
+TTS_DIR = Path(os.environ.get("LANG_PREP_CACHE") or REPO / "data" / "cache") / "tts"
+TTS_VOICES = {
+    "usM": "en-US-AndrewNeural",   # relaxed US male (default auto-play)
+    "usF": "en-US-AriaNeural",
+    "ukM": "en-GB-RyanNeural",
+    "ukF": "en-GB-SoniaNeural",
+}
+
+
+@app.get("/api/tts")
+async def tts(text: str, slot: str = "usM"):
+    text = " ".join(text.split())[:200]
+    if not text:
+        return JSONResponse({"error": "empty text"}, status_code=400)
+    if edge_tts is None:
+        return JSONResponse({"error": "edge-tts not installed"}, status_code=501)
+    voice = TTS_VOICES.get(slot, TTS_VOICES["usM"])
+    stem = re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")[:40] or "x"
+    path = TTS_DIR / voice / f"{stem}_{hashlib.md5(text.encode()).hexdigest()[:8]}.mp3"
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        fd, tmp = tempfile.mkstemp(suffix=".part", dir=path.parent)
+        os.close(fd)
+        try:
+            await edge_tts.Communicate(text, voice).save(tmp)
+            os.replace(tmp, path)        # atomic: concurrent requests never see partial files
+        except Exception as ex:
+            Path(tmp).unlink(missing_ok=True)
+            return JSONResponse({"error": f"tts failed: {str(ex)[:150]}"}, status_code=502)
+    return FileResponse(path, media_type="audio/mpeg",
+                        headers={"Cache-Control": "max-age=31536000, immutable"})
 
 
 class Note(BaseModel):

@@ -170,10 +170,15 @@
   <details class="ttscfg" id="ttscfg">
     <summary title="voice settings">🔊⚙</summary>
     <div class="ttspanel">
+      <label><span>引擎</span><select id="ttsEngine">
+        <option value="server">云端神经声 Andrew/Aria/Ryan/Sonia（推荐）</option>
+        <option value="browser">浏览器本地语音</option>
+      </select></label>
       <label><span>US ♂</span><select data-slot="usM"></select><button class="spkbtn" data-slot="usM">▶</button></label>
       <label><span>US ♀</span><select data-slot="usF"></select><button class="spkbtn" data-slot="usF">▶</button></label>
       <label><span>UK ♂</span><select data-slot="ukM"></select><button class="spkbtn" data-slot="ukM">▶</button></label>
       <label><span>UK ♀</span><select data-slot="ukF"></select><button class="spkbtn" data-slot="ukF">▶</button></label>
+      <div style="font-size:11px;color:var(--mut)">↑ 四个下拉只影响"浏览器本地"引擎（云端失败时也用作备用）</div>
       <label class="auto"><input type="checkbox" id="autoSay" checked> auto-pronounce on each new card (US ♂)</label>
       <div id="ttsStat" style="margin-top:6px;font-size:12px;color:var(--mut)"></div>
     </div>
@@ -234,8 +239,45 @@ function slotVoice(slot){
       || pool.find(v => !anti.some(h => v.name.toLowerCase().includes(h)))
       || pool[0];
 }
-function speak(text, slot='usM', attempt=0){
+/* Preferred engine: the server's neural voices (/api/tts, cached mp3s). Browser
+   speechSynthesis is only the fallback — macOS Chrome randomly "cancels" it. */
+const SLOT_LABEL = {usM:'Andrew · US♂', usF:'Aria · US♀', ukM:'Ryan · UK♂', ukF:'Sonia · UK♀'};
+let audioEl = null, speakSeq = 0;
+const AUDIO_CACHE = new Map();         // "slot|text" -> object URL (session-local)
+
+function stopAudio(){
+  if (audioEl){ audioEl.pause(); audioEl = null; }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+}
+async function speak(text, slot='usM'){
   if (!text) return;
+  const seq = ++speakSeq;              // newer calls silently supersede in-flight ones
+  if ($('#ttsEngine').value === 'server'){
+    try {
+      const key = slot + '|' + text;
+      let url = AUDIO_CACHE.get(key);
+      if (!url){
+        const r = await fetch(`/api/tts?text=${encodeURIComponent(text)}&slot=${slot}`);
+        if (!r.ok || !(r.headers.get('content-type')||'').includes('audio'))
+          throw new Error('HTTP ' + r.status);
+        url = URL.createObjectURL(await r.blob());
+        if (AUDIO_CACHE.size > 300) AUDIO_CACHE.clear();
+        AUDIO_CACHE.set(key, url);
+      }
+      if (seq !== speakSeq) return;
+      stopAudio();
+      audioEl = new Audio(url);
+      await audioEl.play();
+      ttsStatus('▶ ' + (SLOT_LABEL[slot]||slot) + ' (云端)');
+      return;
+    } catch (err){
+      if (seq !== speakSeq) return;
+      ttsStatus('云端 TTS 失败(' + (err.message||err.name) + ') → 试浏览器语音', true);
+    }
+  }
+  speakBrowser(text, slot, 0, seq);
+}
+function speakBrowser(text, slot, attempt, seq){
   if (!('speechSynthesis' in window)){ ttsStatus('⚠️ 此浏览器不支持 speechSynthesis', true); return; }
   refreshVoices();
   clearTimeout(speakTimer);
@@ -245,27 +287,28 @@ function speak(text, slot='usM', attempt=0){
   const busy = synth.speaking || synth.pending;
   if (busy) synth.cancel();
   speakTimer = setTimeout(() => {
+    if (seq !== speakSeq) return;
     const u = new SpeechSynthesisUtterance(text);
-    const v = slotVoice(slot);
+    const v = attempt >= 2 ? null : slotVoice(slot);   // last retry: default voice (some voices are broken)
     if (v) u.voice = v;
     u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
     u.rate = 0.95;                     // relaxed, not newsreader-formal
-    u.onstart = () => ttsStatus('▶ ' + (v ? v.name : 'default voice'));
+    u.onstart = () => ttsStatus('▶ ' + (v ? v.name : 'default voice') + ' (浏览器)');
     u.onerror = e => {
       if (lastUtter !== u) return;     // superseded by a newer speak() — expected, ignore
       const kind = e.error || 'unknown';
-      if ((kind === 'canceled' || kind === 'interrupted') && attempt < 2){
-        speak(text, slot, attempt + 1);          // swallowed by the Chrome bug — retry
+      if ((kind === 'canceled' || kind === 'interrupted') && attempt < 3){
+        speakBrowser(text, slot, attempt + 1, seq);    // swallowed by the Chrome bug — retry
         return;
       }
       ttsStatus('⚠️ TTS error: ' + kind
         + (kind === 'not-allowed' ? ' — 先点击页面任意处，再切词/按喇叭' : ''), true);
     };
     lastUtter = u;
-    synth.resume();                    // un-stick a synth left in paused state (Chrome quirk)
+    if (synth.paused) synth.resume();  // un-stick a synth left in paused state (Chrome quirk)
     synth.speak(u);
     if (!VOICES.length)
-      ttsStatus('⚠️ 此浏览器 0 个语音包 — VNC/Linux 桌面常见，请在笔记本本地浏览器打开', true);
+      ttsStatus('⚠️ 此浏览器 0 个语音包 — 云端引擎不受影响，可无视', true);
   }, busy ? 250 : (attempt ? 300 : 0));
 }
 /* browsers block audio before the first user gesture: queue the very first card */
@@ -300,6 +343,8 @@ document.querySelectorAll('.ttspanel select').forEach(sel => sel.addEventListene
 }));
 $('#autoSay').checked = localStorage.getItem('autoSay') !== '0';
 $('#autoSay').addEventListener('change', e => localStorage.setItem('autoSay', e.target.checked ? '1' : '0'));
+$('#ttsEngine').value = localStorage.getItem('ttsEngine') || 'server';
+$('#ttsEngine').addEventListener('change', e => localStorage.setItem('ttsEngine', e.target.value));
 
 /* ---------- rendering ---------- */
 async function boot(){

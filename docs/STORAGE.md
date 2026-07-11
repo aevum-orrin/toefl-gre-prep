@@ -23,6 +23,8 @@ $LANG_PREP_CACHE = /scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-c
 ├── enrich/            # per-word vocab enrichment cache (resumable)
 ├── enrich_etym/       # per-word 词根词缀/词源 (etymology) cache (resumable)
 ├── ipa-dict/          # en_US.txt + en_UK.txt IPA source (scripts/add_ipa.py merges into decks)
+├── tts/<voice>/       # pronunciation mp3 cache (edge-tts neural voices, ~9 KB/word, on demand;
+│                      #   worst case ≈0.5 GB if every word × all 4 voices — realistically ~150 MB)
 ├── rl_gen/            # AI-generated R/L items staged before merge
 ├── gen_banks/         # AI-generated speaking/writing items staged before merge
 ├── official-real/     # $REAL_DATA_ROOT — REAL questions (copyright: local only, never pushed)
