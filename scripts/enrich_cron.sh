@@ -17,6 +17,9 @@ for prov in groq gemini; do
   for deck in toefl gre; do
     echo "--- $deck via $prov ---"
     python3 scripts/enrich_vocab.py "$deck" --provider "$prov" --batch 20 --sleep 2 --max-fails 8
+    # second pass: 词根词缀/词源 (etymology) — same cache/resume design, rides leftover quota
+    echo "--- $deck etymology via $prov ---"
+    python3 scripts/enrich_etym.py "$deck" --provider "$prov" --batch 20 --sleep 2 --max-fails 8
   done
 done
 

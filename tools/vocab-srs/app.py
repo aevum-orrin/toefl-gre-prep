@@ -19,6 +19,7 @@ from __future__ import annotations
 import json
 import os
 import random
+from collections import deque
 from datetime import date
 from pathlib import Path
 
@@ -49,6 +50,11 @@ GRADES = {"again": 1, "hard": 3, "good": 4, "easy": 5}
 DEFAULT_NEW_PER_DAY = 100000  # effectively unlimited: a 2-week sprint needs to blast whole deck
 
 GRADUATED_DUE = "9999-12-31"  # a card marked "known" gets a due so far out it never returns
+# Spacing-effect guard: a just-graded word (esp. "Again", which is due today) must NOT pop
+# right back — at least this many other cards are shown in between (memory-research-style
+# lag; in-memory only, resets on restart which is harmless).
+RECENT_GAP = 15
+_RECENT: dict[str, deque] = {}
 _CARD_FIELDS = ("ease", "interval", "reps", "due")
 # Per-deck undo/redo stacks (single-user, single-process app). Each record captures a card's
 # state before+after an action so Left=undo restores it and Right=redo re-applies it.
@@ -90,6 +96,22 @@ class Review(BaseModel):
     deck: str
     term: str
     grade: str                               # again | hard | good | easy
+
+
+# Personal notes: ONE file for all decks, keyed by term, so a note written while
+# studying TOEFL is still there when the same word shows up in the GRE deck.
+# Lives with the rest of the user records on scratch ($PREP_DATA_DIR/notes/).
+NOTES_PATH = (Path(os.environ.get("PREP_DATA_DIR") or REPO / "data")) / "notes" / "vocab_notes.json"
+
+
+def _notes_load() -> dict:
+    if NOTES_PATH.exists():
+        return json.loads(NOTES_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+def _touch(deck: str, term: str) -> None:
+    _RECENT.setdefault(deck, deque(maxlen=RECENT_GAP)).append(term)
 
 
 def _intro_path(deck: str) -> Path:
@@ -161,7 +183,11 @@ def next_card(deck: str = "toefl", new_per_day: int = DEFAULT_NEW_PER_DAY):
         return {"error": f"unknown deck '{deck}'", "decks": list(SRS_BY_DECK)}
     srs = SRS_BY_DECK[deck]
     today = date.today()
-    reviews = [c for c in srs.cards.values() if c.due and c.is_due(today)]
+    recent = set(_RECENT.get(deck) or ())
+    all_due = [c for c in srs.cards.values() if c.due and c.is_due(today)]
+    # spacing guard: a word graded in the last RECENT_GAP cards (e.g. an "Again") waits
+    # until enough other cards have interleaved before it may come back
+    reviews = [c for c in all_due if c.term not in recent]
     stats = _stats(deck, new_per_day)
 
     card, kind = None, None
@@ -173,6 +199,11 @@ def next_card(deck: str = "toefl", new_per_day: int = DEFAULT_NEW_PER_DAY):
             if c and not c.due:
                 card, kind = c, "new"
                 break
+    if card is None and all_due:
+        # nothing but recently-shown cards left: show the least-recently graded one
+        # instead of stalling the session
+        age = {t: i for i, t in enumerate(_RECENT.get(deck) or ())}
+        card, kind = min(all_due, key=lambda c: age.get(c.term, -1)), "review"
     if card is None:
         return {"done": True, **stats}
 
@@ -198,6 +229,7 @@ def review(r: Review):
     srs.save()
     if was_new:
         _intro_bump(r.deck)
+    _touch(r.deck, r.term)
     _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
     return {"term": card.term, "interval_days": card.interval, "due": card.due,
             "ease": round(card.ease, 2), **_stats(r.deck)}
@@ -224,6 +256,7 @@ def known(r: DeckTerm):
     srs.save()
     if was_new:
         _intro_bump(r.deck)
+    _touch(r.deck, r.term)
     _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
     return {"term": card.term, "known": True, **_stats(r.deck)}
 
@@ -262,6 +295,58 @@ def redo(r: DeckOnly):
         _intro_adjust(r.deck, rec["intro_delta"])
     _UNDO.setdefault(r.deck, []).append(rec)
     return {"ok": True, **_stats(r.deck)}
+
+
+class Note(BaseModel):
+    term: str
+    md: str = ""
+
+
+@app.get("/api/note")
+def get_note(term: str):
+    rec = _notes_load().get(term) or {}
+    return {"term": term, "md": rec.get("md", ""), "updated": rec.get("updated", "")}
+
+
+@app.post("/api/note")
+def put_note(n: Note):
+    data = _notes_load()
+    if n.md.strip():
+        data[n.term] = {"md": n.md, "updated": date.today().isoformat()}
+    else:
+        data.pop(n.term, None)              # emptying the box deletes the note
+    NOTES_PATH.parent.mkdir(parents=True, exist_ok=True)
+    NOTES_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return {"ok": True, "term": n.term, "has": bool(n.md.strip())}
+
+
+@app.get("/api/search")
+def search(deck: str, q: str, limit: int = 60):
+    """Contiguous-substring lookup over the CURRENT deck only (e.g. q=sub ->
+    subsequent, submarine...). Prefix matches first, then deck (frequency) order."""
+    q = q.strip().lower()
+    if deck not in CONTENT or len(q) < 2:
+        return {"q": q, "hits": [], "total": 0}
+    hits = []
+    for term in ORDER[deck]:
+        tl = term.lower()
+        if q in tl:
+            e = CONTENT[deck][term]
+            senses = e.get("senses") or [{}]
+            zh = (senses[0].get("def_zh") or [""])[0]
+            hits.append({"term": term, "zh": zh, "tier": e.get("tier"),
+                         "starts": tl.startswith(q)})
+    hits.sort(key=lambda h: not h["starts"])  # stable: keeps freq order within groups
+    return {"q": q, "hits": hits[:limit], "total": len(hits)}
+
+
+@app.get("/api/entry")
+def entry(deck: str, term: str):
+    """Full card payload for a searched word, so the UI can open it as a study page.
+    Grading it goes through the normal /api/review and thus counts toward today."""
+    if deck not in CONTENT or term not in CONTENT[deck]:
+        return {"error": "unknown deck or term"}
+    return _payload(deck, term, _stats(deck))
 
 
 @app.get("/")

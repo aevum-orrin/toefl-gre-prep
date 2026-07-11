@@ -13,13 +13,16 @@ AI-practice question banks** live in git. Everything heavy, private, or growing 
 | Vocab decks (ECDICT-derived JSON) | `toefl/vocab`, `gre/vocab` | ✅ yes |
 | **Real questions** (ETS official, TPO) + PDFs + listening audio | `$REAL_DATA_ROOT` (scratch) | ❌ no |
 | **User records** — SRS progress, recordings, essays, practice logs | `$PREP_DATA_DIR` (scratch) | ❌ no |
-| Vocab enrichment cache, AI-gen staging, raw ECDICT | `$LANG_PREP_CACHE/{enrich,rl_gen,gen_banks,raw}` (scratch) | ❌ no |
+| Vocab enrichment cache, AI-gen staging, raw ECDICT | `$LANG_PREP_CACHE/{enrich,enrich_etym,rl_gen,gen_banks,raw}` (scratch) | ❌ no |
+| IPA source dictionaries (open-dict-data/ipa-dict, US+UK) | `$LANG_PREP_CACHE/ipa-dict/` (scratch) | ❌ no |
 
 ## The scratch root
 
 ```
 $LANG_PREP_CACHE = /scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache
 ├── enrich/            # per-word vocab enrichment cache (resumable)
+├── enrich_etym/       # per-word 词根词缀/词源 (etymology) cache (resumable)
+├── ipa-dict/          # en_US.txt + en_UK.txt IPA source (scripts/add_ipa.py merges into decks)
 ├── rl_gen/            # AI-generated R/L items staged before merge
 ├── gen_banks/         # AI-generated speaking/writing items staged before merge
 ├── official-real/     # $REAL_DATA_ROOT — REAL questions (copyright: local only, never pushed)
@@ -28,6 +31,7 @@ $LANG_PREP_CACHE = /scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-c
 │   └── tpo/           # drop TPO downloads here (any format); a parser folds them in
 └── user-data/         # $PREP_DATA_DIR — everything the user produces
     ├── srs/           # SM-2 scheduling state per deck (toefl.json, gre.json, *.intro.json)
+    ├── notes/         # vocab_notes.json — personal per-word markdown notes (all decks share it)
     ├── recordings/    # speaking recordings (webm/mp3) — can get large
     ├── progress.jsonl # cross-tool practice log
     └── essays/        # (future) saved essays + feedback

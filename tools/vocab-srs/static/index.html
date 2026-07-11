@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vocab SRS</title>
+<script src="/static/vendor/marked.min.js"></script>
+<script src="/static/vendor/purify.min.js"></script>
 <style>
   :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#6a7078; --line:#e3e3e6; --accent:#7048b5;
           --again:#c0392b; --hard:#b5651d; --good:#2f8f6b; --easy:#3b6ea5; --chip:#efeaf9; }
@@ -24,21 +26,42 @@
   .front { text-align:center; padding:26px 0; }
   .front .pos { font-size:14px; color:var(--mut); font-style:italic; margin-bottom:6px; }
   .front .term { font-size:46px; font-weight:800; letter-spacing:.3px; }
-  .front .phon { font-size:17px; color:var(--mut); margin-top:8px; }
+
+  /* US/UK phonetics + the 4 speaker buttons */
+  .iparow { display:flex; gap:8px; align-items:center; flex-wrap:wrap; color:var(--mut); font-size:16px; }
+  .front .iparow { justify-content:center; margin-top:10px; }
+  .ipatag { font-size:11px; font-weight:800; padding:1px 7px; border-radius:8px; background:var(--chip); color:var(--accent); }
+  .ipa { font-family:"Segoe UI",system-ui,serif; }
+  .spkbtn { font:inherit; font-size:14px; border:1px solid var(--line); background:var(--card); color:var(--ink);
+            border-radius:8px; padding:2px 7px; cursor:pointer; line-height:1.3; }
+  .spkbtn:hover { border-color:var(--accent); }
+  .spkbtn small { font-size:11px; opacity:.8; }
+  .ipasep { color:var(--line); }
 
   /* reveal (answer) */
   .head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:12px; }
   .head .term { font-size:34px; font-weight:800; }
-  .head .phon { font-size:17px; color:var(--mut); }
   .head .flags { margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
   .flag { font-size:11px; padding:2px 8px; border-radius:9px; background:var(--chip); color:var(--accent); }
   .stars { color:#e0a41b; font-size:14px; letter-spacing:1px; }
+  .head + .iparow { margin-top:10px; }
 
   /* grading buttons — directly under the word, first */
   .grades { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin:16px 0 8px; }
   .grades button { color:#fff; border:0; border-radius:11px; padding:13px 10px; font:inherit; font-weight:700; cursor:pointer; }
   .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; margin-top:2px; }
   .g-again{ background:var(--again);} .g-hard{ background:var(--hard);} .g-good{ background:var(--good);} .g-easy{ background:var(--easy);}
+
+  /* etymology (词根词缀·词源) — collapsed by default, sits BEFORE the primary sense */
+  details.etym { border:1px dashed color-mix(in srgb, var(--accent) 45%, transparent); border-radius:10px; margin:12px 0 4px;
+                 background:color-mix(in srgb, var(--accent) 5%, transparent); }
+  details.etym > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:15px; font-weight:700; color:var(--accent); }
+  details.etym > summary::-webkit-details-marker { display:none; }
+  details.etym .ehint { font-weight:400; font-size:12px; color:var(--mut); margin-left:8px; }
+  .ebody { padding:2px 16px 12px; }
+  .ebreak { font-size:17px; font-weight:600; }
+  .estory { margin-top:4px; }
+  .eorigin { margin-top:4px; color:var(--mut); font-size:15px; }
 
   /* primary sense block */
   .primary { margin:14px 0 6px; padding:14px 16px; background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:12px; }
@@ -54,7 +77,7 @@
   details.sense > summary::before { content:"▸"; color:var(--mut); font-size:13px; transition:transform .15s; }
   details.sense[open] > summary::before { transform:rotate(90deg); }
   .spos { font-style:italic; color:var(--accent); font-weight:700; min-width:64px; }
-  .sde { }
+  .sipa { color:var(--mut); font-size:14px; }
   .sdz { color:var(--mut); }
   .sbody { padding:2px 16px 14px 30px; }
   .sbody .more { margin:2px 0 8px; padding-left:18px; color:var(--mut); font-size:15px; }
@@ -62,6 +85,42 @@
   .sbody .cols { margin-top:8px; display:flex; gap:7px; flex-wrap:wrap; }
   .sbody .col { font-size:14px; padding:3px 9px; border-radius:8px; background:var(--chip); }
   .sbody .soon { color:var(--mut); font-size:14px; font-style:italic; }
+
+  /* in-deck lookup (词汇检索) */
+  details.lookup { border:1px solid var(--line); border-radius:10px; margin:14px 0 4px; }
+  details.lookup > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:14px; color:var(--mut); font-weight:700; }
+  details.lookup > summary::-webkit-details-marker { display:none; }
+  .lkbody { padding:0 14px 12px; }
+  .lkbody input { width:100%; font:inherit; color:inherit; background:var(--bg); border:1px solid var(--line); border-radius:9px; padding:9px 12px; }
+  #lkResults { max-height:300px; overflow:auto; margin-top:8px; }
+  .lkhit { padding:7px 10px; border-radius:8px; cursor:pointer; display:flex; gap:10px; align-items:baseline; }
+  .lkhit:hover { background:var(--chip); }
+  .lkhit b { font-size:16px; }
+  .lkhit small { color:var(--mut); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .lkmore { color:var(--mut); font-size:12px; padding:6px 10px; }
+
+  /* personal notes */
+  details.notes { border:1px solid var(--line); border-radius:10px; margin:10px 0 4px; }
+  details.notes > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:14px; color:var(--mut); font-weight:700; }
+  details.notes > summary::-webkit-details-marker { display:none; }
+  #noteBadge { color:var(--accent); }
+  .nbody { padding:0 14px 12px; }
+  .ntabs { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+  .ntabs button { font:inherit; font-size:13px; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:8px; padding:4px 10px; cursor:pointer; }
+  .ntabs button.on { border-color:var(--accent); color:var(--accent); font-weight:700; }
+  #nStatus { font-size:12px; color:var(--mut); margin-left:auto; }
+  #nText { width:100%; min-height:150px; font:15px/1.6 ui-monospace,Consolas,monospace; color:inherit; background:var(--bg);
+           border:1px solid var(--line); border-radius:9px; padding:10px 12px; resize:vertical; }
+  .mdview { font-size:15px; overflow-x:auto; }
+  .mdview h1,.mdview h2,.mdview h3 { font-size:1.15em; margin:.7em 0 .3em; }
+  .mdview p { margin:.4em 0; }
+  .mdview pre { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:10px; overflow-x:auto; font-size:13px; }
+  .mdview code { background:var(--bg); border-radius:4px; padding:1px 5px; font-size:.9em; }
+  .mdview pre code { background:none; padding:0; }
+  .mdview blockquote { border-left:3px solid var(--accent); margin:.5em 0; padding:.1em .9em; color:var(--mut); }
+  .mdview table { border-collapse:collapse; margin:.5em 0; }
+  .mdview th,.mdview td { border:1px solid var(--line); padding:4px 10px; }
+  .mdview img { max-width:100%; }
 
   .meta { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); font-size:13px; color:var(--mut); display:flex; gap:14px; flex-wrap:wrap; }
   .meta b { color:var(--ink); font-weight:600; }
@@ -71,6 +130,7 @@
   button.ghostbtn { font:inherit; border:1px solid var(--line); border-radius:12px; padding:15px 16px; font-weight:700; font-size:15px; cursor:pointer; background:var(--card); color:var(--ink); }
   button.ghostbtn:hover { border-color:var(--accent); }
   button.ghostbtn .badge, button.primarybtn .badge { background:rgba(127,127,127,.25); }
+  #back { border-color:var(--accent); color:var(--accent); }
   .tierbadge { font-size:11px; padding:2px 8px; border-radius:9px; font-weight:700; }
   .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
   .hfbadge { background:#d9480f22; color:#d9480f; }   /* word attested in real TPO tests */
@@ -78,6 +138,17 @@
   .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
   .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
   .hidden { display:none; }
+
+  /* voice settings */
+  details.ttscfg { position:relative; }
+  details.ttscfg > summary { list-style:none; cursor:pointer; font-size:16px; padding:4px 8px; border:1px solid var(--line); border-radius:8px; }
+  details.ttscfg > summary::-webkit-details-marker { display:none; }
+  .ttspanel { position:absolute; right:0; top:110%; z-index:50; background:var(--card); border:1px solid var(--line); border-radius:12px;
+              padding:12px 14px; box-shadow:0 8px 26px rgba(0,0,0,.22); min-width:300px; font-size:13px; }
+  .ttspanel label { display:flex; align-items:center; gap:8px; margin:6px 0; color:var(--mut); }
+  .ttspanel label span { min-width:46px; font-weight:700; }
+  .ttspanel select { flex:1; max-width:210px; font-size:12px; padding:3px 5px; }
+  .ttspanel .auto { margin-top:8px; border-top:1px solid var(--line); padding-top:8px; }
 
   .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:150px; }
   .timer.run { border-color:var(--accent); }
@@ -96,6 +167,16 @@
     <option>20</option><option>50</option><option>100</option><option>200</option><option>500</option>
     <option value="100000" selected>∞ all</option>
   </select></label>
+  <details class="ttscfg" id="ttscfg">
+    <summary title="voice settings">🔊⚙</summary>
+    <div class="ttspanel">
+      <label><span>US ♂</span><select data-slot="usM"></select><button class="spkbtn" data-slot="usM">▶</button></label>
+      <label><span>US ♀</span><select data-slot="usF"></select><button class="spkbtn" data-slot="usF">▶</button></label>
+      <label><span>UK ♂</span><select data-slot="ukM"></select><button class="spkbtn" data-slot="ukM">▶</button></label>
+      <label><span>UK ♀</span><select data-slot="ukF"></select><button class="spkbtn" data-slot="ukF">▶</button></label>
+      <label class="auto"><input type="checkbox" id="autoSay" checked> auto-pronounce on each new card (US ♂)</label>
+    </div>
+  </details>
   <span id="counts"></span>
 </header>
 <main>
@@ -104,6 +185,7 @@
     <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
     <button class="ghostbtn" id="know" title="I know this cold — never show it again">I know it ✓ <span class="badge">Enter</span></button>
     <button class="ghostbtn" id="undo" title="Undo last card (revert to first-seen)">↩ Undo <span class="badge">←</span></button>
+    <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
   </div>
   <div class="kbd"><b>Enter</b> = I know it, never show again · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
 </main>
@@ -111,7 +193,76 @@
 const $ = s => document.querySelector(s);
 const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 let deck = "toefl", npd = 100000, cur = null, revealed = false;
+const BACK = [];                       // stack of {cur, revealed} saved before a search-jump
 
+/* ---------- TTS: browser speechSynthesis, 4 voice slots (free, no storage) ---------- */
+const FEMALE_HINTS = ['female','samantha','victoria','zira','jenny','aria','michelle','allison','ava','karen','moira',
+  'tessa','fiona','kate','serena','sonia','libby','hazel','martha','joanna','salli','kimberly','ivy','emma','amy',
+  'nicole','olivia','sara','catherine','linda','heather','susan'];
+const MALE_HINTS = ['male','alex','fred','david','mark','aaron','guy','christopher','eric','andrew','brian','daniel',
+  'arthur','george','ryan','oliver','thomas','james','john','matthew','justin','joey','russell','liam','nathan','tom'];
+let VOICES = [];
+const voiceCfg = JSON.parse(localStorage.getItem('ttsVoices') || '{}');
+
+function slotPool(slot){
+  const pref = slot.startsWith('us') ? 'en-us' : 'en-gb';
+  const norm = v => v.lang.toLowerCase().replace('_','-');
+  let pool = VOICES.filter(v => norm(v).startsWith(pref));
+  return pool.length ? pool : VOICES.filter(v => norm(v).startsWith('en'));
+}
+function slotVoice(slot){
+  if (voiceCfg[slot]){
+    const v = VOICES.find(v => v.name === voiceCfg[slot]);
+    if (v) return v;
+  }
+  const pool = slotPool(slot);
+  const male = slot.endsWith('M');
+  const hints = male ? MALE_HINTS : FEMALE_HINTS, anti = male ? FEMALE_HINTS : MALE_HINTS;
+  return pool.find(v => hints.some(h => v.name.toLowerCase().includes(h)))
+      || pool.find(v => !anti.some(h => v.name.toLowerCase().includes(h)))
+      || pool[0];
+}
+function speak(text, slot='usM'){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  const v = slotVoice(slot);
+  if (v) u.voice = v;
+  u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
+  u.rate = 0.95;                       // relaxed, not newsreader-formal
+  speechSynthesis.speak(u);
+}
+/* browsers block audio before the first user gesture: queue the very first card */
+let interacted = false, pendingSay = null;
+['pointerdown','keydown'].forEach(ev => document.addEventListener(ev, () => {
+  interacted = true;
+  if (pendingSay){ const t = pendingSay; pendingSay = null; speak(t, 'usM'); }
+}, true));
+function autoSay(term){
+  if (!$('#autoSay').checked) return;
+  if (interacted) speak(term, 'usM'); else pendingSay = term;
+}
+function fillVoicePanel(){
+  VOICES = speechSynthesis.getVoices();
+  const en = VOICES.filter(v => v.lang.toLowerCase().startsWith('en'));
+  document.querySelectorAll('.ttspanel select').forEach(sel => {
+    const slot = sel.dataset.slot, pick = slotVoice(slot);
+    sel.innerHTML = en.map(v =>
+      `<option ${pick && v.name===pick.name ? 'selected':''}>${esc(v.name)}</option>`).join('') || '<option>(no voices)</option>';
+  });
+}
+if ('speechSynthesis' in window){
+  fillVoicePanel();
+  speechSynthesis.addEventListener('voiceschanged', fillVoicePanel);
+}
+document.querySelectorAll('.ttspanel select').forEach(sel => sel.addEventListener('change', () => {
+  voiceCfg[sel.dataset.slot] = sel.value;
+  localStorage.setItem('ttsVoices', JSON.stringify(voiceCfg));
+}));
+$('#autoSay').checked = localStorage.getItem('autoSay') !== '0';
+$('#autoSay').addEventListener('change', e => localStorage.setItem('autoSay', e.target.checked ? '1' : '0'));
+
+/* ---------- rendering ---------- */
 async function boot(){
   const decks = await (await fetch('/api/decks')).json();
   $('#deck').innerHTML = decks.map(d =>
@@ -119,14 +270,31 @@ async function boot(){
   deck = decks[0]?.deck || "toefl";
   loadNext();
 }
-$('#deck').addEventListener('change', e => { deck = e.target.value; loadNext(); });
+$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; syncBtns(); loadNext(); });
 $('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
 
 const TIERS = {1:['tier1','high-freq'],2:['tier2','tricky'],3:['tier3','simple']};
 
-function showActions(on){
-  $('#show').classList.toggle('hidden', !on);
-  $('#know').classList.toggle('hidden', !on);
+function spkBtn(slot){
+  return `<button class="spkbtn" data-slot="${slot}" title="${slot.startsWith('us')?'American':'British'} ${slot.endsWith('M')?'male':'female'}">🔊<small>${slot.endsWith('M')?'♂':'♀'}</small></button>`;
+}
+function ipaRow(d){
+  const us = d.ipa_us, uk = d.ipa_uk;
+  if (!us && !uk){
+    return d.phonetic ? `<div class="iparow"><span class="ipa">/${esc(d.phonetic)}/</span>${spkBtn('usM')}</div>` : '';
+  }
+  const parts = [];
+  if (us) parts.push(`<span class="ipatag">US</span><span class="ipa">/${esc(us)}/</span>${spkBtn('usM')}${spkBtn('usF')}`);
+  if (us && uk) parts.push('<span class="ipasep">·</span>');
+  if (uk) parts.push(`<span class="ipatag">UK</span><span class="ipa">/${esc(uk)}/</span>${spkBtn('ukM')}${spkBtn('ukF')}`);
+  return `<div class="iparow">${parts.join('')}</div>`;
+}
+
+function syncBtns(){
+  const front = cur && !revealed;
+  $('#show').classList.toggle('hidden', !front);
+  $('#know').classList.toggle('hidden', !front);
+  $('#back').classList.toggle('hidden', !BACK.length);
 }
 function renderFront(d){
   revealed = false; cur = d;
@@ -135,7 +303,7 @@ function renderFront(d){
   $('#card').innerHTML = `<div class="front">
       ${pos?`<div class="pos">${esc(pos)}</div>`:''}
       <div class="term">${esc(d.term)}</div>
-      ${d.phonetic?`<div class="phon">/${esc(d.phonetic)}/</div>`:''}
+      ${ipaRow(d)}
       <div class="pos" style="margin-top:8px">
         ${d.kind==='new'?'<span style="color:var(--accent)">new word</span> ':''}
         ${t?`<span class="tierbadge ${t[0]}">${t[1]}</span>`:''}
@@ -143,14 +311,15 @@ function renderFront(d){
         ${d.topic?`<span class="tierbadge topicbadge">${esc(d.topic)}</span>`:''}
       </div>
     </div>`;
-  showActions(true);
+  syncBtns();
+  autoSay(d.term);
 }
 function renderDone(){
   const capMsg = npd >= 100000 ? 'No new-word cap — you\'ve reached the end of the deck for now.'
     : `New today are capped at ${npd}. Come back later for reviews, or raise new/day.`;
   $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
     <small>${capMsg}</small></div>`;
-  showActions(false); cur = null; revealed = false;
+  cur = null; revealed = false; syncBtns();
 }
 async function loadNext(){
   revealed = false;
@@ -164,7 +333,9 @@ function stars(n){ return n>0 ? `<span class="stars" title="Collins ${n}">${'★
 
 function senseHTML(s, open){
   const de = s.def_en||[], dz = s.def_zh||[], ex = s.examples||[], col = s.collocations||[];
+  const ipa = cur.ipa_us || cur.phonetic || '';
   const head = `<span class="spos">${esc(s.pos||'—')}</span>`
+    + (ipa?`<span class="sipa">/${esc(ipa)}/</span><button class="spkbtn" data-slot="usM" title="American male">🔊</button>`:'')
     + (de[0]?`<span class="sde">${esc(de[0])}</span>`:'')
     + (dz.length?`<span class="sdz">${esc(dz.join('；'))}</span>`:'');
   const parts = [];
@@ -182,9 +353,19 @@ function verbForms(x){
   return out.length ? `<span>forms: ${out.join(' · ')}</span>` : '';
 }
 
-function reveal(){
-  if (!cur || revealed) return;
-  revealed = true;
+/* 词根词缀·词源 — collapsed, shown BEFORE the primary sense; hidden when no data yet */
+function etymHTML(d){
+  const et = d.etymology || {};
+  if (!(et.breakdown || et.story || et.origin)) return '';
+  return `<details class="etym"><summary>🌱 词根词缀 · 词源<span class="ehint">点击展开</span></summary>
+    <div class="ebody">
+      ${et.breakdown?`<div class="ebreak">${esc(et.breakdown)}</div>`:''}
+      ${et.story?`<div class="estory">${esc(et.story)}</div>`:''}
+      ${et.origin?`<div class="eorigin">${esc(et.origin)}</div>`:''}
+    </div></details>`;
+}
+
+function renderReveal(){
   const senses = cur.senses || [];
   const p = senses[0] || {};
   const primaryDef = cur.gloss_en || (p.def_en && p.def_en[0]) || '';
@@ -204,14 +385,15 @@ function reveal(){
   $('#card').innerHTML = `
     <div class="head">
       <span class="term">${esc(cur.term)}</span>
-      ${cur.phonetic?`<span class="phon">/${esc(cur.phonetic)}/</span>`:''}
       <span class="flags">${flags}</span>
     </div>
+    ${ipaRow(cur)}
     <div class="grades" id="grades">
       <button class="g-again" data-g="again">Again<small>repeat &lt;1 day · 1</small></button>
       <button class="g-hard"  data-g="hard">Hard<small>fuzzy · 2</small></button>
       <button class="g-good"  data-g="good">Good<small>fine · 3</small></button>
     </div>
+    ${etymHTML(cur)}
     <div class="primary">
       <div class="pdef">${p.pos?`<span class="ppos">${esc(p.pos)}</span>`:''}${esc(primaryDef)||'<span class="sdz">'+esc(primaryZh)+'</span>'}</div>
       ${primaryEx?`<div class="pex">“${esc(primaryEx)}”</div>`:''}
@@ -219,9 +401,108 @@ function reveal(){
     </div>
     <div class="sectlabel">All parts of speech — click ▸ to expand</div>
     ${senses.map((s,i)=>senseHTML(s, i===0)).join('') || '<div class="soon">no senses</div>'}
+    <details class="lookup"><summary>🔎 词汇检索（当前词库内连续字母匹配，可跳转顺便学习）</summary>
+      <div class="lkbody">
+        <input id="lkInput" placeholder="输入 2 个以上字母，如 sub → subsequent, submarine…" autocomplete="off">
+        <div id="lkResults"></div>
+      </div>
+    </details>
+    <details class="notes" id="notesBox"><summary>📝 Personal Notes <span id="noteBadge"></span></summary>
+      <div class="nbody">
+        <div class="ntabs">
+          <button id="nEdit">✏️ 编辑</button><button id="nView">👁 预览</button>
+          <span id="nStatus"></span>
+        </div>
+        <textarea id="nText" placeholder="中英文、Markdown 都行；GPT 回答直接粘贴进来也 OK。自动保存。"></textarea>
+        <div id="nRender" class="mdview hidden"></div>
+      </div>
+    </details>
     <div class="meta">${verbForms(cur.exchange)}</div>`;
-  $('#show').classList.add('hidden');
+  syncBtns();
+  loadNote(cur.term);
 }
+function reveal(){
+  if (!cur || revealed) return;
+  revealed = true;
+  renderReveal();
+}
+
+/* ---------- personal notes (markdown, autosaved, stored per term for ALL decks) ---------- */
+let noteTerm = null, noteTimer = null;
+function mdRender(){
+  const ta = $('#nText'), out = $('#nRender');
+  if (ta && out) out.innerHTML = DOMPurify.sanitize(marked.parse(ta.value || '*（空）*'));
+}
+function noteMode(edit){
+  $('#nText').classList.toggle('hidden', !edit);
+  $('#nRender').classList.toggle('hidden', edit);
+  $('#nEdit').classList.toggle('on', edit);
+  $('#nView').classList.toggle('on', !edit);
+  if (!edit) mdRender();
+}
+async function loadNote(term){
+  noteTerm = term;
+  const d = await (await fetch('/api/note?term=' + encodeURIComponent(term))).json();
+  if (noteTerm !== term || !$('#nText')) return;   // card changed while fetching
+  $('#nText').value = d.md || '';
+  $('#noteBadge').textContent = d.md ? '●' : '';
+  noteMode(!d.md);                                  // existing note opens in preview
+}
+async function saveNote(){
+  const ta = $('#nText');
+  if (!ta || noteTerm == null) return;
+  const term = noteTerm, md = ta.value;
+  $('#nStatus').textContent = 'saving…';
+  await fetch('/api/note', { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ term, md }) });
+  if ($('#nStatus')) $('#nStatus').textContent = 'saved ✓';
+  const b = $('#noteBadge'); if (b) b.textContent = md.trim() ? '●' : '';
+}
+document.addEventListener('input', e => {
+  if (e.target.id === 'nText'){
+    $('#nStatus').textContent = '…';
+    clearTimeout(noteTimer); noteTimer = setTimeout(saveNote, 800);
+  } else if (e.target.id === 'lkInput'){
+    clearTimeout(lkTimer); lkTimer = setTimeout(() => lookup(e.target.value), 300);
+  }
+});
+document.addEventListener('focusout', e => { if (e.target.id === 'nText'){ clearTimeout(noteTimer); saveNote(); } });
+
+/* ---------- in-deck lookup + jump + real back ---------- */
+let lkTimer = null;
+async function lookup(q){
+  const box = $('#lkResults');
+  if (!box) return;
+  q = q.trim();
+  if (q.length < 2){ box.innerHTML = ''; return; }
+  const d = await (await fetch(`/api/search?deck=${deck}&q=${encodeURIComponent(q)}`)).json();
+  const inp = $('#lkInput');
+  if (!inp || inp.value.trim() !== q) return;      // stale response
+  box.innerHTML = d.hits.map(h =>
+    `<div class="lkhit" data-term="${esc(h.term)}"><b>${esc(h.term)}</b><small>${esc(h.zh||'')}</small></div>`).join('')
+    + (d.total > d.hits.length ? `<div class="lkmore">…共 ${d.total} 个匹配，只显示前 ${d.hits.length} 个</div>` : '')
+    || '<div class="lkmore">无匹配</div>';
+}
+async function jumpTo(term){
+  const d = await (await fetch(`/api/entry?deck=${deck}&term=${encodeURIComponent(term)}`)).json();
+  if (d.error) return;
+  BACK.push({ cur, revealed });
+  cur = d; revealed = true;
+  renderReveal();
+  updateCounts(d);
+  autoSay(d.term);
+}
+function goBack(){
+  const s = BACK.pop();
+  if (!s) return;
+  cur = s.cur;
+  if (s.revealed){ revealed = true; renderReveal(); }
+  else renderFront(cur);
+  syncBtns();
+}
+
+/* ---------- grading ---------- */
+function afterGrade(){ if (BACK.length) goBack(); else loadNext(); }
 
 async function grade(g){
   if (!cur || !revealed) return;
@@ -230,7 +511,7 @@ async function grade(g){
     body: JSON.stringify({ deck, term: cur.term, grade: g })
   })).json();
   updateCounts(d);
-  loadNext();
+  afterGrade();
 }
 
 async function graduate(){          // Enter before reveal: "I know it", never show again
@@ -240,7 +521,7 @@ async function graduate(){          // Enter before reveal: "I know it", never s
     body: JSON.stringify({ deck, term: cur.term })
   })).json();
   updateCounts(d);
-  loadNext();
+  afterGrade();
 }
 
 async function undo(){              // Left arrow: revert last card, re-show it
@@ -273,9 +554,19 @@ function updateCounts(d){
 $('#show').addEventListener('click', reveal);
 $('#know').addEventListener('click', graduate);
 $('#undo').addEventListener('click', undo);
-$('#card').addEventListener('click', e => { const b=e.target.closest('button[data-g]'); if(b) grade(b.dataset.g); });
+$('#back').addEventListener('click', goBack);
+document.addEventListener('click', e => {
+  const sp = e.target.closest('.spkbtn');
+  if (sp){ e.preventDefault(); speak(cur ? cur.term : 'hello', sp.dataset.slot || 'usM'); return; }
+});
+$('#card').addEventListener('click', e => {
+  const b = e.target.closest('button[data-g]'); if (b){ grade(b.dataset.g); return; }
+  const hit = e.target.closest('.lkhit');       if (hit){ jumpTo(hit.dataset.term); return; }
+  if (e.target.id === 'nEdit'){ noteMode(true); return; }
+  if (e.target.id === 'nView'){ noteMode(false); return; }
+});
 document.addEventListener('keydown', e => {
-  if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+  if (['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName) || e.isComposing) return;
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
   else if (e.code === 'Enter'){ e.preventDefault(); graduate(); }   // know-it: only fires when not revealed
   else if (e.code === 'ArrowLeft'){ e.preventDefault(); undo(); }
