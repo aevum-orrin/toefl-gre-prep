@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-"""Re-order a vocab deck into a study-priority sequence and tag each word with a `tier`.
+"""Re-order a vocab deck into a study sequence and tag each word with a `tier`.
 
-The learner wants three study tiers, in this order:
-  Tier 1  高频词  — frequent, exam-relevant words that are worth studying FIRST
-  Tier 2  刁钻词  — rarer / obscure / harder words, studied AFTER the high-frequency core
-  Tier 3  简单词  — trivially common basics you almost certainly already know, studied LAST
-
-Difficulty signals come straight from ECDICT (the standard approach: corpus frequency +
-CEFR-style basic-word lists — Collins star rating and Oxford 3000). Higher Collins star and
-Oxford-3000 membership mark basic words; a low frequency rank (BNC/COCA) marks common words.
+Difficulty signals come straight from ECDICT (corpus frequency + CEFR-style basic-word lists —
+Collins star rating and Oxford 3000). Higher Collins star and Oxford-3000 membership mark basic
+words; a low frequency rank (BNC/COCA) marks common words.
 
   freq  = best (smallest) available frequency rank (frq preferred, else bnc; missing = very rare)
   tier3 (simple)   : Collins>=5, OR top-2000 by frequency, OR Oxford-3000 within the top 3000
-  tier1 (high-freq): otherwise, frequency rank within the top ~14000  (frequent enough to prioritise)
+  tier1 (high-freq): otherwise, frequency rank within the top ~14000
   tier2 (rare)     : otherwise (rare / no frequency data)
 
-Within every tier, words stay ordered most-frequent-first. Enrichment is preserved (this only
-re-orders and adds a `tier` field). vocab-srs introduces new cards in exactly this file order.
+STUDY ORDER (user's call, 2026-07-11): tier 1 and tier 2 are NOT studied in separate blocks —
+grinding thousands of high-frequency words before ever meeting an obscure one is dull and
+back-loads the hard material. They are SHUFFLED into one mixed block; only tier 3, the basics
+you already know, is strictly last. TPO-attested words (`tpo_hf`) still come first inside the
+mixed block — but frequent and rare ones are interleaved there too. The shuffle is seeded so
+the order is stable across rebuilds (vocab-srs introduces new cards in file order; a reshuffle
+would scramble the part of the deck you have not reached yet).
 
 Usage:  python scripts/order_vocab.py            # both decks
         python scripts/order_vocab.py toefl      # one deck
@@ -24,6 +24,7 @@ Usage:  python scripts/order_vocab.py            # both decks
 from __future__ import annotations
 
 import json
+import random
 import sys
 from pathlib import Path
 
@@ -58,15 +59,28 @@ def order_deck(deck: str) -> None:
     words = json.loads(path.read_text(encoding="utf-8"))
     for w in words:
         w["tier"] = _tier(w)
-    # sort key: tier ascending (1 first, 3 last); within a tier, most-frequent first
-    words.sort(key=lambda w: (w["tier"], _freq(w)))
+    # Study order (user's call): ONE big block of tier1+tier2 SHUFFLED together — a session
+    # mixes frequent and obscure words instead of grinding 5000 easy-ish high-freq words
+    # before ever meeting a hard one — and the tier-3 basics strictly LAST, since they are
+    # words you almost certainly already know. Shuffle is seeded so the order is stable across
+    # rebuilds (vocab-srs introduces new cards in file order; a reshuffle would scramble what
+    # you have not reached yet). TPO-attested words keep a mild head start inside the block.
+    main = [w for w in words if w["tier"] in (1, 2)]
+    simple = [w for w in words if w["tier"] == 3]
+    rng = random.Random(20260711)
+    rng.shuffle(main)
+    main.sort(key=lambda w: not w.get("tpo_hf"))     # stable: real-exam words first, still mixed
+    simple.sort(key=_freq)
+    words = main + simple
     path.write_text(json.dumps(words, ensure_ascii=False, indent=1), encoding="utf-8")
     n1 = sum(1 for w in words if w["tier"] == 1)
     n2 = sum(1 for w in words if w["tier"] == 2)
     n3 = sum(1 for w in words if w["tier"] == 3)
-    print(f"[{deck}] {len(words)} words re-ordered  ->  T1 high-freq {n1} · T2 rare {n2} · T3 simple {n3}")
+    hf = sum(1 for w in main if w.get("tpo_hf"))
+    print(f"[{deck}] {len(words)} words re-ordered  ->  mixed block {len(main)} "
+          f"(T1 {n1} + T2 {n2}; {hf} TPO-attested first) · simple T3 last {n3}")
     print(f"        first 8: {[w['term'] for w in words[:8]]}")
-    print(f"        last  8: {[w['term'] for w in words[-8:]]}")
+    print(f"        at #{len(main)}: {[w['term'] for w in words[len(main):len(main)+5]]} (simple block starts)")
 
 
 def main() -> None:

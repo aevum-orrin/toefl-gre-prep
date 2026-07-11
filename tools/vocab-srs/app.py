@@ -58,6 +58,11 @@ GRADES = {"again": 1, "hard": 3, "good": 4, "easy": 5}
 DEFAULT_NEW_PER_DAY = 100000  # effectively unlimited: a 2-week sprint needs to blast whole deck
 
 GRADUATED_DUE = "9999-12-31"  # a card marked "known" gets a due so far out it never returns
+# A word you once graded "Again" has proven it does not stick. Enter (graduate-forever) is
+# therefore REFUSED for it later on — feeling confident today is exactly the short-term
+# illusion that makes a word vanish before it is really learned; it is graded "good" instead
+# and keeps coming back on the normal expanding schedule. Persisted per deck in <deck>.flags.json.
+_FLAGS: dict[str, dict[str, dict]] = {}
 # Spacing-effect guard: a just-graded word (esp. "Again", which is due today) must NOT pop
 # right back — at least this many other cards are shown in between (memory-research-style
 # lag; in-memory only, resets on restart which is harmless).
@@ -82,6 +87,20 @@ def _gloss(w: dict) -> str:
     return (zh[0] if zh else (en[0] if en else "")) or ""
 
 
+def _flags_path(deck: str) -> Path:
+    return DATA_DIR / f"{deck}.flags.json"
+
+
+def _flags(deck: str) -> dict[str, dict]:
+    return _FLAGS.setdefault(deck, {})
+
+
+def _flags_save(deck: str) -> None:
+    p = _flags_path(deck)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(_FLAGS.get(deck, {}), ensure_ascii=False), encoding="utf-8")
+
+
 def _load_deck(deck: str) -> None:
     path = DECK_FILES[deck]
     words = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
@@ -92,6 +111,8 @@ def _load_deck(deck: str) -> None:
         srs.add(w["term"], _gloss(w))
     srs.save()
     SRS_BY_DECK[deck] = srs
+    fp = _flags_path(deck)
+    _FLAGS[deck] = json.loads(fp.read_text(encoding="utf-8")) if fp.exists() else {}
 
 
 for _d in DECK_FILES:
@@ -154,9 +175,14 @@ def _restore(card, snap: dict) -> None:
         setattr(card, k, v)
 
 
-def _record(deck: str, term: str, before: dict, after: dict, intro_delta: int) -> None:
+def _record(deck: str, term: str, before: dict, after: dict, intro_delta: int,
+            action: str = "grade", flag_added: bool = False) -> None:
+    """Push an undoable server action. `action` tells the UI what screen to return to when
+    undone: a graded card comes back REVEALED (so you can re-grade it), a graduated one comes
+    back on its front (Enter is pressed before the reveal)."""
     _UNDO.setdefault(deck, []).append(
-        {"term": term, "before": before, "after": after, "intro_delta": intro_delta})
+        {"term": term, "before": before, "after": after, "intro_delta": intro_delta,
+         "action": action, "flag_added": flag_added})
     _REDO[deck] = []  # any fresh action invalidates the redo chain
 
 
@@ -166,7 +192,8 @@ def _payload(deck: str, term: str, stats: dict, extra: dict | None = None) -> di
     card = srs.cards[term]
     kind = "new" if not card.due else "review"
     entry = CONTENT[deck].get(term, {"term": term})
-    return {"done": False, "kind": kind, "reps": card.reps, **entry, **stats, **(extra or {})}
+    return {"done": False, "kind": kind, "reps": card.reps, **entry, **stats,
+            "sticky": bool(_flags(deck).get(term, {}).get("again")), **(extra or {})}
 
 
 def _stats(deck: str, new_per_day: int = DEFAULT_NEW_PER_DAY) -> dict:
@@ -216,7 +243,8 @@ def next_card(deck: str = "toefl", new_per_day: int = DEFAULT_NEW_PER_DAY):
         return {"done": True, **stats}
 
     entry = CONTENT[deck].get(card.term, {"term": card.term})
-    return {"done": False, "kind": kind, "reps": card.reps, **entry, **stats}
+    return {"done": False, "kind": kind, "reps": card.reps, **entry, **stats,
+            "sticky": bool(_flags(deck).get(card.term, {}).get("again"))}
 
 
 @app.post("/api/review")
@@ -231,14 +259,19 @@ def review(r: Review):
     before = _snap(card)
     was_new = not card.due
     srs.review(r.term, grade)
+    flag_added = False
     if r.grade.lower() == "again":       # "repeat in <1 day": make it due again today
         card.due = date.today().isoformat()
         card.interval = 0
+        if not _flags(r.deck).get(r.term, {}).get("again"):
+            _flags(r.deck).setdefault(r.term, {})["again"] = True   # never graduate it later
+            _flags_save(r.deck)
+            flag_added = True
     srs.save()
     if was_new:
         _intro_bump(r.deck)
     _touch(r.deck, r.term)
-    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
+    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0, "grade", flag_added)
     return {"term": card.term, "interval_days": card.interval, "due": card.due,
             "ease": round(card.ease, 2), **_stats(r.deck)}
 
@@ -250,23 +283,32 @@ class DeckTerm(BaseModel):
 
 @app.post("/api/known")
 def known(r: DeckTerm):
-    """Graduate a word the user knows cold (Enter before reveal): never show it again."""
+    """Graduate a word the user knows cold (Enter before reveal): never show it again.
+
+    EXCEPT if the word was ever graded "Again" — then graduation is refused and the press is
+    downgraded to a "good" review, so a word that has already proven slippery keeps coming
+    back. The response says so and the UI shows a note."""
     srs = SRS_BY_DECK.get(r.deck)
     if srs is None or r.term not in srs.cards:
         return {"error": "unknown deck or term"}
     card = srs.cards[r.term]
     before = _snap(card)
     was_new = not card.due
-    card.reps = max(card.reps, 8)
-    card.interval = 36500
-    card.ease = max(card.ease, 2.6)
-    card.due = GRADUATED_DUE
+    blocked = bool(_flags(r.deck).get(r.term, {}).get("again"))
+    if blocked:
+        srs.review(r.term, GRADES["good"])
+    else:
+        card.reps = max(card.reps, 8)
+        card.interval = 36500
+        card.ease = max(card.ease, 2.6)
+        card.due = GRADUATED_DUE
     srs.save()
     if was_new:
         _intro_bump(r.deck)
     _touch(r.deck, r.term)
-    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0)
-    return {"term": card.term, "known": True, **_stats(r.deck)}
+    _record(r.deck, r.term, before, _snap(card), 1 if was_new else 0, "known")
+    return {"term": card.term, "known": not blocked, "blocked": blocked,
+            "due": card.due, "interval_days": card.interval, **_stats(r.deck)}
 
 
 class DeckOnly(BaseModel):
@@ -275,7 +317,11 @@ class DeckOnly(BaseModel):
 
 @app.post("/api/undo")
 def undo(r: DeckOnly):
-    """Left arrow: revert the last graded/graduated word to its prior state and re-show it."""
+    """Undo the last SERVER action (a grade or a graduate) and hand the card back.
+
+    The UI drives the sequence: it also tracks the reveal step, which is pure UI state, so
+    pressing ← after a grade lands you back on that word's answer screen (re-grade it), and
+    pressing ← again lands you on its front. `action` tells the UI which screen to draw."""
     stack = _UNDO.get(r.deck) or []
     if not stack:
         return {"none": True, **_stats(r.deck)}
@@ -285,13 +331,20 @@ def undo(r: DeckOnly):
     srs.save()
     if rec["intro_delta"]:
         _intro_adjust(r.deck, -rec["intro_delta"])
+    if rec.get("flag_added"):                       # the "Again" flag was set by that grade
+        _flags(r.deck).pop(rec["term"], None)
+        _flags_save(r.deck)
+    buf = _RECENT.get(r.deck)
+    if buf and buf[-1] == rec["term"]:
+        buf.pop()
     _REDO.setdefault(r.deck, []).append(rec)
-    return _payload(r.deck, rec["term"], _stats(r.deck), {"undone": True})
+    return _payload(r.deck, rec["term"], _stats(r.deck),
+                    {"undone": True, "action": rec.get("action", "grade")})
 
 
 @app.post("/api/redo")
 def redo(r: DeckOnly):
-    """Right arrow: cancel the undo — re-apply the action and move on."""
+    """Cancel the undo — re-apply the action."""
     stack = _REDO.get(r.deck) or []
     if not stack:
         return {"none": True, **_stats(r.deck)}
@@ -301,8 +354,12 @@ def redo(r: DeckOnly):
     srs.save()
     if rec["intro_delta"]:
         _intro_adjust(r.deck, rec["intro_delta"])
+    if rec.get("flag_added"):
+        _flags(r.deck).setdefault(rec["term"], {})["again"] = True
+        _flags_save(r.deck)
+    _touch(r.deck, rec["term"])
     _UNDO.setdefault(r.deck, []).append(rec)
-    return {"ok": True, **_stats(r.deck)}
+    return {"ok": True, "action": rec.get("action", "grade"), **_stats(r.deck)}
 
 
 # Server-side pronunciation: free Microsoft Edge neural voices (edge-tts). The browser's own

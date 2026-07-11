@@ -109,8 +109,17 @@
   .ntabs button { font:inherit; font-size:13px; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:8px; padding:4px 10px; cursor:pointer; }
   .ntabs button.on { border-color:var(--accent); color:var(--accent); font-weight:700; }
   #nStatus { font-size:12px; color:var(--mut); margin-left:auto; }
-  #nText { width:100%; min-height:150px; font:15px/1.6 ui-monospace,Consolas,monospace; color:inherit; background:var(--bg);
-           border:1px solid var(--line); border-radius:9px; padding:10px 12px; resize:vertical; }
+  /* live split: markdown source left, rendered preview right; both grow with the content so a
+     long pasted note never hides inside a tiny scrollbox (the page scrolls, the boxes don't) */
+  .nsplit { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; }
+  .nsplit.one { grid-template-columns:1fr; }
+  .nsplit.one > .npane.hidden { display:none; }
+  @media (max-width:900px){ .nsplit { grid-template-columns:1fr; } }
+  .npane { min-width:0; }
+  .plabel { font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); margin-bottom:4px; }
+  #nText { width:100%; min-height:180px; font:15px/1.6 ui-monospace,Consolas,monospace; color:inherit; background:var(--bg);
+           border:1px solid var(--line); border-radius:9px; padding:10px 12px; resize:none; overflow:hidden; display:block; }
+  #nRender { border:1px solid var(--line); border-radius:9px; padding:10px 14px; min-height:180px; background:var(--card); }
   .mdview { font-size:15px; overflow-x:auto; }
   .mdview h1,.mdview h2,.mdview h3 { font-size:1.15em; margin:.7em 0 .3em; }
   .mdview p { margin:.4em 0; }
@@ -135,6 +144,12 @@
   .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
   .hfbadge { background:#d9480f22; color:#d9480f; }   /* word attested in real TPO tests */
   .topicbadge { background:#1c7ed622; color:#1c7ed6; }
+  .stickybadge { background:#c0392b22; color:var(--again); }   /* graded Again once: can't graduate */
+  #toast { position:fixed; left:50%; bottom:26px; transform:translate(-50%,20px); opacity:0; pointer-events:none;
+           background:var(--card); color:var(--ink); border:1px solid var(--line); border-left:4px solid var(--again);
+           border-radius:10px; padding:11px 16px; font-size:14px; max-width:560px; box-shadow:0 6px 24px rgba(0,0,0,.18);
+           transition:opacity .18s, transform .18s; z-index:50; }
+  #toast.show { opacity:1; transform:translate(-50%,0); }
   .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
   .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
   .hidden { display:none; }
@@ -393,6 +408,7 @@ function renderFront(d){
         ${t?`<span class="tierbadge ${t[0]}">${t[1]}</span>`:''}
         ${d.tpo_hf?'<span class="tierbadge hfbadge">🔥 TPO高频</span>':''}
         ${d.topic?`<span class="tierbadge topicbadge">${esc(d.topic)}</span>`:''}
+        ${d.sticky?'<span class="tierbadge stickybadge" title="你按过 Again：Enter 不会永久隐藏它">🔁 曾按 Again</span>':''}
       </div>
     </div>`;
   syncBtns();
@@ -460,6 +476,7 @@ function renderReveal(){
     tb ? `<span class="tierbadge ${tb[0]}">${tb[1]}</span>` : '',
     cur.tpo_hf ? '<span class="tierbadge hfbadge">🔥 TPO高频</span>' : '',
     cur.topic ? `<span class="tierbadge topicbadge">${esc(cur.topic)}</span>` : '',
+    cur.sticky ? '<span class="tierbadge stickybadge" title="你按过 Again：Enter 不会永久隐藏它">🔁 曾按 Again</span>' : '',
     stars(cur.collins),
     cur.oxford ? '<span class="flag">Oxford 3000</span>' : '',
     cur.frq ? `<span class="flag">freq #${cur.frq}</span>` : '',
@@ -494,11 +511,19 @@ function renderReveal(){
     <details class="notes" id="notesBox"><summary>📝 Personal Notes <span id="noteBadge"></span></summary>
       <div class="nbody">
         <div class="ntabs">
-          <button id="nEdit">✏️ 编辑</button><button id="nView">👁 预览</button>
+          <button id="nSplit">⇄ 分栏</button><button id="nEdit">✏️ 仅编辑</button><button id="nView">👁 仅预览</button>
           <span id="nStatus"></span>
         </div>
-        <textarea id="nText" placeholder="中英文、Markdown 都行；GPT 回答直接粘贴进来也 OK。自动保存。"></textarea>
-        <div id="nRender" class="mdview hidden"></div>
+        <div class="nsplit" id="nSplitBox">
+          <div class="npane" id="nPaneEdit">
+            <div class="plabel">Markdown</div>
+            <textarea id="nText" placeholder="中英文、Markdown 都行；GPT 回答直接粘贴进来也 OK。自动保存，右侧实时预览。"></textarea>
+          </div>
+          <div class="npane" id="nPaneView">
+            <div class="plabel">预览</div>
+            <div id="nRender" class="mdview"></div>
+          </div>
+        </div>
       </div>
     </details>
     <div class="meta">${verbForms(cur.exchange)}</div>`;
@@ -508,21 +533,36 @@ function renderReveal(){
 function reveal(){
   if (!cur || revealed) return;
   revealed = true;
+  act({ t:'reveal' });          // ← can step back to the front of this same word
   renderReveal();
 }
 
-/* ---------- personal notes (markdown, autosaved, stored per term for ALL decks) ---------- */
+/* ---------- personal notes (markdown, autosaved, stored per term for ALL decks) ----------
+   Live split view: you type on the left, the render updates on the right — no mode switching.
+   The textarea auto-grows to fit the whole note (a long GPT paste is fully visible without
+   dragging an inner scrollbar); layout choice persists in localStorage. */
 let noteTerm = null, noteTimer = null;
+let noteLayout = localStorage.getItem('noteLayout') || 'split';   // split | edit | view
+function autoGrow(){
+  const ta = $('#nText');
+  if (!ta || ta.offsetParent === null) return;      // hidden (collapsed <details>): scrollHeight is 0
+  ta.style.height = 'auto';
+  ta.style.height = Math.max(180, ta.scrollHeight + 2) + 'px';
+}
 function mdRender(){
   const ta = $('#nText'), out = $('#nRender');
   if (ta && out) out.innerHTML = DOMPurify.sanitize(marked.parse(ta.value || '*（空）*'));
 }
-function noteMode(edit){
-  $('#nText').classList.toggle('hidden', !edit);
-  $('#nRender').classList.toggle('hidden', edit);
-  $('#nEdit').classList.toggle('on', edit);
-  $('#nView').classList.toggle('on', !edit);
-  if (!edit) mdRender();
+function noteMode(mode){
+  noteLayout = mode;
+  localStorage.setItem('noteLayout', mode);
+  const box = $('#nSplitBox'); if (!box) return;
+  box.classList.toggle('one', mode !== 'split');
+  $('#nPaneEdit').classList.toggle('hidden', mode === 'view');
+  $('#nPaneView').classList.toggle('hidden', mode === 'edit');
+  for (const [id, m] of [['#nSplit','split'], ['#nEdit','edit'], ['#nView','view']])
+    $(id).classList.toggle('on', mode === m);
+  mdRender(); autoGrow();
 }
 async function loadNote(term){
   noteTerm = term;
@@ -530,7 +570,7 @@ async function loadNote(term){
   if (noteTerm !== term || !$('#nText')) return;   // card changed while fetching
   $('#nText').value = d.md || '';
   $('#noteBadge').textContent = d.md ? '●' : '';
-  noteMode(!d.md);                                  // existing note opens in preview
+  noteMode(noteLayout);
 }
 async function saveNote(){
   const ta = $('#nText');
@@ -545,6 +585,7 @@ async function saveNote(){
 document.addEventListener('input', e => {
   if (e.target.id === 'nText'){
     $('#nStatus').textContent = '…';
+    autoGrow(); mdRender();                       // live preview, no mode switching
     clearTimeout(noteTimer); noteTimer = setTimeout(saveNote, 800);
   } else if (e.target.id === 'lkInput'){
     clearTimeout(lkTimer); lkTimer = setTimeout(() => lookup(e.target.value), 300);
@@ -585,7 +626,16 @@ function goBack(){
   syncBtns();
 }
 
-/* ---------- grading ---------- */
+/* ---------- grading + action-level undo/redo ----------
+   ← undoes the LAST ACTION, not the last word. Revealing counts as an action, so:
+     Space then ←            -> back to the word's front (answer hidden again)
+     Space, 1, then ←        -> back to that word's answer screen, buttons live: press 2 instead
+     ← again                 -> its front;  ← again -> the previous word's answer screen…
+   Reveals are pure UI (no server call); grades/graduations are undone on the server, which
+   restores the card's schedule and hands the word back. → replays what ← took away. */
+const HIST = [], FUT = [];          // {t:'reveal'|'grade'|'known'}
+function act(entry){ HIST.push(entry); if (HIST.length > 200) HIST.shift(); FUT.length = 0; }
+
 function afterGrade(){ if (BACK.length) goBack(); else loadNext(); }
 
 async function grade(g){
@@ -594,6 +644,7 @@ async function grade(g){
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck, term: cur.term, grade: g })
   })).json();
+  act({ t:'grade' });
   updateCounts(d);
   afterGrade();
 }
@@ -604,28 +655,59 @@ async function graduate(){          // Enter before reveal: "I know it", never s
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck, term: cur.term })
   })).json();
+  act({ t:'known' });
   updateCounts(d);
+  if (d.blocked) toast(`“${d.term}” 你按过 Again — 不会永久隐藏，已按 Good 处理，之后仍会复习。`);
   afterGrade();
 }
 
-async function undo(){              // Left arrow: revert last card, re-show it
+async function undo(){
+  const last = HIST.pop();
+  if (!last) return;
+  if (last.t === 'reveal'){          // un-reveal the current word: no server state to touch
+    FUT.push(last);
+    revealed = false;
+    renderFront(cur);
+    return;
+  }
   const d = await (await fetch('/api/undo', {
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck })
   })).json();
+  if (d.none){ return; }             // server had nothing (shouldn't happen); keep UI as-is
+  FUT.push(last);
+  cur = d;
   updateCounts(d);
-  if (d.none){ return; }            // nothing to undo
-  renderFront(d);                   // show the reverted word (unrevealed) so you can re-grade
+  if (d.action === 'grade'){ revealed = true; renderReveal(); }   // re-grade it right away
+  else { revealed = false; renderFront(d); }                      // Enter fires pre-reveal
 }
 
-async function redo(){             // Right arrow: cancel the undo, move on
+async function redo(){
+  const nxt = FUT.pop();
+  if (!nxt) return;
+  if (nxt.t === 'reveal'){
+    HIST.push(nxt);
+    if (cur){ revealed = true; renderReveal(); }
+    return;
+  }
   const d = await (await fetch('/api/redo', {
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck })
   })).json();
-  updateCounts(d);
   if (d.none){ return; }
-  loadNext();
+  HIST.push(nxt);
+  updateCounts(d);
+  afterGrade();                      // the action stands again; move on to the next card
+}
+
+let toastTimer = null;
+function toast(msg){
+  let t = $('#toast');
+  if (!t){ t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 4000);
 }
 
 function updateCounts(d){
@@ -646,9 +728,15 @@ document.addEventListener('click', e => {
 $('#card').addEventListener('click', e => {
   const b = e.target.closest('button[data-g]'); if (b){ grade(b.dataset.g); return; }
   const hit = e.target.closest('.lkhit');       if (hit){ jumpTo(hit.dataset.term); return; }
-  if (e.target.id === 'nEdit'){ noteMode(true); return; }
-  if (e.target.id === 'nView'){ noteMode(false); return; }
+  if (e.target.id === 'nSplit'){ noteMode('split'); return; }
+  if (e.target.id === 'nEdit'){ noteMode('edit'); return; }
+  if (e.target.id === 'nView'){ noteMode('view'); return; }
 });
+// a collapsed <details> has zero height, so size the textarea the moment the notes box opens
+$('#card').addEventListener('toggle', e => {
+  if (e.target.id === 'notesBox' && e.target.open){ mdRender(); autoGrow(); }
+}, true);
+window.addEventListener('resize', autoGrow);
 document.addEventListener('keydown', e => {
   if (['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName) || e.isComposing) return;
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
