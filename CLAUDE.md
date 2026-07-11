@@ -110,10 +110,10 @@ Real banks live on scratch `official-real/` and auto-load into the apps (🟢真
 - **Reading: 97 real items / 976 Q** — TPO21-35 complete (45 passages, keyed, from 新东方
   bank), TPO58-74 (wave-1 + spec retries), ETS 2015 sampler. All content-filter blocks
   solved via `scripts/assemble_spec.py` line-range specs (agent never outputs passage text).
-- **Listening: 133 real items / 368 Q** — TPO58-74 (12 TPOs fully parsed: 57 items/262 Q,
-  transcripts via assemble_spec + official keys), 2026 official tests, 题型 drills (28 items),
-  ETS sampler. Plus 90 keyless TPO40-54 transcripts (`transcripts_tpo*.json`, loader skips
-  question-less items — candidates for AI question-gen, questions would be source:"ai").
+- **Listening: 223 real items / 878 Q** — TPO58-74 (12 TPOs: 57 items/262 Q, official keys),
+  TPO40-54 real transcripts × AI-generated questions (90 items/510 Q, title-tagged
+  「AI配题·原文真题」, `tpo40_54_with_aiq.json`), 2026 official tests, 题型 drills (28),
+  ETS sampler. Raw keyless transcripts stay in `transcripts_tpo*.json` (loader ignores).
 - **Writing: discussion.json = 113 real-prompt items** (111 real past prompts + AI-generated
   student posts, `note` marks the hybrid; posts format = [{name,text}]). Plus on scratch:
   `model_essays.json` (7), `ets_scored_samples.json` (4 ETS-scored essays for grader
