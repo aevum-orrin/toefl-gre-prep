@@ -10,22 +10,27 @@ const tpos = A.tpos                // e.g. ['TPO54','TPO55',...]
 const txtDir = A.txtDir            // .../official-real/tpo_txt
 const outDir = A.outDir            // .../official-real/<section>
 
-function readingPrompt(tpo) {
+function readingPrompt(tpo, p) {
+  const zh = p === 1 ? '第一篇' : p === 2 ? '第二篇' : '第三篇'
   return `You are parsing a REAL retired TOEFL test (TPO) into structured JSON. Read these two files:
-${txtDir}/${tpo}/reading_q.txt   (3 reading passages, each followed by numbered questions with A/B/C/D options)
-${txtDir}/${tpo}/reading_a.txt   (answer keys, one line per passage like "第一篇：DCBCA BDBB(BCD)" — the letters are the correct options in order; a trailing "(XYZ)" is a multi-select summary question)
+${txtDir}/${tpo}/reading_q.txt   (3 reading passages; each has a title, the passage, then numbered questions "1." "2." ... each with options "A." "B." "C." "D.")
+${txtDir}/${tpo}/reading_a.txt   (answer keys, one line per passage like "${zh}：DCBCA BDBB(BCD)")
 
-Produce a JSON array with ONE object per reading passage (usually 3), keys EXACTLY:
-- "id": "${tpo.toLowerCase()}_r_1" / "_r_2" / "_r_3"
+Focus ONLY on reading passage #${p} (the ${p}${p === 1 ? 'st' : p === 2 ? 'nd' : 'rd'} passage in reading_q.txt) and its answer-key line "${zh}：...".
+
+Output a SINGLE JSON object (not an array), keys EXACTLY:
+- "id": "${tpo.toLowerCase()}_r_${p}"
 - "kind": "academic_passage"
-- "title": the passage title (verbatim)
-- "passage": the full passage text, VERBATIM English (strip any Chinese watermark lines like 微信号/公众号)
-- "questions": for each numbered single-answer question, {"q": question text, "options": [the 4 option strings A,B,C,D in order], "answer": 0-based index from the answer key letter (第一篇 = passage 1's key, 第二篇 = passage 2, 第三篇 = passage 3; A→0 B→1 C→2 D→3), "explanation": ""}. SKIP the final multi-select summary question (the "(XYZ)" one) — do not include it.
+- "title": the passage's title, verbatim
+- "passage": the FULL passage text of passage #${p}, VERBATIM English (fix words that got glued together by PDF extraction by re-inserting the obvious spaces; strip Chinese watermark lines like 微信号/公众号)
+- "questions": an array — one entry PER numbered question of passage #${p}. Each = {"q": full question text, "options": [the 4 option strings in A,B,C,D order, verbatim], "answer": the 0-based index from the "${zh}" key (its letters map to questions in order: A→0 B→1 C→2 D→3), "explanation": ""}. SKIP the final multi-select summary question (the one whose key is in parentheses like "(BCD)").
 - "source": "real"
 
-Only include questions whose answer letter you can read from the key. Keep passage/question/option text verbatim. Write ONLY the JSON array (valid UTF-8, no fences) to:
-${outDir}/tpo_${tpo}.json
-Then reply with ONLY the integer count of passages written. Do not paste the JSON.`
+CRITICAL: the "questions" array MUST be populated (a TOEFL passage has ~9-10 questions). If you output zero questions you have failed — re-read the file and extract them.
+
+Write ONLY that JSON object (valid UTF-8, no fences) to:
+${outDir}/tpo_${tpo}_p${p}.json
+Then reply with ONLY the integer number of questions written. Do not paste the JSON.`
 }
 
 function listeningPrompt(tpo) {
@@ -47,12 +52,19 @@ ${outDir}/tpo_${tpo}.json
 Then reply with ONLY the integer count of items written. Do not paste the JSON.`
 }
 
-const results = await parallel(tpos.map(tpo => () => {
-  const prompt = section === 'reading' ? readingPrompt(tpo) : listeningPrompt(tpo)
-  return agent(prompt, { label: `${section} ${tpo}`, phase: 'Parse', agentType: 'general-purpose' })
-    .then(r => ({ tpo, r })).catch(() => ({ tpo, r: null }))
+let tasks
+if (section === 'reading') {
+  tasks = tpos.flatMap(tpo => [1, 2, 3].map(p => ({ tpo, p, label: `reading ${tpo} p${p}` })))
+} else {
+  tasks = tpos.map(tpo => ({ tpo, label: `listening ${tpo}` }))
+}
+
+const results = await parallel(tasks.map(t => () => {
+  const prompt = section === 'reading' ? readingPrompt(t.tpo, t.p) : listeningPrompt(t.tpo)
+  return agent(prompt, { label: t.label, phase: 'Parse', agentType: 'general-purpose' })
+    .then(r => ({ t, r })).catch(() => ({ t, r: null }))
 }))
 
 const ok = results.filter(x => x && x.r != null).length
-log(`TPO ${section} parse: ${ok}/${tpos.length} done`)
-return { section, ok, total: tpos.length }
+log(`TPO ${section} parse: ${ok}/${tasks.length} tasks done`)
+return { section, ok, total: tasks.length }

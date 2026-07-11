@@ -54,6 +54,8 @@ def _load(section: str) -> list[dict]:
                 loaded = json.loads(f.read_text(encoding="utf-8"))
             except (json.JSONDecodeError, ValueError):
                 continue
+            if isinstance(loaded, dict):        # a single-item file (e.g. one TPO passage)
+                loaded = [loaded]
             for it in loaded:
                 it.setdefault("source", "ai")
                 # keep only real multiple-choice questions (>=2 options); drop fill-in-the-
