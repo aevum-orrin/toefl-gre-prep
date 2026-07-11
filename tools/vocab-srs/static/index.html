@@ -324,7 +324,7 @@ function autoSay(term){
 function fillVoicePanel(){
   refreshVoices();
   const en = VOICES.filter(v => v.lang.toLowerCase().startsWith('en'));
-  document.querySelectorAll('.ttspanel select').forEach(sel => {
+  document.querySelectorAll('.ttspanel select[data-slot]').forEach(sel => {
     const slot = sel.dataset.slot, pick = slotVoice(slot);
     sel.innerHTML = en.map(v =>
       `<option ${pick && v.name===pick.name ? 'selected':''}>${esc(v.name)}</option>`).join('') || '<option>(no voices)</option>';
@@ -337,7 +337,7 @@ if ('speechSynthesis' in window){
   fillVoicePanel();
   speechSynthesis.addEventListener('voiceschanged', fillVoicePanel);
 }
-document.querySelectorAll('.ttspanel select').forEach(sel => sel.addEventListener('change', () => {
+document.querySelectorAll('.ttspanel select[data-slot]').forEach(sel => sel.addEventListener('change', () => {
   voiceCfg[sel.dataset.slot] = sel.value;
   localStorage.setItem('ttsVoices', JSON.stringify(voiceCfg));
 }));
