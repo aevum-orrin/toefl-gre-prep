@@ -234,13 +234,16 @@ function slotVoice(slot){
       || pool.find(v => !anti.some(h => v.name.toLowerCase().includes(h)))
       || pool[0];
 }
-function speak(text, slot='usM'){
+function speak(text, slot='usM', attempt=0){
   if (!text) return;
   if (!('speechSynthesis' in window)){ ttsStatus('⚠️ 此浏览器不支持 speechSynthesis', true); return; }
   refreshVoices();
-  speechSynthesis.cancel();
   clearTimeout(speakTimer);
-  // Chrome swallows a speak() issued in the same tick as cancel() — defer a beat
+  const synth = speechSynthesis;
+  // macOS Chrome drops utterances queued too soon after cancel(): only cancel when
+  // something is actually playing, and wait ~250ms before the next speak()
+  const busy = synth.speaking || synth.pending;
+  if (busy) synth.cancel();
   speakTimer = setTimeout(() => {
     const u = new SpeechSynthesisUtterance(text);
     const v = slotVoice(slot);
@@ -248,14 +251,22 @@ function speak(text, slot='usM'){
     u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
     u.rate = 0.95;                     // relaxed, not newsreader-formal
     u.onstart = () => ttsStatus('▶ ' + (v ? v.name : 'default voice'));
-    u.onerror = e => ttsStatus('⚠️ TTS error: ' + (e.error || 'unknown')
-      + (e.error === 'not-allowed' ? ' — 先点击页面任意处，再切词/按喇叭' : ''), true);
+    u.onerror = e => {
+      if (lastUtter !== u) return;     // superseded by a newer speak() — expected, ignore
+      const kind = e.error || 'unknown';
+      if ((kind === 'canceled' || kind === 'interrupted') && attempt < 2){
+        speak(text, slot, attempt + 1);          // swallowed by the Chrome bug — retry
+        return;
+      }
+      ttsStatus('⚠️ TTS error: ' + kind
+        + (kind === 'not-allowed' ? ' — 先点击页面任意处，再切词/按喇叭' : ''), true);
+    };
     lastUtter = u;
-    speechSynthesis.resume();          // un-stick a synth left in paused state (Chrome quirk)
-    speechSynthesis.speak(u);
+    synth.resume();                    // un-stick a synth left in paused state (Chrome quirk)
+    synth.speak(u);
     if (!VOICES.length)
       ttsStatus('⚠️ 此浏览器 0 个语音包 — VNC/Linux 桌面常见，请在笔记本本地浏览器打开', true);
-  }, 60);
+  }, busy ? 250 : (attempt ? 300 : 0));
 }
 /* browsers block audio before the first user gesture: queue the very first card */
 let interacted = false, pendingSay = null;
