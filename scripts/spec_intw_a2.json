@@ -1,0 +1,41 @@
+{
+ "src": "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real/tpo_txt/_materials/批量下载-写作课程-讲义等5个文件/02.托福强化课程.txt",
+ "out": "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real/writing/integrated_sets_a2.json",
+ "item": [
+  {
+   "id": "intw_a_5",
+   "topic": "Commercial Fossil Trade",
+   "reading": {"__lines": [[1495, 1501], [1507, 1511], [1518, 1524], [1530, 1538]]},
+   "lecture": {"__lines": [[1558, 1578]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_6",
+   "topic": "Salvage Logging",
+   "reading": {"__lines": [[1639, 1659]]},
+   "lecture": {"__lines": [[1670, 1690]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_7",
+   "topic": "Stopping the Cane Toad",
+   "reading": {"__lines": [[1730, 1752]]},
+   "lecture": {"__lines": [[1763, 1785]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_8",
+   "topic": "UK Archaeology Guidelines",
+   "reading": {"__lines": [[1819, 1841]]},
+   "lecture": {"__lines": [[1852, 1875]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_9",
+   "topic": "US Bird Population Decline",
+   "reading": {"__lines": [[1922, 1943]]},
+   "lecture": {"__lines": [[1954, 1976]]},
+   "source": "real"
+  }
+ ]
+}

@@ -110,8 +110,10 @@ Real banks live on scratch `official-real/` and auto-load into the apps (🟢真
 - **Reading: 97 real items / 976 Q** — TPO21-35 complete (45 passages, keyed, from 新东方
   bank), TPO58-74 (wave-1 + spec retries), ETS 2015 sampler. All content-filter blocks
   solved via `scripts/assemble_spec.py` line-range specs (agent never outputs passage text).
-- **Listening: 76 real items / 106 Q** — 2026 official tests, 题型 drills (28 items from
-  新东方 8-题型 handouts, keyed by trailing-period), ETS sampler (2 items/11 Q).
+- **Listening: 133 real items / 368 Q** — TPO58-74 (12 TPOs fully parsed: 57 items/262 Q,
+  transcripts via assemble_spec + official keys), 2026 official tests, 题型 drills (28 items),
+  ETS sampler. Plus 90 keyless TPO40-54 transcripts (`transcripts_tpo*.json`, loader skips
+  question-less items — candidates for AI question-gen, questions would be source:"ai").
 - **Writing: discussion.json = 113 real-prompt items** (111 real past prompts + AI-generated
   student posts, `note` marks the hybrid; posts format = [{name,text}]). Plus on scratch:
   `model_essays.json` (7), `ets_scored_samples.json` (4 ETS-scored essays for grader
@@ -120,10 +122,14 @@ Real banks live on scratch `official-real/` and auto-load into the apps (🟢真
   `scripts/fold_speaking_prompts.py` from 核桃50/60题 + 88 TPO + 27 dated-2018; answers[]
   carries model answers/outlines). Raw files `real_independent_prompts_{a,b}.json`.
 - Apps' loaders keep only single-answer MC (int answer; "Select TWO" list-answers dropped).
-- STILL PENDING (survey `_materials/_survey_full.json` has details): TPO40-54 listening
-  transcripts (~85, no keys), TPO45/46 listening stems (no keys), 48 Task-5 conv+prompt
-  items, TPO1-34 Task3/4/6 gold outlines, 17 integrated-writing sets, 阅读题型专项 81 Q
-  (keys recoverable), TPO54-75 listening parse (audio MP3s exist), GRE enrichment.
+- Speaking/writing REFERENCE data on scratch (not app-loaded yet): `speaking/task5_conversations_{1,2}.json`
+  (34 real conv+ETS-prompt items), `speaking/task3_gold_outlines.json` (34) +
+  `task46_gold_outlines.json` (68) — gold outlines for AI-grader few-shots;
+  `writing/integrated_sets_{a1,a2,b1,b2}.json` (17 full reading+lecture sets).
+- STILL PENDING: AI question-gen over the 90 keyless TPO40-54 transcripts; TPO45/46 stems
+  (no keys); 阅读题型专项 81 Q (keys only recoverable for TPO21-35 overlap); TPO54/55/56/57/
+  67/75 listening (missing q or a text); wiring ~690 real MP3s into listening playback;
+  GRE vocab enrichment.
 
 ## Conventions
 - Commits: author `aevum-orrin`, `Co-Authored-By: Claude`, noreply email. Push when "差不多了".

@@ -1,0 +1,34 @@
+{
+ "src": "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real/tpo_txt/_materials/批量下载-写作课程-讲义等5个文件/01.托福基础课程.txt",
+ "out": "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache/official-real/writing/integrated_sets_a1.json",
+ "item": [
+  {
+   "id": "intw_a_1",
+   "topic": "Rembrandt Portrait Attribution",
+   "reading": {"__lines": [[1641, 1660]]},
+   "lecture": {"__lines": [[1672, 1691]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_2",
+   "topic": "Were Dinosaurs Endotherms",
+   "reading": {"__lines": [[1708, 1732]]},
+   "lecture": {"__lines": [[1746, 1769]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_3",
+   "topic": "Communal Online Encyclopedias",
+   "reading": {"__lines": [[1861, 1885]]},
+   "lecture": {"__lines": [[1896, 1919]]},
+   "source": "real"
+  },
+  {
+   "id": "intw_a_4",
+   "topic": "Eco-Certification of US Wood",
+   "reading": {"__lines": [[1966, 1988]]},
+   "lecture": {"__lines": [[2000, 2021]]},
+   "source": "real"
+  }
+ ]
+}
