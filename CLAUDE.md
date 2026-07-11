@@ -20,7 +20,13 @@ Everything heavy, private, or growing lives on **scratch (Neda's owned space)** 
   speaking/ writing/ pdf/ tpo/`. **User drops TPO downloads into `official-real/tpo/`.**
 - `user-data/` = `$PREP_DATA_DIR` — ALL user records: `srs/` (SM-2 progress), `recordings/`,
   `progress.jsonl`, future `essays/`.
-- `enrich/ rl_gen/ gen_banks/` — vocab-enrichment cache + AI-gen staging.
+- `enrich/ enrich_batches/ enrich_out/ rl_gen/ gen_banks/` — vocab-enrichment cache + Opus
+  bulk-enrich batch I/O + AI-gen staging.
+- `official-real/raw/` — user-uploaded real-material archives, EXTRACTED (TPO54-75, 机经,
+  听/读/写/词/口语资料; PDFs + MP3 audio). `official-real/tpo_txt/<TPO>/` — TPO PDFs/DOCX
+  converted to text (reading_q/reading_a/listening_q/listening_transcript/listening_a…) for
+  Opus parsing into `official-real/reading|listening/tpo_*.json` (source:"real"). User uploads
+  more archives to `official-real/`; unzip (`unzip -O GBK`) / unrar (`unar`), then delete the archive.
 
 `env.sh` exports `LANG_PREP_CACHE`, `REAL_DATA_ROOT`, `PREP_DATA_DIR`; apps read them (fall
 back to `home/data/` only if unset). **Change `LANG_PREP_CACHE` once to relocate everything.**

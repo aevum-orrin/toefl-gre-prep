@@ -13,8 +13,12 @@ const outDir = A.outDir
 
 function pad(n) { return String(n).padStart(3, '0') }
 
-const idxs = []
-for (let i = start; i < end; i++) idxs.push(i)
+let idxs = []
+if (Array.isArray(A.only) && A.only.length) {
+  idxs = A.only.slice()          // explicit list of batch indices (e.g. resume the missing ones)
+} else {
+  for (let i = start; i < end; i++) idxs.push(i)
+}
 
 const results = await parallel(idxs.map(i => () => {
   const inPath = `${inDir}/batch_${pad(i)}.json`
