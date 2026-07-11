@@ -139,6 +139,7 @@
   button.ghostbtn { font:inherit; border:1px solid var(--line); border-radius:12px; padding:15px 16px; font-weight:700; font-size:15px; cursor:pointer; background:var(--card); color:var(--ink); }
   button.ghostbtn:hover { border-color:var(--accent); }
   button.ghostbtn .badge, button.primarybtn .badge { background:rgba(127,127,127,.25); }
+  button.ghostbtn:disabled { opacity:.4; cursor:default; }
   #back { border-color:var(--accent); color:var(--accent); }
   .tierbadge { font-size:11px; padding:2px 8px; border-radius:9px; font-weight:700; }
   .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
@@ -205,7 +206,8 @@
   <div class="actionrow">
     <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
     <button class="ghostbtn" id="know" title="I know this cold — never show it again">I know it ✓ <span class="badge">Enter</span></button>
-    <button class="ghostbtn" id="undo" title="Undo last card (revert to first-seen)">↩ Undo <span class="badge">←</span></button>
+    <button class="ghostbtn" id="undo" title="撤销上一个动作（Ctrl+Z 那种）：揭晓、评分、Enter 都算一个动作">↩ Undo <span class="badge">←</span></button>
+    <button class="ghostbtn hidden" id="redo" title="重做被撤销的动作">↪ Redo <span class="badge">→</span></button>
     <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
   </div>
   <div class="kbd"><b>Enter</b> = I know it, never show again · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
@@ -369,7 +371,7 @@ async function boot(){
   deck = decks[0]?.deck || "toefl";
   loadNext();
 }
-$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; syncBtns(); loadNext(); });
+$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; loadNext(); });
 $('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
 
 const TIERS = {1:['tier1','high-freq'],2:['tier2','tricky'],3:['tier3','simple']};
@@ -394,6 +396,9 @@ function syncBtns(){
   $('#show').classList.toggle('hidden', !front);
   $('#know').classList.toggle('hidden', !front);
   $('#back').classList.toggle('hidden', !BACK.length);
+  const h = HISTS[deck] || [], f = FUTS[deck] || [];
+  $('#undo').disabled = !h.length;
+  $('#redo').classList.toggle('hidden', !f.length);   // only shown when there IS something to redo
 }
 function renderFront(d){
   revealed = false; cur = d;
@@ -533,7 +538,7 @@ function renderReveal(){
 function reveal(){
   if (!cur || revealed) return;
   revealed = true;
-  act({ t:'reveal' });          // ← can step back to the front of this same word
+  act({ t:'reveal', term: cur.term });   // ← steps back to the front of this same word
   renderReveal();
 }
 
@@ -633,69 +638,90 @@ function goBack(){
      ← again                 -> its front;  ← again -> the previous word's answer screen…
    Reveals are pure UI (no server call); grades/graduations are undone on the server, which
    restores the card's schedule and hands the word back. → replays what ← took away. */
-const HIST = [], FUT = [];          // {t:'reveal'|'grade'|'known'}
-function act(entry){ HIST.push(entry); if (HIST.length > 200) HIST.shift(); FUT.length = 0; }
+// Ctrl+Z semantics. Stacks are PER DECK, matching the server's own per-deck undo stacks —
+// a global stack would make ← after a deck switch undo the wrong deck's action.
+const HISTS = {}, FUTS = {};        // deck -> [{t:'reveal'|'grade'|'known', term}]
+const hist = () => HISTS[deck] || (HISTS[deck] = []);
+const fut  = () => FUTS[deck]  || (FUTS[deck]  = []);
+function act(entry){
+  const h = hist();
+  h.push(entry);
+  if (h.length > 200) h.shift();
+  fut().length = 0;                 // a fresh action invalidates the redo chain
+  syncBtns();
+}
 
 function afterGrade(){ if (BACK.length) goBack(); else loadNext(); }
 
 async function grade(g){
   if (!cur || !revealed) return;
+  const term = cur.term;
   const d = await (await fetch('/api/review', {
     method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({ deck, term: cur.term, grade: g })
+    body: JSON.stringify({ deck, term, grade: g })
   })).json();
-  act({ t:'grade' });
+  act({ t:'grade', term });
   updateCounts(d);
   afterGrade();
 }
 
 async function graduate(){          // Enter before reveal: "I know it", never show again
   if (!cur || revealed) return;
+  const term = cur.term;
   const d = await (await fetch('/api/known', {
     method:'POST', headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({ deck, term: cur.term })
+    body: JSON.stringify({ deck, term })
   })).json();
-  act({ t:'known' });
+  act({ t:'known', term });
   updateCounts(d);
   if (d.blocked) toast(`“${d.term}” 你按过 Again — 不会永久隐藏，已按 Good 处理，之后仍会复习。`);
   afterGrade();
 }
 
 async function undo(){
-  const last = HIST.pop();
-  if (!last) return;
+  const h = hist();
+  // a stale reveal (its word is no longer on screen — you switched decks or jumped from the
+  // search box in between) has nothing to undo: drop it and keep walking back
+  while (h.length && h[h.length - 1].t === 'reveal' && (!cur || h[h.length - 1].term !== cur.term))
+    h.pop();
+  const last = h.pop();
+  if (!last){ syncBtns(); return; }
   if (last.t === 'reveal'){          // un-reveal the current word: no server state to touch
-    FUT.push(last);
+    fut().push(last);
     revealed = false;
     renderFront(cur);
+    syncBtns();
     return;
   }
   const d = await (await fetch('/api/undo', {
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck })
   })).json();
-  if (d.none){ return; }             // server had nothing (shouldn't happen); keep UI as-is
-  FUT.push(last);
+  if (d.none){ syncBtns(); return; } // server had nothing; keep the UI as it is
+  fut().push(last);
   cur = d;
   updateCounts(d);
   if (d.action === 'grade'){ revealed = true; renderReveal(); }   // re-grade it right away
   else { revealed = false; renderFront(d); }                      // Enter fires pre-reveal
+  syncBtns();
 }
 
 async function redo(){
-  const nxt = FUT.pop();
-  if (!nxt) return;
+  const f = fut();
+  const nxt = f.pop();
+  if (!nxt){ syncBtns(); return; }
   if (nxt.t === 'reveal'){
-    HIST.push(nxt);
+    hist().push(nxt);
     if (cur){ revealed = true; renderReveal(); }
+    syncBtns();
     return;
   }
   const d = await (await fetch('/api/redo', {
     method:'POST', headers:{'Content-Type':'application/json'},
     body: JSON.stringify({ deck })
   })).json();
-  if (d.none){ return; }
-  HIST.push(nxt);
+  if (d.none){ syncBtns(); return; }
+  hist().push(nxt);
   updateCounts(d);
   afterGrade();                      // the action stands again; move on to the next card
 }
@@ -720,6 +746,7 @@ function updateCounts(d){
 $('#show').addEventListener('click', reveal);
 $('#know').addEventListener('click', graduate);
 $('#undo').addEventListener('click', undo);
+$('#redo').addEventListener('click', redo);
 $('#back').addEventListener('click', goBack);
 document.addEventListener('click', e => {
   const sp = e.target.closest('.spkbtn');
