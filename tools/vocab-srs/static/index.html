@@ -228,6 +228,24 @@
   </div>
   <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo · <b>/</b> 词汇检索（任何页面可用）</div>
 </main>
+
+<!-- Global floating lookup: present on EVERY screen (front, reveal, done).
+     MUST stay above the script below — it wires these nodes up at parse time. -->
+<div class="lkfab" id="lkFab">
+  <button id="lkOpenBtn" title="在当前词库里检索任意单词（/ 或 Ctrl/⌘+K）">🔎 词汇检索 <span class="badge">/</span></button>
+</div>
+<div class="lkpanel hidden" id="lkPanel">
+  <div class="lkhead">
+    <input id="lkInput" placeholder="≥2 个字母，如 sub → subsequent…" autocomplete="off" spellcheck="false">
+    <button class="lkx" id="lkClose" title="关闭 (Esc)">✕</button>
+  </div>
+  <div id="lkResults"></div>
+  <div class="lkfoot">
+    <button id="lkBack" class="hidden">⬅ 返回检索前</button>
+    <span>↑↓ 选择 · Enter 打开 · Esc 关闭</span>
+  </div>
+</div>
+
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
@@ -841,22 +859,6 @@ document.addEventListener('keydown', e => {
 });
 boot();
 </script>
-
-<!-- global floating lookup: present on EVERY screen (front, reveal, done) -->
-<div class="lkfab" id="lkFab">
-  <button id="lkOpenBtn" title="在当前词库里检索任意单词（/ 或 Ctrl/⌘+K）">🔎 词汇检索 <span class="badge">/</span></button>
-</div>
-<div class="lkpanel hidden" id="lkPanel">
-  <div class="lkhead">
-    <input id="lkInput" placeholder="≥2 个字母，如 sub → subsequent…" autocomplete="off" spellcheck="false">
-    <button class="lkx" id="lkClose" title="关闭 (Esc)">✕</button>
-  </div>
-  <div id="lkResults"></div>
-  <div class="lkfoot">
-    <button id="lkBack" class="hidden">⬅ 返回检索前</button>
-    <span>↑↓ 选择 · Enter 打开 · Esc 关闭</span>
-  </div>
-</div>
 
 <!-- global floating timer -->
 <div class="timer" id="timerWidget">
