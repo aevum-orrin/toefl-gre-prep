@@ -84,6 +84,8 @@ ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab`
 - **Study order** (`order_vocab.py`, user's call): tier1+tier2 are SHUFFLED into one mixed
   block (seeded, stable across rebuilds) — no more "all high-freq, then all rare"; TPO-attested
   words (`tpo_hf`, 2235 of them via `tpo_hf_vocab.py`) come first inside it; tier-3 basics last.
+- vocab-srs keys: `Space` reveal · `1/2/3` grade · **`4` = 朗读（美式男声 Andrew，任何单词页面都能按，
+  正面/背面/检索跳转页都行；笔记框内打字不触发）** · `Enter` know-it · `←`/`→` undo/redo · `/` 检索.
 - vocab-srs: new-card cap UNLIMITED; Space→reveal→1/2/3 (Again/Hard/Good); Enter (pre-reveal)
   = graduate-forever, **BUT refused for any word ever graded "Again"** (kept as a Good review
   instead; flag persists in `$PREP_DATA_DIR/srs/<deck>.flags.json`, UI shows 🔁 + a toast).

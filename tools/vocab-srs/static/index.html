@@ -226,7 +226,7 @@
     <button class="ghostbtn hidden" id="redo" title="重做被撤销的动作">↪ Redo <span class="badge">→</span></button>
     <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
   </div>
-  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo · <b>/</b> 词汇检索（任何页面可用）</div>
+  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>4</b> 🔊 朗读（美式男声，任何时候都能按） · <b>←</b> undo · <b>→</b> redo · <b>/</b> 词汇检索（任何页面可用）</div>
 </main>
 
 <!-- Global floating lookup: present on EVERY screen (front, reveal, done).
@@ -851,6 +851,10 @@ document.addEventListener('keydown', e => {
   if (e.key === '/' && !e.ctrlKey && !e.metaKey){ e.preventDefault(); lkOpen(true); return; }
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){ e.preventDefault(); lkOpen(true); return; }
   if (e.key === 'Escape'){ lkOpen(false); return; }
+  // 4 = pronounce, in the default US male voice. Works on ANY word screen — front side or
+  // revealed, ordinary card or one opened from the lookup — so it never collides with 1/2/3
+  // (which only grade after a reveal).
+  if (e.key === '4'){ e.preventDefault(); if (cur) speak(cur.term, 'usM'); return; }
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
   else if (e.code === 'Enter'){ e.preventDefault(); graduate(); }   // know-it: only fires when not revealed
   else if (e.code === 'ArrowLeft'){ e.preventDefault(); undo(); }

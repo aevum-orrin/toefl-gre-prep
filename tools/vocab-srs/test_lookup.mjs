@@ -47,14 +47,22 @@ const $ = sel => {
 };
 const hidden = sel => $(sel).classList.contains('hidden');
 
+const docHandlers = {};                              // real dispatch, so key bindings are testable
 const document = {
   querySelector: $,
   querySelectorAll: sel =>
     sel.includes('[data-slot]') || sel === '.ttspanel select'
       ? ['usM', 'usF', 'ukM', 'ukF'].map(s => { const e = mkEl(); e.dataset.slot = s; return e; })
       : [],
-  addEventListener() {}, createElement: () => mkEl(), body: { appendChild() {} },
+  addEventListener: (t, fn) => (docHandlers[t] = (docHandlers[t] || []).concat(fn)),
+  createElement: () => mkEl(), body: { appendChild() {} },
 };
+const press = (key, tagName = 'BODY') => {
+  const ev = { key, code: key === ' ' ? 'Space' : 'Key' + key.toUpperCase(),
+               target: { tagName }, preventDefault() {}, ctrlKey: false, metaKey: false, isComposing: false };
+  for (const fn of docHandlers.keydown || []) fn(ev);
+};
+const FETCHED = [];                                  // every URL the app requests
 const speechSynthesis = { getVoices: () => [], addEventListener() {}, cancel() {}, speak() {}, paused: false };
 const ctx = vm.createContext({
   document, window: { speechSynthesis, addEventListener() {} }, speechSynthesis,
@@ -63,7 +71,7 @@ const ctx = vm.createContext({
   Audio: function () { return { play: async () => {}, pause() {} }; },
   URL: { createObjectURL: () => 'blob:x' }, Map, Set, Math, JSON, console,
   SpeechSynthesisUtterance: function () {}, setTimeout, clearTimeout, encodeURIComponent,
-  fetch: (u, o) => fetch(u.startsWith('http') ? u : BASE + u, o),
+  fetch: (u, o) => { FETCHED.push(u); return fetch(u.startsWith('http') ? u : BASE + u, o); },
 });
 
 vm.runInContext(SRC, ctx);      // throws if the script wires up a not-yet-parsed node
@@ -121,4 +129,39 @@ ok(run('BACK.length') === 1, 'self-lookup pushed no redundant back entry');
 run('goBack()');
 ok(run('BACK.length') === 0 && run('revealed') === false, 'back returns to its front, stack empty');
 
-console.log('\nALL LOOKUP TESTS PASSED');
+console.log('\n6. key "4" pronounces the current word (US male) on ANY word screen');
+const tts = () => FETCHED.filter(u => u.startsWith('/api/tts'));
+// the app caches each word's audio for the session, so drop that cache before every probe —
+// otherwise a replay is served from memory and never touches the server
+const probe4 = async (tag = 'BODY') => {
+  run('AUDIO_CACHE.clear()');
+  FETCHED.length = 0;
+  press('4', tag);
+  await wait(900);
+  return tts();
+};
+press('x');                                    // first gesture: flushes the queued auto-pronounce
+await wait(300);
+ok(run('revealed') === false, `still on the front of "${run('cur.term')}" (unrevealed)`);
+
+let t = await probe4();
+ok(t.length === 1 && t[0].includes('slot=usM') && t[0].includes(encodeURIComponent(w0)),
+   `pressed 4 on the FRONT side → ${t[0]}`);
+
+run('reveal()');
+t = await probe4();
+ok(t.length === 1 && t[0].includes('slot=usM') && t[0].includes(encodeURIComponent(w0)),
+   'pressed 4 on the REVEALED side → same US-male request');
+
+await run(`jumpTo("${hits[0]}")`);              // a page opened from the lookup
+t = await probe4();
+ok(t.length === 1 && t[0].includes(encodeURIComponent(hits[0])),
+   `pressed 4 on a looked-up word → reads "${hits[0]}", not the card behind it`);
+
+t = await probe4('TEXTAREA');                  // typing "4" inside the notes box
+ok(t.length === 0, 'typing 4 in the notes textarea does NOT fire the shortcut');
+run('goBack()');
+// NOTE: this test never presses 1/2/3 — those grade for real. Point it at a throwaway
+// PREP_DATA_DIR server (port 8097), never at the live 8003 you study on.
+
+console.log('\nALL LOOKUP + SHORTCUT TESTS PASSED');

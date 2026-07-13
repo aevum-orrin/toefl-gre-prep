@@ -15,7 +15,9 @@ uvicorn app:app --reload --port 8003   # http://localhost:8003
   - **Again (1)** didn't recall → comes back later **today**, but only after ≥15 other cards
     (spacing-effect guard — a lapsed word never pops right back)
   - **Hard (2)** / **Good (3)** → recalled; the interval grows per SM-2
-- Keyboard: `Space` reveal · `1/2/3` grade · `Enter` know-it · `←` undo · `→` redo.
+- Keyboard: `Space` reveal · `1/2/3` grade · `4` 🔊 pronounce (US male, works on **any** word
+  screen — front or revealed, ordinary card or one opened from the lookup) · `Enter` know-it ·
+  `←` undo · `→` redo · `/` lookup.
 
 ## Scheduling algorithm (SM-2 + proficiency)
 Only a word confirmed on FIRST sight may disappear immediately; everything else must earn it:
