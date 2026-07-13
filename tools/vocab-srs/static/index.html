@@ -88,18 +88,32 @@
   .sbody .col { font-size:14px; padding:3px 9px; border-radius:8px; background:var(--chip); }
   .sbody .soon { color:var(--mut); font-size:14px; font-style:italic; }
 
-  /* in-deck lookup (词汇检索) */
-  details.lookup { border:1px solid var(--line); border-radius:10px; margin:14px 0 4px; }
-  details.lookup > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:14px; color:var(--mut); font-weight:700; }
-  details.lookup > summary::-webkit-details-marker { display:none; }
-  .lkbody { padding:0 14px 12px; }
-  .lkbody input { width:100%; font:inherit; color:inherit; background:var(--bg); border:1px solid var(--line); border-radius:9px; padding:9px 12px; }
-  #lkResults { max-height:300px; overflow:auto; margin-top:8px; }
+  /* 词汇检索 — a GLOBAL floating widget (like the timer): usable on every screen, including
+     a word's front side before Space and the "nothing due" screen. */
+  .lkfab { position:fixed; left:16px; bottom:16px; z-index:1000; }
+  .lkfab button { font:inherit; font-size:14px; font-weight:700; cursor:pointer; background:var(--card); color:var(--ink);
+                  border:1px solid var(--line); border-radius:14px; padding:11px 15px; box-shadow:0 6px 22px rgba(0,0,0,.18); }
+  .lkfab button:hover { border-color:var(--accent); }
+  .lkfab .badge { background:var(--line); margin-left:4px; }
+  .lkpanel { position:fixed; left:16px; bottom:16px; z-index:1001; width:390px; max-width:calc(100vw - 32px);
+             background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px;
+             box-shadow:0 10px 30px rgba(0,0,0,.28); }
+  .lkhead { display:flex; gap:8px; align-items:center; }
+  .lkhead input { flex:1; min-width:0; font:inherit; color:inherit; background:var(--bg); border:1px solid var(--line);
+                  border-radius:9px; padding:9px 12px; }
+  .lkhead input:focus { outline:none; border-color:var(--accent); }
+  .lkx { font:inherit; border:1px solid var(--line); background:var(--card); color:var(--mut); border-radius:9px;
+         padding:8px 11px; cursor:pointer; }
+  #lkResults { max-height:44vh; overflow:auto; margin-top:8px; }
   .lkhit { padding:7px 10px; border-radius:8px; cursor:pointer; display:flex; gap:10px; align-items:baseline; }
-  .lkhit:hover { background:var(--chip); }
+  .lkhit:hover, .lkhit.sel { background:var(--chip); }
   .lkhit b { font-size:16px; }
   .lkhit small { color:var(--mut); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .lkmore { color:var(--mut); font-size:12px; padding:6px 10px; }
+  .lkfoot { display:flex; gap:8px; align-items:center; margin-top:8px; padding-top:8px; border-top:1px solid var(--line);
+            font-size:12px; color:var(--mut); }
+  #lkBack { font:inherit; font-size:13px; font-weight:700; cursor:pointer; background:var(--card); color:var(--accent);
+            border:1px solid var(--accent); border-radius:9px; padding:7px 11px; }
 
   /* personal notes */
   details.notes { border:1px solid var(--line); border-radius:10px; margin:10px 0 4px; }
@@ -212,7 +226,7 @@
     <button class="ghostbtn hidden" id="redo" title="重做被撤销的动作">↪ Redo <span class="badge">→</span></button>
     <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
   </div>
-  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
+  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo · <b>/</b> 词汇检索（任何页面可用）</div>
 </main>
 <script>
 const $ = s => document.querySelector(s);
@@ -373,7 +387,7 @@ async function boot(){
   deck = decks[0]?.deck || "toefl";
   loadNext();
 }
-$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; loadNext(); });
+$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; lkReset(); loadNext(); });
 $('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
 
 const TIERS = {1:['tier1','high-freq'],2:['tier2','tricky'],3:['tier3','simple']};
@@ -397,7 +411,12 @@ function syncBtns(){
   const front = cur && !revealed;
   $('#show').classList.toggle('hidden', !front);
   $('#know').classList.toggle('hidden', !front);
-  $('#back').classList.toggle('hidden', !BACK.length);
+  const n = BACK.length;                              // depth of the search-jump chain
+  const label = n > 1 ? `⬅ 返回检索前 (${n})` : '⬅ 返回检索前';
+  for (const id of ['#back', '#lkBack']){
+    $(id).classList.toggle('hidden', !n);
+    $(id).textContent = label;
+  }
   const h = HISTS[deck] || [], f = FUTS[deck] || [];
   $('#undo').disabled = !h.length;
   $('#redo').classList.toggle('hidden', !f.length);   // only shown when there IS something to redo
@@ -509,12 +528,6 @@ function renderReveal(){
     </div>
     <div class="sectlabel">All parts of speech — click ▸ to expand</div>
     ${senses.map((s,i)=>senseHTML(s, i===0)).join('') || '<div class="soon">no senses</div>'}
-    <details class="lookup"><summary>🔎 词汇检索（当前词库内连续字母匹配，可跳转顺便学习）</summary>
-      <div class="lkbody">
-        <input id="lkInput" placeholder="输入 2 个以上字母，如 sub → subsequent, submarine…" autocomplete="off">
-        <div id="lkResults"></div>
-      </div>
-    </details>
     <details class="notes" id="notesBox"><summary>📝 Personal Notes <span id="noteBadge"></span></summary>
       <div class="nbody">
         <div class="ntabs">
@@ -603,38 +616,84 @@ document.addEventListener('input', e => {
 });
 document.addEventListener('focusout', e => { if (e.target.id === 'nText'){ clearTimeout(noteTimer); saveNote(); } });
 
-/* ---------- in-deck lookup + jump + real back ---------- */
-let lkTimer = null;
+/* ---------- global lookup + jump + real back ----------
+   The search box floats over EVERY screen (like the timer), so a word can be looked up
+   before it is revealed — or with no card on screen at all. Jumping pushes the current
+   screen onto BACK, so N chained lookups step back N times, one word per press. */
+let lkTimer = null, lkHits = [], lkSel = -1;
+
+function lkOpen(on){
+  $('#lkPanel').classList.toggle('hidden', !on);
+  $('#lkFab').classList.toggle('hidden', on);
+  if (on){ const i = $('#lkInput'); i.focus(); i.select(); }
+}
+function lkReset(){                    // deck switch: results from the old deck are meaningless
+  $('#lkInput').value = '';
+  $('#lkResults').innerHTML = '';
+  lkHits = []; lkSel = -1;
+}
+function renderHits(total){
+  $('#lkResults').innerHTML = lkHits.length
+    ? lkHits.map((h, i) =>
+        `<div class="lkhit${i===lkSel?' sel':''}" data-term="${esc(h.term)}">
+           <b>${esc(h.term)}</b><small>${esc(h.zh||'')}</small></div>`).join('')
+      + (total > lkHits.length ? `<div class="lkmore">…共 ${total} 个匹配，只显示前 ${lkHits.length} 个</div>` : '')
+    : '<div class="lkmore">无匹配</div>';
+  const sel = $('#lkResults .lkhit.sel');
+  if (sel) sel.scrollIntoView({ block:'nearest' });
+}
 async function lookup(q){
-  const box = $('#lkResults');
-  if (!box) return;
   q = q.trim();
-  if (q.length < 2){ box.innerHTML = ''; return; }
+  if (q.length < 2){ $('#lkResults').innerHTML = ''; lkHits = []; lkSel = -1; return; }
   const d = await (await fetch(`/api/search?deck=${deck}&q=${encodeURIComponent(q)}`)).json();
-  const inp = $('#lkInput');
-  if (!inp || inp.value.trim() !== q) return;      // stale response
-  box.innerHTML = d.hits.map(h =>
-    `<div class="lkhit" data-term="${esc(h.term)}"><b>${esc(h.term)}</b><small>${esc(h.zh||'')}</small></div>`).join('')
-    + (d.total > d.hits.length ? `<div class="lkmore">…共 ${d.total} 个匹配，只显示前 ${d.hits.length} 个</div>` : '')
-    || '<div class="lkmore">无匹配</div>';
+  if ($('#lkInput').value.trim() !== q) return;      // a newer keystroke already won
+  lkHits = d.hits; lkSel = lkHits.length ? 0 : -1;
+  renderHits(d.total);
 }
 async function jumpTo(term){
+  lkOpen(false);
+  if (cur && cur.term === term && revealed) return;  // already looking at it
   const d = await (await fetch(`/api/entry?deck=${deck}&term=${encodeURIComponent(term)}`)).json();
   if (d.error) return;
-  BACK.push({ cur, revealed });
+  BACK.push({ cur, revealed });                      // may hold cur:null (the "done" screen)
   cur = d; revealed = true;
   renderReveal();
   updateCounts(d);
   autoSay(d.term);
 }
-function goBack(){
+function goBack(){                     // ONE step back per press, however deep the chain
   const s = BACK.pop();
   if (!s) return;
   cur = s.cur;
-  if (s.revealed){ revealed = true; renderReveal(); }
+  revealed = !!s.revealed;
+  if (!cur) renderDone();              // we had jumped away from the "nothing due" screen
+  else if (revealed) renderReveal();
   else renderFront(cur);
   syncBtns();
 }
+
+$('#lkOpenBtn').addEventListener('click', () => lkOpen(true));
+$('#lkClose').addEventListener('click', () => lkOpen(false));
+$('#lkBack').addEventListener('click', goBack);
+$('#lkPanel').addEventListener('click', e => {
+  const hit = e.target.closest('.lkhit');
+  if (hit) jumpTo(hit.dataset.term);
+});
+$('#lkInput').addEventListener('keydown', e => {
+  if (e.isComposing) return;
+  if (e.key === 'Escape'){ e.preventDefault(); lkOpen(false); }
+  else if (e.key === 'ArrowDown'){ e.preventDefault(); lkSel = Math.min(lkSel + 1, lkHits.length - 1); renderHits(lkHits.length); }
+  else if (e.key === 'ArrowUp'){ e.preventDefault(); lkSel = Math.max(lkSel - 1, 0); renderHits(lkHits.length); }
+  else if (e.key === 'Enter'){
+    e.preventDefault();
+    const h = lkHits[lkSel < 0 ? 0 : lkSel];
+    if (h) jumpTo(h.term);
+  }
+});
+document.addEventListener('click', e => {          // click-away closes the panel
+  if ($('#lkPanel').classList.contains('hidden')) return;
+  if (!e.target.closest('#lkPanel') && !e.target.closest('#lkFab')) lkOpen(false);
+});
 
 /* ---------- grading + action-level undo/redo ----------
    ← undoes the LAST ACTION, not the last word. Revealing counts as an action, so:
@@ -760,7 +819,6 @@ document.addEventListener('click', e => {
 });
 $('#card').addEventListener('click', e => {
   const b = e.target.closest('button[data-g]'); if (b){ grade(b.dataset.g); return; }
-  const hit = e.target.closest('.lkhit');       if (hit){ jumpTo(hit.dataset.term); return; }
   if (e.target.id === 'nSplit'){ noteMode('split'); return; }
   if (e.target.id === 'nEdit'){ noteMode('edit'); return; }
   if (e.target.id === 'nView'){ noteMode('view'); return; }
@@ -772,6 +830,9 @@ $('#card').addEventListener('toggle', e => {
 window.addEventListener('resize', autoGrow);
 document.addEventListener('keydown', e => {
   if (['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName) || e.isComposing) return;
+  if (e.key === '/' && !e.ctrlKey && !e.metaKey){ e.preventDefault(); lkOpen(true); return; }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){ e.preventDefault(); lkOpen(true); return; }
+  if (e.key === 'Escape'){ lkOpen(false); return; }
   if (e.code === 'Space'){ e.preventDefault(); reveal(); }
   else if (e.code === 'Enter'){ e.preventDefault(); graduate(); }   // know-it: only fires when not revealed
   else if (e.code === 'ArrowLeft'){ e.preventDefault(); undo(); }
@@ -780,6 +841,22 @@ document.addEventListener('keydown', e => {
 });
 boot();
 </script>
+
+<!-- global floating lookup: present on EVERY screen (front, reveal, done) -->
+<div class="lkfab" id="lkFab">
+  <button id="lkOpenBtn" title="在当前词库里检索任意单词（/ 或 Ctrl/⌘+K）">🔎 词汇检索 <span class="badge">/</span></button>
+</div>
+<div class="lkpanel hidden" id="lkPanel">
+  <div class="lkhead">
+    <input id="lkInput" placeholder="≥2 个字母，如 sub → subsequent…" autocomplete="off" spellcheck="false">
+    <button class="lkx" id="lkClose" title="关闭 (Esc)">✕</button>
+  </div>
+  <div id="lkResults"></div>
+  <div class="lkfoot">
+    <button id="lkBack" class="hidden">⬅ 返回检索前</button>
+    <span>↑↓ 选择 · Enter 打开 · Esc 关闭</span>
+  </div>
+</div>
 
 <!-- global floating timer -->
 <div class="timer" id="timerWidget">

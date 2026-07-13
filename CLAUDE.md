@@ -107,9 +107,15 @@ vocab-srs UI extras (2026-07-10):
 - **Personal notes**: collapsed 📝 markdown box on the reveal page (GPT-paste friendly);
   autosaves to `$PREP_DATA_DIR/notes/vocab_notes.json`, keyed by term, shared across decks.
   Rendered by vendored marked.js + DOMPurify in `tools/vocab-srs/static/vendor/` (in git, ~60KB).
-- **词汇检索**: collapsed 🔎 in-deck substring search (`/api/search`) → click a hit to open the
-  word as a full study page (`/api/entry`); grading it uses the normal /api/review so it counts
-  toward today. **⬅ 返回检索前** is a true back-stack (client-side), distinct from ← undo.
+- **词汇检索** (2026-07-13: now GLOBAL): a floating widget like the timer, present on EVERY
+  screen — front side before Space, reveal page, even the "nothing due" screen. Open with the
+  bottom-left button / `/` / `Ctrl+K`; ↑↓ select, Enter open, Esc close. In-deck substring match
+  (`/api/search`) → click a hit → full study page (`/api/entry`); grading uses the normal
+  /api/review so it counts toward today. **⬅ 返回检索前** = client-side back-STACK: N chained
+  lookups → N presses to walk home, each restoring that screen exactly (revealed or not);
+  depth shown on the button. Distinct from ← undo (which reverts grades).
+  E2E test: scratchpad test_lookup.mjs drives the real frontend JS (node vm + stub DOM) against
+  a live backend — 18 assertions over the chain/back/no-op-self-jump paths.
 
 ## Scheduled jobs (scrontab) — only these two; ask before adding more (user rule 2026-07-11)
 `scrontab -l` holds the user's pre-existing `glcfs_fetch` (7:30, engin1 — **do not touch**)
