@@ -55,9 +55,22 @@ Real items are AI-generated bulk's ground truth: AI questions must **imitate the
 format/length/word-count** AND **cover all TOEFL domains** (STEM, humanities, history, …) that
 the tiny real set can't span.
 
-## Tools (ports) — `./run.sh <name>`
+## Tools (ports) — `./run.sh <name> [PORT]`
 writing (8001) · speaking (8002, needs mic → run on laptop) · vocab (8003) · reading (8004) ·
-mock (8005). `./run.sh` with no arg prints the menu.
+mock (8005). `./run.sh` with no arg prints the menu. Optional 2nd arg overrides the port.
+
+⚠️ **"页面一直转/打不开" is almost never the server** (2026-07-13 incident). Login nodes are
+SHARED and the laptop reaches them through a VS Code / SSH port-forward, so check in this order:
+1. On the cluster: `curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:8003/` → 200 means
+   the app is fine; `ss -tnp | grep '127.0.0.1:8003'` with NO established connection means the
+   browser's requests never even arrive → it's the forward, not the code.
+2. The laptop's `localhost:8003` may still be forwarded by an OLDER VS Code window / ssh -L to a
+   DIFFERENT login node (sessions land on gl-login1…5 at random). Fix: re-forward in VS Code's
+   PORTS panel, close the stale window, or just `./run.sh vocab 8013` (fresh port → fresh forward).
+3. Other users' processes can own a port on a login node (`ss -ltn` shows it with no owner) —
+   run.sh now refuses to start on a busy port instead of dying with "address already in use".
+4. Frontend served with `Cache-Control: no-cache` (all apps), so a stale cached page is no longer
+   a possible cause; if the card is stuck on "…" the script threw — see the test below.
 
 ## Vocab specifics
 ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab` (10526) +

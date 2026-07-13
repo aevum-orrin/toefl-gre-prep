@@ -194,7 +194,9 @@ def model_essay(req: EssayRequest):
 
 @app.get("/")
 def index():
-    return FileResponse(HERE / "static" / "index.html")
+    # no-cache: always revalidate, so a stale cached page can never run outdated JS
+    return FileResponse(HERE / "static" / "index.html",
+                        headers={"Cache-Control": "no-cache"})
 
 
 app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
