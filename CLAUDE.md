@@ -111,13 +111,16 @@ vocab-srs UI extras (2026-07-10):
   word as a full study page (`/api/entry`); grading it uses the normal /api/review so it counts
   toward today. **⬅ 返回检索前** is a true back-stack (client-side), distinct from ← undo.
 
-## Scheduled jobs — NONE of ours (user decision, 2026-07-11)
-`scrontab -l` now holds ONLY the user's pre-existing `glcfs_fetch` (7:30, engin1) — **do not
-touch it**. Both vocab-enrichment crons were deleted: everything they did is deterministic, so
-it is done in one Opus/Claude-Code pass on demand instead of dripped by a free model on a timer.
-Do NOT add scheduled jobs; if one ever seems necessary, ask first.
-- scratch-purge backup is now a MANUAL one-shot: `./scripts/backup_scratch.sh` (rsync of
-  user-data + official-real into home `data/backup/`; run it every few weeks).
+## Scheduled jobs (scrontab) — only these two; ask before adding more (user rule 2026-07-11)
+`scrontab -l` holds the user's pre-existing `glcfs_fetch` (7:30, engin1 — **do not touch**)
+and `prep_backup` (03:00 on days 1/11/21/31 ≈ every 10 days, engin1, **user-approved
+2026-07-13**): runs `./scripts/backup_scratch.sh` = REAL rsync of user-data + official-real
+(minus raw/) into home `data/backup/`. It can also be run by hand any time.
+Vocab-enrichment crons were deleted 2026-07-11 (deterministic work → one Opus pass on demand).
+- ⚠️ NEVER add atime-refresh / read-sweep / touch jobs to dodge the 60-day scratch purge —
+  explicit ARC policy violation (escalating penalties). Real backups only.
+- One-shot backups of the OTHER scratch projects' irreplaceable data (music-in, uploads,
+  MaterialsMatters, gf data, genomes; ~1GB) live in `~/scratch-backup/` (see its README).
 - NODE POLICY (if a job ever is needed): heavy/long on owned accounts (nmasoud/drjieliu99);
   engin1 short jobs only.
 

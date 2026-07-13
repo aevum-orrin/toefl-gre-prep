@@ -51,7 +51,8 @@ Consequences for this repo, by data class:
 - **Re-generable caches — fine to lose**: `tts/` (re-synthesized on demand), `enrich/` +
   `enrich_etym/` (results already merged into the deck JSONs in git; cache only exists for
   resume), `ipa-dict/` (already merged; re-downloadable), `rl_gen/ gen_banks/ build/`.
-- **Irreplaceable — protected by nightly backup**: `enrich_cron.sh` mirrors (rsync, no
+- **Irreplaceable — protected by scheduled backup**: the `prep_backup` scrontab job (every
+  10 days; also runnable by hand: `./scripts/backup_scratch.sh`) mirrors (rsync, no
   --delete so a purge never propagates) into home `data/backup/` (gitignored):
   - `user-data/` → `data/backup/user-data/` (SRS progress, notes, recordings, logs; ~MBs)
   - `official-real/` minus `raw/` → `data/backup/official-real-lite/` (~100 MB: parsed real
