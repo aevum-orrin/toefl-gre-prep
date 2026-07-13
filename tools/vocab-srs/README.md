@@ -17,6 +17,27 @@ uvicorn app:app --reload --port 8003   # http://localhost:8003
   - **Hard (2)** / **Good (3)** → recalled; the interval grows per SM-2
 - Keyboard: `Space` reveal · `1/2/3` grade · `Enter` know-it · `←` undo · `→` redo.
 
+## Scheduling algorithm (SM-2 + proficiency)
+Only a word confirmed on FIRST sight may disappear immediately; everything else must earn it:
+
+| Action | Effect |
+|---|---|
+| **Enter, first sight** | graduated — never shown again |
+| **Enter, seen before (never Again'd)** | strong pass; the word returns **once more for confirmation** — a second consecutive Enter graduates it, any 1/2/3 in between resets the streak |
+| **Enter, ever graded Again** | refused forever (sticky-Again 🔁); counted as a Good review |
+| **1 Again** | due again today, but only after ≥15 other cards; lapses **preempt** new words once the gap has passed |
+| **2 Hard / 3 Good** | SM-2 day intervals (1 → 6 → ×ease), scaled by proficiency |
+
+**Proficiency (`prof`, shown as 熟练度)** is a reward-EMA over the card's whole grade history
+(again/hard→0, good→0.8, enter→1.0; α=0.4) — the "reinforcement" signal: recent evidence
+dominates, but an early lapse keeps a word on shorter intervals than an always-easy one
+(interval ×(0.5+prof)). Failing also drops ease by 0.2 (Anki-style).
+
+**Card order** (user's rule: never-seen words strictly before seen ones):
+today's Again-lapses past the 15-card gap → **new words** (tier/TPO order) → other due reviews.
+With new/day = ∞ the whole deck is new, so day-level reviews only surface after you pause new
+introduction — pick a finite new/day (e.g. 300) if you want yesterday's reviews interleaved daily.
+
 ## Pronunciation & phonetics
 - Every card shows **US and UK IPA** (merged from open-dict-data/ipa-dict by `scripts/add_ipa.py`)
   with **4 speaker buttons**: US ♂ / US ♀ / UK ♂ / UK ♀.

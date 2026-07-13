@@ -212,7 +212,7 @@
     <button class="ghostbtn hidden" id="redo" title="重做被撤销的动作">↪ Redo <span class="badge">→</span></button>
     <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
   </div>
-  <div class="kbd"><b>Enter</b> = I know it, never show again · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
+  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>←</b> undo · <b>→</b> redo</div>
 </main>
 <script>
 const $ = s => document.querySelector(s);
@@ -533,7 +533,10 @@ function renderReveal(){
         </div>
       </div>
     </details>
-    <div class="meta">${verbForms(cur.exchange)}</div>`;
+    <div class="meta">
+      ${cur.reps?`<span>熟练度 <b>${Math.round((cur.prof??0.5)*100)}%</b> · 已复习 <b>${cur.reps}</b> 次</span>`:'<span>新词 · 首次学习</span>'}
+      ${verbForms(cur.exchange)}
+    </div>`;
   syncBtns();
   loadNote(cur.term);
 }
@@ -677,6 +680,7 @@ async function graduate(){          // Enter before reveal: "I know it", never s
   act({ t:'known', term });
   updateCounts(d);
   if (d.blocked) toast(`“${d.term}” 你按过 Again — 不会永久隐藏，已按 Good 处理，之后仍会复习。`);
+  else if (d.confirm) toast(`✔ “${d.term}” 已标记会了 — 它还会再出现一次做最终确认（到时再按 Enter 就永久隐藏）。`);
   afterGrade();
 }
 

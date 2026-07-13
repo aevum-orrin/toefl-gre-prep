@@ -76,6 +76,18 @@ ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab`
   instead; flag persists in `$PREP_DATA_DIR/srs/<deck>.flags.json`, UI shows 🔁 + a toast).
   ←/→ undo/redo the LAST ACTION (reveal counts): Space,1,← lands back on the answer screen so
   you can press 2 instead. Notes box = live split (Markdown left, preview right, auto-growing).
+- **Scheduling algorithm (user-specified, 2026-07-12)** — SM-2 backbone + proficiency:
+  - Every card carries `prof` 0..1 (reward-EMA over the WHOLE grade history: again/hard=0,
+    good=0.8, enter=1.0, α=0.4; the user's "RL reward" idea). `prof` scales SM-2 interval
+    growth ×(0.5+prof); failing also drops ease by 0.2. Shown as 熟练度% in the reveal meta.
+  - Enter semantics: first sight → gone forever; on a SEEN word (never Again'd) → strong pass
+    + flag `enter`, word returns ONCE for confirmation, second consecutive Enter → gone
+    (any 1/2/3 in between resets the streak); ever-Again'd → refused forever (sticky-Again).
+  - /api/next priority: today's Again-lapses past the 15-card gap → NEW words (never-seen
+    strictly before seen, user's call) → ordinary due reviews. NOTE: with new/day=∞ the
+    day-level reviews only surface after the new pool is exhausted — use a finite new/day
+    (e.g. 300) to interleave daily reviews.
+  - Flow tests: scratchpad test_flow.py pattern (7 cases) + prep-core/tests/test_srs.py.
 
 vocab-srs UI extras (2026-07-10):
 - **Again spacing guard**: any graded word waits ≥15 other cards before reappearing
