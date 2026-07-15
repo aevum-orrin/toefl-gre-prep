@@ -83,6 +83,11 @@ transcriber = Transcriber(os.environ.get("WHISPER_MODEL", "tiny.en"))
 progress = ProgressStore(DATA_DIR / "progress.jsonl")
 
 app = FastAPI(title="TOEFL Speaking App")
+# Auto-exit after a long idle stretch so a server forgotten on one shared login node
+# frees its port/resources instead of lingering (see prep_core.serverutil).
+from prep_core import install_idle_shutdown
+install_idle_shutdown(app)
+
 
 
 async def _save_upload(upload: UploadFile) -> str:

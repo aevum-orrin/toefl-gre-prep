@@ -59,6 +59,21 @@ the tiny real set can't span.
 writing (8001) · speaking (8002, needs mic → run on laptop) · vocab (8003) · reading (8004) ·
 mock (8005). `./run.sh` with no arg prints the menu. Optional 2nd arg overrides the port.
 
+⚠️ **Which login node you land on is decided by the LAPTOP's `~/.ssh/config`, NOT the cluster's**
+(2026-07-13). The user already pins VS Code to one node via a laptop-side `Host gl4` alias (status
+bar shows "SSH: gl4"); the cluster-side `~/.ssh/config` (in `$HOME` here) is server-side and
+irrelevant to how the laptop connects — do NOT edit it to "fix node hopping". Node hopping only
+happens if the user manually picks a different alias (gl5) or falls back to the round-robin
+`greatlakes`. Also: a server started from a background/detached shell (not the user's VS Code
+integrated terminal) will NOT be auto-forwarded — VS Code only auto-forwards ports it sees a
+process announce, so either run `./run.sh …` in the VS Code terminal or add the port by hand in
+the PORTS panel.
+
+⚠️ **Idle auto-shutdown**: every app calls `install_idle_shutdown(app)` (prep_core.serverutil) —
+exits gracefully after `PREP_IDLE_MIN` minutes (default 180; 0 disables) with no HTTP request, so
+a server left on a node you hopped away from cleans itself up. Any click resets the clock, so it
+never dies mid-session.
+
 ⚠️ **"页面一直转/打不开" is almost never the server** (2026-07-13 incident). Login nodes are
 SHARED and the laptop reaches them through a VS Code / SSH port-forward, so check in this order:
 1. On the cluster: `curl -s -o /dev/null -w '%{http_code}\n' http://127.0.0.1:8003/` → 200 means

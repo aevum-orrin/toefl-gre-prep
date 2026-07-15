@@ -37,7 +37,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from prep_core import SRS
+from prep_core import SRS, install_idle_shutdown
 
 try:                                     # optional: server-side neural TTS (free MS endpoint)
     import edge_tts
@@ -142,6 +142,9 @@ for _d in DECK_FILES:
     _load_deck(_d)
 
 app = FastAPI(title="Vocab SRS")
+# Auto-exit after a long idle stretch so a server forgotten on one shared login node
+# frees its port/resources instead of lingering (see prep_core.serverutil).
+install_idle_shutdown(app)
 
 
 class Review(BaseModel):

@@ -6,6 +6,7 @@ from .generate import QuestionGenerator
 from .srs import SRS, Card
 from .progress import ProgressStore
 from .config import load_env
+from .serverutil import install_idle_shutdown
 
 __all__ = [
     "Rubric",
@@ -21,5 +22,6 @@ __all__ = [
     "Card",
     "ProgressStore",
     "load_env",
+    "install_idle_shutdown",
 ]
 __version__ = "0.1.0"

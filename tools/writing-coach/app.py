@@ -105,6 +105,11 @@ _ESSAY_SYSTEM = {
 }
 
 app = FastAPI(title="Writing Coach")
+# Auto-exit after a long idle stretch so a server forgotten on one shared login node
+# frees its port/resources instead of lingering (see prep_core.serverutil).
+from prep_core import install_idle_shutdown
+install_idle_shutdown(app)
+
 
 
 class ScoreRequest(BaseModel):
