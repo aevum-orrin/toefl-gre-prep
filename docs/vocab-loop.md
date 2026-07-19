@@ -61,10 +61,15 @@ If you think a dimension is worth measuring that isn't here (e.g. audio for real
 sets, example-sentence quality via an LLM judge), **add an item to `score_vocab.py`** — but keep
 every check machine-verifiable and deterministic, and say in the commit why you added it.
 
-## Baseline (2026-07-19, compute node so tts-live=0): **81/100**
-Biggest gaps, in order: **D3 词源 3.7/17** (etymology only ~5% resolved) ≫ D1 IPA (~1 pt of
-missing US/UK, 23 words with no phonetic at all) > D2 def_en (~0.9, 15% of senses lack English
-definitions). D4/D5/D6 are essentially full. So early iterations are almost all D3.
+## Baseline (2026-07-19): **85/100** on a login node (full live checks pass)
+Verified end-to-end on `gl-login4`: tts-live 4/4, frontend-e2e 6/6, write+undo 2/2 all green,
+so D6=15/15 and D1=17.4/18. (On a *compute* node the same run scores ~81 because tts-live 502s —
+run the loop on a login node.) Biggest gaps, in order:
+- **D3 词源 3.7/17** — only 550/10358 resolved (429 have etymology + 121 judged not-useful).
+  This is ~11 of the 15 missing points. **Early iterations are almost entirely D3.**
+- **D2 sense.def_en 5.1/6** — ~2200 senses (15%) have only a Chinese gloss, no English def.
+- **D1 any-phonetic** — 23 words with no phonetic of any kind; small ipa_us/uk tail (~4%/7%).
+- D4/D5/D6 essentially full — only revisit if a D-fix regresses them (the scorer will show it).
 
 ## Fixers (regenerate DATA; the app code is already complete)
 
