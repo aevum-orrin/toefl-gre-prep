@@ -50,7 +50,7 @@ Verified end-to-end (D6 15/15, tts-live 4/4). Full field audit of the 10526-word
 | Dim | now | gap | detail (from the audit) |
 |---|---|---|---|
 | **D1 发音** | 17.0/18 | −1.0 | ipa_us 6.45 (830 missing, 623 kaikki-fillable) · ipa_uk 4.56 (929 missing, 756 fillable) · 17 words no phonetic |
-| **D2 释义例句** | 25.1/30 | **−4.9** | gloss_en 3.74/5 (2646 missing, 2645 fillable) · def_en 5.11/6 (2208 missing, 2207 fillable) · **example 4.43/6 (3907 senses missing)** · **colloc≥2 2.95/4 (~3900 senses <2)** · def_zh 4.88/5 (369 senses, not kaikki-fillable — English source) |
+| **D2 释义例句** | 25.1/30* | **−4.9** | *(baseline pre-dates the syn/ant items; re-score.)* gloss_en 3.74/5 · def_en 5.11/6 · **example 4.43/6 (3907 senses missing)** · **colloc≥2 2.95/4** · def_zh 4.88/5 (not kaikki-fillable) · **synonyms/antonyms 0/2+0/2 until `add_syn_ant.py gre` runs** (D2 is now 30 pts split gloss_en 5·pos 4·def_en 5·def_zh 4·example 5·colloc 3·syn 2·ant 2) |
 | **D3 词源** | 3.1/17 | **−13.9** | only 63 have etymology + 17 not-useful = **80/10526 resolved**. `etymology_text` available for 10244. THE dominant gap. |
 | **D4 结构** | 10.0/10 | 0 | schema/dedup/shell/mojibake all clean |
 | **D5 元数据** | 7.9/10 | −2.1 | tier 3/3 · verb-exchange 2.98 · freq\|bnc 1.93 · **tpo_hf 0/2 — STRUCTURALLY N/A for GRE (TPO is TOEFL-only)** |
@@ -89,9 +89,14 @@ the Workflow fan-out + the `fold_*` scripts, which apply the cache to the deck w
 ### Step 1 — deterministic D1 + D2 fill (no LLM, run FIRST, ~2 s)
 ```bash
 .venv/bin/python scripts/merge_kaikki_fields.py gre     # ipa_us/uk + sense.def_en + word gloss_en (fill-empty-only)
+.venv/bin/python scripts/add_syn_ant.py gre             # English synonyms/antonyms from WordNet (D2)
 ```
-Fills only EMPTY fields (never clobbers open-dict IPA / ECDICT glosses). Expected: ipa_us +623,
-ipa_uk +756, def_en +~2207, gloss_en +~2645. This alone moves D1→~17.8 and D2 gloss_en→5, def_en→6.
+`merge` fills only EMPTY fields (never clobbers open-dict IPA / ECDICT glosses): ipa_us +~623,
+ipa_uk +~756, def_en +~2207, gloss_en +~2645. `add_syn_ant` fills every word WordNet has syn/ant
+for (one deterministic pass → the D2 syn/ant items go straight to full). **WordNet install once**
+(persists on scratch): `.venv/bin/pip install nltk && NLTK_DATA=$LANG_PREP_CACHE/nltk_data \
+.venv/bin/python -c "import nltk;nltk.download('wordnet',download_dir='$NLTK_DATA')"` — already done
+2026-07-19, data is on scratch, so normally you can skip it.
 
 ### Step 2 — D3 词源 (the big one: kaikki etymology_text → Chinese 词根词缀, Sonnet fan-out)
 ```bash

@@ -29,3 +29,8 @@ mkdir -p "$PREP_DATA_DIR" "$REAL_DATA_ROOT" 2>/dev/null
 # Anthropic is intentionally EXCLUDED at runtime — free tiers only. (Opus pre-generation is done
 # offline via Claude Code subscription, not this runtime path.)
 export LLM_FALLBACK_ORDER="${LLM_FALLBACK_ORDER:-gemini,groq}"
+
+# WordNet data (English synonyms/antonyms for the vocab decks — scripts/add_syn_ant.py and the
+# score_vocab.py syn/ant items). Kept on scratch, not $HOME. `.venv/bin/pip install nltk` once,
+# then download 'wordnet' into this dir. The scripts default to this path too, so it's optional.
+export NLTK_DATA="${NLTK_DATA:-$LANG_PREP_CACHE/nltk_data}"

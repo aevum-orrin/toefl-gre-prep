@@ -55,7 +55,7 @@ The scorer writes `data/vocab_score_toefl.json` (per-item breakdown) and prints 
 | Dim | Pts | Items |
 |---|---|---|
 | **D1 发音** | 18 | ipa_us 7 · ipa_uk 5 · any-phonetic 2 · tts-live 4 |
-| **D2 释义与例句** | 30 | gloss_en 5 · sense.pos 4 · def_en 6 · def_zh 5 · example 6 · colloc≥2 4 |
+| **D2 释义与例句** | 30 | gloss_en 5 · sense.pos 4 · def_en 5 · def_zh 4 · example 5 · colloc≥2 3 · synonyms 2 · antonyms 2 (syn/ant = filled/WordNet-available, `add_syn_ant.py`) |
 | **D3 词根词缀词源** | 17 | resolved (has `etymology` OR cached `useful:false`) 14 · 3-field fullness 3 |
 | **D4 结构一致性** | 10 | schema 3 · no-dup 2 · no empty-shell sense 3 · no mojibake 2 |
 | **D5 学习元数据** | 10 | tier 3 · tpo_hf≥1500 2 · verb exchange 3 · freq\|bnc 2 |

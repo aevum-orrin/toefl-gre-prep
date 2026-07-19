@@ -94,6 +94,10 @@ SHARED and the laptop reaches them through a VS Code / SSH port-forward, so chec
 ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab` (10526) +
 `toefl/vocab/scene_vocab` (scenes, 1536 topical words/phrases), each word tagged `tier`
 (1 high-freq / 2 rare / 3 simple) by `scripts/order_vocab.py`.
+- **近义/反义词 (2026-07-19)**: word-level `synonyms`/`antonyms` (English single words, from
+  WordNet via `scripts/add_syn_ant.py`; data on scratch `$NLTK_DATA`=`$LANG_PREP_CACHE/nltk_data`,
+  `pip install nltk` once). Shown as clickable 近义/反义 chips on the reveal card (chip → jumps to
+  that word via the lookup flow). Scored in D2 (synonyms 2 + antonyms 2, as filled/WordNet-available).
 - **Completeness loop DONE for TOEFL (2026-07-19): `scripts/score_vocab.py toefl` = 99.6/100**
   (was 85). D3 词源 filled to 17/17 — 10351/10358 words resolved (7046 etymology + 3305
   judged-not-useful). Pipeline (kaikki `etymology_text` → Chinese 词根词缀, no external LLM):
