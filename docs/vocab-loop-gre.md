@@ -44,6 +44,15 @@ sleep 9
 # stop it when done: kill $(ss -ltnp | grep ':8096 ' | grep -o 'pid=[0-9]*' | cut -d= -f2)
 ```
 
+## ✅ DONE (2026-07-19): **96.2 / 100** — target met in ONE iteration
+Full sweep in a single round: `merge_kaikki_fields gre` + `add_syn_ant gre` (deterministic D1/D2 +
+syn/ant 4/4) → 349-batch Sonnet etym fan-out folded (D3 5.2→**17.0/17**, 10524/10526 resolved =
+7577 etymologies + 2947 judged-not-useful) → all 21 enrich batches folded (D2 example 4.14, colloc
+2.48). 3 out-files had unescaped inner ASCII quotes in Chinese content — repaired deterministically
+(no LLM) by converting inner `"`→`”` while preserving JSON-structural quotes. Final: D1 17.8 · D2 28.5 ·
+D3 17.0 · D4 10 · D5 7.9 (tpo_hf 0/2 is N/A for GRE) · D6 15. Commits `50a1a27`→`5c31415`→`18f0299`.
+Remaining headroom (optional, ~ceiling 97.5): D2 example→5 / colloc→3 by widening the enrich fan-out.
+
 ## Baseline (2026-07-19): **78.1 / 100** on `gl-login4` (full live checks pass)
 Verified end-to-end (D6 15/15, tts-live 4/4). Full field audit of the 10526-word / 14931-sense deck:
 
