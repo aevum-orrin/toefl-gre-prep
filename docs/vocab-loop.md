@@ -137,10 +137,18 @@ scratch (it's large — check size first and tell the user before downloading GB
 and reformat etymology into the Chinese-glossed breakdown the UI expects (that reformat can be the
 model's job; the facts come from Wiktionary).
 
+## Budget & freedom (user-set, 2026-07-19)
+The user has explicitly given this loop **lots of time and tokens** — use them.
+- **Re-researching is encouraged**, not just reformatting kaikki. If you want to look words up on
+  the web, cross-check etymologies, or generate from the model directly, do it — quality first.
+- **Downloading big files is pre-authorized — no need to ask** — with ONE hard rule about WHERE:
+  **big files go on scratch, under `$LANG_PREP_CACHE` =
+  `/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache`** (Neda's owned scratch,
+  writable, effectively unlimited). **NEVER download big files into `/home/ctlang`** (80 GB $HOME
+  quota). Keep only code + the small deck JSONs in git.
+
 ## Guardrails (from CLAUDE.md — do not skip)
 - Commit identity: author `jackiectl`, `Co-Authored-By: Claude`, noreply email. **Don't push** unless asked.
-- **Storage**: only code + the deck JSONs are in git; caches/big downloads go on scratch, and
-  **ask the user before anything that would add real GBs** to scratch or home.
 - **Token-window rule**: at ~90% of the 5-hour window, STOP — commit progress + a status note,
   resume next window. Don't restart from scratch.
 - Be honest: the score is the score. Don't inflate an item; if a check is wrong, fix the checker
