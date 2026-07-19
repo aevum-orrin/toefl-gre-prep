@@ -65,6 +65,16 @@ say why in the commit — do not relabel the TOEFL one.)
 
 ## Fixers — reuse the TOEFL toolchain, all `deck=gre`
 
+> ### ⚠️ FIRST THING EACH ITERATION: regenerate the batch files from the CURRENT deck
+> The `make_*_batches.py` scripts pick which words still need work by reading the deck's CURRENT
+> state. So **always run Step 1 (deterministic merge) FIRST, then (re)run `make_etym_batches.py gre`
+> and `make_enrich_batches.py gre --incomplete` BEFORE launching any Workflow.** Otherwise you
+> reprocess words that are already done (waste) or miss ones (stall).
+> **NOTE (2026-07-19):** a previous session PRE-GENERATED stale batch files on scratch
+> (`enrich_batches/etym/gre/` 349 files, `enrich_batches/gre/` 21 files) while writing this runbook.
+> **Ignore/overwrite them** — the make-scripts wipe and rewrite the batch dir every run, so just
+> run them fresh after Step 1 and use the pending list they produce.
+
 **kaikki is pre-joined for GRE**: `$LANG_PREP_CACHE/kaikki/gre_kaikki.json` (~25 MB), per-term
 `{etymology_text, ipa_us, ipa_uk, by_pos:{pos:{glosses, examples}}}`. Coverage: etymology_text 10244,
 ipa 10045, glosses all. Facts are local + quota-free; the model only reformats. Rebuild with
