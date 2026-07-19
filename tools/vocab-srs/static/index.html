@@ -65,6 +65,16 @@
   .estory { margin-top:4px; }
   .eorigin { margin-top:4px; color:var(--mut); font-size:15px; }
 
+  /* 近义 / 反义 (synonyms / antonyms) — English word chips */
+  .synant { display:flex; flex-direction:column; gap:6px; margin:12px 0 2px; }
+  .synant .sarow { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px; }
+  .synant .salab { font-size:13px; font-weight:700; margin-right:2px; }
+  .synant .salab.syn { color:var(--good); } .synant .salab.ant { color:var(--again); }
+  .synant .sachip { display:inline-block; padding:2px 9px; border-radius:999px; font-size:14px;
+                    border:1px solid var(--line); background:var(--card); cursor:pointer; }
+  .synant .sachip.syn { border-color:color-mix(in srgb, var(--good) 45%, transparent); }
+  .synant .sachip.ant { border-color:color-mix(in srgb, var(--again) 45%, transparent); }
+
   /* primary sense block */
   .primary { margin:14px 0 6px; padding:14px 16px; background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:12px; }
   .primary .pdef { font-size:20px; font-weight:600; }
@@ -509,6 +519,18 @@ function etymHTML(d){
     </div></details>`;
 }
 
+/* 近义 / 反义 — English word chips; each chip jumps to that word via the lookup flow. Hidden when none. */
+function synAntHTML(d){
+  const syn = (d.synonyms || []), ant = (d.antonyms || []);
+  if (!syn.length && !ant.length) return '';
+  const chips = (arr, cls) => arr.map(w =>
+    `<span class="sachip ${cls}" data-jump="${esc(w)}">${esc(w)}</span>`).join('');
+  return `<div class="synant">
+    ${syn.length?`<div class="sarow"><span class="salab syn">近义</span>${chips(syn,'syn')}</div>`:''}
+    ${ant.length?`<div class="sarow"><span class="salab ant">反义</span>${chips(ant,'ant')}</div>`:''}
+  </div>`;
+}
+
 function renderReveal(){
   const senses = cur.senses || [];
   const p = senses[0] || {};
@@ -544,6 +566,7 @@ function renderReveal(){
       ${primaryEx?`<div class="pex">“${esc(primaryEx)}”</div>`:''}
       ${primaryZh&&primaryDef?`<div class="pzh">${esc(primaryZh)}</div>`:''}
     </div>
+    ${synAntHTML(cur)}
     <div class="sectlabel">All parts of speech — click ▸ to expand</div>
     ${senses.map((s,i)=>senseHTML(s, i===0)).join('') || '<div class="soon">no senses</div>'}
     <details class="notes" id="notesBox"><summary>📝 Personal Notes <span id="noteBadge"></span></summary>
@@ -837,6 +860,7 @@ document.addEventListener('click', e => {
 });
 $('#card').addEventListener('click', e => {
   const b = e.target.closest('button[data-g]'); if (b){ grade(b.dataset.g); return; }
+  const chip = e.target.closest('.sachip[data-jump]'); if (chip){ jumpTo(chip.dataset.jump); return; }
   if (e.target.id === 'nSplit'){ noteMode('split'); return; }
   if (e.target.id === 'nEdit'){ noteMode('edit'); return; }
   if (e.target.id === 'nView'){ noteMode('view'); return; }

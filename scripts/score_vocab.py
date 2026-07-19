@@ -7,7 +7,8 @@ score must be reproducible from data + a running server — never a subjective j
 
 Dimensions (max points):
   D1 发音 Pronunciation   18   ipa_us 7 · ipa_uk 5 · any-phonetic 2 · live TTS sample 4
-  D2 释义与例句 Senses     30   gloss_en 5 · pos 4 · def_en 6 · def_zh 5 · example 6 · colloc>=2 4
+  D2 释义与例句 Senses     30   gloss_en 5 · pos 4 · def_en 5 · def_zh 4 · example 5 · colloc>=2 3
+                                · synonyms 2 · antonyms 2  (syn/ant = filled/WordNet-available)
   D3 词根词缀词源          17   resolved (has etymology OR cached useful=false) 14 · 3-field 3
   D4 结构一致性            10   schema 3 · no-dup 2 · no empty-shell sense 3 · no mojibake 2
   D5 学习元数据            10   tier 3 · tpo_hf>=1500 2 · verb exchange 3 · freq|bnc 2
@@ -40,6 +41,46 @@ DECKS = {"toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
          "gre": REPO / "gre" / "vocab" / "gre_vocab.json"}
 CACHE = Path(os.environ.get("LANG_PREP_CACHE")
              or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache")
+
+
+def _load_wordnet():
+    """WordNet corpus (for the 近义/反义 completeness items). None if nltk/data missing."""
+    os.environ.setdefault("NLTK_DATA", str(CACHE / "nltk_data"))
+    try:
+        from nltk.corpus import wordnet as wn
+        wn.ensure_loaded()
+        return wn
+    except Exception:
+        return None
+
+
+def _wn_forms(entry: dict) -> set:
+    forms = {entry["term"].lower()}
+    exch = entry.get("exchange") or {}
+    if isinstance(exch, dict):
+        for v in exch.values():
+            for f in str(v).replace(",", "/").split("/"):
+                if f.strip():
+                    forms.add(f.strip().lower())
+    return forms
+
+
+def _wn_has(wn, entry: dict):
+    """(has_single_word_synonym, has_single_word_antonym) available in WordNet for this term."""
+    own = _wn_forms(entry)
+    has_syn = has_ant = False
+    for s in wn.synsets(entry["term"]):
+        for lem in s.lemmas():
+            nm = lem.name()
+            if "_" not in nm and " " not in nm and nm.lower() not in own:
+                has_syn = True
+            for a in lem.antonyms():
+                an = a.name()
+                if "_" not in an and " " not in an and an.lower() not in own:
+                    has_ant = True
+        if has_syn and has_ant:
+            break
+    return has_syn, has_ant
 
 
 def _get(url: str, timeout: float = 15):
@@ -102,14 +143,34 @@ def score(deck, url, allow_write, e2e, node):
     else:
         sc.add("D1 发音", "tts-live", 4, 0, "SKIPPED: no --url")
 
-    # ---------- D2 释义与例句 ----------
+    # ---------- D2 释义与例句 (30 pts: incl. 近义/反义 word-relations) ----------
     sc.add("D2 释义例句", "gloss_en", 5, sum(1 for w in words if w.get("gloss_en")) / n)
     sc.add("D2 释义例句", "sense.pos", 4, sum(1 for s in senses if (s.get("pos") or "").strip()) / ns)
-    sc.add("D2 释义例句", "sense.def_en", 6, sum(1 for s in senses if s.get("def_en")) / ns)
-    sc.add("D2 释义例句", "sense.def_zh", 5, sum(1 for s in senses if s.get("def_zh")) / ns)
-    sc.add("D2 释义例句", "sense.example", 6, sum(1 for s in senses if s.get("examples")) / ns)
-    sc.add("D2 释义例句", "sense.colloc>=2", 4,
+    sc.add("D2 释义例句", "sense.def_en", 5, sum(1 for s in senses if s.get("def_en")) / ns)
+    sc.add("D2 释义例句", "sense.def_zh", 4, sum(1 for s in senses if s.get("def_zh")) / ns)
+    sc.add("D2 释义例句", "sense.example", 5, sum(1 for s in senses if s.get("examples")) / ns)
+    sc.add("D2 释义例句", "sense.colloc>=2", 3,
            sum(1 for s in senses if len(s.get("collocations") or []) >= 2) / ns)
+    # 近义/反义 (English, from WordNet): score = filled / WordNet-available, so a full
+    # deterministic add_syn_ant.py pass reaches 1.0 without being penalised for words that
+    # simply HAVE no synonym/antonym in WordNet. Falls back to raw presence if wn is absent.
+    _wn = _load_wordnet()
+    if _wn is not None:
+        syn_avail = syn_have = ant_avail = ant_have = 0
+        for w in words:
+            has_syn, has_ant = _wn_has(_wn, w)
+            syn_avail += has_syn; ant_avail += has_ant
+            syn_have += 1 if (has_syn and w.get("synonyms")) else 0
+            ant_have += 1 if (has_ant and w.get("antonyms")) else 0
+        sc.add("D2 释义例句", "synonyms (filled/avail)", 2,
+               syn_have / max(1, syn_avail), f"{syn_have}/{syn_avail} words WordNet has syns for")
+        sc.add("D2 释义例句", "antonyms (filled/avail)", 2,
+               ant_have / max(1, ant_avail), f"{ant_have}/{ant_avail} words WordNet has ants for")
+    else:
+        sc.add("D2 释义例句", "synonyms", 2, sum(1 for w in words if w.get("synonyms")) / n,
+               "wordnet unavailable — raw presence")
+        sc.add("D2 释义例句", "antonyms", 2, sum(1 for w in words if w.get("antonyms")) / n,
+               "wordnet unavailable — raw presence")
 
     # ---------- D3 词根词缀词源 ----------
     have = sum(1 for w in words if w.get("etymology"))

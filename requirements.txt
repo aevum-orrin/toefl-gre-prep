@@ -6,3 +6,4 @@ uvicorn[standard]>=0.29
 python-multipart>=0.0.9
 pytest>=8
 edge-tts>=6.1        # free MS neural TTS for vocab pronunciation (mp3s cached on scratch)
+nltk        # WordNet synonyms/antonyms for the vocab deck (scripts/add_syn_ant.py); data on scratch $NLTK_DATA
