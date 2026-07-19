@@ -94,6 +94,13 @@ SHARED and the laptop reaches them through a VS Code / SSH port-forward, so chec
 ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab` (10526) +
 `toefl/vocab/scene_vocab` (scenes, 1536 topical words/phrases), each word tagged `tier`
 (1 high-freq / 2 rare / 3 simple) by `scripts/order_vocab.py`.
+- **Completeness loop DONE for TOEFL (2026-07-19): `scripts/score_vocab.py toefl` = 99.6/100**
+  (was 85). D3 词源 filled to 17/17 — 10351/10358 words resolved (7046 etymology + 3305
+  judged-not-useful). Pipeline (kaikki `etymology_text` → Chinese 词根词缀, no external LLM):
+  `make_etym_batches.py` → `etym_workflow.js` (Opus/Sonnet Workflow fan-out, 327 batches) →
+  `fold_etym_out.py fold toefl` (cache→deck DIRECTLY, never `enrich_etym.py` which triggers a
+  live LLM run). D1/D2 tails filled deterministically by `merge_kaikki_fields.py`. Runbook +
+  resume steps: [docs/vocab-loop.md](docs/vocab-loop.md). **GRE deck still pending** (same pipeline).
 - **TOEFL deck is COMPLETE (2026-07-11)**: every word has gloss_en; every POS sense has an
   example + collocations; no untagged senses. Pipeline: `fix_pos.py` (recovers POS from
   ECDICT's WordNet-style bare tags — this alone fixed 5214 words that showed a "—" row) →

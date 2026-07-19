@@ -61,15 +61,26 @@ If you think a dimension is worth measuring that isn't here (e.g. audio for real
 sets, example-sentence quality via an LLM judge), **add an item to `score_vocab.py`** — but keep
 every check machine-verifiable and deterministic, and say in the commit why you added it.
 
-## Baseline (2026-07-19): **85/100** on a login node (full live checks pass)
-Verified end-to-end on `gl-login4`: tts-live 4/4, frontend-e2e 6/6, write+undo 2/2 all green,
-so D6=15/15 and D1=17.4/18. (On a *compute* node the same run scores ~81 because tts-live 502s —
-run the loop on a login node.) Biggest gaps, in order:
-- **D3 词源 3.7/17** — only 550/10358 resolved (429 have etymology + 121 judged not-useful).
-  This is ~11 of the 15 missing points. **Early iterations are almost entirely D3.**
-- **D2 sense.def_en 5.1/6** — ~2200 senses (15%) have only a Chinese gloss, no English def.
-- **D1 any-phonetic** — 23 words with no phonetic of any kind; small ipa_us/uk tail (~4%/7%).
-- D4/D5/D6 essentially full — only revisit if a D-fix regresses them (the scorer will show it).
+## Baseline (2026-07-19): **85/100** → **REACHED 99.6/100 in iteration 1** (login node)
+TOEFL deck completeness loop is **DONE** (target ≥95). Verified end-to-end on `gl-login4`.
+The whole 85→99.6 climb came from filling the completeness facets in one comprehensive sweep
+(user-directed loop shape: each iteration补全所有缺项 + score/debug, not one-dimension-per-round):
+- **D3 词源 3.7 → 17.0/17** (the whole gap): 10351/10358 resolved (7046 etymology + 3305
+  judged-not-useful). Reformatted kaikki `etymology_text` → Chinese `{breakdown,story,origin}`
+  via an **Opus/Sonnet Workflow fan-out** (`scripts/etym_workflow.js`, 327 batches of ~30 words),
+  **no external/free LLM**. Pipeline: `make_etym_batches.py` (priority-ordered pending) →
+  fan-out writes per-batch out-files on scratch → `fold_etym_out.py fold` (distributes to per-term
+  cache + applies cache→deck DIRECTLY; NEVER via `enrich_etym.py`, whose `.env` keys would kick
+  off a real runtime LLM run). Fully resumable via the out-files + cache.
+- **D2 sense.def_en 5.1 → 6.0/6** and **D1 ipa tail**: `scripts/merge_kaikki_fields.py` —
+  deterministic fill-empty-only from kaikki (`def_en` +2198 as list; ipa_us +211, ipa_uk +581).
+- D4 10/10, D5 9.9/10, D6 15/15 held (no regression; scorer confirms).
+
+**To resume/extend** (e.g. GRE deck, or re-run after adding a scorer item): same pipeline,
+`make_etym_batches.py gre` → `etym_workflow.js` (pass `{"indices":[...],"model":"sonnet"}` to
+save quota, or omit `model` for this session's Opus) → `fold_etym_out.py fold gre`. The bad-JSON
+tail (rare unescaped inner-quote) is caught by the validator loop — just delete that out-file and
+re-run its single index.
 
 ## Fixers (regenerate DATA; the app code is already complete)
 
