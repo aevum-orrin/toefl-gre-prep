@@ -137,15 +137,31 @@ scratch (it's large — check size first and tell the user before downloading GB
 and reformat etymology into the Chinese-glossed breakdown the UI expects (that reformat can be the
 model's job; the facts come from Wiktionary).
 
-## Budget & freedom (user-set, 2026-07-19)
-The user has explicitly given this loop **lots of time and tokens** — use them.
-- **Re-researching is encouraged**, not just reformatting kaikki. If you want to look words up on
-  the web, cross-check etymologies, or generate from the model directly, do it — quality first.
-- **Downloading big files is pre-authorized — no need to ask** — with ONE hard rule about WHERE:
-  **big files go on scratch, under `$LANG_PREP_CACHE` =
-  `/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache`** (Neda's owned scratch,
-  writable, effectively unlimited). **NEVER download big files into `/home/ctlang`** (80 GB $HOME
-  quota). Keep only code + the small deck JSONs in git.
+## Budget & freedom (user-set, 2026-07-19) — HIGH AUTONOMY
+The user has explicitly given this loop **lots of time and tokens and a wide leash**. Quality
+first; don't box yourself into one method. Specifically all of the following are pre-authorized,
+no need to ask permission first:
+- **Re-research freely** — not just reformatting kaikki. Look words up on the web, cross-check
+  etymologies against multiple sources, generate from the model directly — whatever gives the
+  best result.
+- **Web search / WebFetch are fully open**, even when token-heavy. Use them liberally.
+- **Download anything you need** (datasets, dictionaries, models, tools) — big files welcome.
+- **Add tooling when it helps**: install/pull GitHub skills, pip packages, Claude Code plugins,
+  or new MCP servers. Some installs (MCP OAuth, Claude Code extensions) need an interactive step
+  the loop can't do headlessly — when that's the case, **ask the user to install it** (they've
+  offered) and continue with other work meanwhile.
+
+**The boundaries (only these):**
+1. **Write only inside `/home/ctlang` and Neda's scratch**
+   (`/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/`). Reading anything else is fine; do NOT
+   create/modify/delete files anywhere outside those two areas.
+2. **Big files go on scratch under `$LANG_PREP_CACHE`**
+   (`/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache`) — NEVER into `/home/ctlang`
+   (80 GB $HOME quota). Only code + the small deck JSONs belong in git.
+3. **Don't recklessly delete large files** — especially the OTHER projects' caches that live
+   beside ours under the same scratch root (`brdly-cache/ pw-cache/ xg-cache/ …`) and the raw
+   downloads in `lang-prep-cache/official-real/raw/`. Delete only scratch data you created and
+   can regenerate.
 
 ## Guardrails (from CLAUDE.md — do not skip)
 - Commit identity: author `jackiectl`, `Co-Authored-By: Claude`, noreply email. **Don't push** unless asked.
