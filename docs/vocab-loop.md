@@ -73,25 +73,37 @@ run the loop on a login node.) Biggest gaps, in order:
 
 ## Fixers (regenerate DATA; the app code is already complete)
 
+**kaikki.org is DOWNLOADED AND PRE-JOINED** (2026-07-19). One pass over the 3.2 GB English
+extract already pulled every deck word into compact files on scratch:
+`$LANG_PREP_CACHE/kaikki/<deck>_kaikki.json` (~25 MB each), schema per term:
+`{etymology_text, ipa_us, ipa_uk, by_pos:{pos:{glosses:[...], examples:[...]}}}`.
+Coverage — **TOEFL 10353/10358 matched · etymology_text 9671 · ipa 9607 · glosses all**;
+GRE 10525/10526 · etymology 10244 · ipa 10045. So the FACTS for D3/D1/D2 are now local and
+quota-free; the model's remaining job is reformatting, not research. Rebuild anytime with
+`.venv/bin/python scripts/kaikki_extract.py` (~1 min).
+
 - **D3 词源 (main target).** Each word needs `etymology:{breakdown,story,origin}` in the deck,
-  OR a cache record marking it not-useful. Two ways to produce records into the cache
-  `$LANG_PREP_CACHE/enrich_etym/toefl/<term>.json` (schema `{term,useful,breakdown,story,origin}`):
-  - **Best (no quota): the loop's own model generates them.** Prioritize uncovered words by
-    tier1→tier2, tpo_hf first (that's the study order). Write correct, standard etymologies only
-    (Latin/Greek roots, transparent affixes, loanword notes), Chinese-glossed, per the format in
-    `scripts/enrich_etym.py`'s system prompt and the `subsequent` example. `useful:false` for
-    words where roots don't genuinely help a Chinese learner. A `Workflow` fan-out is ideal here.
-  - **Free-LLM (quota-limited): `.venv/bin/python scripts/enrich_etym.py toefl --provider groq
-    --max-fails 8`** (Groq dodges Gemini's low daily cap). Resumable; stops clean when quota hits.
-  - Then **fold cache → deck**: `.venv/bin/python scripts/enrich_etym.py toefl` (no provider =
-    apply-cache-only path). Re-score.
-- **D1 发音.** `.venv/bin/python scripts/add_ipa.py` re-merges open-dict-data IPA. The residual
-  ~4% (incl. 23 with nothing) aren't in ipa-dict — fill from another source: kaikki.org Wiktionary
-  IPA (see Tools), or have the model supply US/UK IPA for that short tail. tts-live needs a login
-  node.
-- **D2 释义.** Missing `def_en` (~2200 senses) are ones where ECDICT had only a Chinese gloss.
-  Fill English learner-definitions for those senses (model or kaikki), keeping the existing
-  `def_zh`. `scripts/enrich_vocab.py` already fills examples/collocations.
+  OR a cache record marking it not-useful, in `$LANG_PREP_CACHE/enrich_etym/toefl/<term>.json`
+  (schema `{term,useful,breakdown,story,origin}`). Then fold cache→deck with
+  `.venv/bin/python scripts/enrich_etym.py toefl` (no --provider = apply-cache-only) and re-score.
+  - **Best now (no quota): reformat kaikki `etymology_text` → the Chinese-glossed breakdown.**
+    Read the word's `etymology_text` from `<deck>_kaikki.json` (authoritative Wiktionary facts:
+    source language, roots, cognates) and have the model turn it into `{breakdown, story, origin}`
+    in the exact format of `scripts/enrich_etym.py`'s system prompt + the `subsequent` example.
+    `useful:false` when roots genuinely don't help a Chinese learner (very short native words,
+    opaque origins). Prioritize uncovered words tier1→tier2, tpo_hf first (the study order). A
+    `Workflow` fan-out over batches of ~30 words is ideal — it's reformatting, so it's fast/cheap
+    and reliable. This is ~9800 words, so it spans several iterations / token windows: commit each
+    batch, the cache makes it fully resumable.
+  - Fallback (quota-limited, if you want pure-LLM for the ~700 words kaikki lacks etymology for):
+    `.venv/bin/python scripts/enrich_etym.py toefl --provider groq --max-fails 8`.
+- **D1 发音.** For the ~4% ipa_us / 7% ipa_uk tail (incl. 23 with nothing): merge from the kaikki
+  extract's `ipa_us`/`ipa_uk` (9607 covered) — write a tiny merge that only fills EMPTY fields so
+  it never clobbers the open-dict-data values already there; re-run `add_ipa.py` semantics or add
+  a `--from-kaikki` path. tts-live needs a login node.
+- **D2 释义.** Missing `def_en` (~2200 senses, ECDICT had only a Chinese gloss): fill from the
+  kaikki extract's `by_pos[pos].glosses` (English learner definitions), matched to our sense by
+  `pos`, keeping the existing `def_zh`. Only fill empty `def_en`; never overwrite.
 - **D4/D5.** Already ~full; only touch if a fix elsewhere regresses them (the scorer will show it).
 
 After any data change, **rebuild is not needed** — the app reads the JSON live; just restart the
@@ -115,7 +127,7 @@ word you just filled. Chromium runs headless on the cluster — no install neede
 | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 35k | drive/inspect the app in a real browser | **connected** (MCP) |
 | [rany2/edge-tts](https://github.com/rany2/edge-tts) | 11k | free MS neural TTS (`/api/tts`) | installed; needs login node |
 | [skywind3000/ECDICT](https://github.com/skywind3000/ECDICT) | 8k | the deck backbone (senses, freq, tags) | already the source |
-| [tatuylonen/wiktextract](https://github.com/tatuylonen/wiktextract) · [kaikki.org](https://kaikki.org/) | 1.2k | machine-readable Wiktionary: authoritative **etymology + IPA + def_en + examples**, offline JSONL, no quota | **candidate for D3/D2/D1** — download the English extract, join by lemma |
+| [tatuylonen/wiktextract](https://github.com/tatuylonen/wiktextract) · [kaikki.org](https://kaikki.org/) | 1.2k | machine-readable Wiktionary: authoritative **etymology + IPA + def_en + examples**, offline JSONL, no quota | **DOWNLOADED + pre-joined** → `$LANG_PREP_CACHE/kaikki/<deck>_kaikki.json` (see Fixers) |
 | [open-dict-data/ipa-dict](https://github.com/open-dict-data/ipa-dict) | 0.8k | US/UK IPA (already merged by `add_ipa.py`) | already used |
 
 **kaikki.org is the highest-leverage un-used source**: one English JSONL (per-word `etymology_text`,

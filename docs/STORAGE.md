@@ -23,6 +23,9 @@ $LANG_PREP_CACHE = /scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-c
 ├── enrich/            # per-word vocab enrichment cache (resumable)
 ├── enrich_etym/       # per-word 词根词缀/词源 (etymology) cache (resumable)
 ├── ipa-dict/          # en_US.txt + en_UK.txt IPA source (scripts/add_ipa.py merges into decks)
+├── kaikki/            # kaikki.org English Wiktionary extract (3.2 GB English.jsonl) + per-deck
+│                      #   joins <deck>_kaikki.json (~25 MB, scripts/kaikki_extract.py): authoritative
+│                      #   etymology_text + IPA + glosses for the vocab-completeness loop. Re-generable.
 ├── tts/<voice>/       # pronunciation mp3 cache (edge-tts neural voices, ~9 KB/word, on demand;
 │                      #   worst case ≈0.5 GB if every word × all 4 voices — realistically ~150 MB)
 ├── rl_gen/            # AI-generated R/L items staged before merge

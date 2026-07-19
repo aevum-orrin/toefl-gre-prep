@@ -22,6 +22,9 @@ Everything heavy, private, or growing lives on **scratch (Neda's owned space)** 
   `progress.jsonl`, future `essays/`.
 - `enrich/ enrich_batches/ enrich_out/ rl_gen/ gen_banks/` — vocab-enrichment cache + Opus
   bulk-enrich batch I/O + AI-gen staging.
+- `kaikki/` — kaikki.org English Wiktionary extract (3.2 GB `English.jsonl`) + per-deck joins
+  `<deck>_kaikki.json` (~25 MB, `scripts/kaikki_extract.py`): authoritative etymology_text + IPA +
+  glosses feeding the vocab-completeness loop (`docs/vocab-loop.md`). Re-generable, scratch-only.
 - `official-real/raw/` — user-uploaded real-material archives, EXTRACTED (TPO54-75, 机经,
   听/读/写/词/口语资料; PDFs + MP3 audio; 2nd wave 2026-07-10: 新东方/Koolearn 全科课程讲义,
   核桃英语, 思维导图 PNG, 语法课 PPT). `official-real/tpo_txt/<TPO>/` — TPO PDFs/DOCX converted
