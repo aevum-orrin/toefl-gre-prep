@@ -4,21 +4,22 @@ export const meta = {
   phases: [{ title: 'Reformat', detail: 'one Opus agent per ~30-word batch' }],
 }
 
-// args = { indices: [int,...] }  — batch indices to process (pending ones)
+// args = { deck?: "toefl"|"gre", indices: [int,...], model?: "sonnet" }
 const CACHE = '/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache'
-const INDIR = `${CACHE}/enrich_batches/etym/toefl`
-const OUTDIR = `${CACHE}/enrich_out/etym/toefl`
 const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
+const DECK = A.deck || 'toefl'
+const INDIR = `${CACHE}/enrich_batches/etym/${DECK}`
+const OUTDIR = `${CACHE}/enrich_out/etym/${DECK}`
 const indices = A.indices || []
 const MODEL = A.model || undefined  // undefined = inherit session model
-log(`etym reformat: ${indices.length} batches`)
+log(`etym reformat: deck=${DECK}, ${indices.length} batches`)
 
 const pad = (i) => String(i).padStart(4, '0')
 
 function prompt(i) {
   const inf = `${INDIR}/batch_${pad(i)}.json`
   const outf = `${OUTDIR}/batch_${pad(i)}.out.json`
-  return `You are an etymology teacher for Chinese students preparing for TOEFL, teaching the 词根词缀+词源 method.
+  return `You are an etymology teacher for Chinese students preparing for TOEFL/GRE, teaching the 词根词缀+词源 method.
 
 Read the JSON file: ${inf}
 It is an array of words: {term, etymology_text (authoritative Wiktionary facts), gloss_en, glosses}.

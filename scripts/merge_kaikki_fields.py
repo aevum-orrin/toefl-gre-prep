@@ -5,6 +5,10 @@ Fills ONLY EMPTY fields — never overwrites existing open-dict-data IPA or ECDI
   D1 发音 : entry.ipa_us / entry.ipa_uk  <- kaikki ipa_us / ipa_uk
   D2 释义 : sense.def_en                 <- kaikki by_pos[pos].glosses[0]  (matched by pos)
             (falls back to any available pos gloss if the sense's exact pos is absent)
+  D2 释义 : entry.gloss_en (word-level)  <- kaikki first available gloss (any pos), as a
+            single string; a cheap fallback so tier-3 stragglers the LLM-enrich skips still
+            get a gloss. Higher-quality learner glosses come from enrich_vocab (LLM); this
+            only fills what is still EMPTY afterward.
 
 Reports how many holes were filled per field.  Idempotent.
 
@@ -46,7 +50,7 @@ def main() -> None:
     deck = json.loads(path.read_text(encoding="utf-8"))
     kaikki = json.loads((CACHE / "kaikki" / f"{args.deck}_kaikki.json").read_text(encoding="utf-8"))
 
-    fill_us = fill_uk = fill_def = 0
+    fill_us = fill_uk = fill_def = fill_gloss = 0
     for w in deck:
         k = kaikki.get(w["term"])
         if not k:
@@ -58,6 +62,8 @@ def main() -> None:
         by_pos = k.get("by_pos") or {}
         # a flat pool of glosses for fallback when exact pos is missing
         any_glosses = [g for d in by_pos.values() for g in (d.get("glosses") or [])]
+        if not w.get("gloss_en") and any_glosses:
+            w["gloss_en"] = any_glosses[0]; fill_gloss += 1
         for s in (w.get("senses") or []):
             if s.get("def_en"):
                 continue
@@ -70,7 +76,8 @@ def main() -> None:
                 fill_def += 1
 
     path.write_text(json.dumps(deck, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"[{args.deck}] filled  ipa_us +{fill_us}  ipa_uk +{fill_uk}  def_en +{fill_def}")
+    print(f"[{args.deck}] filled  ipa_us +{fill_us}  ipa_uk +{fill_uk}  "
+          f"def_en +{fill_def}  gloss_en +{fill_gloss}")
 
 
 if __name__ == "__main__":

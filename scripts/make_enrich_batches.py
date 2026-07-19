@@ -61,15 +61,34 @@ def main() -> None:
     ap.add_argument("deck", choices=list(DECK_FILES))
     ap.add_argument("--tiers", default="1,2", help="comma-separated tiers to include (default 1,2)")
     ap.add_argument("--size", type=int, default=100, help="words per batch")
+    ap.add_argument("--incomplete", action="store_true",
+                    help="select words with ANY sense missing an example or <2 collocations "
+                         "(ignores gloss_en presence) — use to top up D2 examples/colloc so the "
+                         "completeness loop can converge, not just fill gloss_en for new words.")
     args = ap.parse_args()
     tiers = {int(t) for t in args.tiers.split(",")}
 
     words = json.loads(DECK_FILES[args.deck].read_text(encoding="utf-8"))
     cdir = CACHE / "enrich" / args.deck
-    todo = [w for w in words
-            if w.get("tier") in tiers
-            and not w.get("gloss_en")
-            and not (cdir / f"{w['term']}.json").exists()]
+
+    def _incomplete(w: dict) -> bool:
+        for s in (w.get("senses") or []):
+            if not s.get("examples") or len(s.get("collocations") or []) < 2:
+                return True
+        return False
+
+    if args.incomplete:
+        # re-do any word with an incomplete sense REGARDLESS of an old cache file — the cache may
+        # itself be incomplete (some senses never got an example). fold_enrich is idempotent and
+        # the loop is iteration-capped, so re-selecting still-incomplete words converges cleanly.
+        todo = [w for w in words
+                if w.get("tier") in tiers
+                and _incomplete(w)]
+    else:
+        todo = [w for w in words
+                if w.get("tier") in tiers
+                and not w.get("gloss_en")
+                and not (cdir / f"{w['term']}.json").exists()]
     todo.sort(key=_freq)  # most-frequent (most valuable) first
 
     outdir = CACHE / "enrich_batches" / args.deck

@@ -10,16 +10,20 @@ rule, commit identity, node policy). This runbook only adds the loop specifics.
 
 ```
 for iteration in 1..10:
-  1. SCORE   — run the scorer (command below) → note TOTAL and the lowest-scoring items
-  2. PICK    — take the single dimension losing the most points
-  3. FIX     — run that dimension's fixer (see "Fixers"), regenerating data only
-  4. VERIFY  — re-run the scorer; spot-check 3-5 words in a real browser (Playwright MCP)
-  5. COMMIT  — git commit the iteration (data + any code), note old→new score
+  1. SCORE   — run the scorer (command below) → note TOTAL and every dimension's gap
+  2. FIX-ALL — in the SAME iteration, raise EVERY deficient dimension at once (run all the
+               relevant fixers below — D1 ipa, D2 def_en/examples/colloc, D3 词源, …),
+               regenerating data only. NOT "only the lowest dimension this round".
+  3. VERIFY  — re-run the scorer; spot-check 3-5 words in a real browser (Playwright MCP)
+  4. COMMIT  — git commit the iteration (data + any code), note old→new score
   if TOTAL >= 95: stop
 ```
 
-Announce each iteration in chat (one line: what you're fixing and why). Commit after every
-iteration so any regression is one `git revert` away.
+**Loop shape (global rule, ~/.claude/CLAUDE.md):** every iteration does the SAME thing — a full
+sweep that pushes ALL dimensions up together, then re-scores. Do NOT fix only the lowest dimension
+one round and the next-lowest the next; that is wrong. Fine-grained fractional scores are the meter.
+Announce each iteration in chat (one line: score delta). Commit after every iteration so any
+regression is one `git revert` away.
 
 ## Run environment (matters — get this wrong and you waste hours)
 

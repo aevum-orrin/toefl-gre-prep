@@ -10,6 +10,7 @@ const start = A.start
 const end = A.end
 const inDir = A.inDir
 const outDir = A.outDir
+const MODEL = A.model || undefined  // e.g. "sonnet" to save quota; omit = inherit session model
 
 function pad(n) { return String(n).padStart(3, '0') }
 
@@ -43,7 +44,7 @@ Use exactly the pos labels provided; do not add parts of speech that weren't req
 Write the result as a JSON array (one object per input word, same order) to EXACTLY this path using the Write tool:
 ${outPath}
 Write ONLY valid UTF-8 JSON to that file (no markdown fences). Then reply with ONLY the integer count of words you wrote — do NOT paste the JSON into your reply.`
-  return agent(prompt, { label: `enrich ${deck} b${pad(i)}`, phase: 'Enrich', agentType: 'general-purpose' })
+  return agent(prompt, { label: `enrich ${deck} b${pad(i)}`, phase: 'Enrich', agentType: 'general-purpose', model: MODEL })
     .then(r => ({ i, r }))
     .catch(() => ({ i, r: null }))
 }))
