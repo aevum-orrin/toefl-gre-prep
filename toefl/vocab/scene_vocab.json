@@ -720,7 +720,13 @@
   "tier": 1,
   "gloss_en": "To stop attending school for a period of time; to take a leave from one's studies.",
   "ipa_us": "ˈkwɪt ˈskuɫ",
-  "ipa_uk": "kwˈɪt skˈuːl"
+  "ipa_uk": "kwˈɪt skˈuːl",
+  "exchange": {
+   "p": "quit school",
+   "d": "quit school",
+   "i": "quitting school",
+   "3": "quits school"
+  }
  },
  {
   "term": "drop out of school",
@@ -751,7 +757,13 @@
   "tier": 1,
   "gloss_en": "To leave school permanently without finishing one's degree.",
   "ipa_us": "ˈdɹɑp ˈaʊt ˈəv ˈskuɫ",
-  "ipa_uk": "dɹˈɒp ˈaʊt ˈɒv skˈuːl"
+  "ipa_uk": "dɹˈɒp ˈaʊt ˈɒv skˈuːl",
+  "exchange": {
+   "p": "dropped out of school",
+   "d": "dropped out of school",
+   "i": "dropping out of school",
+   "3": "drops out of school"
+  }
  },
  {
   "term": "transfer to another school",
@@ -781,7 +793,13 @@
   "topic": "打工实习",
   "tier": 1,
   "gloss_en": "To move from one school or university to a different one and continue one's studies there.",
-  "ipa_us": "ˈtɹænsfɝ ˈtu əˈnəðɝ ˈskuɫ"
+  "ipa_us": "ˈtɹænsfɝ ˈtu əˈnəðɝ ˈskuɫ",
+  "exchange": {
+   "p": "transferred to another school",
+   "d": "transferred to another school",
+   "i": "transferring to another school",
+   "3": "transfers to another school"
+  }
  },
  {
   "term": "commencement",
@@ -1752,7 +1770,13 @@
   "topic": "课程",
   "tier": 1,
   "gloss_en": "To attend a course without doing the assignments or receiving credit or a grade.",
-  "ipa_us": "ˈɔdɪt ˈeɪ ˈkɔɹs"
+  "ipa_us": "ˈɔdɪt ˈeɪ ˈkɔɹs",
+  "exchange": {
+   "p": "audited a course",
+   "d": "audited a course",
+   "i": "auditing a course",
+   "3": "audits a course"
+  }
  },
  {
   "term": "take a course",
@@ -1782,7 +1806,13 @@
   "topic": "课程",
   "tier": 1,
   "gloss_en": "To enroll in and attend a course of study.",
-  "ipa_us": "ˈteɪk ˈeɪ ˈkɔɹs"
+  "ipa_us": "ˈteɪk ˈeɪ ˈkɔɹs",
+  "exchange": {
+   "p": "took a course",
+   "d": "taken a course",
+   "i": "taking a course",
+   "3": "takes a course"
+  }
  },
  {
   "term": "elementary",
@@ -4452,7 +4482,13 @@
   ],
   "topic": "图书馆",
   "tier": 1,
-  "gloss_en": "To place course materials in a special library section where students may use them for a short time but usually not borrow them."
+  "gloss_en": "To place course materials in a special library section where students may use them for a short time but usually not borrow them.",
+  "exchange": {
+   "p": "put ... on reserve",
+   "d": "put ... on reserve",
+   "i": "putting ... on reserve",
+   "3": "puts ... on reserve"
+  }
  },
  {
   "term": "online catalogue",
@@ -4577,7 +4613,13 @@
   "tier": 1,
   "gloss_en": "To officially borrow a book or other item from the library.",
   "ipa_us": "ˈtʃɛk ˈaʊt",
-  "ipa_uk": "tʃˈɛk ˈaʊt"
+  "ipa_uk": "tʃˈɛk ˈaʊt",
+  "exchange": {
+   "p": "checked out",
+   "d": "checked out",
+   "i": "checking out",
+   "3": "checks out"
+  }
  },
  {
   "term": "loan period",
@@ -5015,7 +5057,13 @@
   "tier": 1,
   "gloss_en": "To register for a course, activity, or program by putting one's name on a list.",
   "ipa_us": "ˈsaɪn ˈəp ˈfɔɹ",
-  "ipa_uk": "sˈaɪn ˈʌp fˈɔː"
+  "ipa_uk": "sˈaɪn ˈʌp fˈɔː",
+  "exchange": {
+   "p": "signed up for",
+   "d": "signed up for",
+   "i": "signing up for",
+   "3": "signs up for"
+  }
  },
  {
   "term": "major",
@@ -5732,7 +5780,13 @@
   "topic": "师生对话",
   "tier": 1,
   "gloss_en": "To officially choose and register one's main field of study.",
-  "ipa_us": "dɪˈkɫɛɹ ˈeɪ ˈmeɪdʒɝ"
+  "ipa_us": "dɪˈkɫɛɹ ˈeɪ ˈmeɪdʒɝ",
+  "exchange": {
+   "p": "declared a major",
+   "d": "declared a major",
+   "i": "declaring a major",
+   "3": "declares a major"
+  }
  },
  {
   "term": "faculty",
@@ -21053,7 +21107,13 @@
   "tier": 1,
   "gloss_en": "To separate or move away from each other, as when two tectonic plates pull in opposite directions.",
   "ipa_us": "ˈspɫɪt əˈpɑɹt",
-  "ipa_uk": "splˈɪt ɐpˈɑːt"
+  "ipa_uk": "splˈɪt ɐpˈɑːt",
+  "exchange": {
+   "p": "split apart",
+   "d": "split apart",
+   "i": "splitting apart",
+   "3": "splits apart"
+  }
  },
  {
   "term": "Dive under",
@@ -21084,7 +21144,13 @@
   "tier": 1,
   "gloss_en": "To move downward beneath something, as when one tectonic plate sinks below another.",
   "ipa_us": "ˈdaɪv ˈəndɝ",
-  "ipa_uk": "dˈaɪv ˈʌndɐ"
+  "ipa_uk": "dˈaɪv ˈʌndɐ",
+  "exchange": {
+   "p": "dived under",
+   "d": "dived under",
+   "i": "diving under",
+   "3": "dives under"
+  }
  },
  {
   "term": "Slide past",
@@ -21115,7 +21181,13 @@
   "tier": 1,
   "gloss_en": "To move sideways alongside each other, as when two tectonic plates grind horizontally in opposite directions.",
   "ipa_us": "ˈsɫaɪd ˈpæst",
-  "ipa_uk": "slˈaɪd pˈɑːst"
+  "ipa_uk": "slˈaɪd pˈɑːst",
+  "exchange": {
+   "p": "slid past",
+   "d": "slid past",
+   "i": "sliding past",
+   "3": "slides past"
+  }
  },
  {
   "term": "meteorology",
@@ -43370,7 +43442,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To make someone become interested in doing something."
+  "gloss_en": "To make someone become interested in doing something.",
+  "exchange": {
+   "p": "stimulated one's interest in doing sth",
+   "d": "stimulated one's interest in doing sth",
+   "i": "stimulating one's interest in doing sth",
+   "3": "stimulates one's interest in doing sth"
+  }
  },
  {
   "term": "be blindsided by",
@@ -43430,7 +43508,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To disagree with and try to prevent something the university intends to do."
+  "gloss_en": "To disagree with and try to prevent something the university intends to do.",
+  "exchange": {
+   "p": "opposed the university's plan to do sth",
+   "d": "opposed the university's plan to do sth",
+   "i": "opposing the university's plan to do sth",
+   "3": "opposes the university's plan to do sth"
+  }
  },
  {
   "term": "renovation",
@@ -43509,7 +43593,13 @@
   "tier": 1,
   "gloss_en": "To disrupt, obstruct, or get in the way of something.",
   "ipa_us": "ˌɪnɝˈfɪɹ ˈwɪð",
-  "ipa_uk": "ˌɪntəfˈiə wˈɪð"
+  "ipa_uk": "ˌɪntəfˈiə wˈɪð",
+  "exchange": {
+   "p": "interfered with",
+   "d": "interfered with",
+   "i": "interfering with",
+   "3": "interferes with"
+  }
  },
  {
   "term": "interfere in",
@@ -43540,7 +43630,13 @@
   "tier": 1,
   "gloss_en": "To involve oneself in a situation or matter that concerns other people, usually without being asked.",
   "ipa_us": "ˌɪnɝˈfɪɹ ˈɪn",
-  "ipa_uk": "ˌɪntəfˈiə ˈɪn"
+  "ipa_uk": "ˌɪntəfˈiə ˈɪn",
+  "exchange": {
+   "p": "interfered in",
+   "d": "interfered in",
+   "i": "interfering in",
+   "3": "interferes in"
+  }
  },
  {
   "term": "room for maneuver",
@@ -43813,7 +43909,13 @@
   "tier": 1,
   "gloss_en": "To prepare a plan showing when each employee is due to work.",
   "ipa_us": "ˈmeɪk ˈəp ˈstæf ˈskɛdʒuɫ",
-  "ipa_uk": "mˈeɪk ˈʌp stˈɑːf ʃˈɛdjuːl"
+  "ipa_uk": "mˈeɪk ˈʌp stˈɑːf ʃˈɛdjuːl",
+  "exchange": {
+   "p": "made up staff schedule",
+   "d": "made up staff schedule",
+   "i": "making up staff schedule",
+   "3": "makes up staff schedule"
+  }
  },
  {
   "term": "maintain the company building",
@@ -43844,7 +43946,13 @@
   "tier": 1,
   "gloss_en": "To keep the company's premises in good working condition.",
   "ipa_us": "meɪnˈteɪn ˈðə ˈkəmpəˌni ˈbɪɫdɪŋ",
-  "ipa_uk": "meɪntˈeɪn ðə kˈʌmpəni bˈɪldɪŋ"
+  "ipa_uk": "meɪntˈeɪn ðə kˈʌmpəni bˈɪldɪŋ",
+  "exchange": {
+   "p": "maintained the company building",
+   "d": "maintained the company building",
+   "i": "maintaining the company building",
+   "3": "maintains the company building"
+  }
  },
  {
   "term": "reading lamp",
@@ -43905,7 +44013,13 @@
   "tier": 1,
   "gloss_en": "To keep an ongoing record of the goods or supplies a business has in stock.",
   "ipa_us": "ˈtɹæk ˌɪnvənˈtɔɹi",
-  "ipa_uk": "tɹˈæk ˈɪnvəntɹˌi"
+  "ipa_uk": "tɹˈæk ˈɪnvəntɹˌi",
+  "exchange": {
+   "p": "tracked inventory",
+   "d": "tracked inventory",
+   "i": "tracking inventory",
+   "3": "tracks inventory"
+  }
  },
  {
   "term": "order supplies",
@@ -43936,7 +44050,13 @@
   "tier": 1,
   "gloss_en": "To request and purchase the materials or goods a business needs.",
   "ipa_us": "ˈɔɹdɝ səˈpɫaɪz",
-  "ipa_uk": "ˈɔːdɐ səplˈaɪz"
+  "ipa_uk": "ˈɔːdɐ səplˈaɪz",
+  "exchange": {
+   "p": "ordered supplies",
+   "d": "ordered supplies",
+   "i": "ordering supplies",
+   "3": "orders supplies"
+  }
  },
  {
   "term": "a round trip",
@@ -44256,7 +44376,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To hide a large number of contradictions beneath a seemingly simple surface.",
-  "ipa_us": "kənˈsiɫ ˈeɪ ˈhoʊst ˈəv ˈpɛɹəˌdɑksɪz"
+  "ipa_us": "kənˈsiɫ ˈeɪ ˈhoʊst ˈəv ˈpɛɹəˌdɑksɪz",
+  "exchange": {
+   "p": "concealed a host of paradoxes",
+   "d": "concealed a host of paradoxes",
+   "i": "concealing a host of paradoxes",
+   "3": "conceals a host of paradoxes"
+  }
  },
  {
   "term": "strain every nerve to do sth",
@@ -44285,7 +44411,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To make every possible effort to do something."
+  "gloss_en": "To make every possible effort to do something.",
+  "exchange": {
+   "p": "strained every nerve to do sth",
+   "d": "strained every nerve to do sth",
+   "i": "straining every nerve to do sth",
+   "3": "strains every nerve to do sth"
+  }
  },
  {
   "term": "set one's doubts at rest",
@@ -44315,7 +44447,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To remove someone's uncertainties or worries about something.",
-  "ipa_us": "ˈsɛt ˈwənz ˈdaʊts ˈæt ˈɹɛst"
+  "ipa_us": "ˈsɛt ˈwənz ˈdaʊts ˈæt ˈɹɛst",
+  "exchange": {
+   "p": "set one's doubts at rest",
+   "d": "set one's doubts at rest",
+   "i": "setting one's doubts at rest",
+   "3": "sets one's doubts at rest"
+  }
  },
  {
   "term": "set one's mind at rest",
@@ -44345,7 +44483,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To make someone feel calm and free of worry.",
-  "ipa_us": "ˈsɛt ˈwənz ˈmaɪnd ˈæt ˈɹɛst"
+  "ipa_us": "ˈsɛt ˈwənz ˈmaɪnd ˈæt ˈɹɛst",
+  "exchange": {
+   "p": "set one's mind at rest",
+   "d": "set one's mind at rest",
+   "i": "setting one's mind at rest",
+   "3": "sets one's mind at rest"
+  }
  },
  {
   "term": "put into effect",
@@ -44375,7 +44519,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To make a plan, rule, or decision start operating.",
-  "ipa_us": "ˈpʊt ˈɪntu ˈifɛkt"
+  "ipa_us": "ˈpʊt ˈɪntu ˈifɛkt",
+  "exchange": {
+   "p": "put into effect",
+   "d": "put into effect",
+   "i": "putting into effect",
+   "3": "puts into effect"
+  }
  },
  {
   "term": "moral character",
@@ -44467,7 +44617,13 @@
   "tier": 1,
   "gloss_en": "To fall asleep, especially gradually and deeply.",
   "ipa_us": "ˈsɪŋk ˈɪntu ˈsɫəmbɝ",
-  "ipa_uk": "sˈɪŋk ˈɪntʊ slˈʌmbɐ"
+  "ipa_uk": "sˈɪŋk ˈɪntʊ slˈʌmbɐ",
+  "exchange": {
+   "p": "sank into slumber",
+   "d": "sunk into slumber",
+   "i": "sinking into slumber",
+   "3": "sinks into slumber"
+  }
  },
  {
   "term": "entrust sth to sb",
@@ -44496,7 +44652,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To give someone the responsibility for taking care of something or someone."
+  "gloss_en": "To give someone the responsibility for taking care of something or someone.",
+  "exchange": {
+   "p": "entrusted sth to sb",
+   "d": "entrusted sth to sb",
+   "i": "entrusting sth to sb",
+   "3": "entrusts sth to sb"
+  }
  },
  {
   "term": "consist in",
@@ -44526,7 +44688,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To have something as its main or essential feature; to be based on.",
-  "ipa_us": "kənˈsɪst ˈɪn"
+  "ipa_us": "kənˈsɪst ˈɪn",
+  "exchange": {
+   "p": "consisted in",
+   "d": "consisted in",
+   "i": "consisting in",
+   "3": "consists in"
+  }
  },
  {
   "term": "uphold justice",
@@ -44557,7 +44725,13 @@
   "tier": 1,
   "gloss_en": "To support and maintain fairness and the rule of law.",
   "ipa_us": "əpˈhoʊɫd ˈdʒəstəs",
-  "ipa_uk": "ʌphˈəʊld dʒˈʌstɪs"
+  "ipa_uk": "ʌphˈəʊld dʒˈʌstɪs",
+  "exchange": {
+   "p": "upheld justice",
+   "d": "upheld justice",
+   "i": "upholding justice",
+   "3": "upholds justice"
+  }
  },
  {
   "term": "approximate the ideal",
@@ -44587,7 +44761,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To come close to a perfect or ideal standard without fully reaching it.",
-  "ipa_us": "əˈpɹɑksəˌmeɪt ˈðə aɪˈdiɫ"
+  "ipa_us": "əˈpɹɑksəˌmeɪt ˈðə aɪˈdiɫ",
+  "exchange": {
+   "p": "approximated the ideal",
+   "d": "approximated the ideal",
+   "i": "approximating the ideal",
+   "3": "approximates the ideal"
+  }
  },
  {
   "term": "draw on",
@@ -44619,7 +44799,13 @@
   "tier": 1,
   "gloss_en": "To make use of a resource, such as knowledge or experience, for a particular purpose.",
   "ipa_us": "ˈdɹɔ ˈɑn",
-  "ipa_uk": "dɹˈɔː ˈɒn"
+  "ipa_uk": "dɹˈɔː ˈɒn",
+  "exchange": {
+   "p": "drew on",
+   "d": "drawn on",
+   "i": "drawing on",
+   "3": "draws on"
+  }
  },
  {
   "term": "be financially well-off",
@@ -44679,7 +44865,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To direct money toward a particular purpose or activity."
+  "gloss_en": "To direct money toward a particular purpose or activity.",
+  "exchange": {
+   "p": "channelled funding into sth",
+   "d": "channelled funding into sth",
+   "i": "channelling funding into sth",
+   "3": "channels funding into sth"
+  }
  },
  {
   "term": "a fraction of",
@@ -44804,7 +44996,13 @@
   "tier": 1,
   "gloss_en": "To make use of an existing resource, source of knowledge, or energy.",
   "ipa_us": "ˈtæp ˈɪntu",
-  "ipa_uk": "tˈæp ˈɪntʊ"
+  "ipa_uk": "tˈæp ˈɪntʊ",
+  "exchange": {
+   "p": "tapped into",
+   "d": "tapped into",
+   "i": "tapping into",
+   "3": "taps into"
+  }
  },
  {
   "term": "commune with nature",
@@ -44834,7 +45032,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "To feel a close, contemplative connection with the natural world.",
-  "ipa_us": "ˈkɑmjun ˈwɪð ˈneɪtʃɝ"
+  "ipa_us": "ˈkɑmjun ˈwɪð ˈneɪtʃɝ",
+  "exchange": {
+   "p": "communed with nature",
+   "d": "communed with nature",
+   "i": "communing with nature",
+   "3": "communes with nature"
+  }
  },
  {
   "term": "commune",
@@ -44900,7 +45104,13 @@
   "tier": 1,
   "gloss_en": "To lie back in a relaxed position on a long, comfortable chair.",
   "ipa_us": "ɹɪˈkɫaɪn ˈɑn ˈðə ˈɫaʊndʒ ˈtʃɛɹ",
-  "ipa_uk": "ɹɪklˈaɪn ˈɒn ðə lˈaʊndʒ tʃˈeə"
+  "ipa_uk": "ɹɪklˈaɪn ˈɒn ðə lˈaʊndʒ tʃˈeə",
+  "exchange": {
+   "p": "reclined on the lounge chair",
+   "d": "reclined on the lounge chair",
+   "i": "reclining on the lounge chair",
+   "3": "reclines on the lounge chair"
+  }
  },
  {
   "term": "the seashore with a gleam of moonlight",
@@ -45113,7 +45323,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "To behave in an excessively humble or submissive way toward someone to gain favor."
+  "gloss_en": "To behave in an excessively humble or submissive way toward someone to gain favor.",
+  "exchange": {
+   "p": "grovelled to sb",
+   "d": "grovelled to sb",
+   "i": "grovelling to sb",
+   "3": "grovels to sb"
+  }
  },
  {
   "term": "be stuck in a groove",
@@ -45421,7 +45637,13 @@
   "tier": 1,
   "gloss_en": "To notice slight differences or shifts that are not obvious.",
   "ipa_us": "dɪˈsɝn ˈðə ˈsətəɫ ˈtʃeɪndʒəz",
-  "ipa_uk": "dɪsˈɜːn ðə sˈʌtəl tʃˈeɪndʒɪz"
+  "ipa_uk": "dɪsˈɜːn ðə sˈʌtəl tʃˈeɪndʒɪz",
+  "exchange": {
+   "p": "discerned the subtle changes",
+   "d": "discerned the subtle changes",
+   "i": "discerning the subtle changes",
+   "3": "discerns the subtle changes"
+  }
  },
  {
   "term": "the interplay of fact and fiction",
@@ -45514,7 +45736,13 @@
   "tier": 1,
   "gloss_en": "to walk heavily on the grass and damage it by stepping on it",
   "ipa_us": "ˈtɹæmpəɫ ˈɑn ˈðə ˈɫɔn",
-  "ipa_uk": "tɹˈɑːmpəl ˈɒn ðə lˈɔːn"
+  "ipa_uk": "tɹˈɑːmpəl ˈɒn ðə lˈɔːn",
+  "exchange": {
+   "p": "trampled on the lawn",
+   "d": "trampled on the lawn",
+   "i": "trampling on the lawn",
+   "3": "tramples on the lawn"
+  }
  },
  {
   "term": "a coupon for a half-off dinner",
@@ -45574,7 +45802,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to live in a peaceful, simple, and happy way, like the charming rural life described in poems",
-  "ipa_us": "ˈɫɛd ˈæn aɪˈdɪɫɪk ˈɫaɪf"
+  "ipa_us": "ˈɫɛd ˈæn aɪˈdɪɫɪk ˈɫaɪf",
+  "exchange": {
+   "p": "led an idyllic life",
+   "d": "led an idyllic life",
+   "i": "leading an idyllic life",
+   "3": "leads an idyllic life"
+  }
  },
  {
   "term": "drowsy",
@@ -45801,7 +46035,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to damage or weaken someone's confidence, making them feel less sure of themselves",
-  "ipa_us": "ˈdɛnt ˈwənz ˈkɑnfədəns"
+  "ipa_us": "ˈdɛnt ˈwənz ˈkɑnfədəns",
+  "exchange": {
+   "p": "dented one's confidence",
+   "d": "dented one's confidence",
+   "i": "denting one's confidence",
+   "3": "dents one's confidence"
+  }
  },
  {
   "term": "the periphery of the city",
@@ -45863,7 +46103,13 @@
   "tier": 1,
   "gloss_en": "to carry out the official responsibilities involved in making laws",
   "ipa_us": "ˈteɪk ˈkɛɹ ˈəv ˈɫɛdʒəˌsɫeɪtɪv ˈdutiz",
-  "ipa_uk": "tˈeɪk kˈeə ˈɒv lˈɛdʒɪslətˌɪv djˈuːtɪz"
+  "ipa_uk": "tˈeɪk kˈeə ˈɒv lˈɛdʒɪslətˌɪv djˈuːtɪz",
+  "exchange": {
+   "p": "took care of legislative duties",
+   "d": "taken care of legislative duties",
+   "i": "taking care of legislative duties",
+   "3": "takes care of legislative duties"
+  }
  },
  {
   "term": "a reservoir of information",
@@ -45923,7 +46169,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to push forward roughly and forcefully through a group of people",
-  "ipa_us": "ˈbɑɹdʒ ˈwənz ˈweɪ ˈθɹu ˈðə ˈkɹaʊdz"
+  "ipa_us": "ˈbɑɹdʒ ˈwənz ˈweɪ ˈθɹu ˈðə ˈkɹaʊdz",
+  "exchange": {
+   "p": "barged one's way through the crowds",
+   "d": "barged one's way through the crowds",
+   "i": "barging one's way through the crowds",
+   "3": "barges one's way through the crowds"
+  }
  },
  {
   "term": "acquire a foreign language",
@@ -45953,7 +46205,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to learn a foreign language until you can use it, especially gradually through exposure and practice",
-  "ipa_us": "əˈkwaɪɝ ˈeɪ ˈfɑɹən ˈɫæŋɡwədʒ"
+  "ipa_us": "əˈkwaɪɝ ˈeɪ ˈfɑɹən ˈɫæŋɡwədʒ",
+  "exchange": {
+   "p": "acquired a foreign language",
+   "d": "acquired a foreign language",
+   "i": "acquiring a foreign language",
+   "3": "acquires a foreign language"
+  }
  },
  {
   "term": "be packed",
@@ -46073,7 +46331,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to officially impose and collect taxes from someone, using government authority"
+  "gloss_en": "to officially impose and collect taxes from someone, using government authority",
+  "exchange": {
+   "p": "levied taxes on sb",
+   "d": "levied taxes on sb",
+   "i": "levying taxes on sb",
+   "3": "levies taxes on sb"
+  }
  },
  {
   "term": "revolve around",
@@ -46105,7 +46369,13 @@
   "tier": 1,
   "gloss_en": "to have something as the main subject or central focus; to center on something",
   "ipa_us": "ɹiˈvɑɫv ɝˈaʊn",
-  "ipa_uk": "ɹɪvˈɒlv ɐɹˈaʊnd"
+  "ipa_uk": "ɹɪvˈɒlv ɐɹˈaʊnd",
+  "exchange": {
+   "p": "revolved around",
+   "d": "revolved around",
+   "i": "revolving around",
+   "3": "revolves around"
+  }
  },
  {
   "term": "institute a series of reforms",
@@ -46135,7 +46405,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to officially introduce and put into effect a set of changes intended to improve a system",
-  "ipa_us": "ˈɪnstəˌtut ˈeɪ ˈsɪɹiz ˈəv ɹəˈfɔɹmz"
+  "ipa_us": "ˈɪnstəˌtut ˈeɪ ˈsɪɹiz ˈəv ɹəˈfɔɹmz",
+  "exchange": {
+   "p": "instituted a series of reforms",
+   "d": "instituted a series of reforms",
+   "i": "instituting a series of reforms",
+   "3": "institutes a series of reforms"
+  }
  },
  {
   "term": "bolster one's confidence",
@@ -46165,7 +46441,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to strengthen or increase someone's confidence and self-belief",
-  "ipa_us": "ˈboʊɫstɝ ˈwənz ˈkɑnfədəns"
+  "ipa_us": "ˈboʊɫstɝ ˈwənz ˈkɑnfədəns",
+  "exchange": {
+   "p": "bolstered one's confidence",
+   "d": "bolstered one's confidence",
+   "i": "bolstering one's confidence",
+   "3": "bolsters one's confidence"
+  }
  },
  {
   "term": "in grave peril",
@@ -46226,7 +46508,13 @@
   "tier": 1,
   "gloss_en": "to be in charge of and lead a meeting, organization, or event; to have authority over something",
   "ipa_us": "pɹiˈzaɪd ˈoʊvɝ",
-  "ipa_uk": "pɹɪsˈaɪd ˈəʊvɐ"
+  "ipa_uk": "pɹɪsˈaɪd ˈəʊvɐ",
+  "exchange": {
+   "p": "presided over",
+   "d": "presided over",
+   "i": "presiding over",
+   "3": "presides over"
+  }
  },
  {
   "term": "bring to an end",
@@ -46257,7 +46545,13 @@
   "tier": 1,
   "gloss_en": "to make something finish or stop; to conclude something",
   "ipa_us": "ˈbɹɪŋ ˈtu ˈæn ˈɛnd",
-  "ipa_uk": "bɹˈɪŋ tˈuː ˈɐn ˈɛnd"
+  "ipa_uk": "bɹˈɪŋ tˈuː ˈɐn ˈɛnd",
+  "exchange": {
+   "p": "brought to an end",
+   "d": "brought to an end",
+   "i": "bringing to an end",
+   "3": "brings to an end"
+  }
  },
  {
   "term": "be inscribed with",
@@ -46473,7 +46767,13 @@
   "tier": 1,
   "gloss_en": "to make people feel less certain that something is true or reliable",
   "ipa_us": "ˈkæst ˈdaʊt ˈɑn",
-  "ipa_uk": "kˈɑːst dˈaʊt ˈɒn"
+  "ipa_uk": "kˈɑːst dˈaʊt ˈɒn",
+  "exchange": {
+   "p": "cast doubt on",
+   "d": "cast doubt on",
+   "i": "casting doubt on",
+   "3": "casts doubt on"
+  }
  },
  {
   "term": "serve a useful purpose",
@@ -46534,7 +46834,13 @@
   "tier": 1,
   "gloss_en": "to cite or refer to famous, highly respected scholars in order to support one's argument",
   "ipa_us": "ˌɪnˈvoʊk ˈɛmənənt ˈskɑɫɝz",
-  "ipa_uk": "ɪnvˈəʊk ˈɛmɪnənt skˈɒləz"
+  "ipa_uk": "ɪnvˈəʊk ˈɛmɪnənt skˈɒləz",
+  "exchange": {
+   "p": "invoked eminent scholars",
+   "d": "invoked eminent scholars",
+   "i": "invoking eminent scholars",
+   "3": "invokes eminent scholars"
+  }
  },
  {
   "term": "rise from humble origins",
@@ -46565,7 +46871,13 @@
   "tier": 1,
   "gloss_en": "to start life in a poor or low social position and become successful",
   "ipa_us": "ˈɹaɪz ˈfɹəm ˈhəmbəɫ ˈɔɹədʒɪnz",
-  "ipa_uk": "ɹˈaɪz fɹˈɒm hˈʌmbəl ˈɒɹɪdʒˌɪnz"
+  "ipa_uk": "ɹˈaɪz fɹˈɒm hˈʌmbəl ˈɒɹɪdʒˌɪnz",
+  "exchange": {
+   "p": "rose from humble origins",
+   "d": "risen from humble origins",
+   "i": "rising from humble origins",
+   "3": "rises from humble origins"
+  }
  },
  {
   "term": "a formidable opponent",
@@ -46731,7 +47043,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to gradually form a strong interest in and attraction to something",
-  "ipa_us": "dɪˈvɛɫəp ˈeɪ ˌfæsəˈneɪʃən ˈwɪð"
+  "ipa_us": "dɪˈvɛɫəp ˈeɪ ˌfæsəˈneɪʃən ˈwɪð",
+  "exchange": {
+   "p": "developed a fascination with",
+   "d": "developed a fascination with",
+   "i": "developing a fascination with",
+   "3": "develops a fascination with"
+  }
  },
  {
   "term": "make one's way to",
@@ -46761,7 +47079,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to travel or move toward a place, often gradually or with effort; (of things) to eventually reach a place",
-  "ipa_us": "ˈmeɪk ˈwənz ˈweɪ ˈtu"
+  "ipa_us": "ˈmeɪk ˈwənz ˈweɪ ˈtu",
+  "exchange": {
+   "p": "made one's way to",
+   "d": "made one's way to",
+   "i": "making one's way to",
+   "3": "makes one's way to"
+  }
  },
  {
   "term": "A eclipses B in importance",
@@ -46883,7 +47207,13 @@
   "tier": 1,
   "gloss_en": "to die earlier than expected or before reaching old age",
   "ipa_us": "ˈdaɪ ˌpɹiməˈtʃʊɹɫi",
-  "ipa_uk": "dˈaɪ pɹɪmətʃˈɔːli"
+  "ipa_uk": "dˈaɪ pɹɪmətʃˈɔːli",
+  "exchange": {
+   "p": "died prematurely",
+   "d": "died prematurely",
+   "i": "dying prematurely",
+   "3": "dies prematurely"
+  }
  },
  {
   "term": "a premature decision",
@@ -46943,7 +47273,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to refuse or turn away from living in a city because one dislikes it",
-  "ipa_us": "ˈɹidʒɛkt ˈsɪti ˈɫaɪf"
+  "ipa_us": "ˈɹidʒɛkt ˈsɪti ˈɫaɪf",
+  "exchange": {
+   "p": "rejected city life",
+   "d": "rejected city life",
+   "i": "rejecting city life",
+   "3": "rejects city life"
+  }
  },
  {
   "term": "a partial solution to the problem",
@@ -47035,7 +47371,13 @@
   "tier": 1,
   "gloss_en": "to proceed without problems or interruptions",
   "ipa_us": "ˈɡoʊ ˈsmuðɫi",
-  "ipa_uk": "ɡˈəʊ smˈuːðli"
+  "ipa_uk": "ɡˈəʊ smˈuːðli",
+  "exchange": {
+   "p": "went smoothly",
+   "d": "gone smoothly",
+   "i": "going smoothly",
+   "3": "goes smoothly"
+  }
  },
  {
   "term": "a reasonable price",
@@ -47187,7 +47529,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to make someone's illness worse or more serious",
-  "ipa_us": "ˈæɡɹəˌveɪt ˈwənz ˈɪɫnəs"
+  "ipa_us": "ˈæɡɹəˌveɪt ˈwənz ˈɪɫnəs",
+  "exchange": {
+   "p": "aggravated one's illness",
+   "d": "aggravated one's illness",
+   "i": "aggravating one's illness",
+   "3": "aggravates one's illness"
+  }
  },
  {
   "term": "A surpasses B in ...",
@@ -47278,7 +47626,13 @@
   "tier": 1,
   "gloss_en": "to take more of a medicine than the amount officially advised",
   "ipa_us": "ɪkˈsid ˈðə ˌɹɛkəˈmɛndɪd ˈdoʊsədʒ",
-  "ipa_uk": "ɛksˈiːd ðə ɹˌɛkəmˈɛndɪd dˈəʊsɪdʒ"
+  "ipa_uk": "ɛksˈiːd ðə ɹˌɛkəmˈɛndɪd dˈəʊsɪdʒ",
+  "exchange": {
+   "p": "exceeded the recommended dosage",
+   "d": "exceeded the recommended dosage",
+   "i": "exceeding the recommended dosage",
+   "3": "exceeds the recommended dosage"
+  }
  },
  {
   "term": "a holistic solution to the problem",
@@ -47623,7 +47977,13 @@
   "tier": 1,
   "gloss_en": "to begin to exist; to be created or formed",
   "ipa_us": "ˈkəm ˈɪntu ɛɡˈzɪstəns",
-  "ipa_uk": "kˈʌm ˈɪntʊ ɛɡzˈɪstəns"
+  "ipa_uk": "kˈʌm ˈɪntʊ ɛɡzˈɪstəns",
+  "exchange": {
+   "p": "came into existence",
+   "d": "come into existence",
+   "i": "coming into existence",
+   "3": "comes into existence"
+  }
  },
  {
   "term": "deploy security forces",
@@ -47775,7 +48135,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to drink something so that you stop feeling thirsty",
-  "ipa_us": "ˈkwɛntʃ ˈwənz ˈθɝst"
+  "ipa_us": "ˈkwɛntʃ ˈwənz ˈθɝst",
+  "exchange": {
+   "p": "quenched one's thirst",
+   "d": "quenched one's thirst",
+   "i": "quenching one's thirst",
+   "3": "quenches one's thirst"
+  }
  },
  {
   "term": "replenish nutrients",
@@ -47806,7 +48172,13 @@
   "tier": 1,
   "gloss_en": "to restore or refill nutrients that have been used up",
   "ipa_us": "ɹiˈpɫɛnɪʃ ˈnutɹiənts",
-  "ipa_uk": "ɹɪplˈɛnɪʃ njˈuːtɹiənts"
+  "ipa_uk": "ɹɪplˈɛnɪʃ njˈuːtɹiənts",
+  "exchange": {
+   "p": "replenished nutrients",
+   "d": "replenished nutrients",
+   "i": "replenishing nutrients",
+   "3": "replenishes nutrients"
+  }
  },
  {
   "term": "the optimal time for doing sth",
@@ -47866,7 +48238,13 @@
   "tier": 1,
   "gloss_en": "to express complaints or feelings of unfair treatment openly, so others can hear them",
   "ipa_us": "ˈɛɹ ˈðə ˈɡɹivənsəz",
-  "ipa_uk": "ˈeə ðə ɡɹˈiːvənsɪz"
+  "ipa_uk": "ˈeə ðə ɡɹˈiːvənsɪz",
+  "exchange": {
+   "p": "aired the grievances",
+   "d": "aired the grievances",
+   "i": "airing the grievances",
+   "3": "airs the grievances"
+  }
  },
  {
   "term": "nurse a grievance against sb",
@@ -47895,7 +48273,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to keep feeling resentment toward someone for a long time because you believe they treated you unfairly"
+  "gloss_en": "to keep feeling resentment toward someone for a long time because you believe they treated you unfairly",
+  "exchange": {
+   "p": "nursed a grievance against sb",
+   "d": "nursed a grievance against sb",
+   "i": "nursing a grievance against sb",
+   "3": "nurses a grievance against sb"
+  }
  },
  {
   "term": "offer ample opportunities",
@@ -47926,7 +48310,13 @@
   "tier": 1,
   "gloss_en": "to provide plenty of chances to do something",
   "ipa_us": "ˈɔfɝ ˈæmpəɫ ˌɑpɝˈtunətiz",
-  "ipa_uk": "ˈɒfɐ ˈæmpəl ɒpətjˈuːnɪtiz"
+  "ipa_uk": "ˈɒfɐ ˈæmpəl ɒpətjˈuːnɪtiz",
+  "exchange": {
+   "p": "offered ample opportunities",
+   "d": "offered ample opportunities",
+   "i": "offering ample opportunities",
+   "3": "offers ample opportunities"
+  }
  },
  {
   "term": "sparse/dense population",
@@ -47987,7 +48377,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to speak in a hesitant, awkward way, making mistakes or pausing because of nervousness",
-  "ipa_us": "ˈstəmbəɫ ˈoʊvɝ ˈwənz ˈwɝdz"
+  "ipa_us": "ˈstəmbəɫ ˈoʊvɝ ˈwənz ˈwɝdz",
+  "exchange": {
+   "p": "stumbled over one's words",
+   "d": "stumbled over one's words",
+   "i": "stumbling over one's words",
+   "3": "stumbles over one's words"
+  }
  },
  {
   "term": "stumble and fall",
@@ -48018,7 +48414,13 @@
   "tier": 1,
   "gloss_en": "to trip while walking and fall to the ground",
   "ipa_us": "ˈstəmbəɫ ˈænd ˈfɑɫ",
-  "ipa_uk": "stˈʌmbəl ˈænd fˈɔːl"
+  "ipa_uk": "stˈʌmbəl ˈænd fˈɔːl",
+  "exchange": {
+   "p": "stumbled and fall",
+   "d": "stumbled and fall",
+   "i": "stumbling and fall",
+   "3": "stumbles and fall"
+  }
  },
  {
   "term": "in one's heyday",
@@ -48301,7 +48703,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to notice a business opportunity for a product or service that no one else is providing",
-  "ipa_us": "ˈspɑt ˈeɪ ˈnɪtʃ ˈɪn ˈðə ˈmɑɹkət"
+  "ipa_us": "ˈspɑt ˈeɪ ˈnɪtʃ ˈɪn ˈðə ˈmɑɹkət",
+  "exchange": {
+   "p": "spotted a niche in the market",
+   "d": "spotted a niche in the market",
+   "i": "spotting a niche in the market",
+   "3": "spots a niche in the market"
+  }
  },
  {
   "term": "niche marketing",
@@ -48444,7 +48852,13 @@
   "tier": 1,
   "gloss_en": "to deliberately delay in order to gain more time before acting or answering",
   "ipa_us": "ˈstɔɫ ˈfɔɹ ˈtaɪm",
-  "ipa_uk": "stˈɔːl fˈɔː tˈaɪm"
+  "ipa_uk": "stˈɔːl fˈɔː tˈaɪm",
+  "exchange": {
+   "p": "stalled for time",
+   "d": "stalled for time",
+   "i": "stalling for time",
+   "3": "stalls for time"
+  }
  },
  {
   "term": "stall on the deal",
@@ -48475,7 +48889,13 @@
   "tier": 1,
   "gloss_en": "to deliberately delay reaching or completing an agreement",
   "ipa_us": "ˈstɔɫ ˈɑn ˈðə ˈdiɫ",
-  "ipa_uk": "stˈɔːl ˈɒn ðə dˈiːl"
+  "ipa_uk": "stˈɔːl ˈɒn ðə dˈiːl",
+  "exchange": {
+   "p": "stalled on the deal",
+   "d": "stalled on the deal",
+   "i": "stalling on the deal",
+   "3": "stalls on the deal"
+  }
  },
  {
   "term": "deposit valuables in the hotel safe",
@@ -48506,7 +48926,13 @@
   "tier": 1,
   "gloss_en": "to place valuable belongings in the hotel's secure storage box for safekeeping",
   "ipa_us": "dəˈpɑzɪt ˈvæɫjəbəɫz ˈɪn ˈðə hoʊˈtɛɫ ˈseɪf",
-  "ipa_uk": "dɪpˈɒsɪt vˈæljuːəbəlz ˈɪn ðə həʊtˈɛl sˈeɪf"
+  "ipa_uk": "dɪpˈɒsɪt vˈæljuːəbəlz ˈɪn ðə həʊtˈɛl sˈeɪf",
+  "exchange": {
+   "p": "deposited valuables in the hotel safe",
+   "d": "deposited valuables in the hotel safe",
+   "i": "depositing valuables in the hotel safe",
+   "3": "deposits valuables in the hotel safe"
+  }
  },
  {
   "term": "preoccupation",
@@ -48584,7 +49010,13 @@
   "tier": 1,
   "gloss_en": "to support and strengthen the economy, helping it improve",
   "ipa_us": "ˈboʊɫstɝ ˈəp ˈðə iˈkɑnəmi",
-  "ipa_uk": "bˈəʊlstɐ ˈʌp ðə ɪkˈɒnəmi"
+  "ipa_uk": "bˈəʊlstɐ ˈʌp ðə ɪkˈɒnəmi",
+  "exchange": {
+   "p": "bolstered up the economy",
+   "d": "bolstered up the economy",
+   "i": "bolstering up the economy",
+   "3": "bolsters up the economy"
+  }
  },
  {
   "term": "stimulate the economy",
@@ -48615,7 +49047,13 @@
   "tier": 1,
   "gloss_en": "to encourage economic activity and growth, for example through government spending or lower interest rates",
   "ipa_us": "ˈstɪmjəˌɫeɪt ˈðə iˈkɑnəmi",
-  "ipa_uk": "stˈɪmjʊlˌeɪt ðə ɪkˈɒnəmi"
+  "ipa_uk": "stˈɪmjʊlˌeɪt ðə ɪkˈɒnəmi",
+  "exchange": {
+   "p": "stimulated the economy",
+   "d": "stimulated the economy",
+   "i": "stimulating the economy",
+   "3": "stimulates the economy"
+  }
  },
  {
   "term": "raise an objection to",
@@ -48646,7 +49084,13 @@
   "tier": 1,
   "gloss_en": "to formally express disagreement with or opposition to a plan, idea, or proposal",
   "ipa_us": "ˈɹeɪz ˈæn əbˈdʒɛkʃən ˈtu",
-  "ipa_uk": "ɹˈeɪz ˈɐn ɒbdʒˈɛkʃən tˈuː"
+  "ipa_uk": "ɹˈeɪz ˈɐn ɒbdʒˈɛkʃən tˈuː",
+  "exchange": {
+   "p": "raised an objection to",
+   "d": "raised an objection to",
+   "i": "raising an objection to",
+   "3": "raises an objection to"
+  }
  },
  {
   "term": "small scale peasant economy",
@@ -48739,7 +49183,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to formally start or launch a project or program of work",
-  "ipa_us": "ˌɪˈnɪʃiˌeɪt ˈeɪ ˈpɹɑdʒɛkt"
+  "ipa_us": "ˌɪˈnɪʃiˌeɪt ˈeɪ ˈpɹɑdʒɛkt",
+  "exchange": {
+   "p": "initiated a project",
+   "d": "initiated a project",
+   "i": "initiating a project",
+   "3": "initiates a project"
+  }
  },
  {
   "term": "a rule of thumb",
@@ -48920,7 +49370,13 @@
   "tier": 1,
   "gloss_en": "to severely damage or destroy the natural environment",
   "ipa_us": "dɪˈmɑɫɪʃ ˈðə ɪnˈvaɪɹənmənt",
-  "ipa_uk": "dɪmˈɒlɪʃ ðə ɛnvˈaɪɹənmənt"
+  "ipa_uk": "dɪmˈɒlɪʃ ðə ɛnvˈaɪɹənmənt",
+  "exchange": {
+   "p": "demolished the environment",
+   "d": "demolished the environment",
+   "i": "demolishing the environment",
+   "3": "demolishes the environment"
+  }
  },
  {
   "term": "encapsulate the central themes",
@@ -48951,7 +49407,13 @@
   "tier": 1,
   "gloss_en": "to summarize or express the main ideas of something in a brief, concentrated form",
   "ipa_us": "ɛnˈkæpsəˌɫeɪt ˈðə ˈsɛntɹəɫ ˈθimz",
-  "ipa_uk": "ɛnkˈæpsjʊlˌeɪt ðə sˈɛntɹəl θˈiːmz"
+  "ipa_uk": "ɛnkˈæpsjʊlˌeɪt ðə sˈɛntɹəl θˈiːmz",
+  "exchange": {
+   "p": "encapsulated the central themes",
+   "d": "encapsulated the central themes",
+   "i": "encapsulating the central themes",
+   "3": "encapsulates the central themes"
+  }
  },
  {
   "term": "a sophisticated young man",
@@ -49143,7 +49605,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to supply or provide someone with something they need, such as information or equipment"
+  "gloss_en": "to supply or provide someone with something they need, such as information or equipment",
+  "exchange": {
+   "p": "furnished sb with sth",
+   "d": "furnished sb with sth",
+   "i": "furnishing sb with sth",
+   "3": "furnishes sb with sth"
+  }
  },
  {
   "term": "allude to",
@@ -49174,7 +49642,13 @@
   "tier": 1,
   "gloss_en": "to mention something indirectly or hint at it without stating it openly",
   "ipa_us": "əˈɫud ˈtu",
-  "ipa_uk": "ɐlˈuːd tˈuː"
+  "ipa_uk": "ɐlˈuːd tˈuː",
+  "exchange": {
+   "p": "alluded to",
+   "d": "alluded to",
+   "i": "alluding to",
+   "3": "alludes to"
+  }
  },
  {
   "term": "hoarding and profiteering",
@@ -49235,7 +49709,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to cause someone to form a positive opinion of you",
-  "ipa_us": "ˈmeɪk ˈeɪ ˈfeɪvɝəbəɫ ˌɪmˈpɹɛʃən ˈɑn"
+  "ipa_us": "ˈmeɪk ˈeɪ ˈfeɪvɝəbəɫ ˌɪmˈpɹɛʃən ˈɑn",
+  "exchange": {
+   "p": "made a favorable impression on",
+   "d": "made a favorable impression on",
+   "i": "making a favorable impression on",
+   "3": "makes a favorable impression on"
+  }
  },
  {
   "term": "forage for",
@@ -49266,7 +49746,13 @@
   "tier": 1,
   "gloss_en": "to search widely for food or supplies, such as firewood or clothing, especially in the wild",
   "ipa_us": "ˈfɔɹɪdʒ ˈfɔɹ",
-  "ipa_uk": "fˈɒɹɪdʒ fˈɔː"
+  "ipa_uk": "fˈɒɹɪdʒ fˈɔː",
+  "exchange": {
+   "p": "foraged for",
+   "d": "foraged for",
+   "i": "foraging for",
+   "3": "forages for"
+  }
  },
  {
   "term": "a loping stride",
@@ -49669,7 +50155,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to deliberately show oneself or an organization as up-to-date and contemporary",
-  "ipa_us": "ˈpɹɛzənt ˈeɪ ˈmɑdɝn ˈɪmədʒ"
+  "ipa_us": "ˈpɹɛzənt ˈeɪ ˈmɑdɝn ˈɪmədʒ",
+  "exchange": {
+   "p": "presented a modern image",
+   "d": "presented a modern image",
+   "i": "presenting a modern image",
+   "3": "presents a modern image"
+  }
  },
  {
   "term": "desirable",
@@ -49749,7 +50241,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to intrude on or violate someone's right to keep their personal life private",
-  "ipa_us": "ˌɪnˈfɹɪndʒ əˈpɑn ˈwənz ˈpɹaɪvəsi"
+  "ipa_us": "ˌɪnˈfɹɪndʒ əˈpɑn ˈwənz ˈpɹaɪvəsi",
+  "exchange": {
+   "p": "infringed upon one's privacy",
+   "d": "infringed upon one's privacy",
+   "i": "infringing upon one's privacy",
+   "3": "infringes upon one's privacy"
+  }
  },
  {
   "term": "in principle",
@@ -49811,7 +50309,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to bring new strength and activity back to an economy that has weakened",
-  "ipa_us": "ɹiˈvaɪtəˌɫaɪz ˈðə iˈkɑnəmi"
+  "ipa_us": "ɹiˈvaɪtəˌɫaɪz ˈðə iˈkɑnəmi",
+  "exchange": {
+   "p": "revitalized the economy",
+   "d": "revitalized the economy",
+   "i": "revitalizing the economy",
+   "3": "revitalizes the economy"
+  }
  },
  {
   "term": "juggle work with family commitments",
@@ -49842,7 +50346,13 @@
   "tier": 1,
   "gloss_en": "to try to manage the competing demands of a job and family responsibilities at the same time",
   "ipa_us": "ˈdʒəɡəɫ ˈwɝk ˈwɪð ˈfæməɫi kəˈmɪtmənts",
-  "ipa_uk": "dʒˈʌɡəl wˈɜːk wˈɪð fˈæmɪli kəmˈɪtmənts"
+  "ipa_uk": "dʒˈʌɡəl wˈɜːk wˈɪð fˈæmɪli kəmˈɪtmənts",
+  "exchange": {
+   "p": "juggled work with family commitments",
+   "d": "juggled work with family commitments",
+   "i": "juggling work with family commitments",
+   "3": "juggles work with family commitments"
+  }
  },
  {
   "term": "make a passing mention of sth",
@@ -49871,7 +50381,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to refer to something only briefly and without going into detail"
+  "gloss_en": "to refer to something only briefly and without going into detail",
+  "exchange": {
+   "p": "made a passing mention of sth",
+   "d": "made a passing mention of sth",
+   "i": "making a passing mention of sth",
+   "3": "makes a passing mention of sth"
+  }
  },
  {
   "term": "in the interest of",
@@ -49962,7 +50478,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to build a friendly, harmonious relationship marked by mutual understanding and trust",
-  "ipa_us": "ɪˈstæbɫɪʃ ˈeɪ ɹæˈpɔɹ ˈwɪð"
+  "ipa_us": "ɪˈstæbɫɪʃ ˈeɪ ɹæˈpɔɹ ˈwɪð",
+  "exchange": {
+   "p": "established a rapport with",
+   "d": "established a rapport with",
+   "i": "establishing a rapport with",
+   "3": "establishes a rapport with"
+  }
  },
  {
   "term": "put sb at ease",
@@ -49991,7 +50513,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to make someone feel relaxed and comfortable instead of nervous"
+  "gloss_en": "to make someone feel relaxed and comfortable instead of nervous",
+  "exchange": {
+   "p": "put sb at ease",
+   "d": "put sb at ease",
+   "i": "putting sb at ease",
+   "3": "puts sb at ease"
+  }
  },
  {
   "term": "be intimately tied to",
@@ -50100,7 +50628,13 @@
   "tier": 1,
   "gloss_en": "to be both intellectually interesting and visually attractive",
   "ipa_us": "ɛnˈɡeɪdʒ ˈboʊθ ˈðə ˈmaɪnd ˈænd ˈðə ˈaɪ",
-  "ipa_uk": "ɛnɡˈeɪdʒ bˈəʊθ ðə mˈaɪnd ˈænd ðə ˈaɪ"
+  "ipa_uk": "ɛnɡˈeɪdʒ bˈəʊθ ðə mˈaɪnd ˈænd ðə ˈaɪ",
+  "exchange": {
+   "p": "engaged both the mind and the eye",
+   "d": "engaged both the mind and the eye",
+   "i": "engaging both the mind and the eye",
+   "3": "engages both the mind and the eye"
+  }
  },
  {
   "term": "be caught up in",
@@ -50191,7 +50725,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to measure or judge how prominent and important an issue is to people"
+  "gloss_en": "to measure or judge how prominent and important an issue is to people",
+  "exchange": {
+   "p": "gauged the saliency of an issue",
+   "d": "gauged the saliency of an issue",
+   "i": "gauging the saliency of an issue",
+   "3": "gauges the saliency of an issue"
+  }
  },
  {
   "term": "beyond the scope of",
@@ -50315,7 +50855,13 @@
   "tier": 1,
   "gloss_en": "to hold and exercise power or authority, especially great power",
   "ipa_us": "ˈwiɫd ˈpaʊɝ",
-  "ipa_uk": "wˈiːld pˈaʊɐ"
+  "ipa_uk": "wˈiːld pˈaʊɐ",
+  "exchange": {
+   "p": "wielded power",
+   "d": "wielded power",
+   "i": "wielding power",
+   "3": "wields power"
+  }
  },
  {
   "term": "economic vibrancy",
@@ -50377,7 +50923,13 @@
   "tier": 1,
   "gloss_en": "to say directly and unambiguously that a particular person or thing is responsible for something bad",
   "ipa_us": "ˈpɫeɪs ˈðə ˈbɫeɪm ˈskwɛɹɫi ˈɑn",
-  "ipa_uk": "plˈeɪs ðə blˈeɪm skwˈeəli ˈɒn"
+  "ipa_uk": "plˈeɪs ðə blˈeɪm skwˈeəli ˈɒn",
+  "exchange": {
+   "p": "placed the blame squarely on",
+   "d": "placed the blame squarely on",
+   "i": "placing the blame squarely on",
+   "3": "places the blame squarely on"
+  }
  },
  {
   "term": "preserve the integrity of",
@@ -50408,7 +50960,13 @@
   "tier": 1,
   "gloss_en": "to keep something whole, undamaged, and in its original sound condition",
   "ipa_us": "pɹəˈzɝv ˈðə ˌɪnˈtɛɡɹəti ˈəv",
-  "ipa_uk": "pɹɪsˈɜːv ðə ɪntˈɛɡɹɪti ˈɒv"
+  "ipa_uk": "pɹɪsˈɜːv ðə ɪntˈɛɡɹɪti ˈɒv",
+  "exchange": {
+   "p": "preserved the integrity of",
+   "d": "preserved the integrity of",
+   "i": "preserving the integrity of",
+   "3": "preserves the integrity of"
+  }
  },
  {
   "term": "subversive activities",
@@ -50499,7 +51057,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to fulfill or perform a duty that one is obliged to do"
+  "gloss_en": "to fulfill or perform a duty that one is obliged to do",
+  "exchange": {
+   "p": "carried out the responsibility of doing sth",
+   "d": "carried out the responsibility of doing sth",
+   "i": "carrying out the responsibility of doing sth",
+   "3": "carries out the responsibility of doing sth"
+  }
  },
  {
   "term": "a morally upright man",
@@ -50591,7 +51155,13 @@
   "tier": 1,
   "gloss_en": "to act against or break an established rule or fundamental standard",
   "ipa_us": "ˈvaɪəɫeɪt ˈðə ˈpɹɪnsəpəɫ",
-  "ipa_uk": "vˈaɪəleɪt ðə pɹˈɪnsɪpəl"
+  "ipa_uk": "vˈaɪəleɪt ðə pɹˈɪnsɪpəl",
+  "exchange": {
+   "p": "violated the principle",
+   "d": "violated the principle",
+   "i": "violating the principle",
+   "3": "violates the principle"
+  }
  },
  {
   "term": "cut corners",
@@ -50623,7 +51193,13 @@
   "tier": 1,
   "gloss_en": "to do something in the quickest or cheapest way by skipping steps, often lowering quality",
   "ipa_us": "ˈkət ˈkɔɹnɝz",
-  "ipa_uk": "kˈʌt kˈɔːnəz"
+  "ipa_uk": "kˈʌt kˈɔːnəz",
+  "exchange": {
+   "p": "cut corners",
+   "d": "cut corners",
+   "i": "cutting corners",
+   "3": "cuts corners"
+  }
  },
  {
   "term": "disregard",
@@ -50970,7 +51546,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to take action that starts one's life moving toward its goals or a new direction",
-  "ipa_us": "ˈsɛt ˈwənz ˈɫaɪf ˈɪn ˈmoʊʃən"
+  "ipa_us": "ˈsɛt ˈwənz ˈɫaɪf ˈɪn ˈmoʊʃən",
+  "exchange": {
+   "p": "set one's life in motion",
+   "d": "set one's life in motion",
+   "i": "setting one's life in motion",
+   "3": "sets one's life in motion"
+  }
  },
  {
   "term": "take drastic measures",
@@ -51001,7 +51583,13 @@
   "tier": 1,
   "gloss_en": "to take extreme, forceful steps to deal with a serious problem",
   "ipa_us": "ˈteɪk ˈdɹæstɪk ˈmɛʒɝz",
-  "ipa_uk": "tˈeɪk dɹˈɑːstɪk mˈɛʒəz"
+  "ipa_uk": "tˈeɪk dɹˈɑːstɪk mˈɛʒəz",
+  "exchange": {
+   "p": "took drastic measures",
+   "d": "taken drastic measures",
+   "i": "taking drastic measures",
+   "3": "takes drastic measures"
+  }
  },
  {
   "term": "switch gears",
@@ -51032,7 +51620,13 @@
   "tier": 1,
   "gloss_en": "to suddenly change the topic or shift to a different activity or approach",
   "ipa_us": "ˈswɪtʃ ˈɡɪɹz",
-  "ipa_uk": "swˈɪtʃ ɡˈiəz"
+  "ipa_uk": "swˈɪtʃ ɡˈiəz",
+  "exchange": {
+   "p": "switched gears",
+   "d": "switched gears",
+   "i": "switching gears",
+   "3": "switches gears"
+  }
  },
  {
   "term": "provided (that)",
@@ -51154,7 +51748,13 @@
   "tier": 1,
   "gloss_en": "to adjust arrangements so as to meet the particular requirements of certain people",
   "ipa_us": "əˈkɑməˌdeɪt ˈðə ˈspɛʃəɫ ˈnidz ˈəv",
-  "ipa_uk": "ɐkˈɒmədˌeɪt ðə spˈɛʃəl nˈiːdz ˈɒv"
+  "ipa_uk": "ɐkˈɒmədˌeɪt ðə spˈɛʃəl nˈiːdz ˈɒv",
+  "exchange": {
+   "p": "accommodated the special needs of",
+   "d": "accommodated the special needs of",
+   "i": "accommodating the special needs of",
+   "3": "accommodates the special needs of"
+  }
  },
  {
   "term": "draw inspiration from",
@@ -51185,7 +51785,13 @@
   "tier": 1,
   "gloss_en": "to get creative ideas or motivation from a particular source",
   "ipa_us": "ˈdɹɔ ˌɪnspɝˈeɪʃən ˈfɹəm",
-  "ipa_uk": "dɹˈɔː ˌɪnspəɹˈeɪʃən fɹˈɒm"
+  "ipa_uk": "dɹˈɔː ˌɪnspəɹˈeɪʃən fɹˈɒm",
+  "exchange": {
+   "p": "drew inspiration from",
+   "d": "drawn inspiration from",
+   "i": "drawing inspiration from",
+   "3": "draws inspiration from"
+  }
  },
  {
   "term": "not so much A as B",
@@ -51247,7 +51853,13 @@
   "tier": 1,
   "gloss_en": "to contribute to and intensify a situation, feeling, or process",
   "ipa_us": "ˈfid ˈɪntu",
-  "ipa_uk": "fˈiːd ˈɪntʊ"
+  "ipa_uk": "fˈiːd ˈɪntʊ",
+  "exchange": {
+   "p": "fed into",
+   "d": "fed into",
+   "i": "feeding into",
+   "3": "feeds into"
+  }
  },
  {
   "term": "ivory tower",
@@ -51310,7 +51922,13 @@
   "tier": 1,
   "gloss_en": "to act in an extreme and forceful way to solve a serious problem",
   "ipa_us": "ˈteɪk ˈdɹæstɪk ˈækʃən",
-  "ipa_uk": "tˈeɪk dɹˈɑːstɪk ˈækʃən"
+  "ipa_uk": "tˈeɪk dɹˈɑːstɪk ˈækʃən",
+  "exchange": {
+   "p": "took drastic action",
+   "d": "taken drastic action",
+   "i": "taking drastic action",
+   "3": "takes drastic action"
+  }
  },
  {
   "term": "lay off",
@@ -51342,7 +51960,13 @@
   "tier": 1,
   "gloss_en": "to dismiss employees from their jobs, usually because the employer needs to cut costs",
   "ipa_us": "ˈɫeɪ ˈɔf",
-  "ipa_uk": "lˈeɪ ˈɒf"
+  "ipa_uk": "lˈeɪ ˈɒf",
+  "exchange": {
+   "p": "laid off",
+   "d": "laid off",
+   "i": "laying off",
+   "3": "lays off"
+  }
  },
  {
   "term": "amicable",
@@ -52735,7 +53359,14 @@
    "scratch",
    "expunge"
   ],
-  "ipa_uk": "ˈɛkˌsaɪz"
+  "ipa_uk": "ˈɛkˌsaɪz",
+  "exchange": {
+   "d": "excised",
+   "p": "excised",
+   "i": "excising",
+   "s": "excises",
+   "3": "excises"
+  }
  },
  {
   "term": "decide",
@@ -54528,7 +55159,13 @@
   "gloss_en": "to destroy something completely by burning it",
   "synonyms": [
    "burn"
-  ]
+  ],
+  "exchange": {
+   "d": "incinerated",
+   "p": "incinerated",
+   "i": "incinerating",
+   "3": "incinerates"
+  }
  },
  {
   "term": "cinerary",
@@ -54639,7 +55276,13 @@
   ],
   "topic": "词组句型",
   "tier": 1,
-  "gloss_en": "to persuade or lead someone into doing something"
+  "gloss_en": "to persuade or lead someone into doing something",
+  "exchange": {
+   "p": "induced sb to do sth",
+   "d": "induced sb to do sth",
+   "i": "inducing sb to do sth",
+   "3": "induces sb to do sth"
+  }
  },
  {
   "term": "mass-produce",
@@ -54729,7 +55372,13 @@
   "topic": "词组句型",
   "tier": 1,
   "gloss_en": "to behave in a particular way, especially in public or formal situations",
-  "ipa_us": "ˈkɑndəkt ˌwənˈsɛɫf"
+  "ipa_us": "ˈkɑndəkt ˌwənˈsɛɫf",
+  "exchange": {
+   "p": "conducted oneself",
+   "d": "conducted oneself",
+   "i": "conducting oneself",
+   "3": "conducts oneself"
+  }
  },
  {
   "term": "ductile",
@@ -55026,7 +55675,14 @@
   ],
   "antonyms": [
    "encode"
-  ]
+  ],
+  "exchange": {
+   "d": "decoded",
+   "i": "decoding",
+   "3": "decodes",
+   "p": "decoded",
+   "s": "decodes"
+  }
  },
  {
   "term": "diction",
@@ -55585,7 +56241,13 @@
    "capsule",
    "capsulize",
    "capsulise"
-  ]
+  ],
+  "exchange": {
+   "d": "encapsulated",
+   "3": "encapsulates",
+   "p": "encapsulated",
+   "i": "encapsulating"
+  }
  },
  {
   "term": "enclose",
@@ -55721,7 +56383,13 @@
   ],
   "antonyms": [
    "dissent"
-  ]
+  ],
+  "exchange": {
+   "d": "acquiesced",
+   "p": "acquiesced",
+   "i": "acquiescing",
+   "3": "acquiesces"
+  }
  },
  {
   "term": "defer",
@@ -57835,7 +58503,14 @@
   "antonyms": [
    "progress"
   ],
-  "ipa_uk": "ˈɹiːˌɡɹɛs"
+  "ipa_uk": "ˈɹiːˌɡɹɛs",
+  "exchange": {
+   "d": "regressed",
+   "i": "regressing",
+   "p": "regressed",
+   "3": "regresses",
+   "s": "regresses"
+  }
  },
  {
   "term": "digress",
@@ -58897,7 +59572,13 @@
    "subdue",
    "reduce",
    "subject"
-  ]
+  ],
+  "exchange": {
+   "d": "subjugated",
+   "i": "subjugating",
+   "p": "subjugated",
+   "3": "subjugates"
+  }
  },
  {
   "term": "juggernaut",
@@ -59547,7 +60228,13 @@
   "tier": 1,
   "gloss_en": "to dedicate oneself firmly to a course of action, cause, or promise",
   "ipa_us": "kəˈmɪt ˌwənˈsɛɫf ˈtu",
-  "ipa_uk": "kəmˈɪt wɒnsˈɛlf tˈuː"
+  "ipa_uk": "kəmˈɪt wɒnsˈɛlf tˈuː",
+  "exchange": {
+   "p": "committed oneself to",
+   "d": "committed oneself to",
+   "i": "committing oneself to",
+   "3": "commits oneself to"
+  }
  },
  {
   "term": "maritime",
@@ -59738,7 +60425,13 @@
    "necrose",
    "gangrene",
    "sphacelate"
-  ]
+  ],
+  "exchange": {
+   "d": "mortified",
+   "p": "mortified",
+   "3": "mortifies",
+   "i": "mortifying"
+  }
  },
  {
   "term": "mortal",
@@ -63514,7 +64207,13 @@
   "tier": 1,
   "ipa_us": "pɝˈuz",
   "ipa_uk": "pəɹˈuːz",
-  "gloss_en": "to read or examine something carefully and in detail"
+  "gloss_en": "to read or examine something carefully and in detail",
+  "exchange": {
+   "i": "perusing",
+   "d": "perused",
+   "p": "perused",
+   "3": "peruses"
+  }
  },
  {
   "term": "suspense",
@@ -64212,7 +64911,13 @@
   "tier": 1,
   "ipa_us": "ɛksˈpɹoʊpɹiˌeɪt",
   "ipa_uk": "ɛkspɹˈɒpɹɪət",
-  "gloss_en": "to take property from its owner for public use or by authority, often without full consent"
+  "gloss_en": "to take property from its owner for public use or by authority, often without full consent",
+  "exchange": {
+   "d": "expropriated",
+   "p": "expropriated",
+   "i": "expropriating",
+   "3": "expropriates"
+  }
  },
  {
   "term": "proprietor",
@@ -64561,7 +65266,14 @@
   "synonyms": [
    "beg",
    "pray"
-  ]
+  ],
+  "exchange": {
+   "p": "implored",
+   "i": "imploring",
+   "3": "implores",
+   "d": "implored",
+   "s": "implores"
+  }
  },
  {
   "term": "deplore",
