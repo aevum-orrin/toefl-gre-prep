@@ -22,6 +22,32 @@ def decks() -> list[str]:
     return [r["deck"] for r in rows]
 
 
+def all_stats(new_per_day: int = DEFAULT_NEW_PER_DAY) -> list[dict]:
+    """Counters for every deck in ONE round trip — this is the page-load call, and doing it
+    per deck meant three separate queries."""
+    today = date.today().isoformat()
+    with conn() as c:
+        rows = c.execute(
+            """SELECT s.deck,
+                      count(*) AS total,
+                      count(*) FILTER (WHERE s.due <> '' AND s.due <= %s) AS due,
+                      count(*) FILTER (WHERE s.due = '')                 AS new_pool,
+                      COALESCE(max(i.n), 0) AS intro
+                 FROM srs_cards s
+                 LEFT JOIN intro_counts i
+                        ON i.user_id=s.user_id AND i.deck=s.deck AND i.day=%s
+                WHERE s.user_id=%s
+             GROUP BY s.deck ORDER BY s.deck""",
+            (today, date.today(), USER_ID)).fetchall()
+    out = []
+    for r in rows:
+        new_left = max(0, new_per_day - r["intro"])
+        out.append({"deck": r["deck"], "total": r["total"], "due": r["due"],
+                    "new": min(r["new_pool"], new_left), "new_pool": r["new_pool"],
+                    "learned": r["total"] - r["new_pool"]})
+    return out
+
+
 def entry(deck: str, term: str) -> dict | None:
     with conn() as c:
         row = c.execute("SELECT entry FROM words WHERE deck=%s AND term=%s",
@@ -36,17 +62,21 @@ def search(deck: str, q: str, limit: int = 60) -> dict:
     if len(q) < 2:
         return {"q": q, "hits": [], "total": 0}
     with conn() as c:
+        # LIMIT in SQL, with count(*) OVER () carrying the full total — the old version pulled
+        # every match back just to slice it in Python and count the list.
         rows = c.execute(
             """SELECT term, tier,
                       entry->'senses'->0->'def_zh'->>0 AS zh,
-                      (lower(term) LIKE %s) AS starts
+                      (lower(term) LIKE %s) AS starts,
+                      count(*) OVER () AS total
                  FROM words
                 WHERE deck=%s AND lower(term) LIKE %s
-             ORDER BY starts DESC, ord""",
-            (f"{q}%", deck, f"%{q}%")).fetchall()
+             ORDER BY starts DESC, ord
+                LIMIT %s""",
+            (f"{q}%", deck, f"%{q}%", limit)).fetchall()
     hits = [{"term": r["term"], "zh": r["zh"] or "", "tier": r["tier"],
              "starts": r["starts"]} for r in rows]
-    return {"q": q, "hits": hits[:limit], "total": len(hits)}
+    return {"q": q, "hits": hits, "total": rows[0]["total"] if rows else 0}
 
 
 # ---------------------------------------------------------------- cards
@@ -57,6 +87,17 @@ def get_card(deck: str, term: str) -> dict | None:
             """SELECT term, definition, ease, interval, reps, due, prof, flags
                  FROM srs_cards WHERE user_id=%s AND deck=%s AND term=%s""",
             (USER_ID, deck, term)).fetchone()
+    return dict(row) if row else None
+
+
+def card_with_entry(c, deck: str, term: str) -> dict | None:
+    """Schedule + deck content in one round trip — the pair every card render needs."""
+    row = c.execute(
+        """SELECT s.term, s.definition, s.ease, s.interval, s.reps, s.due, s.prof, s.flags,
+                  w.entry
+             FROM srs_cards s LEFT JOIN words w ON w.deck=s.deck AND w.term=s.term
+            WHERE s.user_id=%s AND s.deck=%s AND s.term=%s""",
+        (USER_ID, deck, term)).fetchone()
     return dict(row) if row else None
 
 
@@ -95,21 +136,25 @@ def intro_adjust(deck: str, delta: int) -> None:
 # ---------------------------------------------------------------- stats & scheduling
 
 def stats(deck: str, new_per_day: int = DEFAULT_NEW_PER_DAY) -> dict:
+    """Counters + today's new-word allowance in ONE round trip (this runs on every request,
+    so the intro count is folded in as a subquery rather than a second query)."""
     today = date.today().isoformat()
     with conn() as c:
         row = c.execute(
             """SELECT count(*) AS total,
                       count(*) FILTER (WHERE due <> '' AND due <= %s) AS due,
-                      count(*) FILTER (WHERE due = '')                AS new_pool
+                      count(*) FILTER (WHERE due = '')                AS new_pool,
+                      COALESCE((SELECT n FROM intro_counts
+                                 WHERE user_id=%s AND deck=%s AND day=%s), 0) AS intro
                  FROM srs_cards WHERE user_id=%s AND deck=%s""",
-            (today, USER_ID, deck)).fetchone()
-    new_left = max(0, new_per_day - intro_today(deck))
+            (today, USER_ID, deck, date.today(), USER_ID, deck)).fetchone()
+    new_left = max(0, new_per_day - row["intro"])
     return {"deck": deck, "total": row["total"], "due": row["due"],
             "new": min(row["new_pool"], new_left), "new_pool": row["new_pool"],
             "learned": row["total"] - row["new_pool"]}
 
 
-def pick_next(deck: str, new_per_day: int, exclude: list[str]) -> tuple[dict | None, str]:
+def pick_next(deck: str, new_per_day: int, exclude: list[str]) -> tuple[dict | None, str, dict]:
     """Priority, identical to the local app:
       1. today's 'Again' lapses (interval=0) whose spacing gap has elapsed
       2. brand-new words in deck order (`ord`), while the daily cap allows
@@ -122,13 +167,16 @@ def pick_next(deck: str, new_per_day: int, exclude: list[str]) -> tuple[dict | N
     ex = exclude or [""]
     st = stats(deck, new_per_day)
     with conn() as c:
+        # ORDER BY random() LIMIT 1 keeps the pick in the database instead of shipping every
+        # due term back just to choose one (the old code fetched all ~76 rows per keypress).
         lapsed = c.execute(
             """SELECT term FROM srs_cards
                 WHERE user_id=%s AND deck=%s AND due <> '' AND due <= %s
-                  AND interval = 0 AND NOT (term = ANY(%s))""",
-            (USER_ID, deck, today, ex)).fetchall()
+                  AND interval = 0 AND NOT (term = ANY(%s))
+             ORDER BY random() LIMIT 1""",
+            (USER_ID, deck, today, ex)).fetchone()
         if lapsed:
-            return get_card(deck, random.choice(lapsed)["term"]), "review"
+            return card_with_entry(c, deck, lapsed["term"]), "review", st
 
         if st["new"] > 0:
             row = c.execute(
@@ -137,23 +185,24 @@ def pick_next(deck: str, new_per_day: int, exclude: list[str]) -> tuple[dict | N
                  ORDER BY w.ord LIMIT 1""",
                 (USER_ID, deck)).fetchone()
             if row:
-                return get_card(deck, row["term"]), "new"
+                return card_with_entry(c, deck, row["term"]), "new", st
 
-        reviews = c.execute(
+        review = c.execute(
             """SELECT term FROM srs_cards
                 WHERE user_id=%s AND deck=%s AND due <> '' AND due <= %s
-                  AND NOT (term = ANY(%s))""",
-            (USER_ID, deck, today, ex)).fetchall()
-        if reviews:
-            return get_card(deck, random.choice(reviews)["term"]), "review"
+                  AND NOT (term = ANY(%s))
+             ORDER BY random() LIMIT 1""",
+            (USER_ID, deck, today, ex)).fetchone()
+        if review:
+            return card_with_entry(c, deck, review["term"]), "review", st
 
         any_due = c.execute(
             """SELECT term FROM srs_cards
                 WHERE user_id=%s AND deck=%s AND due <> '' AND due <= %s LIMIT 1""",
             (USER_ID, deck, today)).fetchone()
         if any_due:
-            return get_card(deck, any_due["term"]), "review"
-    return None, ""
+            return card_with_entry(c, deck, any_due["term"]), "review", st
+    return None, "", st
 
 
 # ---------------------------------------------------------------- undo / redo stacks

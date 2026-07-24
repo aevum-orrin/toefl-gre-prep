@@ -56,8 +56,10 @@ def _split(exclude: str | None) -> list[str]:
 
 
 def _payload(deck: str, card: dict, kind: str, stats: dict, extra: dict | None = None) -> dict:
-    """Merge the deck entry with the card's schedule — the shape the frontend expects."""
-    entry = store.entry(deck, card["term"]) or {"term": card["term"]}
+    """Merge the deck entry with the card's schedule — the shape the frontend expects.
+    `card` may already carry its `entry` (card_with_entry); only fall back to a second query
+    when it does not, since this runs on every keypress."""
+    entry = card.get("entry") or store.entry(deck, card["term"]) or {"term": card["term"]}
     flags = card.get("flags") or {}
     return {"done": False, "kind": kind, "reps": card["reps"], "prof": round(card["prof"], 2),
             **entry, **stats, "sticky": bool(flags.get("again")), **(extra or {})}
@@ -92,14 +94,13 @@ def me(request: Request):
 
 @app.get("/api/decks", dependencies=[guard])
 def decks():
-    return [store.stats(d) for d in store.decks()]
+    return store.all_stats()
 
 
 @app.get("/api/next", dependencies=[guard])
 def next_card(deck: str = "toefl", new_per_day: int = DEFAULT_NEW_PER_DAY,
               exclude: str | None = None):
-    card, kind = store.pick_next(deck, new_per_day, _split(exclude))
-    st = store.stats(deck, new_per_day)
+    card, kind, st = store.pick_next(deck, new_per_day, _split(exclude))
     if card is None:
         return {"done": True, **st}
     return _payload(deck, card, kind, st)
