@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vocab SRS</title>
+<!-- Declaring an icon stops the browser probing /favicon.ico (a 404 in the server log). -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+<script src="/static/vendor/marked.min.js"></script>
+<script src="/static/vendor/purify.min.js"></script>
+<style>
+  :root { color-scheme: light dark; --bg:#f7f7f8; --card:#fff; --ink:#1a1a1a; --mut:#6a7078; --line:#e3e3e6; --accent:#7048b5;
+          --again:#c0392b; --hard:#b5651d; --good:#2f8f6b; --easy:#3b6ea5; --chip:#efeaf9; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#16171a; --card:#1f2126; --ink:#e8e8ea; --mut:#9aa0a6; --line:#31343b; --accent:#a389e0; --chip:#2c2740; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:14px 22px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  h1 { font-size:19px; margin:0; }
+  select { font:inherit; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:6px 9px; }
+  .npd { font-size:13px; color:var(--mut); display:flex; align-items:center; gap:6px; }
+  .npd select { padding:4px 6px; }
+  #counts { font-size:12px; color:var(--mut); margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; }
+  .badge { font-size:12px; padding:2px 9px; border-radius:10px; background:var(--line); color:var(--mut); }
+  main { width:92%; max-width:940px; margin:0 auto; padding:24px 20px 80px; }
+
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px 26px; min-height:180px; }
+  /* front (question) */
+  .front { text-align:center; padding:26px 0; }
+  .front .pos { font-size:14px; color:var(--mut); font-style:italic; margin-bottom:6px; }
+  .front .term { font-size:46px; font-weight:800; letter-spacing:.3px; }
+
+  /* US/UK phonetics + the 4 speaker buttons */
+  .iparow { display:flex; gap:8px; align-items:center; flex-wrap:wrap; color:var(--mut); font-size:16px; }
+  .front .iparow { justify-content:center; margin-top:10px; }
+  .ipatag { font-size:11px; font-weight:800; padding:1px 7px; border-radius:8px; background:var(--chip); color:var(--accent); }
+  .ipa { font-family:"Segoe UI",system-ui,serif; }
+  .spkbtn { font:inherit; font-size:14px; border:1px solid var(--line); background:var(--card); color:var(--ink);
+            border-radius:8px; padding:2px 7px; cursor:pointer; line-height:1.3; }
+  .spkbtn:hover { border-color:var(--accent); }
+  .spkbtn small { font-size:11px; opacity:.8; }
+  .ipasep { color:var(--line); }
+
+  /* reveal (answer) */
+  .head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:12px; }
+  .head .term { font-size:34px; font-weight:800; }
+  .head .flags { margin-left:auto; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .flag { font-size:11px; padding:2px 8px; border-radius:9px; background:var(--chip); color:var(--accent); }
+  .stars { color:#e0a41b; font-size:14px; letter-spacing:1px; }
+  .head + .iparow { margin-top:10px; }
+
+  /* grading buttons — directly under the word, first */
+  .grades { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin:16px 0 8px; }
+  .grades button { color:#fff; border:0; border-radius:11px; padding:13px 10px; font:inherit; font-weight:700; cursor:pointer; }
+  .grades small { display:block; font-weight:400; font-size:11px; opacity:.85; margin-top:2px; }
+  .g-again{ background:var(--again);} .g-hard{ background:var(--hard);} .g-good{ background:var(--good);} .g-easy{ background:var(--easy);}
+
+  /* etymology (词根词缀·词源) — collapsed by default, sits BEFORE the primary sense */
+  details.etym { border:1px dashed color-mix(in srgb, var(--accent) 45%, transparent); border-radius:10px; margin:12px 0 4px;
+                 background:color-mix(in srgb, var(--accent) 5%, transparent); }
+  details.etym > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:15px; font-weight:700; color:var(--accent); }
+  details.etym > summary::-webkit-details-marker { display:none; }
+  details.etym .ehint { font-weight:400; font-size:12px; color:var(--mut); margin-left:8px; }
+  .ebody { padding:2px 16px 12px; }
+  .ebreak { font-size:17px; font-weight:600; }
+  .estory { margin-top:4px; }
+  .eorigin { margin-top:4px; color:var(--mut); font-size:15px; }
+
+  /* 近义 / 反义 (synonyms / antonyms) — English word chips */
+  .synant { display:flex; flex-direction:column; gap:6px; margin:12px 0 2px; }
+  .synant .sarow { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px; }
+  .synant .salab { font-size:13px; font-weight:700; margin-right:2px; }
+  .synant .salab.syn { color:var(--good); } .synant .salab.ant { color:var(--again); }
+  .synant .sachip { display:inline-block; padding:2px 9px; border-radius:999px; font-size:14px;
+                    border:1px solid var(--line); background:var(--card); cursor:pointer; }
+  .synant .sachip.syn { border-color:color-mix(in srgb, var(--good) 45%, transparent); }
+  .synant .sachip.ant { border-color:color-mix(in srgb, var(--again) 45%, transparent); }
+
+  /* primary sense block */
+  .primary { margin:14px 0 6px; padding:14px 16px; background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:12px; }
+  .primary .pdef { font-size:20px; font-weight:600; }
+  .primary .ppos { font-size:13px; color:var(--accent); font-style:italic; font-weight:700; margin-right:8px; text-transform:lowercase; }
+  .primary .pex { font-size:16px; color:var(--ink); font-style:italic; margin-top:8px; }
+  .primary .pzh { font-size:17px; color:var(--mut); margin-top:6px; }
+
+  .sectlabel { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); margin:16px 0 6px; }
+  details.sense { border:1px solid var(--line); border-radius:10px; margin:7px 0; background:var(--card); }
+  details.sense > summary { list-style:none; cursor:pointer; padding:11px 14px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; font-size:16px; }
+  details.sense > summary::-webkit-details-marker { display:none; }
+  details.sense > summary::before { content:"▸"; color:var(--mut); font-size:13px; transition:transform .15s; }
+  details.sense[open] > summary::before { transform:rotate(90deg); }
+  .spos { font-style:italic; color:var(--accent); font-weight:700; min-width:64px; }
+  .sipa { color:var(--mut); font-size:14px; }
+  .sdz { color:var(--mut); }
+  .sbody { padding:2px 16px 14px 30px; }
+  .sbody .more { margin:2px 0 8px; padding-left:18px; color:var(--mut); font-size:15px; }
+  .sbody .ex { font-style:italic; margin:4px 0; }
+  .sbody .cols { margin-top:8px; display:flex; gap:7px; flex-wrap:wrap; }
+  .sbody .col { font-size:14px; padding:3px 9px; border-radius:8px; background:var(--chip); }
+  .sbody .soon { color:var(--mut); font-size:14px; font-style:italic; }
+
+  /* 词汇检索 — a GLOBAL floating widget (like the timer): usable on every screen, including
+     a word's front side before Space and the "nothing due" screen. */
+  .lkfab { position:fixed; left:16px; bottom:16px; z-index:1000; }
+  .lkfab button { font:inherit; font-size:14px; font-weight:700; cursor:pointer; background:var(--card); color:var(--ink);
+                  border:1px solid var(--line); border-radius:14px; padding:11px 15px; box-shadow:0 6px 22px rgba(0,0,0,.18); }
+  .lkfab button:hover { border-color:var(--accent); }
+  .lkfab .badge { background:var(--line); margin-left:4px; }
+  .lkpanel { position:fixed; left:16px; bottom:16px; z-index:1001; width:390px; max-width:calc(100vw - 32px);
+             background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px;
+             box-shadow:0 10px 30px rgba(0,0,0,.28); }
+  .lkhead { display:flex; gap:8px; align-items:center; }
+  .lkhead input { flex:1; min-width:0; font:inherit; color:inherit; background:var(--bg); border:1px solid var(--line);
+                  border-radius:9px; padding:9px 12px; }
+  .lkhead input:focus { outline:none; border-color:var(--accent); }
+  .lkx { font:inherit; border:1px solid var(--line); background:var(--card); color:var(--mut); border-radius:9px;
+         padding:8px 11px; cursor:pointer; }
+  #lkResults { max-height:44vh; overflow:auto; margin-top:8px; }
+  .lkhit { padding:7px 10px; border-radius:8px; cursor:pointer; display:flex; gap:10px; align-items:baseline; }
+  .lkhit:hover, .lkhit.sel { background:var(--chip); }
+  .lkhit b { font-size:16px; }
+  .lkhit small { color:var(--mut); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .lkmore { color:var(--mut); font-size:12px; padding:6px 10px; }
+  .lkfoot { display:flex; gap:8px; align-items:center; margin-top:8px; padding-top:8px; border-top:1px solid var(--line);
+            font-size:12px; color:var(--mut); }
+  #lkBack { font:inherit; font-size:13px; font-weight:700; cursor:pointer; background:var(--card); color:var(--accent);
+            border:1px solid var(--accent); border-radius:9px; padding:7px 11px; }
+
+  /* personal notes */
+  details.notes { border:1px solid var(--line); border-radius:10px; margin:10px 0 4px; }
+  details.notes > summary { list-style:none; cursor:pointer; padding:9px 14px; font-size:14px; color:var(--mut); font-weight:700; }
+  details.notes > summary::-webkit-details-marker { display:none; }
+  #noteBadge { color:var(--accent); }
+  .nbody { padding:0 14px 12px; }
+  .ntabs { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+  .ntabs button { font:inherit; font-size:13px; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:8px; padding:4px 10px; cursor:pointer; }
+  .ntabs button.on { border-color:var(--accent); color:var(--accent); font-weight:700; }
+  #nStatus { font-size:12px; color:var(--mut); margin-left:auto; }
+  /* live split: markdown source left, rendered preview right; both grow with the content so a
+     long pasted note never hides inside a tiny scrollbox (the page scrolls, the boxes don't) */
+  .nsplit { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start; }
+  .nsplit.one { grid-template-columns:1fr; }
+  .nsplit.one > .npane.hidden { display:none; }
+  @media (max-width:900px){ .nsplit { grid-template-columns:1fr; } }
+  .npane { min-width:0; }
+  .plabel { font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); margin-bottom:4px; }
+  #nText { width:100%; min-height:180px; font:15px/1.6 ui-monospace,Consolas,monospace; color:inherit; background:var(--bg);
+           border:1px solid var(--line); border-radius:9px; padding:10px 12px; resize:none; overflow:hidden; display:block; }
+  #nRender { border:1px solid var(--line); border-radius:9px; padding:10px 14px; min-height:180px; background:var(--card); }
+  .mdview { font-size:15px; overflow-x:auto; }
+  .mdview h1,.mdview h2,.mdview h3 { font-size:1.15em; margin:.7em 0 .3em; }
+  .mdview p { margin:.4em 0; }
+  .mdview pre { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:10px; overflow-x:auto; font-size:13px; }
+  .mdview code { background:var(--bg); border-radius:4px; padding:1px 5px; font-size:.9em; }
+  .mdview pre code { background:none; padding:0; }
+  .mdview blockquote { border-left:3px solid var(--accent); margin:.5em 0; padding:.1em .9em; color:var(--mut); }
+  .mdview table { border-collapse:collapse; margin:.5em 0; }
+  .mdview th,.mdview td { border:1px solid var(--line); padding:4px 10px; }
+  .mdview img { max-width:100%; }
+
+  .meta { margin-top:14px; padding-top:12px; border-top:1px solid var(--line); font-size:13px; color:var(--mut); display:flex; gap:14px; flex-wrap:wrap; }
+  .meta b { color:var(--ink); font-weight:600; }
+
+  .actionrow { display:flex; gap:10px; margin-top:16px; flex-wrap:wrap; }
+  button.primarybtn { font:inherit; border:0; border-radius:12px; padding:15px; font-weight:700; font-size:17px; cursor:pointer; background:var(--accent); color:#fff; flex:1 1 260px; }
+  button.ghostbtn { font:inherit; border:1px solid var(--line); border-radius:12px; padding:15px 16px; font-weight:700; font-size:15px; cursor:pointer; background:var(--card); color:var(--ink); }
+  button.ghostbtn:hover { border-color:var(--accent); }
+  button.ghostbtn .badge, button.primarybtn .badge { background:rgba(127,127,127,.25); }
+  button.ghostbtn:disabled { opacity:.4; cursor:default; }
+  #back { border-color:var(--accent); color:var(--accent); }
+  .tierbadge { font-size:11px; padding:2px 8px; border-radius:9px; font-weight:700; }
+  .tier1 { background:#2f8f6b22; color:#2f8f6b; } .tier2 { background:#b5651d22; color:#b5651d; } .tier3 { background:#6a707822; color:var(--mut); }
+  .hfbadge { background:#d9480f22; color:#d9480f; }   /* word attested in real TPO tests */
+  .topicbadge { background:#1c7ed622; color:#1c7ed6; }
+  .stickybadge { background:#c0392b22; color:var(--again); }   /* graded Again once: can't graduate */
+  #toast { position:fixed; left:50%; bottom:26px; transform:translate(-50%,20px); opacity:0; pointer-events:none;
+           background:var(--card); color:var(--ink); border:1px solid var(--line); border-left:4px solid var(--again);
+           border-radius:10px; padding:11px 16px; font-size:14px; max-width:560px; box-shadow:0 6px 24px rgba(0,0,0,.18);
+           transition:opacity .18s, transform .18s; z-index:50; }
+  #toast.show { opacity:1; transform:translate(-50%,0); }
+  .done { text-align:center; color:var(--good); font-size:19px; padding:44px 0; }
+  .kbd { font-size:12px; color:var(--mut); text-align:center; margin-top:14px; }
+  .hidden { display:none; }
+
+  /* voice settings */
+  details.ttscfg { position:relative; }
+  details.ttscfg > summary { list-style:none; cursor:pointer; font-size:16px; padding:4px 8px; border:1px solid var(--line); border-radius:8px; }
+  details.ttscfg > summary::-webkit-details-marker { display:none; }
+  .ttspanel { position:absolute; right:0; top:110%; z-index:50; background:var(--card); border:1px solid var(--line); border-radius:12px;
+              padding:12px 14px; box-shadow:0 8px 26px rgba(0,0,0,.22); min-width:300px; font-size:13px; }
+  .ttspanel label { display:flex; align-items:center; gap:8px; margin:6px 0; color:var(--mut); }
+  .ttspanel label span { min-width:46px; font-weight:700; }
+  .ttspanel select { flex:1; max-width:210px; font-size:12px; padding:3px 5px; }
+  .ttspanel .auto { margin-top:8px; border-top:1px solid var(--line); padding-top:8px; }
+
+  .timer { position:fixed; right:16px; bottom:16px; z-index:1000; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:10px 12px; box-shadow:0 6px 22px rgba(0,0,0,.18); text-align:center; min-width:150px; }
+  .timer.run { border-color:var(--accent); }
+  .t-display { font-size:30px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:1px; }
+  .t-display.over { color:#c0392b; }
+  .t-row { display:flex; gap:6px; align-items:center; justify-content:center; margin-top:7px; font-size:12px; color:var(--mut); }
+  .t-btn { margin:0; background:var(--line); color:var(--ink); border:0; border-radius:8px; padding:6px 10px; font-weight:700; font-size:14px; cursor:pointer; }
+  .t-min { width:52px; margin:0; padding:4px 6px; text-align:center; font:inherit; color:inherit; background:transparent; border:1px solid var(--line); border-radius:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 Vocab SRS</h1>
+  <select id="deck"></select>
+  <label class="npd">new/day <select id="npd">
+    <option>20</option><option>50</option><option>100</option><option>200</option><option>500</option>
+    <option value="100000" selected>∞ all</option>
+  </select></label>
+  <details class="ttscfg" id="ttscfg">
+    <summary title="voice settings">🔊⚙</summary>
+    <div class="ttspanel">
+      <label><span>引擎</span><select id="ttsEngine">
+        <option value="server">云端神经声 Andrew/Aria/Ryan/Sonia（推荐）</option>
+        <option value="browser">浏览器本地语音</option>
+      </select></label>
+      <label><span>US ♂</span><select data-slot="usM"></select><button class="spkbtn" data-slot="usM">▶</button></label>
+      <label><span>US ♀</span><select data-slot="usF"></select><button class="spkbtn" data-slot="usF">▶</button></label>
+      <label><span>UK ♂</span><select data-slot="ukM"></select><button class="spkbtn" data-slot="ukM">▶</button></label>
+      <label><span>UK ♀</span><select data-slot="ukF"></select><button class="spkbtn" data-slot="ukF">▶</button></label>
+      <div style="font-size:11px;color:var(--mut)">↑ 四个下拉只影响"浏览器本地"引擎（云端失败时也用作备用）</div>
+      <label class="auto"><input type="checkbox" id="autoSay" checked> auto-pronounce on each new card (US ♂)</label>
+      <div id="ttsStat" style="margin-top:6px;font-size:12px;color:var(--mut)"></div>
+    </div>
+  </details>
+  <span id="counts"></span>
+</header>
+<main>
+  <section class="card" id="card"><div class="front"><div class="term">…</div></div></section>
+  <div class="actionrow">
+    <button class="primarybtn" id="show">Show answer &nbsp;<span class="badge">Space</span></button>
+    <button class="ghostbtn" id="know" title="I know this cold — never show it again">I know it ✓ <span class="badge">Enter</span></button>
+    <button class="ghostbtn" id="undo" title="撤销上一个动作（Ctrl+Z 那种）：揭晓、评分、Enter 都算一个动作">↩ Undo <span class="badge">←</span></button>
+    <button class="ghostbtn hidden" id="redo" title="重做被撤销的动作">↪ Redo <span class="badge">→</span></button>
+    <button class="ghostbtn hidden" id="back" title="回到检索跳转前的单词">⬅ 返回检索前</button>
+  </div>
+  <div class="kbd"><b>Enter</b> = I know it（首次见到=永久隐藏；之后按=还需再确认一次；按过 Again 的词无效） · <b>Space</b> = show answer, then <b>1</b> Again (&lt;1d) · <b>2</b> Hard · <b>3</b> Good · <b>4</b> 🔊 朗读（美式男声，任何时候都能按） · <b>←</b> undo · <b>→</b> redo · <b>/</b> 词汇检索（任何页面可用）</div>
+</main>
+
+<!-- Global floating lookup: present on EVERY screen (front, reveal, done).
+     MUST stay above the script below — it wires these nodes up at parse time. -->
+<div class="lkfab" id="lkFab">
+  <button id="lkOpenBtn" title="在当前词库里检索任意单词（/ 或 Ctrl/⌘+K）">🔎 词汇检索 <span class="badge">/</span></button>
+</div>
+<div class="lkpanel hidden" id="lkPanel">
+  <div class="lkhead">
+    <input id="lkInput" placeholder="≥2 个字母，如 sub → subsequent…" autocomplete="off" spellcheck="false">
+    <button class="lkx" id="lkClose" title="关闭 (Esc)">✕</button>
+  </div>
+  <div id="lkResults"></div>
+  <div class="lkfoot">
+    <button id="lkBack" class="hidden">⬅ 返回检索前</button>
+    <span>↑↓ 选择 · Enter 打开 · Esc 关闭</span>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let deck = "toefl", npd = 100000, cur = null, revealed = false;
+const BACK = [];                       // stack of {cur, revealed} saved before a search-jump
+
+/* ---------- TTS: browser speechSynthesis, 4 voice slots (free, no storage) ---------- */
+const FEMALE_HINTS = ['female','samantha','victoria','zira','jenny','aria','michelle','allison','ava','karen','moira',
+  'tessa','fiona','kate','serena','sonia','libby','hazel','martha','joanna','salli','kimberly','ivy','emma','amy',
+  'nicole','olivia','sara','catherine','linda','heather','susan'];
+const MALE_HINTS = ['male','alex','fred','david','mark','aaron','guy','christopher','eric','andrew','brian','daniel',
+  'arthur','george','ryan','oliver','thomas','james','john','matthew','justin','joey','russell','liam','nathan','tom'];
+let VOICES = [];
+let lastUtter = null;       // keep a live reference: Chrome GCs local utterances and goes silent
+let speakTimer = null;
+const voiceCfg = JSON.parse(localStorage.getItem('ttsVoices') || '{}');
+
+function ttsStatus(msg, bad){
+  const el = $('#ttsStat');
+  if (el){ el.textContent = msg; el.style.color = bad ? '#c0392b' : ''; }
+}
+function refreshVoices(){
+  const v = speechSynthesis.getVoices();
+  if (v.length) VOICES = v;           // getVoices() is empty until Chrome loads them async
+}
+
+function slotPool(slot){
+  const pref = slot.startsWith('us') ? 'en-us' : 'en-gb';
+  const norm = v => v.lang.toLowerCase().replace('_','-');
+  let pool = VOICES.filter(v => norm(v).startsWith(pref));
+  return pool.length ? pool : VOICES.filter(v => norm(v).startsWith('en'));
+}
+function slotVoice(slot){
+  if (voiceCfg[slot]){
+    const v = VOICES.find(v => v.name === voiceCfg[slot]);
+    if (v) return v;
+  }
+  const pool = slotPool(slot);
+  const male = slot.endsWith('M');
+  const hints = male ? MALE_HINTS : FEMALE_HINTS, anti = male ? FEMALE_HINTS : MALE_HINTS;
+  return pool.find(v => hints.some(h => v.name.toLowerCase().includes(h)))
+      || pool.find(v => !anti.some(h => v.name.toLowerCase().includes(h)))
+      || pool[0];
+}
+/* Preferred engine: the server's neural voices (/api/tts, cached mp3s). Browser
+   speechSynthesis is only the fallback — macOS Chrome randomly "cancels" it. */
+const SLOT_LABEL = {usM:'Andrew · US♂', usF:'Aria · US♀', ukM:'Ryan · UK♂', ukF:'Sonia · UK♀'};
+let audioEl = null, speakSeq = 0;
+const AUDIO_CACHE = new Map();         // "slot|text" -> object URL (session-local)
+
+function stopAudio(){
+  if (audioEl){ audioEl.pause(); audioEl = null; }
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+}
+async function speak(text, slot='usM'){
+  if (!text) return;
+  const seq = ++speakSeq;              // newer calls silently supersede in-flight ones
+  if ($('#ttsEngine').value === 'server'){
+    try {
+      const key = slot + '|' + text;
+      let url = AUDIO_CACHE.get(key);
+      if (!url){
+        const r = await fetch(`/api/tts?text=${encodeURIComponent(text)}&slot=${slot}`);
+        if (!r.ok || !(r.headers.get('content-type')||'').includes('audio'))
+          throw new Error('HTTP ' + r.status);
+        url = URL.createObjectURL(await r.blob());
+        if (AUDIO_CACHE.size > 300) AUDIO_CACHE.clear();
+        AUDIO_CACHE.set(key, url);
+      }
+      if (seq !== speakSeq) return;
+      stopAudio();
+      audioEl = new Audio(url);
+      await audioEl.play();
+      ttsStatus('▶ ' + (SLOT_LABEL[slot]||slot) + ' (云端)');
+      return;
+    } catch (err){
+      if (seq !== speakSeq) return;
+      ttsStatus('云端 TTS 失败(' + (err.message||err.name) + ') → 试浏览器语音', true);
+    }
+  }
+  speakBrowser(text, slot, 0, seq);
+}
+function speakBrowser(text, slot, attempt, seq){
+  if (!('speechSynthesis' in window)){ ttsStatus('⚠️ 此浏览器不支持 speechSynthesis', true); return; }
+  refreshVoices();
+  clearTimeout(speakTimer);
+  const synth = speechSynthesis;
+  // macOS Chrome drops utterances queued too soon after cancel(): only cancel when
+  // something is actually playing, and wait ~250ms before the next speak()
+  const busy = synth.speaking || synth.pending;
+  if (busy) synth.cancel();
+  speakTimer = setTimeout(() => {
+    if (seq !== speakSeq) return;
+    const u = new SpeechSynthesisUtterance(text);
+    const v = attempt >= 2 ? null : slotVoice(slot);   // last retry: default voice (some voices are broken)
+    if (v) u.voice = v;
+    u.lang = slot.startsWith('uk') ? 'en-GB' : 'en-US';
+    u.rate = 0.95;                     // relaxed, not newsreader-formal
+    u.onstart = () => ttsStatus('▶ ' + (v ? v.name : 'default voice') + ' (浏览器)');
+    u.onerror = e => {
+      if (lastUtter !== u) return;     // superseded by a newer speak() — expected, ignore
+      const kind = e.error || 'unknown';
+      if ((kind === 'canceled' || kind === 'interrupted') && attempt < 3){
+        speakBrowser(text, slot, attempt + 1, seq);    // swallowed by the Chrome bug — retry
+        return;
+      }
+      ttsStatus('⚠️ TTS error: ' + kind
+        + (kind === 'not-allowed' ? ' — 先点击页面任意处，再切词/按喇叭' : ''), true);
+    };
+    lastUtter = u;
+    if (synth.paused) synth.resume();  // un-stick a synth left in paused state (Chrome quirk)
+    synth.speak(u);
+    if (!VOICES.length)
+      ttsStatus('⚠️ 此浏览器 0 个语音包 — 云端引擎不受影响，可无视', true);
+  }, busy ? 250 : (attempt ? 300 : 0));
+}
+/* browsers block audio before the first user gesture: queue the very first card */
+let interacted = false, pendingSay = null;
+['pointerdown','keydown'].forEach(ev => document.addEventListener(ev, () => {
+  interacted = true;
+  if (pendingSay){ const t = pendingSay; pendingSay = null; speak(t, 'usM'); }
+}, true));
+function autoSay(term){
+  if (!$('#autoSay').checked) return;
+  if (interacted) speak(term, 'usM'); else pendingSay = term;
+}
+function fillVoicePanel(){
+  refreshVoices();
+  const en = VOICES.filter(v => v.lang.toLowerCase().startsWith('en'));
+  document.querySelectorAll('.ttspanel select[data-slot]').forEach(sel => {
+    const slot = sel.dataset.slot, pick = slotVoice(slot);
+    sel.innerHTML = en.map(v =>
+      `<option ${pick && v.name===pick.name ? 'selected':''}>${esc(v.name)}</option>`).join('') || '<option>(no voices)</option>';
+  });
+  ttsStatus(VOICES.length
+    ? `${VOICES.length} voices available (${en.length} English)`
+    : '⚠️ 0 个语音包 — VNC/Linux 桌面常见，请在笔记本本地浏览器打开', !VOICES.length);
+}
+if ('speechSynthesis' in window){
+  fillVoicePanel();
+  speechSynthesis.addEventListener('voiceschanged', fillVoicePanel);
+}
+document.querySelectorAll('.ttspanel select[data-slot]').forEach(sel => sel.addEventListener('change', () => {
+  voiceCfg[sel.dataset.slot] = sel.value;
+  localStorage.setItem('ttsVoices', JSON.stringify(voiceCfg));
+}));
+$('#autoSay').checked = localStorage.getItem('autoSay') !== '0';
+$('#autoSay').addEventListener('change', e => localStorage.setItem('autoSay', e.target.checked ? '1' : '0'));
+$('#ttsEngine').value = localStorage.getItem('ttsEngine') || 'server';
+$('#ttsEngine').addEventListener('change', e => localStorage.setItem('ttsEngine', e.target.value));
+
+/* ---------- rendering ---------- */
+async function boot(){
+  const decks = await (await fetch('/api/decks')).json();
+  $('#deck').innerHTML = decks.map(d =>
+    `<option value="${d.deck}">${d.deck.toUpperCase()} · ${d.total} words</option>`).join('');
+  deck = decks[0]?.deck || "toefl";
+  loadNext();
+}
+$('#deck').addEventListener('change', e => { deck = e.target.value; BACK.length = 0; lkReset(); loadNext(); });
+$('#npd').addEventListener('change', e => { npd = +e.target.value; loadNext(); });
+
+const TIERS = {1:['tier1','high-freq'],2:['tier2','tricky'],3:['tier3','simple']};
+
+function spkBtn(slot){
+  return `<button class="spkbtn" data-slot="${slot}" title="${slot.startsWith('us')?'American':'British'} ${slot.endsWith('M')?'male':'female'}">🔊<small>${slot.endsWith('M')?'♂':'♀'}</small></button>`;
+}
+function ipaRow(d){
+  const us = d.ipa_us, uk = d.ipa_uk;
+  if (!us && !uk){
+    return d.phonetic ? `<div class="iparow"><span class="ipa">/${esc(d.phonetic)}/</span>${spkBtn('usM')}</div>` : '';
+  }
+  const parts = [];
+  if (us) parts.push(`<span class="ipatag">US</span><span class="ipa">/${esc(us)}/</span>${spkBtn('usM')}${spkBtn('usF')}`);
+  if (us && uk) parts.push('<span class="ipasep">·</span>');
+  if (uk) parts.push(`<span class="ipatag">UK</span><span class="ipa">/${esc(uk)}/</span>${spkBtn('ukM')}${spkBtn('ukF')}`);
+  return `<div class="iparow">${parts.join('')}</div>`;
+}
+
+function syncBtns(){
+  const front = cur && !revealed;
+  $('#show').classList.toggle('hidden', !front);
+  $('#know').classList.toggle('hidden', !front);
+  const n = BACK.length;                              // depth of the search-jump chain
+  const label = n > 1 ? `⬅ 返回检索前 (${n})` : '⬅ 返回检索前';
+  for (const id of ['#back', '#lkBack']){
+    $(id).classList.toggle('hidden', !n);
+    $(id).textContent = label;
+  }
+  const h = HISTS[deck] || [], f = FUTS[deck] || [];
+  $('#undo').disabled = !h.length;
+  $('#redo').classList.toggle('hidden', !f.length);   // only shown when there IS something to redo
+}
+function renderFront(d){
+  revealed = false; cur = d;
+  const pos = (d.senses && d.senses[0] && d.senses[0].pos) || '';
+  const t = TIERS[d.tier];
+  $('#card').innerHTML = `<div class="front">
+      ${pos?`<div class="pos">${esc(pos)}</div>`:''}
+      <div class="term">${esc(d.term)}</div>
+      ${ipaRow(d)}
+      <div class="pos" style="margin-top:8px">
+        ${d.kind==='new'?'<span style="color:var(--accent)">new word</span> ':''}
+        ${t?`<span class="tierbadge ${t[0]}">${t[1]}</span>`:''}
+        ${d.tpo_hf?'<span class="tierbadge hfbadge">🔥 TPO高频</span>':''}
+        ${d.topic?`<span class="tierbadge topicbadge">${esc(d.topic)}</span>`:''}
+        ${d.sticky?'<span class="tierbadge stickybadge" title="你按过 Again：Enter 不会永久隐藏它">🔁 曾按 Again</span>':''}
+      </div>
+    </div>`;
+  syncBtns();
+  autoSay(d.term);
+}
+function renderDone(){
+  const capMsg = npd >= 100000 ? 'No new-word cap — you\'ve reached the end of the deck for now.'
+    : `New today are capped at ${npd}. Come back later for reviews, or raise new/day.`;
+  $('#card').innerHTML = `<div class="done">✅ Nothing due on ${deck.toUpperCase()} right now.<br>
+    <small>${capMsg}</small></div>`;
+  cur = null; revealed = false; syncBtns();
+}
+async function loadNext(){
+  revealed = false;
+  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
+  updateCounts(d);
+  if (d.done){ renderDone(); return; }
+  renderFront(d);
+}
+
+function stars(n){ return n>0 ? `<span class="stars" title="Collins ${n}">${'★'.repeat(n)}</span>` : ''; }
+
+function senseHTML(s, open){
+  const de = s.def_en||[], dz = s.def_zh||[], ex = s.examples||[], col = s.collocations||[];
+  const ipa = cur.ipa_us || cur.phonetic || '';
+  const head = `<span class="spos">${esc(s.pos||'—')}</span>`
+    + (ipa?`<span class="sipa">/${esc(ipa)}/</span><button class="spkbtn" data-slot="usM" title="American male">🔊</button>`:'')
+    + (de[0]?`<span class="sde">${esc(de[0])}</span>`:'')
+    + (dz.length?`<span class="sdz">${esc(dz.join('；'))}</span>`:'');
+  const parts = [];
+  if (de.length>1) parts.push('<ul class="more">'+de.slice(1).map(d=>`<li>${esc(d)}</li>`).join('')+'</ul>');
+  if (ex.length)  parts.push(ex.map(e=>`<div class="ex">“${esc(e)}”</div>`).join(''));
+  if (col.length) parts.push('<div class="cols">'+col.map(c=>`<span class="col">${esc(c)}</span>`).join('')+'</div>');
+  const body = parts.length ? parts.join('') : '<div class="soon">example &amp; collocations coming soon</div>';
+  return `<details class="sense"${open?' open':''}><summary>${head}</summary><div class="sbody">${body}</div></details>`;
+}
+
+function verbForms(x){
+  if (!x) return '';
+  const map = [['p','past'],['d','pp'],['i','-ing'],['3','3rd'],['s','pl'],['r','comp'],['t','sup']];
+  const out = map.filter(([k]) => x[k]).map(([k,lbl]) => `${lbl} <b>${esc(x[k])}</b>`);
+  return out.length ? `<span>forms: ${out.join(' · ')}</span>` : '';
+}
+
+/* 词根词缀·词源 — collapsed, shown BEFORE the primary sense; hidden when no data yet */
+function etymHTML(d){
+  const et = d.etymology || {};
+  if (!(et.breakdown || et.story || et.origin)) return '';
+  return `<details class="etym"><summary>🌱 词根词缀 · 词源<span class="ehint">点击展开</span></summary>
+    <div class="ebody">
+      ${et.breakdown?`<div class="ebreak">${esc(et.breakdown)}</div>`:''}
+      ${et.story?`<div class="estory">${esc(et.story)}</div>`:''}
+      ${et.origin?`<div class="eorigin">${esc(et.origin)}</div>`:''}
+    </div></details>`;
+}
+
+/* 近义 / 反义 — English word chips; each chip jumps to that word via the lookup flow. Hidden when none. */
+function synAntHTML(d){
+  const syn = (d.synonyms || []), ant = (d.antonyms || []);
+  if (!syn.length && !ant.length) return '';
+  const chips = (arr, cls) => arr.map(w =>
+    `<span class="sachip ${cls}" data-jump="${esc(w)}">${esc(w)}</span>`).join('');
+  return `<div class="synant">
+    ${syn.length?`<div class="sarow"><span class="salab syn">近义</span>${chips(syn,'syn')}</div>`:''}
+    ${ant.length?`<div class="sarow"><span class="salab ant">反义</span>${chips(ant,'ant')}</div>`:''}
+  </div>`;
+}
+
+function renderReveal(){
+  const senses = cur.senses || [];
+  const p = senses[0] || {};
+  const primaryDef = cur.gloss_en || (p.def_en && p.def_en[0]) || '';
+  const primaryEx = (p.examples && p.examples[0]) || '';
+  const primaryZh = (p.def_zh && p.def_zh.join('；')) || '';
+  const tb = TIERS[cur.tier];
+  const flags = [
+    tb ? `<span class="tierbadge ${tb[0]}">${tb[1]}</span>` : '',
+    cur.tpo_hf ? '<span class="tierbadge hfbadge">🔥 TPO高频</span>' : '',
+    cur.topic ? `<span class="tierbadge topicbadge">${esc(cur.topic)}</span>` : '',
+    cur.sticky ? '<span class="tierbadge stickybadge" title="你按过 Again：Enter 不会永久隐藏它">🔁 曾按 Again</span>' : '',
+    stars(cur.collins),
+    cur.oxford ? '<span class="flag">Oxford 3000</span>' : '',
+    cur.frq ? `<span class="flag">freq #${cur.frq}</span>` : '',
+    ...(cur.tags||[]).map(t => `<span class="flag">${esc(t)}</span>`)
+  ].filter(Boolean).join('');
+
+  $('#card').innerHTML = `
+    <div class="head">
+      <span class="term">${esc(cur.term)}</span>
+      <span class="flags">${flags}</span>
+    </div>
+    ${ipaRow(cur)}
+    <div class="grades" id="grades">
+      <button class="g-again" data-g="again">Again<small>repeat &lt;1 day · 1</small></button>
+      <button class="g-hard"  data-g="hard">Hard<small>fuzzy · 2</small></button>
+      <button class="g-good"  data-g="good">Good<small>fine · 3</small></button>
+    </div>
+    ${etymHTML(cur)}
+    <div class="primary">
+      <div class="pdef">${p.pos?`<span class="ppos">${esc(p.pos)}</span>`:''}${esc(primaryDef)||'<span class="sdz">'+esc(primaryZh)+'</span>'}</div>
+      ${primaryEx?`<div class="pex">“${esc(primaryEx)}”</div>`:''}
+      ${primaryZh&&primaryDef?`<div class="pzh">${esc(primaryZh)}</div>`:''}
+    </div>
+    ${synAntHTML(cur)}
+    <div class="sectlabel">All parts of speech — click ▸ to expand</div>
+    ${senses.map((s,i)=>senseHTML(s, i===0)).join('') || '<div class="soon">no senses</div>'}
+    <details class="notes" id="notesBox"><summary>📝 Personal Notes <span id="noteBadge"></span></summary>
+      <div class="nbody">
+        <div class="ntabs">
+          <button id="nSplit">⇄ 分栏</button><button id="nEdit">✏️ 仅编辑</button><button id="nView">👁 仅预览</button>
+          <span id="nStatus"></span>
+        </div>
+        <div class="nsplit" id="nSplitBox">
+          <div class="npane" id="nPaneEdit">
+            <div class="plabel">Markdown</div>
+            <textarea id="nText" placeholder="中英文、Markdown 都行；GPT 回答直接粘贴进来也 OK。自动保存，右侧实时预览。"></textarea>
+          </div>
+          <div class="npane" id="nPaneView">
+            <div class="plabel">预览</div>
+            <div id="nRender" class="mdview"></div>
+          </div>
+        </div>
+      </div>
+    </details>
+    <div class="meta">
+      ${cur.reps?`<span>熟练度 <b>${Math.round((cur.prof??0.5)*100)}%</b> · 已复习 <b>${cur.reps}</b> 次</span>`:'<span>新词 · 首次学习</span>'}
+      ${verbForms(cur.exchange)}
+    </div>`;
+  syncBtns();
+  loadNote(cur.term);
+}
+function reveal(){
+  if (!cur || revealed) return;
+  revealed = true;
+  act({ t:'reveal', term: cur.term });   // ← steps back to the front of this same word
+  renderReveal();
+}
+
+/* ---------- personal notes (markdown, autosaved, stored per term for ALL decks) ----------
+   Live split view: you type on the left, the render updates on the right — no mode switching.
+   The textarea auto-grows to fit the whole note (a long GPT paste is fully visible without
+   dragging an inner scrollbar); layout choice persists in localStorage. */
+let noteTerm = null, noteTimer = null;
+let noteLayout = localStorage.getItem('noteLayout') || 'split';   // split | edit | view
+function autoGrow(){
+  const ta = $('#nText');
+  if (!ta || ta.offsetParent === null) return;      // hidden (collapsed <details>): scrollHeight is 0
+  ta.style.height = 'auto';
+  ta.style.height = Math.max(180, ta.scrollHeight + 2) + 'px';
+}
+function mdRender(){
+  const ta = $('#nText'), out = $('#nRender');
+  if (ta && out) out.innerHTML = DOMPurify.sanitize(marked.parse(ta.value || '*（空）*'));
+}
+function noteMode(mode){
+  noteLayout = mode;
+  localStorage.setItem('noteLayout', mode);
+  const box = $('#nSplitBox'); if (!box) return;
+  box.classList.toggle('one', mode !== 'split');
+  $('#nPaneEdit').classList.toggle('hidden', mode === 'view');
+  $('#nPaneView').classList.toggle('hidden', mode === 'edit');
+  for (const [id, m] of [['#nSplit','split'], ['#nEdit','edit'], ['#nView','view']])
+    $(id).classList.toggle('on', mode === m);
+  mdRender(); autoGrow();
+}
+async function loadNote(term){
+  noteTerm = term;
+  const d = await (await fetch('/api/note?term=' + encodeURIComponent(term))).json();
+  if (noteTerm !== term || !$('#nText')) return;   // card changed while fetching
+  $('#nText').value = d.md || '';
+  $('#noteBadge').textContent = d.md ? '●' : '';
+  noteMode(noteLayout);
+}
+async function saveNote(){
+  const ta = $('#nText');
+  if (!ta || noteTerm == null) return;
+  const term = noteTerm, md = ta.value;
+  $('#nStatus').textContent = 'saving…';
+  await fetch('/api/note', { method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ term, md }) });
+  if ($('#nStatus')) $('#nStatus').textContent = 'saved ✓';
+  const b = $('#noteBadge'); if (b) b.textContent = md.trim() ? '●' : '';
+}
+document.addEventListener('input', e => {
+  if (e.target.id === 'nText'){
+    $('#nStatus').textContent = '…';
+    autoGrow(); mdRender();                       // live preview, no mode switching
+    clearTimeout(noteTimer); noteTimer = setTimeout(saveNote, 800);
+  } else if (e.target.id === 'lkInput'){
+    clearTimeout(lkTimer); lkTimer = setTimeout(() => lookup(e.target.value), 300);
+  }
+});
+document.addEventListener('focusout', e => { if (e.target.id === 'nText'){ clearTimeout(noteTimer); saveNote(); } });
+
+/* ---------- global lookup + jump + real back ----------
+   The search box floats over EVERY screen (like the timer), so a word can be looked up
+   before it is revealed — or with no card on screen at all. Jumping pushes the current
+   screen onto BACK, so N chained lookups step back N times, one word per press. */
+let lkTimer = null, lkHits = [], lkSel = -1;
+
+function lkOpen(on){
+  $('#lkPanel').classList.toggle('hidden', !on);
+  $('#lkFab').classList.toggle('hidden', on);
+  if (on){ const i = $('#lkInput'); i.focus(); i.select(); }
+}
+function lkReset(){                    // deck switch: results from the old deck are meaningless
+  $('#lkInput').value = '';
+  $('#lkResults').innerHTML = '';
+  lkHits = []; lkSel = -1;
+}
+function renderHits(total){
+  $('#lkResults').innerHTML = lkHits.length
+    ? lkHits.map((h, i) =>
+        `<div class="lkhit${i===lkSel?' sel':''}" data-term="${esc(h.term)}">
+           <b>${esc(h.term)}</b><small>${esc(h.zh||'')}</small></div>`).join('')
+      + (total > lkHits.length ? `<div class="lkmore">…共 ${total} 个匹配，只显示前 ${lkHits.length} 个</div>` : '')
+    : '<div class="lkmore">无匹配</div>';
+  const sel = $('#lkResults .lkhit.sel');
+  if (sel) sel.scrollIntoView({ block:'nearest' });
+}
+async function lookup(q){
+  q = q.trim();
+  if (q.length < 2){ $('#lkResults').innerHTML = ''; lkHits = []; lkSel = -1; return; }
+  const d = await (await fetch(`/api/search?deck=${deck}&q=${encodeURIComponent(q)}`)).json();
+  if ($('#lkInput').value.trim() !== q) return;      // a newer keystroke already won
+  lkHits = d.hits; lkSel = lkHits.length ? 0 : -1;
+  renderHits(d.total);
+}
+async function jumpTo(term){
+  lkOpen(false);
+  if (cur && cur.term === term && revealed) return;  // already looking at it
+  const d = await (await fetch(`/api/entry?deck=${deck}&term=${encodeURIComponent(term)}`)).json();
+  if (d.error) return;
+  BACK.push({ cur, revealed });                      // may hold cur:null (the "done" screen)
+  cur = d; revealed = true;
+  renderReveal();
+  updateCounts(d);
+  autoSay(d.term);
+}
+function goBack(){                     // ONE step back per press, however deep the chain
+  const s = BACK.pop();
+  if (!s) return;
+  cur = s.cur;
+  revealed = !!s.revealed;
+  if (!cur) renderDone();              // we had jumped away from the "nothing due" screen
+  else if (revealed) renderReveal();
+  else renderFront(cur);
+  syncBtns();
+}
+
+$('#lkOpenBtn').addEventListener('click', () => lkOpen(true));
+$('#lkClose').addEventListener('click', () => lkOpen(false));
+$('#lkBack').addEventListener('click', goBack);
+$('#lkPanel').addEventListener('click', e => {
+  const hit = e.target.closest('.lkhit');
+  if (hit) jumpTo(hit.dataset.term);
+});
+$('#lkInput').addEventListener('keydown', e => {
+  if (e.isComposing) return;
+  if (e.key === 'Escape'){ e.preventDefault(); lkOpen(false); }
+  else if (e.key === 'ArrowDown'){ e.preventDefault(); lkSel = Math.min(lkSel + 1, lkHits.length - 1); renderHits(lkHits.length); }
+  else if (e.key === 'ArrowUp'){ e.preventDefault(); lkSel = Math.max(lkSel - 1, 0); renderHits(lkHits.length); }
+  else if (e.key === 'Enter'){
+    e.preventDefault();
+    const h = lkHits[lkSel < 0 ? 0 : lkSel];
+    if (h) jumpTo(h.term);
+  }
+});
+document.addEventListener('click', e => {          // click-away closes the panel
+  if ($('#lkPanel').classList.contains('hidden')) return;
+  if (!e.target.closest('#lkPanel') && !e.target.closest('#lkFab')) lkOpen(false);
+});
+
+/* ---------- grading + action-level undo/redo ----------
+   ← undoes the LAST ACTION, not the last word. Revealing counts as an action, so:
+     Space then ←            -> back to the word's front (answer hidden again)
+     Space, 1, then ←        -> back to that word's answer screen, buttons live: press 2 instead
+     ← again                 -> its front;  ← again -> the previous word's answer screen…
+   Reveals are pure UI (no server call); grades/graduations are undone on the server, which
+   restores the card's schedule and hands the word back. → replays what ← took away. */
+// Ctrl+Z semantics. Stacks are PER DECK, matching the server's own per-deck undo stacks —
+// a global stack would make ← after a deck switch undo the wrong deck's action.
+const HISTS = {}, FUTS = {};        // deck -> [{t:'reveal'|'grade'|'known', term}]
+const hist = () => HISTS[deck] || (HISTS[deck] = []);
+const fut  = () => FUTS[deck]  || (FUTS[deck]  = []);
+function act(entry){
+  const h = hist();
+  h.push(entry);
+  if (h.length > 200) h.shift();
+  fut().length = 0;                 // a fresh action invalidates the redo chain
+  syncBtns();
+}
+
+function afterGrade(){ if (BACK.length) goBack(); else loadNext(); }
+
+async function grade(g){
+  if (!cur || !revealed) return;
+  const term = cur.term;
+  const d = await (await fetch('/api/review', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck, term, grade: g })
+  })).json();
+  act({ t:'grade', term });
+  updateCounts(d);
+  afterGrade();
+}
+
+async function graduate(){          // Enter before reveal: "I know it", never show again
+  if (!cur || revealed) return;
+  const term = cur.term;
+  const d = await (await fetch('/api/known', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck, term })
+  })).json();
+  act({ t:'known', term });
+  updateCounts(d);
+  if (d.blocked) toast(`“${d.term}” 你按过 Again — 不会永久隐藏，已按 Good 处理，之后仍会复习。`);
+  else if (d.confirm) toast(`✔ “${d.term}” 已标记会了 — 它还会再出现一次做最终确认（到时再按 Enter 就永久隐藏）。`);
+  afterGrade();
+}
+
+async function undo(){
+  const h = hist();
+  // a stale reveal (its word is no longer on screen — you switched decks or jumped from the
+  // search box in between) has nothing to undo: drop it and keep walking back
+  while (h.length && h[h.length - 1].t === 'reveal' && (!cur || h[h.length - 1].term !== cur.term))
+    h.pop();
+  const last = h.pop();
+  if (!last){ syncBtns(); return; }
+  if (last.t === 'reveal'){          // un-reveal the current word: no server state to touch
+    fut().push(last);
+    revealed = false;
+    renderFront(cur);
+    syncBtns();
+    return;
+  }
+  const d = await (await fetch('/api/undo', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck })
+  })).json();
+  if (d.none){ syncBtns(); return; } // server had nothing; keep the UI as it is
+  fut().push(last);
+  cur = d;
+  updateCounts(d);
+  if (d.action === 'grade'){ revealed = true; renderReveal(); }   // re-grade it right away
+  else { revealed = false; renderFront(d); }                      // Enter fires pre-reveal
+  syncBtns();
+}
+
+async function redo(){
+  const f = fut();
+  const nxt = f.pop();
+  if (!nxt){ syncBtns(); return; }
+  if (nxt.t === 'reveal'){
+    hist().push(nxt);
+    if (cur){ revealed = true; renderReveal(); }
+    syncBtns();
+    return;
+  }
+  const d = await (await fetch('/api/redo', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ deck })
+  })).json();
+  if (d.none){ syncBtns(); return; }
+  hist().push(nxt);
+  updateCounts(d);
+  afterGrade();                      // the action stands again; move on to the next card
+}
+
+let toastTimer = null;
+function toast(msg){
+  let t = $('#toast');
+  if (!t){ t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+function updateCounts(d){
+  if (d.total==null) return;
+  $('#counts').innerHTML =
+    `<span class="badge">review ${d.due||0}</span> <span class="badge">new ${d.new||0}</span>`
+    + `<span class="badge">learned ${d.learned||0}</span> <span class="badge">${d.total} total</span>`;
+}
+
+$('#show').addEventListener('click', reveal);
+$('#know').addEventListener('click', graduate);
+$('#undo').addEventListener('click', undo);
+$('#redo').addEventListener('click', redo);
+$('#back').addEventListener('click', goBack);
+document.addEventListener('click', e => {
+  const sp = e.target.closest('.spkbtn');
+  if (sp){ e.preventDefault(); speak(cur ? cur.term : 'hello', sp.dataset.slot || 'usM'); return; }
+});
+$('#card').addEventListener('click', e => {
+  const b = e.target.closest('button[data-g]'); if (b){ grade(b.dataset.g); return; }
+  const chip = e.target.closest('.sachip[data-jump]'); if (chip){ jumpTo(chip.dataset.jump); return; }
+  if (e.target.id === 'nSplit'){ noteMode('split'); return; }
+  if (e.target.id === 'nEdit'){ noteMode('edit'); return; }
+  if (e.target.id === 'nView'){ noteMode('view'); return; }
+});
+// a collapsed <details> has zero height, so size the textarea the moment the notes box opens
+$('#card').addEventListener('toggle', e => {
+  if (e.target.id === 'notesBox' && e.target.open){ mdRender(); autoGrow(); }
+}, true);
+window.addEventListener('resize', autoGrow);
+document.addEventListener('keydown', e => {
+  if (['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName) || e.isComposing) return;
+  if (e.key === '/' && !e.ctrlKey && !e.metaKey){ e.preventDefault(); lkOpen(true); return; }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){ e.preventDefault(); lkOpen(true); return; }
+  if (e.key === 'Escape'){ lkOpen(false); return; }
+  // 4 = pronounce, in the default US male voice. Works on ANY word screen — front side or
+  // revealed, ordinary card or one opened from the lookup — so it never collides with 1/2/3
+  // (which only grade after a reveal).
+  if (e.key === '4'){ e.preventDefault(); if (cur) speak(cur.term, 'usM'); return; }
+  if (e.code === 'Space'){ e.preventDefault(); reveal(); }
+  else if (e.code === 'Enter'){ e.preventDefault(); graduate(); }   // know-it: only fires when not revealed
+  else if (e.code === 'ArrowLeft'){ e.preventDefault(); undo(); }
+  else if (e.code === 'ArrowRight'){ e.preventDefault(); redo(); }
+  else if (revealed && ['1','2','3'].includes(e.key)) grade(['again','hard','good'][+e.key-1]);
+});
+boot();
+</script>
+
+<!-- global floating timer -->
+<div class="timer" id="timerWidget">
+  <div class="t-display" id="tDisplay">10:00</div>
+  <div class="t-row">
+    <button class="t-btn" id="tStart" title="start / pause">▶</button>
+    <button class="t-btn" id="tReset" title="reset">↺</button>
+    <button class="t-btn" id="tMode" title="switch count-down / count-up">⏳</button>
+    <input class="t-min" id="tMin" type="number" min="0" max="180" value="10"> m
+  </div>
+</div>
+<script>
+(function(){
+  const g=id=>document.getElementById(id);
+  const disp=g('tDisplay'), minEl=g('tMin'), widget=g('timerWidget'), startBtn=g('tStart');
+  let mode='down', running=false, elapsed=0, target=600, raf=null, last=0;
+  const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');};
+  function render(){let s=mode==='down'?target-elapsed:elapsed;if(mode==='down'&&s<=0){s=0;disp.classList.add('over');if(running)stop();}else disp.classList.remove('over');disp.textContent=fmt(s);}
+  function loop(ts){if(!running)return;if(!last)last=ts;elapsed+=(ts-last)/1000;last=ts;render();raf=requestAnimationFrame(loop);}
+  function start(){running=true;last=0;widget.classList.add('run');startBtn.textContent='⏸';raf=requestAnimationFrame(loop);}
+  function stop(){running=false;cancelAnimationFrame(raf);widget.classList.remove('run');startBtn.textContent='▶';}
+  function reset(){stop();elapsed=0;target=(+minEl.value||0)*60;disp.classList.remove('over');render();}
+  function setMode(m){mode=m;g('tMode').textContent=m==='down'?'⏳':'⏱';reset();}
+  startBtn.onclick=()=>running?stop():start();
+  g('tReset').onclick=reset;
+  g('tMode').onclick=()=>setMode(mode==='down'?'up':'down');
+  minEl.onchange=()=>{target=(+minEl.value||0)*60;if(!running)reset();};
+  window.setTimerMinutes=m=>{minEl.value=m;if(!running){target=m*60;elapsed=0;render();}};
+  setMode('down');
+})();
+</script>
+</body>
+</html>
