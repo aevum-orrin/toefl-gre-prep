@@ -1,5 +1,5 @@
 # TOEFL & GRE Prep
-
+# this is for vocab practice only
 A personal TOEFL + GRE prep **monorepo** — one repo holding both exams plus shared code tools: a
 short (two-week) sprint on the **2026 new TOEFL**, then **GRE** afterwards. Across the four skills the
 focus is on **speaking + writing** (the two weak spots).
