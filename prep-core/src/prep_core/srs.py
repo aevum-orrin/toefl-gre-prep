@@ -16,6 +16,10 @@ from pathlib import Path
 # reward per SM-2 grade: fails pull hard toward 0, passes push up by their strength
 PROF_REWARD = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.45, 4: 0.8, 5: 1.0}
 PROF_ALPHA = 0.4               # EMA step: prof' = (1-α)·prof + α·reward
+# Intervals grow ~×3.9 per pass, so ~13 consecutive passes would push `today + interval`
+# past date.max and raise OverflowError. 100 years is "never again" for a study deck and
+# matches the interval _graduate() already assigns.
+MAX_INTERVAL = 36500
 
 
 @dataclass
@@ -70,6 +74,7 @@ class SRS:
                 # proficiency scales the growth: prof=0.5 → plain SM-2, prof→1 up to 1.5×,
                 # prof→0 down to 0.5× (a historically shaky word returns noticeably sooner)
                 card.interval = max(1, round(card.interval * card.ease * (0.5 + card.prof)))
+            card.interval = min(card.interval, MAX_INTERVAL)
             card.ease = max(1.3, card.ease + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02)))
         card.due = (today + timedelta(days=card.interval)).isoformat()
         return card

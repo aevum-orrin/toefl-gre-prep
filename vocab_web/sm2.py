@@ -11,6 +11,7 @@ from datetime import date, timedelta
 
 PROF_REWARD = {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.45, 4: 0.8, 5: 1.0}
 PROF_ALPHA = 0.4
+MAX_INTERVAL = 36500           # see prep_core.srs: guards `today + interval` against date.max
 
 GRADES = {"again": 1, "hard": 3, "good": 4, "easy": 5}
 GRADUATED_DUE = "9999-12-31"
@@ -42,6 +43,7 @@ def review(card: dict, grade: int, today: date | None = None) -> dict:
             card["interval"] = 6
         else:
             card["interval"] = max(1, round(card["interval"] * card["ease"] * (0.5 + card["prof"])))
+        card["interval"] = min(card["interval"], MAX_INTERVAL)
         card["ease"] = max(1.3, card["ease"] + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02)))
     card["due"] = (today + timedelta(days=card["interval"])).isoformat()
     return card
