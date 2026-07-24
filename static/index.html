@@ -475,9 +475,26 @@ function renderDone(){
     <small>${capMsg}</small></div>`;
   cur = null; revealed = false; syncBtns();
 }
+// Spacing-effect guard. The local server kept the last 15 shown terms in a process-global
+// deque; a serverless function has no memory between requests, so the CLIENT owns the buffer
+// and hands it to /api/next. Without this a word you just graded "Again" can pop right back.
+const RECENT_GAP = 15;
+const recent = [];
+function touchRecent(term){
+  if (!term) return;
+  const i = recent.indexOf(term);
+  if (i >= 0) recent.splice(i, 1);
+  recent.push(term);
+  while (recent.length > RECENT_GAP) recent.shift();
+}
+function untouchRecent(term){                 // undo pops the word back off the buffer
+  if (recent.length && recent[recent.length-1] === term) recent.pop();
+}
+
 async function loadNext(){
   revealed = false;
-  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}`)).json();
+  const ex = encodeURIComponent(recent.join(','));
+  const d = await (await fetch(`/api/next?deck=${deck}&new_per_day=${npd}&exclude=${ex}`)).json();
   updateCounts(d);
   if (d.done){ renderDone(); return; }
   renderFront(d);
@@ -766,6 +783,7 @@ async function grade(g){
     body: JSON.stringify({ deck, term, grade: g })
   })).json();
   act({ t:'grade', term });
+  touchRecent(term);
   updateCounts(d);
   afterGrade();
 }
@@ -778,6 +796,7 @@ async function graduate(){          // Enter before reveal: "I know it", never s
     body: JSON.stringify({ deck, term })
   })).json();
   act({ t:'known', term });
+  touchRecent(term);
   updateCounts(d);
   if (d.blocked) toast(`“${d.term}” 你按过 Again — 不会永久隐藏，已按 Good 处理，之后仍会复习。`);
   else if (d.confirm) toast(`✔ “${d.term}” 已标记会了 — 它还会再出现一次做最终确认（到时再按 Enter 就永久隐藏）。`);
@@ -805,6 +824,7 @@ async function undo(){
   })).json();
   if (d.none){ syncBtns(); return; } // server had nothing; keep the UI as it is
   fut().push(last);
+  untouchRecent(d.term);             // the word is unplayed again, so it may reappear
   cur = d;
   updateCounts(d);
   if (d.action === 'grade'){ revealed = true; renderReveal(); }   // re-grade it right away
