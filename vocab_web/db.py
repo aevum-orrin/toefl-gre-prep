@@ -15,6 +15,7 @@ into a multi-user app later needs no migration.
 from __future__ import annotations
 
 import os
+import threading
 from contextlib import contextmanager
 
 import psycopg
@@ -82,17 +83,44 @@ def dsn() -> str:
     return url
 
 
+_CONN: psycopg.Connection | None = None
+_LOCK = threading.Lock()
+
+
+def _live(c: psycopg.Connection | None) -> bool:
+    return c is not None and not c.closed
+
+
 @contextmanager
 def conn():
-    """One short-lived connection per request — the right shape for serverless, where a
-    long-lived pool would be pinned to a container that may vanish between invocations.
+    """Reuse ONE connection per warm container.
 
-    DATABASE_URL must therefore point at the provider's POOLED endpoint (Supabase transaction
-    pooler on :6543, Neon's `-pooler` host). Against a direct endpoint, concurrent invocations
-    each opening their own connection will exhaust the server's connection limit.
+    Opening a connection per call was costing a full TCP+TLS handshake to Neon *seven times*
+    for a single /api/next — invisible on localhost, ~300 ms of dead time from a Vercel
+    function. A serverless container handles requests one after another and is reused while
+    warm, so a module-level connection amortises the handshake to zero on every request after
+    the first. psycopg serialises concurrent use internally, and the lock keeps two threads
+    from racing to reconnect.
+
+    DATABASE_URL must point at the provider's POOLED endpoint (Neon's `-pooler` host,
+    Supabase's transaction pooler on :6543) so idle containers don't hold real backends open.
     """
-    with psycopg.connect(dsn(), row_factory=dict_row, autocommit=True) as c:
+    global _CONN
+    with _LOCK:
+        if not _live(_CONN):
+            _CONN = psycopg.connect(dsn(), row_factory=dict_row, autocommit=True)
+        c = _CONN
+    try:
         yield c
+    except psycopg.OperationalError:
+        # the container slept and the server dropped us: drop it so the next call reconnects
+        with _LOCK:
+            if _CONN is c:
+                try:
+                    c.close()
+                finally:
+                    _CONN = None
+        raise
 
 
 def init_schema() -> None:
