@@ -66,10 +66,15 @@ def _payload(deck: str, card: dict, kind: str, stats: dict, extra: dict | None =
 # ------------------------------------------------------------------ auth
 
 @app.post("/api/login")
-def login(body: Login, response: Response):
+def login(body: Login, request: Request, response: Response):
     if not auth.check(body.password):
         return JSONResponse({"error": "wrong password"}, status_code=401)
-    response.set_cookie(auth.COOKIE, auth.make_cookie(), httponly=True, secure=True,
+    # Secure only over https (always true on Vercel, which terminates TLS and sets
+    # x-forwarded-proto). Marking it secure on a plain-http local run would make the browser
+    # discard the cookie, so the app would be untestable outside the deployment.
+    proto = request.headers.get("x-forwarded-proto", request.url.scheme)
+    response.set_cookie(auth.COOKIE, auth.make_cookie(), httponly=True,
+                        secure=(proto == "https"),
                         samesite="lax", max_age=60 * 60 * 24 * 365)
     return {"ok": True}
 
