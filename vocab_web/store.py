@@ -13,6 +13,11 @@ from . import sm2
 
 DEFAULT_NEW_PER_DAY = 100000        # effectively unlimited, same as the local app
 
+# The frontend selects decks[0] on load, so this order decides the default deck. It matches
+# DECK_FILES in tools/vocab-srs/app.py: TOEFL is the active exam and must come first.
+# (Ordering by deck name instead would silently default the app to GRE.)
+DECK_ORDER = ("toefl", "gre", "scenes")
+
 
 # ---------------------------------------------------------------- deck content
 
@@ -37,8 +42,9 @@ def all_stats(new_per_day: int = DEFAULT_NEW_PER_DAY) -> list[dict]:
                  LEFT JOIN intro_counts i
                         ON i.user_id=s.user_id AND i.deck=s.deck AND i.day=%s
                 WHERE s.user_id=%s
-             GROUP BY s.deck ORDER BY s.deck""",
-            (today, date.today(), USER_ID)).fetchall()
+             GROUP BY s.deck
+             ORDER BY COALESCE(array_position(%s, s.deck), 99), s.deck""",
+            (today, date.today(), USER_ID, list(DECK_ORDER))).fetchall()
     out = []
     for r in rows:
         new_left = max(0, new_per_day - r["intro"])
