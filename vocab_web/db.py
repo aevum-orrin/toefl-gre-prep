@@ -85,7 +85,12 @@ def dsn() -> str:
 @contextmanager
 def conn():
     """One short-lived connection per request — the right shape for serverless, where a
-    long-lived pool would be pinned to a container that may vanish between invocations."""
+    long-lived pool would be pinned to a container that may vanish between invocations.
+
+    DATABASE_URL must therefore point at the provider's POOLED endpoint (Supabase transaction
+    pooler on :6543, Neon's `-pooler` host). Against a direct endpoint, concurrent invocations
+    each opening their own connection will exhaust the server's connection limit.
+    """
     with psycopg.connect(dsn(), row_factory=dict_row, autocommit=True) as c:
         yield c
 
