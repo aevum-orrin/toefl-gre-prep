@@ -15,22 +15,50 @@ Nothing here assumes web-infra knowledge. Follow it top to bottom.
 | Thing | What it actually is |
 |---|---|
 | **Vercel** | Hosting. It takes the repo, runs the Python API as on-demand functions, and serves the page from a CDN. |
-| **Neon** | A hosted **Postgres** database. Postgres is ordinary SQL storage; Neon runs it in the cloud and scales it to zero when idle (so it is free at this size). |
+| **Neon / Supabase** | Two interchangeable providers of a hosted **Postgres** database. Postgres is ordinary SQL storage; both run it in the cloud, free at this size. The app talks plain `psycopg` to a `DATABASE_URL`, so **either works with no code change**. |
 | **Connection string** | The database's address *and password* in one line: `postgresql://user:pass@host/db?sslmode=require`. Treat it like a password. |
+| **Connection pooler** | A front-end to the database that multiplexes many short connections onto a few real ones. **Required here** — see the warning in Step 1. |
 | **Environment variable** | A named value handed to the app at runtime (e.g. `DATABASE_URL`). Set in the Vercel dashboard, never committed. |
 | **Vercel Blob** | File storage on Vercel, used here to cache pronunciation mp3s. Optional. |
 
 ---
 
-## Step 1 — create the database (Neon)
+## Step 1 — create the database (Neon **or** Supabase — pick one)
 
-1. Go to <https://neon.tech> → **Sign up with GitHub** (the `jackiectl` account).
-2. **Create a project**: name it `vocab-srs`, pick the region closest to you
-   (`US East (Ohio)` is a good default). Everything else stays at its default.
-3. Neon shows a **Connection string**. Click copy. It looks like:
+Both are hosted Postgres and the app cannot tell them apart. The practical difference:
+
+| | Neon | Supabase |
+|---|---|---|
+| When idle | compute suspends after ~5 min, **auto-resumes** on the next request | free projects **pause after ~7 days** and need a manual restore in the dashboard |
+| Free tier | 0.5 GB | 500 MB database + 1 GB file storage |
+| Extra | database branching; one-click from the Vercel marketplace | bundled Storage, which can replace Vercel Blob for the TTS mp3s |
+
+Neon is the lower-maintenance default (come back after a holiday and it just works). Choose
+Supabase if you already use it, or want one provider for both database and audio files.
+
+> ⚠️ **Copy the POOLED connection string, not the direct one.** Each request opens its own
+> short-lived connection — correct for serverless, but pointed at a *direct* endpoint enough
+> concurrent requests will exhaust the connection limit and start erroring.
+> **Supabase:** in *Connect*, choose **Transaction pooler** (port `6543`), not Direct (5432).
+> **Neon:** use the host containing `-pooler`.
+
+### Neon
+1. <https://neon.tech> → **Sign up with GitHub** (the `jackiectl` account).
+2. **Create a project** named `vocab-srs`, region closest to you (`US East (Ohio)` is fine).
+3. Copy the pooled connection string:
    ```
-   postgresql://neondb_owner:AbC123xyz@ep-cool-name-12345678.us-east-2.aws.neon.tech/neondb?sslmode=require
+   postgresql://neondb_owner:AbC123xyz@ep-cool-name-12345678-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require
    ```
+
+### Supabase
+1. <https://supabase.com> → **Sign up with GitHub**.
+2. **New project** named `vocab-srs`; set a database password when asked and keep it.
+3. **Connect → Transaction pooler**, copy the string and substitute that password:
+   ```
+   postgresql://postgres.abcdefghijkl:<password>@aws-0-us-east-2.pooler.supabase.com:6543/postgres
+   ```
+4. If the migration in Step 3 cannot reach it from the cluster, Supabase's **SQL Editor** in the
+   dashboard is a usable fallback for creating the schema.
 
 ## Step 2 — hand the connection string to the migration (on the cluster)
 
@@ -119,6 +147,8 @@ see the open issue on backing Postgres up to scratch.
 | Symptom | Cause |
 |---|---|
 | `500` on every API call | `DATABASE_URL` missing or wrong in Vercel's env vars |
+| Works alone, errors when several tabs/devices hit it | direct (non-pooled) connection string — use the pooler endpoint from Step 1 |
+| Worked, then "project paused" | Supabase free tier paused after ~7 days idle; restore it in the dashboard |
 | Login always rejects | `PREP_TOKEN` not set, or set with surrounding quotes |
 | Login loops back | Cookies blocked, or the site opened over plain `http` (the cookie is `secure`) |
 | Build fails on `faster-whisper` | The root `requirements.txt` leaked into the build; `.vercelignore` must exclude it so `api/requirements.txt` is used |
