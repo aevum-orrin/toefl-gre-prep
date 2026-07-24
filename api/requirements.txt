@@ -1,0 +1,10 @@
+# Runtime deps for the Vercel deployment ONLY.
+#
+# Deliberately NOT the repo-root requirements.txt: that one editable-installs prep-core[audio],
+# which pulls faster-whisper (~1 GB) for the speaking app and would blow the function size limit.
+# The root file is hidden from the build via .vercelignore so this one is used instead.
+fastapi==0.139.0
+pydantic==2.13.4
+psycopg[binary]==3.3.4
+edge-tts==7.2.8
+httpx==0.28.1

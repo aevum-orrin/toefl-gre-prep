@@ -1,0 +1,22 @@
+# Keep the deployment bundle small: only vocab_web/, api/, static/ and requirements.txt
+# are needed at runtime. The decks are ~30 MB of JSON that now live in Postgres, and the
+# real-question banks must never leave the cluster.
+
+*/vocab/*.json
+data/
+docs/
+tools/
+scripts/
+prep-core/
+tests/
+.venv/
+*.md
+!static/**
+
+# The root requirements.txt editable-installs prep-core[audio] (faster-whisper, ~1 GB).
+# Hiding it makes the build use api/requirements.txt instead.
+/requirements.txt
+
+# never deploy copyrighted real material or credentials
+official-real/
+.env*
