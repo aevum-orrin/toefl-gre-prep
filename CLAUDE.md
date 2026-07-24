@@ -90,6 +90,25 @@ SHARED and the laptop reaches them through a VS Code / SSH port-forward, so chec
 4. Frontend served with `Cache-Control: no-cache` (all apps), so a stale cached page is no longer
    a possible cause; if the card is stuck on "…" the script threw — see the test below.
 
+## Web deployment — vocab on Vercel (branch `test-vocab-web`, 2026-07-24)
+A **second, serverless edition** of the vocab tool so it works from a phone without SSH
+port-forwarding. The HPC tool (`tools/vocab-srs/`, `./run.sh vocab`) is UNCHANGED and still the
+one to use on the cluster; these two are separate deployments with separate stores.
+- `vocab_web/` — `db.py` (Postgres schema/conn) · `sm2.py` (SM-2 math vendored from prep_core,
+  kept bit-identical by `tests/test_sm2_parity.py`) · `store.py` (all SQL) · `auth.py` (single
+  passphrase → httpOnly cookie) · `tts.py` (edge-tts → Vercel Blob) · `app.py` (the 12 routes).
+- `api/index.py` = Vercel entry · `static/` = frontend copy · `vercel.json` · `.vercelignore`.
+- **`api/requirements.txt`, NOT the root one** — the root editable-installs `prep-core[audio]`
+  (faster-whisper ~1 GB) and would blow the function size limit; `.vercelignore` hides it.
+- **Why a DB at all**: Vercel functions have no persistent disk, so the 14 MB in-memory decks,
+  `srs/<deck>.json`, notes, the daily intro counter, and the undo/redo stacks all became tables.
+  `words.ord` preserves the seeded study order; the 15-card spacing guard moved to the client
+  (`/api/next?exclude=`) since a stateless function has no `_RECENT`.
+- Deploy steps (Neon + Vercel, written for a non-web-infra reader):
+  [docs/DEPLOY-VERCEL.md](docs/DEPLOY-VERCEL.md). Design: `docs/superpowers/specs/2026-07-24-*`.
+- `DATABASE_URL` lives in **`.env.vercel.local`** (gitignored) — never commit or paste it.
+- Migration/refresh: `.venv/bin/python scripts/migrate_to_postgres.py` (re-runnable upsert).
+
 ## Vocab specifics
 ECDICT-backed decks `toefl/vocab` (10358 words / 14880 POS senses) + `gre/vocab` (10526) +
 `toefl/vocab/scene_vocab` (scenes, 1536 topical words/phrases), each word tagged `tier`
