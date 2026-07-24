@@ -1,0 +1,125 @@
+# Deploying the vocab tool to Vercel
+
+The vocab study tool as a public website, so it works from a phone and a laptop without SSH
+port-forwarding. Progress syncs through a hosted Postgres database, because Vercel functions
+have **no persistent disk** — anything written to a file there is lost.
+
+The local tool (`./run.sh vocab`) is untouched and keeps working.
+
+Nothing here assumes web-infra knowledge. Follow it top to bottom.
+
+---
+
+## Vocabulary (what these services are)
+
+| Thing | What it actually is |
+|---|---|
+| **Vercel** | Hosting. It takes the repo, runs the Python API as on-demand functions, and serves the page from a CDN. |
+| **Neon** | A hosted **Postgres** database. Postgres is ordinary SQL storage; Neon runs it in the cloud and scales it to zero when idle (so it is free at this size). |
+| **Connection string** | The database's address *and password* in one line: `postgresql://user:pass@host/db?sslmode=require`. Treat it like a password. |
+| **Environment variable** | A named value handed to the app at runtime (e.g. `DATABASE_URL`). Set in the Vercel dashboard, never committed. |
+| **Vercel Blob** | File storage on Vercel, used here to cache pronunciation mp3s. Optional. |
+
+---
+
+## Step 1 — create the database (Neon)
+
+1. Go to <https://neon.tech> → **Sign up with GitHub** (the `jackiectl` account).
+2. **Create a project**: name it `vocab-srs`, pick the region closest to you
+   (`US East (Ohio)` is a good default). Everything else stays at its default.
+3. Neon shows a **Connection string**. Click copy. It looks like:
+   ```
+   postgresql://neondb_owner:AbC123xyz@ep-cool-name-12345678.us-east-2.aws.neon.tech/neondb?sslmode=require
+   ```
+
+## Step 2 — hand the connection string to the migration (on the cluster)
+
+Do **not** paste it into a chat or a commit. Write it to the gitignored file the tooling reads:
+
+```bash
+cd /home/ctlang/toefl-gre-prep
+umask 077
+echo 'DATABASE_URL=<paste the whole connection string here>' > .env.vercel.local
+```
+
+`.env*` is already in `.gitignore`, so this file can never be committed.
+
+## Step 3 — create the tables and load the data
+
+```bash
+cd /home/ctlang/toefl-gre-prep
+source env.sh
+.venv/bin/python scripts/migrate_to_postgres.py
+```
+
+This creates the schema, loads all three decks (~22k words) and — importantly — **your existing
+study progress** from `$PREP_DATA_DIR/srs/*.json`, plus notes. It is re-runnable: run it again
+any time you have studied more locally and want the website to catch up.
+
+Expected tail:
+```
+  words           22420 rows
+  srs_cards       22420 rows
+  notes               N rows
+  intro_counts        N rows
+done.
+```
+
+> If it hangs or times out, the cluster may block outbound Postgres (port 5432). Run the same
+> command from a laptop that has the repo checked out, or use Neon's SQL editor in the browser.
+
+## Step 4 — pick a passphrase
+
+The site is a public URL, so it is protected by one shared passphrase. Choose any string; you
+will type it once per device.
+
+## Step 5 — deploy on Vercel
+
+1. Go to <https://vercel.com> → **Sign up with GitHub**.
+2. **Add New… → Project**, then import `jackiectl/toefl-gre-prep`.
+3. **Important — set the branch**: under *Settings → Git → Production Branch*, use
+   `test-vocab-web` (or merge that branch to `main` first).
+4. Framework preset: **Other**. Leave the build/output settings empty — `vercel.json` covers it.
+5. Before clicking Deploy, open **Environment Variables** and add:
+
+   | Name | Value |
+   |---|---|
+   | `DATABASE_URL` | the Neon connection string from Step 1 |
+   | `PREP_TOKEN` | the passphrase from Step 4 |
+
+6. Click **Deploy**. First build takes ~1–2 minutes.
+
+### Optional — pronunciation cache
+In the Vercel dashboard: **Storage → Create → Blob**, attach it to the project. Vercel injects
+`BLOB_READ_WRITE_TOKEN` automatically. Without it pronunciation still works; it just re-synthesizes
+each time instead of caching.
+
+## Step 6 — check it
+
+Open the deployment URL. You should get the login page, then the study card after entering the
+passphrase.
+
+Then verify from the cluster with the existing scorer, which drives the real APIs and frontend:
+
+```bash
+cd /home/ctlang/toefl-gre-prep && source env.sh
+.venv/bin/python scripts/score_vocab.py gre --url https://<your-app>.vercel.app
+```
+
+---
+
+## Keeping local and web in sync
+
+They are separate stores. The website is authoritative once you start using it; to push newer
+local study progress up, re-run Step 3. There is no automatic sync back down to the cluster —
+see the open issue on backing Postgres up to scratch.
+
+## Troubleshooting
+
+| Symptom | Cause |
+|---|---|
+| `500` on every API call | `DATABASE_URL` missing or wrong in Vercel's env vars |
+| Login always rejects | `PREP_TOKEN` not set, or set with surrounding quotes |
+| Login loops back | Cookies blocked, or the site opened over plain `http` (the cookie is `secure`) |
+| Build fails on `faster-whisper` | The root `requirements.txt` leaked into the build; `.vercelignore` must exclude it so `api/requirements.txt` is used |
+| Cards load but pronunciation 502s | edge-tts could not reach Microsoft's endpoint; the browser falls back to `speechSynthesis` |
