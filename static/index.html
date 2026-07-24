@@ -259,6 +259,17 @@
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => (s==null?'':String(s)).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+/* The deployed app sits behind a passphrase cookie. Any API call can come back 401 once the
+   cookie expires, so bounce to the login page instead of failing silently mid-session. */
+(function guardAuth(){
+  const raw = window.fetch;
+  window.fetch = async (...args) => {
+    const r = await raw(...args);
+    if (r.status === 401 && !location.pathname.startsWith('/login')) location.href = '/login';
+    return r;
+  };
+})();
 let deck = "toefl", npd = 100000, cur = null, revealed = false;
 const BACK = [];                       // stack of {cur, revealed} saved before a search-jump
 
