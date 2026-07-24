@@ -56,8 +56,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the office at a school or university that handles applications and enrollment of new students"
+    ],
     "def_zh": [
      "招生办公室"
     ],
@@ -179,8 +181,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "money given to a student as a loan, grant, or scholarship to help pay for their education"
+    ],
     "def_zh": [
      "财政援助"
     ],
@@ -287,7 +291,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "a person (of either sex) entering the first year of an institution, especially a high school (ninth grade for US, grade 9 for Canada, grade 7 for Philippines), a university, or legislative body",
      "a novice; one in the rudiments of knowledge"
@@ -330,8 +334,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "students who are already enrolled at a school and continuing their studies, as opposed to new students"
+    ],
     "def_zh": [
      "在校生"
     ],
@@ -660,7 +666,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A school that awards advanced degrees, such as doctoral degrees; a postgraduate school."
     ],
@@ -690,8 +696,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to stop attending school temporarily, intending to return and finish later"
+    ],
     "def_zh": [
      "休学"
     ],
@@ -719,8 +727,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to leave school permanently before completing one's studies or earning a degree"
+    ],
     "def_zh": [
      "退学"
     ],
@@ -748,8 +758,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to leave one school and enroll at a different school to continue one's studies"
+    ],
     "def_zh": [
      "转学"
     ],
@@ -776,7 +788,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The first existence of anything; act or fact of commencing; the beginning.",
      "The day when degrees are conferred by colleges and universities upon students and others."
@@ -975,8 +987,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a student enrolled for a full standard course load (full-time) or a reduced course load (part-time)"
+    ],
     "def_zh": [
      "全日制/非全日制学生"
     ],
@@ -1004,7 +1018,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A student organization present in many colleges, universities, and high schools. In higher education, the students' union is often accorded its own building on the campus, dedicated to social, organizational activities, and representation.",
      "The building where the union provides such services."
@@ -1382,7 +1396,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Worse or lower than average."
     ],
@@ -1623,7 +1637,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A course that must be or can be taken concurrently with a given course.",
      "Any of a set of things that require each other."
@@ -1653,8 +1667,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a course that students must complete in order to satisfy their degree requirements"
+    ],
     "def_zh": [
      "必修课"
     ],
@@ -1682,8 +1698,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a course that a student may choose to take rather than one that is mandatory"
+    ],
     "def_zh": [
      "选修课"
     ],
@@ -1711,8 +1729,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to attend a class informally, without receiving credit or a grade"
+    ],
     "def_zh": [
      "旁听课程"
     ],
@@ -1739,8 +1759,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to enroll in and attend a particular class or subject of study"
+    ],
     "def_zh": [
      "上课, 修课"
     ],
@@ -1951,8 +1973,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a document outlining a course's topics, requirements, readings, and grading policy"
+    ],
     "def_zh": [
      "课程大纲"
     ],
@@ -2125,7 +2149,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A substantial research paper written by a student over an academic term or semester which accounts for a large amount of a grade and makes up much of the course."
     ],
@@ -2202,8 +2226,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a written account describing the procedure, results, and conclusions of a laboratory experiment"
+    ],
     "def_zh": [
      "实验报告"
     ],
@@ -2230,7 +2256,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A student's written reflection of a book they have read."
     ],
@@ -2494,8 +2520,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the way ideas and arguments are structured and arranged within a piece of writing"
+    ],
     "def_zh": [
      "论文组织"
     ],
@@ -2522,7 +2550,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To investigate something, or solve a problem using brainstorming.",
      "To participate in a brainstorming session."
@@ -2712,8 +2740,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the earliest version of a piece of writing, before revisions are made"
+    ],
     "def_zh": [
      "初稿"
     ],
@@ -2741,8 +2771,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the last, finished version of a piece of writing after all revisions are complete"
+    ],
     "def_zh": [
      "定稿"
     ],
@@ -2770,7 +2802,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Alternative spelling of acknowledgment."
     ],
@@ -2846,7 +2878,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A temporary fortification in the field",
      "The collection of raw data, in the field."
@@ -3006,7 +3038,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who instructs; a teacher."
     ],
@@ -3040,8 +3072,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the employees who handle the administrative and clerical operations of an organization"
+    ],
     "def_zh": [
      "行政人员"
     ],
@@ -3069,7 +3103,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who offers advice.",
      "A xiangqi piece that is moved one point diagonally and confined within the palace."
@@ -3145,7 +3179,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who, or that which, coordinates.",
      "An assistant coach responsible for a particular facet of the game, such as defense."
@@ -3363,7 +3397,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A teacher in a higher education institution who ranks above an assistant professor and below a professor."
     ],
@@ -3393,7 +3427,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A person who gives lectures, especially as a profession.",
      "A member of a university or college below the rank of assistant professor or reader; docent; lector."
@@ -3429,8 +3463,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a person who helps a main instructor with teaching duties, such as grading or leading discussion"
+    ],
     "def_zh": [
      "助教"
     ],
@@ -3503,8 +3539,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the shelves in a library where most of the books are stored"
+    ],
     "def_zh": [
      "书架"
     ],
@@ -3617,7 +3655,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A card or document issued by a library to an individual or an organization entitling them or their representatives to borrow materials."
     ],
@@ -3695,7 +3733,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Alternative spelling of nonfiction."
     ],
@@ -3725,7 +3763,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A book providing factual information.",
      "A book that can be consulted in the library but cannot be borrowed."
@@ -3921,8 +3959,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the most recently published issue of a journal or magazine"
+    ],
     "def_zh": [
      "现刊"
     ],
@@ -3950,7 +3990,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An edition of a magazine, etc, that was published earlier than the current edition."
     ],
@@ -4073,7 +4113,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A book or table listing nautical, astronomical, astrological or other events for the year; sometimes, but not essentially, containing historical and statistical information.",
      "A handbook, typically published annually, containing information on a particular subject."
@@ -4174,8 +4214,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a machine that records and plays back videotapes"
+    ],
     "def_zh": [
      "录像机"
     ],
@@ -4201,8 +4243,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a collection of information stored on a computer and searchable via the internet"
+    ],
     "def_zh": [
      "在线数据库"
     ],
@@ -4292,7 +4336,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who makes prints.",
      "The operator of a printing press or the owner of a printing business; (metonymic) any printing business."
@@ -4327,8 +4371,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a service that borrows materials from another library on a patron's behalf"
+    ],
     "def_zh": [
      "图书馆馆际互借服务"
     ],
@@ -4354,8 +4400,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a restricted library section whose materials can be used only on site, not borrowed"
+    ],
     "def_zh": [
      "非外借书库"
     ],
@@ -4382,8 +4430,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to place library material in the closed reserve section so it can be used only there"
+    ],
     "def_zh": [
      "把资料放在非外借书库"
     ],
@@ -4409,8 +4459,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a searchable computer database listing everything a library owns"
+    ],
     "def_zh": [
      "在线书目"
     ],
@@ -4438,7 +4490,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any word used as the key to a code.",
      "Any word used in a reference work to link to other words or other information."
@@ -4470,7 +4522,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An identification number, usually consisting of a combination of numbers and characters, used to identify and locate materials within a library; the shelfmark that conveys it."
     ],
@@ -4500,7 +4552,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To record the departure or withdrawal of someone or something (such as guests, employees, books, etc.).",
      "To record one's departure from a workplace, hotel, restaurant, etc."
@@ -4532,8 +4584,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the length of time a borrowed item may be kept before it is due back"
+    ],
     "def_zh": [
      "借书期限"
     ],
@@ -4732,7 +4786,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A sum of money paid for instruction (such as in a high school, boarding school, university, or college)."
     ],
@@ -4806,7 +4860,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A time of vacation from school that occurs during the spring.",
      "The week of vacation from school that occurs during the winter-spring semester, which does not necessarily fall within the official season of spring."
@@ -4838,8 +4892,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a unique number assigned to a student to identify them at their school"
+    ],
     "def_zh": [
      "学号"
     ],
@@ -4935,8 +4991,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to register or enroll for a class, program, or activity"
+    ],
     "def_zh": [
      "选课, 报名"
     ],
@@ -5165,8 +5223,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to withdraw from a course before it is completed"
+    ],
     "def_zh": [
      "放弃, 退课"
     ],
@@ -5376,8 +5436,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be absent from scheduled classes without attending"
+    ],
     "def_zh": [
      "缺课, 旷课"
     ],
@@ -5490,7 +5552,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A person who assists a teacher with instructional responsibilities, often by supporting students with learning disabilities or physical disabilities."
     ],
@@ -5521,8 +5583,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a number representing the average of a student's grades on a standard scale"
+    ],
     "def_zh": [
      "平均成绩点数"
     ],
@@ -5548,7 +5612,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A document, on cardboard or plain paper, indicating the grades that a student has earned, issued at the end of a term of a regular period.",
      "An update on progress with regard to a policy or system."
@@ -5645,8 +5709,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to formally choose the main subject you will specialize in at college"
+    ],
     "def_zh": [
      "选专业"
     ],
@@ -5721,8 +5787,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a test given later to a student who missed the original exam"
+    ],
     "def_zh": [
      "补考"
     ],
@@ -5750,7 +5818,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "US form of students' union."
     ],
@@ -5781,8 +5849,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an Italian explorer whose 1492 voyage across the Atlantic led to European contact with the Americas"
+    ],
     "def_zh": [
      "克里斯托弗·哥伦布"
     ],
@@ -5809,8 +5879,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an Italian explorer and navigator after whom the American continents were named"
+    ],
     "def_zh": [
      "亚美利哥·韦斯普奇"
     ],
@@ -5836,8 +5908,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a label for the recurring conflicts and rivalry between France and Great Britain"
+    ],
     "def_zh": [
      "法国 vs 英国"
     ],
@@ -5864,8 +5938,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the ship that carried the Pilgrims from England to America in 1620"
+    ],
     "def_zh": [
      "五月花号"
     ],
@@ -5893,8 +5969,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "George Washington, the general who led colonial forces in the Revolutionary War and became first U.S. president"
+    ],
     "def_zh": [
      "华盛顿"
     ],
@@ -5925,8 +6003,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a 1773 protest in which colonists dumped British tea into Boston Harbor to oppose taxation"
+    ],
     "def_zh": [
      "波士顿倾茶事件"
     ],
@@ -5953,8 +6033,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the political movement in which the thirteen American colonies won independence from Britain"
+    ],
     "def_zh": [
      "美国独立革命"
     ],
@@ -5981,8 +6063,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the 1775 to 1783 war in which American colonists won independence from Britain"
+    ],
     "def_zh": [
      "美国独立战争"
     ],
@@ -6009,8 +6093,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the 1776 document proclaiming the American colonies' independence from Great Britain"
+    ],
     "def_zh": [
      "独立宣言"
     ],
@@ -6091,8 +6177,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large statue in New York Harbor symbolizing freedom and welcoming immigrants"
+    ],
     "def_zh": [
      "自由女神像"
     ],
@@ -6167,8 +6255,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the large-scale migration of American settlers toward the western frontier in the 1800s"
+    ],
     "def_zh": [
      "西进运动"
     ],
@@ -6196,8 +6286,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the 1861 to 1865 war between the northern and southern United States, fought mainly over slavery"
+    ],
     "def_zh": [
      "美国内战"
     ],
@@ -6224,8 +6316,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a contrast between the industrial economy of the North and the slavery-based plantation economy of the South"
+    ],
     "def_zh": [
      "工业化 vs 奴隶种植园经济"
     ],
@@ -6252,8 +6346,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the contrast between goods brought into a country and goods sent out to others"
+    ],
     "def_zh": [
      "进口 vs 出口"
     ],
@@ -6280,8 +6376,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a set of linked economic issues: trade taxes, forced labor, workers, and natural resources"
+    ],
     "def_zh": [
      "关税、奴隶、劳工、原材料"
     ],
@@ -6307,8 +6405,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the 16th U.S. president, who led the nation through the Civil War"
+    ],
     "def_zh": [
      "亚伯拉罕·林肯"
     ],
@@ -6335,8 +6435,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the act of withdrawing formally from a political union or federation"
+    ],
     "def_zh": [
      "脱离；分离"
     ],
@@ -6368,8 +6470,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the federal republic of fifty states located mainly in North America"
+    ],
     "def_zh": [
      "美利坚合众国"
     ],
@@ -6396,8 +6500,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the government formed in 1861 by the eleven southern states that seceded from the Union"
+    ],
     "def_zh": [
      "美利坚联盟国"
     ],
@@ -6424,8 +6530,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the 1863 executive order by President Lincoln declaring enslaved people in Confederate states to be free"
+    ],
     "def_zh": [
      "解放宣言"
     ],
@@ -6453,8 +6561,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the brief speech given by President Lincoln in 1863 honoring soldiers who died at Gettysburg"
+    ],
     "def_zh": [
      "葛底斯堡演说"
     ],
@@ -6523,8 +6633,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the present era, as distinguished from an earlier historical period"
+    ],
     "def_zh": [
      "近代"
     ],
@@ -6552,8 +6664,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the global war fought mainly in Europe from 1914 to 1918"
+    ],
     "def_zh": [
      "第一次世界大战"
     ],
@@ -6581,8 +6695,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the severe worldwide economic downturn of the 1930s marked by mass unemployment"
+    ],
     "def_zh": [
      "大萧条"
     ],
@@ -6610,8 +6726,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the set of programs and reforms introduced by President Franklin Roosevelt in the 1930s to fight the Great Depression"
+    ],
     "def_zh": [
      "罗斯福新政"
     ],
@@ -6638,8 +6756,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the three stated goals of the New Deal: aiding the needy, restoring the economy, and preventing a future depression"
+    ],
     "def_zh": [
      "救济、复兴、改革"
     ],
@@ -6666,8 +6786,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the global war fought between the Allied and Axis powers from 1939 to 1945"
+    ],
     "def_zh": [
      "第二次世界大战"
     ],
@@ -6693,8 +6815,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the US naval base in Hawaii attacked by Japan in 1941, drawing America into World War II"
+    ],
     "def_zh": [
      "珍珠港"
     ],
@@ -7428,8 +7552,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "traveling or being brought into a place, especially from abroad"
+    ],
     "def_zh": [
      "回内地的，入境的"
     ],
@@ -7460,8 +7586,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "traveling or being sent away from a place, especially to a foreign country"
+    ],
     "def_zh": [
      "开往外地的，开往外国的"
     ],
@@ -8379,7 +8507,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An act or instance of deflating.",
      "A decrease in the general price level, that is, in the nominal cost of goods and services as well as wages."
@@ -8798,8 +8926,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an entry in an account recording an amount owed or subtracted from a balance"
+    ],
     "def_zh": [
      "借方"
     ],
@@ -8958,8 +9088,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large building or complex containing many different stores"
+    ],
     "def_zh": [
      "大型购物中心"
     ],
@@ -9040,8 +9172,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large store selling many kinds of goods arranged in separate sections"
+    ],
     "def_zh": [
      "百货商店"
     ],
@@ -9175,8 +9309,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a small shop selling everyday items that stays open long hours"
+    ],
     "def_zh": [
      "便利店"
     ],
@@ -9204,8 +9340,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a website or platform where customers can purchase goods over the internet"
+    ],
     "def_zh": [
      "网上商店"
     ],
@@ -9233,8 +9371,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the planning and oversight of how a service is delivered to customers"
+    ],
     "def_zh": [
      "业务管理"
     ],
@@ -9262,8 +9402,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the quality of lacking physical form, so it cannot be seen, touched, or tried out before purchase"
+    ],
     "def_zh": [
      "不可解"
     ],
@@ -9297,8 +9439,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the quality of losing value or usefulness quickly if not used right away"
+    ],
     "def_zh": [
      "易腐烂性"
     ],
@@ -9327,8 +9471,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the quality of a service being produced and consumed at the same time, so it cannot be separated from its provider"
+    ],
     "def_zh": [
      "不可分性"
     ],
@@ -9403,8 +9549,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an instance in which a service falls short of a customer's expectations"
+    ],
     "def_zh": [
      "服务失败"
     ],
@@ -9432,8 +9580,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the actions a business takes to fix a problem and regain a customer's satisfaction after a service failure"
+    ],
     "def_zh": [
      "服务补救"
     ],
@@ -9461,8 +9611,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the process of planning and organizing the people and steps involved in delivering a service"
+    ],
     "def_zh": [
      "服务设计"
     ],
@@ -9490,8 +9642,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a specific level of quality or performance a service is expected to meet"
+    ],
     "def_zh": [
      "业务标准"
     ],
@@ -9519,8 +9673,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "pleased because a need, want, or expectation has been met"
+    ],
     "def_zh": [
      "满意的"
     ],
@@ -9609,8 +9765,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an economic model in which businesses sell memorable experiences rather than just goods or services"
+    ],
     "def_zh": [
      "体验经济"
     ],
@@ -9738,8 +9896,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a planning method that identifies an organization's strengths, weaknesses, opportunities, and threats"
+    ],
     "def_zh": [
      "SWOT 分析"
     ],
@@ -9766,8 +9926,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the good or advantageous qualities that give someone or something an edge"
+    ],
     "def_zh": [
      "优点"
     ],
@@ -9813,8 +9975,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the faults or areas of poor performance that put someone or something at a disadvantage"
+    ],
     "def_zh": [
      "缺点"
     ],
@@ -10010,8 +10174,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "able to be judged or expressed as a specific quantity or amount"
+    ],
     "def_zh": [
      "可衡量的"
     ],
@@ -10045,8 +10211,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "able to be achieved or reached with reasonable effort"
+    ],
     "def_zh": [
      "可达到的"
     ],
@@ -10121,8 +10289,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "having a fixed deadline or limited period by which something must be completed"
+    ],
     "def_zh": [
      "有时间限制的"
     ],
@@ -10148,8 +10318,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large, thick-skinned African mammal with a broad snout that lives near rivers and lakes"
+    ],
     "def_zh": [
      "河马"
     ],
@@ -10410,8 +10582,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an animal that feeds mainly or only on plants"
+    ],
     "def_zh": [
      "食草动物"
     ],
@@ -10439,8 +10613,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an animal that eats both plants and other animals"
+    ],
     "def_zh": [
      "杂食动物"
     ],
@@ -10467,7 +10643,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A mammal of the infraclass Marsupialia, including those where the female has a pouch in which it rears the young through early infancy, such as kangaroos, koalas, wombats and opossums, as well as the pouchless shrew opossums.",
      "Of or pertaining to a marsupial."
@@ -10734,8 +10910,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an animal whose body temperature changes with the surrounding environment"
+    ],
     "def_zh": [
      "冷血动物"
     ],
@@ -10763,8 +10941,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an animal that keeps a constant, usually warm, body temperature regardless of its surroundings"
+    ],
     "def_zh": [
      "温血动物"
     ],
@@ -11022,8 +11202,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a male bee whose only role is to mate with the queen"
+    ],
     "def_zh": [
      "雄蜂"
     ],
@@ -11061,8 +11243,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "female bees, other than the queen, that gather food and care for the hive but do not reproduce"
+    ],
     "def_zh": [
      "工蜂"
     ],
@@ -11270,8 +11454,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a pattern of movements a honeybee performs to tell other bees where to find food"
+    ],
     "def_zh": [
      "蜂舞"
     ],
@@ -11299,8 +11485,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a species whose presence has an unusually large effect on holding its ecosystem together"
+    ],
     "def_zh": [
      "关键种"
     ],
@@ -11328,8 +11516,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "destroyed or removed completely, especially eliminated from a particular area"
+    ],
     "def_zh": [
      "灭绝"
     ],
@@ -11534,7 +11724,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A marine mammal native to the northern Pacific Ocean, of species Enhydra lutris."
     ],
@@ -11751,7 +11941,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "plural of sea urchin"
     ],
@@ -11782,8 +11972,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large edible sea snail with a flat, ear-shaped shell lined with mother-of-pearl"
+    ],
     "def_zh": [
      "鲍鱼"
     ],
@@ -11814,7 +12006,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any of several carnivorous marine cephalopod mollusks, of the order Teuthida, having a mantle, eight arms, and a pair of tentacles",
      "A fishhook with a piece of bright lead, bone, or other substance fastened on its shank to imitate a squid."
@@ -11850,7 +12042,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "plural of gill",
      "plural of Gill"
@@ -11887,7 +12079,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A bag or pouch inside a plant or animal that typically contains a fluid.",
      "A sacrifice."
@@ -11926,7 +12118,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A trait of evolution in which species independently develop similar properties."
     ],
@@ -12054,8 +12246,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "pigment-containing cells in the skin of some animals that let them change color"
+    ],
     "def_zh": [
      "色素细胞"
     ],
@@ -12081,8 +12275,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a dark brownish ink released by cuttlefish, once used to make a brown pigment"
+    ],
     "def_zh": [
      "乌贼墨"
     ],
@@ -12208,8 +12404,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the act of hiding something from view, as by disguising or blending it with the surroundings"
+    ],
     "def_zh": [
      "隐身"
     ],
@@ -12245,8 +12443,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the quality or state of being impossible to see"
+    ],
     "def_zh": [
      "隐形"
     ],
@@ -12599,8 +12799,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a thin layer of a substance spread over or covering a surface"
+    ],
     "def_zh": [
      "包衣"
     ],
@@ -12708,8 +12910,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an organism or strain that differs from the typical form because of a genetic change"
+    ],
     "def_zh": [
      "突变体"
     ],
@@ -12742,8 +12946,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a behavior, such as feigning injury, that an animal uses to lure a predator away from its nest or young"
+    ],
     "def_zh": [
      "迷惑表演"
     ],
@@ -12771,8 +12977,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an apparently unrelated behavior an animal performs when facing stress or conflicting urges"
+    ],
     "def_zh": [
      "换位行为"
     ],
@@ -12962,8 +13170,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a method of locating objects by emitting sounds and sensing the returning echoes"
+    ],
     "def_zh": [
      "回声定位"
     ],
@@ -12991,7 +13201,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A thin membrane that separates the outer ear from the middle ear and transmits sound from the air to the malleus."
     ],
@@ -13255,8 +13465,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a relationship between two different species in which both benefit"
+    ],
     "def_zh": [
      "互利共生"
     ],
@@ -13363,8 +13575,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a feeding strategy in which one animal steals food already caught or gathered by another"
+    ],
     "def_zh": [
      "偷窃寄生"
     ],
@@ -14105,7 +14319,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "Beginning to develop.",
      "The development of buds on a plant."
@@ -14188,8 +14402,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a flowerless plant with feathery green fronds that reproduces by spores"
+    ],
     "def_zh": [
      "蕨"
     ],
@@ -14254,8 +14470,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a plant that grows in or on water"
+    ],
     "def_zh": [
      "水生植物"
     ],
@@ -14946,8 +15164,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a pigment that gives red, purple, or blue coloring to plant leaves, fruits, and flowers"
+    ],
     "def_zh": [
      "花青素"
     ],
@@ -14973,8 +15193,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "microscopic single-celled organisms, often living in water, that can move and feed like animals"
+    ],
     "def_zh": [
      "原生动物"
     ],
@@ -15006,8 +15228,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a living thing made up of only a single cell"
+    ],
     "def_zh": [
      "单细胞生物"
     ],
@@ -15035,8 +15259,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a living thing composed of many cells that carry out different functions"
+    ],
     "def_zh": [
      "多细胞生物"
     ],
@@ -15063,8 +15289,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a simple cell without a nucleus or membrane-bound organelles, as found in bacteria"
+    ],
     "def_zh": [
      "原核细胞"
     ],
@@ -15090,8 +15318,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a cell that contains a true nucleus and other membrane-bound organelles"
+    ],
     "def_zh": [
      "真核细胞"
     ],
@@ -15118,7 +15348,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The irregularly-shaped region within a prokaryote cell where the genetic material is localized"
     ],
@@ -15149,8 +15379,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a cell structure that generates energy by breaking down nutrients"
+    ],
     "def_zh": [
      "线粒体"
     ],
@@ -15180,8 +15412,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a structure in plant cells that captures light energy and converts it into sugars"
+    ],
     "def_zh": [
      "叶绿体"
     ],
@@ -15251,7 +15485,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A rigid, non-living structural layer located outside the cell membrane in certain cells, such as those of plants, fungi, bacteria, and some algae, providing support, shape, and protection."
     ],
@@ -15282,8 +15516,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an older term for the cell wall, the rigid outer layer surrounding certain cells"
+    ],
     "def_zh": [
      "细胞壁"
     ],
@@ -15355,8 +15591,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the molecule in a cell that carries an organism's genetic information"
+    ],
     "def_zh": [
      "脱氧核糖核酸"
     ],
@@ -15422,8 +15660,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the type of cell division in which a cell splits into two identical daughter cells"
+    ],
     "def_zh": [
      "有丝分裂"
     ],
@@ -15450,8 +15690,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "direct division of a cell's nucleus and cytoplasm into two parts without spindle formation"
+    ],
     "def_zh": [
      "无丝分裂"
     ],
@@ -15619,7 +15861,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any organic compound containing both an amino and a carboxylic acid functional group.",
      "Any of the twenty naturally occurring α-amino acids (having the amino, and carboxylic acid groups on the same carbon atom), and a variety of side chains, that combine, via peptide bonds, to form proteins."
@@ -15690,8 +15932,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "long, thread-like structures that make up the body of a fungus"
+    ],
     "def_zh": [
      "菌丝"
     ],
@@ -15725,8 +15969,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a tough substance that forms fungal cell walls and the hard outer shells of insects"
+    ],
     "def_zh": [
      "甲壳素、角素"
     ],
@@ -16322,7 +16568,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Alternative letter-case form of Solar System; the Sun and all the objects in orbit around it.",
      "The Sun and all the heavenly bodies that orbit around it, including the eight planets, their moons, the asteroids, and comets."
@@ -16354,7 +16600,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A group of gravitationally bound stars and other material (such as nebulae and planets), conventionally with one generation of similarly aged stars from the same pre-stellar nebula."
     ],
@@ -16385,8 +16631,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a recognizable pattern of stars, often part of a larger constellation"
+    ],
     "def_zh": [
      "星群"
     ],
@@ -16463,8 +16711,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large group of galaxies bound together by gravity"
+    ],
     "def_zh": [
      "星系团"
     ],
@@ -16713,8 +16963,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the universe seen as an orderly, well-structured whole"
+    ],
     "def_zh": [
      "宇宙"
     ],
@@ -16793,8 +17045,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a group of seven bright stars forming a ladle shape in Ursa Major"
+    ],
     "def_zh": [
      "北斗七星"
     ],
@@ -16863,8 +17117,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the outer layer of the Sun's atmosphere, visible as a glow during a total eclipse"
+    ],
     "def_zh": [
      "日冕"
     ],
@@ -17037,8 +17293,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "energy, especially heat and light, given off by the Sun"
+    ],
     "def_zh": [
      "太阳辐射"
     ],
@@ -17138,8 +17396,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a massive explosion in which a dying star suddenly becomes extremely bright"
+    ],
     "def_zh": [
      "超新星爆发"
     ],
@@ -17167,8 +17427,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an extremely dense collapsed star formed after a supernova, made mostly of neutrons"
+    ],
     "def_zh": [
      "中子星"
     ],
@@ -17196,8 +17458,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a small, dense star that remains after a Sun-like star has burned up its fuel"
+    ],
     "def_zh": [
      "白矮星"
     ],
@@ -17271,8 +17535,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the point of infinite density at the center of a black hole"
+    ],
     "def_zh": [
      "奇点"
     ],
@@ -17384,7 +17650,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A nebula composed of ionized gases which produce visible light (as distinct from a reflection nebula, which reflects the light produced by neighboring stars)."
     ],
@@ -17415,7 +17681,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A nebula that consists of dust which reflects starlight and appears blue in photographs."
     ],
@@ -17446,7 +17712,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A type of nebula that does not emit or reflect (visible) light, and thus obscures light sources behind it."
     ],
@@ -17477,7 +17743,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A star whose movement cannot be seen from Earth."
     ],
@@ -17685,7 +17951,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An astronomical object in direct orbit around the Sun that is not a planet or a comet."
     ],
@@ -17765,8 +18031,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the second planet from the Sun, the hottest planet in the solar system"
+    ],
     "def_zh": [
      "金星"
     ],
@@ -17796,8 +18064,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the third planet from the Sun, the one we live on"
+    ],
     "def_zh": [
      "地球"
     ],
@@ -17831,8 +18101,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the fourth planet from the Sun, often called the Red Planet"
+    ],
     "def_zh": [
      "火星"
     ],
@@ -17871,8 +18143,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the largest object in the asteroid belt, now classified as a dwarf planet"
+    ],
     "def_zh": [
      "谷神星"
     ],
@@ -17902,8 +18176,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the region between Mars and Jupiter containing millions of rocky bodies"
+    ],
     "def_zh": [
      "小行星带"
     ],
@@ -17931,8 +18207,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the fifth planet from the Sun and the largest planet in the solar system"
+    ],
     "def_zh": [
      "木星"
     ],
@@ -17962,8 +18240,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the sixth planet from the Sun, famous for its rings of ice and rock"
+    ],
     "def_zh": [
      "土星"
     ],
@@ -17990,8 +18270,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the seventh planet from the Sun, unusual for spinning almost on its side"
+    ],
     "def_zh": [
      "天王星"
     ],
@@ -18021,8 +18303,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the eighth and most distant known planet from the Sun"
+    ],
     "def_zh": [
      "海王星"
     ],
@@ -18049,8 +18333,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a small icy body beyond Neptune, reclassified as a dwarf planet in 2006"
+    ],
     "def_zh": [
      "冥王星"
     ],
@@ -18202,7 +18488,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A meteor, especially a streak of light in the night sky, caused by a meteoroid burning up as it enters the Earth's atmosphere.",
      "Any of several wild flowering plants in the genus Primula (synonym Dodecatheon), mostly found in Western North America."
@@ -18320,8 +18606,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "either end of a planet's axis, the northernmost or southernmost point"
+    ],
     "def_zh": [
      "极点"
     ],
@@ -18355,8 +18643,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the line of latitude marking the edge of the Arctic or Antarctic region"
+    ],
     "def_zh": [
      "极圈"
     ],
@@ -18384,8 +18674,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the region around the North Pole"
+    ],
     "def_zh": [
      "北极区"
     ],
@@ -18413,8 +18705,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the region around the South Pole, largely covered by Antarctica's ice sheet"
+    ],
     "def_zh": [
      "南极区"
     ],
@@ -18529,8 +18823,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a series of connected mountains"
+    ],
     "def_zh": [
      "山脉"
     ],
@@ -19009,8 +19305,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a dense, tropical forest with heavy rainfall and rich biodiversity"
+    ],
     "def_zh": [
      "热带雨林"
     ],
@@ -19481,8 +19779,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the line along which two tectonic plates meet"
+    ],
     "def_zh": [
      "板块边缘"
     ],
@@ -19510,8 +19810,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the theory that a chain of volcanoes forms as a plate moves over a fixed plume of rising magma"
+    ],
     "def_zh": [
      "热点学说"
     ],
@@ -19539,7 +19841,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A volcano that has erupted in the last 10,000 years, although not necessarily venting lava or gases now."
     ],
@@ -19570,7 +19872,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A volcano that has not erupted for a considerable length of time, but is still capable of erupting."
     ],
@@ -19601,8 +19903,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a volcano that has lost its supply of magma and is not expected to erupt again"
+    ],
     "def_zh": [
      "死火山"
     ],
@@ -19711,8 +20015,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a periodic warming of surface waters in the eastern Pacific that disrupts weather patterns worldwide"
+    ],
     "def_zh": [
      "厄尔尼诺"
     ],
@@ -19738,8 +20044,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a periodic cooling of surface waters in the eastern Pacific, the opposite phase of El Niño"
+    ],
     "def_zh": [
      "拉尼娜"
     ],
@@ -19766,7 +20074,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A storm characterized by substantial, heavy rainfall."
     ],
@@ -19882,8 +20190,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a fast-moving mixture of mud, rock, and water that rushes down a slope after heavy rain"
+    ],
     "def_zh": [
      "泥石流"
     ],
@@ -19951,8 +20261,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "granular, partly compacted snow that is the stage between fresh snow and solid glacial ice"
+    ],
     "def_zh": [
      "粒状冰"
     ],
@@ -19978,8 +20290,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "dense ice formed from snow compacted over time, making up the body of a glacier"
+    ],
     "def_zh": [
      "冰川冰"
     ],
@@ -20007,8 +20321,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "large, slow-moving masses of ice formed from compacted snow over long periods"
+    ],
     "def_zh": [
      "冰川"
     ],
@@ -20077,8 +20393,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the layer of the upper atmosphere that absorbs most of the sun's harmful ultraviolet rays"
+    ],
     "def_zh": [
      "臭氧层"
     ],
@@ -20105,7 +20423,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A form of non-ionizing radiation emitted by the sun and other artificial sources."
     ],
@@ -20136,7 +20454,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "plural of wetland (“An area or region that is characteristically saturated; a marsh”)"
     ],
@@ -20170,8 +20488,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the theory that Earth's crust is divided into moving plates whose interactions shape the surface"
+    ],
     "def_zh": [
      "板块构造学"
     ],
@@ -20199,8 +20519,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the theory that today's continents were once joined together and have slowly moved apart"
+    ],
     "def_zh": [
      "大陆漂移学"
     ],
@@ -20422,8 +20744,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the dense, extremely hot innermost layer of the Earth, made mainly of iron and nickel"
+    ],
     "def_zh": [
      "地核"
     ],
@@ -20517,8 +20841,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an underwater mountain range where magma rises to form new sea floor as plates separate"
+    ],
     "def_zh": [
      "海中脊"
     ],
@@ -20546,8 +20872,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a region where one tectonic plate sinks beneath another into the Earth's mantle"
+    ],
     "def_zh": [
      "浅沉区"
     ],
@@ -20701,8 +21029,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to move away from each other, as two plates do at a divergent boundary"
+    ],
     "def_zh": [
      "分开"
     ],
@@ -20730,8 +21060,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to sink or plunge beneath another plate, as at a subduction zone"
+    ],
     "def_zh": [
      "上下"
     ],
@@ -20759,8 +21091,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to move alongside another plate in roughly opposite directions along a shared boundary"
+    ],
     "def_zh": [
      "左右"
     ],
@@ -21327,8 +21661,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a violent, windy storm, often with heavy rain or snow"
+    ],
     "def_zh": [
      "暴风雨"
     ],
@@ -21947,8 +22283,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "having six straight sides and six angles"
+    ],
     "def_zh": [
      "六角形的"
     ],
@@ -21979,8 +22317,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a flat shape with five straight sides and five angles"
+    ],
     "def_zh": [
      "五角形"
     ],
@@ -22008,8 +22348,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "having five straight sides and five angles"
+    ],
     "def_zh": [
      "五边形的"
     ],
@@ -23335,7 +23677,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The condition of being soluble.",
      "The amount of a substance that will dissolve in a given amount of a solvent, to give a saturated solution, under specified conditions."
@@ -23812,8 +24154,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a positively charged particle found in the nucleus of an atom"
+    ],
     "def_zh": [
      "质子"
     ],
@@ -24350,8 +24694,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the branch of physics that studies light and how it behaves"
+    ],
     "def_zh": [
      "光学"
     ],
@@ -24795,8 +25141,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "telescopes built to detect infrared radiation instead of visible light"
+    ],
     "def_zh": [
      "红外望远镜"
     ],
@@ -24824,7 +25172,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A hand-held device consisting of a series of lenses and prisms, used to magnify objects so that they can be better seen from a distance, and looked at through both eyes."
     ],
@@ -24855,7 +25203,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Electromagnetic radiation, such as light and radio waves."
     ],
@@ -24886,7 +25234,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Electromagnetic radiation having a wavelength between about .5 centimeters and 30,000 meters; used for the broadcasting of radio and television signals."
     ],
@@ -24917,8 +25265,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a sound wave with a frequency too high for humans to hear"
+    ],
     "def_zh": [
      "超声波"
     ],
@@ -24946,8 +25296,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the scientific study of light given off or absorbed by matter, used to identify composition"
+    ],
     "def_zh": [
      "光谱学"
     ],
@@ -24978,8 +25330,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the process by which an unstable atomic nucleus loses energy by emitting radiation"
+    ],
     "def_zh": [
      "衰变"
     ],
@@ -25007,7 +25361,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The time required for half the nuclei in a sample of an isotope to undergo radioactive decay.",
      "In a chemical reaction, the time required for the concentration of a reactant to fall from a chosen value to half that value."
@@ -25108,8 +25462,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a technique for determining the age of rocks by measuring the decay of radioactive isotopes"
+    ],
     "def_zh": [
      "同位素年龄测定"
     ],
@@ -25135,8 +25491,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a technique for estimating the age of organic material by measuring its remaining carbon-14"
+    ],
     "def_zh": [
      "放射性碳定年法"
     ],
@@ -25163,7 +25521,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A method of determining the age of a fossil by comparing its placement with that of fossils in other layers of rock.",
      "An act of so doing."
@@ -25195,8 +25553,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a method for determining the exact age of a rock, fossil, or artifact, often using radioactive decay"
+    ],
     "def_zh": [
      "绝对年代测定"
     ],
@@ -25276,8 +25636,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "relating to the earliest period of the Stone Age, when humans used simple chipped-stone tools"
+    ],
     "def_zh": [
      "旧石器时代"
     ],
@@ -25306,8 +25668,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "relating to the middle part of the Stone Age, between the Paleolithic and Neolithic periods"
+    ],
     "def_zh": [
      "中石器时代"
     ],
@@ -25337,8 +25701,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "relating to the later part of the Stone Age, marked by farming and polished stone tools"
+    ],
     "def_zh": [
      "新石器时代"
     ],
@@ -25753,7 +26119,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Power of the wind.",
      "Such power harnessed as a power source, especially as applied to a category of electrical generation."
@@ -25784,7 +26150,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A collection of wind turbines, especially a large-scale array, used to generate electricity."
     ],
@@ -25815,7 +26181,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Mechanical or electrical energy derived from running or falling water; originally obtained from a waterwheel immersed in a stream; modern hydroelectric power is obtained from turbines fed from reservoirs.",
      "A site capable of generating power or the right to use a site to generate power."
@@ -25847,7 +26213,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A wheel, propelled by running or falling water, used to power machinery.",
      "A wheel with buckets used to raise water."
@@ -25879,7 +26245,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The energy contained in a tide flowing in or out of an estuary or similar enclosed place, especially that part of the energy that can be converted to electricity."
     ],
@@ -25910,7 +26276,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An artificial obstruction, such as a dam, in a river designed to increase its depth or to divert its flow.",
      "A heavy curtain of artillery fire directed in front of one's own troops to screen and protect them."
@@ -26025,8 +26391,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "energy from sunlight, especially when converted into electricity or heat"
+    ],
     "def_zh": [
      "太阳能"
     ],
@@ -26766,8 +27134,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a fourteen-line poem with a fixed rhyme scheme, traditionally written in iambic pentameter"
+    ],
     "def_zh": [
      "十四行诗"
     ],
@@ -26795,8 +27165,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the rhythmic pattern of stressed and unstressed syllables in a line of poetry"
+    ],
     "def_zh": [
      "音步"
     ],
@@ -26832,7 +27204,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A poetic meter consisting of lines with five iambic feet each, meaning the even syllables are dominant."
     ],
@@ -26936,8 +27308,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "unrhymed poetry, typically written in iambic pentameter"
+    ],
     "def_zh": [
      "无韵诗"
     ],
@@ -26965,8 +27339,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "poetry that does not follow a regular meter or rhyme scheme"
+    ],
     "def_zh": [
      "自由诗"
     ],
@@ -27045,8 +27421,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the matching of sounds, especially at the ends of lines of poetry"
+    ],
     "def_zh": [
      "韵律；韵脚"
     ],
@@ -27381,8 +27759,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "traditional music passed down within a community, usually performed on simple or acoustic instruments"
+    ],
     "def_zh": [
      "民间音乐"
     ],
@@ -27410,8 +27790,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a popular music genre from the rural southern United States, rooted in folk ballads and string instruments"
+    ],
     "def_zh": [
      "乡村音乐"
     ],
@@ -27439,8 +27821,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "commercially popular music aimed at a general audience, typically featuring catchy melodies"
+    ],
     "def_zh": [
      "流行音乐"
     ],
@@ -27468,8 +27852,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a popular music genre with a strong beat that emerged in the United States in the 1950s"
+    ],
     "def_zh": [
      "摇滚乐"
     ],
@@ -27497,8 +27883,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "classical music composed for a small group of instruments, meant for performance in a small space"
+    ],
     "def_zh": [
      "室内音乐"
     ],
@@ -28039,7 +28427,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "To act in a manner such that one has fun; to engage in activities expressly for the purpose of recreation or entertainment.",
      "To toy or trifle; to act with levity or thoughtlessness; to be careless."
@@ -28132,8 +28520,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an ancient Greek mathematician, physicist, and inventor known for his work on levers and buoyancy"
+    ],
     "def_zh": [
      "阿基米德"
     ],
@@ -28160,8 +28550,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an ancient Greek philosopher known for questioning others to examine their beliefs"
+    ],
     "def_zh": [
      "苏格拉底"
     ],
@@ -28188,8 +28580,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an ancient Greek philosopher, student of Socrates, who founded the Academy and wrote philosophical dialogues"
+    ],
     "def_zh": [
      "柏拉图"
     ],
@@ -28216,8 +28610,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an ancient Greek philosopher and scientist, student of Plato, who studied logic, biology, and ethics"
+    ],
     "def_zh": [
      "亚里士多德"
     ],
@@ -28244,8 +28640,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an English playwright and poet regarded as one of the greatest writers in the English language"
+    ],
     "def_zh": [
      "威廉·莎士比亚"
     ],
@@ -28326,8 +28724,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a tool with bristles used to apply paint to a surface"
+    ],
     "def_zh": [
      "画笔"
     ],
@@ -28366,8 +28766,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a single mark or movement made by a paintbrush on a surface"
+    ],
     "def_zh": [
      "一笔；绘画技巧"
     ],
@@ -28983,8 +29385,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a painting made with pigments mixed in oil, or the technique of painting this way"
+    ],
     "def_zh": [
      "油画"
     ],
@@ -29177,8 +29581,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an early 20th-century art movement known for its bold, vivid, unnatural use of color"
+    ],
     "def_zh": [
      "野兽派"
     ],
@@ -29205,8 +29611,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an art movement in which artists used color, line, and form rather than realistic images"
+    ],
     "def_zh": [
      "抽象派"
     ],
@@ -29232,7 +29640,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An art movement characterized by visible brushstrokes, ordinary subject matter, and an emphasis on light and its changing qualities.",
      "A style that avoided traditional harmony, and sought to invoke the impressions of the composer."
@@ -29264,8 +29672,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an art movement that drew on images and techniques from advertising and popular culture"
+    ],
     "def_zh": [
      "波普艺术"
     ],
@@ -29293,7 +29703,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The study of the physical universe, its structure, dynamics, origin and evolution, and fate.",
      "A metaphysical study into the origin and nature of the universe."
@@ -29417,7 +29827,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A phenomenon occurring when the Moon passes between the Earth and the sun."
     ],
@@ -29490,7 +29900,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A phenomenon occurring when many meteors are seen on Earth during a short period of time."
     ],
@@ -29520,7 +29930,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Existing or occurring between planets."
     ],
@@ -29675,7 +30085,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Occurring between galaxies.",
      "Occurring across a single galaxy, interstellar."
@@ -29790,7 +30200,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A specialist in geography."
     ],
@@ -30540,7 +30950,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A small island.",
      "An isolated piece of tissue that has a specific function."
@@ -30967,7 +31377,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One of the major groups of rock that makes up the crust of the Earth; formed by the cooling of molten rock, either below the surface (intrusive) or on the surface (extrusive)."
     ],
@@ -31055,7 +31465,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One of the major groups of rock that makes up the crust of the Earth; formed by the deposition of either the weathered remains of other rocks, the results of biological activity, or precipitation from solution."
     ],
@@ -31086,7 +31496,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "one of the major groups of rock that makes up the crust of the Earth; consists of pre-existing rock mass in which new minerals or textures are formed at higher temperatures and greater pressures than those present on the Earth's surface."
     ],
@@ -31549,8 +31959,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a period of Earth's history when ice sheets covered much of the land"
+    ],
     "def_zh": [
      "冰川期"
     ],
@@ -31949,7 +32361,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Alternative spelling of archaeologist."
     ],
@@ -32142,8 +32554,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the earliest period of human history, when tools were made mainly of stone"
+    ],
     "def_zh": [
      "石器时代"
     ],
@@ -32171,8 +32585,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the historical period after the Stone Age, when tools and weapons were made of bronze"
+    ],
     "def_zh": [
      "（青）铜器时代"
     ],
@@ -32200,8 +32616,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the historical period after the Bronze Age, when iron became the main material for tools and weapons"
+    ],
     "def_zh": [
      "铁器时代"
     ],
@@ -32376,7 +32794,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A tabular chart of the chemical elements according to their atomic numbers so that elements with similar properties are in the same group (column)."
     ],
@@ -32504,7 +32922,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The science of sounds, teaching their nature, phenomena and laws.",
      "The properties of a space that affect how sound carries."
@@ -32539,7 +32957,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A disorder of the vision where distant objects appear blurred because the eye focuses their images in front of the retina instead of on it.",
      "A lack of imagination, discernment or long-range perspective in thinking or planning."
@@ -33059,7 +33477,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An electric charge that has built up on an insulated body, often due to friction.",
      "The electric discharge from such a body."
@@ -33091,7 +33509,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A net unidirectional movement of electrons, or other charge carriers, caused by a potential difference.",
      "The net charge that passes through some cross-section of a conducting material (in one direction), per unit time."
@@ -33165,7 +33583,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A substance that does not transmit heat (thermal insulator), sound (acoustic insulator) or electricity (electrical insulator).",
      "A non-conductive structure, coating or device that does not transmit sound, heat or electricity (see image)"
@@ -33294,7 +33712,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A thin chip, usually of silicon, consisting of at least two interconnected semiconductor devices, mainly transistors."
     ],
@@ -33405,7 +33823,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any of several electronic devices that control electron current through vacuum, gas or vapor between electrodes within a sealed container, usually of glass or metal and often designed to be easily installed in and removed from the equipment in which it is used."
     ],
@@ -33436,7 +33854,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A type of electron tube that controls electron current through vacuum between electrodes within a sealed container, usually of glass or metal and often designed to be easily installed in and removed from the equipment in which it is used."
     ],
@@ -33506,7 +33924,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To burst into bloom; to flower.",
      "Of something hidden: to come forth, to emerge; also, to reach full glory or power."
@@ -33543,7 +33961,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To make or become incandescent, especially by the application of heat."
     ],
@@ -33574,7 +33992,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To disappear into a mist or dissipate in vapor",
      "To transition from the solid state to gaseous state without ever becoming a liquid"
@@ -33611,7 +34029,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Rain which is unusually acidic (pH of less than the natural range of 5 to 6); caused mainly by atmospheric pollution with sulphur dioxide, carbon dioxide and nitrogen compounds."
     ],
@@ -33642,7 +34060,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The process by which a planet is heated by solar radiation which is retained by its atmosphere."
     ],
@@ -33673,7 +34091,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Electromagnetic radiation having a wavelength approximately between 1 micrometre and 1 millimetre; perceived as heat."
     ],
@@ -33757,8 +34175,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "actions or systems designed to reduce or eliminate harmful substances released into the environment"
+    ],
     "def_zh": [
      "污染控制"
     ],
@@ -33867,7 +34287,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Absence of responsibility for a crime, tort, etc.",
      "Lack of understanding about sensitive subjects such as sexuality and crime."
@@ -33951,7 +34371,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "plural of fume",
      "third-person singular simple present indicative of fume"
@@ -33990,8 +34410,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "discarded solid materials, such as household trash, as opposed to liquid or gas waste"
+    ],
     "def_zh": [
      "固体垃圾"
     ],
@@ -34061,8 +34483,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the process of removing contaminants from wastewater to make it clean and safe"
+    ],
     "def_zh": [
      "污水净化"
     ],
@@ -34090,8 +34514,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the process of collecting and getting rid of wastewater from homes and industry"
+    ],
     "def_zh": [
      "污水处理"
     ],
@@ -35018,7 +35444,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A windstorm of limited extent, such as a tornado, dust devil, or waterspout, characterized by an inward spiral motion of the air with an upward current in the center; a vortex of air.",
      "A person or body of objects or events sweeping violently onward."
@@ -35173,7 +35599,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An expert on mathematics; someone who studies mathematics."
     ],
@@ -35496,7 +35922,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A position in a sequence of numerals representing a place value in a positional number system.",
      "A distinct symbol representing a natural number in a positional number system."
@@ -36138,7 +36564,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Synonym of polysemic."
     ],
@@ -36386,7 +36812,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A closed curve, the locus of a point such that the sum of the distances from that point to two other fixed points (called the foci of the ellipse) is constant; equivalently, the conic section that is the intersection of a cone with a plane that does not intersect the base of the cone.",
      "Alternative form of ellipsis: the removal from a phrase of a word which is grammatically needed, but which is clearly understood without having to be stated."
@@ -36639,7 +37065,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Calculation; computation.",
      "Any formal system in which symbolic expressions are manipulated according to fixed rules."
@@ -36676,7 +37102,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The calculus that deals with instantaneous rates of change."
     ],
@@ -36707,7 +37133,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The calculus that generalizes summation to find areas, masses, volumes, sums, and totals of quantities described by continuously varying functions."
     ],
@@ -37088,7 +37514,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having a diet which is neither exclusively carnivorous nor exclusively herbivorous.",
      "Having an interest in a variety of subjects."
@@ -37272,7 +37698,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "US standard spelling of mollusc."
     ],
@@ -37667,7 +38093,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Involving marriage to one person at a time.",
      "Characterized by mutual sexual and romantic exclusivity."
@@ -37702,7 +38128,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of, relating to, or practicing polygamy.",
      "Exhibiting polygamy."
@@ -37741,7 +38167,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of or pertaining to polyandry; engaging in polyandry.",
      "Belonging to the class Polyandria; having many stamens inserted in the receptacle."
@@ -37772,7 +38198,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any warm-blooded animal: one that maintains a stable internal body temperature regardless of external influence."
     ],
@@ -37978,7 +38404,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A person engaged in botany, the scientific study of plants."
     ],
@@ -38168,7 +38594,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The stalk that supports a leaf and connects it to the plant."
     ],
@@ -38577,8 +39003,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a plant that reproduces by means of seeds rather than spores"
+    ],
     "def_zh": [
      "种子植物"
     ],
@@ -38775,8 +39203,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "members or supporters of the Democratic Party in the United States"
+    ],
     "def_zh": [
      "民主党"
     ],
@@ -38808,8 +39238,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "members or supporters of the Republican Party in the United States"
+    ],
     "def_zh": [
      "共和党"
     ],
@@ -38840,8 +39272,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the lower chamber of the United States Congress"
+    ],
     "def_zh": [
      "众议院"
     ],
@@ -38950,7 +39384,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A political and philosophical belief that all forms of government are undesirable, unnecessary, or unethical, and as such that society would function without a state.",
      "A political and philosophical belief that proposes the establishment of a stateless society as well as the abolition of authority and hierarchy in most or all forms."
@@ -38982,8 +39416,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a system of government dividing power between a central authority and constituent states"
+    ],
     "def_zh": [
      "联邦制"
     ],
@@ -39071,7 +39507,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having things physically towards the center; consolidated or concentrated",
      "Having power concentrated in a single, central authority"
@@ -39234,8 +39670,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the war in which the American colonies won independence from Britain"
+    ],
     "def_zh": [
      "美国独立战争"
     ],
@@ -39339,7 +39777,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "present participle and gerund of overturn",
      "The act by which something is overturned."
@@ -39385,7 +39823,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The assorted objects, such as pots, pans, baking sheets, etc., used for cooking"
     ],
@@ -39416,7 +39854,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To seal (something) again with a cap.",
      "To replace the worn tread on a tire by gluing on a new outer portion."
@@ -39550,7 +39988,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who, or that which, dips (immerses something, or itself, into a liquid).",
      "Any of various small passerine birds of the genus Cinclus that live near fast-flowing streams and feed along the bottom."
@@ -39589,8 +40027,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a solution that is simple, clever, and remarkably effective"
+    ],
     "def_zh": [
      "一个简洁绝妙的解决方案"
     ],
@@ -39852,7 +40292,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A long-term respiratory condition, in which the airways may unexpectedly and suddenly narrow, often in response to an allergen, cold air, exercise, or emotional stress. Symptoms include wheezing, shortness of breath, chest tightness, and coughing."
     ],
@@ -39883,7 +40323,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Absent in mind; often preoccupied; forgetful or careless due to distraction; easily distracted."
     ],
@@ -40026,7 +40466,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Returning a benefit that justifies the initial investment; economical."
     ],
@@ -40058,7 +40498,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A large log to burn at the back of a fire.",
      "A reserve source or supply."
@@ -42908,8 +43348,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to arouse or increase someone's enthusiasm for doing something"
+    ],
     "def_zh": [
      "激发某人做某事的兴趣"
     ],
@@ -42935,8 +43377,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be caught completely by surprise by something unexpected, usually unpleasant"
+    ],
     "def_zh": [
      "被……弄得措手不及"
     ],
@@ -42964,8 +43408,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to disagree with and resist a proposed course of action by the university"
+    ],
     "def_zh": [
      "反对大学做某事的计划"
     ],
@@ -43039,8 +43485,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to hinder or disrupt the normal progress or functioning of something"
+    ],
     "def_zh": [
      "妨碍；干扰"
     ],
@@ -43068,8 +43516,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to become involved in someone else's affairs without being invited to"
+    ],
     "def_zh": [
      "干涉；干预；介入"
     ],
@@ -43097,7 +43547,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Synonym of wiggle room."
     ],
@@ -43207,7 +43657,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "simple past and past participle of batter",
      "Beaten up through a lot of use; in rough condition; weathered."
@@ -43248,8 +43698,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a common room where students can relax or socialize between classes"
+    ],
     "def_zh": [
      "学生休息室"
     ],
@@ -43277,8 +43729,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a facility equipped for sports, exercise, and other leisure activities"
+    ],
     "def_zh": [
      "娱乐中心"
     ],
@@ -43305,8 +43759,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to manage and be responsible for operating a company"
+    ],
     "def_zh": [
      "运营一家公司"
     ],
@@ -43333,8 +43789,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to create a timetable assigning employees' working hours and shifts"
+    ],
     "def_zh": [
      "为员工制定工作时间表/排班"
     ],
@@ -43362,8 +43820,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to keep a company's building in good condition through regular upkeep"
+    ],
     "def_zh": [
      "保证公司楼状态较好"
     ],
@@ -43391,7 +43851,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A lamp designed for reading, not very bright."
     ],
@@ -43421,8 +43881,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to monitor the quantity and movement of stock or goods"
+    ],
     "def_zh": [
      "实时清点库存；追踪库存"
     ],
@@ -43450,8 +43912,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to request that materials or goods be delivered for use"
+    ],
     "def_zh": [
      "（公司、工厂）订货，订原材料"
     ],
@@ -43479,8 +43943,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a journey to a place and back again, especially by the same route"
+    ],
     "def_zh": [
      "一次往返行程"
     ],
@@ -43507,8 +43973,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a menu offering food that is healthy and rich in nutrients"
+    ],
     "def_zh": [
      "高营养价值的菜单"
     ],
@@ -43535,8 +44003,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an unhealthy or bad pattern of eating"
+    ],
     "def_zh": [
      "不好的饮食习惯"
     ],
@@ -43563,8 +44033,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a person who is not skilled at swimming"
+    ],
     "def_zh": [
      "不擅长游泳的人"
     ],
@@ -43591,8 +44063,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "not in good physical condition; unhealthy"
+    ],
     "def_zh": [
      "不健康"
     ],
@@ -43620,8 +44094,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "soil that lacks the nutrients needed for healthy plant growth"
+    ],
     "def_zh": [
      "养分不足的土壤"
     ],
@@ -43649,8 +44125,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to perform or produce the correct musical note"
+    ],
     "def_zh": [
      "演奏出正确的音符"
     ],
@@ -43724,8 +44202,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a guess based on some knowledge or evidence, so likely to be fairly accurate"
+    ],
     "def_zh": [
      "基于一定知识的猜测"
     ],
@@ -43753,8 +44233,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to hide a large number of contradictions or puzzling inconsistencies"
+    ],
     "def_zh": [
      "掩盖大量的悖论"
     ],
@@ -43781,8 +44263,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make every possible effort to do something"
+    ],
     "def_zh": [
      "竭尽全力做某事"
     ],
@@ -43808,8 +44292,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to remove or dispel someone's doubts completely"
+    ],
     "def_zh": [
      "打消疑虑"
     ],
@@ -43836,8 +44322,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to relieve someone's worry and make them feel calm and reassured"
+    ],
     "def_zh": [
      "让某人安心"
     ],
@@ -43864,7 +44352,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To implement; to execute; to carry out."
     ],
@@ -43894,8 +44382,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the qualities of honesty and good behavior that define a person's ethical nature"
+    ],
     "def_zh": [
      "道德品质"
     ],
@@ -43923,8 +44413,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "phrase",
+    "def_en": [
+     "a saying meaning that something or someone of genuine worth can withstand any test"
+    ],
     "def_zh": [
      "真金不怕火炼"
     ],
@@ -43951,8 +44443,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to fall into a deep sleep"
+    ],
     "def_zh": [
      "睡着；进入梦乡"
     ],
@@ -43980,8 +44474,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to give someone the responsibility of taking care of something"
+    ],
     "def_zh": [
      "把某物/某事托付给某人"
     ],
@@ -44007,7 +44503,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To have the thing mentioned as the only or most important part."
     ],
@@ -44037,8 +44533,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to support and maintain what is fair and right"
+    ],
     "def_zh": [
      "维护正义"
     ],
@@ -44066,8 +44564,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to come very close to a perfect or ideal state"
+    ],
     "def_zh": [
      "接近理想状态"
     ],
@@ -44094,7 +44594,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To sketch or mark with pencil, crayon, etc., on a given surface.",
      "To appeal to, make a demand of, rely on; to utilize or make use of, as a source."
@@ -44126,8 +44626,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "having enough money to live comfortably; wealthy"
+    ],
     "def_zh": [
      "富裕的"
     ],
@@ -44155,8 +44657,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to direct money toward a particular purpose or project"
+    ],
     "def_zh": [
      "为……输送资金"
     ],
@@ -44182,8 +44686,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a small part or amount of something, especially compared to the whole"
+    ],
     "def_zh": [
      "……的一小部分"
     ],
@@ -44210,8 +44716,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "people who have creative and original ideas"
+    ],
     "def_zh": [
      "有创造力的人"
     ],
@@ -44239,7 +44747,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adverb",
     "def_en": [
      "In the direction or orientation of.",
      "In the manner of."
@@ -44271,7 +44779,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To establish a connection with (something), especially in order to take advantage.",
      "To access (a resource or object)."
@@ -44303,8 +44811,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to feel a close, peaceful connection with the natural world"
+    ],
     "def_zh": [
      "沉浸在大自然当中"
     ],
@@ -44331,7 +44841,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A small community, often rural, whose members share in the ownership of property, and in the division of labour; the members of such a community.",
      "A local political division in many European countries as well as their former colonies (such as Chile and Vietnam)."
@@ -44366,8 +44876,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to lean or lie back in a relaxed position on a chair"
+    ],
     "def_zh": [
      "斜倚在沙发椅上"
     ],
@@ -44395,8 +44907,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a shoreline lit by the soft shining light of the moon"
+    ],
     "def_zh": [
      "洒满月光的海边"
     ],
@@ -44423,7 +44937,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The virtue of showing respect and doing good deeds for one's parents, elders, and ancestors, as understood in Confucian ethics and commonly observed in the Sinosphere."
     ],
@@ -44454,8 +44968,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the speed or rhythm at which daily life proceeds"
+    ],
     "def_zh": [
      "生活节奏"
     ],
@@ -44483,8 +44999,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "extensive and far-reaching changes that affect many things at once"
+    ],
     "def_zh": [
      "彻底的、影响广泛的改变"
     ],
@@ -44512,8 +45030,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "happiness that lasts only a short time before fading away"
+    ],
     "def_zh": [
      "转瞬即逝的快乐"
     ],
@@ -44541,8 +45061,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the branch office of a bank located in the East Africa region"
+    ],
     "def_zh": [
      "这家银行的东非分行"
     ],
@@ -44569,8 +45091,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to behave in an excessively humble or submissive way to please someone"
+    ],
     "def_zh": [
      "对某人低声下气"
     ],
@@ -44596,8 +45120,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "unable to change or escape from a fixed, repetitive routine or habit"
+    ],
     "def_zh": [
      "墨守成规"
     ],
@@ -44624,8 +45150,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a person or thing that perfectly represents the whole of a society"
+    ],
     "def_zh": [
      "整个社会的缩影"
     ],
@@ -44653,8 +45181,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an event that comes before and signals the start of the revolution"
+    ],
     "def_zh": [
      "这场革命的前奏/序曲"
     ],
@@ -44682,8 +45212,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "phrase",
+    "def_en": [
+     "a saying meaning that people who share the same misfortune comfort and sympathize with each other"
+    ],
     "def_zh": [
      "同病相怜"
     ],
@@ -44775,8 +45307,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a decision of great importance, often having serious or lasting consequences"
+    ],
     "def_zh": [
      "一个重大的决定"
     ],
@@ -44803,8 +45337,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "money that is illegally made to imitate and pass as genuine currency"
+    ],
     "def_zh": [
      "假币"
     ],
@@ -44832,8 +45368,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the person, group, or thing that leads an attack, campaign, or new effort"
+    ],
     "def_zh": [
      "……的先锋"
     ],
@@ -44859,8 +45397,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to notice or recognize slight changes that are not easily seen"
+    ],
     "def_zh": [
      "觉察到轻微变化"
     ],
@@ -44888,8 +45428,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the way real events and invented elements interact and influence each other"
+    ],
     "def_zh": [
      "事实与虚构的相互作用"
     ],
@@ -44917,8 +45459,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "likely to help produce or bring about a particular result; favorable to"
+    ],
     "def_zh": [
      "有利于"
     ],
@@ -44946,8 +45490,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to walk on grass repeatedly, damaging it by treading heavily"
+    ],
     "def_zh": [
      "踩踏草坪"
     ],
@@ -44975,8 +45521,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a voucher entitling the holder to pay half price for a meal"
+    ],
     "def_zh": [
      "一张餐厅半价优惠券"
     ],
@@ -45003,8 +45551,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to live a peaceful, picturesque life, often in a simple rural setting"
+    ],
     "def_zh": [
      "过着诗情画意田园牧歌般的生活"
     ],
@@ -45077,8 +45627,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a belief or idea that is firmly established and hard to change"
+    ],
     "def_zh": [
      "根深蒂固的观念"
     ],
@@ -45105,8 +45657,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the idea that society and its institutions should educate the public"
+    ],
     "def_zh": [
      "社会教育理念"
     ],
@@ -45134,8 +45688,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a news report that is shocking or exciting, often exaggerated to attract attention"
+    ],
     "def_zh": [
      "轰动的/耸人听闻的新闻"
     ],
@@ -45162,8 +45718,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an opponent skilled or strong enough to pose a serious challenge"
+    ],
     "def_zh": [
      "强劲的对手"
     ],
@@ -45190,8 +45748,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a job with acceptable or good pay, conditions, and environment"
+    ],
     "def_zh": [
      "一份不错的工作（薪水、待遇、环境等）"
     ],
@@ -45218,8 +45778,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to weaken or damage someone's self-assurance"
+    ],
     "def_zh": [
      "挫伤某人的信心"
     ],
@@ -45246,8 +45808,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the outer edge or surrounding area of a city, away from its center"
+    ],
     "def_zh": [
      "城市的周边地区"
     ],
@@ -45275,8 +45839,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to carry out the responsibilities involved in making laws"
+    ],
     "def_zh": [
      "履行立法职责"
     ],
@@ -45304,8 +45870,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a large available supply of knowledge or information"
+    ],
     "def_zh": [
      "知识的宝库"
     ],
@@ -45332,8 +45900,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to push roughly and forcefully through a crowd of people"
+    ],
     "def_zh": [
      "横冲直撞地挤过人群"
     ],
@@ -45360,8 +45930,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to learn and gain the ability to understand and use a foreign language"
+    ],
     "def_zh": [
      "习得一门外语"
     ],
@@ -45388,8 +45960,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "extremely crowded, completely filled with people or things"
+    ],
     "def_zh": [
      "很拥挤"
     ],
@@ -45417,8 +45991,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to have one's attention or focus weaken and fail temporarily"
+    ],
     "def_zh": [
      "注意力下降"
     ],
@@ -45445,8 +46021,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a story or novel written to teach its readers moral lessons"
+    ],
     "def_zh": [
      "具有道德指导意义的小说"
     ],
@@ -45473,8 +46051,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to impose and collect a tax from someone, typically by government authority"
+    ],
     "def_zh": [
      "向某人征税"
     ],
@@ -45500,7 +46080,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To rotate about (an axis); to orbit.",
      "To be essentially connected with; to concern."
@@ -45532,8 +46112,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to introduce and put into effect a set of changes or reforms"
+    ],
     "def_zh": [
      "实行一系列改革"
     ],
@@ -45560,8 +46142,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to strengthen or increase someone's self-assurance"
+    ],
     "def_zh": [
      "增强某人的信心"
     ],
@@ -45588,8 +46172,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "in a state of serious danger, at high risk of harm"
+    ],
     "def_zh": [
      "陷入严重的危机"
     ],
@@ -45616,8 +46202,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be in charge of and direct a meeting, ceremony, or organization"
+    ],
     "def_zh": [
      "主持；掌管"
     ],
@@ -45645,7 +46233,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To cause to stop or complete."
     ],
@@ -45676,8 +46264,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to have words, symbols, or designs carved, engraved, or written on a surface"
+    ],
     "def_zh": [
      "刻着"
     ],
@@ -45705,8 +46295,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "regions or districts far from the center of a city, remote areas"
+    ],
     "def_zh": [
      "偏远地区"
     ],
@@ -45734,8 +46326,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be led, chaired, or managed by a particular person"
+    ],
     "def_zh": [
      "由……掌管"
     ],
@@ -45763,8 +46357,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "responsibilities a person has as a member of a community or citizen"
+    ],
     "def_zh": [
      "市民的义务"
     ],
@@ -45792,8 +46388,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an extremely beautiful and impressive sight of mountain scenery"
+    ],
     "def_zh": [
      "群山的壮丽景色"
     ],
@@ -45820,8 +46418,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be outside the range of topics or issues that something covers"
+    ],
     "def_zh": [
      "不属于……的讨论范围"
     ],
@@ -45849,8 +46449,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make something seem uncertain or questionable; to raise doubts about it"
+    ],
     "def_zh": [
      "对……存疑"
     ],
@@ -45878,8 +46480,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be useful or beneficial in a practical way"
+    ],
     "def_zh": [
      "很有用"
     ],
@@ -45906,8 +46510,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to cite or refer to well-known, highly respected scholars as support"
+    ],
     "def_zh": [
      "援引赫赫有名的学者"
     ],
@@ -45935,8 +46541,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to start out poor or from a low social position and later improve one's status"
+    ],
     "def_zh": [
      "出身贫寒"
     ],
@@ -45964,8 +46572,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a rival or competitor who is very strong, skilled, and hard to defeat"
+    ],
     "def_zh": [
      "很难对付的对手"
     ],
@@ -46038,8 +46648,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to extend the limits of scientific knowledge through new discoveries"
+    ],
     "def_zh": [
      "开拓科学新领域"
     ],
@@ -46067,8 +46679,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "unwise or showing poor judgment, so that doing it is likely to cause problems"
+    ],
     "def_zh": [
      "做某事是不明智的"
     ],
@@ -46094,8 +46708,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to gradually become very interested in or strongly attracted to something"
+    ],
     "def_zh": [
      "逐渐形成对……的喜爱"
     ],
@@ -46122,8 +46738,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to travel toward a place, or to spread until it reaches somewhere"
+    ],
     "def_zh": [
      "成功传到；到达"
     ],
@@ -46150,8 +46768,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "phrase",
+    "def_en": [
+     "used to say that A gradually becomes more important than B, overshadowing it"
+    ],
     "def_zh": [
      "A逐渐比B显得更重要"
     ],
@@ -46178,8 +46798,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a society sharply divided into distinct classes or levels of status and power"
+    ],
     "def_zh": [
      "高度分化分阶层的社会"
     ],
@@ -46206,8 +46828,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make sure or take responsibility that something happens or is done"
+    ],
     "def_zh": [
      "（努力）保证/确保"
     ],
@@ -46235,8 +46859,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to die at an unexpectedly early age, before living a full life span"
+    ],
     "def_zh": [
      "早逝"
     ],
@@ -46264,8 +46890,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a decision made too hastily, without enough time or information to consider it properly"
+    ],
     "def_zh": [
      "仓促的决定"
     ],
@@ -46292,8 +46920,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to refuse to accept or choose to live in an urban environment"
+    ],
     "def_zh": [
      "拒绝/不喜欢城市生活"
     ],
@@ -46320,8 +46950,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an answer that solves only part of a problem rather than the whole of it"
+    ],
     "def_zh": [
      "对问题的部分/不完全解决"
     ],
@@ -46348,8 +46980,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the scientific study and practice of diagnosing, treating, and preventing disease"
+    ],
     "def_zh": [
      "医学"
     ],
@@ -46377,8 +47011,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to happen or proceed without problems, delays, or difficulties"
+    ],
     "def_zh": [
      "进展顺利"
     ],
@@ -46406,8 +47042,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a price that is fair and not too high or too low"
+    ],
     "def_zh": [
      "合适的价格"
     ],
@@ -46434,8 +47072,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "soil that is favorable and welcoming for supporting plant growth"
+    ],
     "def_zh": [
      "适宜生长的土壤"
     ],
@@ -46463,8 +47103,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a climate that is pleasant and favorable for living, growing, or settling"
+    ],
     "def_zh": [
      "宜人的气候"
     ],
@@ -46491,8 +47133,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "original source material for which little written record or evidence exists"
+    ],
     "def_zh": [
      "很少有文件记载的原始资料"
     ],
@@ -46520,8 +47164,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make an existing illness or medical condition worse"
+    ],
     "def_zh": [
      "使病情恶化"
     ],
@@ -46548,8 +47194,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "phrase",
+    "def_en": [
+     "used to say that A does better than or exceeds B in a stated respect"
+    ],
     "def_zh": [
      "A在……方面超过了B"
     ],
@@ -46575,8 +47223,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a strong desire to learn, understand, or explore ideas"
+    ],
     "def_zh": [
      "求知欲"
     ],
@@ -46604,8 +47254,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to take more of a medicine than the amount advised as safe"
+    ],
     "def_zh": [
      "超过规定剂量"
     ],
@@ -46633,8 +47285,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a solution that addresses a problem as a whole rather than only its parts"
+    ],
     "def_zh": [
      "对问题的整体性/全面的解决"
     ],
@@ -46661,8 +47315,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "inflation that is rising very fast and cannot be controlled"
+    ],
     "def_zh": [
      "无法控制的通货膨胀"
     ],
@@ -46690,8 +47346,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a disease that is spreading quickly and widely, out of control"
+    ],
     "def_zh": [
      "不断蔓延的/肆虐的疾病"
     ],
@@ -46719,8 +47377,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "news that is shocking, sensational, and likely to provoke a strong reaction"
+    ],
     "def_zh": [
      "爆炸性的新闻"
     ],
@@ -46748,8 +47408,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a tense situation likely to suddenly erupt into conflict or violence"
+    ],
     "def_zh": [
      "一触即发的形势"
     ],
@@ -46877,7 +47539,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Synonym of celestial body."
     ],
@@ -46907,8 +47569,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a comment worded precisely and cautiously to avoid misunderstanding or offense"
+    ],
     "def_zh": [
      "措辞严谨的表达"
     ],
@@ -46935,8 +47599,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to begin to exist; to be formed or created"
+    ],
     "def_zh": [
      "出现；形成"
     ],
@@ -46964,8 +47630,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to position or send out security personnel for a specific purpose, such as maintaining order"
+    ],
     "def_zh": [
      "部署安全部队"
     ],
@@ -46993,8 +47661,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "unwilling or reluctant to do something"
+    ],
     "def_zh": [
      "不情愿做某事"
     ],
@@ -47020,8 +47690,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "qualified or entitled, by law or rule, to cast a vote"
+    ],
     "def_zh": [
      "有资格投票"
     ],
@@ -47049,8 +47721,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "lacking enough money to meet basic needs"
+    ],
     "def_zh": [
      "经济拮据的"
     ],
@@ -47078,8 +47752,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to satisfy one's thirst by drinking something"
+    ],
     "def_zh": [
      "解渴"
     ],
@@ -47106,8 +47782,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to restore or resupply nutrients that have been used up or lost"
+    ],
     "def_zh": [
      "补充营养"
     ],
@@ -47135,8 +47813,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the best or most favorable time for doing a particular thing"
+    ],
     "def_zh": [
      "做某事的最佳时节"
     ],
@@ -47162,8 +47842,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to express or make public one's complaints or dissatisfaction"
+    ],
     "def_zh": [
      "诉说苦衷"
     ],
@@ -47191,8 +47873,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to hold on to a feeling of resentment or anger toward someone over time"
+    ],
     "def_zh": [
      "对……心怀不满"
     ],
@@ -47218,8 +47902,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to provide a large number of chances or possibilities for something to happen"
+    ],
     "def_zh": [
      "提供大量机会"
     ],
@@ -47247,8 +47933,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a population that is either thinly spread out or densely packed across an area"
+    ],
     "def_zh": [
      "稀疏/稠密的人口"
     ],
@@ -47276,8 +47964,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to speak in a hesitant, halting way, making mistakes because of nervousness or unfamiliarity"
+    ],
     "def_zh": [
      "结结巴巴地说话"
     ],
@@ -47304,8 +47994,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to trip and lose one's balance, dropping to the ground"
+    ],
     "def_zh": [
      "绊了一跤，摔倒"
     ],
@@ -47333,8 +48025,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adverb",
+    "def_en": [
+     "during the period when someone or something was most successful, popular, or powerful"
+    ],
     "def_zh": [
      "在全盛期"
     ],
@@ -47361,7 +48055,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A board on which messages may be posted, especially one in a public space.",
      "Ellipsis of bulletin board system."
@@ -47393,8 +48087,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be in a very difficult, distressing, or dangerous situation"
+    ],
     "def_zh": [
      "深陷困境"
     ],
@@ -47421,8 +48117,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a drinking glass or vessel made of a material that does not let light pass through"
+    ],
     "def_zh": [
      "不透明的玻璃杯"
     ],
@@ -47519,8 +48217,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be unable to leave a place, especially because of bad weather or a cancelled trip"
+    ],
     "def_zh": [
      "滞留在"
     ],
@@ -47548,8 +48248,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to discover the role, job, or environment that best suits one's abilities and personality"
+    ],
     "def_zh": [
      "找到理想的工作/领地"
     ],
@@ -47576,8 +48278,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to notice an unmet need or business opportunity that competitors have overlooked"
+    ],
     "def_zh": [
      "看到市场上的商机"
     ],
@@ -47604,7 +48308,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The finding and exploitation of niche markets."
     ],
@@ -47716,7 +48420,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To intentionally cause a delay; to stop; to wait."
     ],
@@ -47747,8 +48451,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to deliberately delay completing or agreeing to a business transaction"
+    ],
     "def_zh": [
      "拖时间不达成交易"
     ],
@@ -47776,8 +48482,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to place valuable belongings in a hotel's secure storage box for safekeeping"
+    ],
     "def_zh": [
      "把贵重物品寄存在酒店保险柜"
     ],
@@ -47852,8 +48560,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to support or strengthen an economy that is weak or struggling"
+    ],
     "def_zh": [
      "改善经济"
     ],
@@ -47881,8 +48591,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to encourage economic growth and activity, for example through spending or tax cuts"
+    ],
     "def_zh": [
      "刺激经济"
     ],
@@ -47910,8 +48622,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to formally state disagreement or opposition to something"
+    ],
     "def_zh": [
      "对……提出反对"
     ],
@@ -47939,8 +48653,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an economic system of small, largely self-sufficient family farms using traditional, non-industrial methods"
+    ],
     "def_zh": [
      "小农经济"
     ],
@@ -47968,7 +48684,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The length of time a product (especially food and drugs) will last without deteriorating or without being sold.",
      "The maximum time a packaged material can be stored under specific conditions and still meet the performance requirements specified."
@@ -48000,8 +48716,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to start or set in motion a planned piece of work"
+    ],
     "def_zh": [
      "开始一个项目"
     ],
@@ -48028,8 +48746,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a broadly practical principle based on experience rather than precise calculation"
+    ],
     "def_zh": [
      "经验法则"
     ],
@@ -48056,8 +48776,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "A is connected with or has a bearing on B"
+    ],
     "def_zh": [
      "A与B有关"
     ],
@@ -48084,7 +48806,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adverb",
     "def_en": [
      "With very little warning or preparation time."
     ],
@@ -48115,8 +48837,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "an experiment conducted in its natural or original location rather than in a lab"
+    ],
     "def_zh": [
      "实地试验"
     ],
@@ -48142,8 +48866,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a knife that is no longer sharp and does not cut well"
+    ],
     "def_zh": [
      "钝刀子"
     ],
@@ -48170,8 +48896,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to severely damage or destroy the natural environment"
+    ],
     "def_zh": [
      "破坏环境"
     ],
@@ -48199,8 +48927,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to express the main ideas of something clearly and concisely"
+    ],
     "def_zh": [
      "对核心主题进行概括"
     ],
@@ -48228,8 +48958,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a young man who seems mature, worldly, and refined beyond his years"
+    ],
     "def_zh": [
      "一个老成的年轻人"
     ],
@@ -48256,8 +48988,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "computer systems that are very advanced, complex, and technologically refined"
+    ],
     "def_zh": [
      "十分先进的计算机系统"
     ],
@@ -48285,8 +49019,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a brief moment of happiness that passes very quickly"
+    ],
     "def_zh": [
      "转瞬即逝的幸福时刻"
     ],
@@ -48385,8 +49121,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to supply or provide someone with something they need"
+    ],
     "def_zh": [
      "给某人提供某物"
     ],
@@ -48412,8 +49150,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to mention or refer to something in an indirect way, without stating it explicitly"
+    ],
     "def_zh": [
      "暗指"
     ],
@@ -48441,8 +49181,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the practice of stockpiling goods to create scarcity and then selling them at excessive profit"
+    ],
     "def_zh": [
      "囤积居奇"
     ],
@@ -48470,8 +49212,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to cause someone to form a good opinion of you"
+    ],
     "def_zh": [
      "给……留下好印象"
     ],
@@ -48498,8 +49242,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to search around for things that are needed, such as food, clothing, or fuel"
+    ],
     "def_zh": [
      "搜寻（衣物和燃料）"
     ],
@@ -48527,8 +49273,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a long, relaxed, easy way of walking or running"
+    ],
     "def_zh": [
      "轻快的大步"
     ],
@@ -48867,8 +49615,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "improvements that are large or clear enough to be objectively measured or verified"
+    ],
     "def_zh": [
      "显著的改进"
     ],
@@ -48896,8 +49646,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to create or project an up-to-date, contemporary impression of oneself or an organization"
+    ],
     "def_zh": [
      "展现现代的形象"
     ],
@@ -48974,8 +49726,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to intrude on or violate someone's right to privacy"
+    ],
     "def_zh": [
      "损害/侵犯某人的隐私(权)"
     ],
@@ -49002,7 +49756,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adverb",
     "def_en": [
      "With regard to the fundamentals, but not to the particulars.",
      "According to theory."
@@ -49034,8 +49788,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make an economy active, healthy, and prosperous again"
+    ],
     "def_zh": [
      "重振经济"
     ],
@@ -49062,8 +49818,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to manage a job and family responsibilities at the same time"
+    ],
     "def_zh": [
      "工作与家庭两头兼顾"
     ],
@@ -49091,8 +49849,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to mention something briefly, without discussing it in detail"
+    ],
     "def_zh": [
      "简单提及某物"
     ],
@@ -49118,8 +49878,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "preposition",
+    "def_en": [
+     "for the purpose or benefit of achieving something"
+    ],
     "def_zh": [
      "为了得到/达到……"
     ],
@@ -49147,8 +49909,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adverb",
+    "def_en": [
+     "by a wide or considerable difference; easily"
+    ],
     "def_zh": [
      "大幅度地"
     ],
@@ -49175,8 +49939,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to develop a friendly, understanding relationship with someone"
+    ],
     "def_zh": [
      "与……建立密切和谐的关系"
     ],
@@ -49203,8 +49969,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make someone feel relaxed and free from anxiety"
+    ],
     "def_zh": [
      "让某人感到轻松自在"
     ],
@@ -49230,8 +49998,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be closely connected to or dependent on something"
+    ],
     "def_zh": [
      "与……密切相关"
     ],
@@ -49306,8 +50076,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be intellectually interesting and visually pleasing at once"
+    ],
     "def_zh": [
      "令人赏心悦目"
     ],
@@ -49335,8 +50107,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to become so involved in something that it takes all one's attention"
+    ],
     "def_zh": [
      "被……所困"
     ],
@@ -49364,7 +50138,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adverb",
     "def_en": [
      "apparently, outwardly; superficially"
     ],
@@ -49395,8 +50169,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to measure or judge how prominent or important an issue is"
+    ],
     "def_zh": [
      "衡量一个问题的显著性"
     ],
@@ -49422,8 +50198,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "preposition",
+    "def_en": [
+     "outside the range of topics that something covers or deals with"
+    ],
     "def_zh": [
      "超出……的讨论范围"
     ],
@@ -49451,8 +50229,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be deeply filled with a particular feeling or quality"
+    ],
     "def_zh": [
      "满怀"
     ],
@@ -49480,8 +50260,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "having thorough knowledge or skill in a particular subject"
+    ],
     "def_zh": [
      "精通"
     ],
@@ -49509,8 +50291,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to hold and exercise great control or authority over others"
+    ],
     "def_zh": [
      "掌握大权"
     ],
@@ -49538,8 +50322,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the state of being economically active, energetic, and prosperous"
+    ],
     "def_zh": [
      "经济繁荣"
     ],
@@ -49567,8 +50353,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to state directly and clearly that someone is responsible for a fault"
+    ],
     "def_zh": [
      "把责任不偏不倚地归咎于"
     ],
@@ -49596,8 +50384,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to keep something whole, unaltered, and undamaged"
+    ],
     "def_zh": [
      "保护……的完整"
     ],
@@ -49625,8 +50415,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "actions aimed at undermining or overthrowing an established authority or system"
+    ],
     "def_zh": [
      "破坏性的活动"
     ],
@@ -49654,8 +50446,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to praise someone or something with strong approval"
+    ],
     "def_zh": [
      "高度赞扬"
     ],
@@ -49683,8 +50477,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to fulfill a duty by performing the task it requires"
+    ],
     "def_zh": [
      "履行……的责任"
     ],
@@ -49710,8 +50506,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a man who acts honestly and follows strong ethical principles"
+    ],
     "def_zh": [
      "道德上正直的人"
     ],
@@ -49738,7 +50536,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adverb",
     "def_en": [
      "Clearly, obviously."
     ],
@@ -49769,8 +50567,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to break or act against an accepted rule or standard"
+    ],
     "def_zh": [
      "违反原则"
     ],
@@ -49798,7 +50598,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To bypass a prescribed route so as to gain competitive advantage or to circumvent traffic signals or other rules of the road.",
      "To do a less-than-thorough or incomplete job; to do something poorly; to take inappropriate shortcuts."
@@ -49902,7 +50702,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "preposition",
     "def_en": [
      "Paid for by an individual or group.",
      "At one's responsibility."
@@ -49934,8 +50734,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be making steady progress toward achieving something"
+    ],
     "def_zh": [
      "稳步走向"
     ],
@@ -49962,8 +50764,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a stomach making a low growling noise, usually from hunger"
+    ],
     "def_zh": [
      "咕噜咕噜叫的肚子"
     ],
@@ -49990,8 +50794,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the condition of not having enough available time"
+    ],
     "def_zh": [
      "时间不足"
     ],
@@ -50019,8 +50825,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adverb",
+    "def_en": [
+     "in whatever way you personally think is right or appropriate"
+    ],
     "def_zh": [
      "按照你认为合适的方式"
     ],
@@ -50047,8 +50855,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "temporary rules used until permanent ones are officially adopted"
+    ],
     "def_zh": [
      "临时的规定"
     ],
@@ -50076,8 +50886,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a lawsuit between private parties over rights or damages, not a crime"
+    ],
     "def_zh": [
      "民事案件"
     ],
@@ -50105,8 +50917,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to be in someone else's situation, especially a difficult one"
+    ],
     "def_zh": [
      "处于某人的处境"
     ],
@@ -50133,8 +50947,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to begin actively pursuing one's goals and direction in life"
+    ],
     "def_zh": [
      "引领人生，行动起来"
     ],
@@ -50161,8 +50977,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to take extreme, forceful action to deal with a serious problem"
+    ],
     "def_zh": [
      "采取强有力的措施"
     ],
@@ -50190,7 +51008,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "Alternative form of shift gears."
     ],
@@ -50221,8 +51039,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "conjunction",
+    "def_en": [
+     "used to say something is true or will happen only if a condition is met"
+    ],
     "def_zh": [
      "只要；倘若"
     ],
@@ -50310,8 +51130,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to make suitable arrangements for someone's particular requirements"
+    ],
     "def_zh": [
      "照顾到……的特殊需要"
     ],
@@ -50339,8 +51161,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to get ideas or creative influence from a particular source"
+    ],
     "def_zh": [
      "从……汲取灵感"
     ],
@@ -50368,8 +51192,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "conjunction",
+    "def_en": [
+     "used to say that something is more accurately described as B rather than A"
+    ],
     "def_zh": [
      "与其说是A不如说是B"
     ],
@@ -50396,7 +51222,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To be a tributary of another river or waterway.",
      "To perpetuate; to reinforce."
@@ -50428,7 +51254,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A sheltered, overly-academic existence or perspective, implying a disconnection or lack of awareness of reality or practical considerations.",
      "Separated from reality and practical matters; overly academic."
@@ -50460,8 +51286,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to do something extreme or severe in order to solve a serious problem"
+    ],
     "def_zh": [
      "采取极端措施"
     ],
@@ -50489,7 +51317,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "(of an employer) To dismiss (workers) from employment, e.g. at a time of low business volume or through no fault of the worker, often with a severance package.",
      "To place all or part of a bet with another bookmaker in order to reduce risk."
@@ -50562,7 +51390,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Friendship; friendliness.",
      "Mutual understanding and a peaceful relationship, especially between nations."
@@ -50597,7 +51425,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of or relating to love, especially sexual love."
     ],
@@ -50722,7 +51550,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having characteristics of a human, usually in terms of shape or appearance.",
      "Of the pelvis, having an anteroposterior diameter equal or exceeding the transverse diameter."
@@ -50760,7 +51588,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An arboreal ape, characterised by its shaggy reddish-brown coat and long arms, of the genus Pongo, native to Borneo and Sumatra."
     ],
@@ -50874,7 +51702,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Benevolent altruism with the intention of increasing the well-being of humankind.",
      "Charitable giving, charity."
@@ -50962,7 +51790,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who practices arboriculture; a tree surgeon."
     ],
@@ -51158,7 +51986,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Nearer the forward end, especially in the front of the body; nearer the head or forepart of an animal.",
      "(of a part of a flower or leaf) Situated further away from the mainstem."
@@ -51196,7 +52024,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Nearer the rear or hind end; nearer the caudal end of the body in quadrupeds or the dorsal end in bipeds.",
      "Relating to or denoting presentation of a fetus in which the rear or caudal end is nearest the cervix and emerges first at birth."
@@ -51245,7 +52073,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A robot that is designed to look and act like a human being (not necessarily a male one).",
      "An artificial human."
@@ -51327,7 +52155,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "That lives.",
      "That has (or is believed to have) a spirit (anima) and/or some amount of consciousness and sentience, either being alive or supernaturally seeming alive."
@@ -51680,7 +52508,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "That inhibits the growth of fungi; antimycotic.",
      "A drug that inhibits the growth of fungi."
@@ -51766,7 +52594,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Disposition to do good.",
      "Charitable kindness."
@@ -51877,7 +52705,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "A tax charged on goods produced within the country (as opposed to customs duties, charged on goods from outside the country).",
      "To impose an excise tax on something."
@@ -52094,7 +52922,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any of various substances used to kill insects."
     ],
@@ -52212,7 +53040,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The person or thing at fault for a problem or crime.",
      "A prisoner accused but not yet tried."
@@ -52294,7 +53122,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A part of any of several scientific or measuring instruments that moves back and forth to indicate a position.",
      "A moving icon or other representation of the position of the pointing device."
@@ -52381,7 +53209,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of or concerning discourse.",
      "Tending to digress from the main point."
@@ -52569,7 +53397,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A consequence or ensuing result of some action.",
      "The act of driving back, or the state of being driven back; reflection; reverberation."
@@ -53043,7 +53871,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The state of being sincere and open in speech; honesty in expression.",
      "Impartiality."
@@ -53274,7 +54102,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "the farming of flowers"
     ],
@@ -53303,7 +54131,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The cultivation of aquatic produce such as aquatic plants, fish, and other aquatic animals."
     ],
@@ -53469,7 +54297,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A state of agreement; harmony; union.",
      "An agreement by stipulation; a compact; a covenant; a treaty or league."
@@ -53585,7 +54413,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Relating to the circulatory system, that is the heart and blood vessels."
     ],
@@ -53672,7 +54500,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To destroy by burning.",
      "To annihilate (not necessarily by burning)."
@@ -53707,7 +54535,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of, pertaining to, or containing ashes, especially those of a cremated person."
     ],
@@ -53789,8 +54617,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to persuade or influence someone into doing something"
+    ],
     "def_zh": [
      "诱使某人做某事"
     ],
@@ -53816,7 +54646,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To manufacture (something) on a large scale, especially by using assembly lines."
     ],
@@ -53845,8 +54675,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "the degree to which an organism successfully produces surviving offspring"
+    ],
     "def_zh": [
      "繁殖成功率"
     ],
@@ -53874,8 +54706,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to behave in a particular way, especially regarding manners or morals"
+    ],
     "def_zh": [
      "做人；为人处世"
     ],
@@ -54160,7 +54994,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To convert from an encrypted form to plain text.",
      "To figure out something difficult to interpret."
@@ -54353,7 +55187,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The act or quality of endorsing",
      "An amendment or annotation to an insurance contract or other official document (such as a driving licence)."
@@ -54495,7 +55329,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having equal or comparable ability in both hands; in particular, able to write well with both hands.",
      "Equally usable by left-handed and right-handed people (as a tool or instrument)."
@@ -54685,7 +55519,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To surround, form a circle around.",
      "To move or go around completely."
@@ -54721,7 +55555,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To enclose something in, or as if in, a capsule.",
      "To epitomize something by expressing it as a brief summary."
@@ -54855,7 +55689,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To rest satisfied, or apparently satisfied, or to rest without opposition and discontent (usually implying previous opposition or discontent); to accept or consent by silence or by omitting to object.",
      "To concur upon conviction; to accept tacitly; to assent to; usually, to concur, not heartily but so far as to forbear opposition."
@@ -54997,7 +55831,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An act or instance of deferring or putting off.",
      "Officially sanctioned postponement of compulsory military service."
@@ -55974,7 +56808,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Related to the treasury of a country, company, region or city, particularly to government spending and revenue.",
      "Pertaining to finance and money in general; financial."
@@ -56152,7 +56986,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Capable of burning.",
      "Easily set on fire."
@@ -56587,7 +57421,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A sudden or unexpected failure.",
      "A ludicrous or humiliating situation. Some effort that went quite wrong."
@@ -56622,7 +57456,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A social philosophy or practice which advocates the improvement of human hereditary qualities through selective breeding, either by encouraging people with superior genetic qualities to reproduce (positive eugenics), or discouraging people with inferior genetic qualities from reproducing (negative eugenics), or by technological means."
     ],
@@ -56709,7 +57543,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An initial ancestor."
     ],
@@ -56959,7 +57793,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "The act of passing back; passage back; return; retrogression.",
      "The power or liberty of passing back."
@@ -57568,7 +58402,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of or pertaining to creeds, beliefs, or teachings, especially religious ones, that are different from what a religion (or sect) believes to be orthodox, but (usually) not conflicting with that religion's established beliefs and therefore not heretical.",
      "Beliefs contrary to the general consensus."
@@ -57774,7 +58608,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Characterized by hypocrisy or being a hypocrite."
     ],
@@ -57859,7 +58693,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Meticulously or excessively critical."
     ],
@@ -57893,7 +58727,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Deliberate or unintentional overstatement, particularly extreme overstatement.",
      "An instance or example of such overstatement."
@@ -57969,8 +58803,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "adjective",
+    "def_en": [
+     "occurring within a single culture rather than between different cultures"
+    ],
     "def_zh": [
      "文化内部的"
     ],
@@ -57996,7 +58832,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Inside or within a cell."
     ],
@@ -58029,7 +58865,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "Forced into submission; subjugated.",
      "A person forced into submission; a subject."
@@ -58068,7 +58904,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A literal or metaphorical force or object regarded as unstoppable, that will crush all in its path.",
      "A large, cumbersome truck or lorry, especially an articulated lorry."
@@ -58429,7 +59265,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "A force compounded by means of a lever rotating around a pivot.",
      "Any influence which is compounded or used to gain an advantage."
@@ -58619,7 +59455,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Given to using language in a showy way by using an excessive number of difficult words to impress others; bombastic; turgid."
     ],
@@ -58658,7 +59494,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Using few words when speaking."
     ],
@@ -58687,8 +59523,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "verb",
+    "def_en": [
+     "to promise or dedicate oneself firmly to a course of action"
+    ],
     "def_zh": [
      "致力于；承诺"
     ],
@@ -58829,7 +59667,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A supercilious or haughty attitude; arrogance.",
      "A building or room where dead bodies are kept before their proper burial or cremation, (now) particularly in legal and law enforcement contexts."
@@ -58864,7 +59702,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To discipline (one's body, appetites etc.) by suppressing desires; to practise abstinence on.",
      "To injure the dignity of; to embarrass; to humiliate."
@@ -59025,7 +59863,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A residence for monks or others who have taken religious vows."
     ],
@@ -59056,7 +59894,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Characterised by or exhibiting a change in form or character.",
      "Pertaining to metamorphism; having been structurally altered as a result of, or resulting from, exposure to intense heat and/or pressure (at the contact zone between colliding plates, for example)."
@@ -59273,7 +60111,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A public declaration of principles, policies, or intentions, especially that of a political party.",
      "To issue a manifesto."
@@ -59351,7 +60189,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "aquaculture using seawater"
     ],
@@ -59427,7 +60265,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Unable to be changed without exception.",
      "Not able to be altered in the memory after its value is set initially."
@@ -60008,7 +60846,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To travel completely around somewhere or something (especially the Globe), especially by sail.",
      "To circumvent or bypass."
@@ -60090,7 +60928,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Harmless; producing no ill effect.",
      "Inoffensive; unprovocative; unexceptionable."
@@ -60173,7 +61011,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A work in a genre of piano music of moderate tempo with a highly-decorated, improvisatory melody.",
      "A work of art relating or dedicated to the night."
@@ -60504,7 +61342,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A set of rules used for forming the names or terms in a particular field of arts or sciences.",
      "A set of names or terms."
@@ -60698,7 +61536,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Near-sighted; unable to see distant objects unaided.",
      "Shortsighted; improvident."
@@ -60739,7 +61577,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having total knowledge.",
      "One who has total knowledge."
@@ -60774,7 +61612,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Having unlimited power, force or authority.",
      "Describing a cell (especially a stem cell) that is capable of developing into any type of cell or forming any type of tissue (also called a totipotent cell)."
@@ -60864,7 +61702,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Elaborately ornamented, often to excess.",
      "Flashy, flowery or showy."
@@ -60941,7 +61779,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A word that sounds or is spelled the same as another word (but not necessarily both).",
      "A word that both sounds and is spelled the same as another word."
@@ -61016,7 +61854,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Having the appearance or characteristics of a human; being anthropomorphic under some criteria (physical, mental, genetical, ethological, ethical etc.).",
      "A being having the appearance or characteristics of a human."
@@ -61051,7 +61889,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Of a shape similar to a squashed sphere.",
      "A solid of revolution generated by rotating an ellipse about its major (prolate), or minor (oblate) axis."
@@ -61452,7 +62290,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "That can be disposed of.",
      "That is designed to be discarded rather than reused, refilled or repaired."
@@ -61487,7 +62325,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To make someone susceptible to something (such as a disease).",
      "To make someone inclined to something in advance; to influence."
@@ -61709,7 +62547,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Uncritically satisfied with oneself or one's achievements; smug.",
      "Unduly unworried or apathetic with regard to a need or problem."
@@ -61843,7 +62681,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "One who loves books.",
      "One who collects books, not necessarily due to any interest in reading them."
@@ -61878,7 +62716,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Any body of knowledge that purports to be scientific or to be supported by science (or may appear to be scientific) but which fails to comply with the scientific method (or rather, is not true science).",
      "Fictitious science as portrayed in science fiction."
@@ -61910,7 +62748,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A person who claims proficiency in scholarly or artistic activities while lacking in-depth knowledge or critical understanding.",
      "A person who pretends to be of greater intelligence than they actually are."
@@ -62651,7 +63489,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To examine or consider with care.",
      "To read completely."
@@ -62934,7 +63772,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Patriarchal."
     ],
@@ -63007,7 +63845,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Power, authority.",
      "The ability or capacity to perform something"
@@ -63127,7 +63965,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Lacking physical strength or vigor; weak",
      "Lacking in power, as to act effectively; helpless"
@@ -63254,7 +64092,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Of, relating to, composed of, or illustrated by pictures.",
      "Described or otherwise represented as if in a picture; graphic or vivid."
@@ -63349,7 +64187,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To deprive a person of (their private property) for public use.",
      "To surrender a claim to private property without material compensation; to deprive oneself of private propriety rights."
@@ -63588,7 +64426,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The study of the nature of disease and its causes, processes, development, and consequences; now usually and especially in the clinical and academic medicine subsenses defined below.",
      "The clinical biomedical specialty that provides microscopy and other laboratory services to clinicians (e.g., cytology, histology, cytopathology, histopathology, cytometry)."
@@ -63620,7 +64458,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A person with a personality disorder indicated by a pattern of lying, cunning, manipulating, glibness, exploiting, heedlessness, arrogance, delusions of grandeur, carelessness, low self-control, disregard for morality, lack of acceptance of responsibility, callousness, and lack of empathy and remorse. Such a person may be especially prone to violent and criminal offenses.",
      "A person with no moral conscience."
@@ -63694,7 +64532,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To beg or plead for (something) earnestly or urgently; to beseech.",
      "To beg or plead that (someone) earnestly or urgently do something; to beseech, to entreat."
@@ -64162,7 +65000,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Of a disease: epidemic over a wide geographical area and affecting a large proportion of the population; also, of or pertaining to a disease of this nature.",
      "General, widespread."
@@ -64825,7 +65663,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Essential, indispensable, required.",
      "An indispensable item; a requirement."
@@ -64919,7 +65757,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A unit of armed troops under the command of an officer, and consisting of several smaller units.",
      "Rule or governance over a person, place etc.; government, authority."
@@ -65219,7 +66057,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Elusive; difficult to capture or observe due to constantly outwitting the adversaries.",
      "Dishonest; deceitful."
@@ -65259,7 +66097,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The study of rock layers and the layering process (stratification).",
      "The layering of deposits, with newer remains overlaying older ones, forming a chronology of the site."
@@ -65386,7 +66224,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Unrestrained by morality.",
      "Recklessly abandoned to sensual pleasures."
@@ -65866,7 +66704,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "preposition",
     "def_en": [
      "Regarding; concerning; pertaining to.",
      "Taking as the independent variable."
@@ -65944,7 +66782,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Clearly expressed, easy to understand; lucid.",
      "(Of a language or notation) the process of inference from premises to conclusion is explicitly laid out."
@@ -65982,8 +66820,10 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
-    "def_en": [],
+    "pos": "noun",
+    "def_en": [
+     "a small lamp that burns alcohol, used for heating in a laboratory"
+    ],
     "def_zh": [
      "酒精灯"
     ],
@@ -66011,7 +66851,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To breathe in and out successively.",
      "To recover one's breath or breathe easily following stress."
@@ -66526,7 +67366,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The act of disseminating, or the state of being disseminated; diffusion for propagation and permanence; a scattering or spreading abroad, as of ideas, beliefs, etc."
     ],
@@ -66917,7 +67757,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An act or instance of retracting.",
      "A statement printed or broadcast in a public forum which effects the withdrawal of an earlier assertion, and which concedes that the earlier assertion was in error."
@@ -66997,7 +67837,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The act of extracting or the condition of being extracted.",
      "Something extracted, an extract, as from a plant or an organ of an animal etc."
@@ -67528,7 +68368,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Tending to be easily frightened; shy, timid.",
      "Feeling fear; afraid, fearful, frightened."
@@ -67628,7 +68468,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "An opinion, belief, or principle that is held as absolute truth by someone or especially an organization."
     ],
@@ -68008,7 +68848,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "The path an object takes as it moves.",
      "The path of a body as it travels through space."
@@ -68102,7 +68942,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "adjective",
     "def_en": [
      "Marked by heated arguments or controversy.",
      "Given to struggling with others out of jealousy or discord."
@@ -68887,7 +69727,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "A directed quantity, one with both magnitude and direction; the signed difference between two points.",
      "Any member of a (generalized) vector space."
@@ -69381,7 +70221,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Overabundance of words.",
      "The manner in which something is expressed in words; word choice."
@@ -69608,7 +70448,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "verb",
     "def_en": [
      "To lower or remove the value of something.",
      "To lose value; to depreciate."
@@ -69732,7 +70572,7 @@
   "phonetic": "",
   "senses": [
    {
-    "pos": "",
+    "pos": "noun",
     "def_en": [
      "Either of two related occupations (as follows); the person who holds it.",
      "A craftsman who designs, erects, and builds mills and milling machinery."
