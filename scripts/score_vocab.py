@@ -37,7 +37,8 @@ import urllib.request
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-DECKS = {"toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
+DECKS = {"scenes": REPO / "toefl" / "vocab" / "scene_vocab.json",
+         "toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
          "gre": REPO / "gre" / "vocab" / "gre_vocab.json"}
 CACHE = Path(os.environ.get("LANG_PREP_CACHE")
              or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache")

@@ -25,6 +25,9 @@ CACHE = Path(os.environ.get("LANG_PREP_CACHE")
 DECK_FILES = {
     "toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
     "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
+    # topical TOEFL listening-scene vocab; ~27% are multi-word phrases, so kaikki/WordNet
+    # coverage is naturally lower than the single-word decks
+    "scenes": REPO / "toefl" / "vocab" / "scene_vocab.json",
 }
 
 

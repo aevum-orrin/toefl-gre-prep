@@ -25,7 +25,8 @@ REPO = Path(__file__).resolve().parents[1]
 CACHE = Path(os.environ.get("LANG_PREP_CACHE")
              or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache")
 DECK_FILES = {"toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
-              "gre": REPO / "gre" / "vocab" / "gre_vocab.json"}
+              "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
+              "scenes": REPO / "toefl" / "vocab" / "scene_vocab.json"}
 
 # map deck sense.pos values -> kaikki by_pos keys (kaikki uses full names)
 POS_ALIAS = {

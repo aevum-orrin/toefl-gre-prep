@@ -32,6 +32,9 @@ CACHE = Path("/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache"
 DECK_FILES = {
     "toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
     "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
+    # topical TOEFL listening-scene vocab; ~27% are multi-word phrases, so kaikki/WordNet
+    # coverage is naturally lower than the single-word decks
+    "scenes": REPO / "toefl" / "vocab" / "scene_vocab.json",
 }
 
 _SYSTEM = (

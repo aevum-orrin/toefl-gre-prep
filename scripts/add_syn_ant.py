@@ -24,7 +24,8 @@ CACHE = Path(os.environ.get("LANG_PREP_CACHE")
              or "/scratch/nmasoud_owned_root/nmasoud_owned1/ctlang/lang-prep-cache")
 os.environ.setdefault("NLTK_DATA", str(CACHE / "nltk_data"))
 DECK_FILES = {"toefl": REPO / "toefl" / "vocab" / "toefl_vocab.json",
-              "gre": REPO / "gre" / "vocab" / "gre_vocab.json"}
+              "gre": REPO / "gre" / "vocab" / "gre_vocab.json",
+              "scenes": REPO / "toefl" / "vocab" / "scene_vocab.json"}
 
 MAX_SYN = 12
 MAX_ANT = 10
